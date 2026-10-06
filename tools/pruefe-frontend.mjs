@@ -121,7 +121,8 @@ const vertrag = [
   ['Fortschritt-Speicher', /const\s+STORE\s*=\s*['"]ap1-trainer-v1['"]/],
   ['Jahr-Speicher', /const\s+JAHR_STORE\s*=\s*['"]ap1-trainer-jahr['"]/],
   ['Profil-Speicher', /const\s+PROFIL_STORE\s*=\s*['"]ap1-trainer-profil['"]/],
-  ['Karten-Speicher', /const\s+KARTEN_STORE\s*=\s*['"]ap1-trainer-karten-v1['"]/]
+  ['Karten-Speicher', /const\s+KARTEN_STORE\s*=\s*['"]ap1-trainer-karten-v1['"]/],
+  ['Prüfungsteil-Speicher', /const\s+TEIL_STORE\s*=\s*['"]ap1-trainer-teil['"]/]
 ];
 for (const [was, muster] of vertrag) {
   muster.test(html)
@@ -146,13 +147,16 @@ console.log('');
 console.log('5. Inhaltsbestand und Jahrgangs-Regel');
 
 // Je Format: wie ein Eintrag beginnt, und wie viele Jahre er kennt.
+// Seit dem zweiten Prüfungsteil trägt jeder Eintrag ein führendes t-Feld
+// ('ap1' oder 'ap2'). Die Muster tolerieren es, erkennen aber weiterhin den
+// Beginn eines Eintrags am Schlüsselfeld b bzw. id.
 const FORMATE = [
-  ['QUIZ', /\{\s*b:\s*'/g],
-  ['KARTEN', /\{\s*b:\s*'/g],
-  ['LUECKEN', /\{\s*\n\s*id:/g],
-  ['FEHLER', /\{\s*\n\s*id:/g],
-  ['FAELLE', /\{\s*\n\s*id:/g],
-  ['TASKS', /\{\s*\n\s*id:/g]
+  ['QUIZ', /\{\s*(?:t:\s*'ap\d',\s*)?b:\s*'/g],
+  ['KARTEN', /\{\s*(?:t:\s*'ap\d',\s*)?b:\s*'/g],
+  ['LUECKEN', /\{\s*\n\s*(?:t:\s*'ap\d',\s*)?id:\s*'/g],
+  ['FEHLER', /\{\s*\n\s*(?:t:\s*'ap\d',\s*)?id:\s*'/g],
+  ['FAELLE', /\{\s*\n\s*(?:t:\s*'ap\d',\s*)?id:\s*'/g],
+  ['TASKS', /\{\s*\n\s*(?:t:\s*'ap\d',\s*)?id:\s*'/g]
 ];
 
 const jahrTabelle = [];
@@ -200,6 +204,51 @@ if (jahrTabelle.length) {
   const summe = jahrTabelle.reduce((s, z) => s + z[1], 0);
   ok(summe + ' Einträge, Jahres-Sicht überall kumulativ');
 }
+console.log('');
+
+/* ============================================================
+   5b. Zweiter Prüfungsteil (AP2)
+   Seit dem Umbau führt der Trainer zwei getrennte Oberflächen. Diese Prüfung
+   stellt sicher, dass AP2 nicht nur halb eingebaut ist: alle sechs Sammlungen
+   müssen vorhanden, gefüllt und mit genau vier gültigen Bereichen versehen
+   sein, und jeder Eintrag muss den richtigen Prüfungsteil tragen.
+   ============================================================ */
+console.log('5b. Zweiter Prüfungsteil (AP2)');
+const AP2_FORMATE = ['QUIZ2', 'KARTEN2', 'LUECKEN2', 'FEHLER2', 'FAELLE2', 'TASKS2'];
+const AP2_BEREICHE = ['kundenauftrag', 'systemloesung', 'kaufmaennisch', 'wiso'];
+let ap2Gesamt = 0, ap2Fehler = 0;
+for (const name of AP2_FORMATE) {
+  const m = html.match(new RegExp('const\\s+' + name + '\\s*=\\s*\\[([\\s\\S]*?)\\n\\];', 'm'));
+  if (!m) { fehl('AP2-Sammlung ' + name + ' fehlt'); ap2Fehler++; continue; }
+  const koerper = m[1];
+  // Einträge beginnen mit "{ t: 'ap2'" (inline) oder "{\n … t: 'ap2'".
+  const eintraege = (koerper.match(/\{\s*(?:\n\s*)?t:\s*'ap2'/g) || []).length;
+  if (eintraege === 0) { fehl('AP2-Sammlung ' + name + ' ist leer'); ap2Fehler++; continue; }
+  // Bereiche prüfen
+  const bereiche = [...koerper.matchAll(/\bb:\s*'([^']+)'/g)].map(x => x[1]);
+  const fremd = bereiche.filter(b => !AP2_BEREICHE.includes(b));
+  if (fremd.length) {
+    fehl(name + ': unbekannte AP2-Bereiche', [...new Set(fremd)].join(', '));
+    ap2Fehler++;
+  }
+  ap2Gesamt += eintraege;
+  ok(name + ': ' + eintraege + ' Einträge');
+}
+// Die vier Bereiche müssen definiert sein und in der Kopfzeile verwendet werden.
+for (const id of AP2_BEREICHE) {
+  new RegExp("id:\\s*'" + id + "'").test(html)
+    ? ok('AP2-Bereich definiert: ' + id)
+    : (fehl('AP2-Bereich fehlt: ' + id), ap2Fehler++);
+}
+// Der Umschalter und der Filter müssen im Anwendungscode stehen.
+for (const [was, muster] of [
+  ['Umschalter-Knopf', /id="btn-teil"/],
+  ['Prüfungsteil-Zustand', /let\s+teil\s*=\s*'ap1'/],
+  ['Daten-Funktion', /function\s+daten\s*\(/]
+]) {
+  muster.test(html) ? ok(was) : (fehl(was + ' fehlt'), ap2Fehler++);
+}
+if (!ap2Fehler) ok(ap2Gesamt + ' AP2-Einträge über vier Prüfungsbereiche');
 console.log('');
 
 /* ============================================================

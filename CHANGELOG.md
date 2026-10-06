@@ -4,6 +4,74 @@ Das Format folgt *Keep a Changelog*. Bruchstellen sind ausdrücklich gekennzeich
 
 ## [Nicht veröffentlicht]
 
+### Hinzugefügt — Zweiter Prüfungsteil (AP2), eigene Oberfläche (2026-10-06)
+
+Der Trainer führt ab jetzt **zwei getrennte Prüfungsteile**, zwischen denen der
+Nutzer oben links mit der Marke am Wortzeichen umschaltet:
+
+- **Teil 1 (AP1)** — unverändert: derselbe Stoff, dieselben Bereiche und
+  Jahrgänge. Kein Bestandseintrag wurde inhaltlich angefasst.
+- **Teil 2 (AP2)** — neu: vier Prüfungsbereiche mit eigenem Stoff, eigenem
+  Fortschritt und einer Startseite, die den Aufbau der Prüfung erklärt.
+
+**Warum getrennt und nicht in einem Datenbestand mit einem Feld:** Die beiden
+Prüfungen haben keine gemeinsamen Themenbereiche; ein gemeinsames b-Feld hätte
+die zwölf AP1-Bereiche mit AP2-Begriffen vermischt. Außerdem filtert nur AP1
+nach Ausbildungsjahr — AP2 filtert nach Prüfungsbereich. Und ein Fehler in der
+einen Datensammlung kann die andere nicht treffen.
+
+**Die Achse von Teil 2** sind die vier Prüfungsbereiche nach der
+Ausbildungsordnung — mit ihrem echten Gewicht, nicht als A/B/C abgekürzt:
+
+| Bereich | Form | Zeit | Gewicht |
+|---|---|---|---|
+| Abwicklung eines Kundenauftrages | Projektarbeit, Doku, Präsentation, Fachgespräch | 40 h + 30 min | **50 %** |
+| Einführen einer IT-Systemlösung | schriftlich | 90 min | 10 % |
+| Kaufmännische Unterstützungsprozesse | schriftlich | 90 min | 10 % |
+| Wirtschafts- und Sozialkunde | schriftlich | 60 min | 10 % |
+
+- **Eigene Marke AP1 / AP2 am Wortzeichen**, die zugleich der Umschalter ist.
+  Kein zusätzlicher Knopf in der Wahlreihe; der Wechsel ist immer an derselben
+  Stelle und immer sichtbar.
+- **Ausbildungsjahr-Knopf in AP2 ausgeblendet** — Teil 2 kennt keine Jahrgänge.
+- **Eigene Fortschrittszählung:** Aufgaben-Fortschritt und Serie von AP1 und AP2
+  sind getrennt (ap2-Präfix im vorhandenen Speicher, eigener Serienzähler).
+  Das Zurücksetzen betrifft nur den offenen Teil.
+- **Eigene Quellen-Seite** für Teil 2 (Ausbildungsordnung, IHK-Merkblätter,
+  Bewertungskriterien der Projektdokumentation).
+
+**Inhalte Teil 2 (neu formuliert, keine Aufgabe wörtlich übernommen):**
+63 Quizfragen · 36 Karteikarten · 5 Lückentexte · 4 Fehlersuche-Blöcke ·
+4 Fallstudien (Kundenprojekt, Ausfallsicherung, Investitionsentscheidung,
+Ausbildung und Arbeitsrecht) · 10 Rechenaufgaben (Nettokostenvergleich,
+Amortisation, Break-even, Zuschlagskalkulation, Abschreibung, Verfügbarkeit,
+Subnetting, Backup-Volumen, Make or Buy, Stundensatz).
+
+### Geändert — Werkzeuge
+
+- **Qualitätstor** (tools/pruefe-frontend.mjs): prüft zusätzlich den zweiten
+  Prüfungsteil — alle sechs AP2-Sammlungen vorhanden und gefüllt, gültige
+  Bereiche, Umschalter und Daten-Funktion im Anwendungscode. Der Vertrag kennt
+  jetzt auch TEIL_STORE. **49 Prüfungen**, alle bestanden.
+- **Inhaltsanalyse** (tools/analysiere-inhalte.mjs): wertet Teil 1 und Teil 2
+  getrennt aus (Teil 2 hat keine Jahrgänge, sondern vier Bereiche). Teil 1:
+  325 Einträge, keine Dubletten. Teil 2: 122 Einträge, keine Dubletten,
+  Bereiche gleichmäßig belegt.
+- **Jeder Eintrag trägt jetzt das Feld t** (ap1 oder ap2). Rein additiv; die
+  AP1-Daten selbst sind unverändert.
+
+### Geprüft (2026-10-06)
+
+- Qualitätstor npm run check: **alle 49 Prüfungen bestanden.**
+- **Alle sechs Formate in beiden Prüfungsteilen im Browser durchgeklickt** —
+  ohne Laufzeitfehler: Rechnen · Quiz · Karteikarten · Lückentexte ·
+  Fehlersuche · Fallstudien.
+- **Alle 10 AP2- und 15 AP1-Rechenaufgaben** je dreimal erzeugt: jede Antwort
+  ist eine endliche Zahl, jede Aufgabe hat Zeilen und Lösungsweg.
+- **Mobil (390 × 844):** kein waagerechter Überlauf in irgendeinem Format.
+
+
+
 ### Geändert — Bildmarke neu gezeichnet (2026-09-30)
 
 - **Neue Bildmarke oben links.** Vorher: dünne Kontur, Eselsohr ohne Fläche, ein

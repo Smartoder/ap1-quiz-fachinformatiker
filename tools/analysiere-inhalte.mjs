@@ -87,30 +87,42 @@ const FORMAT = [
   ['LUECKEN', 'Lückentext', 'Lückentext'],
   ['FEHLER', 'Fehlersuche', 'Fehlersuche'],
   ['FAELLE', 'Fallstudie', 'Fallstudie'],
-  ['TASKS', 'Aufgabe', 'Rechenaufgabe']
+  ['TASKS', 'Aufgabe', 'Rechenaufgabe'],
+  /* Teil 2: eigene Sammlungen. Der Prüfungsteil steht zusätzlich als t-Feld
+     an jedem Eintrag; der Sammlungsname ist hier nur der Wegweiser. */
+  ['QUIZ2', 'Frage', 'Multiple-Choice'],
+  ['KARTEN2', 'Karte', 'Karteikarte'],
+  ['LUECKEN2', 'Lückentext', 'Lückentext'],
+  ['FEHLER2', 'Fehlersuche', 'Fehlersuche'],
+  ['FAELLE2', 'Fallstudie', 'Fallstudie'],
+  ['TASKS2', 'Aufgabe', 'Rechenaufgabe']
 ];
 
 // Ein Eintrag beginnt mit "{" in eigener Zeile (Einrückung erlaubt) oder mit
-// "{ b:" / "{ id:". Beides wird berücksichtigt.
+// "{ b:" / "{ id:". Seit dem zweiten Prüfungsteil steht optional ein t-Feld
+// davor. Der Ausdruck berücksichtigt beides.
 function zerlegeEintraege(koerper) {
-  const teile = koerper.split(/\n(?=\s*\{(?:\s*(?:b|id)\s*:|\s*\n))/);
+  const teile = koerper.split(/\n(?=\s*\{(?:\s*(?:t\s*:\s*['"]ap\d['"]\s*,\s*)?(?:b|id)\s*:|\s*\n))/);
   return teile.filter(t => /\bj:\s*[123]\b/.test(t));
 }
 
-const eintraege = [];
+const alle = [];
 for (const [name] of FORMAT) {
   const m = html.match(new RegExp('const\\s+' + name + '\\s*=\\s*\\[([\\s\\S]*?)\\n\\];', 'm'));
   if (!m) continue;
   for (const roh of zerlegeEintraege(m[1])) {
     const j = Number((roh.match(/\bj:\s*([123])\b/) || [])[1]) || 1;
+    /* Der Prüfungsteil unterscheidet die beiden Datenbestände. Er kommt aus dem
+       t-Feld; fehlt es, gilt der Eintrag als Teil 1 (Altdaten). */
+    const teil = (roh.match(/\bt:\s*['"`](ap\d)['"`]/) || [])[1] || 'ap1';
     const b = (roh.match(/\bb:\s*['"`]([^'"`]+)['"`]/) || [])[1]
       || (roh.match(/\bbereich:\s*['"`]([^'"`]+)['"`]/) || [])[1] || '(ohne)';
     const titel = feld(roh, 'q') || feld(roh, 'f') || feld(roh, 'titel') || feld(roh, 'aufgabe') || '';
     const zusatz = feld(roh, 'e') || feld(roh, 'a') || feld(roh, 'text') || feld(roh, 'einstieg') || '';
     if (!titel && !zusatz) continue;
     const text = (titel + ' ' + zusatz).trim();
-    eintraege.push({
-      format: name, bereich: b, jahr: j,
+    alle.push({
+      format: name, bereich: b, jahr: j, teil: teil,
       titel: titel || '(ohne Überschrift)',
       woerter: new Set(woerter(text)),
       tri: trigramme(text),
@@ -121,8 +133,14 @@ for (const [name] of FORMAT) {
   }
 }
 
+/* Die ausführlichen Abschnitte 1 bis 5 prüfen weiter Teil 1 (der eigene
+   Datenbestand, an dem sich seit der Einführung von Teil 2 nichts geändert
+   hat). Teil 2 bekommt am Ende einen eigenen, gleichartigen Block. */
+const eintraege = alle.filter(x => x.teil === 'ap1');
+const eintraege2 = alle.filter(x => x.teil === 'ap2');
+
 console.log('Inhaltsanalyse — index.html (' + (html.length / 1024).toFixed(0) + ' KB)');
-console.log('Einträge geprüft: ' + eintraege.length);
+console.log('Einträge gesamt: ' + alle.length + '  ·  Teil 1: ' + eintraege.length + '  ·  Teil 2: ' + eintraege2.length);
 console.log('');
 
 /* ============================================================
@@ -300,6 +318,55 @@ for (const [k, liste] of Object.entries(nachTitel)) {
 }
 if (!gleich) console.log('  Kein Titel kommt mehrfach vor.');
 console.log('');
+
+/* ============================================================
+   6. Zweiter Prüfungsteil (AP2)
+   Eigener Block, weil Teil 2 eine andere Achse hat: keine Jahrgänge, sondern
+   vier Prüfungsbereiche. Geprüft wird die Verteilung je Bereich und ob sich
+   Einträge im selben Format zu ähnlich sind.
+   ============================================================ */
+console.log('6. Zweiter Prüfungsteil (AP2)');
+if (!eintraege2.length) {
+  console.log('  Keine AP2-Einträge gefunden.');
+} else {
+  const proFormat2 = {};
+  const proBereich2 = {};
+  for (const e of eintraege2) {
+    proFormat2[e.format] = (proFormat2[e.format] || 0) + 1;
+    proBereich2[e.bereich] = (proBereich2[e.bereich] || 0) + 1;
+  }
+  console.log('  ' + Object.entries(proFormat2).map(([k, v]) => k + ' ' + v).join(' · '));
+  console.log('');
+  console.log('  Prüfungsbereiche:');
+  for (const [b, n] of Object.entries(proBereich2).sort((x, y) => y[1] - x[1])) {
+    console.log('    ' + b.padEnd(16) + String(n).padStart(4) + '  ' + '█'.repeat(Math.max(1, Math.round(n / 2))));
+  }
+  console.log('');
+
+  // Dubletten nur INNERHALB eines Formats — wie in Teil 1.
+  const paare2 = [];
+  for (let i = 0; i < eintraege2.length; i++) {
+    for (let k = i + 1; k < eintraege2.length; k++) {
+      const a = eintraege2[i], b = eintraege2[k];
+      if (a.format !== b.format) continue;
+      const j = jaccard(a.woerter, b.woerter);
+      if (j < SCHWELLE_JACCARD) continue;
+      if (haeufigkeitsAnteil(a.woerter, b.woerter) < SCHWELLE_ANTEIL) continue;
+      paare2.push({ a, b, j });
+    }
+  }
+  if (paare2.length) {
+    console.log('  >>> Mögliche Dubletten im selben Format (' + paare2.length + '):');
+    for (const p of paare2) {
+      console.log('      ' + (p.j * 100).toFixed(0) + '%  ' + p.a.format + '  ' + p.a.titel.slice(0, 48) + '  ↔  ' + p.b.titel.slice(0, 48));
+    }
+  } else if (eintraege2.length >= 20) {
+    console.log('  OK     Keine zwei AP2-Einträge IM SELBEN FORMAT sind sich ähnlich.');
+  } else {
+    console.log('  (Zu wenige AP2-Einträge je Format für eine belastbare Dublettenprüfung.)');
+  }
+  console.log('');
+}
 
 /* ============================================================
    Grenzen dieser Analyse — ausdrücklich genannt
