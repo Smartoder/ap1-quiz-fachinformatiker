@@ -4,6 +4,48 @@ Das Format folgt *Keep a Changelog*. Bruchstellen sind ausdrücklich gekennzeich
 
 ## [Nicht veröffentlicht]
 
+### Hinzugefügt — Netzwerktechnik und IT-Sicherheit ausgebaut (2026-10-08)
+
+Die Inhaltsanalyse wies `netzwerk` (10 Einträge) und `sicherheit` (8) als die
+zwei dünnsten Bereiche aus — beide sind prüfungskritisch (PK-03, PK-04, PK-06).
+Sie sind jetzt auf Prüfungstiefe gebracht.
+
+| Bereich | vorher | jetzt |
+|---|---|---|
+| Netzwerktechnik | 10 | **57** |
+| IT-Sicherheit & Verfügbarkeit | 8 | **46** |
+
+**Neu — Netzwerktechnik:** OSI- und TCP/IP-Modell, Schichten-Zuordnung von
+Router/Switch, TCP vs. UDP, 3-Way-Handshake, DHCP/DNS, Netzwerkkomponenten
+(Switch, Router, Gateway, Access Point, LWL), Konsolenbefehle (ipconfig,
+traceroute/tracert, nslookup, arp), APIPA, VPN-Topologien (Site-to-Site,
+End-to-Site, End-to-End) und -Protokolle (IPsec, L2TP), WLAN-Sicherheit
+(WEP/WPA2/WPA3, PSK/Enterprise), Firewall-Arten, DMZ, IPv4/IPv6, Subnetting,
+Ethernet- und WLAN-Standards, Übertragungszeit, VLAN und Virtualisierung.
+
+**Neu — IT-Sicherheit:** CIA-Trio, Maßnahmen-Trias (technisch/organisatorisch/
+personell), Schutzbedarfskategorien und ISMS, Verschlüsselungs-Trio, Hash/
+Zertifikat/Signatur, Security by Design und Default, 2FA und Passwort-Policy,
+Backup-Verfahren, Angriffsarten (Phishing, Sniffing, Spoofing, Man-in-the-Middle,
+DoS/DDoS), Schadprogramm-Familien, Hacker-Typen, Least Privilege,
+Ransomware-Abwehr.
+
+**Zwei neue Rechenaufgaben (Generatoren):** Übertragungszeit & Datenvolumen
+(Byte↔Bit, Nutzrate, Bandbreitenbedarf) · Verfügbarkeit, SLA & Backup-Volumen.
+
+**Zwei neue Fallstudien:** Büro-Netzwerk planen (Trennung, Komponenten,
+Adressierung, Sicherheit) · Ransomware-Angriff abwehren (Isolieren, Backup,
+Ursache, ISMS).
+
+**Geprüft am 2026-10-08:**
+
+- Qualitätstor `npm run check`: **49/49 bestanden.**
+- Inhaltsanalyse: **keine Dubletten** im selben Format, **kein doppelter Titel**.
+- Teil 1: 436 → **521 Einträge** (QUIZ 204→251 · KARTEN 177→206 · LUECKEN 18→21
+  · FEHLER 8→10 · FAELLE 10→12 · TASKS 19→21).
+- Alle neuen Formate und beide Rechenaufgaben im Browser gestartet, ohne Fehler;
+  Generator-Zahlen über 300 Läufe endlich.
+
 ### Hinzugefügt — Bereich „KI, ML & Deep Learning" im ersten Prüfungsteil (2026-10-08)
 
 Der Trainer bekommt einen neuen Themenbereich im **ersten Prüfungsteil (AP1)**:

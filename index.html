@@ -1722,7 +1722,152 @@ const QUIZ = [
     r: 0, e: 'Bei „human in the loop" bleibt der Mensch in der Entscheidungskette: Er prüft Ergebnisse und gibt sie frei. Das ist Pflicht bei kritischen Anwendungen (Personal, Medizin, Recht) und reduziert Fehler durch Halluzinationen oder Bias.', q_: 'KI' },
   { t: 'ap1', b: 'ki', j: 1, q: 'Wofür wird KI im Rahmen der Prozessanalyse genutzt?',
     a: ['Für Mustererkennung, Prognosen und Anomalieerkennung in Prozessdaten', 'Zum Ausdrucken von Rechnungen', 'Zum Verlegen von Netzwerkkabeln', 'Zum Aufbau der Hardware'],
-    r: 0, e: 'KI hilft in der Prozessanalyse bei Mustererkennung, Vorhersagen (Predictive Maintenance) und Anomalieerkennung. Sie unterstützt Entscheidungen – die fachliche Bewertung bleibt beim Menschen.', q_: 'KI' }
+    r: 0, e: 'KI hilft in der Prozessanalyse bei Mustererkennung, Vorhersagen (Predictive Maintenance) und Anomalieerkennung. Sie unterstützt Entscheidungen – die fachliche Bewertung bleibt beim Menschen.', q_: 'KI' },
+
+  /* ============ Netzwerktechnik (PK-03/04) ============ */
+  { t: 'ap1', b: 'netzwerk', j: 1, q: 'Wie viele Schichten hat das OSI-Modell, und auf welcher Schicht arbeitet ein Router?',
+    a: ['4 Schichten; Router auf Schicht 2', '7 Schichten; Router auf Schicht 3 (Vermittlung)', '7 Schichten; Router auf Schicht 1', '5 Schichten; Router auf Schicht 4'],
+    r: 1, e: 'Das OSI-Modell hat 7 Schichten. Der Router arbeitet auf Schicht 3 (Vermittlung/Network) und leitet Pakete anhand von IP-Adressen weiter. Ein Switch arbeitet auf Schicht 2 mit MAC-Adressen.', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 1, q: 'Auf welcher Schicht des OSI-Modells arbeiten TCP und UDP?',
+    a: ['Schicht 2 (Sicherung)', 'Schicht 3 (Vermittlung)', 'Schicht 4 (Transport)', 'Schicht 7 (Anwendung)'],
+    r: 2, e: 'TCP und UDP gehören zur Transportschicht (Schicht 4). Sie entscheiden über die Art der Übertragung: TCP verbindungsorientiert und zuverlässig, UDP verbindungslos und schnell.', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 1, q: 'Was unterscheidet TCP von UDP?',
+    a: ['TCP ist verbindungsorientiert und sichert die Übertragung, UDP ist verbindungslos ohne Sicherung', 'UDP ist langsamer, aber sicherer als TCP', 'Beide sind verbindungslos', 'TCP wird nur für Video, UDP nur für E-Mail genutzt'],
+    r: 0, e: 'TCP baut eine Verbindung auf (3-Way-Handshake), bestätigt den Empfang und ordnet Pakete – ideal für Dateien und Web. UDP verzichtet darauf – ideal für Streaming oder DNS, wo Tempo wichtiger ist als Vollständigkeit.', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 1, q: 'Wie läuft der 3-Way-Handshake von TCP ab?',
+    a: ['SYN → SYN-ACK → ACK', 'ACK → SYN → FIN', 'PING → PONG → PING', 'GET → POST → OK'],
+    r: 0, e: 'Der Client sendet SYN, der Server antwortet mit SYN-ACK, der Client bestätigt mit ACK. Danach steht die Verbindung und die Datenübertragung beginnt.', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 1, q: 'Welche Aufgabe hat DHCP in einem Netzwerk?',
+    a: ['Es vergibt IP-Adressen und weitere Netzparameter automatisch', 'Es wandelt Domainnamen in IP-Adressen um', 'Es verschlüsselt den Datenverkehr', 'Es filtert unerwünschte Pakete'],
+    r: 0, e: 'DHCP (Dynamic Host Configuration Protocol) vergibt IP-Adresse, Subnetzmaske, Gateway und DNS automatisch. Der Ablauf heißt DORA: Discover → Offer → Request → Acknowledge. DNS macht dagegen Namensauflösung.', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 1, q: 'Welche Aufgabe hat DNS?',
+    a: ['Es ordnet Domainnamen IP-Adressen zu', 'Es vergibt IP-Adressen', 'Es routet Pakete zwischen Netzen', 'Es verschlüsselt Webseiten'],
+    r: 0, e: 'DNS (Domain Name System) ist das „Telefonbuch" des Internets: Es löst Namen wie example.de in IP-Adressen auf. Wichtige Eintragstypen: A (IPv4), AAAA (IPv6), MX (Mail), CNAME (Alias), NS (Nameserver).', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 1, q: 'Welche Netzwerkkomponente verbindet mehrere Geräte in einem LAN und leitet anhand von MAC-Adressen weiter?',
+    a: ['Switch', 'Router', 'Gateway', 'Modem'],
+    r: 0, e: 'Ein Switch arbeitet auf Schicht 2 und leitet Frames anhand der MAC-Adresse gezielt an den richtigen Port. Ein Router verbindet Netze auf Schicht 3 anhand von IP-Adressen.', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 1, q: 'Welche Rolle hat ein Access Point im Netzwerk?',
+    a: ['Er bindet WLAN-Geräte drahtlos an das kabelgebundene Netz an', 'Er vergibt IP-Adressen', 'Er verschlüsselt Festplatten', 'Er ersetzt den Router vollständig'],
+    r: 0, e: 'Ein Access Point (AP) ist der drahtlose Zugangspunkt: Er verbindet WLAN-Clients mit dem LAN. Häufig ist er im WLAN-Router integriert. Ein WLAN-Router vereint Router, Switch und Access Point.', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 1, q: 'Wofür steht die Abkürzung LWL, und welcher Vorteil ist typisch?',
+    a: ['Lichtwellenleiter – unempfindlich gegen elektromagnetische Störungen und für große Distanzen geeignet', 'Lokales Wähl-Leitungssystem – günstig, aber langsam', 'Langsame WAN-Leitung – nur für Telefonie', 'Leistungsstarker WLAN-Layer – nur für Funk'],
+    r: 0, e: 'Lichtwellenleiter (Glasfaser) übertragen Daten als Licht. Vorteile: sehr hohe Bandbreite, große Reichweite und Unempfindlichkeit gegen elektromagnetische Störungen (EMV). Kupferkabel sind günstiger und einfacher zu verlegen.', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 1, q: 'Welcher Befehl zeigt unter Windows die aktuelle IP-Konfiguration an?',
+    a: ['ipconfig', 'ip route', 'netstat -r', 'arp -a'],
+    r: 0, e: 'Unter Windows zeigt ipconfig IP-Adresse, Subnetzmaske und Gateway. Unter Linux heißen die Werkzeuge ifconfig bzw. ip (iproute2). Mit ipconfig /all erhält man zusätzlich MAC-Adresse und DHCP-Informationen.', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 1, q: 'Sie wollen prüfen, über welche Zwischenstationen ein Ziel im Netz erreicht wird. Welches Werkzeug nutzen Sie?',
+    a: ['traceroute (Linux) bzw. tracert (Windows)', 'ping', 'nslookup', 'chmod'],
+    r: 0, e: 'traceroute/tracert zeigt alle Zwischenstationen (Hops) bis zum Ziel. ping prüft nur die grundsätzliche Erreichbarkeit. nslookup dient der DNS-Abfrage.', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 1, q: 'Wozu dient der Befehl nslookup?',
+    a: ['Zur Abfrage von DNS-Einträgen – welcher IP-Adresse ist ein Name zugeordnet', 'Zum Anzeigen der MAC-Adressen', 'Zum Löschen einer Datei', 'Zum Starten eines Dienstes'],
+    r: 0, e: 'nslookup fragt einen DNS-Server: Welche IP steckt hinter einem Namen (oder umgekehrt)? Damit prüft man Namensauflösung, wenn eine Webseite per Ping nicht erreichbar scheint.', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 1, q: 'Welcher Befehl ordnet einer IP-Adresse die zugehörige MAC-Adresse zu?',
+    a: ['arp', 'ping', 'ipconfig', 'tracert'],
+    r: 0, e: 'ARP (Address Resolution Protocol) und der Befehl arp zeigen die Zuordnung IP-Adresse ↔ MAC-Adresse im lokalen Netz. Diese Zuordnung braucht ein Gerät, um einen Frame im LAN adressieren zu können.', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 2, q: 'Ein Gerät hat die Adresse 169.254.12.5. Was bedeutet das?',
+    a: ['Es hat vom DHCP keine Adresse erhalten und sich selbst eine APIPA-Adresse gegeben', 'Es liegt im öffentlichen Internet', 'Es ist ein Server', 'Die Adresse ist ungültig und darf nie vorkommen'],
+    r: 0, e: '169.254.0.0/16 ist der APIPA-Bereich. Erscheint so eine Adresse, war der DHCP-Server nicht erreichbar – ein klassisches Troubleshooting-Signal für ein Netzwerkproblem.', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 2, q: 'Welche VPN-Topologie verbindet zwei ganze Standorte dauerhaft miteinander?',
+    a: ['Site-to-Site', 'End-to-End', 'End-to-Site', 'Broadcast-to-Broadcast'],
+    r: 0, e: 'Site-to-Site verbindet zwei Netzwerke (z. B. Firmenstandorte) über einen Tunnel. End-to-Site bindet ein einzelnes Gerät an ein Netz an (typisch Homeoffice), End-to-End verbindet zwei Endgeräte direkt.', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 2, q: 'Welche Protokolle werden typischerweise für einen VPN-Tunnel verwendet?',
+    a: ['IPsec und L2TP', 'HTTP und FTP', 'SMTP und POP3', 'SMB und NFS'],
+    r: 0, e: 'Für VPN sind IPsec (Sicherung auf IP-Ebene) und L2TP (Tunnel) typisch, häufig kombiniert (L2TP/IPsec). OpenVPN und WireGuard sind moderne Alternativen. HTTP/FTP sind Anwendungsprotokolle.', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 2, q: 'Warum ist WEP für WLAN heute nicht mehr zu verwenden?',
+    a: ['Es gilt als gebrochen und lässt sich in kurzer Zeit knacken – WPA2/WPA3 sind zu verwenden', 'Es ist zu langsam für moderne Geräte', 'Es funktioniert nur mit Kabel', 'Es unterstützt keine IP-Adressen'],
+    r: 0, e: 'WEP ist kryptografisch gebrochen. Sicher sind WPA2 und WPA3. Unterschieden wird zwischen PSK (Pre-shared Key, für Zuhause/kleine Netze) und Enterprise (Anmeldung über einen RADIUS-Server, für Betriebe).', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 2, q: 'Was ist eine DMZ?',
+    a: ['Eine abgeschirmte Pufferzone zwischen Internet und internem Netz für öffentlich erreichbare Server', 'Ein verschlüsselter Tunnel', 'Ein VLAN ohne IP-Adressen', 'Ein Ersatz für die Firewall'],
+    r: 0, e: 'Die DMZ (Demilitarized Zone) liegt zwischen dem externen und dem internen Netz. Dort stehen Server, die aus dem Internet erreichbar sein müssen (Web-, Mailserver). Wird so einer kompromittiert, bleibt das interne Netz geschützt.', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 2, q: 'Welche Firewall-Art prüft den Verbindungszustand und lässt nur Antworten auf zuvor erlaubte Verbindungen durch?',
+    a: ['Stateful Inspection Firewall', 'Packet Filter', 'Proxy (Application Layer)', 'Personal Firewall ohne Regeln'],
+    r: 0, e: 'Eine Stateful-Inspection-Firewall führt eine Zustandstabelle und lässt nur erwartete Antwortpakete passieren. Ein reiner Packet Filter prüft nur einzelne Pakete nach Adresse/Port. Application-Layer-Firewalls (WAF/Proxy) prüfen zusätzlich Inhalte.', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 2, q: 'Wodurch unterscheiden sich IPv4 und IPv6?',
+    a: ['IPv4 nutzt 32 Bit (etwa 4,3 Mrd. Adressen), IPv6 nutzt 128 Bit – dadurch praktisch unerschöpflich', 'IPv6 ist langsamer als IPv4', 'IPv4 arbeitet ohne Subnetzmaske', 'IPv6 ist eine Erweiterung der MAC-Adresse'],
+    r: 0, e: 'IPv4 hat 32-Bit-Adressen (Punktnotation), IPv6 hat 128-Bit-Adressen (Hexadezimal mit Doppelpunkten) und vergrößert den Adressraum enorm. IPv6 bringt zusätzlich SLAAC (automatische Konfiguration) und ist heute in vielen Netzen parallel aktiv (Dual-Stack).', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 2, q: 'Ein Subnetz hat die Maske 255.255.255.192. Welche CIDR-Notation und wie viele nutzbare Hosts ergeben sich?',
+    a: ['/26 mit 62 nutzbaren Hosts', '/24 mit 254 Hosts', '/27 mit 30 Hosts', '/25 mit 126 Hosts'],
+    r: 0, e: '192 im letzten Oktett entspricht den Bits 11000000, also /26. Host-Bits = 32 − 26 = 6 → 2⁶ = 64 Adressen, davon 2 abziehen (Netz- und Broadcastadresse) = 62 nutzbare Hosts.', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 3, q: 'Was ist ein VLAN und welchen Zweck erfüllt es?',
+    a: ['Ein logisch getrenntes Netz innerhalb derselben physischen Infrastruktur – trennt Abteilungen und erhöht die Sicherheit', 'Ein Kabeltyp', 'Ein drahtloses Netz ohne Verschlüsselung', 'Eine Firewall-Regel'],
+    r: 0, e: 'Ein VLAN (Virtual LAN) teilt einen Switch logisch in getrennte Netze. So lassen sich Abteilungen trennen, ohne eigene Hardware. Vorteile: Sicherheit (Trennung), weniger Broadcast-Traffic und flexible Zuordnung.', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 3, q: 'Welchen Vorteil bringt Virtualisierung in einem Serverumfeld?',
+    a: ['Mehrere Systeme laufen isoliert auf einer Hardware – besser ausgelastet, platz- und energiesparend', 'Sie erhöht die Netzwerkgeschwindigkeit', 'Sie ersetzt das Backup', 'Sie verhindert alle Angriffe'],
+    r: 0, e: 'Virtualisierung betreibt mehrere virtuelle Maschinen auf einem physischen Server (Hypervisor Typ 1 = Bare-Metal, Typ 2 = Hosted). Vorteile: bessere Auslastung, Konsolidierung, einfacheres Testen und Wiederherstellen. Nachteil: ein Ausfall trifft mehrere Systeme („Eier in einem Korb").', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 1, q: 'Welche Aussage über Ethernet ist richtig?',
+    a: ['Ethernet ist der Standard für kabelgebundene LANs und überträgt Frames über MAC-Adressen', 'Ethernet ist ein reines WLAN-Verfahren', 'Ethernet funktioniert nur über Glasfaser', 'Ethernet ist ein VPN-Protokoll'],
+    r: 0, e: 'Ethernet ist der LAN-Standard auf Schicht 1 und 2. Daten werden in Frames übertragen, adressiert über die MAC-Adresse. Übliche Geschwindigkeiten reichen von 100 Mbit/s bis 10 Gbit/s und darüber.', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 1, q: 'Welche Standards werden für WLAN verwendet?',
+    a: ['Die IEEE-802.11-Familie (z. B. 802.11ac, 802.11ax/Wi-Fi 6)', 'Die IEEE-802.3-Familie (Ethernet)', 'Die USB-Familie', 'Die H.264-Familie'],
+    r: 0, e: 'WLAN wird durch die IEEE-802.11-Standards beschrieben: 802.11n, 802.11ac (Wi-Fi 5), 802.11ax (Wi-Fi 6). 802.3 ist dagegen der Ethernet-Standard für Kabelnetze.', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 1, q: 'Ein Dokument mit 12 MB soll über eine Leitung mit 24 Mbit/s übertragen werden. Wie lange dauert die Übertragung etwa?',
+    a: ['Etwa 4 Sekunden', 'Etwa 0,5 Sekunden', 'Etwa 12 Sekunden', 'Etwa 48 Sekunden'],
+    r: 0, e: '12 MB × 8 = 96 Mbit. 96 Mbit ÷ 24 Mbit/s = 4 s. Merke: MB in Mbit immer mit × 8 umrechnen, sonst verwechselt man Byte und Bit.', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 1, q: 'Welches Gerät arbeitet als Verbindung zwischen zwei unterschiedlichen Netzwerken und leitet auf Basis von IP-Adressen?',
+    a: ['Router', 'Switch', 'Hub', 'Access Point'],
+    r: 0, e: 'Der Router verbindet unterschiedliche Netze (Schicht 3) und entscheidet anhand der IP-Adresse über den Weg. Ein Hub verteilt nur stumpf an alle Ports (veraltet), ein Switch arbeitet mit MAC-Adressen in einem Netz.', q_: 'NW' },
+
+  /* ============ IT-Sicherheit (PK-06) ============ */
+  { t: 'ap1', b: 'sicherheit', j: 1, q: 'Welche drei Schutzziele nennt der offizielle IHK-Prüfungskatalog für die Informationssicherheit?',
+    a: ['Vertraulichkeit, Integrität, Verfügbarkeit', 'Authentizität, Vertraulichkeit, Anonymität', 'Integrität, Redundanz, Skalierbarkeit', 'Verfügbarkeit, Sicherheit, Kontrolle'],
+    r: 0, e: 'Der Katalog nennt das CIA-Trio: Vertraulichkeit (nur Berechtigte), Integrität (unverändert/korrekt) und Verfügbarkeit (nutzbar, wenn benötigt). Authentizität wird in Lehrbüchern oft ergänzt, ist aber kein Katalog-Pflichtziel.', q_: 'PK6' },
+  { t: 'ap1', b: 'sicherheit', j: 1, q: 'Welche drei Klassen von Schutzmaßnahmen unterscheidet die IT-Sicherheit?',
+    a: ['Technische, organisatorische und personelle Maßnahmen', 'Software, Hardware und Netzwerk', 'Kurzfristige, mittelfristige und langfristige', 'Interne, externe und hybride'],
+    r: 0, e: 'Technische Maßnahmen (Virenschutz, Firewall, Verschlüsselung), organisatorische Maßnahmen (IT-Sicherheitsbeauftragter, Richtlinien, Passwort-Policy) und personelle Maßnahmen (Sicherheitsbewusstsein der Mitarbeiter).', q_: 'PK6' },
+  { t: 'ap1', b: 'sicherheit', j: 1, q: 'Was bedeutet das Schutzziel „Integrität"?',
+    a: ['Daten sind unverändert und korrekt', 'Daten sind nur für Berechtigte sichtbar', 'Daten sind jederzeit verfügbar', 'Daten sind verschlüsselt gespeichert'],
+    r: 0, e: 'Integrität bedeutet Unverändertheit und Korrektheit der Daten. Vertraulichkeit meint den Schutz vor unbefugtem Zugriff, Verfügbarkeit die Nutzbarkeit zum benötigten Zeitpunkt. Hashwerte und Signaturen helfen, Integrität nachzuweisen.', q_: 'PK6' },
+  { t: 'ap1', b: 'sicherheit', j: 1, q: 'Welche drei Stufen kennt die Schutzbedarfskategorie im BSI IT-Grundschutz?',
+    a: ['Normal, hoch, sehr hoch', 'Niedrig, mittel, hoch', 'Grün, gelb, rot', 'Öffentlich, intern, geheim'],
+    r: 0, e: 'Der BSI IT-Grundschutz kennt die Stufen „normal", „hoch" und „sehr hoch". Die Schutzbedarfsanalyse bewertet Objektkategorien – Anwendungen, IT-Systeme, Räume/Infrastruktur und Kommunikationsverbindungen.', q_: 'PK6' },
+  { t: 'ap1', b: 'sicherheit', j: 1, q: 'Wofür steht die Abkürzung ISMS?',
+    a: ['Informations-Sicherheitsmanagementsystem', 'Internet-Service-Management-Server', 'Integriertes-Software-Monitoring-System', 'Internationales-Sicherheits-Melde-System'],
+    r: 0, e: 'Ein ISMS (Informations-Sicherheitsmanagementsystem) umfasst alle Regelungen und Prozesse, mit denen ein Betrieb seine Informationssicherheit steuert und verbessert – nach BSI IT-Grundschutz oder ISO/IEC 27001.', q_: 'PK6' },
+  { t: 'ap1', b: 'sicherheit', j: 1, q: 'Welche drei Verschlüsselungstechniken fordert der Prüfungskatalog?',
+    a: ['Symmetrische, asymmetrische und hybride Verschlüsselung', 'Nur symmetrische Verschlüsselung', 'Hashing, Signatur und Kompression', 'WEP, WPA und WPA2'],
+    r: 0, e: 'Gefordert ist das Trio: symmetrisch (ein Schlüssel, z. B. AES), asymmetrisch (Schlüsselpaar, z. B. RSA) und hybrid (Kombination, in der Praxis Standard, z. B. TLS). Hybrid = asymmetrisch für den Schlüsselaustausch, symmetrisch für die Daten.', q_: 'PK6' },
+  { t: 'ap1', b: 'sicherheit', j: 1, q: 'Warum verschlüsselt ein Hash-Verfahren im Gegensatz zur Verschlüsselung nicht umkehrbar?',
+    a: ['Ein Hash ist eine Einwegfunktion – aus dem Hashwert lassen sich die Originaldaten nicht zurückrechnen', 'Weil Hashes kürzer sind als Passwörter', 'Weil Hashes nur für Bilder funktionieren', 'Weil Hashes nicht gespeichert werden dürfen'],
+    r: 0, e: 'Ein Hashwert ist eine Einwegfunktion fester Länge. Er dient dem Integritätsnachweis, nicht der Wiederherstellung des Originals. Auch bei winziger Änderung der Eingabe entsteht ein völlig anderer Hashwert (Lawineneffekt).', q_: 'PK6' },
+  { t: 'ap1', b: 'sicherheit', j: 1, q: 'Was unterscheidet eine digitale Signatur von der Verschlüsselung?',
+    a: ['Die Signatur weist Echtheit und Unverändertheit nach (mit dem privaten Schlüssel erzeugt, mit dem öffentlichen geprüft)', 'Die Signatur verschlüsselt den gesamten Inhalt', 'Die Signatur ersetzt ein Passwort', 'Die Signatur ist nur für Papierdokumente relevant'],
+    r: 0, e: 'Die digitale Signatur ist das Gegenstück zur Verschlüsselung: Sie sichert Nachweisbarkeit. Der Sender signiert mit seinem privaten Schlüssel, der Empfänger prüft mit dem öffentlichen – so wird die Herkunft und Unverändertheit belegt.', q_: 'PK6' },
+  { t: 'ap1', b: 'sicherheit', j: 1, q: 'Was leistet Security by Design im Gegensatz zu Security by Default?',
+    a: ['Security by Design verankert Sicherheit schon in der Entwicklung, Security by Default setzt sichere Standardeinstellungen', 'Beide bedeuten dasselbe', 'Security by Default bedeutet, alle Regeln abzuschalten', 'Security by Design ersetzt das Backup'],
+    r: 0, e: 'Security by Design: Sicherheit wird von Anfang an mitgedacht und eingebaut. Security by Default: Die Grundeinstellung ist sicher (z. B. Standardpasswörter müssen geändert werden, unnötige Dienste sind aus).', q_: 'PK6' },
+  { t: 'ap1', b: 'sicherheit', j: 1, q: 'Aus welchen Kategorien kann ein zweiter Faktor (2FA) bestehen?',
+    a: ['Wissen (Passwort), Besitz (Token/Gerät), Biometrie (Fingerabdruck)', 'Nur aus einem zweiten Passwort', 'Nur aus einem Fingerabdruck', 'Aus zwei Passwörtern desselben Kontos'],
+    r: 0, e: 'Zwei-Faktor-Authentifizierung kombiniert Faktoren aus verschiedenen Kategorien: Wissen (etwas, das man weiß), Besitz (etwas, das man hat) und Biometrie (etwas, das man ist). Zwei Passwörter wären nur 2× dieselbe Kategorie – kein echter zweiter Faktor.', q_: 'PK6' },
+  { t: 'ap1', b: 'sicherheit', j: 1, q: 'Warum sind Backups eine Maßnahme der Verfügbarkeit?',
+    a: ['Sie ermöglichen die Wiederherstellung von Daten nach Ausfall, Löschung oder Verschlüsselung durch Ransomware', 'Sie verschlüsseln die Daten', 'Sie verhindern jeden Angriff', 'Sie ersetzen die Feuerlöscher'],
+    r: 0, e: 'Ein Backup sorgt dafür, dass Daten und Systeme nach einem Ausfall wiederhergestellt werden können – das ist Verfügbarkeit. Die 3-2-1-Regel hilft: mindestens 3 Kopien, auf 2 verschiedenen Medien, davon 1 außer Haus.', q_: 'PK6' },
+  { t: 'ap1', b: 'sicherheit', j: 2, q: 'Welche Angriffsart gibt sich als vertrauenswürdige Stelle aus, um Zugangsdaten zu erbeuten?',
+    a: ['Phishing', 'Sniffing', 'DDoS', 'Hashing'],
+    r: 0, e: 'Beim Phishing wird der Nutzer über gefälschte Mails oder Seiten zur Preisgabe von Zugangsdaten verleitet. Sniffing ist das Mitlesen des Datenverkehrs, DDoS zielt auf die Überlastung eines Dienstes; Hashing ist keine Angriffsart.', q_: 'PK6' },
+  { t: 'ap1', b: 'sicherheit', j: 2, q: 'Was kennzeichnet einen Man-in-the-Middle-Angriff?',
+    a: ['Ein Angreifer schaltet sich unbemerkt zwischen die Kommunikationspartner und kann Daten lesen oder verändern', 'Ein Angreifer löscht nur Backups', 'Ein Angreifer füllt eine Festplatte', 'Ein Angreifer sendet Werbung'],
+    r: 0, e: 'Beim MitM-Angriff sitzt der Angreifer in der Mitte der Verbindung und liest oder manipuliert den Verkehr. Schutz: Verschlüsselung (TLS), Zertifikatsprüfung und geprüfte Netzwerke.', q_: 'PK6' },
+  { t: 'ap1', b: 'sicherheit', j: 2, q: 'Wie funktioniert ein DoS/DDoS-Angriff?',
+    a: ['Viele Anfragen überlasten einen Dienst, sodass er nicht mehr erreichbar ist', 'Passwörter werden geknackt', 'Daten werden verschlüsselt', 'Ein Back-up wird überschrieben'],
+    r: 0, e: 'Ein DoS (Denial of Service) überflutet einen Dienst mit Anfragen, bis er ausfällt. Bei DDoS kommt die Last von vielen verteilten Systemen (Botnetz). Ziel ist die Verletzung der Verfügbarkeit.', q_: 'PK6' },
+  { t: 'ap1', b: 'sicherheit', j: 2, q: 'Was ist ein Trojaner im Gegensatz zu einem Virus?',
+    a: ['Ein Trojaner tarnt sich als nützliches Programm und führt im Hintergrund schädliche Aktionen aus', 'Ein Trojaner verbreitet sich selbstständig wie ein Wurm', 'Ein Trojaner ist ein Schutzprogramm', 'Ein Trojaner befällt nur Hardware'],
+    r: 0, e: 'Ein Trojaner (trojanisches Pferd) gelangt als scheinbar nützliche Software auf das System und führt dann schädliche Aktionen aus. Ein Virus hängt sich an Wirtsdateien und verbreitet sich, ein Wurm verbreitet sich selbstständig über Netze.', q_: 'PK6' },
+  { t: 'ap1', b: 'sicherheit', j: 2, q: 'Was ist Ransomware?',
+    a: ['Schadsoftware, die Daten verschlüsselt und für die Entschlüsselung Lösegeld verlangt', 'Ein Verschlüsselungsprogramm zur Datensicherung', 'Ein Netzwerkprotokoll', 'Ein Backup-Verfahren'],
+    r: 0, e: 'Ransomware verschlüsselt Daten des Opfers und fordert Lösegeld. Schutz: aktuelle Backups (offline!), Virenschutz, Patches, Sensibilisierung, keine Zahlung als Lösung.', q_: 'PK6' },
+  { t: 'ap1', b: 'sicherheit', j: 2, q: 'Welche Aussage über einen Brandabschnitt ist richtig?',
+    a: ['Ein Brandabschnitt begrenzt die Ausbreitung von Feuer und Rauch durch bauliche Trennung', 'Ein Brandabschnitt ist ein Software-Backup', 'Ein Brandabschnitt ist ein RAID-Verbund', 'Ein Brandabschnitt schützt nur das Netzwerk'],
+    r: 0, e: 'Ein Brandabschnitt ist eine bauliche Maßnahme: Wände, Türen und Decken mit Feuerwiderstand trennen Gebäudeteile, damit sich ein Brand nicht ausbreitet. Er ist Teil der Verfügbarkeits- und Sicherheitsmaßnahmen im Serverraum.', q_: 'PK6' },
+  { t: 'ap1', b: 'sicherheit', j: 3, q: 'Warum sind Backups gegen Ransomware kein Selbstschutz, wenn sie permanent am Netz hängen?',
+    a: ['Die Verschlüsselungssoftware kann auch die verbundenen Backups erreichen – deshalb sind Offline- oder unveränderbare Sicherungen nötig', 'Weil Backups grundsätzlich nutzlos sind', 'Weil Ransomware nur Festplatten zerstört', 'Weil Backups nur für Systeme gelten'],
+    r: 0, e: 'Hängt die Sicherung dauerhaft am Netz, wird sie vom Angreifer mitverschlüsselt. Deshalb gilt: eine Kopie offline/außer Haus, unveränderbare Sicherungen (WORM) und Wiederherstellung testen.', q_: 'PK6' },
+  { t: 'ap1', b: 'sicherheit', j: 3, q: 'Was ist das Prinzip der minimalen Rechte (Least Privilege)?',
+    a: ['Jeder Nutzer erhält nur die Rechte, die er für seine Aufgabe unbedingt benötigt', 'Jeder bekommt Administratorrechte für Flexibilität', 'Alle Rechte werden zentral gespeichert', 'Rechte werden grundsätzlich abgeschafft'],
+    r: 0, e: 'Least Privilege begrenzt den Schaden bei Missbrauch oder Kompromittierung: Wer weniger darf, kann weniger anrichten. Ergänzend gilt das Need-to-know-Prinzip für den Zugriff auf Daten.', q_: 'PK6' },
+  { t: 'ap1', b: 'sicherheit', j: 3, q: 'Warum ist die Verfügbarkeit im Serverraum auch eine bauliche Aufgabe?',
+    a: ['Weil Stromausfall, Brand, Hitze und Wasser die Systeme unabhängig von der Software ausfallen lassen können', 'Weil Software nie ausfällt', 'Weil nur Backups die Verfügbarkeit sichern', 'Weil der Serverraum keine Rolle spielt'],
+    r: 0, e: 'Verfügbarkeit entsteht durch Zusammenspiel: USV für Strom, Brandabschnitt und Löschanlage, Klimatisierung, redundante Anbindungen und gesicherte Zugänge. Die beste Software scheitert an einem überfluteten Serverraum.', q_: 'PK6' }
 ];
 
 /* ---------- Karteikarten (Spaced Repetition) ---------- */
@@ -1921,7 +2066,38 @@ const KARTEN = [
   { t: 'ap1', b: 'ki', j: 2, f: 'KI als Angriffswerkzeug', a: '<ul><li><b>Phishing</b>: individuelle, fehlerfreie Mails in jeder Sprache.</li><li><b>Deepfakes</b>: gefälschte Stimmen und Videos („CEO-Fraud").</li><li><b>Automatisierung</b>: massenhaftes Ausprobieren von Passwörtern.</li></ul><p>Folge: <b>Sensibilisierung</b> der Mitarbeiter und technische Schutzmaßnahmen werden wichtiger.</p>', q_: 'KI' },
   { t: 'ap1', b: 'ki', j: 3, f: 'Ressourcen- und Energieverbrauch von KI', a: '<p>Training großer Modelle und der Dauerbetrieb in Rechenzentren verbrauchen viel <b>Strom und Kühlung</b>.</p><p>Das ist ein Kosten- und Nachhaltigkeitsthema. Gegenmaßnahmen: passende (nicht maximale) Modellgröße, effiziente Hardware, gemietete statt eigener Ressourcen, sparsamer Betrieb.</p>', q_: 'KI' },
   { t: 'ap1', b: 'ki', j: 3, f: 'Human in the loop', a: '<p>Der Mensch bleibt in der Entscheidungskette: Er <b>prüft und bestätigt</b> das Ergebnis des KI-Systems, bevor es wirkt.</p><p>Pflicht bei kritischen Anwendungen (Personal, Medizin, Recht). Reduziert Fehler durch Halluzinationen, Bias und Fehlklassifikation.</p>', q_: 'KI' },
-  { t: 'ap1', b: 'ki', j: 1, f: 'KI in der Prozessanalyse', a: '<ul><li><b>Mustererkennung</b>: wiederkehrende Abläufe sichtbar machen.</li><li><b>Prognose</b>: Vorhersage von Ausfällen (Predictive Maintenance) und Bedarfen.</li><li><b>Anomalieerkennung</b>: ungewöhnliche Vorgänge in Logs oder Messwerten finden.</li></ul><p>Die KI liefert Hinweise; die fachliche Bewertung und Entscheidung bleibt beim Menschen.</p>', q_: 'KI' }
+  { t: 'ap1', b: 'ki', j: 1, f: 'KI in der Prozessanalyse', a: '<ul><li><b>Mustererkennung</b>: wiederkehrende Abläufe sichtbar machen.</li><li><b>Prognose</b>: Vorhersage von Ausfällen (Predictive Maintenance) und Bedarfen.</li><li><b>Anomalieerkennung</b>: ungewöhnliche Vorgänge in Logs oder Messwerten finden.</li></ul><p>Die KI liefert Hinweise; die fachliche Bewertung und Entscheidung bleibt beim Menschen.</p>', q_: 'KI' },
+
+  /* ============ Netzwerktechnik (PK-03/04) ============ */
+  { t: 'ap1', b: 'netzwerk', j: 1, f: 'Das OSI-Modell – die sieben Schichten', a: '<ol><li>Bitübertragung (Physical) – Kabel, Stecker, LWL</li><li>Sicherung (Data Link) – Ethernet, MAC, ARP</li><li>Vermittlung (Network) – IP, ICMP, Routing</li><li>Transport – TCP, UDP</li><li>Sitzung (Session) – NetBIOS, RPC</li><li>Darstellung (Presentation) – TLS/SSL, MIME</li><li>Anwendung (Application) – HTTP, FTP, SMTP, DNS</li></ol><p>Merksatz von unten nach oben: <b>P</b>lease <b>D</b>o <b>N</b>ot <b>T</b>hrow <b>S</b>ausage <b>P</b>izza <b>A</b>way.</p>', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 1, f: 'OSI-Modell vs. TCP/IP-Modell', a: '<p><b>OSI</b>: 7 Schichten – Referenzmodell zum Verstehen.</p><p><b>TCP/IP</b>: 4 Schichten – das tatsächlich genutzte Modell:<br>Network Access · Internet · Transport · Application.</p><p>Die TCP/IP-Schichten entsprechen zusammengefassten OSI-Schichten.</p>', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 1, f: 'TCP vs. UDP im Vergleich', a: '<ul><li><b>TCP</b>: verbindungsorientiert, bestätigt Empfang, ordnet Pakete neu – Dateien, Web, E-Mail.</li><li><b>UDP</b>: verbindungslos, keine Bestätigung, geringer Overhead – Streaming, VoIP, DNS.</li></ul><p><b>3-Way-Handshake</b>: SYN → SYN-ACK → ACK.</p>', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 1, f: 'Netzwerkkomponenten und ihre Schicht', a: '<ul><li><b>Hub</b>: Schicht 1, verteilt an alle Ports (veraltet).</li><li><b>Switch</b>: Schicht 2, leitet anhand der <b>MAC-Adresse</b>.</li><li><b>Router</b>: Schicht 3, verbindet Netze anhand der <b>IP-Adresse</b>.</li><li><b>Gateway</b>: verbindet unterschiedliche Systeme/Protokolle.</li><li><b>Access Point</b>: drahtloser Zugang (WLAN).</li></ul>', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 1, f: 'DHCP und DNS – zwei Kerndienste', a: '<p><b>DHCP</b> vergibt automatisch IP-Adresse, Subnetzmaske, Gateway und DNS. Ablauf <b>DORA</b>: Discover → Offer → Request → Acknowledge.</p><p><b>DNS</b> löst Namen in IP-Adressen auf (das „Telefonbuch"). Einträge: A, AAAA, MX, CNAME, NS, PTR.</p><p>Adresse <b>169.254.x.x</b> (APIPA) = kein DHCP-Server erreichbar.</p>', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 1, f: 'Konsolenbefehle für das Netzwerk', a: '<ul><li><b>ipconfig</b> (Win) / <b>ip</b>, ifconfig (Linux) – IP-Konfiguration</li><li><b>ping</b> – Erreichbarkeit</li><li><b>traceroute</b> (Linux) / <b>tracert</b> (Win) – Weg/Hops zum Ziel</li><li><b>nslookup</b> – DNS-Abfrage</li><li><b>arp</b> – IP ↔ MAC</li></ul>', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 1, f: 'Übertragungszeit berechnen', a: '<p><b>Zeit = Datenmenge ÷ Übertragungsrate</b></p><p>Einheit beachten: <b>1 Byte = 8 Bit</b>. Aus MB also erst Mbit machen (× 8).</p><p>Beispiel: 12 MB ÷ 24 Mbit/s → 96 Mbit ÷ 24 = <b>4 s</b>.</p>', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 2, f: 'VPN – Zweck, Topologien und Protokolle', a: '<p><b>VPN</b> = verschlüsselter Tunnel über ein unsicheres Netz; die Teilnehmer wirken wie in einem lokalen Netz.</p><ul><li><b>Site-to-Site</b> – zwei Standorte verbinden</li><li><b>End-to-Site</b> – ein Gerät an ein Netz (Homeoffice)</li><li><b>End-to-End</b> – zwei Endgeräte direkt</li></ul><p>Protokolle: <b>IPsec</b>, <b>L2TP</b> (oft L2TP/IPsec), modern: OpenVPN, WireGuard.</p>', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 2, f: 'WLAN-Sicherheit: WEP, WPA2, WPA3', a: '<p><b>WEP</b>: gebrochen – nicht mehr verwenden.</p><p><b>WPA2</b>: sicher, Standard. <b>WPA3</b>: aktueller, noch sicherer.</p><p>Zwei Betriebsarten: <b>PSK</b> (Pre-shared Key, für Zuhause) und <b>Enterprise</b> (Anmeldung über RADIUS-Server, für Betriebe).</p><p>Standards: IEEE 802.11 ac/ax (Wi-Fi 5/6).</p>', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 2, f: 'Firewall-Arten', a: '<ul><li><b>Packet Filter</b>: prüft einzelne Pakete nach Adresse/Port.</li><li><b>Stateful Inspection</b>: führt eine Zustandstabelle und lässt nur erwartete Antworten durch.</li><li><b>Application Layer / WAF</b>: prüft Inhalte auf Anwendungsebene.</li><li><b>Personal Firewall</b>: schützt ein einzelnes Gerät.</li></ul>', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 2, f: 'DMZ und Port-Forwarding', a: '<p><b>DMZ</b> (Demilitarized Zone): Pufferzone zwischen Internet und internem Netz. Dort stehen öffentlich erreichbare Server (Web, Mail). Wird einer kompromittiert, bleibt das interne Netz geschützt.</p><p><b>Port-Forwarding</b>: Der Router leitet Anfragen an einen bestimmten Port an ein internes Gerät weiter.</p>', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 2, f: 'IPv4 vs. IPv6', a: '<ul><li><b>IPv4</b>: 32 Bit, etwa 4,3 Mrd. Adressen, Punktnotation, private Bereiche 10.x, 172.16–31.x, 192.168.x.</li><li><b>IPv6</b>: 128 Bit, praktisch unerschöpflich, Hexadezimal mit Doppelpunkten, SLAAC zur Auto-Konfiguration.</li></ul><p>Beide laufen heute oft parallel (<b>Dual-Stack</b>).</p>', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 2, f: 'LWL und Ethernet – Kabel und Standards', a: '<p><b>LWL</b> (Lichtwellenleiter): Daten als Licht, sehr hohe Bandbreite, große Reichweite, unempfindlich gegen EMV.</p><p><b>Ethernet</b>: LAN-Standard, Frames über MAC-Adressen, 100 Mbit/s bis 10 Gbit/s+. Kupfer (Twisted Pair) ist günstiger, aber störanfälliger und begrenzter in der Länge.</p>', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 3, f: 'VLAN und Virtualisierung', a: '<p><b>VLAN</b>: logisch getrenntes Netz auf derselben Hardware – trennt Abteilungen, erhöht Sicherheit, senkt Broadcast-Last.</p><p><b>Virtualisierung</b>: mehrere Systeme auf einer Hardware. Hypervisor <b>Typ 1</b> (Bare-Metal) und <b>Typ 2</b> (Hosted). Vorteile: Auslastung, Kosten, flexible Tests. Nachteil: ein Ausfall trifft mehrere Systeme.</p>', q_: 'NW' },
+  { t: 'ap1', b: 'netzwerk', j: 1, f: 'Subnetting: Adressen und nutzbare Hosts', a: '<p>Host-Bits = 32 − Präfixlänge.</p><p><b>Adressen im Subnetz</b> = 2^(Host-Bits)<br><b>Nutzbare Hosts</b> = 2^(Host-Bits) − 2</p><p>/24 → 254 · /25 → 126 · /26 → 62 · /27 → 30 · /28 → 14 · /29 → 6 · /30 → 2.</p>', q_: 'NW' },
+
+  /* ============ IT-Sicherheit (PK-06) ============ */
+  { t: 'ap1', b: 'sicherheit', j: 1, f: 'Die drei Schutzziele (CIA-Trio)', a: '<ul><li><b>Vertraulichkeit</b>: nur Berechtigte haben Zugriff.</li><li><b>Integrität</b>: Daten sind unverändert und korrekt.</li><li><b>Verfügbarkeit</b>: Daten und Systeme sind nutzbar, wenn benötigt.</li></ul><p>Der Katalog nennt diese drei. <b>Authentizität</b> (Echtheit) wird in Lehrbüchern oft als viertes Ziel ergänzt.</p>', q_: 'PK6' },
+  { t: 'ap1', b: 'sicherheit', j: 1, f: 'Die Maßnahmen-Trias der IT-Sicherheit', a: '<ul><li><b>Technisch</b>: Virenschutz, Personal Firewall, Verschlüsselung.</li><li><b>Organisatorisch</b>: IT-Sicherheitsbeauftragter, Datenschutzbeauftragter, Passwort-Policy, Richtlinien.</li><li><b>Personell</b>: Sicherheitsbewusstsein der Mitarbeiter schulen.</li></ul><p>Erst das Zusammenspiel aller drei macht Sicherheit aus.</p>', q_: 'PK6' },
+  { t: 'ap1', b: 'sicherheit', j: 1, f: 'Verschlüsselung: symmetrisch, asymmetrisch, hybrid', a: '<ul><li><b>Symmetrisch</b>: ein gemeinsamer Schlüssel (z. B. AES) – schnell, aber Schlüsselübergabe ist das Problem.</li><li><b>Asymmetrisch</b>: Schlüsselpaar öffentlich/privat (z. B. RSA) – löst die Schlüsselübergabe, ist aber langsam.</li><li><b>Hybrid</b>: Kombination, in der Praxis Standard (z. B. TLS) – asymmetrisch für den Schlüsselaustausch, symmetrisch für die Daten.</li></ul>', q_: 'PK6' },
+  { t: 'ap1', b: 'sicherheit', j: 1, f: 'Schutzbedarfsanalyse und ISMS (BSI)', a: '<p><b>Schutzbedarfsanalyse</b> für vier Objekt-Kategorien: Anwendungen, IT-Systeme, Räume/Infrastruktur, Kommunikationsverbindungen.</p><p><b>Schutzbedarfskategorien</b>: normal, hoch, sehr hoch.</p><p><b>ISMS</b>: alle Regelungen und Prozesse, mit denen ein Betrieb Informationssicherheit steuert (BSI IT-Grundschutz, ISO 27001).</p>', q_: 'PK6' },
+  { t: 'ap1', b: 'sicherheit', j: 1, f: 'Security by Design und Serverraum-Schutz', a: '<p><b>Security by Design</b>: Sicherheit von Anfang an mitentwickeln.</p><p><b>Security by Default</b>: sichere Grundeinstellung (Standardpasswörter ändern, unnötige Dienste aus).</p><p><b>Serverraum</b>: USV für Strom, Brandabschnitt und Löschanlage, Klimatisierung, Zutrittskontrolle – Verfügbarkeit ist auch eine bauliche Aufgabe.</p>', q_: 'PK6' },
+  { t: 'ap1', b: 'sicherheit', j: 1, f: 'Authentifizierung und Passwort-Policy', a: '<p><b>Faktorkategorien</b>: Wissen (Passwort), Besitz (Token, Gerät), Biometrie (Fingerabdruck).</p><p><b>2FA/MFA</b> kombiniert Faktoren aus verschiedenen Kategorien.</p><p><b>Gute Passwort-Policy</b>: ausreichende Länge, keine Wiederverwendung, Komplexitäts- und Wechselregeln, keine Standardpasswörter.</p>', q_: 'PK6' },
+  { t: 'ap1', b: 'sicherheit', j: 2, f: 'Angriffsarten – Überblick', a: '<ul><li><b>Phishing</b>: gefälschte Absender/Seiten erbeuten Zugangsdaten.</li><li><b>Sniffing</b>: Mitlesen des Datenverkehrs.</li><li><b>Spoofing</b>: Vortäuschen einer falschen Identität/Adresse.</li><li><b>Man-in-the-Middle</b>: Angreifer sitzt in der Mitte der Verbindung.</li><li><b>DoS/DDoS</b>: Überlastung – verletzt die Verfügbarkeit.</li><li><b>SQL-Injection / XSS</b>: Angriffe über ungeprüfte Eingaben in Webanwendungen.</li></ul>', q_: 'PK6' },
+  { t: 'ap1', b: 'sicherheit', j: 2, f: 'Schadprogramm-Familien', a: '<ul><li><b>Virus</b>: hängt sich an Wirtsdateien, braucht einen Wirt.</li><li><b>Wurm</b>: verbreitet sich selbstständig über Netze.</li><li><b>Trojaner</b>: tarnt sich als nützliches Programm.</li><li><b>Ransomware</b>: verschlüsselt Daten und fordert Lösegeld.</li><li><b>Spyware/Keylogger</b>: spähen Daten/Tastatureingaben aus.</li><li><b>Rootkit</b>: versteckt Angreifer tief im System.</li></ul>', q_: 'PK6' },
+  { t: 'ap1', b: 'sicherheit', j: 2, f: 'Hacker-Typen', a: '<ul><li><b>White Hat</b>: handelt mit Erlaubnis (Sicherheitsforschung).</li><li><b>Black Hat</b>: handelt kriminell.</li><li><b>Gray Hat</b>: ohne Erlaubnis, aber ohne Schädigungsabsicht.</li><li><b>Cracker</b>: bricht Schutzmechanismen.</li><li><b>Script-Kiddies</b>: nutzen fertige Werkzeuge ohne tiefes Wissen.</li></ul>', q_: 'PK6' },
+  { t: 'ap1', b: 'sicherheit', j: 2, f: 'CIA im Alltag – welche Maßnahme wirkt auf welches Ziel?', a: '<ul><li><b>Vertraulichkeit</b>: Verschlüsselung, Rechtekonzept, Least Privilege.</li><li><b>Integrität</b>: Hashwerte, Signaturen, Rechtekonzept, Vier-Augen-Prinzip.</li><li><b>Verfügbarkeit</b>: USV, RAID, Redundanz, Backup, Brandabschnitt, Klima.</li></ul><p>Eine gute Antwort nennt Maßnahme <b>und</b> das Ziel, das sie schützt.</p>', q_: 'PK6' },
+  { t: 'ap1', b: 'sicherheit', j: 3, f: 'Least Privilege und Need-to-know', a: '<p><b>Least Privilege</b>: Jeder Nutzer erhält nur die Rechte, die er für seine Aufgabe unbedingt braucht. Administratorrechte nur, wo nötig.</p><p><b>Need-to-know</b>: Zugriff nur auf Daten, die für die Aufgabe nötig sind.</p><p>Ziel: Schaden bei Missbrauch oder Kompromittierung begrenzen – ein zentrales Prinzip jeder Zugriffskontrolle.</p>', q_: 'PK6' },
+  { t: 'ap1', b: 'sicherheit', j: 3, f: 'Ransomware-Abwehr und die Rolle des Backups', a: '<p>Ransomware verschlüsselt Daten und fordert Lösegeld. Schutz:</p><ul><li>aktuelle, getestete Backups – <b>eine Kopie offline/außer Haus</b></li><li>Virenschutz, Patching, E-Mail-Filter</li><li>Sensibilisierung der Mitarbeiter</li><li>Netztrennung (kein dauerhafter Backup-Zugriff)</li></ul><p>Keine Zahlung als Lösung – sie garantiert keine Entschlüsselung.</p>', q_: 'PK6' }
 ];
 
 /* ---------- Lückentexte (aktives Erinnern) ---------- */
@@ -2106,6 +2282,38 @@ const LUECKEN = [
       gilt das Prinzip {Human in the loop}.`,
     hinweis: 'RAG = erst suchen, dann antworten. Transfer Learning = vorhandenes Wissen weiterverwenden. Prompt Injection = versteckte Anweisung.',
     quelle: 'Fidup-Wiki · ki, maschinelles-lernen und eigene Ableitung'
+  },
+  {
+    t: 'ap1', id: 'lueck-nw-proto', j: 1, b: 'netzwerk', titel: 'Netzwerkprotokolle und OSI-Schichten',
+    text: `Das {OSI}-Modell teilt die Netzwerkkommunikation in {sieben} Schichten. Auf Schicht 3, der
+      {Vermittlung}, arbeitet das Internetprotokoll {IP}; ein Router leitet hier anhand der IP-Adresse
+      weiter. Auf Schicht 4, der {Transport}schicht, liegen {TCP} und {UDP}: TCP ist verbindungsorientiert
+      und bestätigt den Empfang, UDP ist {verbindungslos}. IP-Adressen werden automatisch über
+      {DHCP} vergeben, während {DNS} Domainnamen in IP-Adressen auflöst.`,
+    hinweis: 'Schicht 2 = MAC (Switch), Schicht 3 = IP (Router), Schicht 4 = TCP/UDP. DHCP vergibt, DNS übersetzt.',
+    quelle: 'IHK-Prüfungskatalog · PK-03/PK-04 (Netzwerktechnik)'
+  },
+  {
+    t: 'ap1', id: 'lueck-vpn', j: 2, b: 'netzwerk', titel: 'VPN, Firewall und Diagnose',
+    text: `Ein {VPN} baut einen verschlüsselten Tunnel über ein unsicheres Netz auf. Verbindet er zwei
+      Standorte dauerhaft, spricht man von {Site-to-Site}; bindet er ein einzelnes Gerät an ein Netz an,
+      von {End-to-Site}. Als Protokolle werden unter anderem {IPsec} und {L2TP} verwendet. Eine Firewall,
+      die den Verbindungszustand prüft, arbeitet nach dem Prinzip {Stateful Inspection}. Zur Diagnose
+      zeigt {ipconfig} unter Windows die IP-Konfiguration, und {traceroute} listet alle Zwischenstationen
+      bis zum Ziel auf.`,
+    hinweis: 'Site-to-Site = Standort zu Standort, End-to-Site = Homeoffice. Diagnose: ping (erreichbar?), tracert (Weg), nslookup (DNS).',
+    quelle: 'IHK-Prüfungskatalog · PK-04 (Netzwerkkonfiguration)'
+  },
+  {
+    t: 'ap1', id: 'lueck-schutz', j: 1, b: 'sicherheit', titel: 'Schutzziele, Schutzbedarf und Verschlüsselung',
+    text: `Die drei Schutzziele der Informationssicherheit sind {Vertraulichkeit}, {Integrität} und
+      {Verfügbarkeit}. Schutzmaßnahmen teilt man in {technische}, organisatorische und {personelle}
+      Maßnahmen. Die Schutzbedarfskategorien des BSI IT-Grundschutz heißen normal, {hoch} und sehr hoch.
+      Beim Verschlüsselungs-Trio gibt es {symmetrische}, {asymmetrische} und hybride Verfahren; in der
+      Praxis ist {hybrid} Standard. Ein {Hashwert} dient dem Integritätsnachweis, und die {digitale Signatur}
+      belegt die Echtheit des Absenders.`,
+    hinweis: 'CIA-Trio · TOM (technisch, organisatorisch, personell) · Verschlüsselungs-Trio. Hash = Integrität, Signatur = Echtheit.',
+    quelle: 'IHK-Prüfungskatalog · PK-06 (IT-Sicherheit und Datenschutz)'
   }
 ];
 
@@ -2237,6 +2445,35 @@ const FEHLER = [
       { t: "Der Energie- und Ressourcenverbrauch großer KI-Modelle spielt für die Wirtschaftlichkeit keine Rolle.", ok: false, e: 'Falsch: Training und Dauerbetrieb verursachen Strom- und Kühlkosten. Modellgröße und Laufzeit beeinflussen die Wirtschaftlichkeit – und die Nachhaltigkeit.' },
       { t: "Prompt Injection ist ein Angriff, bei dem eine versteckte Anweisung das Modell zu unerwünschten Aktionen bringt.", ok: true, e: 'Korrekt: Deshalb müssen Eingaben geprüft, Rechte des Modells begrenzt und Ergebnisse vor Ausführung freigegeben werden.' },
       { t: "KI gibt Unternehmen eine Garantie auf höhere Gewinne.", ok: false, e: 'Falsch: Der Nutzen ist eine Chance, keine Garantie. Er muss wie jede Investition mit Kosten, Nutzen und Risiken bewertet werden – ohne Daten- und Prozessqualität wirkt KI nicht.' }
+    ]
+  },
+  {
+    t: 'ap1', id: 'fehler-netz', j: 1, b: 'netzwerk', titel: 'Fehlersuche: Netzwerk und Protokolle',
+    aufgabe: 'Prüfe jede Aussage zu Netzwerken, Protokollen und Komponenten.',
+    zeilen: [
+      { t: "Der Router arbeitet auf Schicht 3 des OSI-Modells und leitet anhand der IP-Adresse weiter.", ok: true, e: 'Korrekt: Schicht 3 ist die Vermittlungsschicht. Der Switch arbeitet auf Schicht 2 mit MAC-Adressen.' },
+      { t: "Ein Switch verbindet unterschiedliche Netzwerke und leitet anhand von IP-Adressen.", ok: false, e: 'Falsch: Das ist die Aufgabe eines Routers. Ein Switch bleibt in einem Netz und leitet anhand der MAC-Adresse.' },
+      { t: "DHCP vergibt IP-Adressen automatisch, DNS löst Namen in IP-Adressen auf.", ok: true, e: 'Korrekt: Zwei getrennte Dienste. DHCP vergibt (DORA), DNS übersetzt Namen ↔ Adressen.' },
+      { t: "Eine Adresse aus dem Bereich 169.254.x.x zeigt an, dass kein DHCP-Server erreichbar war.", ok: true, e: 'Korrekt: Das ist der APIPA-Bereich – ein klassisches Troubleshooting-Signal.' },
+      { t: "UDP ist zuverlässiger als TCP, weil es die Übertragung bestätigt.", ok: false, e: 'Falsch: Genau umgekehrt. TCP bestätigt und ordnet (verbindungsorientiert), UDP verzichtet darauf (verbindungslos).' },
+      { t: "WEP ist für ein sicheres Firmen-WLAN ausreichend.", ok: false, e: 'Falsch: WEP gilt als gebrochen. Sicher sind WPA2 oder WPA3; im Betrieb meist Enterprise mit RADIUS.' },
+      { t: "Ein Dokument mit 12 MB über eine 24-Mbit/s-Leitung braucht etwa 4 Sekunden.", ok: true, e: 'Korrekt: 12 MB × 8 = 96 Mbit; 96 ÷ 24 = 4 s. Die Umrechnung Byte → Bit (×8) ist der typische Fehlerpunkt.' },
+      { t: "Bei einem VPN verbinden sich die Teilnehmer, als wären sie in einem gemeinsamen lokalen Netz.", ok: true, e: 'Korrekt: Der verschlüsselte Tunnel über ein unsicheres Netz erzeugt genau diesen Effekt. Typische Protokolle: IPsec, L2TP.' }
+    ]
+  },
+  {
+    t: 'ap1', id: 'fehler-sicherheit', j: 1, b: 'sicherheit', titel: 'Fehlersuche: IT-Sicherheit und Schutzziele',
+    aufgabe: 'Prüfe jede Aussage. Achte darauf, ob die genannten Maßnahmen zum genannten Schutzziel passen.',
+    zeilen: [
+      { t: "Die drei Schutzziele sind Vertraulichkeit, Integrität und Verfügbarkeit.", ok: true, e: 'Korrekt: Das CIA-Trio ist Katalog-Stoff. Authentizität wird oft als viertes Ziel ergänzt, ist aber nicht gefordert.' },
+      { t: "Virenschutz, Personal Firewall und Verschlüsselung sind organisatorische Maßnahmen.", ok: false, e: 'Falsch: Das sind technische Maßnahmen. Organisatorisch sind z. B. der IT-Sicherheitsbeauftragte und Richtlinien, personell die Sensibilisierung.' },
+      { t: "Eine Verschlüsselung schützt in erster Linie die Vertraulichkeit.", ok: true, e: 'Korrekt: Verschlüsselung verhindert unbefugtes Mitlesen – Ziel ist Vertraulichkeit. Integrität weist man mit Hash/Signatur nach.' },
+      { t: "Ein Hashwert lässt sich mit dem richtigen Schlüssel wieder in die Originaldaten zurückrechnen.", ok: false, e: 'Falsch: Ein Hash ist eine Einwegfunktion. Er dient dem Integritätsnachweis, nicht der Wiederherstellung. Verschlüsselung ist umkehrbar, Hashing nicht.' },
+      { t: "Bei der digitalen Signatur verschlüsselt der Absender mit seinem privaten Schlüssel, der Empfänger prüft mit dem öffentlichen.", ok: true, e: 'Korrekt: So werden Herkunft und Unverändertheit belegt – das Ziel ist Nachweisbarkeit (Authentizität/Integrität).' },
+      { t: "Ein RAID-Verbund ist eine Verschlüsselungsmaßnahme.", ok: false, e: 'Falsch: RAID schützt die Verfügbarkeit gegen Plattenausfall, nicht die Vertraulichkeit. Für Vertraulichkeit braucht es Verschlüsselung.' },
+      { t: "Ein differenzielles Backup sichert jeden Tag die Änderungen seit der letzten Vollsicherung.", ok: true, e: 'Korrekt: Die Rücksicherung braucht nur Voll + letzte Differenz. Die inkrementelle Variante sammelt seit der letzten Sicherung überhaupt.' },
+      { t: "Dauerhaft am Netz hängende Backups sind ein wirksamer Schutz gegen Ransomware.", ok: false, e: 'Falsch: Sie werden mitverschlüsselt. Eine Kopie muss offline bzw. unveränderbar sein (3-2-1-Regel).' },
+      { t: "Zwei hintereinander abgefragte Passwörter erfüllen die Zwei-Faktor-Authentifizierung.", ok: false, e: 'Falsch: Beide wären derselbe Faktor (Wissen). Echte 2FA kombiniert Kategorien – z. B. Passwort + Token oder Fingerabdruck.' }
     ]
   }
 ];
@@ -2929,6 +3166,111 @@ const FAELLE = [
     fazit: `<p><b>Ergebnis der Fallstudie:</b> Ein KI-Projekt ist zuerst eine <b>Wirtschaftlichkeits- und
       Datenfrage</b>, dann eine technische. Ohne Daten kein Modell, ohne belastbare Rechnung keine Entscheidung,
       und ohne brauchbare Metrik kein Vertrauen im Betrieb.</p>`
+  },
+  {
+    t: 'ap1', id: 'fall-netz', j: 1, b: 'netzwerk', titel: 'Fallstudie: Netzwerk für ein neues Büro',
+    einstieg: `<p>Die <b>Kanzlei Bergmann</b> zieht in ein neues Büro mit 12 Arbeitsplätzen. Sie sollen das
+      Netzwerk planen, absichern und die Ausstattung begründen.</p>`,
+    schritte: [
+      {
+        situation: `<p><b>Erstgespräch.</b> Die Kanzlei hat sensible Mandantendaten und wünscht getrennte
+          Netze für Verwaltung und Gäste.</p>`,
+        kunde: '„Wie trennen wir den Gästezugang sauber vom internen Netz?"',
+        optionen: [
+          { t: 'Über ein eigenes Gäste-WLAN/VLAN, das vom internen Netz getrennt ist und keinen Zugriff auf interne Server hat.', p: 3 },
+          { t: 'Der Gästezugang bekommt einfach dasselbe WLAN-Passwort wie die Mitarbeiter.', p: 0 },
+          { t: 'Wir schalten das WLAN für Gäste ganz ab und teilen LAN-Kabel aus.', p: 1 }
+        ],
+        feedback: 'Sauber ist die logische Trennung per VLAN bzw. getrenntem SSID ohne Zugriff aufs interne Netz (captive portal). Dasselbe Passwort hebelt jede Trennung aus.'
+      },
+      {
+        situation: `<p><b>Verkabelung.</b> Es sollen 12 Arbeitsplätze, ein Serverraum und ein WLAN-Access-
+          Point angebunden werden.</p>`,
+        kunde: '„Welche Geräte brauchen wir – und was macht der Router, was der Switch?"',
+        optionen: [
+          { t: 'Ein Router als Verbindung nach außen, Switches fürs LAN (Schicht 2, MAC), Access Point fürs WLAN. Der Server steht im internen Netz.', p: 3 },
+          { t: 'Nur ein einziges Gerät – ein Router ersetzt Switch und Access Point.', p: 1 },
+          { t: 'Zwölf einzelne Router, einer je Arbeitsplatz.', p: 0 }
+        ],
+        feedback: 'Router verbindet Netze (Schicht 3, IP), Switch verteilt im LAN (Schicht 2, MAC), Access Point ermöglicht WLAN. In kleinen Netzen ist ein WLAN-Router oft Kombigerät – bei 12 Arbeitsplätzen lohnt ein separater Switch.'
+      },
+      {
+        situation: `<p><b>Adressierung.</b> Die Kanzlei will für jedes Gerät eine feste, automatisch
+          vergebene Adresse mit klarer Struktur.</p>`,
+        kunde: '„Wie vergeben wir die IP-Adressen?"',
+        optionen: [
+          { t: 'Automatisch per DHCP aus einem privaten Bereich (z. B. 192.168.x.x), Server und Drucker mit fester Adresse.', p: 3 },
+          { t: 'Jedes Gerät bekommt eine öffentliche IP-Adresse.', p: 0 },
+          { t: 'Es werden gar keine Adressen gebraucht.', p: 0 }
+        ],
+        feedback: 'Private Adressbereiche (10.x, 172.16–31.x, 192.168.x) sind für interne Netze gedacht. DHCP vergibt sie automatisch (DORA), Server/Drucker bekommen feste Adressen. Öffentliche Adressen sind knapp und gehören nicht ins LAN.'
+      },
+      {
+        situation: `<p><b>Sicherheit.</b> Die Kanzlei fragt nach dem Schutz der Mandantendaten.</p>`,
+        kunde: '„Welche Sicherheitsmaßnahmen schlagen Sie vor?"',
+        optionen: [
+          { t: 'Zentrale Firewall, getrennte Netze/VLANs, Verschlüsselung des WLANs (WPA2/WPA3), aktuelle Patches, Zugriffsrechte nach Notwendigkeit, Backups (3-2-1).', p: 3 },
+          { t: 'Ein starkes WLAN-Passwort genügt.', p: 0 },
+          { t: 'Antivirus auf einem Rechner reicht aus.', p: 0 }
+        ],
+        feedback: 'Sicherheit ist das Zusammenspiel technischer, organisatorischer und personeller Maßnahmen: Firewall, Trennung, Verschlüsselung, Patching, Rechte (Least Privilege), Backups und Sensibilisierung.'
+      }
+    ],
+    fazit: `<p><b>Ergebnis der Fallstudie:</b> Ein Büro-Netzwerk wird von außen nach innen geplant: Trennung,
+      Komponenten, Adressierung, Sicherheit. Router, Switch und Access Point haben klar getrennte Aufgaben –
+      wer sie verwechselt, baut ein schwaches Netz.</p>`
+  },
+  {
+    t: 'ap1', id: 'fall-sicherheit', j: 2, b: 'sicherheit', titel: 'Fallstudie: Angriff abwehren und Schaden begrenzen',
+    einstieg: `<p>Bei der <b>Stadtwerke Nord GmbH</b> verschlüsselt über Nacht Ransomware Dateien auf
+      mehreren Servern. Sie werden als IT-System-Manager hinzugezogen.</p>`,
+    schritte: [
+      {
+        situation: `<p><b>Erstmaßnahmen.</b> Die Verschlüsselung läuft noch, es gibt eine Lösegeldforderung.</p>`,
+        kunde: '„Was ist jetzt zuerst zu tun?"',
+        optionen: [
+          { t: 'Betroffene Systeme vom Netz trennen, Ausbreitung stoppen, Vorfall dokumentieren und Verantwortliche/Behörden informieren – kein Lösegeld.', p: 3 },
+          { t: 'Sofort zahlen, dann ist das Problem weg.', p: 0 },
+          { t: 'Erst einmal nichts tun und abwarten, vielleicht heilt es sich.', p: 0 }
+        ],
+        feedback: 'Zuerst isolieren (Netztrennung), damit sich die Verschlüsselung nicht ausbreitet. Danach dokumentieren, melden (Datenschutzvorfall ggf. DSGVO-Meldung), forensisch aufklären. Zahlung ist keine Lösung und motiviert weitere Angriffe.'
+      },
+      {
+        situation: `<p><b>Backups prüfen.</b> Es gibt eine Vollsicherung von gestern, sie hing aber dauerhaft am
+          Netz.</p>`,
+        kunde: '„Können wir daraus wiederherstellen?"',
+        optionen: [
+          { t: 'Nur prüfen, ob die Sicherung nicht ebenfalls verschlüsselt wurde. Ideal ist eine unveränderbare/offline Kopie (3-2-1-Regel).', p: 3 },
+          { t: 'Die Sicherung ist garantiert unversehrt, weil sie ein Backup ist.', p: 0 },
+          { t: 'Auf Backups kann man grundsätzlich verzichten.', p: 0 }
+        ],
+        feedback: 'Eine dauerhaft verbundene Sicherung wird oft mitverschlüsselt. Deshalb: eine Kopie offline/außer Haus und unveränderbare Sicherungen (WORM). Wiederherstellung vorher testen.'
+      },
+      {
+        situation: `<p><b>Ursache suchen.</b> Wie kam die Schadsoftware überhaupt ins Netz?</p>`,
+        kunde: '„Welche typischen Einfallstore gibt es?"',
+        optionen: [
+          { t: 'Phishing-Mails mit Anhang/Link, ungepatchte Schwachstellen, unsichere Fernzugänge (VPN, RDP) und geschwächte Rechte.', p: 3 },
+          { t: 'Nur ein defektes Netzwerkkabel.', p: 0 },
+          { t: 'Ausschließlich fehlerhafte Hardware.', p: 0 }
+        ],
+        feedback: 'Häufigste Wege sind Phishing, ungepatchte Lücken und unsichere Fernzugänge. Deshalb sind Sensibilisierung, Patch-Management, MFA für Fernzugriffe und Least Privilege so wichtig.'
+      },
+      {
+        situation: `<p><b>Nach dem Vorfall.</b> Die Geschäftsführung will, dass so etwas nicht wieder passiert.</p>`,
+        kunde: '„Wie verbessern wir unsere Sicherheit nachhaltig?"',
+        optionen: [
+          { t: 'Ein ISMS aufbauen (orientiert am BSI IT-Grundschutz), Security by Design/Default, Patch- und Backup-Prozesse, Notfallplan und Schulungen.', p: 3 },
+          { t: 'Nur eine neue Firewall kaufen und sonst nichts ändern.', p: 0 },
+          { t: 'Zukünftig ganz auf IT verzichten.', p: 0 }
+        ],
+        feedback: 'Nachhaltig ist ein ISMS: klare Regeln, Verantwortlichkeiten, wiederkehrende Prüfungen, Security by Design und Default, gepflegte Patches, getestete Backups und geschulte Mitarbeiter.'
+      }
+    ],
+    fazit: `<p><b>Ergebnis der Fallstudie:</b> Bei einem Angriff zählt zuerst die Begrenzung des Schadens,
+      dann die Wiederherstellung, dann die Aufklärung – und dauerhaft ein Managementsystem, das Schutz,
+      Erkennung und Reaktion organisiert. Die drei Schutzziele (Vertraulichkeit, Integrität, Verfügbarkeit)
+      sind dabei der Kompass.</p>`
   }
 ];
 
@@ -3982,6 +4324,100 @@ const TASKS = [
         `Entscheidung: ${ueberschuss > 0 ? 'Die Investition rechnet sich.' : 'Die Investition rechnet sich nicht.'}`
       ],
       hinweis: 'Wie bei jeder Investition gilt: Nutzen und laufende Kosten gegenüberstellen und dann amortisieren. Bei KI kommen weiche Faktoren hinzu (Qualität, Sicherheit, Kundenzufriedenheit) – sie ersetzen aber keine belastbare Rechnung.'
+    };
+  }
+},
+
+/* ---------- 20. Netzwerk: Übertragungszeit und Datenvolumen ---------- */
+{
+  t: 'ap1', id: 'netz-uebertragung', j: 1, bereich: 'netzwerk', titel: 'Übertragungszeit & Datenvolumen', punkte: 5,
+  quelle: 'IHK-Prüfungskatalog · PK-03 (Übertragungsraten, -zeiten, Datenmengen)',
+  gen() {
+    const mb = pick([8, 12, 24, 48, 96, 120, 250, 400]);
+    const rate = pick([8, 10, 16, 24, 50, 100, 200]);
+    const wirkungsgrad = pick([0.6, 0.7, 0.8]);
+    const zahlGeräte = pick([10, 15, 20, 25]);
+    const streamMBh = pick([600, 800, 1200]);
+
+    const mbit = mb * 8;
+    const sekunden = r2(mbit / rate);
+    const nettoSek = r2(mbit / (rate * wirkungsgrad));
+    const mbitProStd = zahlGeräte * streamMBh * 8;
+    return {
+      szenario: `<p>Für die Planung einer Datenverbindung sind Übertragungszeiten und Datenmengen zu
+        berechnen. Rechnen Sie MB immer in Mbit um (× 8) und beachten Sie die Nutzrate (Wirkungsgrad) der
+        Leitung.</p>`,
+      daten: `<table>
+        <tr><th>Angabe</th><th class="z">Wert</th></tr>
+        <tr><td>Zu übertragende Datei</td><td class="z">${mb} MB</td></tr>
+        <tr><td>Übertragungsrate</td><td class="z">${rate} Mbit/s</td></tr>
+        <tr><td>Nutzrate (Wirkungsgrad)</td><td class="z">${pct(wirkungsgrad * 100)}</td></tr>
+        <tr><td>Geräte für Streaming</td><td class="z">${zahlGeräte}</td></tr>
+        <tr><td>Daten je Gerät und Stunde</td><td class="z">${streamMBh} MB</td></tr>
+      </table>`,
+      rows: [
+        { name: 'Dateigröße in Mbit', op: '', unit: 'Mbit', answer: mbit, tol: { abs: 0 }, dec: 0 },
+        { name: 'Übertragungszeit bei voller Rate', op: '', unit: 's', answer: sekunden, tol: { abs: 0.1 }, dec: 2, ergebnis: true },
+        { name: 'Übertragungszeit bei Nutzrate', op: '', unit: 's', answer: nettoSek, tol: { abs: 0.1 }, dec: 2, ergebnis: true },
+        { name: 'Nötige Bandbreite für alle Geräte', op: '', unit: 'Mbit/s', answer: r2(mbitProStd / 3600), tol: { abs: 0.5 }, dec: 2, ergebnis: true }
+      ],
+      weg: [
+        `Dateigröße = ${mb} MB × 8 = ${mbit} Mbit`,
+        `Zeit = ${mbit} Mbit ÷ ${rate} Mbit/s = ${num(sekunden, 2)} s`,
+        `Zeit bei Nutzrate = ${mbit} ÷ (${rate} × ${num(wirkungsgrad, 1)}) = ${num(nettoSek, 2)} s`,
+        `Daten je Stunde = ${zahlGeräte} × ${streamMBh} MB × 8 = ${mbitProStd} Mbit/h → ÷ 3600 = ${num(mbitProStd / 3600, 2)} Mbit/s`
+      ],
+      hinweis: 'Der klassische Fehlerpunkt: <em>1 Byte = 8 Bit</em>. Wer MB durch Mbit/s teilt, ohne × 8, kommt um den Faktor 8 daneben. Die Nutzrate liegt in der Praxis unter 100 % – die Leitung erreicht die Nennrate selten voll.'
+    };
+  }
+},
+
+/* ---------- 21. Sicherheit: Verfügbarkeit und Backup-Volumen ---------- */
+{
+  t: 'ap1', id: 'sich-backup', j: 2, bereich: 'sicherheit', titel: 'Verfügbarkeit, SLA & Backup-Volumen', punkte: 6,
+  quelle: 'IHK-Prüfungskatalog · PK-06 (Verfügbarkeit, Datensicherung, 3-2-1)',
+  gen() {
+    const stundenJahr = 8760;
+    const sla = pick([99.0, 99.5, 99.9, 99.99]);
+    const datenGB = pick([200, 500, 800, 1200]);
+    const aenderung = pick([5, 10, 15, 20]);       /* tägliche Änderungsrate in % */
+    const kompression = pick([1.0, 1.5, 2.0]);
+    const generationen = pick([7, 14, 30]);
+
+    const erlaubtH = r2(stundenJahr * (100 - sla) / 100);
+    const erlaubtMin = Math.round(erlaubtH * 60);
+    const vollGB = r2(datenGB / kompression);
+    const diffTagGB = r2(datenGB * aenderung / 100 / kompression);
+    const diffSatzGB = r2(diffTagGB * generationen);
+    const inkTagGB = diffTagGB;                    /* pro Tag seit letzter Sicherung */
+    return {
+      szenario: `<p>Für ein System werden die zugesagte Verfügbarkeit und der Bedarf an Datensicherung
+        berechnet. Ermitteln Sie die zulässige Ausfallzeit sowie das Volumen einer Vollsicherung und einer
+        differenziellen Sicherung über alle Aufbewahrungsstufen.</p>`,
+      daten: `<table>
+        <tr><th>Angabe</th><th class="z">Wert</th></tr>
+        <tr><td>Stunden je Jahr</td><td class="z">${stundenJahr} h</td></tr>
+        <tr><td>Zugesagte Verfügbarkeit (SLA)</td><td class="z">${num(sla, 2)} %</td></tr>
+        <tr><td>Zu sichernde Datenmenge</td><td class="z">${datenGB} GB</td></tr>
+        <tr><td>Tägliche Änderungsrate</td><td class="z">${pct(aenderung)}</td></tr>
+        <tr><td>Kompressionsfaktor</td><td class="z">${num(kompression, 1)}</td></tr>
+        <tr><td>Aufbewahrte Sicherungsstände</td><td class="z">${generationen}</td></tr>
+      </table>`,
+      rows: [
+        { name: 'Zulässige Ausfallzeit je Jahr', op: '', unit: 'h', answer: erlaubtH, tol: { abs: 0.5 }, dec: 2, ergebnis: true },
+        { name: 'Zulässige Ausfallzeit in Minuten', op: '', unit: 'min', answer: erlaubtMin, tol: { abs: 1 }, dec: 0 },
+        { name: 'Vollsicherung (komprimiert)', op: '', unit: 'GB', answer: vollGB, tol: { abs: 0.5 }, dec: 2, ergebnis: true },
+        { name: 'Differenzielle Sicherung je Tag', op: '', unit: 'GB', answer: diffTagGB, tol: { abs: 0.5 }, dec: 2 },
+        { name: 'Differenzielle Sicherung, alle Stände', op: '', unit: 'GB', answer: diffSatzGB, tol: { abs: 1 }, dec: 2, ergebnis: true }
+      ],
+      weg: [
+        `Erlaubte Ausfallzeit = ${stundenJahr} × (100 − ${num(sla, 2)}) ÷ 100 = ${num(erlaubtH, 2)} h`,
+        `in Minuten = ${num(erlaubtH, 2)} × 60 = ${erlaubtMin} min`,
+        `Vollsicherung = ${datenGB} GB ÷ ${num(kompression, 1)} = ${num(vollGB, 2)} GB`,
+        `Änderung je Tag = ${datenGB} GB × ${num(aenderung, 0)} % ÷ ${num(kompression, 1)} = ${num(diffTagGB, 2)} GB`,
+        `Differenziell gesamt = ${num(diffTagGB, 2)} GB × ${generationen} = ${num(diffSatzGB, 2)} GB`
+      ],
+      hinweis: 'Verfügbarkeit ist ein Schutzziel und rechnet sich über den Zeitraum: 99,9 % klingen hoch, erlauben aber im Jahr noch 8,76 Stunden Ausfall. Beim Backup gilt die 3-2-1-Regel – und eine Kopie gehört offline.'
     };
   }
 }
