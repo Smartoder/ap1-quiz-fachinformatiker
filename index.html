@@ -1867,7 +1867,203 @@ const QUIZ = [
     r: 0, e: 'Least Privilege begrenzt den Schaden bei Missbrauch oder Kompromittierung: Wer weniger darf, kann weniger anrichten. Ergänzend gilt das Need-to-know-Prinzip für den Zugriff auf Daten.', q_: 'PK6' },
   { t: 'ap1', b: 'sicherheit', j: 3, q: 'Warum ist die Verfügbarkeit im Serverraum auch eine bauliche Aufgabe?',
     a: ['Weil Stromausfall, Brand, Hitze und Wasser die Systeme unabhängig von der Software ausfallen lassen können', 'Weil Software nie ausfällt', 'Weil nur Backups die Verfügbarkeit sichern', 'Weil der Serverraum keine Rolle spielt'],
-    r: 0, e: 'Verfügbarkeit entsteht durch Zusammenspiel: USV für Strom, Brandabschnitt und Löschanlage, Klimatisierung, redundante Anbindungen und gesicherte Zugänge. Die beste Software scheitert an einem überfluteten Serverraum.', q_: 'PK6' }
+    r: 0, e: 'Verfügbarkeit entsteht durch Zusammenspiel: USV für Strom, Brandabschnitt und Löschanlage, Klimatisierung, redundante Anbindungen und gesicherte Zugänge. Die beste Software scheitert an einem überfluteten Serverraum.', q_: 'PK6' },
+
+  /* ============ Angebotsvergleich (PK-02/03) ============ */
+  { t: 'ap1', b: 'angebot', j: 1, q: 'Was unterscheidet einen quantitativen von einem qualitativen Angebotsvergleich?',
+    a: ['Quantitativ vergleicht messbare Zahlen wie Preis und Lieferzeit, qualitativ schwer messbare Eigenschaften wie Service und Reputation', 'Quantitativ ist für Hardware, qualitativ für Software', 'Beide vergleichen nur Preise', 'Qualitativ verzichtet auf jede Bewertung'],
+    r: 0, e: 'Der quantitative Vergleich arbeitet mit Zahlen (Preis, Stromverbrauch, Lieferzeit), der qualitative mit weichen Kriterien (Bedienkomfort, Service, Zukunftssicherheit). Erst beide zusammen ergeben ein Gesamtbild.', q_: 'PK3' },
+  { t: 'ap1', b: 'angebot', j: 1, q: 'Welche vier Beschaffungsformen nennt der Prüfungskatalog für den Kostenvergleich?',
+    a: ['Kauf, Leasing, Finanzierung und Pay-per-Use', 'Nur Kauf und Miete', 'Tausch, Spende und Erbe', 'Nur Ratenkauf'],
+    r: 0, e: 'Der Katalog nennt Kauf, Leasing, Finanzierung und Pay-per-Use. Sie unterscheiden sich in Zahlungsstrom, Eigentum und laufenden Kosten – deshalb vergleicht man über die Nutzungsdauer.', q_: 'PK3' },
+  { t: 'ap1', b: 'angebot', j: 1, q: 'In welchen Schritten läuft eine Nutzwertanalyse ab?',
+    a: ['Kriterien festlegen → gewichten → je Alternative bewerten → gewichtete Summe bilden → vergleichen', 'Preis ermitteln → kaufen', 'Stakeholder fragen → sofort entscheiden', 'Nur die Anschaffungskosten vergleichen'],
+    r: 0, e: 'Kriterien, Gewichtung, Bewertung je Alternative, gewichtete Summe (Punkte × Gewichtung), dann Vergleich. Der höchste Gesamtnutzwert gewinnt. Nachteil: Die Gewichtung ist subjektiv.', q_: 'PK3' },
+  { t: 'ap1', b: 'angebot', j: 1, q: 'Welche Aussage über die Nutzwertanalyse ist richtig?',
+    a: ['Sie macht qualitative Faktoren vergleichbar, die Gewichtung bleibt aber subjektiv', 'Sie ist völlig objektiv und immer eindeutig', 'Sie berücksichtigt nur den Preis', 'Sie ist nur für Software geeignet'],
+    r: 0, e: 'Die Nutzwertanalyse macht weiche Kriterien rechenbar. Ihr Nachteil ist offen benannt: Wer die Gewichtung festlegt, beeinflusst das Ergebnis. Deshalb muss die Gewichtung begründet werden.', q_: 'PK3' },
+  { t: 'ap1', b: 'angebot', j: 1, q: 'Welche Kostenarten sind bei einem Systemvergleich über die Nutzungsdauer zu berücksichtigen?',
+    a: ['Anschaffungs-, Betriebs-, Lizenz- und Finanzierungskosten sowie fixe und variable Anteile', 'Nur die Anschaffungskosten', 'Nur die Stromkosten', 'Nur die Lizenzkosten'],
+    r: 0, e: 'Ein fairer Vergleich rechnet die gesamten Kosten über die Nutzungsdauer (TCO): Anschaffung, Betrieb (Energie, Wartung), Lizenzen und Finanzierung – aufgeteilt in fixe und variable Anteile.', q_: 'PK3' },
+  { t: 'ap1', b: 'angebot', j: 1, q: 'Was ist beim Vergleich von Kauf und Leasing besonders zu beachten?',
+    a: ['Beim Leasing bleibt das Eigentum beim Leasinggeber, dafür entstehen laufende Raten und meist ein Restwert', 'Leasing ist immer günstiger als Kauf', 'Beim Kauf gibt es keine laufenden Kosten', 'Leasing kennt keinen Vertrag'],
+    r: 0, e: 'Beim Kauf geht das Eigentum über und es entstehen einmalige Anschaffungskosten; beim Leasing bleibt das Eigentum beim Geber, dafür fallen Raten und oft ein Restwert an. Der Vergleich erfolgt über die Gesamtkosten der Nutzungsdauer.', q_: 'PK3' },
+  { t: 'ap1', b: 'angebot', j: 2, q: 'Was bedeutet „Pay-per-Use" als Beschaffungsform?',
+    a: ['Es wird nach tatsächlicher Nutzung abgerechnet statt über Kauf oder feste Rate', 'Man zahlt einen einmaligen Kaufpreis', 'Man least für eine feste Laufzeit', 'Man erhält die Software kostenlos'],
+    r: 0, e: 'Bei Pay-per-Use (nutzungsabhängige Abrechnung) zahlt man nur das, was man tatsächlich verwendet – typisch für Cloud-Dienste. Vorteil: geringe Fixkosten; Nachteil: schwer kalkulierbar bei schwankender Nutzung.', q_: 'PK3' },
+  { t: 'ap1', b: 'angebot', j: 1, q: 'Welche Vertriebsform liegt vor, wenn ein Hersteller über Systemhäuser und Distributoren verkauft?',
+    a: ['Indirekter Vertrieb', 'Direkter Vertrieb', 'Pay-per-Use', 'Franchising ohne Handel'],
+    r: 0, e: 'Indirekter Vertrieb läuft über Zwischenhandel, Distributoren oder Partner. Direkter Vertrieb verkauft ohne Zwischenstufe an den Endkunden – etwa eigener Webshop oder Außendienst.', q_: 'PK2' },
+  { t: 'ap1', b: 'angebot', j: 1, q: 'Wofür steht das AIDA-Modell in der Werbung?',
+    a: ['Attention, Interest, Desire, Action – vier Stufen der Werbewirkung', 'Analyse, Implementierung, Dokumentation, Abnahme', 'Anfrage, Inventar, Durchführung, Abschluss', 'Ausschreibung, Ideal, Entscheidung, Auftrag'],
+    r: 0, e: 'AIDA beschreibt die Wirkungskette der Werbung: Aufmerksamkeit erregen, Interesse wecken, Verlangen erzeugen, zur Handlung (Kauf) führen. Wichtig: Jede Stufe muss erreicht werden, sonst bricht die Kette ab.', q_: 'PK2' },
+  { t: 'ap1', b: 'angebot', j: 2, q: 'Welche Phasen hat der klassische Produktlebenszyklus?',
+    a: ['Einführung, Wachstum, Reife, Sättigung, Rückgang (bis End-of-Life)', 'Anfrage, Angebot, Auftrag', 'Plan, Do, Check, Act', 'Analyse, Entwurf, Umsetzung, Test'],
+    r: 0, e: 'Der Produktlebenszyklus beschreibt den Weg eines Produkts: Einführung → Wachstum → Reife → Sättigung → Rückgang. Marketing und Preisgestaltung richten sich nach der jeweiligen Phase.', q_: 'PK2' },
+  { t: 'ap1', b: 'angebot', j: 2, q: 'Was unterscheidet Outsourcing von Offshoring?',
+    a: ['Outsourcing lagert organisatorisch an Externe aus, Offshoring verlagert geografisch ins Ausland', 'Beide bedeuten dasselbe', 'Outsourcing ist nur für Hardware, Offshoring nur für Software', 'Offshoring bedeutet ins Ausland zu verkaufen'],
+    r: 0, e: 'Outsourcing ist die Auslagerung von Aufgaben an externe Anbieter (organisatorisch). Offshoring ist die Verlagerung an einen Standort im Ausland (geografisch). Beides lässt sich kombinieren.', q_: 'PK2' },
+  { t: 'ap1', b: 'angebot', j: 1, q: 'Welche Preise und Konditionen vergleicht man im Rahmen der Marktbeobachtung?',
+    a: ['Preise, Leistungen und Konditionen der Wettbewerber sowie Liefer- und Zahlungsbedingungen', 'Nur den Listenpreis', 'Nur den Firmennamen', 'Nur die Farbe des Produkts'],
+    r: 0, e: 'Der Katalog verlangt, Preise, Leistungen und Konditionen von Wettbewerbern zu vergleichen. Dazu gehören auch Lieferzeit, Rabatte, Skonto, Garantie und Service – nicht nur der nackte Preis.', q_: 'PK2' },
+
+  /* ============ Qualitätssicherung (PK-05) ============ */
+  { t: 'ap1', b: 'qs', j: 1, q: 'Wofür stehen die vier Buchstaben des PDCA-Zyklus?',
+    a: ['Plan, Do, Check, Act', 'Plan, Document, Control, Adjust', 'Prüfen, Dokumentieren, Korrigieren, Abschließen', 'Plan, Design, Code, Audit'],
+    r: 0, e: 'PDCA (Deming-Kreis): Plan = Ziele und Maßnahmen festlegen, Do = umsetzen, Check = Soll-Ist vergleichen, Act = korrigieren und Standard anpassen. Der Zyklus läuft immer wieder.', q_: 'PK5' },
+  { t: 'ap1', b: 'qs', j: 1, q: 'Was ist das Ziel der Qualitätsplanung?',
+    a: ['Ist-Zustand ermitteln und einen messbaren Ziel-Zustand festlegen', 'Fehler produzieren', 'Mitarbeiter entlassen', 'Nur den Preis festlegen'],
+    r: 0, e: 'Qualitätsplanung heißt: den Ist-Zustand erheben und einen erreichbaren, messbaren Ziel-Zustand festlegen (Qualitätsziele). Die Qualitätslenkung setzt diesen Plan dann operativ um.', q_: 'PK5' },
+  { t: 'ap1', b: 'qs', j: 1, q: 'Was ist die Aufgabe der Qualitätslenkung?',
+    a: ['Sie setzt die geplanten Maßnahmen um und kontrolliert den Soll-Ist-Vergleich', 'Sie legt nur den Ziel-Zustand fest', 'Sie ersetzt die Qualitätsplanung vollständig', 'Sie betrifft nur die Rechnungsprüfung'],
+    r: 0, e: 'Die Qualitätslenkung ist die Umsetzungsphase der Planung: Sie steuert die Prozesse, damit der geplante Ziel-Zustand erreicht wird, und greift über den Soll-Ist-Vergleich nach. Zusammen mit der Planung bildet sie den PDCA-Kreislauf.', q_: 'PK5' },
+  { t: 'ap1', b: 'qs', j: 1, q: 'Was ist der Zweck eines Testprotokolls beim Einrichten eines Arbeitsplatzes?',
+    a: ['Es dokumentiert nachvollziehbar, was, von wem, wann und mit welchem Ergebnis geprüft wurde', 'Es ersetzt die Rechnung', 'Es ist eine Bedienungsanleitung', 'Es listet nur die Preise der Komponenten'],
+    r: 0, e: 'Ein Testprotokoll hält Prüfgegenstand, durchführende Person, Datum, Ergebnisse und Abweichungen fest. Es dient als Nachweis, als Abnahmegrundlage und als Beleg gegenüber dem Kunden.', q_: 'PK5' },
+  { t: 'ap1', b: 'qs', j: 1, q: 'Welche drei Fachbegriffe verlangt der Prüfungskatalog im Qualitätsmanagement?',
+    a: ['Betriebliche QM-Systeme, QS-Normen und Zertifizierung', 'Kauf, Leasing, Miete', 'Plan, Preis, Produkt', 'Hardware, Software, Netzwerk'],
+    r: 0, e: 'Gefordert sind das Grundverständnis betrieblicher QM-Systeme, der QS-Normen (z. B. ISO 9001) und der Zertifizierung – dem externen Nachweis, dass die Norm erfüllt ist.', q_: 'PK5' },
+  { t: 'ap1', b: 'qs', j: 1, q: 'Was bedeutet eine Zertifizierung nach einer QS-Norm wie ISO 9001?',
+    a: ['Eine unabhängige Stelle bestätigt, dass das Managementsystem die Norm erfüllt', 'Der Betrieb schreibt sich selbst ein Gütesiegel', 'Ein Mitarbeiter bekommt eine Urkunde', 'Das Produkt wird kostenlos'],
+    r: 0, e: 'Zertifizierung heißt: Eine unabhängige Stelle prüft, ob das Managementsystem die Anforderungen der Norm (z. B. ISO 9001) erfüllt, und bestätigt das durch ein Zertifikat. Danach folgen regelmäßige Überprüfungen.', q_: 'PK5' },
+  { t: 'ap1', b: 'qs', j: 2, q: 'In welcher Reihenfolge laufen die Teststufen nach dem V-Modell?',
+    a: ['Komponententest → Integrationstest → Systemtest → Abnahmetest', 'Abnahmetest → Systemtest → Integrationstest → Komponententest', 'Nur Systemtest', 'Test → Entwicklung → Planung'],
+    r: 0, e: 'Von unten nach oben: Komponenten-/Unittest (einzelne Bausteine), Integrationstest (Zusammenspiel), Systemtest (Gesamtsystem) und Abnahmetest (durch den Auftraggeber).', q_: 'PK5' },
+  { t: 'ap1', b: 'qs', j: 2, q: 'Was unterscheidet einen Black-Box-Test von einem White-Box-Test?',
+    a: ['Black-Box prüft nur über die Schnittstellen ohne Code-Kenntnis, White-Box mit Kenntnis des Codes', 'Black-Box ist immer genauer', 'White-Box funktioniert ohne Programm', 'Beide prüfen nur die Optik'],
+    r: 0, e: 'Beim Black-Box-Test wird nur Ein- und Ausgabe über die Schnittstelle geprüft (ohne Blick in den Code). Beim White-Box-Test kennt der Prüfer den Code und testet gezielt Pfade und Bedingungen.', q_: 'PK5' },
+  { t: 'ap1', b: 'qs', j: 2, q: 'Welche QS-Maßnahmen gehören zum Projektalltag?',
+    a: ['Vier-Augen-Prinzip, Testprotokolle, Reviews, Audits, Schulungen und Fehlermeldesysteme', 'Nur ein Abschlusstest', 'Nur die Rechnung prüfen', 'Keine, Qualität entsteht von selbst'],
+    r: 0, e: 'Qualitätssicherung ist projektbegleitend: Vier-Augen-Prinzip, Testprotokolle, Reviews/Audits, Schulungen, Fehlermeldesystem und kontinuierliche Verbesserung (KVP/PDCA). Nicht erst am Ende testen.', q_: 'PK5' },
+  { t: 'ap1', b: 'qs', j: 3, q: 'Was ist der Unterschied zwischen Qualitätssicherung und Qualitätskontrolle?',
+    a: ['Sicherung meint die vorbeugenden Maßnahmen im Prozess, Kontrolle das Prüfen des Ergebnisses', 'Beide sind dasselbe', 'Kontrolle kommt immer zuerst', 'Sicherung ist nur ein Formular'],
+    r: 0, e: 'Qualitätssicherung ist vorbeugend und prozessbegleitend (Regeln, Schulungen, Reviews); Qualitätskontrolle prüft das fertige Ergebnis (Test, Messung). Sicherung zielt darauf, Fehler zu vermeiden, Kontrolle darauf, sie zu finden.', q_: 'PK5' },
+
+  /* ============ Verträge & Leistungserbringung (PK-07) ============ */
+  { t: 'ap1', b: 'vertrag', j: 1, q: 'Welche drei Aufbauorganisationsformen nennt der Prüfungskatalog?',
+    a: ['Einlinien-, Mehrlinien- und Matrixorganisation', 'Wasserfall, Scrum und Kanban', 'Direkt, indirekt und hybrid', 'Zentral, dezentral und virtuell'],
+    r: 0, e: 'Der Katalog nennt Einliniensystem (ein Vorgesetzter), Mehrliniensystem (mehrere Vorgesetzte) und Matrixorganisation (fachlich und disziplinarisch zugleich). Das Stabliniensystem zählt nicht dazu.', q_: 'PK7' },
+  { t: 'ap1', b: 'vertrag', j: 1, q: 'Was kennzeichnet eine Matrixorganisation?',
+    a: ['Mitarbeiter haben zwei Vorgesetzte – fachlich und disziplinarisch', 'Jeder hat genau einen Vorgesetzten', 'Es gibt keine Vorgesetzten', 'Nur der Chef entscheidet allein'],
+    r: 0, e: 'In der Matrixorganisation ist ein Mitarbeiter gleichzeitig fachlich (z. B. Projektleiter) und disziplinarisch (z. B. Abteilungsleiter) unterstellt. Vorteil: bündelt Fachkompetenz; Nachteil: mögliche Konflikte durch Doppelunterstellung.', q_: 'PK7' },
+  { t: 'ap1', b: 'vertrag', j: 1, q: 'Was bedeutet die Unterschrift „i.V."?',
+    a: ['In Vertretung – eine unterzeichnet mit Vertretungsbefugnis', 'Im Verzug', 'In Vollmacht ohne Rechte', 'Interne Verrechnung'],
+    r: 0, e: 'i.V. = in Vertretung. Daneben: i.A. = im Auftrag (untergeordnete Vollmacht) und ppa. = per procura (mit Prokura, der weitreichendsten Vollmacht).', q_: 'PK7' },
+  { t: 'ap1', b: 'vertrag', j: 1, q: 'Welche Vollmacht ist die umfangreichste im Handelsrecht?',
+    a: ['Prokura (HGB §§ 48 ff.)', 'Handlungsvollmacht', 'i.A.', 'Keine, alle sind gleich'],
+    r: 0, e: 'Die Prokura ist die weitreichendste handelsrechtliche Vollmacht – der Prokurist kann das Unternehmen weitgehend vertreten. Die Handlungsvollmacht ist eingeschränkter und an bestimmte Geschäfte gebunden.', q_: 'PK7' },
+  { t: 'ap1', b: 'vertrag', j: 1, q: 'Welche Angaben gehören in ein Abnahmeprotokoll?',
+    a: ['Gegenstand, Beteiligte, Ort/Datum/Uhrzeit, Zustand des Werks und festgestellte Mängel', 'Nur der Preis', 'Nur die Unterschrift des Kunden', 'Nur die Seriennummer'],
+    r: 0, e: 'Ein Abnahmeprotokoll hält fest: was abgenommen wird, wer beteiligt war, wann und wo, in welchem Zustand das Werk ist und welche Mängel vorliegen. Es ist die Grundlage für die Gewährleistung.', q_: 'PK7' },
+  { t: 'ap1', b: 'vertrag', j: 1, q: 'Welche drei Mängelarten unterscheidet der Prüfungskatalog?',
+    a: ['Schlechtleistung, Falschlieferung und Minderlieferung', 'Verzug, Zahlung und Kündigung', 'Kauf, Miete und Leasing', 'Hardware-, Software- und Netzfehler'],
+    r: 0, e: 'Schlechtleistung: das Werk hat nicht die geschuldete Beschaffenheit. Falschlieferung: etwas anderes als geschuldet geliefert. Minderlieferung: die Menge stimmt nicht.', q_: 'PK7' },
+  { t: 'ap1', b: 'vertrag', j: 1, q: 'Was ist der Unterschied zwischen Gewährleistung und Garantie?',
+    a: ['Gewährleistung ist die gesetzliche Pflicht des Verkäufers, Garantie eine freiwillige Zusage', 'Beide sind freiwillig', 'Gewährleistung gilt nur für Software', 'Garantie ist gesetzlich vorgeschrieben'],
+    r: 0, e: 'Die Gewährleistung ist gesetzlich geregelt (Mängelhaftung des Verkäufers, bei Verbrauchern 24 Monate). Die Garantie ist eine freiwillige Zusage des Herstellers oder Verkäufers, deren Inhalt frei gestaltbar ist.', q_: 'PK7' },
+  { t: 'ap1', b: 'vertrag', j: 1, q: 'Was kennzeichnet einen Werkvertrag gegenüber einem Dienstvertrag?',
+    a: ['Beim Werkvertrag wird ein Erfolg geschuldet, beim Dienstvertrag die Tätigkeit', 'Beim Dienstvertrag wird ein Erfolg geschuldet', 'Beide schulden nur eine Tätigkeit', 'Beide sind nur mündlich gültig'],
+    r: 0, e: 'Werkvertrag (BGB §§ 631 ff.): geschuldet ist der Erfolg, z. B. „eine funktionsfähige Website". Dienstvertrag (BGB §§ 611 ff.): geschuldet ist die Tätigkeit, z. B. „Support nach Stunden". Mängel kann man nur beim Werkvertrag nachbessern lassen.', q_: 'PK7' },
+  { t: 'ap1', b: 'vertrag', j: 2, q: 'Welche vier Leistungen gehören zum Soll-Ist-Vergleich und Abschluss eines Auftrags?',
+    a: ['Soll-Ist-Vergleich, Abweichungsanalyse, Nachkalkulation und Lessons Learned', 'Angebot, Bestellung, Lieferung, Rechnung', 'Plan, Do, Check, Act', 'Analyse, Design, Umsetzung, Test'],
+    r: 0, e: 'Zum Abschluss gehören Soll-Ist-Vergleich (Plan vs. Ergebnis), Abweichungsanalyse (Ursachen), Nachkalkulation (tatsächliche Kosten) und Lessons Learned. Daraus entstehen oft Nachfolgeaufträge.', q_: 'PK7' },
+  { t: 'ap1', b: 'vertrag', j: 2, q: 'Worin unterscheiden sich die drei Umsetzungsvarianten der Leistungserbringung?',
+    a: ['Leistung vor Ort und remote unterscheiden sich im Einsatzweg, das Ticketsystem dokumentiert und steuert den Ablauf', 'Alle drei sind identisch', 'Ticketsysteme ersetzen den Vertrag', 'Remote ist immer vor Ort gleichgestellt'],
+    r: 0, e: 'Der Katalog nennt Leistung vor Ort vs. remote sowie das Ticketsystem als Werkzeug. Dazu kommen Kundenvorgaben: Termin und Erfüllungsort, technische Voraussetzungen und das Budget.', q_: 'PK7' },
+  { t: 'ap1', b: 'vertrag', j: 2, q: 'Welche Ursachen für Widerstand gegen Veränderungen nennt der Prüfungskatalog?',
+    a: ['Angst vor Kompetenzverlust, Wissenslücken und persönliche Historie', 'Nur Faulheit', 'Nur technische Fehler', 'Nur Kostengründe'],
+    r: 0, e: 'Drei Ursachen: Angst, Kompetenz zu verlieren; Wissenslücken (man weiß nicht, wie es geht); persönliche Historie (schlechte Erfahrungen). Umgang: motivierend informieren, Chancen betonen, qualifizieren.', q_: 'PK7' },
+  { t: 'ap1', b: 'vertrag', j: 2, q: 'Welche vier Stakeholder-Typen nennt der Katalog im Change Management?',
+    a: ['Promoter, Bremser, Skeptiker und Widerständler', 'Kunde, Lieferant, Partner, Wettbewerber', 'Planer, Tester, Entwickler, Betreiber', 'Chef, Mitarbeiter, Azubi, Praktikant'],
+    r: 0, e: 'Promoter treiben aktiv voran, Bremser sind passiv dagegen, Skeptiker fragen und warten ab, Widerständler arbeiten aktiv dagegen. Der Promoter ist der wichtigste Verbündete für Veränderungen.', q_: 'PK7' },
+
+  /* ============ Markt, Marketing & Kommunikation (PK-02) ============ */
+  { t: 'ap1', b: 'kommunikation', j: 1, q: 'Welche Marktform liegt vor, wenn es nur einen Anbieter gibt?',
+    a: ['Monopol', 'Oligopol', 'Polypol', 'Käufermarkt'],
+    r: 0, e: 'Monopol = ein Anbieter. Oligopol = wenige Anbieter. Polypol = viele Anbieter. Zusätzlich unterscheidet man Käufermarkt (Nachfrage bestimmt) und Verkäufermarkt (Angebot bestimmt).', q_: 'PK2' },
+  { t: 'ap1', b: 'kommunikation', j: 1, q: 'Was kennzeichnet einen Käufermarkt?',
+    a: ['Das Angebot übersteigt die Nachfrage – Käufer haben die stärkere Position', 'Die Nachfrage übersteigt das Angebot', 'Es gibt nur einen Anbieter', 'Es gibt keinen Wettbewerb'],
+    r: 0, e: 'Im Käufermarkt ist das Angebot größer als die Nachfrage: Der Käufer kann wählen und verhandeln. Im Verkäufermarkt ist es umgekehrt – der Anbieter bestimmt die Bedingungen.', q_: 'PK2' },
+  { t: 'ap1', b: 'kommunikation', j: 1, q: 'Wie führt man eine zielgruppengerechte Bedarfsanalyse durch?',
+    a: ['Durch eigene Datenerhebung (z. B. Befragung) und Auswertung vorhandener Daten, bezogen auf die Zielgruppe', 'Nur durch Raten', 'Nur durch den Preis', 'Gar nicht, das macht der Kunde selbst'],
+    r: 0, e: 'Zwei Wege: eigene Erhebung (Kundenbefragung, Interview) und Auswertung vorhandener Daten (Anforderungen an Büroarbeitsplätze, Nutzungsstatistiken). Wichtig ist die Abgrenzung der Zielgruppe.', q_: 'PK2' },
+  { t: 'ap1', b: 'kommunikation', j: 1, q: 'Was unterscheidet Primär- von Sekundärforschung?',
+    a: ['Primärforschung erhebt Daten selbst, Sekundärforschung nutzt bereits vorhandene Daten', 'Primärforschung ist immer günstiger', 'Sekundärforschung erhebt neue Daten', 'Beide sind identisch'],
+    r: 0, e: 'Primärforschung erhebt eigene Daten (Umfrage, Beobachtung, Experiment). Sekundärforschung wertet vorhandene Quellen aus (Statistiken, Berichte). Erst prüfen, was schon da ist – das spart Zeit und Geld.', q_: 'PK2' },
+  { t: 'ap1', b: 'kommunikation', j: 1, q: 'Was besagt das Sender-Empfänger-Modell der Kommunikation?',
+    a: ['Eine Nachricht wird vom Sender kodiert, übertragen und vom Empfänger dekodiert – Störungen sind möglich', 'Kommunikation ist immer eindeutig', 'Nur der Sender ist wichtig', 'Es gibt keine Störungen'],
+    r: 0, e: 'Der Sender kodiert eine Botschaft, sie läuft über einen Kanal zum Empfänger, der sie dekodiert. Störungen (Rauschen) können die Botschaft verfälschen. Deshalb ist Rückmeldung wichtig.', q_: 'PK2' },
+  { t: 'ap1', b: 'kommunikation', j: 1, q: 'Wofür stehen die vier Seiten einer Nachricht nach Schulz von Thun?',
+    a: ['Sachinhalt, Selbstoffenbarung, Beziehung und Appell', 'Sender, Empfänger, Kanal, Störung', 'Hören, Sprechen, Lesen, Schreiben', 'Frage, Antwort, Kritik, Lob'],
+    r: 0, e: 'Jede Nachricht hat vier Seiten: Sachinhalt (worüber informiert wird), Selbstoffenbarung (was der Sender von sich zeigt), Beziehung (wie er zum Empfänger steht) und Appell (was er erreichen will). Missverständnisse entstehen, wenn man nur eine Seite hört.', q_: 'PK2' },
+  { t: 'ap1', b: 'kommunikation', j: 2, q: 'Was ist bei einer Kundenpräsentation besonders wichtig?',
+    a: ['Zielgruppe und Nutzen in den Mittelpunkt stellen, verständlich und strukturiert argumentieren', 'Möglichst viele Fachbegriffe ohne Erklärung', 'So lange wie möglich reden', 'Keine Fragen zulassen'],
+    r: 0, e: 'Eine gute Präsentation stellt den Nutzen für den Kunden in den Mittelpunkt, ist klar strukturiert und verzichtet auf unnötige Fachbegriffe. Fragen und aktives Zuhören gehören dazu.', q_: 'PK2' },
+  { t: 'ap1', b: 'kommunikation', j: 2, q: 'Warum ist aktives Zuhören in der Kundenberatung wichtig?',
+    a: ['Es deckt den echten Bedarf auf und verhindert Missverständnisse – Grundlage für ein passendes Angebot', 'Es verkürzt das Gespräch', 'Es ersetzt das Angebot', 'Es ist nur Höflichkeit'],
+    r: 0, e: 'Aktives Zuhören (Nachfragen, Zusammenfassen, Spiegeln) deckt den tatsächlichen Bedarf auf. Nur wer den Bedarf versteht, kann passend beraten und ein Angebot erstellen, das den Kunden überzeugt.', q_: 'PK2' },
+
+  /* ============ Englische Fachtexte (PK-02/03) ============ */
+  { t: 'ap1', b: 'englisch', j: 1, q: '„The server is down.“ – Was bedeutet das?',
+    a: ['Der Server ist ausgefallen / nicht erreichbar', 'Der Server wurde heruntergefahren und neu gestartet', 'Der Server ist zu heiß', 'Der Server wurde verkauft'],
+    r: 0, e: '„to be down" bedeutet: ein System ist nicht verfügbar (Ausfall). Das Gegenteil ist „up" bzw. „up and running" = läuft.', q_: 'EN' },
+  { t: 'ap1', b: 'englisch', j: 1, q: '„Please find attached the invoice.“ – Was ist gemeint?',
+    a: ['Die Rechnung ist dieser Nachricht beigefügt', 'Die Rechnung wurde bereits bezahlt', 'Die Rechnung ist verloren gegangen', 'Die Rechnung wird per Post geschickt'],
+    r: 0, e: '„Please find attached …" ist die Standardformel für „… finden Sie im Anhang". Die Rechnung liegt also als Anhang bei.', q_: 'EN' },
+  { t: 'ap1', b: 'englisch', j: 1, q: '„We need to schedule a maintenance window.“ – Was bedeutet das?',
+    a: ['Wir müssen ein Wartungsfenster (einen Zeitraum für Wartung) planen', 'Wir brauchen ein größeres Fenster im Serverraum', 'Wir müssen die Software neu installieren', 'Wir brauchen eine neue Firewall'],
+    r: 0, e: 'Ein „maintenance window" ist ein geplanter Zeitraum, in dem ein System gewartet wird und deshalb kurz nicht verfügbar ist. „to schedule" = terminlich einplanen.', q_: 'EN' },
+  { t: 'ap1', b: 'englisch', j: 1, q: 'E-mail: „The deadline has been postponed to next Monday.“ – Was bedeutet das?',
+    a: ['Der Termin wurde auf nächsten Montag verschoben', 'Der Termin wurde abgesagt', 'Der Termin bleibt unverändert', 'Der Termin wurde vorverlegt auf Montag'],
+    r: 0, e: '„to postpone" = verschieben (später). Nicht verwechseln mit „to cancel" (absagen) oder „to bring forward" (vorziehen).', q_: 'EN' },
+  { t: 'ap1', b: 'englisch', j: 1, q: '„The device is out of warranty.“ – Was bedeutet das?',
+    a: ['Das Gerät ist außerhalb der Garantiezeit', 'Das Gerät wurde gerade geliefert', 'Das Gerät hat noch volle Garantie', 'Das Gerät ist defekt geliefert worden'],
+    r: 0, e: '„warranty" = (Hersteller-)Garantie. „out of warranty" = die Garantie ist abgelaufen. Die gesetzliche Gewährleistung heißt dagegen „statutory warranty".', q_: 'EN' },
+  { t: 'ap1', b: 'englisch', j: 1, q: '„The backup is stored off-site.“ – Was bedeutet das?',
+    a: ['Die Sicherung liegt an einem anderen Ort (außerhalb des Betriebs)', 'Die Sicherung ist gerade fehlgeschlagen', 'Die Sicherung wurde gelöscht', 'Die Sicherung liegt auf demselben Server'],
+    r: 0, e: '„off-site" = außerhalb des Betriebs / an einem anderen Standort. Das ist die 1 in der 3-2-1-Regel: eine Kopie außer Haus.', q_: 'EN' },
+  { t: 'ap1', b: 'englisch', j: 1, q: '„Please raise a ticket.“ – Was soll man tun?',
+    a: ['Ein Ticket (eine Störungsmeldung) im Ticketsystem anlegen', 'Ein Zugticket kaufen', 'Eine Rechnung ausstellen', 'Ein Ticket löschen'],
+    r: 0, e: '„to raise a ticket" = eine Anfrage/einen Vorgang im Ticketsystem erstellen. Typische Support-Sprache.', q_: 'EN' },
+  { t: 'ap1', b: 'englisch', j: 1, q: 'Was bedeutet „downtime in der IT?',
+    a: ['Ausfallzeit – die Zeit, in der ein System nicht verfügbar ist', 'Die Laufzeit eines Servers', 'Die Zeit bis zum nächsten Update', 'Die Bildschirmzeit eines Nutzers'],
+    r: 0, e: '„downtime" = Ausfallzeit. „uptime" = Betriebszeit/Verfügbarkeit. Beide sind zentrale Begriffe im SLA.', q_: 'EN' },
+  { t: 'ap1', b: 'englisch', j: 1, q: 'Was bedeutet „redundancy im IT-Kontext?',
+    a: ['Redundanz – Bauteile oder Daten sind mehrfach vorhanden, damit ein Ausfall nicht zum Totalausfall führt', 'Die Verkleinerung eines Systems', 'Ein Sicherheitsfehler', 'Die Verschlüsselung von Daten'],
+    r: 0, e: '„redundancy" = Redundanz. Sie erhöht die Verfügbarkeit (z. B. RAID, doppelte Netzteile, USV). Nicht verwechseln mit „redundant" im Sinne von überflüssig.', q_: 'EN' },
+  { t: 'ap1', b: 'englisch', j: 1, q: 'Was bedeutet „bandwidth?',
+    a: ['Bandbreite – die Datenmenge, die pro Zeiteinheit übertragen werden kann', 'Die Länge des Netzwerkkabels', 'Die Anzahl der Benutzer', 'Die Speicherkapazität einer Festplatte'],
+    r: 0, e: '„bandwidth" = Bandbreite, gemessen z. B. in Mbit/s. Sie bestimmt, wie schnell Daten übertragen werden – wichtig bei der Netzwerkplanung.', q_: 'EN' },
+  { t: 'ap1', b: 'englisch', j: 1, q: '„The contract is about to expire.“ – Was bedeutet das?',
+    a: ['Der Vertrag läuft demnächst aus', 'Der Vertrag wurde gerade unterschrieben', 'Der Vertrag wurde verlängert', 'Der Vertrag ist ungültig'],
+    r: 0, e: '„to expire" = auslaufen/ablaufen, „about to" = kurz davor, etwas zu tun. Der Vertrag läuft also bald aus und muss ggf. verlängert werden.', q_: 'EN' },
+  { t: 'ap1', b: 'englisch', j: 1, q: '„We offer a 5% discount for early payment.“ – Welcher deutschen kaufmännischen Position entspricht das?',
+    a: ['Skonto – Preisnachlass bei schneller Zahlung', 'Rabatt – Preisnachlass unabhängig von der Zahlungszeit', 'Zuschlag – Aufpreis', 'Provision – Vergütung für Vermittlung'],
+    r: 0, e: 'Bestimmte Zeit für die Zahlung → Skonto („discount for early payment"/„cash discount"). Rabatt wäre „discount" ohne Zeitbezug. Merke: Skonto = Zeitvorteil, Rabatt = Mengen-/Kundenbezug.', q_: 'EN' },
+  { t: 'ap1', b: 'englisch', j: 1, q: '„The shipment will be delayed by two days.“ – Was bedeutet das?',
+    a: ['Die Lieferung verzögert sich um zwei Tage', 'Die Lieferung kommt zwei Tage früher', 'Die Lieferung ist verloren gegangen', 'Die Lieferung wird storniert'],
+    r: 0, e: '„to be delayed" = sich verzögern. „shipment" = Sendung/Lieferung. Achtung: „by two days" = um zwei Tage, „within two days" = innerhalb von zwei Tagen.', q_: 'EN' },
+  { t: 'ap1', b: 'englisch', j: 1, q: 'Was ist ein „data breach?',
+    a: ['Ein Datenschutzvorfall – unerlaubter Zugriff auf oder Verlust von Daten', 'Die planmäßige Datensicherung', 'Die Verschlüsselung einer Festplatte', 'Das Löschen alter Dateien'],
+    r: 0, e: '„data breach" = Datenschutzvorfall/Verletzung der Datensicherheit. Meldepflichtig nach DSGVO, wenn personenbezogene Daten betroffen sind.', q_: 'EN' },
+  { t: 'ap1', b: 'englisch', j: 1, q: '„The software is licensed per user.“ – Was bedeutet das?',
+    a: ['Für jeden Nutzer ist eine eigene Lizenz nötig', 'Die Software ist kostenlos', 'Eine Lizenz gilt für beliebig viele Nutzer', 'Die Software darf nicht installiert werden'],
+    r: 0, e: '„per user" = je Nutzer. Das ist ein Lizenzmodell (Named User) – jede Person braucht eine eigene Lizenz. Alternative Modelle: per device, concurrent user, site license.', q_: 'EN' },
+  { t: 'ap1', b: 'englisch', j: 2, q: '„Please ensure the firewall rules are up to date.“ – Was ist verlangt?',
+    a: ['Sicherstellen, dass die Firewall-Regeln aktuell sind', 'Die Firewall ausschalten', 'Die Firewall neu kaufen', 'Die Firewall-Regeln öffentlich zeigen'],
+    r: 0, e: '„to ensure" = sicherstellen, „up to date" = aktuell. Es geht um die Pflege der Firewall-Regeln – Teil des Patch-/Sicherheitsmanagements.', q_: 'EN' },
+  { t: 'ap1', b: 'englisch', j: 2, q: '„The client requested a quote.“ – Was bedeutet das?',
+    a: ['Der Kunde hat ein Angebot (einen Kostenvoranschlag) angefragt', 'Der Kunde hat den Vertrag unterschrieben', 'Der Kunde hat eine Rechnung erhalten', 'Der Kunde hat reklamiert'],
+    r: 0, e: '„quote" (auch „quotation") = Angebot/Kostenvoranschlag. „invoice" = Rechnung, „order" = Auftrag, „complaint" = Reklamation.', q_: 'EN' },
+  { t: 'ap1', b: 'englisch', j: 2, q: '„We are facing a bottleneck in the network.“ – Was bedeutet „bottleneck?',
+    a: ['Ein Engpass – eine Stelle, die den Durchsatz begrenzt', 'Ein Flaschenhals im Kabel', 'Ein Sicherheitsvorfall', 'Ein neuer Server'],
+    r: 0, e: '„bottleneck" = Engpass: eine Komponente (z. B. eine langsame Leitung oder Platte) begrenzt die Leistung des Ganzen. Typisch in der Systemanalyse.', q_: 'EN' },
+  { t: 'ap1', b: 'englisch', j: 2, q: '„Please provide a rollback plan.“ – Was ist verlangt?',
+    a: ['Einen Plan, wie man auf den vorherigen Zustand zurückrollt, falls etwas schiefgeht', 'Einen Plan für den Datentransfer', 'Eine Rechnung', 'Ein neues Passwort'],
+    r: 0, e: '„rollback" = Zurückrollen auf den vorherigen Stand. Ein Rollback-Plan ist bei Änderungen (Deployments, Updates) Pflicht, damit man bei Problemen schnell zurück kann.', q_: 'EN' },
+  { t: 'ap1', b: 'englisch', j: 2, q: '„The equipment has reached its end of life.“ – Was bedeutet das?',
+    a: ['Das Gerät hat das Ende seiner Lebensdauer erreicht (sollte ersetzt werden)', 'Das Gerät ist neu auf dem Markt', 'Das Gerät wurde repariert', 'Das Gerät ist ausgeliehen'],
+    r: 0, e: '„end of life" (EOL) = Ende der Nutzungs- oder Supportdauer. Danach gibt es oft keine Updates mehr – ein Sicherheitsrisiko.', q_: 'EN' }
 ];
 
 /* ---------- Karteikarten (Spaced Repetition) ---------- */
@@ -2097,7 +2293,58 @@ const KARTEN = [
   { t: 'ap1', b: 'sicherheit', j: 2, f: 'Hacker-Typen', a: '<ul><li><b>White Hat</b>: handelt mit Erlaubnis (Sicherheitsforschung).</li><li><b>Black Hat</b>: handelt kriminell.</li><li><b>Gray Hat</b>: ohne Erlaubnis, aber ohne Schädigungsabsicht.</li><li><b>Cracker</b>: bricht Schutzmechanismen.</li><li><b>Script-Kiddies</b>: nutzen fertige Werkzeuge ohne tiefes Wissen.</li></ul>', q_: 'PK6' },
   { t: 'ap1', b: 'sicherheit', j: 2, f: 'CIA im Alltag – welche Maßnahme wirkt auf welches Ziel?', a: '<ul><li><b>Vertraulichkeit</b>: Verschlüsselung, Rechtekonzept, Least Privilege.</li><li><b>Integrität</b>: Hashwerte, Signaturen, Rechtekonzept, Vier-Augen-Prinzip.</li><li><b>Verfügbarkeit</b>: USV, RAID, Redundanz, Backup, Brandabschnitt, Klima.</li></ul><p>Eine gute Antwort nennt Maßnahme <b>und</b> das Ziel, das sie schützt.</p>', q_: 'PK6' },
   { t: 'ap1', b: 'sicherheit', j: 3, f: 'Least Privilege und Need-to-know', a: '<p><b>Least Privilege</b>: Jeder Nutzer erhält nur die Rechte, die er für seine Aufgabe unbedingt braucht. Administratorrechte nur, wo nötig.</p><p><b>Need-to-know</b>: Zugriff nur auf Daten, die für die Aufgabe nötig sind.</p><p>Ziel: Schaden bei Missbrauch oder Kompromittierung begrenzen – ein zentrales Prinzip jeder Zugriffskontrolle.</p>', q_: 'PK6' },
-  { t: 'ap1', b: 'sicherheit', j: 3, f: 'Ransomware-Abwehr und die Rolle des Backups', a: '<p>Ransomware verschlüsselt Daten und fordert Lösegeld. Schutz:</p><ul><li>aktuelle, getestete Backups – <b>eine Kopie offline/außer Haus</b></li><li>Virenschutz, Patching, E-Mail-Filter</li><li>Sensibilisierung der Mitarbeiter</li><li>Netztrennung (kein dauerhafter Backup-Zugriff)</li></ul><p>Keine Zahlung als Lösung – sie garantiert keine Entschlüsselung.</p>', q_: 'PK6' }
+  { t: 'ap1', b: 'sicherheit', j: 3, f: 'Ransomware-Abwehr und die Rolle des Backups', a: '<p>Ransomware verschlüsselt Daten und fordert Lösegeld. Schutz:</p><ul><li>aktuelle, getestete Backups – <b>eine Kopie offline/außer Haus</b></li><li>Virenschutz, Patching, E-Mail-Filter</li><li>Sensibilisierung der Mitarbeiter</li><li>Netztrennung (kein dauerhafter Backup-Zugriff)</li></ul><p>Keine Zahlung als Lösung – sie garantiert keine Entschlüsselung.</p>', q_: 'PK6' },
+
+  /* ============ Angebotsvergleich (PK-02/03) ============ */
+  { t: 'ap1', b: 'angebot', j: 1, f: 'Quantitativer vs. qualitativer Angebotsvergleich', a: '<ul><li><b>Quantitativ</b>: messbare Zahlen – Preis, Stromverbrauch, Lieferzeit, Stückzahl.</li><li><b>Qualitativ</b>: weiche Kriterien – Bedienkomfort, Service, Reputation, Zukunftssicherheit.</li></ul><p>Erst beide zusammen ergeben ein Gesamtbild. Reine Zahlen können ein schlechtes Angebot schönrechnen.</p>', q_: 'PK3' },
+  { t: 'ap1', b: 'angebot', j: 1, f: 'Die Nutzwertanalyse in fünf Schritten', a: '<ol><li>Kriterien festlegen</li><li>Kriterien gewichten (Summe 100 %)</li><li>Je Alternative bewerten (z. B. 1–10)</li><li>Teilnutzen = Punkte × Gewichtung, summieren</li><li>Höchster Gesamtnutzwert gewinnt</li></ol><p><b>Vorteil</b>: macht qualitative Faktoren rechenbar. <b>Nachteil</b>: Die Gewichtung ist subjektiv.</p>', q_: 'PK3' },
+  { t: 'ap1', b: 'angebot', j: 1, f: 'Kosten über die Nutzungsdauer (TCO)', a: '<p>Ein fairer Vergleich rechnet <b>alle</b> Kosten über die Nutzungsdauer:</p><ul><li><b>Anschaffungskosten</b> (einmalig)</li><li><b>Betriebskosten</b> (Strom, Wartung, Verbrauchsmaterial)</li><li><b>Lizenzkosten</b></li><li><b>Finanzierungskosten</b></li></ul><p>Dazu die Trennung in <b>fixe</b> und <b>variable</b> Kosten.</p>', q_: 'PK3' },
+  { t: 'ap1', b: 'angebot', j: 1, f: 'Beschaffungsformen: Kauf, Leasing, Finanzierung, Pay-per-Use', a: '<ul><li><b>Kauf</b>: einmalige Zahlung, Eigentum geht über.</li><li><b>Leasing</b>: Raten, Eigentum bleibt beim Geber, oft Restwert.</li><li><b>Finanzierung</b>: Darlehen, Zins und Tilgung.</li><li><b>Pay-per-Use</b>: Abrechnung nach Nutzung – geringe Fixkosten, schwer kalkulierbar.</li></ul>', q_: 'PK3' },
+  { t: 'ap1', b: 'angebot', j: 1, f: 'Leistungsbeschreibung im Angebot: Lasten- und Pflichtenheft', a: '<p><b>Lastenheft</b>: der Auftraggeber beschreibt <b>was</b> und <b>wofür</b> – Anforderungen und Ziele (Soll).</p><p><b>Pflichtenheft</b>: der Auftragnehmer beschreibt <b>wie</b> und <b>womit</b> – die Lösung und ihre Umsetzung.</p><p>Das Lastenheft kommt zuerst, das Pflichtenheft ist die Antwort darauf – Grundlage für Angebot und Vergleich.</p>', q_: 'PK3' },
+  { t: 'ap1', b: 'angebot', j: 1, f: 'Direkter und indirekter Vertrieb', a: '<p><b>Direkt</b>: Hersteller verkauft ohne Zwischenstufe an den Endkunden – eigener Webshop, Filiale, Außendienst.</p><p><b>Indirekt</b>: Verkauf über Zwischenhandel, Distributoren oder Partner (z. B. Systemhäuser).</p><p>Im IT-Geschäft sind beide üblich: SaaS oft direkt, Hardware oft indirekt.</p>', q_: 'PK2' },
+  { t: 'ap1', b: 'angebot', j: 1, f: 'AIDA-Modell der Werbewirkung', a: '<ol><li><b>A</b>ttention – Aufmerksamkeit erregen</li><li><b>I</b>nterest – Interesse wecken</li><li><b>D</b>esire – Verlangen erzeugen</li><li><b>A</b>ction – zur Handlung führen</li></ol><p>Die Stufen bauen aufeinander auf – wer eine überspringt, verliert den Kunden.</p>', q_: 'PK2' },
+  { t: 'ap1', b: 'angebot', j: 2, f: 'Produktlebenszyklus', a: '<p>Phasen eines Produkts:</p><p>Einführung → Wachstum → Reife → Sättigung → Rückgang → End-of-Life.</p><p>Preis, Werbung und Vertrieb richten sich nach der Phase: In der Einführungsphase ist der Preis meist hoch, in der Sättigungsphase sinkt er.</p>', q_: 'PK2' },
+  { t: 'ap1', b: 'angebot', j: 1, f: 'Outsourcing vs. Offshoring', a: '<p><b>Outsourcing</b>: <em>organisatorisch</em> – Aufgaben werden an externe Anbieter ausgelagert.</p><p><b>Offshoring</b>: <em>geografisch</em> – Aufgaben werden an einen Standort im Ausland verlagert.</p><p>Beides lässt sich kombinieren (Auslagerung ins Ausland).</p>', q_: 'PK2' },
+  { t: 'ap1', b: 'angebot', j: 1, f: 'Wirtschaftlichkeit bewerten: Kennzahlen', a: '<ul><li><b>Amortisationszeit</b> = Anschaffung ÷ jährliche Einsparung</li><li><b>Break-even</b> = Fixkosten ÷ Deckungsbeitrag je Stück</li><li><b>ROI</b> = Gewinn ÷ eingesetztes Kapital</li></ul><p>Nur der Preis zu vergleichen ist kein Wirtschaftlichkeitsnachweis.</p>', q_: 'PK3' },
+
+  /* ============ Qualitätssicherung (PK-05) ============ */
+  { t: 'ap1', b: 'qs', j: 1, f: 'PDCA – der Deming-Kreis', a: '<ol><li><b>Plan</b>: Ziele und Maßnahmen festlegen</li><li><b>Do</b>: Maßnahmen umsetzen</li><li><b>Check</b>: Soll-Ist vergleichen</li><li><b>Act</b>: korrigieren und Standard anpassen</li></ol><p>Der Zyklus läuft immer wieder – Grundlage jeder kontinuierlichen Verbesserung (KVP).</p>', q_: 'PK5' },
+  { t: 'ap1', b: 'qs', j: 1, f: 'Qualitätslenkung – Umsetzung und Steuerung', a: '<p><b>Qualitätslenkung</b> ist die Umsetzungsphase der Planung: Sie steuert die Prozesse so, dass der geplante Ziel-Zustand erreicht wird.</p><p>Über den <b>Soll-Ist-Vergleich</b> wird gegengesteuert, sobald eine Abweichung entsteht. Grundlage ist der PDCA-Kreis (Plan → Do → Check → Act).</p>', q_: 'PK5' },
+  { t: 'ap1', b: 'qs', j: 1, f: 'QM-Systeme, Normen und Zertifizierung', a: '<p><b>QM-System</b>: strukturierte Regelungen, mit denen ein Betrieb seine Qualität sichert und verbessert.</p><p><b>QS-Norm</b>: Standard, z. B. ISO 9001, der die Anforderungen beschreibt.</p><p><b>Zertifizierung</b>: eine unabhängige Stelle bestätigt die Normerfüllung – mit regelmäßiger Überprüfung.</p>', q_: 'PK5' },
+  { t: 'ap1', b: 'qs', j: 1, f: 'Testprotokoll – Inhalt', a: '<p>Ein Testprotokoll hält fest:</p><ul><li>Prüfgegenstand und Umfang</li><li>durchgeführte Prüfungen mit Datum</li><li>Ergebnis je Prüfung (bestanden / nicht bestanden)</li><li>festgestellte Mängel und Maßnahmen</li><li>durchführende Person und Unterschrift</li></ul><p>Es ist Nachweis, Abnahmegrundlage und Beleg gegenüber dem Kunden.</p>', q_: 'PK5' },
+  { t: 'ap1', b: 'qs', j: 2, f: 'Teststufen im V-Modell', a: '<p>Von unten nach oben:</p><ol><li><b>Komponententest</b> – einzelne Bausteine isoliert</li><li><b>Integrationstest</b> – Zusammenspiel der Bausteine</li><li><b>Systemtest</b> – das Gesamtsystem</li><li><b>Abnahmetest</b> – durch den Auftraggeber</li></ul>', q_: 'PK5' },
+  { t: 'ap1', b: 'qs', j: 2, f: 'Black-Box vs. White-Box-Test', a: '<p><b>Black-Box</b>: nur Ein- und Ausgabe über die Schnittstellen werden geprüft – ohne Kenntnis des Codes.</p><p><b>White-Box</b>: der Prüfer kennt den Code und testet gezielt Pfade, Bedingungen und Verzweigungen.</p><p>Beide ergänzen sich: Black-Box prüft das Verhalten, White-Box die innere Logik.</p>', q_: 'PK5' },
+  { t: 'ap1', b: 'qs', j: 1, f: 'Qualitätssicherung vs. Qualitätskontrolle', a: '<p><b>Qualitätssicherung</b>: vorbeugend und prozessbegleitend – Regeln, Schulungen, Reviews, Vier-Augen-Prinzip. Ziel: Fehler vermeiden.</p><p><b>Qualitätskontrolle</b>: prüft das fertige Ergebnis – Test, Messung, Sichtprüfung. Ziel: Fehler finden.</p>', q_: 'PK5' },
+  { t: 'ap1', b: 'qs', j: 2, f: 'Qualitätswerkzeuge und -siegel', a: '<p><b>Werkzeuge</b>: Checklisten, Testprotokolle, Peer-Review, Audit, Fehlermeldesystem, KVP/PDCA.</p><p><b>Siegel</b>: GS (Geprüfte Sicherheit), Blauer Engel, TÜV – vergeben von unabhängigen Stellen.</p>', q_: 'PK5' },
+  { t: 'ap1', b: 'qs', j: 3, f: 'Soll-Ist-Vergleich und Abweichungsanalyse', a: '<p><b>Soll-Ist-Vergleich</b>: Plan-Werte und tatsächliche Werte gegenüberstellen (Zeit, Kosten, Qualität).</p><p><b>Abweichungsanalyse</b>: Ursachen der Differenz finden – waren Planung oder Ausführung falsch?</p><p><b>Nachkalkulation</b>: tatsächliche Kosten ermitteln. Ergebnis: <b>Lessons Learned</b> und Nachfolgeaufträge.</p>', q_: 'PK7' },
+
+  /* ============ Verträge & Leistungserbringung (PK-07) ============ */
+  { t: 'ap1', b: 'vertrag', j: 1, f: 'Die drei Aufbauorganisationsformen', a: '<ul><li><b>Einliniensystem</b>: jeder Mitarbeiter hat genau einen Vorgesetzten – klare, aber lange Wege.</li><li><b>Mehrliniensystem</b>: mehrere Vorgesetzte pro Mitarbeiter – kurze Wege, aber Konfliktgefahr.</li><li><b>Matrixorganisation</b>: fachliche und disziplinarische Unterstellung zugleich.</li></ul><p>(Das Stabliniensystem nennt der Katalog nicht.)</p>', q_: 'PK7' },
+  { t: 'ap1', b: 'vertrag', j: 1, f: 'Unterschriften und Vollmachten', a: '<ul><li><b>i.V.</b> – „in Vertretung" (Vertretungsbefugnis)</li><li><b>i.A.</b> – „im Auftrag" (untergeordnete Vollmacht)</li><li><b>ppa.</b> – „per procura" (mit Prokura)</li></ul><p><b>Prokura</b> (HGB §§ 48 ff.): umfangreichste Vollmacht. <b>Handlungsvollmacht</b> (HGB § 54): eingeschränkter.</p>', q_: 'PK7' },
+  { t: 'ap1', b: 'vertrag', j: 1, f: 'Abnahmeprotokoll – Inhalt', a: '<p>Hält fest:</p><ul><li>Gegenstand der Abnahme</li><li>Beteiligte</li><li>Ort, Datum, Uhrzeit</li><li>Zustand des Werks</li><li>festgestellte Mängel</li></ul><p>Mit der Abnahme beginnt die Gewährleistungsfrist – deshalb ist Genauigkeit wichtig.</p>', q_: 'PK7' },
+  { t: 'ap1', b: 'vertrag', j: 1, f: 'Die drei Mängelarten', a: '<ul><li><b>Schlechtleistung</b>: das Werk hat nicht die geschuldete Beschaffenheit.</li><li><b>Falschlieferung</b>: etwas anderes geliefert als geschuldet (z. B. falsches Softwarepaket).</li><li><b>Minderlieferung</b>: die Menge stimmt nicht (z. B. nur ein Teil geliefert).</li></ul>', q_: 'PK7' },
+  { t: 'ap1', b: 'vertrag', j: 1, f: 'Werkvertrag vs. Dienstvertrag', a: '<table><tr><th></th><th>Werkvertrag</th><th>Dienstvertrag</th></tr><tr><td>Geschuldet</td><td>Erfolg</td><td>Tätigkeit</td></tr><tr><td>Beispiel</td><td>Website erstellen</td><td>Support nach Stunden</td></tr><tr><td>Mängel</td><td>Nachbesserung möglich</td><td>keine Nachbesserung</td></tr><tr><td>BGB</td><td>§§ 631 ff.</td><td>§§ 611 ff.</td></tr></table>', q_: 'PK7' },
+  { t: 'ap1', b: 'vertrag', j: 1, f: 'SLA – Service Level Agreement', a: '<p>Ein SLA regelt die Servicequalität verbindlich:</p><ul><li><b>Verfügbarkeit</b> (z. B. 99,9 %)</li><li><b>Reaktionszeit</b> und <b>Lösungszeit</b></li><li><b>Service-Klassen</b> (Gold/Silber/Bronze)</li><li><b>Sanktionen</b> bei Nichteinhaltung</li></ul>', q_: 'PK7' },
+  { t: 'ap1', b: 'vertrag', j: 1, f: 'Vertragsarten und Vertragsstörungen', a: '<p><b>Vertragsarten</b>: Kauf-, Miet-, Leasing-, Lizenz-, Service-/SLA-Vertrag sowie Werk-/Dienstvertrag.</p><p><b>Vertragsbestandteile</b>: Leistungsbeschreibung, Termine, Entgelte, Sanktionen.</p><p><b>Störungen</b>: Verzug, Schlechtleistung/Mangel, Nichterfüllung.</p>', q_: 'PK7' },
+  { t: 'ap1', b: 'vertrag', j: 2, f: 'Change Management: Widerstände und Stakeholder', a: '<p><b>Widerstandsursachen</b>: Angst vor Kompetenzverlust, Wissenslücken, persönliche Historie.</p><p><b>Stakeholder-Typen</b>: Promoter (aktiv dafür), Bremser (passiv dagegen), Skeptiker (fragend/abwartend), Widerständler (aktiv dagegen).</p><p>Umgang: motiviert informieren, Chancen betonen, qualifizieren (z. B. Blended Learning, Multiplikatoren).</p>', q_: 'PK7' },
+  { t: 'ap1', b: 'vertrag', j: 2, f: 'Umsetzungsvarianten der Leistungserbringung', a: '<ul><li><b>Vor Ort</b> oder <b>remote</b> – unterscheiden sich in Weg, Kosten und Zeit.</li><li><b>Ticketsystem</b> – erfasst, priorisiert und dokumentiert Anfragen.</li><li><b>Kundenvorgaben</b>: Termin und Erfüllungsort, technische Voraussetzungen, Budget.</li></ul>', q_: 'PK7' },
+  { t: 'ap1', b: 'vertrag', j: 3, f: 'Lizenzen und Urheberrecht', a: '<p><b>UrhG</b> schützt Werke (auch Software) – Nutzungsrechte muss man erwerben.</p><p><b>Lizenzarten</b>: EULA (Endnutzer), OEM (an Hardware gebunden), GNU GPL (Copyleft), Pay-per-Use (Nutzung).</p><p>Ohne Lizenz ist die Nutzung urheberrechtswidrig – auch wenn die Datei technisch vorhanden ist.</p>', q_: 'PK7' },
+
+  /* ============ Markt, Marketing & Kommunikation (PK-02) ============ */
+  { t: 'ap1', b: 'kommunikation', j: 1, f: 'Marktformen im Überblick', a: '<ul><li><b>Monopol</b>: ein Anbieter.</li><li><b>Oligopol</b>: wenige Anbieter.</li><li><b>Polypol</b>: viele Anbieter.</li><li><b>Kräfteverhältnis</b>: <em>Käufermarkt</em> = Angebot übersteigt Nachfrage (Käufer stark); <em>Verkäufermarkt</em> = umgekehrt.</li></ul>', q_: 'PK2' },
+  { t: 'ap1', b: 'kommunikation', j: 1, f: 'Bedürfnis, Bedarf, Nachfrage', a: '<ul><li><b>Bedürfnis</b>: Empfinden eines Mangels.</li><li><b>Bedarf</b>: Bedürfnis mit Kaufkraft.</li><li><b>Nachfrage</b>: Bedarf, der am Markt aktiv geäußert wird.</li></ul><p>Wichtige Abgrenzung in der Marktlehre – jedes Bedürfnis wird erst mit Kaufkraft zum Bedarf.</p>', q_: 'PK2' },
+  { t: 'ap1', b: 'kommunikation', j: 1, f: 'Bedarfsanalyse und Zielgruppe', a: '<p><b>Zielgruppendefinition</b>: wen spricht man an und wen nicht – Abgrenzung ist Pflicht.</p><p><b>Bedarfsanalyse</b> über zwei Wege:</p><ul><li>eigene Erhebung (Befragung, Interview)</li><li>Auswertung vorhandener Daten</li></ul>', q_: 'PK2' },
+  { t: 'ap1', b: 'kommunikation', j: 1, f: 'Marktforschung: Erhebung und Auswertung', a: '<p><b>Primärforschung</b>: eigene Datenerhebung – Umfrage, Beobachtung, Experiment, Testmarkt.</p><p><b>Sekundärforschung</b>: Auswertung vorhandener Quellen – Statistiken, Berichte, eigene Systemdaten.</p><p>Zuerst Sekundär prüfen (günstig, schnell), dann gezielt primär erheben.</p>', q_: 'PK2' },
+  { t: 'ap1', b: 'kommunikation', j: 1, f: 'Sender-Empfänger-Modell', a: '<p>Der <b>Sender</b> kodiert eine Botschaft, sie läuft über einen <b>Kanal</b> zum <b>Empfänger</b>, der sie dekodiert.</p><p><b>Störungen</b> (Rauschen) können Inhalt verfälschen. Deshalb ist Rückmeldung (Feedback) wichtig: Nur so merkt man, ob die Botschaft angekommen ist.</p>', q_: 'PK2' },
+  { t: 'ap1', b: 'kommunikation', j: 1, f: 'Vier Seiten einer Nachricht (Schulz von Thun)', a: '<ul><li><b>Sachinhalt</b>: worüber informiert wird</li><li><b>Selbstoffenbarung</b>: was der Sender über sich zeigt</li><li><b>Beziehung</b>: wie er zum Empfänger steht</li><li><b>Appell</b>: was er erreichen will</li></ul><p>Missverständnisse entstehen, wenn man nur eine Seite hört.</p>', q_: 'PK2' },
+  { t: 'ap1', b: 'kommunikation', j: 2, f: 'Aktives Zuhören und professionelle Beratung', a: '<ul><li><b>Aktives Zuhören</b>: nachfragen, zusammenfassen, spiegeln – deckt den echten Bedarf auf.</li><li><b>Beratung</b>: Alternativen mit Vor- und Nachteilen nennen, Nutzen betonen, keine Fachbegriffe unerklärt.</li><li><b>Beschwerden</b>: sachlich bleiben, Verständnis zeigen, Lösung anbieten.</li></ul>', q_: 'PK2' },
+  { t: 'ap1', b: 'kommunikation', j: 2, f: 'Vertriebsformen und Geschäftsmodelle', a: '<p><b>Direkt</b>: eigener Webshop, Filiale, Außendienst.</p><p><b>Indirekt</b>: Zwischenhandel, Distributor, Partner.</p><p><b>Internetmodelle</b>: Freemium, Abo (Subscription), werbefinanziert, In-Game-Kauf, SaaS.</p>', q_: 'PK2' },
+
+  /* ============ Englische Fachtexte (PK-02/03) ============ */
+  { t: 'ap1', b: 'englisch', j: 1, f: 'Englisch: E-Mail-Floskeln im IT-Alltag', a: '<ul><li><b>Please find attached …</b> – … finden Sie im Anhang</li><li><b>Please raise a ticket.</b> – Bitte ein Ticket anlegen</li><li><b>We need to schedule …</b> – Wir müssen … einplanen</li><li><b>Looking forward to your reply.</b> – Wir freuen uns auf Ihre Antwort</li><li><b>Best regards</b> – Mit freundlichen Grüßen</li></ul>', q_: 'EN' },
+  { t: 'ap1', b: 'englisch', j: 1, f: 'Englisch: IT-Grundvokabeln (System)', a: '<table><tr><th>Englisch</th><th>Deutsch</th></tr><tr><td>downtime / uptime</td><td>Ausfallzeit / Betriebszeit</td></tr><tr><td>redundancy</td><td>Redundanz</td></tr><tr><td>bandwidth</td><td>Bandbreite</td></tr><tr><td>out of warranty</td><td>außerhalb der Garantie</td></tr><tr><td>to be down</td><td>ausgefallen sein</td></tr><tr><td>off-site</td><td>außer Haus / extern</td></tr></table>', q_: 'EN' },
+  { t: 'ap1', b: 'englisch', j: 1, f: 'Englisch: Kaufmännische Begriffe', a: '<ul><li><b>quote / quotation</b> – Angebot, Kostenvoranschlag</li><li><b>invoice</b> – Rechnung</li><li><b>order</b> – Auftrag / Bestellung</li><li><b>discount for early payment</b> – Skonto</li><li><b>discount</b> – Rabatt</li><li><b>to be delayed</b> – sich verzögern</li><li><b>complaint</b> – Reklamation / Beschwerde</li></ul>', q_: 'EN' },
+  { t: 'ap1', b: 'englisch', j: 2, f: 'Englisch: Projekt- und Betriebsbegriffe', a: '<ul><li><b>deliverable</b> – (Teil-)Ergebnis, Liefergegenstand</li><li><b>milestone</b> – Meilenstein</li><li><b>deadline</b> – Termin, Frist (to be postponed = verschoben)</li><li><b>rollback plan</b> – Plan zum Zurückrollen</li><li><b>bottleneck</b> – Engpass</li><li><b>end of life (EOL)</b> – Ende der Nutzungsdauer</li><li><b>data breach</b> – Datenschutzvorfall</li></ul>', q_: 'EN' }
 ];
 
 /* ---------- Lückentexte (aktives Erinnern) ---------- */
@@ -2314,6 +2561,37 @@ const LUECKEN = [
       belegt die Echtheit des Absenders.`,
     hinweis: 'CIA-Trio · TOM (technisch, organisatorisch, personell) · Verschlüsselungs-Trio. Hash = Integrität, Signatur = Echtheit.',
     quelle: 'IHK-Prüfungskatalog · PK-06 (IT-Sicherheit und Datenschutz)'
+  },
+  {
+    t: 'ap1', id: 'lueck-angebot', j: 1, b: 'angebot', titel: 'Angebotsvergleich und Nutzwertanalyse',
+    text: `Der {quantitative} Angebotsvergleich betrachtet messbare Zahlen wie Preis und Lieferzeit, der
+      {qualitative} Vergleich weiche Kriterien wie Service und Zukunftssicherheit. Bei der {Nutzwertanalyse}
+      werden zuerst Kriterien festgelegt und {gewichtet}, dann wird jede Alternative {bewertet}. Die
+      {gewichtete} Summe ergibt den Gesamtnutzwert – der höchste Wert gewinnt. Verglichen wird über die
+      gesamten Kosten der {Nutzungsdauer}, nicht nur den Kaufpreis. Beschaffungsformen sind Kauf, {Leasing},
+      Finanzierung und {Pay-per-Use}.`,
+    hinweis: 'Erst gewichten, dann bewerten, dann multiplizieren. Die Gewichtung ist subjektiv – deshalb begründen.',
+    quelle: 'IHK-Prüfungskatalog · PK-02/PK-03 (Angebotsvergleich)'
+  },
+  {
+    t: 'ap1', id: 'lueck-qs', j: 1, b: 'qs', titel: 'Qualitätsmanagement und PDCA',
+    text: `Der zentrale Qualitätskreislauf heißt {PDCA} und steht für Plan, Do, Check, Act. Bei der
+      {Qualitätsplanung} wird der Ist-Zustand ermittelt und ein Ziel-Zustand festgelegt; die Umsetzung
+      übernimmt die {Qualitätslenkung}. Ein Nachweis über durchgeführte Prüfungen ist das {Testprotokoll}.
+      Den Nachweis der Normerfüllung durch eine unabhängige Stelle nennt man {Zertifizierung}. Über den
+      {Soll-Ist-Vergleich} werden Abweichungen erkannt und analysiert.`,
+    hinweis: 'Plan = Ziel, Do = umsetzen, Check = vergleichen, Act = korrigieren. Zertifizierung prüft eine unabhängige Stelle.',
+    quelle: 'IHK-Prüfungskatalog · PK-05 (Qualitätssicherung)'
+  },
+  {
+    t: 'ap1', id: 'lueck-leistung', j: 2, b: 'vertrag', titel: 'Leistungserbringung und Auftragsabschluss',
+    text: `Die drei Aufbauorganisationsformen sind {Einliniensystem}, Mehrliniensystem und {Matrixorganisation}.
+      Wird etwas anderes geliefert als geschuldet, spricht man von {Falschlieferung}; stimmt die Menge nicht,
+      von {Minderlieferung}. Das Ergebnis einer Übergabe wird im {Abnahmeprotokoll} festgehalten. Nach dem
+      Auftrag folgen {Soll-Ist-Vergleich}, Nachkalkulation und {Lessons Learned}. Im Change Management
+      unterscheidet man Promoter, Bremser, Skeptiker und {Widerständler}.`,
+    hinweis: 'Mängelarten: Schlechtleistung, Falschlieferung, Minderlieferung. Abnahme = Ende der Übergabe, Beginn der Gewährleistung.',
+    quelle: 'IHK-Prüfungskatalog · PK-07 (Leistungserbringung)'
   }
 ];
 
@@ -2474,6 +2752,34 @@ const FEHLER = [
       { t: "Ein differenzielles Backup sichert jeden Tag die Änderungen seit der letzten Vollsicherung.", ok: true, e: 'Korrekt: Die Rücksicherung braucht nur Voll + letzte Differenz. Die inkrementelle Variante sammelt seit der letzten Sicherung überhaupt.' },
       { t: "Dauerhaft am Netz hängende Backups sind ein wirksamer Schutz gegen Ransomware.", ok: false, e: 'Falsch: Sie werden mitverschlüsselt. Eine Kopie muss offline bzw. unveränderbar sein (3-2-1-Regel).' },
       { t: "Zwei hintereinander abgefragte Passwörter erfüllen die Zwei-Faktor-Authentifizierung.", ok: false, e: 'Falsch: Beide wären derselbe Faktor (Wissen). Echte 2FA kombiniert Kategorien – z. B. Passwort + Token oder Fingerabdruck.' }
+    ]
+  },
+  {
+    t: 'ap1', id: 'fehler-angebot', j: 1, b: 'angebot', titel: 'Fehlersuche: Angebot, Vergleich und Qualität',
+    aufgabe: 'Prüfe jede Aussage zu Angebotsvergleich, Nutzwertanalyse und Qualitätssicherung.',
+    zeilen: [
+      { t: "Ein quantitativer Angebotsvergleich betrachtet nur den Preis.", ok: false, e: 'Falsch: Quantitativ umfasst alle messbaren Zahlen – Preis, Lieferzeit, Stromverbrauch, Stückzahl. Service und Reputation gehören zum qualitativen Teil.' },
+      { t: "Bei der Nutzwertanalyse wird der Gesamtnutzwert aus Punkten multipliziert mit der Gewichtung gebildet.", ok: true, e: 'Korrekt: Teilnutzen = Erfüllungsgrad × Gewichtung; die Summe ist der Gesamtnutzwert. Der höchste Wert gewinnt.' },
+      { t: "Die Nutzwertanalyse liefert ein völlig objektives Ergebnis.", ok: false, e: 'Falsch: Die Gewichtung ist subjektiv und beeinflusst das Ergebnis stark. Deshalb muss die Gewichtung begründet werden.' },
+      { t: "Beim Vergleich von Systemen rechnet man die Kosten über die gesamte Nutzungsdauer (TCO).", ok: true, e: 'Korrekt: Anschaffung, Betrieb, Lizenzen und Finanzierung zusammengenommen – nicht nur der Kaufpreis.' },
+      { t: "PDCA steht für Plan, Do, Check, Act.", ok: true, e: 'Korrekt: Der Deming-Kreis. Plan = Ziele, Do = umsetzen, Check = Soll-Ist, Act = korrigieren.' },
+      { t: "Qualitätssicherung ist nur der Abschlusstest am Projektende.", ok: false, e: 'Falsch: Qualitätssicherung ist projektbegleitend (Vier-Augen-Prinzip, Reviews, Testprotokolle, KVP). Nur am Ende zu testen findet Fehler zu spät.' },
+      { t: "Eine Zertifizierung nach ISO 9001 bestätigt durch eine unabhängige Stelle die Normerfüllung.", ok: true, e: 'Korrekt: Die Prüfung erfolgt von externer Stelle, danach regelmäßige Überwachung. Der Betrieb vergibt sich das Zertifikat nicht selbst.' },
+      { t: "Das Lastenheft beschreibt, wie der Auftragnehmer die Lösung umsetzt.", ok: false, e: 'Falsch: Das Lastenheft kommt vom Auftraggeber und beschreibt WAS und WOFÜR. Das Pflichtenheft des Auftragnehmers beschreibt WIE und WOMIT.' }
+    ]
+  },
+  {
+    t: 'ap1', id: 'fehler-leistung', j: 2, b: 'vertrag', titel: 'Fehlersuche: Leistungserbringung und Verträge',
+    aufgabe: 'Prüfe jede Aussage zu Verträgen, Aufbauorganisation und Auftragsabschluss.',
+    zeilen: [
+      { t: "Beim Werkvertrag wird ein Erfolg geschuldet, beim Dienstvertrag die Tätigkeit.", ok: true, e: 'Korrekt: Werkvertrag = Erfolg (z. B. Website), Dienstvertrag = Tätigkeit (z. B. Support nach Stunden). Mängel kann man nur beim Werkvertrag nachbessern lassen.' },
+      { t: "Eine Falschlieferung liegt vor, wenn zu wenig geliefert wurde.", ok: false, e: 'Falsch: Zu wenig = Minderlieferung. Falschlieferung = etwas anderes als geschuldet. Schlechtleistung = nicht die geschuldete Beschaffenheit.' },
+      { t: "Die Prokura ist die umfangreichste handelsrechtliche Vollmacht.", ok: true, e: 'Korrekt: Prokura (HGB §§ 48 ff.) ist weitreichender als die Handlungsvollmacht (HGB § 54). Unterschriften: i.V. (in Vertretung), i.A. (im Auftrag), ppa. (mit Prokura).' },
+      { t: "In einer Matrixorganisation hat jeder Mitarbeiter genau einen Vorgesetzten.", ok: false, e: 'Falsch: In der Matrixorganisation ist ein Mitarbeiter fachlich UND disziplinarisch unterstellt – also zwei Vorgesetzte. Genau ein Vorgesetzter gilt im Einliniensystem.' },
+      { t: "Mit der Abnahme beginnt die Gewährleistungsfrist.", ok: true, e: 'Korrekt: Deshalb ist das Abnahmeprotokoll so wichtig – es nennt Gegenstand, Beteiligte, Datum, Zustand und Mängel.' },
+      { t: "Gewährleistung ist eine freiwillige Zusage des Herstellers.", ok: false, e: 'Falsch: Gewährleistung ist die gesetzliche Mängelhaftung. Die Garantie ist die freiwillige Zusage mit frei wählbarem Inhalt.' },
+      { t: "Ein SLA kann Verfügbarkeit, Reaktionszeit und Sanktionen festlegen.", ok: true, e: 'Korrekt: Ein Service Level Agreement regelt die Servicequalität verbindlich – mit Verfügbarkeit, Reaktions-/Lösungszeit, Klassen und Konventionalstrafen.' },
+      { t: "Widerstand gegen Veränderungen hat nur eine Ursache: Faulheit.", ok: false, e: 'Falsch: Der Katalog nennt Angst vor Kompetenzverlust, Wissenslücken und persönliche Historie. Umgang: motiviert informieren, Chancen betonen, qualifizieren.' }
     ]
   }
 ];
@@ -3271,6 +3577,59 @@ const FAELLE = [
       dann die Wiederherstellung, dann die Aufklärung – und dauerhaft ein Managementsystem, das Schutz,
       Erkennung und Reaktion organisiert. Die drei Schutzziele (Vertraulichkeit, Integrität, Verfügbarkeit)
       sind dabei der Kompass.</p>`
+  },
+  {
+    t: 'ap1', id: 'fall-angebot2', j: 1, b: 'angebot', titel: 'Fallstudie: Angebote vergleichen und auswählen',
+    einstieg: `<p>Für die <b>Praxis Dr. Neumann</b> sollen 10 Arbeitsplätze neu beschafft werden. Drei
+      Anbieter legen Angebote vor. Sie sollen die Entscheidung vorbereiten.</p>`,
+    schritte: [
+      {
+        situation: `<p><b>Kriterien festlegen.</b> Die Praxis will nicht nur nach dem Preis entscheiden.</p>`,
+        kunde: '„Welche Kriterien sollten wir für den Vergleich heranziehen?"',
+        optionen: [
+          { t: 'Quantitative (Preis, Stromverbrauch, Lieferzeit) und qualitative (Service, Ergonomie, Zukunftssicherheit) Kriterien, dazu die Kosten über die Nutzungsdauer.', p: 3 },
+          { t: 'Nur den Anschaffungspreis.', p: 0 },
+          { t: 'Nur die Marke des Herstellers.', p: 0 }
+        ],
+        feedback: 'Ein fairer Vergleich verbindet quantitative und qualitative Kriterien und rechnet die Gesamtkosten über die Nutzungsdauer (TCO): Anschaffung, Betrieb, Lizenzen, Finanzierung.'
+      },
+      {
+        situation: `<p><b>Gewichtung.</b> Die Praxis entscheidet, dass Zuverlässigkeit und Service wichtiger
+          sind als der Preis.</p>`,
+        kunde: '„Wie machen wir das rechnerisch vergleichbar?"',
+        optionen: [
+          { t: 'Mit einer Nutzwertanalyse: Kriterien gewichten, jede Alternative bewerten, gewichtete Summe bilden, höchster Nutzwert gewinnt.', p: 3 },
+          { t: 'Indem wir einfach den günstigsten Anbieter nehmen.', p: 0 },
+          { t: 'Indem wir würfeln.', p: 0 }
+        ],
+        feedback: 'Die Nutzwertanalyse macht weiche Kriterien rechenbar. Wichtig: Die Gewichtung ist subjektiv – sie muss begründet und dokumentiert werden.'
+      },
+      {
+        situation: `<p><b>Nutzwerte.</b> Anbieter A erreicht 82 Punkte, ist aber 6 % teurer. Anbieter B erreicht
+          74 Punkte und ist am günstigsten. Anbieter C erreicht 80 Punkte.</p>`,
+        kunde: '„Für welchen Anbieter sollten wir uns entscheiden?"',
+        optionen: [
+          { t: 'Für A: höchster Nutzwert. Der Mehrpreis muss gegen den höheren Nutzen abgewogen und begründet werden.', p: 3 },
+          { t: 'Für B, weil er am günstigsten ist.', p: 1 },
+          { t: 'Immer für C, weil er in der Mitte liegt.', p: 0 }
+        ],
+        feedback: 'Der höchste Gesamtnutzwert gewinnt – hier A. Die Entscheidung und ihre Begründung gehören dokumentiert, damit sie nachvollziehbar bleibt.'
+      },
+      {
+        situation: `<p><b>Leistungsbeschreibung.</b> Vor der Bestellung soll festgehalten werden, was genau
+          gefordert ist.</p>`,
+        kunde: '„Was kommt ins Lastenheft, was ins Pflichtenheft?"',
+        optionen: [
+          { t: 'Ins Lastenheft (Auftraggeber) das WAS und WOFÜR; ins Pflichtenheft (Auftragnehmer) das WIE und WOMIT.', p: 3 },
+          { t: 'Beide sind dasselbe Dokument.', p: 0 },
+          { t: 'Ins Lastenheft kommt nur der Preis.', p: 0 }
+        ],
+        feedback: 'Lastenheft = Anforderungen des Auftraggebers (Soll). Pflichtenheft = Lösung und Umsetzung des Auftragnehmers. Das Lastenheft ist die Grundlage für Angebot und Vergleich.'
+      }
+    ],
+    fazit: `<p><b>Ergebnis der Fallstudie:</b> Eine Beschaffungsentscheidung ist erst dann belastbar, wenn
+      Kriterien und Gewichtung feststehen, die Gesamtkosten über die Nutzungsdauer betrachtet werden und die
+      Wahl begründet dokumentiert ist. Der günstigste Preis ist nicht automatisch die beste Wirtschaftlichkeit.</p>`
   }
 ];
 
@@ -4420,6 +4779,49 @@ const TASKS = [
       hinweis: 'Verfügbarkeit ist ein Schutzziel und rechnet sich über den Zeitraum: 99,9 % klingen hoch, erlauben aber im Jahr noch 8,76 Stunden Ausfall. Beim Backup gilt die 3-2-1-Regel – und eine Kopie gehört offline.'
     };
   }
+},
+
+/* ---------- 22. Nutzwertanalyse durchrechnen ---------- */
+{
+  t: 'ap1', id: 'nutzwert2', j: 1, bereich: 'angebot', titel: 'Nutzwertanalyse durchrechnen', punkte: 7,
+  quelle: 'IHK-Prüfungskatalog · PK-02/PK-03 (Nutzwertanalyse)',
+  gen() {
+    const namen = ['Anbieter A', 'Anbieter B', 'Anbieter C'];
+    const kriterien = [
+      { name: 'Anschaffungspreis', w: pick([25, 30, 35]) },
+      { name: 'Betriebskosten', w: pick([15, 20]) },
+      { name: 'Leistung', w: pick([20, 25]) },
+      { name: 'Service', w: pick([10, 15]) },
+      { name: 'Zukunftssicherheit', w: pick([10, 15]) }
+    ];
+    /* Gewichtungen auf 100 % normieren */
+    const summeW = kriterien.reduce((a, k) => a + k.w, 0);
+    kriterien.forEach(k => k.w = Math.round(k.w / summeW * 100));
+    const punkte = kriterien.map(() => namen.map(() => R(3, 10)));
+    const teilsummen = namen.map((_, j) => kriterien.map((k, i) => r2(punkte[i][j] * k.w / 100)));
+    const gesamt = namen.map((_, j) => r2(teilsummen[j].reduce((a, b) => a + b, 0)));
+    const sieger = gesamt.indexOf(Math.max(...gesamt));
+    return {
+      szenario: `<p>Drei Angebote sind anhand von fünf Kriterien zu vergleichen. Die Bewertung erfolgt mit
+        1 bis 10 Punkten je Kriterium. Bilden Sie die gewichteten Teilnutzen und den Gesamtnutzwert je
+        Anbieter und entscheiden Sie.</p>`,
+      daten: `<table>
+        <tr><th>Kriterium</th><th class="z">Gewichtung</th>${namen.map(n => `<th class="z">${n}</th>`).join('')}</tr>
+        ${kriterien.map((k, i) => `<tr><td>${k.name}</td><td class="z">${k.w} %</td>${namen.map((_, j) => `<td class="z">${punkte[i][j]}</td>`).join('')}</tr>`).join('')}
+      </table>`,
+      rows: [
+        ...namen.map((n, j) => ({ name: `Teilnutzen „Anschaffungspreis" – ${n}`, op: '', unit: 'Punkte', answer: teilsummen[j][0], tol: { abs: 0.1 }, dec: 2 })),
+        ...namen.map((n, j) => ({ name: `Gesamtnutzwert ${n}`, op: '', unit: 'Punkte', answer: gesamt[j], tol: { abs: 0.15 }, dec: 2, ergebnis: true })),
+        { name: 'Beste Wahl (A, B oder C)', op: '', unit: '', text: ['A', 'B', 'C'][sieger], antwortText: ['A', 'B', 'C'][sieger] }
+      ],
+      weg: [
+        ...kriterien.map((k, i) => `${k.name} (${k.w} %): ${namen.map((_, j) => `${namen[j]} ${punkte[i][j]} × ${k.w} % = ${num(teilsummen[j][i], 2)}`).join('  |  ')}`),
+        ...namen.map((n, j) => `Gesamtnutzwert ${n} = ${teilsummen[j].map(x => num(x, 2)).join(' + ')} = ${num(gesamt[j], 2)}`),
+        `Höchster Gesamtnutzwert: ${namen[sieger]} → Empfehlung`
+      ],
+      hinweis: 'Reihenfolge: gewichten (Summe 100 %), bewerten (Punkte), Teilnutzen = Punkte × Gewichtung, summieren, vergleichen. Achtung: Die Gewichtung ist subjektiv – wer sie festlegt, beeinflusst das Ergebnis, deshalb muss sie begründet werden.'
+    };
+  }
 }
 
 ];
@@ -5508,7 +5910,8 @@ const BEREICHE = [
   { id: 'qs', name: 'Qualitätssicherung', haeufig: '60 %', neben: '60 %' },
   { id: 'datenbank', name: 'Datenbanken & ERM', haeufig: '60 %', neben: '60 %' },
   { id: 'angebot', name: 'Angebotsvergleich', haeufig: '50 %', neben: '50 %' },
-  { id: 'ki', name: 'KI, ML & Deep Learning', haeufig: 'neu', neben: 'neu' }
+  { id: 'ki', name: 'KI, ML & Deep Learning', haeufig: 'neu', neben: 'neu' },
+  { id: 'englisch', name: 'Englische Fachtexte', haeufig: 'PK-02', neben: 'PK-02' }
 ];
 
 /* ============================================================
@@ -6752,7 +7155,19 @@ function startseiteZeigen() {
       ${bProzent > 0 ? `<p style="margin:14px 0 0">In diesem Ausschnitt hast du <b>${bProzent} %</b> der Rechenaufgaben sicher – grün ab 80 %.</p>` : ''}
     </div>
 
-    ${istAp2() ? `      <div class="start">
+    ${!istAp2() ? `    <div class="start">
+      <h3>Englische Fachtexte lesen</h3>
+      <p>Der Prüfungskatalog verlangt, <b>englischsprachige Texte auszuwerten</b> und Fachbegriffe anzuwenden
+      (PK-02/PK-03). Dafür gibt es den Bereich <b>Englische Fachtexte</b>: Quizfragen zu typischen
+      Kunden-E-Mails und IT-Begriffen – <em>quote, invoice, downtime, rollback plan, data breach</em> … –
+      dazu Vokabelkarten zum Üben.</p>
+      <div class="formate">
+        <button class="format" type="button" id="f-englisch-quiz"><span class="nr" aria-hidden="true">EN</span><span><span class="umfang">${hole('QUIZ', 'englisch').length} Fragen</span><b>Englisch-Quiz</b><span>E-Mails und Fachbegriffe verstehen und übersetzen</span></span></button>
+        <button class="format" type="button" id="f-englisch-karten"><span class="nr" aria-hidden="true">EN</span><span><span class="umfang">${hole('KARTEN', 'englisch').length} Karten</span><b>Englisch-Vokabelkarten</b><span>Fachvokabeln in vier Fächern wiederholen</span></span></button>
+      </div>
+    </div>
+
+    ` : ''}${istAp2() ? `      <div class="start">
         <h3>So ist Teil 2 aufgebaut — und was zählt</h3>
         <p>Die Abschlussprüfung Teil 2 besteht aus vier Prüfungsbereichen mit sehr unterschiedlichem Gewicht. Der Kundenauftrag trägt die Hälfte der Note, die drei schriftlichen Bereiche zusammen die andere Hälfte.</p>
         <div class="daten" style="margin:0">
@@ -6868,9 +7283,11 @@ function startseiteZeigen() {
     'f-karten': () => starteKarten(),
     'f-luecken': () => starteLuecken(),
     'f-fehler': () => starteFehler(),
-    'f-fall': () => starteFall()
+    'f-fall': () => starteFall(),
+    'f-englisch-quiz': () => starteQuiz('englisch'),
+    'f-englisch-karten': () => starteKarten('englisch')
   };
-  for (const id in zu) document.getElementById(id).onclick = zu[id];
+  for (const id in zu) { const el = document.getElementById(id); if (el) el.onclick = zu[id]; }
   railZeichnen();
 }
 

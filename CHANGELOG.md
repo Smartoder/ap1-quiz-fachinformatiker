@@ -4,6 +4,57 @@ Das Format folgt *Keep a Changelog*. Bruchstellen sind ausdrücklich gekennzeich
 
 ## [Nicht veröffentlicht]
 
+### Hinzugefügt — alle vier Lernlücken nach Katalog geschlossen (2026-10-08)
+
+Vier Bereiche, die der amtliche Prüfungskatalog nennt und die im Trainer noch
+dünn waren, sind ausgebaut: **Angebotsvergleich (PK-02/03)**, **Qualitätssicherung
+(PK-05)**, **Verträge & Leistungserbringung (PK-07)** und — neu als eigener
+Bereich — **Englische Fachtexte (PK-02/03)**.
+
+| Bereich | vorher | jetzt |
+|---|---|---|
+| Angebotsvergleich | 10 | **36** |
+| Qualitätssicherung | 10 | **30** |
+| Verträge & Leistungserbringung | 31 | **55** |
+| Kundenberatung & Kommunikation | 22 | **38** |
+| Englische Fachtexte (neu) | – | **24** |
+
+**Angebotsvergleich:** quantitativer vs. qualitativer Vergleich, Nutzwertanalyse
+(5 Schritte), TCO über die Nutzungsdauer, Beschaffungsformen (Kauf, Leasing,
+Finanzierung, Pay-per-Use), Lasten-/Pflichtenheft, direkter/indirekter Vertrieb,
+AIDA, Produktlebenszyklus, Outsourcing vs. Offshoring, Preis-/Konditionsvergleich.
+Dazu eine neue Fallstudie „Angebote vergleichen und auswählen" und die neue
+Rechenaufgabe **Nutzwertanalyse durchrechnen** (gewichten, bewerten, gewichtete
+Summe, Sieger bestimmen).
+
+**Qualitätssicherung:** PDCA, Qualitätsplanung vs. -lenkung, QM-Systeme/Normen/
+Zertifizierung, Testprotokoll, Teststufen (V-Modell), Black-Box vs. White-Box,
+QS vs. QK, Soll-Ist-Vergleich, Abweichungsanalyse.
+
+**Verträge & Leistungserbringung:** Aufbauorganisation (Einlinien, Mehrlinien,
+Matrix), Vollmachten (i.V., i.A., ppa., Prokura, Handlungsvollmacht), Abnahme-
+protokoll, drei Mängelarten, Werk- vs. Dienstvertrag, Gewährleistung vs. Garantie,
+SLA, Soll-Ist/Nachkalkulation/Lessons Learned, Umsetzungsvarianten,
+Change-Management (Widerstandsursachen, Stakeholder-Typen).
+
+**Englische Fachtexte (neuer Bereich):** 20 Quizfragen zu typischen
+Kunden-E-Mails und IT-Fachbegriffen (quote, invoice, downtime, redundancy,
+bandwidth, rollback plan, data breach, end of life …) plus 4 Vokabelkarten.
+Eigener Abschnitt auf der Startseite mit Direkteinstieg in Quiz und Karten.
+Damit ist die im Katalog verlangte Fähigkeit „englischsprachige Texte auswerten"
+übbar — ohne eine zweite Render-Logik: das Format nutzt den bestehenden
+Quiz- und Kartenmechanismus.
+
+**Geprüft am 2026-10-08:**
+
+- Qualitätstor `npm run check`: **49/49 bestanden.**
+- Inhaltsanalyse: **keine Dubletten** im selben Format, **kein doppelter Titel**
+  (fünf doppelte neu eingefügte Einträge wurden bereinigt/umbenannt).
+- Teil 1: 521 → **629 Einträge** (QUIZ 251→313 · KARTEN 206→245 · LUECKEN 21→24
+  · FEHLER 10→12 · FAELLE 12→13 · TASKS 21→22).
+- Alle neuen Formate und die zwei Rechenaufgaben im Browser gestartet, ohne
+  Fehler; Generatorzahlen über je 400 Läufe endlich.
+
 ### Hinzugefügt — Netzwerktechnik und IT-Sicherheit ausgebaut (2026-10-08)
 
 Die Inhaltsanalyse wies `netzwerk` (10 Einträge) und `sicherheit` (8) als die
