@@ -4,6 +4,65 @@ Das Format folgt *Keep a Changelog*. Bruchstellen sind ausdrücklich gekennzeich
 
 ## [Nicht veröffentlicht]
 
+### Hinzugefügt — Bereich „KI, ML & Deep Learning" im ersten Prüfungsteil (2026-10-08)
+
+Der Trainer bekommt einen neuen Themenbereich im **ersten Prüfungsteil (AP1)**:
+**KI, ML & Deep Learning** (Bereichs-ID `ki`). Er schließt die Lücke, die die
+Inhaltsanalyse seit dem 2026-09-29 offen auswies — bis dahin gab es zu KI nur
+einen Nebensatz in einem PM-Eintrag.
+
+**Neue Einträge über alle sechs Formate, alle mit Jahresmarke `j`:**
+
+| Format | Einträge im Bereich `ki` |
+|---|---|
+| Quizfragen | 50 |
+| Karteikarten | 44 |
+| Lückentexte | 5 |
+| Fehlersuche-Blöcke | 4 |
+| Fallstudien | 7 |
+| Rechenaufgaben | 4 |
+| **Summe** | **111** |
+
+Über alle drei Jahre kumulativ: J1 = 56 · J2 = 98 · J3 = 111.
+
+**Inhalte (neu formuliert, aus den Lerninhalten des Fidup-Wikis abgeleitet, keine
+Aufgabe wörtlich übernommen):** Hierarchie KI ⊃ ML ⊃ DL · maschinelles Lernen
+(überwacht, unüberwacht, bestärkend) · Perzeptron und Frank Rosenblatt · Neuron,
+Gewichte, Bias, Aktivierungsfunktionen (ReLU, Sigmoid) · Backpropagation und
+Lernrate · Epoche und Batch · Netztopologien (CNN, RNN/LSTM, Transformer) ·
+Entscheidungsbaum (Entropie, Gini, Pruning) · Random Forest · Support Vector
+Machine (Hyperplane, Margin, Kernel-Trick) · Clustering (K-Means, Dendrogramm,
+Distanzmaße) · Evaluationsmetriken (Accuracy, Precision, Recall, F1 aus der
+Confusion Matrix) · Overfitting und Underfitting · symbolische KI und
+Expertensysteme · generative KI, LLM, Prompting, Halluzination und RAG ·
+Transfer Learning · Diffusionsmodelle · KI im IT-Support · Computer Vision und
+NLP · KI als Angriffswerkzeug und Prompt Injection · Ethik, Bias, EU AI Act,
+Datenschutz, Energieverbrauch und „human in the loop".
+
+**Vier Rechenaufgaben (Generatoren, neue Zahlen bei jedem Aufruf):**
+Neuron vorwärts rechnen und Lernregel · Modell bewerten über die Confusion Matrix
+(Accuracy/Precision/Recall/F1) · GPU-Kosten und Trainingsdauer · Nutzen und
+Amortisation eines KI-Systems.
+
+**Jahrgangszuordnung** (kumulativ, wie im Bestand): Grundlagen KI/ML/DL,
+Perzeptron, Neuron, Lernarten, Clustering und KI in der Prozessanalyse →
+**Jahr 1**; SVM, Metriken, Overfitting, CNN/Transformer, GenAI/LLM, RAG, Fallstudien
+→ **Jahr 2**; Ethik, Datenschutz, Anwendungsgrenzen, KI-Wirtschaftlichkeit →
+**Jahr 3**.
+
+**Qualität (geprüft am 2026-10-08):**
+
+- Qualitätstor `npm run check`: **alle 49 Prüfungen bestanden.**
+- Inhaltsanalyse `npm run analyse`: Bereich `ki` mit **111 Einträgen** über alle
+  drei Jahre (J1 56 · J2 98 · J3 111), **keine Dubletten** im selben Format,
+  **kein doppelter Titel**.
+- Teil 1 wächst damit von 325 auf **436 Einträge** (QUIZ 154→204 · KARTEN
+  133→177 · LUECKEN 13→18 · FEHLER 5→8 · FAELLE 5→10 · TASKS 15→19).
+- **Alle sechs Formate, alle 7 Fallstudien, alle 4 Fehlersuche-Blöcke und alle
+  vier Rechenaufgaben im Browser gestartet** – keine Laufzeitfehler; alle
+  Generator-Zahlen über 300 Läufe endlich.
+- Der neue Bereich erscheint in der Seitenleiste mit dem Hinweis „neu".
+
 ### Hinzugefügt — Zweiter Prüfungsteil (AP2), eigene Oberfläche (2026-10-06)
 
 Der Trainer führt ab jetzt **zwei getrennte Prüfungsteile**, zwischen denen der

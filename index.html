@@ -1568,7 +1568,161 @@ const QUIZ = [
     r: 0, e: 'Der Gesamtpuffer ist die Zeitspanne, um die sich ein Vorgang verschieben darf, ohne den Endtermin zu verschieben. Puffer 0 bedeutet dagegen: Der Vorgang liegt auf dem kritischen Pfad – jede Verzögerung schlägt direkt auf das Projekt durch.', q_: 'PM' },
   { t: 'ap1', b: 'pm', j: 1, q: 'Sie sollen ein neues Qualitätsziel formulieren. Welche Formulierung ist SMART?',
     a: ['Wir wollen in Zukunft insgesamt deutlich besser werden', 'Die Fehlerquote sinkt bis 31.03. von 8 % auf 3 %', 'Mehr Qualität für alle Beteiligten im ganzen Betrieb', 'Der Kunde soll mit uns zufriedener sein als bisher'],
-    r: 1, e: 'Nur die zweite Formulierung ist spezifisch (Fehlerquote bei der Übergabe), messbar (8 % auf 3 %), realistisch, terminiert (31.03.) und für die Beteiligten nachvollziehbar. Die anderen sind Wünsche ohne Prüfmaßstab – typische Null-Antworten.', q_: 'PK5' }
+    r: 1, e: 'Nur die zweite Formulierung ist spezifisch (Fehlerquote bei der Übergabe), messbar (8 % auf 3 %), realistisch, terminiert (31.03.) und für die Beteiligten nachvollziehbar. Die anderen sind Wünsche ohne Prüfmaßstab – typische Null-Antworten.', q_: 'PK5' },
+
+  /* ---------- KI, Maschinelles Lernen & Deep Learning ---------- */
+  { t: 'ap1', b: 'ki', j: 1, q: 'In welcher Beziehung stehen Künstliche Intelligenz (KI), Maschinelles Lernen (ML) und Deep Learning (DL)?',
+    a: ['KI ist ein Teilgebiet von DL, das wiederum ein Teilgebiet von ML ist', 'KI umfasst ML, und ML umfasst DL', 'ML und DL sind dasselbe, KI ist der Oberbegriff für beide', 'DL ist der Oberbegriff und umfasst KI und ML'],
+    r: 1, e: 'Es gilt die Hierarchie KI ⊃ ML ⊃ DL: KI ist der Oberbegriff, ML ist ein Teilgebiet der KI (lernen aus Daten ohne explizite Regeln), DL ist wiederum ein Subfeld des ML mit tiefen neuronalen Netzen.', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 1, q: 'Wer entwickelte 1957 das Perzeptron – das Ur-Modell eines künstlichen Neurons?',
+    a: ['Marvin Minsky', 'Warren McCulloch', 'Frank Rosenblatt', 'Donald Hebb'],
+    r: 2, e: 'Frank Rosenblatt stellte 1957 das Perzeptron vor. McCulloch und Pitts führten 1943 das logische Schwellwert-Element ein, Hebb formulierte 1949 die Hebb-Lernregel. Minsky und Papert kritisierten das Perzeptron 1969 wegen des XOR-Problems.', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 1, q: 'Welche Aufgabe hat der Bias b in einem künstlichen Neuron?',
+    a: ['Er verschiebt die Aktivierungsschwelle des Neurons', 'Er multipliziert die Eingaben mit den Gewichten', 'Er normiert die Ausgabe auf Werte zwischen 0 und 1', 'Er ersetzt die Aktivierungsfunktion'],
+    r: 0, e: 'Der Bias ist ein zusätzlicher Parameter, der die gewichtete Summe verschiebt – er entspricht einem negativen Schwellenwert. Erst zusammen mit den Gewichten bestimmt er, ab wann ein Neuron auslöst.', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 1, q: 'Welche Aufgabe hat eine Aktivierungsfunktion wie ReLU oder Sigmoid in einem neuronalen Netz?',
+    a: ['Sie speichert die Trainingsdaten zwischen', 'Sie führt Nichtlinearität ein, damit auch komplexe Muster lernbar sind', 'Sie zählt die Schichten des Netzes', 'Sie ersetzt die Gewichte'],
+    r: 1, e: 'Ohne Nichtlinearität bliebe jedes noch so tiefe Netz eine einzige lineare Funktion. Aktivierungsfunktionen wie ReLU oder Sigmoid machen das Modell erst fähig, nichtlineare Zusammenhänge abzubilden.', q_: 'DL' },
+  { t: 'ap1', b: 'ki', j: 1, q: 'Was beschreibt die Backpropagation in einem neuronalen Netz?',
+    a: ['Das Vorwärtsleiten der Eingaben durch die Schichten', 'Das zufällige Initialisieren der Gewichte', 'Das Rückführen des Fehlers, um die Gewichte anzupassen', 'Das Aufteilen der Daten in Trainings- und Testdaten'],
+    r: 2, e: 'Bei der Backpropagation wird der Fehler (Abweichung zwischen Vorhersage und Ziel) rückwärts durch das Netz geführt und die Gewichte entsprechend angepasst. Das Vorwärtsleiten heißt Vorwärtspropagation.', q_: 'DL' },
+  { t: 'ap1', b: 'ki', j: 1, q: 'Ein Neuron hat die Eingaben x₁ = 1 und x₂ = 0,6, die Gewichte w₁ = 0,4 und w₂ = −0,5 sowie den Bias b = 0,1. Die Aktivierung ist ReLU. Wie groß ist die Ausgabe a?',
+    a: ['−0,2', '0,2', '0,0', '0,5'],
+    r: 1, e: 'z = x₁·w₁ + x₂·w₂ + b = 1·0,4 + 0,6·(−0,5) + 0,1 = 0,4 − 0,3 + 0,1 = 0,2. ReLU gibt max(0, z) aus, hier also 0,2.', q_: 'DL' },
+  { t: 'ap1', b: 'ki', j: 1, q: 'Was ist die Voraussetzung für überwachtes Lernen?',
+    a: ['Unbeschriftete Daten', 'Beschriftete Daten mit bekannten Zielwerten (Labels)', 'Ein Belohnungssystem für den Agenten', 'Eine Datenbank ohne Schema'],
+    r: 1, e: 'Überwachtes Lernen braucht Daten mit zugehörigen Labels (Ground Truth): Input plus gewünschte Ausgabe. Unüberwachtes Lernen arbeitet ohne Labels, bestärkendes Lernen über Belohnung und Strafe.', q_: 'ML' },
+  { t: 'ap1', b: 'ki', j: 1, q: 'Welche Aufgabe ist typisch für unüberwachtes Lernen?',
+    a: ['Vorhersage des Hauspreises aus Wohnfläche', 'Erkennung von Spam anhand gelernter Beispiele', 'Bildung von Kundengruppen (Segmentierung) ohne Vorgaben', 'Klassifikation handgeschriebener Ziffern'],
+    r: 2, e: 'Unüberwachtes Lernen erkennt Strukturen in Daten ohne Labels – etwa Cluster (Kundensegmente) oder reduzierte Dimensionen. Die übrigen Aufgaben sind überwacht, weil Zielwerte oder Klassen bekannt sind.', q_: 'ML' },
+  { t: 'ap1', b: 'ki', j: 1, q: 'Was macht der K-Means-Algorithmus?',
+    a: ['Er teilt Datenpunkte in k Gruppen ein, deren Zentroide die geringste Gesamtabweichung haben', 'Er berechnet eine Gerade durch alle Punkte', 'Er klassifiziert Daten anhand vorher bekannter Labels', 'Er sortiert Zahlen der Größe nach'],
+    r: 0, e: 'K-Means ist ein Verfahren des unüberwachten Lernens: k Cluster werden schrittweise so gebildet, dass die Summe der quadrierten Abstände der Punkte zu ihrem Clusterzentrum (Zentroid) minimal wird.', q_: 'ML' },
+  { t: 'ap1', b: 'ki', j: 1, q: 'Was ist ein Dendrogramm?',
+    a: ['Eine Tabelle mit allen Trainingsdaten', 'Ein Baumdiagramm zur Darstellung hierarchischen Clustering', 'Ein Maß für die Genauigkeit eines Modells', 'Ein Optimierungsverfahren für neuronale Netze'],
+    r: 1, e: 'Das Dendrogramm zeigt das Ergebnis hierarchischer Clusterverfahren: Die horizontale Achse führt die Objekte, die vertikale die Verschmelzungsdistanz. Eine hohe Verbindungslinie bedeutet geringe Ähnlichkeit.', q_: 'ML' },
+  { t: 'ap1', b: 'ki', j: 1, q: 'Warum gilt ein Entscheidungsbaum als White-Box-Modell?',
+    a: ['Weil er keine Trainingsdaten benötigt', 'Weil jeder Entscheidungsschritt logisch nachvollziehbar ist', 'Weil er immer die höchste Genauigkeit liefert', 'Weil er nur bei Zahlen funktioniert'],
+    r: 1, e: 'Ein Entscheidungsbaum zerlegt den Datensatz durch nachvollziehbare Regeln (Wurzel → Entscheidungsknoten → Blatt). Deshalb ist er im Gegensatz zu tiefen neuronalen Netzen leicht erklärbar – ein White-Box-Modell.', q_: 'ML' },
+  { t: 'ap1', b: 'ki', j: 1, q: 'Was ist ein Random Forest?',
+    a: ['Ein einzelner, besonders tiefer Entscheidungsbaum', 'Ein Ensemble aus vielen Entscheidungsbäumen, deren Ergebnis abgestimmt wird', 'Ein neuronales Netz mit genau zwei Schichten', 'Ein Clustering-Verfahren'],
+    r: 1, e: 'Der Random Forest kombiniert viele Entscheidungsbäume, die auf zufälligen Stichproben und Merkmalsauswahlen trainiert wurden. Durch Mehrheitsvotum (Klassifikation) bzw. Mittelwert (Regression) reduziert er Overfitting und Varianz.', q_: 'ML' },
+  { t: 'ap1', b: 'ki', j: 2, q: 'Was sucht eine Support Vector Machine (SVM)?',
+    a: ['Die größte Gruppe ähnlicher Datenpunkte', 'Die Hyperplane mit maximalem Abstand zu den nächstgelegenen Punkten', 'Die kürzeste Verbindung zwischen zwei Klassen', 'Die Häufigkeit der Merkmale im Datensatz'],
+    r: 1, e: 'Die SVM sucht die beste Trenngrenze (Hyperplane) zwischen zwei Klassen und maximiert dabei den Abstand (Margin) zu den nächstgelegenen Punkten – den Support Vectors. Für nichtlineare Fälle hilft der Kernel-Trick.', q_: 'ML' },
+  { t: 'ap1', b: 'ki', j: 2, q: 'Was bedeutet Overfitting beim maschinellen Lernen?',
+    a: ['Das Modell passt sich so stark an die Trainingsdaten an, dass es auf neuen Daten schlecht generalisiert', 'Das Modell ist zu einfach und erkennt kein Muster', 'Die Trainingsdaten wurden falsch formatiert', 'Das Modell rechnet zu langsam'],
+    r: 0, e: 'Bei Overfitting lernt das Modell die Trainingsdaten inklusive Rauschen auswendig. Gegenmaßnahmen sind mehr Daten, Regularisierung (z. B. Dropout, L2), Pruning beim Entscheidungsbaum und Kreuzvalidierung.', q_: 'ML' },
+  { t: 'ap1', b: 'ki', j: 2, q: 'Warum wird ein Datensatz vor dem Training in Trainings-, Validierungs- und Testdaten aufgeteilt?',
+    a: ['Damit die Daten normalisiert werden', 'Damit das Modell auf ungesehenen Daten ehrlich bewertet werden kann', 'Damit weniger Speicher benötigt wird', 'Damit die Labels entfallen'],
+    r: 1, e: 'Nur mit zurückgehaltenen Daten lässt sich prüfen, ob ein Modell generalisiert. Üblich sind etwa 70–80 % Training, 10–15 % Validierung (zum Optimieren der Parameter) und 20–30 % Test (zur abschließenden Bewertung).', q_: 'ML' },
+  { t: 'ap1', b: 'ki', j: 2, q: 'Warum benötigt Deep Learning häufig eine GPU statt nur einer CPU?',
+    a: ['Weil GPUs einen größeren Festplattenspeicher haben', 'Weil dieselben Matrixoperationen für viele Datenpunkte parallel anfallen', 'Weil neuronale Netze nur auf GPUs laufen können', 'Weil GPUs weniger Energie verbrauchen'],
+    r: 1, e: 'Das Training eines tiefen Netzes besteht aus sehr vielen Matrixmultiplikationen, die sich gut parallelisieren lassen. GPUs führen Tausende Rechenoperationen gleichzeitig aus und sind dadurch deutlich schneller als CPUs.', q_: 'DL' },
+  { t: 'ap1', b: 'ki', j: 2, q: 'Was unterscheidet Klassifikation von Regression?',
+    a: ['Klassifikation ordnet diskrete Klassen zu, Regression sagt kontinuierliche Werte voraus', 'Klassifikation ist unüberwacht, Regression überwacht', 'Regression liefert nur Wahrheitswerte', 'Beide sind identisch, nur der Name unterscheidet sich'],
+    r: 0, e: 'Klassifikation teilt Objekte in feste Klassen ein (Spam/Nicht-Spam, Tierarten). Regression sagt einen stetigen Zahlenwert voraus (Hauspreis, Umsatz). Beide gehören zum überwachten Lernen.', q_: 'ML' },
+  { t: 'ap1', b: 'ki', j: 2, q: 'Was misst der Informationsgewinn (Information Gain) bei einem Entscheidungsbaum?',
+    a: ['Die Anzahl der Trainingsdatensätze', 'Die Abnahme der Entropie durch eine Aufteilung', 'Die Tiefe des Baumes', 'Die Rechenzeit des Algorithmus'],
+    r: 1, e: 'Der Informationsgewinn ist die Differenz der Entropie vor und nach einem Split. Ein hoher Wert bedeutet, dass die Aufteilung die Zielvariable deutlich besser trennt. Der Gini-Index ist ein recheneffizienteres Maß für dasselbe Ziel.', q_: 'ML' },
+  { t: 'ap1', b: 'ki', j: 3, q: 'Welche ethische Herausforderung entsteht, wenn ein KI-Modell mit verzerrten Daten trainiert wird?',
+    a: ['Das Modell wird zwangsläufig langsamer', 'Algorithmische Verzerrung (Bias) kann zu unfairen Entscheidungen führen', 'Das Modell vergisst die Trainingsdaten', 'Die Genauigkeit sinkt immer auf null'],
+    r: 1, e: 'Ein Modell übernimmt die Vorurteile seiner Trainingsdaten. Gegenmaßnahmen sind repräsentative Daten, Prüfung auf Bias und Erklärbarkeit der Entscheidungen. Ein KI-Modell ist nicht automatisch objektiv.', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 3, q: 'Welche Aufgabe hat der EU Artificial Intelligence Act?',
+    a: ['Er verbietet KI vollständig', 'Er regelt den Umgang mit KI-Systemen europaweit nach Risikostufen', 'Er legt die Programmiersprache für KI fest', 'Er ersetzt die DSGVO'],
+    r: 1, e: 'Der EU AI Act ist ein Gesetzesrahmen, der KI-Systeme nach ihrem Risiko einordnet und Pflichten vorschreibt. Er tritt neben die DSGVO, die den Umgang mit personenbezogenen Daten regelt.', q_: 'KI' },
+
+  { t: 'ap1', b: 'ki', j: 1, q: 'Was bezeichnet man als generische (generative) KI?',
+    a: ['KI, die bestehende Daten nur sortiert', 'KI, die neue Inhalte wie Text, Bilder oder Code erzeugt', 'KI, die ausschließlich rechnet', 'KI, die keine Trainingsdaten benötigt'],
+    r: 1, e: 'Generative KI erzeugt neue Inhalte – Text (LLM wie ChatGPT), Bilder (Diffusionsmodelle) oder Code. Grundlage sind meist große neuronale Netze, die aus sehr vielen Beispielen Muster gelernt haben.', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 1, q: 'Wofür steht die Abkürzung LLM im KI-Kontext?',
+    a: ['Low Level Machine', 'Large Language Model', 'Logisches Lern-Modul', 'Linear Layer Model'],
+    r: 1, e: 'LLM = Large Language Model (großes Sprachmodell). Es ist ein neuronales Netz, das auf sehr großen Textmengen trainiert wurde und Text versteht und erzeugt.', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 1, q: 'Was versteht man unter einem Prompt?',
+    a: ['Die Rechenleistung des Modells', 'Die Eingabeaufforderung bzw. Anweisung an ein KI-Modell', 'Die gespeicherten Gewichte', 'Die Fehlerquote des Modells'],
+    r: 1, e: 'Der Prompt ist die Eingabe an ein generatives Modell. Je präziser und vollständiger die Anweisung, desto brauchbarer das Ergebnis – das nennt man Prompting.', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 1, q: 'Was ist ein Merkmal eines guten Prompts?',
+    a: ['Möglichst kurz und ungenau', 'Klar formuliert, mit Kontext, Ziel und gewünschtem Format', 'Nur ein einzelnes Stichwort', 'Ohne jede Rollen- oder Zielangabe'],
+    r: 1, e: 'Ein guter Prompt nennt Aufgabe, Kontext, Zielgruppe und das gewünschte Ausgabeformat. Rollenangaben („Du bist …") und Beispiele verbessern das Ergebnis zusätzlich.', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 1, q: 'Was bedeutet eine „Halluzination" bei einem Sprachmodell?',
+    a: ['Das Modell verweigert die Antwort', 'Das Modell erzeugt plausibel klingende, aber falsche Inhalte', 'Das Modell stürzt ab', 'Das Modell rechnet zu langsam'],
+    r: 1, e: 'Sprachmodelle erzeugen wahrscheinliche Textfortsetzungen – nicht unbedingt wahre Aussagen. Deshalb müssen Ergebnisse fachlich geprüft werden, besonders bei Zahlen und Fakten.', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 1, q: 'Welche Anwendung ist typisch für KI im IT-Support?',
+    a: ['Automatische Klassifizierung und Priorisierung eingehender Tickets', 'Ersetzen des Netzwerkkabels', 'Löschen von Backups', 'Verwalten der Hardware-Garantie'],
+    r: 0, e: 'KI kann Tickets klassifizieren und priorisieren, Antwortvorschläge liefern und häufige Anfragen automatisch beantworten. Der Mensch bleibt für Entscheidungen und Ausnahmen zuständig.', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 2, q: 'Was ist ein Chatbot mit „Natural Language Processing" (NLP)?',
+    a: ['Ein Programm, das natürliche Sprache versteht und verarbeitet', 'Ein reines Taschenrechner-Programm', 'Ein Netzwerkprotokoll', 'Ein Speichermedium'],
+    r: 0, e: 'NLP (Natural Language Processing, natürliche Sprachverarbeitung) ist das Teilgebiet der KI, das sich mit menschlicher Sprache befasst – Übersetzung, Spracherkennung, Chatbots, Textanalyse.', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 2, q: 'Wozu dient ein „Trainings-, Validierungs- und Testdatensatz" im ML?',
+    a: ['Nur zum Speichern der Daten', 'Trainieren des Modells, Optimieren der Parameter und ehrliches Bewerten auf ungesehenen Daten', 'Zur Verschlüsselung der Daten', 'Zum Löschen von Ausreißern'],
+    r: 1, e: 'Trainingsdaten: Modell lernen. Validierungsdaten: Parameter einstellen. Testdaten: einmalige, ehrliche Bewertung. Wird das Testset zum Optimieren benutzt, verliert es seine Aussagekraft.', q_: 'ML' },
+  { t: 'ap1', b: 'ki', j: 2, q: 'Was ist der Unterschied zwischen KI und klassischer Programmierung?',
+    a: ['Bei klassischer Programmierung werden Regeln fest vorgegeben; ML lernt Muster aus Daten', 'Klassische Programme benötigen immer eine GPU', 'Beide sind identisch', 'KI kann keine Entscheidungen treffen'],
+    r: 0, e: 'Klassische Programmierung: Der Mensch formuliert die Regeln. Maschinelles Lernen: Das Modell leitet die Regeln aus Beispieldaten ab. Deshalb brauchen ML-Modelle viele Daten.', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 2, q: 'Warum ist Erklärbarkeit (Transparenz) bei KI in der Personalauswahl wichtig?',
+    a: ['Weil Entscheidungen nachvollziehbar und begründbar sein müssen', 'Weil sonst die Rechenleistung steigt', 'Weil intransparente Modelle immer genauer sind', 'Weil die Daten dann kleiner werden'],
+    r: 0, e: 'Bei Bewerberauswahl und Kreditvergabe muss begründet werden können, wie eine Entscheidung zustande kommt. Black-Box-Modelle sind dort problematisch – man bevorzugt erklärbare Verfahren oder ergänzt Erklärbarkeitsmethoden.', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 2, q: 'Was beschreibt der Begriff „Computer Vision"?',
+    a: ['Die automatische Analyse und Deutung von Bildern durch KI', 'Das Aufbauen von Monitoren', 'Das Verschlüsseln von Grafiken', 'Das Komprimieren von Videos'],
+    r: 0, e: 'Computer Vision ist das KI-Teilgebiet der Bildverarbeitung: Gesichtserkennung, Objekterkennung, Qualitätskontrolle in der Produktion. Meist kommen dabei Convolutional Neural Networks (CNNs) zum Einsatz.', q_: 'DL' },
+  { t: 'ap1', b: 'ki', j: 2, q: 'Welche Architektur ist für Bildverarbeitung besonders geeignet?',
+    a: ['Long Short-Term Memory (LSTM)', 'Convolutional Neural Network (CNN)', 'Lineare Regression', 'Entscheidungsbaum'],
+    r: 1, e: 'CNNs (Convolutional Neural Networks) sind auf Bilder spezialisiert: Faltungsschichten erkennen lokale Muster wie Kanten und Formen. LSTMs bzw. RNNs eignen sich dagegen für Sequenzen wie Text und Zeitreihen.', q_: 'DL' },
+  { t: 'ap1', b: 'ki', j: 3, q: 'Welche Aussage über KI und KI-generierte Ergebnisse ist richtig?',
+    a: ['KI-Ergebnisse sind immer korrekt und müssen nicht geprüft werden', 'KI-Ergebnisse können falsch sein und müssen fachlich geprüft werden', 'KI kann nur rechnen, nie Text erzeugen', 'KI-Modelle sind immer ethisch neutral'],
+    r: 1, e: 'KI-Ergebnisse sind Wahrscheinlichkeitsergebnisse – sie können halluzinieren, veraltet sein oder Bias enthalten. Jede Veröffentlichung braucht eine fachliche Prüfung („human in the loop").', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 3, q: 'Welche Rolle hilft, einfache Aufgaben im Support durch KI zu automatisieren?',
+    a: ['Ein Expertensystem oder ein KI-basierter Assistent für Standardfälle', 'Der Austausch aller Server', 'Das Löschen der Wissensdatenbank', 'Die Stilllegung des Ticketsystems'],
+    r: 0, e: 'Standardfälle (Passwort zurücksetzen, FAQ, Statusabfrage) lassen sich durch einen KI-Assistenten oder regelbasiertes Expertensystem automatisch beantworten. Das entlastet den First-Level-Support für schwierige Fälle.', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 3, q: 'Was ist bei KI mit personenbezogenen Daten datenschutzrechtlich besonders zu beachten?',
+    a: ['Trainingsdaten dürfen beliebig aus dem Internet genommen werden', 'Es gilt die DSGVO – Datenminimierung, Zweckbindung und Rechtsgrundlage sind Pflicht', 'Datenschutz gilt für KI nicht', 'Nur Bilder sind personenbezogen'],
+    r: 1, e: 'Auch für KI-Training und -Einsatz gilt die DSGVO: Datenminimierung, Zweckbindung, Rechtsgrundlage, Auskunfts- und Löschrechte. Personenbezogene Daten dürfen nicht ohne Grundlage in Modelle einfließen.', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 1, q: 'Was ist ein Merkmal (Feature) im maschinellen Lernen?',
+    a: ['Die gewünschte Ausgabe des Modells', 'Eine Eingabegröße, die das Modell zur Vorhersage nutzt', 'Die Lernrate', 'Ein Fehlertyp'],
+    r: 1, e: 'Features sind die Eingabemerkmale (z. B. Wortanzahl, Absender, Alter). Labels sind die Zielwerte. Beim klassischen ML wählt der Mensch Features aus; beim DL findet das Netz sie selbst.', q_: 'ML' },
+  { t: 'ap1', b: 'ki', j: 1, q: 'Was bedeutet „Skalierung/Normierung" von Merkmalen vor dem Training?',
+    a: ['Merkmale auf vergleichbare Wertebereiche bringen', 'Merkmale löschen', 'Merkmale vervielfachen', 'Das Modell vergrößern'],
+    r: 0, e: 'Liegen Merkmale auf stark verschiedenen Skalen (z. B. Alter 0–100 vs. Einkommen 0–100.000), dominieren große Werte. Deshalb werden sie normiert – besonders wichtig für SVM und K-Means.', q_: 'ML' },
+  { t: 'ap1', b: 'ki', j: 1, q: 'Was ist der Unterschied zwischen Klassifikation und Clustering?',
+    a: ['Klassifikation ordnet bekannten Klassen zu, Clustering findet Gruppen ohne Vorgabe', 'Beide sind unüberwacht', 'Clustering braucht Labels', 'Klassifikation gruppiert nur Zahlen'],
+    r: 0, e: 'Klassifikation ist überwacht (bekannte Klassen) und ordnet zu. Clustering ist unüberwacht und entdeckt unbekannte Gruppen. Deshalb spricht man beim Clustering von „Entdecken", bei der Klassifikation von „Zuordnen".', q_: 'ML' },
+
+  { t: 'ap1', b: 'ki', j: 1, q: 'Was ist ein Expertensystem?',
+    a: ['Ein regelbasiertes KI-System, das Wissen und Schlussregeln eines Fachexperten nachbildet', 'Ein neuronales Netz mit vielen Schichten', 'Ein Datenbanksystem ohne Regeln', 'Ein reines Rechenprogramm ohne Wissen'],
+    r: 0, e: 'Ein Expertensystem gehört zur klassischen, symbolischen KI: Der Mensch hinterlegt Wissen als Regeln (WENN … DANN …). Es braucht keine großen Datenmengen – im Gegensatz zum maschinellen Lernen.', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 1, q: 'Welche Aussage unterscheidet symbolische KI von maschinellem Lernen?',
+    a: ['Symbolische KI nutzt feste Regeln, ML lernt Muster aus Daten', 'Beide benötigen keinen Menschen', 'ML arbeitet ohne Daten', 'Symbolische KI braucht immer eine GPU'],
+    r: 0, e: 'Symbolische KI (z. B. Expertensystem) arbeitet mit vom Menschen formulierten Regeln. Maschinelles Lernen leitet die Regeln aus Beispieldaten ab. Deshalb brauchen ML und DL viele Daten.', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 2, q: 'Was ist eine „Epoche" beim Training eines Modells?',
+    a: ['Ein vollständiger Durchlauf durch alle Trainingsdaten', 'Ein einzelner Datenpunkt', 'Eine einzelne GPU', 'Der gesamte Datensatz im Speicher'],
+    r: 0, e: 'Eine Epoche ist ein vollständiger Durchlauf über den gesamten Trainingsdatensatz. Meist werden viele Epochen trainiert; eine „Batch" ist die Teilmenge, die in einem Schritt verarbeitet wird.', q_: 'DL' },
+  { t: 'ap1', b: 'ki', j: 2, q: 'Wofür steht die Transformer-Architektur (2017)?',
+    a: ['Sie ist die Grundlage moderner Sprachmodelle und nutzt Aufmerksamkeit (Attention) statt fester Reihenfolge', 'Sie ist ein Speichermedium', 'Sie ist ein Netzwerkprotokoll', 'Sie ist ein klassisches Datenbankschema'],
+    r: 0, e: 'Der Transformer nutzt den Attention-Mechanismus, um Beziehungen zwischen allen Wörtern eines Textes zu erfassen. Er ist die Grundlage großer Sprachmodelle wie GPT und damit heutiger generativer KI.', q_: 'DL' },
+  { t: 'ap1', b: 'ki', j: 2, q: 'Was bedeutet „Transfer Learning"?',
+    a: ['Ein bereits trainiertes Modell auf eine neue, ähnliche Aufgabe übertragen und nachtrainieren', 'Daten von einem Rechner auf einen anderen kopieren', 'Ein Modell löschen', 'Ein Modell ohne Daten trainieren'],
+    r: 0, e: 'Beim Transfer Learning startet man mit einem vortrainierten Modell und passt es an eine neue Aufgabe an (Feintuning). Das spart Rechenzeit und Daten, weil das Modell schon allgemeine Muster gelernt hat.', q_: 'DL' },
+  { t: 'ap1', b: 'ki', j: 2, q: 'Was bedeutet die Abkürzung RAG (Retrieval Augmented Generation)?',
+    a: ['Ein Sprachmodell holt relevante Dokumente aus einer Wissensbasis und nutzt sie zum Antworten', 'Ein Verfahren zum Löschen von Daten', 'Ein Netzwerkprotokoll', 'Ein Trainingsverfahren für GPUs'],
+    r: 0, e: 'Bei RAG verbindet man ein Sprachmodell mit einer Wissensdatenbank: Zuerst werden passende Dokumente gesucht (Retrieval), dann wird die Antwort daraus erzeugt (Generation). So sinken Halluzinationen und Antworten bleiben aktuell.', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 2, q: 'Was ist ein Diffusionsmodell?',
+    a: ['Ein generatives KI-Modell, das Bilder erzeugt, indem es schrittweise Rauschen entfernt', 'Ein Modell zur Berechnung von Netzwerkadressen', 'Ein Datenkompressionsverfahren', 'Ein Sicherheitsprotokoll'],
+    r: 0, e: 'Diffusionsmodelle erzeugen Bilder und andere Medien, indem sie aus zufälligem Rauschen schrittweise ein Bild formen. Sie sind neben GANs die Grundlage moderner Bildgenerierung.', q_: 'DL' },
+  { t: 'ap1', b: 'ki', j: 2, q: 'Was ist „Prompt Injection" als Sicherheitsrisiko bei LLM-Anwendungen?',
+    a: ['Eine versteckte Anweisung in Eingabedaten, die das Modell zu ungewollten Aktionen verleitet', 'Ein Fehler in der Tastatur', 'Ein Angriff auf das Netzwerkkabel', 'Eine Methode zum Modelltraining'],
+    r: 0, e: 'Bei der Prompt Injection schmuggelt ein Angreifer Anweisungen in Text, den das Modell verarbeitet (z. B. in eine E-Mail oder Webseite). Das Modell kann dann Regeln umgehen. Gegenmaßnahmen: Eingaben prüfen und Rechte des Modells begrenzen.', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 2, q: 'Wie kann KI für Angriffe missbraucht werden?',
+    a: ['Für täuschend echte Phishing-Mails, Deepfakes und automatisiertes Ausprobieren von Passwörtern', 'Nur zum Anzeigen von Werbung', 'KI kann nicht für Angriffe genutzt werden', 'Nur zum Kopieren von Dateien'],
+    r: 0, e: 'Generative KI senkt die Hürde für Angriffe: individuelle, fehlerfreie Phishing-Texte, gefälschte Stimmen/Video (Deepfakes) und Automatisierung von Angriffen. Sensibilisierung und technische Schutzmaßnahmen werden dadurch wichtiger.', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 3, q: 'Warum ist der Energie- und Ressourcenverbrauch von KI ein Thema?',
+    a: ['Training und Betrieb großer Modelle verbrauchen viel Strom und Kühlung – relevant für Kosten und Nachhaltigkeit', 'KI verbraucht grundsätzlich keinen Strom', 'Nur kleine Modelle verbrauchen Strom', 'Der Verbrauch ist unabhängig von der Modellgröße'],
+    r: 0, e: 'Besonders das Training großer Modelle und der Dauerbetrieb in Rechenzentren treiben Strombedarf und Kühlung. Das ist zugleich ein Kosten- und ein Nachhaltigkeitsthema – Effizienz und passende Modellgröße zählen.', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 3, q: 'Was bedeutet „human in the loop" beim Einsatz von KI?',
+    a: ['Ein Mensch prüft oder bestätigt die Entscheidung des KI-Systems', 'Der Mensch programmiert das Modell', 'Das Modell arbeitet völlig ohne Kontrolle', 'Der Mensch ersetzt die Hardware'],
+    r: 0, e: 'Bei „human in the loop" bleibt der Mensch in der Entscheidungskette: Er prüft Ergebnisse und gibt sie frei. Das ist Pflicht bei kritischen Anwendungen (Personal, Medizin, Recht) und reduziert Fehler durch Halluzinationen oder Bias.', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 1, q: 'Wofür wird KI im Rahmen der Prozessanalyse genutzt?',
+    a: ['Für Mustererkennung, Prognosen und Anomalieerkennung in Prozessdaten', 'Zum Ausdrucken von Rechnungen', 'Zum Verlegen von Netzwerkkabeln', 'Zum Aufbau der Hardware'],
+    r: 0, e: 'KI hilft in der Prozessanalyse bei Mustererkennung, Vorhersagen (Predictive Maintenance) und Anomalieerkennung. Sie unterstützt Entscheidungen – die fachliche Bewertung bleibt beim Menschen.', q_: 'KI' }
 ];
 
 /* ---------- Karteikarten (Spaced Repetition) ---------- */
@@ -1719,7 +1873,55 @@ const KARTEN = [
   { t: 'ap1', b: 'pm', j: 1, f: 'Teamentwicklung: Phasen und Reflexion', a: '<p><b>Phasen nach Tuckman:</b> Forming (Orientierung) – Storming (Konflikte) – Norming (Regeln) – Performing (Leistung).</p><p><b>Reflexionsmethoden</b> (PK-01): Feedback-Kultur, Lessons Learned, Retrospektive. Ziel ist nicht Schuldzuweisung, sondern die Verbesserung der Arbeitsprozesse.</p><p>Nach der Performing-Phase kann eine Auflösungsphase (Adjourning) folgen.</p>', q_: 'PK1' },
   { t: 'ap1', b: 'pm', j: 1, f: 'Support-Ebenen: First, Second, Third Level', a: '<ul><li><b>First-Level</b> – erste Anlaufstelle: annahme, Erfassung, Klassifizierung, Lösung von Standardfällen. Größte Menge, kleinste Komplexität.</li><li><b>Second-Level</b> – Spezialisten für komplexere Fälle, die der First-Level nicht lösen kann.</li><li><b>Third-Level</b> – Hersteller oder Entwicklung, bei grundlegenden Produktfehlern.</li></ul><p>Ziel ist die Entlastung der höheren Ebene – „so tief wie nötig, so niedrig wie möglich".</p>', q_: 'PK1' },
   { t: 'ap1', b: 'pm', j: 1, f: 'Ticketsystem – Nutzen und typischer Ablauf', a: '<ol><li>Erfassung der Anfrage (per Mail, Telefon, Portal)</li><li>eindeutige Ticketnummer</li><li>Klassifizierung und <b>Priorisierung</b></li><li>Zuordnung zum Bearbeiter</li><li>Bearbeitung mit Dokumentation</li><li>Rückmeldung an den Kunden, Statusverfolgung</li><li>Abschluss und Auswertung</li></ol><p>Nutzen: Nachvollziehbarkeit, Auswertbarkeit (Häufigkeiten, Bearbeitungszeiten), keine verlorenen Anfragen. PK-01 nennt es zusammen mit KI-Unterstützung.</p>', q_: 'PK1' },
-  { t: 'ap1', b: 'pm', j: 1, f: 'Verfügbarkeit in Prozent – die Ausfallzeiten', a: '<p>Bezugsgröße: 8.760 Stunden pro Jahr.</p><ul><li><b>99 %</b> ≈ 87,6 h/Jahr (3,65 Tage)</li><li><b>99,5 %</b> ≈ 43,8 h/Jahr</li><li><b>99,9 %</b> ≈ 8,76 h/Jahr</li><li><b>99,99 %</b> ≈ 52,6 min/Jahr</li></ul><p>Formel: Ausfallzeit = (100 % − Verfügbarkeit) × Zeitraum. Werte gehören immer in ein SLA mit definiertem Zeitraum.</p>', q_: 'PK1' }
+  { t: 'ap1', b: 'pm', j: 1, f: 'Verfügbarkeit in Prozent – die Ausfallzeiten', a: '<p>Bezugsgröße: 8.760 Stunden pro Jahr.</p><ul><li><b>99 %</b> ≈ 87,6 h/Jahr (3,65 Tage)</li><li><b>99,5 %</b> ≈ 43,8 h/Jahr</li><li><b>99,9 %</b> ≈ 8,76 h/Jahr</li><li><b>99,99 %</b> ≈ 52,6 min/Jahr</li></ul><p>Formel: Ausfallzeit = (100 % − Verfügbarkeit) × Zeitraum. Werte gehören immer in ein SLA mit definiertem Zeitraum.</p>', q_: 'PK1' },
+
+  /* ---------- KI, ML & Deep Learning ---------- */
+  { t: 'ap1', b: 'ki', j: 1, f: 'KI, ML und DL – die Hierarchie', a: '<p>Es gilt: <b>KI ⊃ ML ⊃ DL</b>.</p><ul><li><b>Künstliche Intelligenz (KI)</b>: Oberbegriff – Systeme, die Aufgaben „intelligent" lösen. Umfasst auch regelbasierte Systeme.</li><li><b>Maschinelles Lernen (ML)</b>: Teilgebiet der KI – lernt Muster aus Daten, ohne explizit programmiert zu werden.</li><li><b>Deep Learning (DL)</b>: Subfeld des ML – nutzt tiefe neuronale Netze mit vielen Schichten.</li></ul>', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 1, f: 'Was ist maschinelles Lernen?', a: '<p>Ein Teilgebiet der KI, in dem Algorithmen aus Beispieldaten statistische Zusammenhänge lernen, statt dass der Lösungsweg durch feste Regeln vorgegeben wird.</p><p>Man unterscheidet vor allem überwachtes, unüberwachtes und bestärkendes Lernen.</p>', q_: 'ML' },
+  { t: 'ap1', b: 'ki', j: 1, f: 'Was ist Deep Learning?', a: '<p>Ein Teilbereich des maschinellen Lernens, der <b>tiefe neuronale Netze</b> mit vielen Schichten verwendet.</p><p>Es automatisiert die Merkmalsextraktion (Feature Engineering) und eignet sich für <b>große, unstrukturierte Datenmengen</b> – Bilder, Sprache, Text. Beispiele: Bild- und Spracherkennung, Übersetzung.</p>', q_: 'DL' },
+  { t: 'ap1', b: 'ki', j: 1, f: 'Was ist ein künstliches Neuron?', a: '<p>Eine Verarbeitungseinheit: Sie bildet die gewichtete Summe ihrer Eingaben, addiert den Bias und leitet das Ergebnis durch eine Aktivierungsfunktion.</p><p style="font-family:var(--mono)">z = Σ (xᵢ · wᵢ) + b&nbsp;&nbsp;→&nbsp;&nbsp;a = f(z)</p>', q_: 'DL' },
+  { t: 'ap1', b: 'ki', j: 1, f: 'Welche Schichten hat ein neuronales Netz?', a: '<ul><li><b>Eingabeschicht</b> – nimmt die Merkmale auf.</li><li><b>Verborgene Schichten</b> – verarbeiten und kombinieren die Signale (mehrere = „tief").</li><li><b>Ausgabeschicht</b> – liefert das Ergebnis (z. B. Klasse oder Wert).</li></ul>', q_: 'DL' },
+  { t: 'ap1', b: 'ki', j: 1, f: 'Aktivierungsfunktionen: ReLU und Sigmoid', a: '<p><b>ReLU</b>: f(z) = max(0, z) – negative Werte werden 0, positive bleiben. Beliebt in tiefen Netzen, da die Gradienten nicht „verschwinden".</p><p><b>Sigmoid</b>: presst das Ergebnis auf einen Wert zwischen 0 und 1 – früher Standard, neigt aber zum Vanishing Gradient.</p>', q_: 'DL' },
+  { t: 'ap1', b: 'ki', j: 1, f: 'Backpropagation – in fünf Schritten', a: '<ol><li>Gewichte und Bias zufällig initialisieren.</li><li>Vorwärtspropagation: Eingaben durch die Schichten leiten.</li><li>Fehler berechnen (Vorhersage vs. Zielwert).</li><li>Fehler rückwärts führen und Gewichte anpassen.</li><li>Wiederholen, bis das Modell konvergiert.</li></ol><p>Die <b>Lernrate</b> bestimmt, wie stark jede Anpassung ausfällt.</p>', q_: 'DL' },
+  { t: 'ap1', b: 'ki', j: 1, f: 'Das Perzeptron', a: '<p>Das Ur-Modell eines künstlichen Neurons, vorgestellt <b>1957 von Frank Rosenblatt</b>. Es kombiniert Eingaben mit Gewichten und vergleicht die Summe mit einem Schwellenwert.</p><p>Es kann nur <b>linear trennbare</b> Probleme lösen – das XOR-Problem (Minsky/Papert 1969) führte zur ersten „KI-Winter"-Phase. Mehrschichtige Netze mit Backpropagation überwanden diese Grenze.</p>', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 1, f: 'Überwachtes Lernen', a: '<p>Lernen mit <b>gelabelten</b> Daten: zu jeder Eingabe ist die gewünschte Ausgabe (Label, Ground Truth) bekannt.</p><p>Typische Aufgaben: <b>Klassifikation</b> (Spam/Nicht-Spam) und <b>Regression</b> (Hauspreis). Algorithmen: lineare/logistische Regression, Entscheidungsbaum, SVM, neuronale Netze.</p>', q_: 'ML' },
+  { t: 'ap1', b: 'ki', j: 1, f: 'Unüberwachtes Lernen', a: '<p>Lernen mit <b>unbeschrifteten</b> Daten: Es gibt keine Labels, das Modell entdeckt selbst Strukturen.</p><p>Typische Aufgaben: <b>Clustering</b> (Kundensegmente, K-Means) und <b>Dimensionsreduktion</b>. Ein Maß für die Clusterqualität ist der Silhouette-Score.</p>', q_: 'ML' },
+  { t: 'ap1', b: 'ki', j: 1, f: 'Bestärkendes Lernen (Reinforcement Learning)', a: '<p>Ein <b>Agent</b> lernt durch Versuch und Irrtum. Für gute Aktionen gibt es eine <b>Belohnung</b>, für schlechte eine Bestrafung.</p><p>Ziel ist es, die Belohnung über die Zeit zu maximieren. Beispiele: Spiele, Robotik, autonome Systeme.</p>', q_: 'ML' },
+  { t: 'ap1', b: 'ki', j: 1, f: 'K-Means – Ablauf', a: '<ol><li>Anzahl k festlegen und k Startzentroide wählen.</li><li>Jeden Punkt dem nächsten Zentroiden zuordnen.</li><li>Zentroiden als Mittelwert ihrer Punkte neu berechnen.</li><li>Wiederholen, bis die Zentroiden stabil bleiben.</li></ol><p>Die optimale Clusterzahl findet man oft über einen <b>Elbow-Plot</b> (Knick in der Kurve).</p>', q_: 'ML' },
+  { t: 'ap1', b: 'ki', j: 1, f: 'Dendrogramm und Linkage-Methoden', a: '<p><b>Dendrogramm</b>: Baumdiagramm des hierarchischen Clusterings. Die vertikale Achse zeigt die Verschmelzungsdistanz.</p><p><b>Linkage</b>: <b>Single</b> = nächste Punkte, <b>Complete</b> = weiteste Punkte, <b>Average</b> = mittlerer Abstand aller Punktpaare.</p>', q_: 'ML' },
+  { t: 'ap1', b: 'ki', j: 1, f: 'Distanzmaße: euklidisch und Manhattan', a: '<p><b>Euklidische Distanz</b>: „Luftlinie" zwischen zwei Punkten – vor allem bei metrischen Daten.</p><p><b>Manhattan-Distanz</b> (City-Block, L1): Summe der absoluten Koordinaten-Differenzen. Beispiel P1(4,5), P2(20,2): |20−4| + |2−5| = 16 + 3 = 19.</p><p>Weil Distanzmaße auf absoluten Werten beruhen, müssen Merkmale mit verschiedenen Einheiten vorher normiert werden.</p>', q_: 'ML' },
+  { t: 'ap1', b: 'ki', j: 1, f: 'Entscheidungsbaum – Anatomie', a: '<ul><li><b>Wurzelknoten</b> – oberster Knoten, enthält den gesamten Datensatz.</li><li><b>Entscheidungsknoten</b> – prüft ein Merkmal und teilt den Datenstrom.</li><li><b>Blattknoten</b> – Endpunkt mit dem Ergebnis (Klasse oder Wert).</li></ul><p>Der Baum entsteht durch rekursive Partitionierung (Splitting). Ziel ist reine Teilmengen (Purity).</p>', q_: 'ML' },
+  { t: 'ap1', b: 'ki', j: 1, f: 'Entscheidungsbaum: Entropie, Gini und Pruning', a: '<p><b>Entropie</b> misst die Unordnung; der <b>Informationsgewinn</b> ist die Abnahme der Entropie durch einen Split.</p><p><b>Gini-Index</b>: Wahrscheinlichkeit einer Fehlklassifikation; recheneffizienter als die Entropie (CART).</p><p><b>Pruning</b> gegen Overfitting: Pre-Pruning (früh stoppen, z. B. Tiefe begrenzen) und Post-Pruning (fertigen Baum nachträglich kürzen).</p>', q_: 'ML' },
+  { t: 'ap1', b: 'ki', j: 1, f: 'Random Forest – Grundidee', a: '<p>Ein <b>Ensemble</b> aus vielen Entscheidungsbäumen. Jeder Baum wird auf einer <b>Bootstrap-Stichprobe</b> (mit Zurücklegen) trainiert und wählt pro Split eine zufällige Merkmalsmenge (Feature Bagging).</p><p>Ergebnis per <b>Mehrheitsvotum</b> (Klassifikation) oder <b>Mittelwert</b> (Regression). Das reduziert die Varianz und mindert Overfitting einzelner Bäume.</p>', q_: 'ML' },
+  { t: 'ap1', b: 'ki', j: 2, f: 'Support Vector Machine (SVM)', a: '<p>Ein überwachter Klassifikationsalgorithmus. Er sucht die <b>Hyperplane</b> mit dem größten Abstand (<b>Margin</b>) zu den nächstgelegenen Punkten – den <b>Support Vectors</b>.</p><p>Für nichtlineare Daten hilft der <b>Kernel-Trick</b>: Die Daten werden implizit in einen höherdimensionalen Raum transformiert (z. B. RBF-Kernel).</p>', q_: 'ML' },
+  { t: 'ap1', b: 'ki', j: 2, f: 'Evaluationsmetriken aus der Confusion Matrix', a: '<p>Grundlage: TP (richtig positiv), FP (falsch positiv), TN (richtig negativ), FN (falsch negativ).</p><ul><li><b>Accuracy</b> = (TP+TN) ÷ Gesamtzahl</li><li><b>Precision</b> = TP ÷ (TP+FP)</li><li><b>Recall</b> = TP ÷ (TP+FN)</li><li><b>F1</b> = harmonisches Mittel aus Precision und Recall</li></ul>', q_: 'ML' },
+  { t: 'ap1', b: 'ki', j: 2, f: 'Overfitting und Underfitting', a: '<p><b>Overfitting</b>: Das Modell lernt die Trainingsdaten zu genau (inkl. Rauschen) und generalisiert schlecht.</p><p><b>Underfitting</b>: Das Modell ist zu einfach und erfasst das Muster nicht.</p><p>Gegenmaßnahmen: mehr Daten, Kreuzvalidierung, Regularisierung (Dropout, L2), Pruning, kürzere Trainingszeit.</p>', q_: 'ML' },
+  { t: 'ap1', b: 'ki', j: 2, f: 'Vorgehen zur Entwicklung eines KI-Modells', a: '<ol><li>Daten sammeln</li><li>Daten vorverarbeiten (bereinigen, normalisieren)</li><li>Feature-Engineering (relevante Merkmale)</li><li>Modell trainieren</li><li>Evaluieren (Testdaten, Metriken)</li><li>Deployment (produktiver Einsatz)</li></ol><p>Im ML übernimmt der Mensch das Feature-Engineering, im DL erledigt das Netz es selbst.</p>', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 2, f: 'Warum braucht Deep Learning große Datenmengen und GPUs?', a: '<p><b>Datenmenge</b>: Viele Schichten haben viele Parameter – ohne genügend Beispiele droht Overfitting.</p><p><b>GPUs</b>: Das Training besteht aus sehr vielen parallelisierbaren Matrixoperationen. GPUs führen Tausende davon gleichzeitig aus.</p><p>Die Trainingszeit von DL liegt typischerweise bei Stunden bis Wochen, im klassischen ML bei Sekunden bis Stunden.</p>', q_: 'DL' },
+  { t: 'ap1', b: 'ki', j: 2, f: 'Klassifikation vs. Regression', a: '<p><b>Klassifikation</b>: weist <b>diskrete Klassen</b> zu – Spam/Nicht-Spam, Tierart, Kredit ja/nein. Formen: binär, Multi-Class, Multi-Label.</p><p><b>Regression</b>: sagt einen <b>kontinuierlichen Zahlenwert</b> voraus – Hauspreis, Umsatz, Temperatur.</p>', q_: 'ML' },
+  { t: 'ap1', b: 'ki', j: 3, f: 'Ethik der KI – typische Risiken', a: '<ul><li><b>Algorithmische Verzerrung (Bias)</b>: Vorurteile aus den Trainingsdaten.</li><li><b>Black Box / mangelnde Transparenz</b>: Entscheidungen sind nicht nachvollziehbar.</li><li><b>Datenschutz</b>: personenbezogene Daten – DSGVO beachten.</li><li><b>Regulierung</b>: der EU Artificial Intelligence Act ordnet KI nach Risikostufen ein.</li></ul>', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 1, f: 'Was ist generative KI (GenAI)?', a: '<p>KI, die <b>neue Inhalte erzeugt</b> – Text, Bilder, Audio oder Code.</p><p>Grundlage sind große neuronale Netze, die aus sehr vielen Beispielen Muster gelernt haben. Beispiele: Sprachmodelle (LLM) für Text, Diffusionsmodelle für Bilder.</p>', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 1, f: 'Was ist ein LLM?', a: '<p><b>Large Language Model</b> – ein großes Sprachmodell, ein neuronales Netz, das auf riesigen Textmengen trainiert wurde.</p><p>Es sagt die wahrscheinlichste Fortsetzung eines Textes voraus und „versteht" dadurch Sprache. Es kann plausibel klingen und trotzdem falsch sein (<b>Halluzination</b>).</p>', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 1, f: 'Prompt und Prompting', a: '<p><b>Prompt</b>: die Eingabe bzw. Anweisung an ein generatives Modell.</p><p>Gute Prompts nennen <b>Aufgabe, Kontext, Zielgruppe und gewünschtes Format</b>. Rollenangaben und Beispiele verbessern das Ergebnis. Das gezielte Formulieren heißt <b>Prompting</b>.</p>', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 1, f: 'Halluzination bei KI-Modellen', a: '<p>Ein Sprachmodell erzeugt eine <b>plausibel klingende, aber falsche</b> Aussage – etwa eine erfundene Quelle oder Zahl.</p><p>Ursache: Das Modell bildet Wahrscheinlichkeiten, nicht Wahrheit. Folge: Ergebnisse müssen immer fachlich geprüft werden („human in the loop").</p>', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 1, f: 'Feature vs. Label', a: '<p><b>Feature</b>: eine Eingabegröße, die das Modell zur Vorhersage nutzt (Wortanzahl, Absender, Alter).</p><p><b>Label</b>: die bekannte Zielausgabe (Spam / Nicht-Spam). Beim überwachten Lernen sind Labels vorhanden, beim unüberwachten nicht.</p>', q_: 'ML' },
+  { t: 'ap1', b: 'ki', j: 1, f: 'Warum Merkmale normieren?', a: '<p>Liegen Merkmale auf stark verschiedenen Skalen, dominieren große Werte das Ergebnis.</p><p>Beispiel: Alter (0–100) und Einkommen (0–100.000). Deshalb werden Merkmale vor dem Training auf einen vergleichbaren Bereich (z. B. 0–1) <b>skaliert</b> – besonders wichtig für SVM und K-Means, die mit Abständen rechnen.</p>', q_: 'ML' },
+  { t: 'ap1', b: 'ki', j: 2, f: 'Convolutional Neural Network (CNN)', a: '<p>Eine Netzarchitektur, die auf <b>Bilder</b> spezialisiert ist. Faltungsschichten (Convolution) erkennen lokale Muster – Kanten, Formen, Objekte.</p><p>Einsatz: Gesichtserkennung, Objekterkennung, Qualitätskontrolle. Für Sequenzen (Text, Zeitreihen) nutzt man dagegen RNN/LSTM oder Transformer.</p>', q_: 'DL' },
+  { t: 'ap1', b: 'ki', j: 2, f: 'Computer Vision und NLP', a: '<p><b>Computer Vision</b>: KI deutet Bilder – Gesichtserkennung, Objekterkennung, Inspektion.</p><p><b>NLP</b> (Natural Language Processing): KI verarbeitet natürliche Sprache – Übersetzung, Spracherkennung, Chatbots, Textanalyse.</p>', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 2, f: 'KI im IT-Support', a: '<ul><li>Automatische <b>Klassifizierung</b> und Priorisierung eingehender Tickets</li><li><b>Antwortvorschläge</b> aus der Wissensdatenbank</li><li><b>Self-Service</b> für Standardfälle (Passwort, FAQ, Status)</li><li>Erkennung wiederkehrender Probleme (Musteranalyse)</li></ul><p>Der Mensch entscheidet Fälle und Ausnahmen – KI entlastet den First-Level-Support.</p>', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 2, f: 'KI und Datenschutz (DSGVO)', a: '<p>Auch für KI-Training und -Einsatz gilt die <b>DSGVO</b>: Rechtsgrundlage, Zweckbindung, Datenminimierung, Auskunfts- und Löschrechte.</p><p>Personenbezogene Daten dürfen nicht ohne Grundlage in Modelle einfließen. Für Hochrisiko-KI (z. B. Bewerberauswahl) gilt zusätzlich der <b>EU AI Act</b>.</p>', q_: 'KI' },
+
+  /* ---------- KI, ML & Deep Learning — zweite Welle ---------- */
+  { t: 'ap1', b: 'ki', j: 1, f: 'Symbolische KI vs. maschinelles Lernen', a: '<p><b>Symbolische KI</b> (klassisch): Der Mensch formuliert Regeln, z. B. ein <b>Expertensystem</b> (WENN … DANN …). Braucht keine großen Datenmengen, ist aber nur so gut wie die Regeln.</p><p><b>Maschinelles Lernen</b>: Das Modell leitet die Regeln selbst aus Beispieldaten ab. Braucht viele Daten, kann aber Muster finden, die niemand formuliert hat.</p>', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 2, f: 'Epoche und Batch', a: '<p><b>Batch</b>: die Teilmenge der Daten, die in einem Trainingsschritt verarbeitet wird.</p><p><b>Epoche</b>: ein vollständiger Durchlauf über den gesamten Trainingsdatensatz. Meist werden viele Epochen trainiert.</p>', q_: 'DL' },
+  { t: 'ap1', b: 'ki', j: 2, f: 'Transformer (2017)', a: '<p>Eine Netzarchitektur, die auf dem <b>Attention-Mechanismus</b> beruht: Sie gewichtet, welche Wörter im Satz füreinander wichtig sind – unabhängig von ihrer Position.</p><p>Der Transformer ist die Grundlage großer Sprachmodelle (LLM) und damit heutiger generativer Text-KI.</p>', q_: 'DL' },
+  { t: 'ap1', b: 'ki', j: 2, f: 'Transfer Learning', a: '<p>Ein bereits trainiertes Modell wird auf eine neue, ähnliche Aufgabe <b>übertragen und nachtrainiert</b> (Feintuning).</p><p>Vorteil: Das Modell kennt schon allgemeine Muster und braucht daher weniger Daten und Rechenzeit als ein Training von null.</p>', q_: 'DL' },
+  { t: 'ap1', b: 'ki', j: 2, f: 'RAG – Retrieval Augmented Generation', a: '<p>Ein Sprachmodell wird mit einer <b>Wissensdatenbank verbunden</b>:<br>1. <b>Retrieval</b> – passende Dokumente suchen.<br>2. <b>Generation</b> – die Antwort daraus erzeugen.</p><p>Vorteil: Antworten bleiben aktuell und stützen sich auf Quellen – die Halluzinationsgefahr sinkt.</p>', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 2, f: 'Prompt Injection', a: '<p><b>Angriff</b>: In Text, den das Modell verarbeitet (E-Mail, Webseite, Dokument), ist eine versteckte Anweisung versteckt, die das Modell zu ungewollten Aktionen verleitet.</p><p><b>Gegenmaßnahmen</b>: Eingaben prüfen, Rechte des Modells stark begrenzen, Ergebnisse vor Ausführung menschlich freigeben.</p>', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 2, f: 'KI als Angriffswerkzeug', a: '<ul><li><b>Phishing</b>: individuelle, fehlerfreie Mails in jeder Sprache.</li><li><b>Deepfakes</b>: gefälschte Stimmen und Videos („CEO-Fraud").</li><li><b>Automatisierung</b>: massenhaftes Ausprobieren von Passwörtern.</li></ul><p>Folge: <b>Sensibilisierung</b> der Mitarbeiter und technische Schutzmaßnahmen werden wichtiger.</p>', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 3, f: 'Ressourcen- und Energieverbrauch von KI', a: '<p>Training großer Modelle und der Dauerbetrieb in Rechenzentren verbrauchen viel <b>Strom und Kühlung</b>.</p><p>Das ist ein Kosten- und Nachhaltigkeitsthema. Gegenmaßnahmen: passende (nicht maximale) Modellgröße, effiziente Hardware, gemietete statt eigener Ressourcen, sparsamer Betrieb.</p>', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 3, f: 'Human in the loop', a: '<p>Der Mensch bleibt in der Entscheidungskette: Er <b>prüft und bestätigt</b> das Ergebnis des KI-Systems, bevor es wirkt.</p><p>Pflicht bei kritischen Anwendungen (Personal, Medizin, Recht). Reduziert Fehler durch Halluzinationen, Bias und Fehlklassifikation.</p>', q_: 'KI' },
+  { t: 'ap1', b: 'ki', j: 1, f: 'KI in der Prozessanalyse', a: '<ul><li><b>Mustererkennung</b>: wiederkehrende Abläufe sichtbar machen.</li><li><b>Prognose</b>: Vorhersage von Ausfällen (Predictive Maintenance) und Bedarfen.</li><li><b>Anomalieerkennung</b>: ungewöhnliche Vorgänge in Logs oder Messwerten finden.</li></ul><p>Die KI liefert Hinweise; die fachliche Bewertung und Entscheidung bleibt beim Menschen.</p>', q_: 'KI' }
 ];
 
 /* ---------- Lückentexte (aktives Erinnern) ---------- */
@@ -1851,6 +2053,59 @@ const LUECKEN = [
       bestätigt die Normerfüllung durch eine {Zertifizierung}.`,
     hinweis: 'Planung = Ist und Ziel festlegen. Lenkung = umsetzen. PDCA ist ein Kreislauf.',
     quelle: 'IHK-Prüfungskatalog AP1 · PK-05'
+  },
+  {
+    t: 'ap1', id: 'lueck-ki-grund', j: 1, b: 'ki', titel: 'KI, ML und DL – Grundbegriffe',
+    text: `Die {Künstliche Intelligenz} ist der Oberbegriff für alle Systeme, die Aufgaben intelligent lösen.
+      {Maschinelles Lernen} ist ein Teilgebiet davon und lernt Muster aus Daten, ohne explizit programmiert zu
+      werden. {Deep Learning} ist wiederum ein Teilgebiet des maschinellen Lernens und nutzt tiefe
+      {neuronale Netze} mit vielen Schichten. Diese Netze eignen sich besonders für große
+      {unstrukturierte} Daten wie Bilder und Sprache. Ein einzelnes {Neuron} bildet die gewichtete Summe
+      seiner Eingaben und leitet sie durch eine {Aktivierungsfunktion} wie ReLU.`,
+    hinweis: 'Eselsbrücke: KI ⊃ ML ⊃ DL. Nur DL nutzt tiefe neuronale Netze – nicht jede KI ist Deep Learning.',
+    quelle: 'Fidup-Wiki · ki, ki-vs-ml-vs-dl, neural-network'
+  },
+  {
+    t: 'ap1', id: 'lueck-netz', j: 1, b: 'ki', titel: 'Künstliche neuronale Netze',
+    text: `Ein künstliches neuronales Netz besteht aus einer {Eingabeschicht}, mehreren {verborgenen} Schichten
+      und einer {Ausgabeschicht}. Jede Verbindung hat ein {Gewicht}, das ihre Stärke bestimmt. Der
+      {Bias} verschiebt die Aktivierungsschwelle des Neurons. Beim Lernen wird der Fehler durch das Netz
+      zurückgeführt und die Gewichte angepasst – dieses Verfahren heißt {Backpropagation}. Eine zu hohe
+      {Lernrate} führt zu instabilem Lernen, eine zu niedrige zu sehr langsamem Lernen.`,
+    hinweis: 'Vorwärts: Eingabe → Ausgabe (Vorhersage). Rückwärts: Fehler → Gewichte anpassen (Backpropagation).',
+    quelle: 'Fidup-Wiki · neural-network, ki'
+  },
+  {
+    t: 'ap1', id: 'lueck-ml', j: 1, b: 'ki', titel: 'Lernarten des maschinellen Lernens',
+    text: `Beim {überwachten} Lernen werden Daten mit bekannten Zielwerten (Labels) verwendet. Ist das Ziel eine
+      Klasse, spricht man von {Klassifikation}; ist es ein stetiger Zahlenwert, von {Regression}. Beim
+      {unüberwachten} Lernen gibt es keine Labels – hier werden Gruppen durch {Clustering} gebildet. Beim
+      {bestärkenden} Lernen lernt ein Agent durch Belohnung und Bestrafung. Ein häufiges Problem ist
+      {Overfitting}: Das Modell passt sich zu stark an die Trainingsdaten an und generalisiert schlecht.`,
+    hinweis: 'Überwacht braucht Labels, unüberwacht nicht. Clustering = Gruppieren, Regression = Wert vorhersagen.',
+    quelle: 'Fidup-Wiki · überwachtes-und-nicht-ueberwachtes-lernen, maschinelles-lernen'
+  },
+  {
+    t: 'ap1', id: 'lueck-ki-anw', j: 2, b: 'ki', titel: 'KI in der Praxis: Anwendung, Bewertung und Ethik',
+    text: `Ein Modell, das neue Inhalte erzeugt, heißt {generative} KI; ein großes Sprachmodell nennt man
+      {LLM}. Die Eingabe an ein solches Modell ist der {Prompt}. Weil Modelle plausibel klingende, aber
+      falsche Aussagen erzeugen können, spricht man von {Halluzination} – deshalb müssen Ergebnisse
+      fachlich {geprüft} werden. Ein mit verzerrten Daten trainiertes Modell übernimmt {Bias} und
+      entscheidet unfair. Für personenbezogene Daten gilt die {DSGVO}; den Umgang mit KI-Systemen regelt
+      der EU {AI Act}.`,
+    hinweis: 'Zwei Regeln für jede KI-Nutzung: Ergebnis prüfen („human in the loop") und Daten-/Rechtslage beachten.',
+    quelle: 'Fidup-Wiki · ki, ki-vs-ml-vs-dl und eigene Ableitung'
+  },
+  {
+    t: 'ap1', id: 'lueck-ki-anw2', j: 2, b: 'ki', titel: 'RAG, Prompting und Sicherheit von KI-Anwendungen',
+    text: `Ein Sprachmodell, das mit einer Wissensdatenbank verbunden wird, nennt man {RAG}. Zuerst werden
+      passende Dokumente gesucht ({Retrieval}), danach wird die Antwort daraus erzeugt ({Generation}).
+      Ein vortrainiertes Modell auf eine neue Aufgabe zu übertragen, heißt {Transfer Learning}. Die
+      Eingabeaufforderung an ein Modell ist der {Prompt}. Versteckt ein Angreifer eine Anweisung im
+      verarbeiteten Text, spricht man von {Prompt Injection}. Damit ein Mensch kritische Ergebnisse prüft,
+      gilt das Prinzip {Human in the loop}.`,
+    hinweis: 'RAG = erst suchen, dann antworten. Transfer Learning = vorhandenes Wissen weiterverwenden. Prompt Injection = versteckte Anweisung.',
+    quelle: 'Fidup-Wiki · ki, maschinelles-lernen und eigene Ableitung'
   }
 ];
 
@@ -1942,6 +2197,46 @@ const FEHLER = [
       { t: "NTFS erlaubt eine Rechteverwaltung je Datei, FAT32 nicht.", ok: true, e: 'Korrekt: NTFS unterstützt Zugriffsrechte (ACL), Journaling und große Dateien. FAT32 ist herstellerübergreifend, aber auf 4 GB pro Datei begrenzt und ohne Rechtekonzept.' },
       { t: "Ein 64-Bit-Betriebssystem kann auf einem 32-Bit-Prozessor installiert werden.", ok: false, e: 'Falsch: Es gilt die Aufwärtskompatibilität nur in eine Richtung – ein 32-Bit-System läuft auf 64-Bit-Hardware, aber nicht umgekehrt.' },
       { t: "Differenzielle Sicherung bedeutet, jeden Tag nur die Änderungen seit der letzten Vollsicherung zu sichern.", ok: true, e: 'Korrekt: Die differenzielle Sicherung sammelt immer seit der letzten Vollsicherung – die Rücksicherung braucht daher nur Voll + letzte Differenz. Die inkrementelle Variante sichert nur seit der letzten Sicherung überhaupt.' }
+    ]
+  },
+  {
+    t: 'ap1', id: 'fehler-ki', j: 1, b: 'ki', titel: 'Fehlersuche: KI und maschinelles Lernen',
+    aufgabe: 'Prüfe jede Aussage. Manche sind korrekt – entscheide jede einzeln.',
+    zeilen: [
+      { t: "Künstliche Intelligenz, maschinelles Lernen und Deep Learning sind dasselbe.", ok: false, e: 'Falsch: Es gilt die Hierarchie KI ⊃ ML ⊃ DL. KI ist der Oberbegriff, ML ein Teilgebiet der KI und DL ein Subfeld des ML.' },
+      { t: "Maschinelles Lernen lernt Muster aus Daten, ohne dass der Lösungsweg durch feste Regeln programmiert wird.", ok: true, e: 'Korrekt: Genau das unterscheidet ML von der klassischen regelbasierten Programmierung.' },
+      { t: "Deep Learning verwendet neuronale Netze mit vielen Schichten und eignet sich für unstrukturierte Daten wie Bilder und Sprache.", ok: true, e: 'Korrekt: Viele Schichten und automatische Merkmalsextraktion sind die Kennzeichen des Deep Learning.' },
+      { t: "Überwachtes Lernen funktioniert ohne Labels, weil das Modell die Klassen selbst erkennt.", ok: false, e: 'Falsch: Überwachtes Lernen braucht gelabelte Daten (Ground Truth). Ohne Labels arbeitet das unüberwachte Lernen – etwa beim Clustering.' },
+      { t: "Die Vorhersage eines stetigen Zahlenwerts wie eines Hauspreises ist eine Regression.", ok: true, e: 'Korrekt: Klassifikation ordnet diskrete Klassen zu, Regression sagt kontinuierliche Werte voraus.' },
+      { t: "Ein Random Forest ist ein einzelner, besonders großer Entscheidungsbaum.", ok: false, e: 'Falsch: Ein Random Forest ist ein Ensemble aus vielen Entscheidungsbäumen, deren Ergebnisse per Mehrheit bzw. Mittelwert zusammengeführt werden.' },
+      { t: "Overfitting bedeutet, dass ein Modell die Trainingsdaten zu genau lernt und auf neuen Daten schlecht abschneidet.", ok: true, e: 'Korrekt: Gegenmaßnahmen sind mehr Daten, Kreuzvalidierung und Regularisierung.' },
+      { t: "Ein KI-Modell, das mit verzerrten Daten trainiert wurde, ist trotzdem objektiv, weil es nur rechnet.", ok: false, e: 'Falsch: Ein Modell übernimmt die Vorurteile (Bias) seiner Trainingsdaten. Deshalb müssen Daten geprüft und Entscheidungen erklärbar gemacht werden.' }
+    ]
+  },
+  {
+    t: 'ap1', id: 'fehler-netz', j: 1, b: 'ki', titel: 'Fehlersuche: neuronale Netze und Training',
+    aufgabe: 'Prüfe jede Aussage zu Aufbau und Training neuronaler Netze.',
+    zeilen: [
+      { t: "Ein Neuron berechnet z = Σ (xᵢ · wᵢ) + b und leitet z durch eine Aktivierungsfunktion.", ok: true, e: 'Korrekt: Gewichtete Summe der Eingaben, plus Bias, danach die Aktivierungsfunktion.' },
+      { t: "Der Bias b multipliziert die Eingaben mit den Gewichten.", ok: false, e: 'Falsch: Das Multiplizieren übernehmen die Gewichte wᵢ. Der Bias wird zur gewichteten Summe addiert und verschiebt die Aktivierungsschwelle.' },
+      { t: "Die Aktivierungsfunktion ReLU ist definiert als f(z) = max(0, z).", ok: true, e: 'Korrekt: ReLU gibt negative Werte als 0 aus und lässt positive unverändert – das verhindert das Verschwinden der Gradienten in tiefen Netzen.' },
+      { t: "Backpropagation leitet die Eingaben vorwärts durch das Netz, um die Ausgabe zu berechnen.", ok: false, e: 'Falsch: Das Vorwärtsleiten ist die Vorwärtspropagation. Die Backpropagation führt den Fehler rückwärts und passt die Gewichte an.' },
+      { t: "Eine zu hohe Lernrate kann das Training instabil machen.", ok: true, e: 'Korrekt: Eine zu große Lernrate lässt die Gewichte überschießen; eine zu kleine macht das Lernen sehr langsam.' },
+      { t: "Ein Perzeptron kann auch nicht-linear trennbare Probleme wie XOR sicher lösen.", ok: false, e: 'Falsch: Das einfache Perzeptron löst nur linear trennbare Probleme. Beim XOR versagt es – erst mehrschichtige Netze mit Backpropagation lösen es.' },
+      { t: "Für das Training tiefer Netze sind GPUs vorteilhaft, weil die vielen Matrixoperationen parallel laufen.", ok: true, e: 'Korrekt: Die zahlreichen Matrixmultiplikationen lassen sich gut parallelisieren – GPUs führen Tausende gleichzeitig aus.' }
+    ]
+  },
+  {
+    t: 'ap1', id: 'fehler-ki-betrieb', j: 3, b: 'ki', titel: 'Fehlersuche: KI im Unternehmen – Aussagen bewerten',
+    aufgabe: 'Der Betrieb diskutiert den KI-Einsatz. Prüfe jede Aussage – manche sind richtig.',
+    zeilen: [
+      { t: "Ein KI-System liefert Ergebnisse, die immer fachlich geprüft werden müssen, bevor sie verwendet werden.", ok: true, e: 'Korrekt: Wegen Halluzinationen, Bias und veralteten Daten gilt das Prinzip „human in the loop" – der Mensch prüft und entscheidet.' },
+      { t: "Ein mit historischen Bewerberdaten trainiertes Modell ist automatisch frei von Diskriminierung.", ok: false, e: 'Falsch: Es übernimmt die Verzerrungen der Daten. Bewerberauswahl gilt als Hochrisiko-KI und muss auf Bias geprüft werden.' },
+      { t: "Für das Training und den Betrieb mit personenbezogenen Daten gilt die DSGVO.", ok: true, e: 'Korrekt: Rechtsgrundlage, Zweckbindung und Datenminimierung gelten auch für KI. Bei Hochrisiko-Anwendungen zusätzlich der EU AI Act.' },
+      { t: "Generative KI ist eine praktische Hilfe beim Entwurf von Texten, ersetzt aber nicht die fachliche Verantwortung.", ok: true, e: 'Korrekt: Sie beschleunigt Vorarbeit (Entwurf, Ideen, Zusammenfassung). Die fachliche und rechtliche Verantwortung bleibt beim Menschen.' },
+      { t: "Der Energie- und Ressourcenverbrauch großer KI-Modelle spielt für die Wirtschaftlichkeit keine Rolle.", ok: false, e: 'Falsch: Training und Dauerbetrieb verursachen Strom- und Kühlkosten. Modellgröße und Laufzeit beeinflussen die Wirtschaftlichkeit – und die Nachhaltigkeit.' },
+      { t: "Prompt Injection ist ein Angriff, bei dem eine versteckte Anweisung das Modell zu unerwünschten Aktionen bringt.", ok: true, e: 'Korrekt: Deshalb müssen Eingaben geprüft, Rechte des Modells begrenzt und Ergebnisse vor Ausführung freigegeben werden.' },
+      { t: "KI gibt Unternehmen eine Garantie auf höhere Gewinne.", ok: false, e: 'Falsch: Der Nutzen ist eine Chance, keine Garantie. Er muss wie jede Investition mit Kosten, Nutzen und Risiken bewertet werden – ohne Daten- und Prozessqualität wirkt KI nicht.' }
     ]
   }
 ];
@@ -2376,6 +2671,264 @@ const FAELLE = [
     fazit: `<p><b>Ergebnis der Fallstudie:</b> Ein Auftrag ist erst dann erfolgreich, wenn er von der
       Bedarfsanalyse über das Angebot und die Umsetzung bis zur Abnahme und Auswertung sauber geführt wird.
       Genau diese Handlungskette bilden PK-02, PK-03 und PK-07 ab – und sie ist der Kern der AP1.</p>`
+  },
+  {
+    t: 'ap1', id: 'fall-ki-support', j: 1, b: 'ki', titel: 'Fallstudie: KI im First-Level-Support',
+    einstieg: `<p>Sie arbeiten als IT-System-Manager bei der <b>Nordlicht Logistik GmbH</b>. Der Service-Desk
+      wird von Anfragen überflutet, und die Geschäftsführung will ein KI-System zur automatischen
+      Ticket-Klassifizierung einführen. Sie wurden gebeten, das Vorhaben fachlich zu begleiten.</p>`,
+    schritte: [
+      {
+        situation: `<p><b>Kickoff mit der Geschäftsführung.</b> Der Geschäftsführer hat von „KI", „maschinellem
+          Lernen" und „Deep Learning" gehört und fragt, was davon hier gebraucht wird.</p>`,
+        kunde: '„Was ist der Unterschied zwischen KI, maschinellem Lernen und Deep Learning – und was davon brauchen wir?"',
+        optionen: [
+          { t: 'KI ist der Oberbegriff, ML ein Teilgebiet der KI und DL ein Subfeld des ML mit tiefen neuronalen Netzen. Für die Textklassifizierung kommen ML und ggf. DL in Frage.', p: 3 },
+          { t: 'Alle drei Begriffe meinen dasselbe Verfahren und sind austauschbar.', p: 0 },
+          { t: 'Deep Learning ist der Oberbegriff und enthält KI und ML.', p: 0 }
+        ],
+        feedback: 'Richtig ist die Hierarchie KI ⊃ ML ⊃ DL. Textklassifikation lässt sich oft schon mit klassischem ML lösen; DL lohnt sich bei sehr großen, unstrukturierten Datenmengen und mehr Rechenleistung.'
+      },
+      {
+        situation: `<p><b>Welche Lernart?</b> Das System soll Tickets den Kategorien „Netzwerk", „Hardware",
+          „Software" und „Zugang" zuordnen.</p>`,
+        kunde: '„Welche Lernart brauchen wir dafür – und was setzt sie voraus?"',
+        optionen: [
+          { t: 'Überwachtes Lernen: Die vorhandenen Tickets müssen zuvor von Hand gelabelt werden.', p: 3 },
+          { t: 'Unüberwachtes Lernen: Das System erfindet die Kategorien selbst, Labels sind nicht nötig.', p: 1 },
+          { t: 'Bestärkendes Lernen durch Belohnung für jedes richtig sortierte Ticket.', p: 0 }
+        ],
+        feedback: 'Weil feste Zielkategorien vorgegeben sind, handelt es sich um überwachtes Lernen (Klassifikation). Voraussetzung sind historische Tickets mit Labels (Ground Truth). Unüberwachtes Lernen würde nur Gruppen bilden, keine festen Kategorien.'
+      },
+      {
+        situation: `<p><b>Datengrundlage prüfen.</b> Sie sehen sich die historischen Tickets an: 9.000 Stück,
+          davon 6.000 mit Label, 3.000 ohne. Bei den Labels fällt auf, dass „Netzwerk" viel öfter falsch
+          vergeben wurde.</p>`,
+        kunde: '„Reicht dieser Datensatz – und welche Risiken sehen Sie?"',
+        optionen: [
+          { t: 'Die gelabelten Tickets reichen als Startpunkt, sind aber fehlerhaft. Verzerrte Labels führen zu Bias im Modell – die Daten müssen bereinigt und repräsentativ sein.', p: 3 },
+          { t: 'Label-Fehler sind egal, das Modell lernt von selbst das Richtige.', p: 0 },
+          { t: 'Nur die 3.000 Tickets ohne Label sollten verwendet werden.', p: 0 }
+        ],
+        feedback: 'Ein Modell übernimmt die Fehler und Verzerrungen seiner Trainingsdaten (algorithmischer Bias). Vor dem Training stehen daher Datenqualität, Bereinigung und eine Überprüfung auf Verzerrungen.'
+      },
+      {
+        situation: `<p><b>Bewertung des Modells.</b> Nach dem Training nennt der Entwickler eine Genauigkeit von
+          99 % auf den Trainingsdaten. Auf den Testdaten sind es nur 82 %.</p>`,
+        kunde: '„Welche Zahl gilt – und was ist hier passiert?"',
+        optionen: [
+          { t: 'Es liegt Overfitting vor: Das Modell hat die Trainingsdaten zu genau gelernt. Es muss getestet und regularisiert werden; die 82 % auf den Testdaten sind maßgeblich.', p: 3 },
+          { t: 'Die 99 % sind maßgeblich, die Testdaten sind nur Zufall.', p: 0 },
+          { t: 'Beide Werte sind gleichwertig, man nimmt den Mittelwert.', p: 0 }
+        ],
+        feedback: 'Bewertet wird immer auf zurückgehaltenen Testdaten. Ein großer Abstand zwischen Trainings- und Testergebnis ist ein typisches Overfitting-Signal. Gegenmaßnahmen: mehr Daten, Kreuzvalidierung, Regularisierung.'
+      }
+    ],
+    fazit: `<p><b>Ergebnis der Fallstudie:</b> Für die Ticket-Klassifizierung ist überwachtes Lernen der passende
+      Ansatz. Entscheidend sind saubere, repräsentative Labels – ein Modell ist niemals objektiver als seine
+      Daten. Genau deshalb ist die ehrliche Bewertung auf Testdaten der Kern jeder KI-Einführung.</p>`
+  },
+  {
+    t: 'ap1', id: 'fall-ki-ethik', j: 2, b: 'ki', titel: 'Fallstudie: KI-System bewerten und einführen',
+    einstieg: `<p>Die <b>Harmonie-Service GmbH</b> möchte ein KI-Modell einsetzen, das Bewerbungen vorsortiert.
+      Der Betriebsrat ist alarmiert, die Geschäftsführung drängt auf Tempo. Sie sollen eine fachliche
+      Einschätzung liefern.</p>`,
+    schritte: [
+      {
+        situation: `<p><b>Erstes Gespräch mit dem Betriebsrat.</b> Gefragt wird, welche grundsätzlichen Risiken
+          ein solches KI-System birgt.</p>`,
+        kunde: '„Welche Risiken sehen Sie bei einem KI-Modell zur Bewerberauswahl?"',
+        optionen: [
+          { t: 'Algorithmischer Bias durch verzerrte Trainingsdaten, mangelnde Transparenz (Black Box) und datenschutzrechtliche Fragen (DSGVO).', p: 3 },
+          { t: 'Nur die Anschaffungskosten sind ein Risiko, sonst nichts.', p: 0 },
+          { t: 'KI-Modelle sind grundsätzlich objektiv und können keine Vorurteile haben.', p: 0 }
+        ],
+        feedback: 'Die drei Kernrisiken sind Bias (Vorurteile aus den Daten), fehlende Transparenz (Black-Box-Entscheidungen) und Datenschutz. Bei personenbezogenen Daten greift die DSGVO, zusätzlich regelt der EU AI Act Hochrisiko-KI.'
+      },
+      {
+        situation: `<p><b>Modellwahl.</b> Ein Anbieter schwärmt von einem tiefen neuronalen Netz, ein anderer
+          schlägt einen Entscheidungsbaum vor.</p>`,
+        kunde: '„Welches Modell passt besser, wenn die Entscheidungen nachvollziehbar sein müssen?"',
+        optionen: [
+          { t: 'Der Entscheidungsbaum (White-Box): Jeder Schritt ist erklärbar. Das tiefe Netz ist ein Black-Box-Modell und schwer zu begründen.', p: 3 },
+          { t: 'Immer das tiefe neuronale Netz, weil es moderner ist.', p: 0 },
+          { t: 'Beide sind gleich gut erklärbar.', p: 0 }
+        ],
+        feedback: 'Bei Entscheidungen, die begründet werden müssen, ist Erklärbarkeit entscheidend. Der Entscheidungsbaum ist ein White-Box-Modell; ein tiefes Netz gilt als Black Box. Wenn ein DL-Modell nötig ist, braucht es zusätzliche Erklärbarkeitsmethoden.'
+      },
+      {
+        situation: `<p><b>Fachliche Prüfung.</b> Der Anbieter behauptet, das System „lerne aus Erfahrung und
+          werde von selbst immer gerechter".</p>`,
+        kunde: '„Stimmt diese Aussage so?"',
+        optionen: [
+          { t: 'Nein. Ein Modell übernimmt die Verzerrungen seiner Daten. „Gerechtigkeit" muss aktiv durch Datenauswahl, Prüfung und Kontrolle sichergestellt werden.', p: 3 },
+          { t: 'Ja, ein KI-Modell verbessert sich automatisch und entfernt Vorurteile.', p: 0 },
+          { t: 'Nur wenn man es lange genug laufen lässt, wird es von selbst fair.', p: 0 }
+        ],
+        feedback: 'Ein Modell kann Bias nicht „wegrechnen". Fairness ist ein Ergebnis von Datenqualität, bewusster Auswahl, regelmäßiger Kontrolle und Transparenz – nicht von selbst.'
+      },
+      {
+        situation: `<p><b>Rechtlicher Rahmen.</b> Es sollen Bewerberdaten in einem EU-Land verarbeitet werden.</p>`,
+        kunde: '„Welche Vorschriften sind einzuhalten?"',
+        optionen: [
+          { t: 'Die DSGVO (Datenschutz) und der EU AI Act (Risikostufen für KI-Systeme) – Bewerberauswahl gilt als Hochrisiko-Anwendung.', p: 3 },
+          { t: 'Nur die Hausordnung des Betriebs.', p: 0 },
+          { t: 'Keine – KI ist gesetzlich nicht geregelt.', p: 0 }
+        ],
+        feedback: 'Personenbezogene Daten fallen unter die DSGVO. Der EU AI Act ordnet KI nach Risiko ein; Bewerberauswahl zählt zu den Hochrisiko-Anwendungen mit besonderen Pflichten.'
+      }
+    ],
+    fazit: `<p><b>Ergebnis der Fallstudie:</b> Der Einsatz von KI ist eine fachliche, rechtliche und ethische
+      Entscheidung. Ein Modell ist nur so gut und fair wie seine Daten – und es muss erklärbar, datenschutzkonform
+      und kontrollierbar sein. „Modern" ist kein Sachargument.</p>`
+  },
+  {
+    t: 'ap1', id: 'fall-ki-generativ', j: 2, b: 'ki', titel: 'Fallstudie: Generativer KI-Assistent im Kundenkontakt',
+    einstieg: `<p>Das <b>Reisebüro Sonnenklar</b> will einen generativen KI-Assistenten einsetzen, der
+      automatisch Antworten auf Kundenanfragen schreibt. Sie begleiten die Einführung fachlich.</p>`,
+    schritte: [
+      {
+        situation: `<p><b>Erstes Briefing.</b> Der Geschäftsführer will den Assistenten sofort live schalten,
+          ohne Kontrolle der Antworten.</p>`,
+        kunde: '„Die KI schreibt doch perfekt – warum sollte ein Mensch die Antworten noch prüfen?"',
+        optionen: [
+          { t: 'Weil generative Modelle halluzinieren können: Sie erzeugen plausibel klingende, aber falsche Aussagen (z. B. erfundene Preise oder Bedingungen). Eine Freigabe durch einen Menschen ist Pflicht.', p: 3 },
+          { t: 'Eine Kontrolle ist nicht nötig, die KI ist immer korrekt.', p: 0 },
+          { t: 'Nur die Rechtsabteilung muss einmal am Anfang zustimmen, danach nie wieder.', p: 0 }
+        ],
+        feedback: 'LLMs erzeugen wahrscheinlichen, nicht wahren Text. Falsche Preise oder Stornobedingungen sind realistisch. Deshalb gilt „human in the loop": Ein Mensch gibt frei, bevor Kunden etwas sehen.'
+      },
+      {
+        situation: `<p><b>Prompt gestalten.</b> Der Assistent soll Antworten entwerfen, aber gelegentlich zu
+          lang und zu allgemein.</p>`,
+        kunde: '„Wie bekommen wir kürzere, passgenauere Antworten?"',
+        optionen: [
+          { t: 'Mit einem klaren Prompt: Rolle, Zielgruppe, Ton, gewünschte Länge und Format vorgeben, dazu ein Beispiel.', p: 3 },
+          { t: 'Das Modell per Zufall mehrere Male aufrufen und das kürzeste Ergebnis nehmen.', p: 0 },
+          { t: 'Alle Kundenanfragen künftig ignorieren.', p: 0 }
+        ],
+        feedback: 'Prompting steuert das Ergebnis: je klarer Aufgabe, Kontext, Zielgruppe und Format, desto treffender die Antwort. Ein Beispiel im Prompt (Few-Shot) verbessert Stil und Länge.'
+      },
+      {
+        situation: `<p><b>Datenschutz.</b> Kundenanfragen enthalten Namen, Adressen und Buchungsdaten.</p>`,
+        kunde: '„Dürfen wir die echten Kundenanfragen einfach in das Modell geben?"',
+        optionen: [
+          { t: 'Nur mit Rechtsgrundlage und nach DSGVO: Datenminimierung, Zweckbindung, evtl. Anonymisierung. Nicht alle Daten ungeprüft in einen externen Dienst geben.', p: 3 },
+          { t: 'Ja, sobald es technisch möglich ist, ist es erlaubt.', p: 0 },
+          { t: 'Datenschutz spielt bei Text keine Rolle.', p: 0 }
+        ],
+        feedback: 'Personenbezogene Daten unterliegen der DSGVO. Vor der Nutzung: Rechtsgrundlage klären, Daten minimieren bzw. anonymisieren, Auftragsverarbeitung und Speicherort des Dienstes prüfen.'
+      }
+    ],
+    fazit: `<p><b>Ergebnis der Fallstudie:</b> Generative KI im Kundenkontakt ist nur mit klaren Prompts,
+      menschlicher Freigabe und datenschutzkonformer Datenverarbeitung sinnvoll. Der Nutzen liegt in der
+      Vorarbeit, nicht in der unkontrollierten Veröffentlichung.</p>`
+  },
+  {
+    t: 'ap1', id: 'fall-ki-projekt', j: 2, b: 'ki', titel: 'Fallstudie: KI-Modell auswählen und bewerten',
+    einstieg: `<p>Die <b>Müller Logistik AG</b> will vorhersagen, welche Sendungen sich verzögern. Sie
+      vergleichen zwei Ansätze und müssen den besten auswählen.</p>`,
+    schritte: [
+      {
+        situation: `<p><b>Ziel klären.</b> Gefragt ist eine Risikoeinschätzung je Sendung.</p>`,
+        kunde: '„Ist das eine Klassifikation oder eine Regression – und wann welche?"',
+        optionen: [
+          { t: 'Klassifikation, wenn es um Klassen geht (Verzögerung ja/nein); Regression, wenn eine Zahl geschätzt wird (Verzögerung in Stunden).', p: 3 },
+          { t: 'Immer Regression, weil Zahlen genauer sind.', p: 0 },
+          { t: 'Immer Klassifikation, weil Klassen einfacher sind.', p: 0 }
+        ],
+        feedback: 'Zuerst das Ziel festlegen: Klasse oder Zahl. „Verzögert: ja/nein" ist Klassifikation, „wie viele Stunden" ist Regression. Beides gehört zum überwachten Lernen.'
+      },
+      {
+        situation: `<p><b>Daten prüfen.</b> Von 50.000 Sendungen haben nur 800 ein Label
+          „Verzögerung ja/nein".</p>`,
+        kunde: '„Reicht das – und was ist das Problem?"',
+        optionen: [
+          { t: 'Die Klassen sind stark ungleich verteilt (wenige Verzögerungen). Accuracy allein täuscht – deshalb Precision, Recall und F1 prüfen und ggf. Daten ergänzen.', p: 3 },
+          { t: 'Die Datenmenge ist immer ausreichend, unabhängig von der Verteilung.', p: 0 },
+          { t: 'Ungleiche Klassen sind kein Problem, Accuracy genügt.', p: 0 }
+        ],
+        feedback: 'Bei ungleichen Klassen (z. B. 1,6 % Verzögerungen) ist Accuracy irreführend – ein Modell, das nie „Verzögerung" sagt, ist sehr genau, erkennt aber nichts. Precision und Recall zeigen das ehrlich.'
+      },
+      {
+        situation: `<p><b>Modell bewerten.</b> Modell A hat Precision 90 %, Recall 40 %; Modell B hat
+          Precision 60 %, Recall 85 %.</p>`,
+        kunde: '„Welches Modell nehmen wir, wenn wir möglichst wenige Verzögerungen übersehen dürfen?"',
+        optionen: [
+          { t: 'Modell B, weil der Recall zählt: Wir dürfen möglichst keine echte Verzögerung übersehen.', p: 3 },
+          { t: 'Modell A, weil Precision immer wichtiger ist als Recall.', p: 0 },
+          { t: 'Es spielt keine Rolle, beide sind gleichwertig.', p: 0 }
+        ],
+        feedback: 'Welche Metrik zählt, hängt vom Ziel ab: Geht es darum, nichts zu übersehen (Recall), ist Recall entscheidend. Ist ein Fehlalarm teuer (Precision), zählt Precision. Der F1-Score balanciert beide.'
+      },
+      {
+        situation: `<p><b>Ergebnis einsetzen.</b> Das Modell ist fertig.</p>`,
+        kunde: '„Wer entscheidet künftig über die Sendungen?"',
+        optionen: [
+          { t: 'Das Modell liefert eine Einschätzung, der Mensch entscheidet. Vorhersagen sind Unterstützung, keine unfehlbare Wahrheit.', p: 3 },
+          { t: 'Das Modell entscheidet allein und endgültig.', p: 0 },
+          { t: 'Das Modell ist unnötig, sobald es gebaut ist.', p: 0 }
+        ],
+        feedback: 'KI unterstützt Entscheidungen, ersetzt aber nicht die Verantwortung. Besonders bei Auswirkungen auf Menschen und Betrieb gilt: Ergebnis prüfen, Verantwortung bleibt beim Menschen.'
+      }
+    ],
+    fazit: `<p><b>Ergebnis der Fallstudie:</b> Ein Modell ist erst dann fertig, wenn Ziel und Metrik zum Problem
+      passen, die Datenverteilung beachtet wird und die Verantwortung beim Menschen bleibt. Die richtige Metrik
+      zu wählen ist so wichtig wie das Modell selbst.</p>`
+  },
+  {
+    t: 'ap1', id: 'fall-ki-prozess', j: 3, b: 'ki', titel: 'Fallstudie: KI-Projekt wirtschaftlich bewerten',
+    einstieg: `<p>Die <b>Weber Fertigung GmbH</b> will mit KI Ausfälle von Maschinen vorhersagen
+      (Predictive Maintenance). Die Geschäftsführung verlangt eine Einschätzung, ob sich die Investition lohnt.</p>`,
+    schritte: [
+      {
+        situation: `<p><b>Nutzen klären.</b> Heute fallen Maschinen ungeplant aus; jede Stunde Stillstand ist
+          teuer.</p>`,
+        kunde: '„Was bringt Predictive Maintenance überhaupt – und wie messen wir den Nutzen?"',
+        optionen: [
+          { t: 'Das Modell erkennt drohende Ausfälle vorher, sodass Wartung planbar wird. Nutzen = vermiedene Stillstandskosten minus Kosten des Systems.', p: 3 },
+          { t: 'Predictive Maintenance macht Maschinen grundsätzlich unzerstörbar.', p: 0 },
+          { t: 'Der Nutzen lässt sich nicht messen, also braucht man keinen Nachweis.', p: 0 }
+        ],
+        feedback: 'Der Nutzen liegt in vermiedenen Stillständen und geplanter Wartung. Kalkuliert wird der Vorteil gegen die Kosten des KI-Systems (Hardware, Software, Datenaufbereitung, Betrieb).'
+      },
+      {
+        situation: `<p><b>Datenlage.</b> Die Maschinen liefern bereits Sensordaten, es gibt aber kaum
+          dokumentierte Ausfälle.</p>`,
+        kunde: '„Reichen die Daten für ein gutes Modell?"',
+        optionen: [
+          { t: 'Nein. Ohne viele dokumentierte Ausfallbeispiele lernt das Modell kaum Muster. Datenqualität und Labels müssen zuerst verbessert werden.', p: 3 },
+          { t: 'Ja, KI lernt auch ohne Beispiele.', p: 0 },
+          { t: 'Fast-Ausfälle werden von selbst zu Fehlern.', p: 1 }
+        ],
+        feedback: 'Überwachtes Lernen braucht Beispiele des Zielzustands – hier dokumentierte oder beinahe Ausfälle. Das zeigt die klassische Kette: zuerst Daten, dann Modell.'
+      },
+      {
+        situation: `<p><b>Wirtschaftlichkeit.</b> Das System kostet 60.000 € einmalig und 1.200 €/Monat.
+          Es sollen voraussichtlich 3 ungeplante Ausfälle je Jahr mit je 8.000 € vermieden werden.</p>`,
+        kunde: '„Wie rechnet sich das?"',
+        optionen: [
+          { t: 'Jährlicher Nutzen 24.000 €; laufende Kosten 14.400 €/Jahr; Überschuss 9.600 €/Jahr → Amortisation der 60.000 € in etwa 6,25 Jahren. Grenzwertig – Einsparungen und Folgekosten genau prüfen.', p: 3 },
+          { t: 'Es lohnt sich immer, weil KI immer Gewinn bringt.', p: 0 },
+          { t: 'Die laufenden Kosten zählen bei der Bewertung nicht.', p: 0 }
+        ],
+        feedback: 'Nutzen = 3 × 8.000 = 24.000 €/Jahr. Laufende Kosten = 12 × 1.200 = 14.400 €/Jahr, Überschuss 9.600 €/Jahr. Amortisation = 60.000 ÷ 9.600 ≈ 6,25 Jahre. Auch weiche Faktoren (Qualität, Sicherheit) zählen, aber die Rechnung muss offen sein.'
+      },
+      {
+        situation: `<p><b>Betrieb.</b> Das Modell läuft, warnt aber sehr häufig fälschlich (viele
+          Fehlalarme), sodass die Werkstatt die Warnungen bald ignoriert.</p>`,
+        kunde: '„Was ist am Modell zu verbessern?"',
+        optionen: [
+          { t: 'Die Precision ist zu niedrig: Zu viele Fehlalarme. Das Modell oder der Schwellenwert muss angepasst werden, sonst verliert es das Vertrauen.', p: 3 },
+          { t: 'Es ist alles in Ordnung, Fehlalarme sind egal.', p: 0 },
+          { t: 'Man sollte die Warnungen einfach abschalten.', p: 0 }
+        ],
+        feedback: 'Viele Fehlalarme senken die Precision und zerstören das Vertrauen („Alarmmüdigkeit"). Ziel und Metrik müssen zum Problem passen: Hier zählt eine ausgewogene Kombination aus Precision und Recall.'
+      }
+    ],
+    fazit: `<p><b>Ergebnis der Fallstudie:</b> Ein KI-Projekt ist zuerst eine <b>Wirtschaftlichkeits- und
+      Datenfrage</b>, dann eine technische. Ohne Daten kein Modell, ohne belastbare Rechnung keine Entscheidung,
+      und ohne brauchbare Metrik kein Vertrauen im Betrieb.</p>`
   }
 ];
 
@@ -3239,6 +3792,196 @@ const TASKS = [
         `Nach 1 Jahr = ${num(dbMB, 2)} MB × ${num(1 + wachstum / 100, 2)} = ${num(jahr1, 2)} MB`
       ],
       hinweis: 'Rechenweg in der Prüfung immer in dieser Reihenfolge: <em>Sätze × Felder × Feldgröße</em> ergibt die Rohdatenmenge in Byte, dann ÷ 1024 (KB), ÷ 1024 (MB), ÷ 1024 (GB). Overhead nicht vergessen – in der Praxis sind es 10 bis 30 %.'
+    };
+  }
+},
+
+/* ---------- 16. Neuron vorwärts rechnen & Lernregel ---------- */
+{
+  t: 'ap1', id: 'ki-neuron', j: 1, bereich: 'ki', titel: 'Neuron vorwärts rechnen & Lernregel', punkte: 6,
+  quelle: 'Fidup-Wiki · neural-network und ki (Perzeptron)',
+  gen() {
+    const x1 = pick([0.5, 1, 1.5, 2]);
+    const x2 = pick([0.4, 0.6, 0.8, 1]);
+    const w1 = pick([0.2, 0.4, 0.5, 0.6]);
+    const w2 = pick([-0.5, -0.3, 0.3, 0.5]);
+    const b = pick([-0.1, 0.1, 0.2, 0.4]);
+    const lern = pick([0.1, 0.2, 0.3]);
+    const ziel = pick([1, 0]);
+    const z = r2(x1 * w1 + x2 * w2 + b);
+    const a = r2(Math.max(0, z));                 /* ReLU */
+    const fehler = r2(ziel - a);
+    const dw1 = r2(lern * fehler * x1);
+    const dw2 = r2(lern * fehler * x2);
+    const w1n = r2(w1 + dw1);
+    const w2n = r2(w2 + dw2);
+    return {
+      szenario: `<p>Ein einzelnes künstliches Neuron mit zwei Eingaben soll nachvollzogen werden. Die
+        Aktivierungsfunktion ist <em>ReLU</em> (f(z) = max(0, z)). Berechnen Sie die gewichtete Summe, die
+        Ausgabe und die Anpassung nach der Lernregel Δw = α · (t − a) · x.</p>`,
+      daten: `<table>
+        <tr><th>Größe</th><th class="z">Wert</th></tr>
+        <tr><td>Eingabe x₁</td><td class="z">${num(x1, 1)}</td></tr>
+        <tr><td>Eingabe x₂</td><td class="z">${num(x2, 1)}</td></tr>
+        <tr><td>Gewicht w₁</td><td class="z">${num(w1, 1)}</td></tr>
+        <tr><td>Gewicht w₂</td><td class="z">${num(w2, 1)}</td></tr>
+        <tr><td>Bias b</td><td class="z">${num(b, 1)}</td></tr>
+        <tr><td>Lernrate α</td><td class="z">${num(lern, 1)}</td></tr>
+        <tr><td>Zielausgabe t</td><td class="z">${ziel}</td></tr>
+      </table>`,
+      rows: [
+        { name: 'Gewichtete Summe z', op: '', unit: '', answer: z, tol: { abs: 0.02 }, dec: 2, ergebnis: true },
+        { name: 'Ausgabe a nach ReLU', op: '', unit: '', answer: a, tol: { abs: 0.02 }, dec: 2, ergebnis: true },
+        { name: 'Fehler (t − a)', op: '', unit: '', answer: fehler, tol: { abs: 0.02 }, dec: 2 },
+        { name: 'Δw₁ = α · (t−a) · x₁', op: '', unit: '', answer: dw1, tol: { abs: 0.02 }, dec: 2 },
+        { name: 'Δw₂ = α · (t−a) · x₂', op: '', unit: '', answer: dw2, tol: { abs: 0.02 }, dec: 2 },
+        { name: 'Neues w₁', op: '', unit: '', answer: w1n, tol: { abs: 0.02 }, dec: 2, ergebnis: true },
+        { name: 'Neues w₂', op: '', unit: '', answer: w2n, tol: { abs: 0.02 }, dec: 2, ergebnis: true }
+      ],
+      weg: [
+        `z = x₁·w₁ + x₂·w₂ + b = ${num(x1, 1)}·${num(w1, 1)} + ${num(x2, 1)}·${num(w2, 1)} + ${num(b, 1)} = ${num(z, 2)}`,
+        `a = max(0, ${num(z, 2)}) = ${num(a, 2)}`,
+        `Fehler = t − a = ${ziel} − ${num(a, 2)} = ${num(fehler, 2)}`,
+        `Δw₁ = ${num(lern, 1)} × ${num(fehler, 2)} × ${num(x1, 1)} = ${num(dw1, 2)}`,
+        `Δw₂ = ${num(lern, 1)} × ${num(fehler, 2)} × ${num(x2, 1)} = ${num(dw2, 2)}`,
+        `Neues w₁ = ${num(w1, 1)} + ${num(dw1, 2)} = ${num(w1n, 2)}`,
+        `Neues w₂ = ${num(w2, 1)} + ${num(dw2, 2)} = ${num(w2n, 2)}`
+      ],
+      hinweis: 'Die Lernregel Δw = α · (t − a) · x passt ein Gewicht umso stärker an, je größer der Fehler und je größer die Eingabe ist. Ist der Fehler null, ändert sich nichts.'
+    };
+  }
+},
+
+/* ---------- 17. Modell bewerten: Confusion Matrix ---------- */
+{
+  t: 'ap1', id: 'ki-metrik', j: 2, bereich: 'ki', titel: 'Modell bewerten: Accuracy, Precision, Recall, F1', punkte: 7,
+  quelle: 'Fidup-Wiki · klassifikation (Confusion Matrix)',
+  gen() {
+    const tp = R(20, 90);
+    const fp = R(5, 40);
+    const fn = R(5, 40);
+    const tn = R(40, 200);
+    const gesamt = tp + fp + fn + tn;
+    const acc = r2((tp + tn) / gesamt * 100);
+    const prec = r2(tp / (tp + fp) * 100);
+    const rec = r2(tp / (tp + fn) * 100);
+    const f1 = r2(2 * prec * rec / (prec + rec));
+    return {
+      szenario: `<p>Ein Klassifikationsmodell (z. B. Spam-Erkennung) wurde an einem Testdatensatz geprüft.
+        Die Confusion Matrix liefert die vier Werte TP, FP, FN und TN. Berechnen Sie die üblichen
+        Bewertungsmaße in Prozent.</p>`,
+      daten: `<table>
+        <tr><th>Ausgang</th><th class="z">Wert</th></tr>
+        <tr><td>TP – richtig positiv</td><td class="z">${tp}</td></tr>
+        <tr><td>FP – falsch positiv</td><td class="z">${fp}</td></tr>
+        <tr><td>FN – falsch negativ</td><td class="z">${fn}</td></tr>
+        <tr><td>TN – richtig negativ</td><td class="z">${tn}</td></tr>
+      </table>`,
+      rows: [
+        { name: 'Gesamtzahl der Fälle', op: '', unit: '', answer: gesamt, tol: { abs: 0 }, dec: 0 },
+        { name: 'Accuracy (Trefferquote)', op: '', unit: '%', answer: acc, tol: { abs: 0.05 }, dec: 2 },
+        { name: 'Precision', op: '', unit: '%', answer: prec, tol: { abs: 0.05 }, dec: 2 },
+        { name: 'Recall', op: '', unit: '%', answer: rec, tol: { abs: 0.05 }, dec: 2 },
+        { name: 'F1-Score', op: '', unit: '%', answer: f1, tol: { abs: 0.1 }, dec: 2, ergebnis: true }
+      ],
+      weg: [
+        `Gesamt = ${tp} + ${fp} + ${fn} + ${tn} = ${gesamt}`,
+        `Accuracy = (TP + TN) ÷ Gesamt = (${tp} + ${tn}) ÷ ${gesamt} = ${num(acc, 2)} %`,
+        `Precision = TP ÷ (TP + FP) = ${tp} ÷ (${tp} + ${fp}) = ${num(prec, 2)} %`,
+        `Recall = TP ÷ (TP + FN) = ${tp} ÷ (${tp} + ${fn}) = ${num(rec, 2)} %`,
+        `F1 = 2 × (Precision × Recall) ÷ (Precision + Recall) = 2 × ${num(prec, 2)} × ${num(rec, 2)} ÷ (${num(prec, 2)} + ${num(rec, 2)}) = ${num(f1, 2)} %`
+      ],
+      hinweis: 'Accuracy kann bei ungleichen Klassen täuschen: Sind 95 % aller Mails kein Spam, wirkt ein Modell, das immer „kein Spam" sagt, mit 95 % genau – hat aber Recall 0. Deshalb immer Precision, Recall und F1 mit angeben.'
+    };
+  }
+},
+
+/* ---------- 18. GPU-Kosten & Trainingsdauer für ein Modell ---------- */
+{
+  t: 'ap1', id: 'ki-gpu-kosten', j: 2, bereich: 'ki', titel: 'GPU-Kosten & Trainingsdauer', punkte: 6,
+  quelle: 'Eigene Ableitung aus Fidup-Wiki · ki-vs-ml-vs-dl (Rechenbedarf)',
+  gen() {
+    const gpUS = pick([1, 2, 4, 8]);
+    const stunden = R(4, 60);
+    const preisStunde = pick([1.5, 2.0, 2.5, 3.0, 3.5]);
+    const datenGB = pick([50, 120, 250, 500]);
+    const wiederholungen = pick([3, 5, 10]);
+
+    const gpuStunden = r2(gpUS * stunden);
+    const kosten = r2(gpuStunden * preisStunde);
+    const datenVolumen = datenGB * wiederholungen;
+    const kostenProEpoche = r2(kosten / wiederholungen);
+    return {
+      szenario: `<p>Für das Training eines neuronalen Netzes werden GPUs gemietet. Berechnen Sie die
+        gesamte GPU-Zeit, die Kosten und das verarbeitete Datenvolumen. Eine Epoche ist ein vollständiger
+        Durchlauf über alle Trainingsdaten.</p>`,
+      daten: `<table>
+        <tr><th>Angabe</th><th class="z">Wert</th></tr>
+        <tr><td>Anzahl GPUs</td><td class="z">${gpUS}</td></tr>
+        <tr><td>Trainingsdauer</td><td class="z">${stunden} h</td></tr>
+        <tr><td>Preis je GPU und Stunde</td><td class="z">${eur(preisStunde)} €</td></tr>
+        <tr><td>Trainingsdatensatz</td><td class="z">${datenGB} GB</td></tr>
+        <tr><td>Anzahl Epochen</td><td class="z">${wiederholungen}</td></tr>
+      </table>`,
+      rows: [
+        { name: 'Gesamte GPU-Stunden', op: '', unit: 'h', answer: gpuStunden, tol: { abs: 0.1 }, dec: 2, ergebnis: true },
+        { name: 'Gesamtkosten', op: '', unit: '€', answer: kosten, tol: { abs: 0.5 }, dec: 2, ergebnis: true },
+        { name: 'Kosten je Epoche', op: '', unit: '€', answer: kostenProEpoche, tol: { abs: 0.5 }, dec: 2 },
+        { name: 'Verarbeitetes Datenvolumen (alle Epochen)', op: '', unit: 'GB', answer: datenVolumen, tol: { abs: 0 }, dec: 0, ergebnis: true }
+      ],
+      weg: [
+        `GPU-Stunden = ${gpUS} × ${stunden} = ${num(gpuStunden, 2)} h`,
+        `Kosten = ${num(gpuStunden, 2)} h × ${eur(preisStunde)} € = ${eur(kosten)} €`,
+        `Kosten je Epoche = ${eur(kosten)} ÷ ${wiederholungen} = ${eur(kostenProEpoche)} €`,
+        `Datenvolumen = ${datenGB} GB × ${wiederholungen} Epochen = ${datenVolumen} GB`
+      ],
+      hinweis: 'Deep Learning ist rechenintensiv: Kosten skalieren mit GPUs × Zeit. Weniger Epochen, kleinere Modelle oder gemietete statt eigener Hardware senken die Kosten – dürfen aber die Genauigkeit nicht unter das Ziel drücken.'
+    };
+  }
+},
+
+/* ---------- 19. Nutzen & Amortisation eines KI-Systems ---------- */
+{
+  t: 'ap1', id: 'ki-wirtschaft', j: 3, bereich: 'ki', titel: 'KI-System: Nutzen & Amortisation', punkte: 6,
+  quelle: 'Eigene Ableitung – Wirtschaftlichkeitsrechnung für eine KI-Investition',
+  gen() {
+    const anschluss = R(30, 95) * 1000;      /* einmalige Investition */
+    const monat = pick([800, 1000, 1200, 1500, 2000]);
+    const ausfaelle = pick([2, 3, 4, 5, 6]);
+    const kostenPro = R(4, 12) * 1000;
+
+    const nutzen = ausfaelle * kostenPro;
+    const laufend = monat * 12;
+    const ueberschuss = nutzen - laufend;
+    const amort = ueberschuss > 0 ? r2(anschluss / ueberschuss) : null;
+    return {
+      szenario: `<p>Für ein KI-System zur vorbeugenden Wartung liegen die Zahlen vor. Berechnen Sie den
+        jährlichen Nutzen, die laufenden Kosten, den jährlichen Überschuss und die Amortisationszeit.
+        Ist der Überschuss negativ, tragen Sie bei der Amortisation bitte <em>0</em> ein.</p>`,
+      daten: `<table>
+        <tr><th>Angabe</th><th class="z">Wert</th></tr>
+        <tr><td>Einmalige Anschaffung</td><td class="z">${eur(anschluss)} €</td></tr>
+        <tr><td>Laufende Kosten je Monat</td><td class="z">${eur(monat)} €</td></tr>
+        <tr><td>Vermiedene Ausfälle je Jahr</td><td class="z">${ausfaelle}</td></tr>
+        <tr><td>Kosten je Ausfall</td><td class="z">${eur(kostenPro)} €</td></tr>
+      </table>`,
+      rows: [
+        { name: 'Jährlicher Nutzen (vermiedene Ausfälle)', op: '', unit: '€', answer: nutzen, tol: { abs: 0 }, dec: 2, ergebnis: true },
+        { name: 'Laufende Kosten je Jahr', op: '', unit: '€', answer: laufend, tol: { abs: 0 }, dec: 2, ergebnis: true },
+        { name: 'Jährlicher Überschuss', op: '', unit: '€', answer: ueberschuss, tol: { abs: 0 }, dec: 2, ergebnis: true },
+        { name: 'Amortisationszeit', op: '', unit: 'Jahre', answer: amort === null ? 0 : amort, tol: { abs: 0.05 }, dec: 2, ergebnis: true },
+        { name: 'Lohnt sich die Investition? (ja / nein)', op: '', unit: '', text: ueberschuss > 0 ? 'ja' : 'nein', antwortText: ueberschuss > 0 ? 'JA' : 'NEIN' }
+      ],
+      weg: [
+        `Nutzen = ${ausfaelle} Ausfälle × ${eur(kostenPro)} € = ${eur(nutzen)} €/Jahr`,
+        `Laufende Kosten = ${eur(monat)} € × 12 = ${eur(laufend)} €/Jahr`,
+        `Überschuss = ${eur(nutzen)} − ${eur(laufend)} = ${eur(ueberschuss)} €/Jahr`,
+        ueberschuss > 0
+          ? `Amortisation = ${eur(anschluss)} ÷ ${eur(ueberschuss)} = ${num(amort, 2)} Jahre`
+          : 'Der Überschuss ist negativ – die Investition amortisiert sich nach dieser Rechnung nicht.',
+        `Entscheidung: ${ueberschuss > 0 ? 'Die Investition rechnet sich.' : 'Die Investition rechnet sich nicht.'}`
+      ],
+      hinweis: 'Wie bei jeder Investition gilt: Nutzen und laufende Kosten gegenüberstellen und dann amortisieren. Bei KI kommen weiche Faktoren hinzu (Qualität, Sicherheit, Kundenzufriedenheit) – sie ersetzen aber keine belastbare Rechnung.'
     };
   }
 }
@@ -4328,7 +5071,8 @@ const BEREICHE = [
   { id: 'vertrag', name: 'Verträge & Leistungserbringung', haeufig: '80 %', neben: '80 %' },
   { id: 'qs', name: 'Qualitätssicherung', haeufig: '60 %', neben: '60 %' },
   { id: 'datenbank', name: 'Datenbanken & ERM', haeufig: '60 %', neben: '60 %' },
-  { id: 'angebot', name: 'Angebotsvergleich', haeufig: '50 %', neben: '50 %' }
+  { id: 'angebot', name: 'Angebotsvergleich', haeufig: '50 %', neben: '50 %' },
+  { id: 'ki', name: 'KI, ML & Deep Learning', haeufig: 'neu', neben: 'neu' }
 ];
 
 /* ============================================================
