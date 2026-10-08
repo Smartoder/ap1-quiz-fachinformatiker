@@ -5,6 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#FFFFFF">
 <title>AP1-Trainer · Kaufmann für IT-System-Management</title>
+<!-- Anmeldung: Projekt-Adresse und öffentlicher Schlüssel des Anmeldedienstes.
+     Beides ist öffentlich. Der geheime Schlüssel gehört hier NICHT hinein.
+     Solange die Werte leer sind, läuft die Anmeldung ohne Konto (nur Name).
+     Beim Ausliefern über die Umgebungsvariable AP1_AUTH gesetzt. -->
+<meta name="ap1-auth-url" content="">
+<meta name="ap1-auth-key" content="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -902,6 +908,129 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
   .format{border-left:0;border-top:1px solid var(--linie-hell)}
   .format:first-child{border-top:0}
 }
+
+/* ---------- Anmeldung: der Anmeldebogen ---------- */
+/* Kein Kästchen-Login. Ein Bogen in zwei Blättern: links das Deckblatt
+   (wer, welcher Teil, welcher Stand), rechts das Formular mit Feldnummern
+   wie auf einem amtlichen Vordruck. Eingaben stehen auf einer Linie, nicht
+   in einem Kasten – das trägt denselben Stempel wie jede andere Fläche. */
+.anmeldung{
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:0;border:1px solid var(--linie);border-top:3px solid var(--tinte);
+  background:var(--blatt);max-width:980px;
+}
+.anmeldung > .deckblatt{
+  padding:26px 26px 24px;border-right:1px solid var(--linie);
+  display:flex;flex-direction:column;gap:18px;
+}
+.anmeldung > .formular{padding:26px 26px 24px}
+.deckblatt h2{margin:0;font-size:26px;letter-spacing:-.03em;line-height:1.15}
+.deckblatt .zeile{font-size:13px;color:var(--schwach);margin:0}
+.deckblatt .teil-liste{display:flex;gap:6px;flex-wrap:wrap;margin-top:2px}
+.deckblatt .teil-chip{
+  font-family:var(--mono);font-size:11px;letter-spacing:.04em;
+  border:1px solid var(--linie);border-radius:var(--r);padding:2px 7px;color:var(--schwach);
+}
+.deckblatt .teil-chip.aktiv{border-color:var(--tinte);background:var(--tinte);color:var(--blatt)}
+.deckblatt .probeblatt{margin-top:auto}
+.deckblatt .probeblatt .probe{
+  border:1px solid var(--linie);border-left:3px solid var(--tinte);
+  background:var(--papier);padding:12px 14px;font-size:13px;
+}
+.deckblatt .probeblatt h3{font-size:11px;font-weight:600;color:var(--schwach);margin:0 0 8px;letter-spacing:.03em}
+.deckblatt .probeblatt ol{margin:0;padding-left:19px}
+.deckblatt .probeblatt li{margin-bottom:4px}
+
+/* Formularzeile: Nummer · Beschriftung · Linieneingabe */
+.feld{display:grid;grid-template-columns:26px minmax(0,1fr);gap:10px;margin-bottom:16px}
+.feld .nr{
+  grid-row:span 2;font-family:var(--mono);font-size:12px;color:var(--schwach);
+  padding-top:20px;text-align:right;
+}
+.feld label{font-size:12px;font-weight:600;color:var(--schwach);letter-spacing:.01em}
+.feld input{
+  grid-column:2;font:inherit;font-size:15px;color:var(--tinte);
+  background:transparent;border:0;border-bottom:2px solid var(--linie);
+  padding:5px 2px;width:100%;
+}
+.feld input:focus{outline:none;border-bottom-color:var(--tinte);box-shadow:0 2px 0 0 var(--tinte)}
+.feld input::placeholder{color:var(--schwach);opacity:.6}
+.feld .hinweis{grid-column:2;font-size:11.5px;color:var(--schwach);margin-top:3px}
+.formular .wahlreihe{display:flex;gap:10px;align-items:center;margin-top:20px;flex-wrap:wrap}
+.formular .wechsel{
+  background:none;border:0;font:inherit;font-size:13.5px;color:var(--tinte);
+  text-decoration:underline;cursor:pointer;padding:6px 0;
+}
+.formular .wechsel:focus-visible{outline:2px solid var(--tinte);outline-offset:2px;border-radius:var(--r)}
+.formular .datenhinweis{
+  margin-top:20px;padding:11px 13px;background:var(--papier);
+  border-left:3px solid var(--linie);font-size:12.5px;color:var(--schwach);
+}
+.formular .datenhinweis b{color:var(--tinte)}
+
+/* Prüfungsnummer nach dem Anlegen – der Primary Key, sichtbar */
+.nummernblatt{
+  border:1px solid var(--linie);border-top:3px solid var(--gruen);
+  background:var(--blatt);padding:18px 20px;margin-top:16px;max-width:520px;
+}
+.nummernblatt .nr-wert{
+  font-family:var(--mono);font-size:15px;color:var(--tinte);
+  background:var(--gruen-hell);padding:8px 10px;border-radius:var(--r);
+  display:block;margin:8px 0 4px;word-break:break-all;
+}
+
+/* ---------- Modus-Wahl: vier Bögen ---------- */
+.modus-wahl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.modus-bogen{
+  text-align:left;font:inherit;cursor:pointer;
+  border:1px solid var(--linie);border-top:3px solid var(--tinte);
+  background:var(--blatt);padding:18px 20px;
+  display:flex;flex-direction:column;gap:8px;
+}
+.modus-bogen:hover{border-color:var(--tinte);background:var(--papier)}
+.modus-bogen:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
+.modus-bogen .marke{font-family:var(--mono);font-size:11px;letter-spacing:.05em;color:var(--schwach)}
+.modus-bogen b{font-size:17px;letter-spacing:-.02em}
+.modus-bogen span.z{font-size:13px;color:var(--schwach)}
+@media (max-width:760px){
+  .anmeldung{grid-template-columns:minmax(0,1fr)}
+  .anmeldung > .deckblatt{border-right:0;border-bottom:1px solid var(--linie)}
+  .modus-wahl{grid-template-columns:minmax(0,1fr)}
+}
+
+/* ---------- Meine Schwächen: Korrekturbogen ---------- */
+.schwach-liste{border:1px solid var(--linie);border-top:3px solid var(--tinte);background:var(--blatt);max-width:820px}
+.schwach-zeile{
+  display:grid;grid-template-columns:minmax(0,1fr) 120px 92px;
+  align-items:center;gap:14px;padding:11px 16px;
+  border-bottom:1px solid var(--linie-hell);
+}
+.schwach-zeile:last-child{border-bottom:0}
+.schwach-zeile .name{font-size:14px}
+.schwach-zeile .balken{height:7px;background:var(--papier);border-radius:var(--r);overflow:hidden}
+.schwach-zeile .balken i{display:block;height:100%;background:var(--rot)}
+.schwach-zeile.gut .balken i{background:var(--gruen)}
+.schwach-zeile .wert{font-family:var(--mono);font-size:13px;text-align:right;font-variant-numeric:tabular-nums}
+.schwach-zeile .wert small{display:block;font-size:10.5px;color:var(--schwach)}
+.schwach-leer{padding:20px;font-size:13.5px;color:var(--schwach)}
+.fokus-schalter{
+  display:inline-flex;align-items:center;gap:9px;font-size:13.5px;color:var(--tinte);
+  border:1px solid var(--linie);border-radius:var(--r);padding:7px 12px;background:var(--blatt);cursor:pointer;
+}
+.fokus-schalter input{width:16px;height:16px;accent-color:var(--tinte)}
+.fokus-schalter:focus-within{outline:2px solid var(--tinte);outline-offset:2px}
+@media (max-width:700px){
+  /* Der Korrekturbogen bekommt auf dem Handy zwei Zeilen je Bereich:
+     erst Name und Wert, darunter der Balken über die volle Breite. */
+  .schwach-zeile{
+    grid-template-columns:minmax(0,1fr) auto;
+    grid-template-areas:"name wert" "balken balken";
+    row-gap:7px;
+  }
+  .schwach-zeile .name{grid-area:name}
+  .schwach-zeile .wert{grid-area:wert}
+  .schwach-zeile .balken{grid-area:balken}
+}
 </style>
 </head>
 <body>
@@ -1032,6 +1161,82 @@ const speichern = () => {
   try { localStorage.setItem(STORE, JSON.stringify(fortschritt)); } catch (e) {}
   syncPlanen();
 };
+
+/* ============================================================
+   LERNSTAND je Bereich — die Grundlage des Schwächen-Fokus
+   ------------------------------------------------------------
+   Zu jedem Prüfungsteil und Bereich wird gezählt, wie oft richtig und wie
+   oft falsch geantwortet wurde. Aus dem Verhältnis entsteht die Quote; sie
+   steuert, was häufiger und was seltener vorkommt.
+
+   Warum je Bereich und nicht je Aufgabe: ein Bereich hat viele Aufgaben und
+   wechselnde Fragen. Eine Quote je Aufgabe wäre nach zwei Versuchen Zufall.
+   Der Bereich ist die kleinste Menge, die stabil genug ist, um „kann ich"
+   von „kann ich nicht" zu scheiden.
+   ============================================================ */
+const LERNSTAND_STORE = 'ap1-trainer-lernstand-v1';
+let lernstand = {};   // { 'ap1|netzwerk': { r: richtig, f: falsch } }
+try {
+  const g = JSON.parse(localStorage.getItem(LERNSTAND_STORE));
+  if (g && typeof g === 'object') lernstand = g;
+} catch (e) { /* kein Speicher */ }
+const lernstandSpeichern = () => {
+  try { localStorage.setItem(LERNSTAND_STORE, JSON.stringify(lernstand)); } catch (e) {}
+  syncPlanen();
+};
+function lernstandSchluessel(bereich, t) { return (t || teil) + '|' + (bereich || 'ohne'); }
+
+/* Eine Antwort verbuchen. `richtig` ist true oder false. */
+function lernstandErfassen(bereich, t, richtig) {
+  const k = lernstandSchluessel(bereich, t);
+  const e = lernstand[k] || { r: 0, f: 0 };
+  if (richtig) e.r++; else e.f++;
+  lernstand[k] = e;
+  lernstandSpeichern();
+}
+function lernstandZuruecksetzen() {
+  lernstand = {};
+  lernstandSpeichern();
+}
+
+/* Die Erfolgsquote eines Bereichs. null = noch kein Versuch. */
+function lernstandQuote(bereich, t) {
+  const e = lernstand[lernstandSchluessel(bereich, t)];
+  if (!e || !(e.r + e.f)) return null;
+  return e.r / (e.r + e.f);
+}
+/* Ein Stabilitätsgewicht: wenige Versuche zählen wenig, viele viel.
+   So kippt eine einzelne Fehlantwort nicht sofort die Reihenfolge. */
+function lernstandGewicht(bereich, t) {
+  const e = lernstand[lernstandSchluessel(bereich, t)];
+  const n = e ? e.r + e.f : 0;
+  return Math.min(1, n / 6);   // ab sechs Antworten voll gewichtet
+}
+/* Handlungsbedarf eines Bereichs: 1 = alles falsch, 0 = alles richtig.
+   Unbekannte Bereiche bekommen 0,5 – neutral, damit Neues nicht verdrängt
+   und nichts falsch eingeschätzt wird. */
+function schwaeche(bereich, t) {
+  const q = lernstandQuote(bereich, t);
+  if (q === null) return 0.5;
+  const g = lernstandGewicht(bereich, t);
+  return g * (1 - q) + (1 - g) * 0.5;
+}
+
+/* Ist der Schwächen-Fokus eingeschaltet? Dann werden Bereiche und Aufgaben
+   so sortiert, dass Schwaches zuerst kommt; bei Aufgaben wird zusätzlich
+   die Reihenfolge im Quiz gewichtet. */
+const FOKUS_STORE = 'ap1-trainer-fokus';
+let fokusAn = false;
+try { fokusAn = localStorage.getItem(FOKUS_STORE) === '1'; } catch (e) { }
+const fokusSpeichern = () => { try { localStorage.setItem(FOKUS_STORE, fokusAn ? '1' : '0'); } catch (e) { } };
+
+/* Sortiert eine Liste von Einträgen mit `b` nach Handlungsbedarf (absteigend).
+   Ohne Fokus bleibt die Reihenfolge, die die Liste schon hatte. */
+function nachSchwaecheSortieren(liste, t) {
+  if (!fokusAn) return liste;
+  return liste.slice().sort((a, b) => schwaeche(b.b, t) - schwaeche(a.b, t));
+}
+
 
 function quote() {
   let p = 0, m = 0;
@@ -5969,6 +6174,63 @@ try { const g = localStorage.getItem(TEIL_STORE); if (g === 'ap1' || g === 'ap2'
 const teilSpeichern = () => { try { localStorage.setItem(TEIL_STORE, teil); } catch (e) { } };
 const istAp2 = () => teil === 'ap2';
 
+/* ---------- Der Lernweg: vier Prüfungswege ----------
+   Ausbildungsjahr und Prüfungsteil werden zu einem Weg zusammengefasst. Die
+   drei Schalter (Marke AP1/AP2, Jahrgang) bleiben im Hintergrund gleich,
+   aber der Nutzer wählt nur noch den Weg – so gibt es genau eine Wahl
+   statt zweier, die sich widersprechen können.
+
+     ap1        – Teil 1, Ausbildungsjahr wird gefragt
+     ap1p       – Teil 1, Prüfungsvorbereitung (alle Jahre gemischt)
+     ap2        – Teil 2, vier Prüfungsbereiche
+     ap2p       – Teil 2, Prüfungsvorbereitung (nur Projekt / prüfungsnah)
+*/
+const MODUS_STORE = 'ap1-trainer-modus';
+const MODI = [
+  { id: 'ap1', teil: 'ap1', jahr: 1, marke: 'AP1', name: 'Teil 1 · Ausbildung',
+    z: 'Der Stoff in der Reihenfolge der Ausbildung – gefiltert nach deinem Ausbildungsjahr.' },
+  { id: 'ap1p', teil: 'ap1', jahr: 3, marke: 'AP1', name: 'Prüfungsvorbereitung 1',
+    z: 'Alle Jahrgänge gemischt, wie in der Prüfung selbst – ohne Jahrgangs-Filter.' },
+  { id: 'ap2', teil: 'ap2', jahr: null, marke: 'AP2', name: 'Teil 2 · Ausbildung',
+    z: 'Die vier Prüfungsbereiche der Abschlussprüfung Teil 2.' },
+  { id: 'ap2p', teil: 'ap2', jahr: null, marke: 'AP2', name: 'Prüfungsvorbereitung 2',
+    z: 'Kundenauftrag, Systemlösung, Kaufmännisches und WiSo – die schriftliche Vorbereitung.' }
+];
+let modus2 = null;                 // der gewählte Weg (ID aus MODI)
+function modusObjekt() { return MODI.find(m => m.id === modus2) || null; }
+const modusSpeichern = () => { try { localStorage.setItem(MODUS_STORE, JSON.stringify(modus2)); } catch (e) { } };
+try { const g = JSON.parse(localStorage.getItem(MODUS_STORE)); if (g && MODI.some(m => m.id === g)) modus2 = g; } catch (e) { }
+
+/* Den Weg setzen: er bestimmt Teil und Jahrgang. */
+function modusSetzen(id) {
+  const m = MODI.find(x => x.id === id);
+  if (!m) return;
+  modus2 = m.id;
+  modusSpeichern();
+  teil = m.teil;
+  teilSpeichern();
+  /* null = keine Jahrgangs-Filterung, 0 = alles, 1-3 = kumulativ */
+  if (m.teil === 'ap1') { jahr = m.id === 'ap1p' ? 0 : (jahr === null || jahr === 0 ? 1 : jahr); }
+  else { jahr = null; }
+  jahrSpeichern();
+  if (m.teil === 'ap1' && m.id === 'ap1' && profil) jahrZumServer(jahr);
+  kartenFaecherResetWennNoetig();
+  sim = null; clearInterval(zeitGeber);
+  quizLauf = kartenLauf = lueckenLauf = fehlerLauf = fallLauf = null;
+  statistikZeichnen();
+  startseiteZeigen();
+  railZeichnen();
+}
+/* Karteikartenfahrplan gehört zum Namen, nicht zum Weg – beim Wechsel neu
+   aufsetzen, damit die Fächer des alten Wegs nicht mitzählen. */
+function kartenFaecherResetWennNoetig() { /* bewusst leer: Fächer bleiben, sie sind stoffbezogen */ }
+
+/* Der Weg aus Teil + Jahr ableiten, falls nur die Schalter gesetzt sind. */
+function modusAbleiten() {
+  if (teil === 'ap2') { modus2 = (jahr === 0) ? 'ap2p' : 'ap2'; return; }
+  modus2 = (jahr === 0) ? 'ap1p' : 'ap1';
+}
+
 /* Alle AP1-Datensammlungen und -Achsen als Funktionen. Ein Aufruf ohne
    Argument ist die jeweilige AP1-Ansicht. */
 function daten(t) {
@@ -6030,7 +6292,33 @@ const PROFIL_STORE = 'ap1-trainer-profil';
 const API = '/ap1';
 const DECKUNG = 0.85;          // ab wann der Server-Stand den lokalen ersetzt
 
-let profil = null;             // { id, name, jahr }
+/* ============================================================
+   ANMELDUNG
+   ------------------------------------------------------------
+   Zwei Wege führen zum selben Ergebnis – ein Profil mit einer Kennung:
+
+     1. Konto mit E-Mail und Passwort (neu). Liegt AUTH an, meldet der
+        Browser bei Supabase an; der zurückkommende Nutzer-Schlüssel wird
+        beim Profil abgelegt. „Passwort vergessen" schickt die Reset-Mail.
+     2. Name ohne Passwort (Bestand). Funktioniert weiter und ohne Netz.
+
+   AUTH wird beim Ausliefern gesetzt – über zwei meta-Elemente im Kopf der
+   Seite (siehe oben) oder, sauberer, über die Umgebungsvariable AP1_AUTH des
+   Servers. Im Repository steht kein fremder Schlüssel.
+   ============================================================ */
+function authAusKopf() {
+  try {
+    const m1 = document.querySelector('meta[name="ap1-auth-url"]');
+    const m2 = document.querySelector('meta[name="ap1-auth-key"]');
+    const url = m1 && m1.getAttribute('content');
+    const key = m2 && m2.getAttribute('content');
+    if (url && key) return { url, key };
+  } catch (e) { /* ohne Kopf kein Konto-Weg */ }
+  return null;
+}
+const AUTH = (typeof window !== 'undefined' && window.AP1_AUTH) ? window.AP1_AUTH : authAusKopf();
+
+let profil = null;             // { id, name, jahr, email, authId }
 let profilListe = [];          // Namen für die Auswahl
 let syncStand = 'aus';         // 'aus' | 'gut' | 'fehler'
 
@@ -6069,7 +6357,7 @@ async function api(weg, methode = 'GET', koerper) {
 async function profileLaden() {
   try {
     const j = await api('/profile');
-    profilListe = (j.profile || []).map(p => ({ id: p.id, name: p.name, jahr: p.jahr }));
+    profilListe = (j.profile || []).map(p => ({ id: p.id, name: p.name, jahr: p.jahr, email: p.email || null, authId: p.auth_id || null }));
     return profilListe;
   } catch (e) {
     profilListe = [];
@@ -6302,6 +6590,15 @@ function railZeichnen() {
   b2.className = 'rail-item'; b2.type = 'button';
   b2.innerHTML = '<span>Quellen &amp; kostenlose Übungen</span><span class="z">Links</span>';
   b2.onclick = () => { sim = null; quellenZeigen(); mobilEinklappen(); };
+  /* Der Korrekturbogen: was fehlt, steht oben. Er ist der Weg zur gezielten
+     Prüfungsvorbereitung und gehört deshalb in die Hauptliste, nicht ins Menü. */
+  const bSchwach = document.createElement('button');
+  bSchwach.className = 'rail-item' + (modus === 'schwaechen' ? ' aktiv' : '');
+  bSchwach.type = 'button';
+  const mitDaten = achse().filter(b => lernstandQuote(b.id, teil) !== null).length;
+  bSchwach.innerHTML = '<span>Meine Schwächen</span><span class="z">' + (mitDaten || 0) + '</span>';
+  bSchwach.setAttribute('aria-label', 'Meine Schwächen – Bereiche nach Handlungsbedarf');
+  bSchwach.onclick = () => { schwachenZeigen(); mobilEinklappen(); };
   const b3 = document.createElement('button');
   b3.className = 'rail-item'; b3.type = 'button';
   b3.innerHTML = '<span>Fortschritt zurücksetzen</span><span class="z">reset</span>';
@@ -6312,7 +6609,7 @@ function railZeichnen() {
   b5.onclick = () => { abmelden(); mobilEinklappen(); };
   /* Das Ausbildungsjahr steht seit dem Umbau in der Kopfzeile und wird hier
      nicht wiederholt — ein Weg, nicht zwei. */
-  fuss.append(b2, b3, b5);
+  fuss.append(bSchwach, b2, b3, b5);
 
   /* Lesehilfe zuletzt: die Zahlen in der Liste sind Fortschritt, die
      Prozentwerte an den Bereichen sind AP1-Häufigkeit. Ohne diesen Satz
@@ -6509,6 +6806,10 @@ function pruefen() {
   f.punkte += punkte; f.max += task.punkte; f.versuche = (f.versuche || 0) + 1;
   fortschritt.tasks[task.id] = f;
   fortschritt.punkte = (fortschritt.punkte || 0) + punkte;
+  /* Für den Schwächen-Fokus: die ganze Aufgabe zählt als richtig, wenn
+     mindestens die Hälfte der Zeilen stimmt – sonst wäre eine 8-Zeilen-
+     Aufgabe nie „geschafft". */
+  lernstandErfassen(task.bereich, teil, richtig / gesamt >= 0.5);
   serieSetzen(punkte === task.punkte ? (teil === 'ap2' ? serieAp2 + 1 : fortschritt.serie + 1) : 0);
   speichern(); statistikZeichnen();
 
@@ -6776,6 +7077,12 @@ function quellenZeigen() {
 function teilWechseln() {
   teil = istAp2() ? 'ap1' : 'ap2';
   teilSpeichern();
+  /* Der Lernweg muss zum neuen Teil passen – sonst stünde die Weg-Marke
+     auf AP1, während AP2 offen ist. */
+  modusAbleiten();
+  modusSpeichern();
+  if (teil === 'ap1' && jahr === null) { jahr = modusObjekt() && modusObjekt().id === 'ap1p' ? 0 : 1; jahrSpeichern(); }
+  if (teil === 'ap2') { jahr = null; jahrSpeichern(); }
   sim = null;
   clearInterval(zeitGeber);
   quizLauf = kartenLauf = lueckenLauf = fehlerLauf = fallLauf = null;
@@ -6864,15 +7171,14 @@ function kopfJahrZeichnen() {
       ? `Angemeldet als ${profil.name}, ${istAp2() ? 'Prüfungsteil 2' : 'Ausbildungsjahr ' + jahrKurz()}. Profil wechseln.`
       : 'Profil wählen');
   }
-  /* Das Jahr bekommt einen eigenen Knopf. Vorher lag es nur im Menü „Mehr" —
-     es ist aber die Wahl, die den sichtbaren Stoff bestimmt, und gehört
-     damit nach oben in die Kopfzeile. */
+  /* Der Weg-Knopf ersetzt den alten Jahr-Knopf: Er öffnet die Wahl der vier
+     Wege und zeigt den aktuellen kurz an. In beiden Prüfungsteilen sichtbar,
+     weil beide einen eigenen Vorbereitungs-Weg haben. */
   if (jahrKnopf) {
-    /* Teil 2 kennt keine Jahrgänge — dort wird nach Prüfungsbereich gefiltert.
-       Der Jahr-Knopf hat in AP2 nichts zu suchen und wird ausgeblendet. */
-    jahrKnopf.hidden = istAp2();
-    jahrKnopf.textContent = profil && jahr !== null ? jahrKurz() : 'Ausbildungsjahr';
-    jahrKnopf.setAttribute('aria-label', `Ausbildungsjahr ${jahrKurz()} wechseln`);
+    const m = modusObjekt();
+    jahrKnopf.hidden = false;
+    jahrKnopf.textContent = m ? m.name.replace(' · ', ' · ') : 'Weg wählen';
+    jahrKnopf.setAttribute('aria-label', m ? `Lernweg: ${m.name}. Ändern.` : 'Lernweg wählen');
   }
 }
 
@@ -6954,38 +7260,100 @@ function infoVerdrahten() {
   };
 }
 
-/* ---------- Anmeldung: Name wählen oder neu anlegen ---------- */
+/* ---------- Anmeldung ----------
+   Ein Anmeldebogen in zwei Blättern. Links das Deckblatt, das sagt, WO man
+   gerade ist; rechts das Formular mit nummerierten Feldern. Der Weg über
+   Name ohne Passwort bleibt immer offen, damit der Trainer auch ohne Netz
+   und ohne Konto benutzbar ist. Ist AUTH gesetzt, kommt der Weg über
+   E-Mail und Passwort dazu (mit „Passwort vergessen"). */
 async function profilAuswahlZeigen() {
   modus = 'start';
   sim = null;
   clearInterval(zeitGeber);
 
+  const mitAuth = !!AUTH;
+  const marke = istAp2() ? 'AP2' : 'AP1';
+
   blatt.innerHTML = `
     <div class="kopfstreifen">
-      <h2>Wer lernt hier?</h2>
-      <div class="meta">Der gewählte Name bleibt auf diesem Rechner gespeichert.</div>
+      <h2>Anmeldung</h2>
+      <div class="meta">${mitAuth ? 'Mit E-Mail und Passwort oder ohne Konto über den Namen.' : 'Ohne Konto: Name wählen – der Fortschritt hängt am Profil.'}</div>
     </div>
-    <div class="start">
-      <p id="pf-lade">Profile werden geladen …</p>
-      <div id="pf-liste"></div>
-      <h3 style="margin-top:22px">Neuer Name</h3>
-      <p>Jeder Name gibt es nur einmal — ein zweites „Anna" ist nicht möglich.</p>
-      <p><input type="text" id="pf-neu" maxlength="40" autocomplete="off"
-        placeholder="Name eingeben" style="font-size:15px;padding:8px 11px;border:1px solid var(--schwach);border-radius:var(--r);min-width:220px">
-        <button class="akt" type="button" id="pf-anlegen">Anlegen</button></p>
-      <p id="pf-fehler" role="status" aria-live="polite" style="color:var(--rot)"></p>
+
+    <div class="anmeldung">
+      <div class="deckblatt">
+        <div>
+          <h2>Kaufmann für IT-System-Management</h2>
+          <p class="zeile">Prüfungsvorbereitung · AP1 und AP2</p>
+        </div>
+        <div>
+          <p class="zeile" style="margin-bottom:6px">Womit du gerade arbeitest</p>
+          <div class="teil-liste">
+            ${MODI.map(m => `<span class="teil-chip${m.marke === marke ? ' aktiv' : ''}">${m.marke}${m.id.endsWith('p') ? ' · Prüfung' : ''}</span>`).join('')}
+          </div>
+        </div>
+        <div class="probeblatt">
+          <h3>Warum ein Konto?</h3>
+          <div class="probe">
+            <ol>
+              <li>Dein <b>Fortschritt</b> bleibt am Profil – auf jedem Rechner.</li>
+              <li>Der Trainer merkt sich <b>Schwächen</b> und zeigt sie öfter.</li>
+              <li>Sicheres kommt <b>seltener</b> vor – du übst, was fehlt.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="formular">
+        <div id="pf-lade">Bestehende Profile werden geladen …</div>
+        <div id="pf-liste"></div>
+
+        <h3 style="margin:22px 0 10px;font-size:15px">${mitAuth ? 'Neues Konto' : 'Neues Profil'}</h3>
+
+        ${mitAuth ? `
+        <div class="feld">
+          <span class="nr" aria-hidden="true">1</span>
+          <label for="pf-mail">E-Mail</label>
+          <input type="email" id="pf-mail" name="email" autocomplete="email" spellcheck="false"
+                 inputmode="email" placeholder="name@beispiel.de">
+        </div>
+        <div class="feld">
+          <span class="nr" aria-hidden="true">2</span>
+          <label for="pf-pw">Passwort</label>
+          <input type="password" id="pf-pw" name="passwort" autocomplete="new-password"
+                 placeholder="mindestens 8 Zeichen">
+          <span class="hinweis">Beim Anlegen wird das Passwort neu gesetzt; „Passwort vergessen" schickt eine Mail.</span>
+        </div>` : ''}
+
+        <div class="feld">
+          <span class="nr" aria-hidden="true">${mitAuth ? '3' : '1'}</span>
+          <label for="pf-neu">Anzeigename</label>
+          <input type="text" id="pf-neu" name="name" maxlength="40" autocomplete="off"
+                 placeholder="z. B. Alireza H.">
+          <span class="hinweis">Jeder Name gibt es nur einmal – ein zweites „Anna" ist nicht möglich.</span>
+        </div>
+
+        <div class="wahlreihe">
+          <button class="akt" type="button" id="pf-anlegen">${mitAuth ? 'Konto anlegen' : 'Profil anlegen'}</button>
+          ${mitAuth ? `<button class="wechsel" type="button" id="pf-login">Ich habe schon ein Konto – anmelden</button>` : ''}
+          ${mitAuth ? `<button class="wechsel" type="button" id="pf-vergessen">Passwort vergessen?</button>` : ''}
+        </div>
+        <p id="pf-fehler" role="status" aria-live="polite" style="color:var(--rot);font-size:13px;margin-top:10px"></p>
+      </div>
     </div>`;
 
-  const liste = document.getElementById('pf-liste');
   const fehler = document.getElementById('pf-fehler');
+  const liste = document.getElementById('pf-liste');
 
-  const namen = await profileLaden();
-  document.getElementById('pf-lade').remove();
+  let namen = [];
+  try { namen = await profileLaden(); } catch (e) { namen = []; }
+  const laden = document.getElementById('pf-lade');
+  if (laden) laden.remove();
 
   if (!namen.length) {
-    liste.innerHTML = '<p><i>Noch keine Profile angelegt.</i></p>';
+    liste.innerHTML = '<p class="leer" style="font-size:13px"><i>Noch keine Profile vorhanden.</i></p>';
   } else {
-    liste.innerHTML = `<h3>Vorhandene Profile</h3>
+    liste.innerHTML = `<h3 style="font-size:13px;color:var(--schwach);margin:0 0 8px">Vorhandene Profile</h3>
       <div class="formate">${namen.map(p =>
         `<button class="format" type="button" data-id="${p.id}">
            <span class="nr" aria-hidden="true">·</span>
@@ -6998,28 +7366,120 @@ async function profilAuswahlZeigen() {
     });
   }
 
-  document.getElementById('pf-anlegen').onclick = async () => {
-    const feld = document.getElementById('pf-neu');
-    const name = feld.value.trim();
+  const anlegen = document.getElementById('pf-anlegen');
+  anlegen.onclick = async () => {
     fehler.textContent = '';
-    if (!name) { fehler.textContent = 'Bitte einen Namen eingeben.'; feld.focus(); return; }
-    const knopf = document.getElementById('pf-anlegen');
-    knopf.disabled = true;
+    const name = document.getElementById('pf-neu').value.trim();
+    if (!name) { fehler.textContent = 'Bitte einen Anzeigenamen eingeben.'; document.getElementById('pf-neu').focus(); return; }
+
+    /* Konto-Weg mit E-Mail und Passwort, wenn Supabase verbunden ist. */
+    if (mitAuth) {
+      const mail = document.getElementById('pf-mail').value.trim();
+      const pw = document.getElementById('pf-pw').value;
+      if (!mail) { fehler.textContent = 'Bitte eine E-Mail eingeben.'; document.getElementById('pf-mail').focus(); return; }
+      if (!pw || pw.length < 8) { fehler.textContent = 'Das Passwort braucht mindestens 8 Zeichen.'; document.getElementById('pf-pw').focus(); return; }
+      anlegen.disabled = true;
+      try {
+        await authRegistrieren(mail, pw, name);
+      } catch (e) {
+        fehler.textContent = e.message + ' – ohne Konto geht es über „Profil anlegen" mit Name allein.';
+        anlegen.disabled = false;
+      }
+      return;
+    }
+
+    anlegen.disabled = true;
     try {
       const j = await api('/profile', 'POST', { name, jahr: 1 });
       await anmelden(j.profil);
     } catch (e) {
       fehler.textContent = e.message;
-      knopf.disabled = false;
-      feld.focus();
-      feld.select();
+      anlegen.disabled = false;
+      document.getElementById('pf-neu').focus();
+      document.getElementById('pf-neu').select();
     }
   };
-  document.getElementById('pf-neu').addEventListener('keydown', e => {
-    if (e.key === 'Enter') document.getElementById('pf-anlegen').click();
-  });
+
+  const login = document.getElementById('pf-login');
+  if (login) login.onclick = async () => {
+    fehler.textContent = '';
+    const mail = document.getElementById('pf-mail').value.trim();
+    const pw = document.getElementById('pf-pw').value;
+    if (!mail || !pw) { fehler.textContent = 'Bitte E-Mail und Passwort eingeben.'; return; }
+    login.disabled = true;
+    try { await authAnmelden(mail, pw); }
+    catch (e) { fehler.textContent = e.message; login.disabled = false; }
+  };
+
+  const vergessen = document.getElementById('pf-vergessen');
+  if (vergessen) vergessen.onclick = async () => {
+    fehler.textContent = '';
+    const mail = document.getElementById('pf-mail').value.trim();
+    if (!mail) { fehler.textContent = 'Bitte zuerst die E-Mail eintragen – dorthin geht der Link.'; document.getElementById('pf-mail').focus(); return; }
+    vergessen.disabled = true;
+    try {
+      await authZuruecksetzen(mail);
+      fehler.style.color = 'var(--gruen)';
+      fehler.textContent = 'Wenn es zu dieser Adresse ein Konto gibt, ist die Mail unterwegs.';
+    } catch (e) {
+      fehler.textContent = e.message;
+    }
+    vergessen.disabled = false;
+  };
+
+  const nameFeld = document.getElementById('pf-neu');
+  nameFeld.addEventListener('keydown', e => { if (e.key === 'Enter') anlegen.click(); });
   kopfJahrZeichnen();
   railZeichnen();
+}
+
+/* ---------- Konten über Supabase ----------
+   Diese drei Funktionen kapseln den Dienst. Ihre Adresse und der öffentliche
+   Schlüssel kommen aus window.AP1_AUTH (beim Ausliefern eingesetzt), damit im
+   Repository kein fremder Wert steht. Fehlt AUTH, wird hier nichts gerufen. */
+function authBasis() {
+  if (!AUTH) throw new Error('Anmeldung ist noch nicht eingerichtet');
+  return AUTH.url.replace(/\/$/, '') + '/auth/v1';
+}
+async function authRegistrieren(mail, pw, name) {
+  const r = await fetch(authBasis() + '/signup', {
+    method: 'POST',
+    headers: { 'content-type': 'application/json', apikey: AUTH.key },
+    body: JSON.stringify({ email: mail, password: pw, data: { name } })
+  });
+  const j = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(j.msg || j.error_description || j.message || 'Konto konnte nicht angelegt werden');
+  /* Bestätigt Supabase die Mail, kommt kein Token zurück – dann weist die
+     Oberfläche darauf hin und legt das Profil erst nach der Bestätigung an. */
+  if (!j.access_token && j.user && !j.session) {
+    throw new Error('Konto angelegt – bitte die Bestätigungs-Mail öffnen, dann anmelden');
+  }
+  const prof = { name, jahr: 1 };
+  if (j.access_token) prof.authId = j.user && j.user.id;
+  const p = await api('/profile', 'POST', prof);
+  await anmelden(p.profil);
+}
+async function authAnmelden(mail, pw) {
+  const r = await fetch(authBasis() + '/token?grant_type=password', {
+    method: 'POST',
+    headers: { 'content-type': 'application/json', apikey: AUTH.key },
+    body: JSON.stringify({ email: mail, password: pw })
+  });
+  const j = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(j.error_description || j.msg || 'Anmeldung fehlgeschlagen');
+  /* Konto gefunden – zugehöriges Profil laden und anmelden. */
+  const namen = await profileLaden();
+  const eigenes = namen.find(p => p.authId && p.authId === j.user.id) || namen.find(p => p.email === mail);
+  if (!eigenes) throw new Error('Zu diesem Konto gibt es noch kein Profil – bitte mit dem Namen anlegen');
+  await anmelden(eigenes);
+}
+async function authZuruecksetzen(mail) {
+  const r = await fetch(authBasis() + '/recover', {
+    method: 'POST',
+    headers: { 'content-type': 'application/json', apikey: AUTH.key },
+    body: JSON.stringify({ email: mail })
+  });
+  if (!r.ok) { const j = await r.json().catch(() => ({})); throw new Error(j.msg || 'Anfrage konnte nicht gesendet werden'); }
 }
 
 function jahrName(j) {
@@ -7071,26 +7531,90 @@ function jahrAuswahlZeigen() {
   clearInterval(zeitGeber);
   blatt.innerHTML = `
     <div class="kopfstreifen">
-      <h2>Wo stehst du in der Ausbildung?</h2>
-      <div class="meta">Der Trainer zeigt nur den Stoff, der bis dahin dran war.<br>
-        Umstellen lässt sich das jederzeit oben über „Ausbildungsjahr".</div>
+      <h2>Wofür bereitest du dich vor?</h2>
+      <div class="meta">Ein Weg für alles: Prüfungsteil, Jahrgang und Vorbereitung sind hier schon eingestellt.<br>
+        Wechseln lässt sich das jederzeit oben über „Weg".</div>
+    </div>
+
+    <div class="modus-wahl">
+      ${MODI.map(m => `<button class="modus-bogen" type="button" id="m-${m.id}">
+        <span class="marke">${m.marke}${m.id.endsWith('p') ? ' · PRÜFUNGSVORBEREITUNG' : ' · AUSBILDUNG'}</span>
+        <b>${m.name}</b>
+        <span class="z">${m.z}</span>
+      </button>`).join('')}
+    </div>
+    <p style="margin-top:16px">
+      <button class="akt zweit" type="button" id="m-ohne">Einmal alles zeigen – ohne Filter</button>
+    </p>`;
+
+  for (const m of MODI) {
+    document.getElementById('m-' + m.id).onclick = () => modusSetzen(m.id);
+  }
+  document.getElementById('m-ohne').onclick = () => { modus2 = null; modusSpeichern(); jahr = 0; jahrSpeichern(); startseiteZeigen(); };
+  kopfJahrZeichnen();
+  railZeichnen();
+}
+
+/* ============================================================
+   MEINE SCHWÄCHEN — der Korrekturbogen
+   ------------------------------------------------------------
+   Zeigt je Bereich, wie sicher er sitzt, und sortiert Schwaches nach oben.
+   Alles kommt aus dem lokalen Lernstand; nichts wird geschätzt oder erfunden.
+   ============================================================ */
+function schwachenZeigen() {
+  modus = 'schwaechen';
+  sim = null;
+  clearInterval(zeitGeber);
+  const liste = achse();
+  const zeilen = [];
+  for (const b of liste) {
+    const e = lernstand[lernstandSchluessel(b.id, teil)];
+    const n = e ? e.r + e.f : 0;
+    const q = lernstandQuote(b.id, teil);
+    zeilen.push({ b, n, q });
+  }
+  /* Schwächste zuerst; ohne Versuche stehen sie in der Mitte. */
+  zeilen.sort((a, b) => schwaeche(b.b.id, teil) - schwaeche(a.b.id, teil));
+  const mitDaten = zeilen.filter(z => z.n > 0);
+
+  blatt.innerHTML = `
+    <div class="kopfstreifen">
+      <h2>Meine Schwächen</h2>
+      <div class="meta">${istAp2() ? 'Teil 2' : 'Teil 1'} · ${mitDaten.length} von ${zeilen.length} Bereichen bearbeitet<br>
+        Sortiert nach Handlungsbedarf – oben, was am meisten fehlt.</div>
     </div>
 
     <div class="start">
-      <div class="formate">
-        ${JAHRE.map(x => `<button class="format" type="button" id="j-${x.id}">
-          <span class="nr" aria-hidden="true">·</span>
-          <span><b>${x.name}</b><span>${x.z}</span></span></button>`).join('')}
+      <div class="wahlreihe" style="display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-bottom:16px">
+        <label class="fokus-schalter"><input type="checkbox" id="fokus-an" ${fokusAn ? 'checked' : ''}>
+          Schwächere Bereiche öfter zeigen</label>
+        <button class="akt zweit" type="button" id="schwach-reset">Lernstand zurücksetzen</button>
       </div>
-      <p style="margin-top:16px">
-        <button class="akt zweit" type="button" id="j-ohne">Ohne Auswahl starten – alles zeigen</button>
-      </p>
-    </div>`;
+      <p style="font-size:13px">Der Fokus wirkt in Quiz und Karteikarten: Bereiche mit mehr Fehlern kommen
+        häufiger, sichere seltener. Die Zahlen hier zählen richtig gegen falsch.</p>
+    </div>
 
-  for (const x of JAHRE) {
-    document.getElementById('j-' + x.id).onclick = () => jahrSetzen(x.id);
-  }
-  document.getElementById('j-ohne').onclick = () => jahrSetzen(0);
+    <div class="schwach-liste">
+      ${zeilen.map(z => {
+        const p = z.q === null ? 0 : Math.round(z.q * 100);
+        const gut = z.q !== null && z.q >= 0.8;
+        return `<div class="schwach-zeile${gut ? ' gut' : ''}">
+          <span class="name">${z.b.name}</span>
+          <span class="balken" aria-hidden="true"><i style="width:${p}%"></i></span>
+          <span class="wert">${z.q === null ? '–' : p + ' %'}<small>${z.n ? z.n + ' Antworten' : 'noch nichts'}</small></span>
+        </div>`;
+      }).join('')}
+    </div>
+    ${!mitDaten.length ? `<p class="schwach-leer">Noch kein Bereich geübt – sobald du antwortest,
+      füllt sich dieser Bogen. Oben in der Liste stehen dann zuerst die schwachen Bereiche.</p>` : ''}`;
+
+  const feld = document.getElementById('fokus-an');
+  feld.onchange = () => { fokusAn = feld.checked; fokusSpeichern(); railZeichnen(); };
+  document.getElementById('schwach-reset').onclick = () => {
+    bestaetigen('Lernstand zurücksetzen?',
+      'Die Zählung richtig/falsch je Bereich beginnt von vorn. Dein Fortschritt in den Aufgaben bleibt erhalten.',
+      () => { lernstandZuruecksetzen(); schwachenZeigen(); });
+  };
   kopfJahrZeichnen();
   railZeichnen();
 }
@@ -7123,7 +7647,14 @@ function startseiteZeigen() {
   /* Ohne Profil gibt es nichts zu zeigen — die Anmeldung erscheint immer.
      (Ein Vergleich mit `modus` wäre hier falsch: der startet als 'rechnen'.) */
   if (!profil) { profilAuswahlZeigen(); return; }
-  if (jahr === null) { jahrAuswahlZeigen(); return; }
+  /* Der Lernweg muss feststehen. Fehlt er, wird er aus dem Gespeicherten
+     abgeleitet – und nur wenn auch das fehlt, kommt die Weg-Wahl. */
+  if (!modus2) {
+    if (teil === 'ap2') modusAbleiten();
+    else if (jahr !== null) modusAbleiten();
+    else { jahrAuswahlZeigen(); return; }
+    modusSpeichern();
+  }
   /* Ein Bereich aus dem Link hat Vorrang vor der Startseite. */
   if (wunschBereich) { wunschBereichAusfuehren(); return; }
   modus = 'start';
@@ -7153,6 +7684,10 @@ function startseiteZeigen() {
         <button class="format" type="button" id="f-fall"><span class="nr" aria-hidden="true">6</span><span><span class="umfang">${hole('FAELLE').length} Fälle</span><b>Fallstudien</b><span>Kundensituationen mit mehreren Entscheidungen</span></span></button>
       </div>
       ${bProzent > 0 ? `<p style="margin:14px 0 0">In diesem Ausschnitt hast du <b>${bProzent} %</b> der Rechenaufgaben sicher – grün ab 80 %.</p>` : ''}
+      <p style="margin:14px 0 0"><button class="fokus-schalter" type="button" id="f-fokus">
+        <input type="checkbox" id="f-fokus-box" ${fokusAn ? 'checked' : ''} tabindex="-1" aria-hidden="true">
+        <span>Schwächen zuerst · ${fokusAn ? 'an' : 'aus'}</span></button>
+        <button class="akt zweit" type="button" id="f-schwaechen" style="margin-left:10px">Meine Schwächen ansehen</button></p>
     </div>
 
     ${!istAp2() ? `    <div class="start">
@@ -7288,6 +7823,10 @@ function startseiteZeigen() {
     'f-englisch-karten': () => starteKarten('englisch')
   };
   for (const id in zu) { const el = document.getElementById(id); if (el) el.onclick = zu[id]; }
+  const fokus = document.getElementById('f-fokus');
+  if (fokus) fokus.onclick = () => { fokusAn = !fokusAn; fokusSpeichern(); startseiteZeigen(); };
+  const schwach = document.getElementById('f-schwaechen');
+  if (schwach) schwach.onclick = () => schwachenZeigen();
   railZeichnen();
 }
 
@@ -7298,7 +7837,22 @@ function starteQuiz(bereich) {
   modus = 'quiz';
   let reihe = hole('QUIZ', bereich);
   if (!reihe.length) return nichtsDa('Multiple-Choice-Quiz');
-  reihe = reihe.slice().sort(() => Math.random() - 0.5).slice(0, 12);
+  reihe = reihe.slice();
+  /* Schwächen-Fokus: gemischt, aber Bereiche mit Handlungsbedarf kommen
+     zuerst und darum häufiger vor. Ohne Fokus bleibt es beim reinen Zufall. */
+  if (fokusAn && !bereich) {
+    const gewichtet = [];
+    for (const q of reihe) {
+      const w = 1 + Math.round(schwaeche(q.b, teil) * 3);   // 1 bis 4 Lose
+      for (let i = 0; i < w; i++) gewichtet.push(q);
+    }
+    reihe = gewichtet;
+  }
+  reihe = reihe.slice().sort(() => Math.random() - 0.5);
+  /* Doppelte entfernen, die durch die Gewichtung mehrfach in der Reihe sind. */
+  const gesehen = new Set();
+  reihe = reihe.filter(q => (gesehen.has(q) ? false : gesehen.add(q)));
+  reihe = reihe.slice(0, 12);
   quizLauf = { reihe, idx: 0, richtig: 0, beantwortet: 0, gewaehlt: null, bereich: bereich || null };
   zeichneQuiz();
   railZeichnen();
@@ -7364,6 +7918,9 @@ function zeichneQuiz() {
       f.punkte += ok ? 1 : 0; f.max += 1; f.versuche = (f.versuche || 0) + 1;
       fortschritt.tasks[key] = f;
       fortschritt.punkte = (fortschritt.punkte || 0) + (ok ? 1 : 0);
+      /* Für den Schwächen-Fokus zählt zusätzlich der Bereich – nicht die
+         einzelne Frage, die bei jedem Aufruf anders zusammengesetzt ist. */
+      lernstandErfassen(q.b, teil, ok);
       serieSetzen(ok ? (istAp2() ? serieAp2 + 1 : (fortschritt.serie || 0) + 1) : 0);
       speichern(); statistikZeichnen();
       zeigeQuizAufloesung();
@@ -7465,8 +8022,15 @@ function starteKarten(bereich) {
   modus = 'karten';
   let stapel = hole('KARTEN', bereich);
   if (!stapel.length) return nichtsDa('Karteikarten');
-  /* Karten in niedrigen Fächern zuerst – das ist der Kern von Spaced Repetition */
-  stapel = stapel.slice().sort((a, b) => (kartenFaecher[a.f] || 0) - (kartenFaecher[b.f] || 0));
+  /* Karten in niedrigen Fächern zuerst – das ist der Kern von Spaced Repetition.
+     Mit Schwächen-Fokus zählt zusätzlich der Handlungsbedarf des Bereichs:
+     unsichere Bereiche rutschen nach vorn. */
+  stapel = stapel.slice().sort((a, b) => {
+    const fa = (kartenFaecher[a.f] || 0), fb = (kartenFaecher[b.f] || 0);
+    if (fa !== fb) return fa - fb;
+    if (fokusAn) return schwaeche(b.b, teil) - schwaeche(a.b, teil);
+    return 0;
+  });
   kartenLauf = { stapel, idx: 0, aufgedeckt: false, gewusst: 0, nicht: 0, bereich: bereich || null };
   zeichneKarte();
   railZeichnen();
@@ -7534,6 +8098,7 @@ function bewerteKarte(gewusst) {
   /* Leitner: richtig -> ein Fach höher (max 4), falsch -> zurück auf 1 */
   kartenFaecher[k.f] = gewusst ? Math.min(4, fach + 1) : 1;
   kartenSpeichern();
+  lernstandErfassen(k.b, teil, gewusst);
   if (gewusst) kartenLauf.gewusst++; else kartenLauf.nicht++;
   naechsteKarte();
 }
@@ -7689,6 +8254,7 @@ function lueckenPruefen() {
   f.punkte += punkte; f.max += 6; f.versuche = (f.versuche || 0) + 1;
   fortschritt.tasks[key] = f;
   fortschritt.punkte = (fortschritt.punkte || 0) + punkte;
+  lernstandErfassen(lueckenLauf.ex.b, teil, richtig / luecken.length >= 0.5);
   serieSetzen(richtig === luecken.length ? (istAp2() ? serieAp2 + 1 : (fortschritt.serie || 0) + 1) : 0);
   speichern(); statistikZeichnen();
   document.getElementById('rueckmeldung').textContent =
@@ -7779,6 +8345,7 @@ function fehlerPruefen() {
   f.punkte += punkte; f.max += 8; f.versuche = (f.versuche || 0) + 1;
   fortschritt.tasks[ex.id] = f;
   fortschritt.punkte = (fortschritt.punkte || 0) + punkte;
+  lernstandErfassen(ex.b, teil, richtig / ex.zeilen.length >= 0.5);
   serieSetzen(richtig === ex.zeilen.length ? (istAp2() ? serieAp2 + 1 : (fortschritt.serie || 0) + 1) : 0);
   speichern(); statistikZeichnen();
   zeichneFehler();
@@ -7871,6 +8438,7 @@ function zeichneFall() {
       f.punkte += p; f.max += 3; f.versuche = (f.versuche || 0) + 1;
       fortschritt.tasks[fall.id] = f;
       fortschritt.punkte = (fortschritt.punkte || 0) + p;
+      lernstandErfassen(fall.b, teil, p === 3);
       serieSetzen(p === 3 ? (istAp2() ? serieAp2 + 1 : (fortschritt.serie || 0) + 1) : 0);
       speichern(); statistikZeichnen();
       zeichneFall();
@@ -7935,8 +8503,9 @@ document.getElementById('btn-profil').addEventListener('click', () => {
   if (profil) abmelden(); else profilAuswahlZeigen();
   mobilEinklappen();
 });
-/* Das Ausbildungsjahr bestimmt den sichtbaren Stoff — es gehört in die
-   Kopfzeile, nicht ins Menü „Mehr". */
+/* Der Weg-Knopf öffnet die Wahl der vier Lernwege (AP1, AP2 und je die
+   Prüfungsvorbereitung). Er ersetzt den früheren Jahr-Knopf, weil Vorbereitung
+   und Jahrgang nicht mehr zwei getrennte Entscheidungen sind. */
 document.getElementById('btn-jahr').addEventListener('click', () => {
   sim = null; clearInterval(zeitGeber);
   jahrAuswahlZeigen();

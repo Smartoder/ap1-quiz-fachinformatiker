@@ -4,6 +4,63 @@ Das Format folgt *Keep a Changelog*. Bruchstellen sind ausdrücklich gekennzeich
 
 ## [Nicht veröffentlicht]
 
+### Hinzugefügt — Anmeldung, Schwächen-Fokus und vier Lernwege (2026-10-08)
+
+**Anmeldung als Anmeldebogen.** Die bisherige „Wer lernt hier?"-Auswahl ist ein
+zweiblättriger Anmeldebogen: links das Deckblatt (Wortzeichen, Teil, Stand),
+rechts das Formular mit nummerierten Feldern. Zwei Wege führen zum selben
+Ergebnis – ein Profil mit Kennung:
+
+- **Konto mit E-Mail und Passwort** (sobald ein Anmeldedienst verbunden ist).
+  „Passwort vergessen" schickt einen Reset-Link per Mail. Der Dienst ist
+  Supabase Auth; die Projekt-Adresse und der öffentliche Schlüssel kommen beim
+  Ausliefern über `<meta name="ap1-auth-url">` und `<meta name="ap1-auth-key">`
+  — **kein fremder Schlüssel im Repository**.
+- **Name ohne Passwort** bleibt immer möglich. Ohne Anmeldedienst ist der
+  Trainer voll nutzbar.
+
+Damit ist die Profil-Kennung (der primary key) dauerhaft gespeichert und der
+Fortschritt hängt am Profil, nicht am Rechner.
+
+**Schwächen-Fokus.** Der Trainer zählt je Prüfungsteil und Bereich richtig und
+falsch. Daraus entsteht ein Handlungsbedarf (siehe Entscheidung 0013):
+
+- Sichtbar auf der neuen Seite **„Meine Schwächen"** — ein Korrekturbogen, der
+  Schwaches nach oben sortiert, mit Balken und Antwortzahl je Bereich.
+- Ein Schalter **„Schwächere Bereiche öfter zeigen"** wirkt in Quiz und
+  Karteikarten: schwache Bereiche kommen häufiger, sichere seltener.
+- Wenige Antworten zählen wenig (Gewicht), unbekannte Bereiche bleiben neutral.
+
+**Vier Lernwege statt zwei Schalter.** Teil und Jahrgang sind keine zwei
+Entscheidungen mehr, sondern eine Wahl:
+
+| Weg | Inhalt |
+|---|---|
+| **Teil 1 · Ausbildung** | AP1, gefiltert nach Ausbildungsjahr |
+| **Prüfungsvorbereitung 1** | AP1, alle Jahrgänge gemischt |
+| **Teil 2 · Ausbildung** | AP2, vier Prüfungsbereiche |
+| **Prüfungsvorbereitung 2** | AP2, schriftliche Vorbereitung |
+
+Der Knopf in der Kopfzeile heißt jetzt **„Weg"**; die Wahl liegt in der
+Seitenleiste, die Marke AP1/AP2 bleibt und folgt dem Weg.
+
+**Backend:** `trainer_profile` bekommt zwei freiwillige Spalten `email` und
+`auth_id` (je ein eindeutiger Teilindex), und `POST /ap1/profile` prüft und
+speichert sie. 7 neue Prüfungen im Wegetest (38 statt 31).
+
+**Geprüft am 2026-10-08:**
+
+- Oberflächen-Tor `npm run check`: **49/49 bestanden.**
+- Backend-Tor `npm run check`: **24/24 Struktur + 38/38 Wege.**
+- Im Browser: Anmeldebogen, alle vier Wege, „Meine Schwächen" (14 Bereiche),
+  Fokus-Gewichtung und die Erfassung aus Quiz, Karten, Lückentext, Fehlersuche,
+  Fallstudie und Rechenaufgabe durchgeklickt — ohne Fehler.
+- Mobil (390 × 844): der Korrekturbogen bricht auf zwei Zeilen je Bereich um.
+
+**Noch nicht verdrahtet (siehe Entscheidung 0013, offene Punkte):**
+Anmeldedienst verbinden, Migration auf der laufenden Datenbank, RLS-Regeln,
+und den Lernstand ins Profil schreiben.
+
 ### Hinzugefügt — alle vier Lernlücken nach Katalog geschlossen (2026-10-08)
 
 Vier Bereiche, die der amtliche Prüfungskatalog nennt und die im Trainer noch
