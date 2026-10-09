@@ -4,6 +4,38 @@ Das Format folgt *Keep a Changelog*. Bruchstellen sind ausdrücklich gekennzeich
 
 ## [Nicht veröffentlicht]
 
+### Hinzugefügt — Inhalte Teil 1 mehr als verdoppelt (2026-10-09)
+
+Der Aufgabenbestand zu **Teil 1 (AP1)** wurde von 629 auf **1.176 Einträge**
+erweitert. Das Multiple-Choice-Quiz und die Karteikarten sind mehr als verdoppelt;
+Ausschnitt und Formate bleiben unverändert.
+
+| Format | vorher | jetzt |
+|---|---|---|
+| Multiple-Choice-Quiz | 313 | **632** |
+| Karteikarten | 245 | **544** |
+| Lückentexte | 24 | 24 |
+| Fehlersuche | 12 | 12 |
+| Fallstudien | 13 | 13 |
+| Rechenaufgaben | 22 | 22 |
+| **Summe Teil 1** | **629** | **1.176** |
+
+**Herkunft.** Neue Inhalte sind ausschließlich aus dem amtlichen Material
+abgeleitet: dem offiziellen IHK-Prüfungskatalog AP1 (Fragenkomplexe PK-01 bis
+PK-07 als Volltext), der offiziellen IHK-Beispielaufgabe (IT 1.1 bis IT 3.3) und
+den Konzeptseiten zu PK-01 bis PK-07. **Keine Aufgabe ist wörtlich aus einer
+Prüfung übernommen**, und es wurden keine urheberrechtlich geschützten Klausuren
+verwendet. Die Inhalte folgen dem vorhandenen Aufbau: jedes Quiz-Element hat vier
+Antworten mit genau einer richtigen und einer Begründung (`e`); jede Karte hat
+Vorder- und Rückseite in HTML. Jahresmarke (`j`) und Bereich (`b`) folgen der
+bestehenden Struktur.
+
+**Prüfung.** `npm run check` ist grün (49 Prüfungen). `npm run analyse` findet
+**keine leere Zelle** (jeder Bereich hat in jedem Ausbildungsjahr etwas), **keine
+wortgleichen Titel** und **keine Dubletten im selben Format**, die auf die neuen
+Einträge zurückgehen. Die zwei verbleibenden Ähnlichkeiten im selben Format
+(`Subnetting`, `Testprotokoll`) bestanden bereits vor dieser Änderung.
+
 ### Hinzugefügt — Anmeldung, Schwächen-Fokus und vier Lernwege (2026-10-08)
 
 **Anmeldung als Anmeldebogen.** Die bisherige „Wer lernt hier?"-Auswahl ist ein
