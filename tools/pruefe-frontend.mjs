@@ -122,7 +122,9 @@ const vertrag = [
   ['Jahr-Speicher', /const\s+JAHR_STORE\s*=\s*['"]ap1-trainer-jahr['"]/],
   ['Profil-Speicher', /const\s+PROFIL_STORE\s*=\s*['"]ap1-trainer-profil['"]/],
   ['Karten-Speicher', /const\s+KARTEN_STORE\s*=\s*['"]ap1-trainer-karten-v1['"]/],
-  ['Prüfungsteil-Speicher', /const\s+TEIL_STORE\s*=\s*['"]ap1-trainer-teil['"]/]
+  ['Prüfungsteil-Speicher', /const\s+TEIL_STORE\s*=\s*['"]ap1-trainer-teil['"]/],
+  ['Lernstand-Speicher', /const\s+LERNSTAND_STORE\s*=\s*['"]ap1-trainer-lernstand-v1['"]/],
+  ['Begegnungs-Speicher', /const\s+GESEHEN_STORE\s*=\s*['"]ap1-trainer-gesehen-v1['"]/]
 ];
 for (const [was, muster] of vertrag) {
   muster.test(html)

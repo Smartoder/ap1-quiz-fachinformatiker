@@ -940,6 +940,10 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
 .deckblatt .probeblatt h3{font-size:11px;font-weight:600;color:var(--schwach);margin:0 0 8px;letter-spacing:.03em}
 .deckblatt .probeblatt ol{margin:0;padding-left:19px}
 .deckblatt .probeblatt li{margin-bottom:4px}
+.deckblatt .probeblatt .probe-fuss{
+  margin:10px 0 0;padding-top:9px;border-top:1px solid var(--linie);
+  font-size:12px;color:var(--schwach);
+}
 
 /* Formularzeile: Nummer · Beschriftung · Linieneingabe */
 .feld{display:grid;grid-template-columns:26px minmax(0,1fr);gap:10px;margin-bottom:16px}
@@ -998,7 +1002,12 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
   .modus-wahl{grid-template-columns:minmax(0,1fr)}
 }
 
-/* ---------- Meine Schwächen: Korrekturbogen ---------- */
+/* ---------- Meine Schwächen: der Korrekturbogen ----------
+   Ein Auszug aus der eigenen Prüfung: je Bereich eine Zeile, links das Urteil,
+   in der Mitte der Balken, rechts die Zahlen in Schreibmaschinenschrift wie
+   überall dort, wo gezählt wird. Vier Zustände, aber weiterhin nur drei
+   Farbfamilien des Blattes: Grün = Freigabe, Tinte = im Gang, Rot = Korrektur,
+   Linie = noch nicht begonnen. */
 .schwach-liste{border:1px solid var(--linie);border-top:3px solid var(--tinte);background:var(--blatt);max-width:820px}
 .schwach-zeile{
   display:grid;grid-template-columns:minmax(0,1fr) 120px 92px;
@@ -1007,12 +1016,42 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
 }
 .schwach-zeile:last-child{border-bottom:0}
 .schwach-zeile .name{font-size:14px}
+.schwach-zeile .name small{display:block;font-size:11.5px;color:var(--schwach);margin-top:2px}
 .schwach-zeile .balken{height:7px;background:var(--papier);border-radius:var(--r);overflow:hidden}
 .schwach-zeile .balken i{display:block;height:100%;background:var(--rot)}
 .schwach-zeile.gut .balken i{background:var(--gruen)}
+.schwach-zeile.mittel .balken i{background:var(--tinte)}
+.schwach-zeile.leer .balken i{background:var(--linie)}
 .schwach-zeile .wert{font-family:var(--mono);font-size:13px;text-align:right;font-variant-numeric:tabular-nums}
 .schwach-zeile .wert small{display:block;font-size:10.5px;color:var(--schwach)}
 .schwach-leer{padding:20px;font-size:13.5px;color:var(--schwach)}
+
+/* Kopf des Bogens: eine Zeile, die den Stand in einem Blick sagt — die
+   Gesamtquote groß in Schreibmaschinenschrift, daneben der stärkste und der
+   schwächste Bereich. Dieselbe Doppellinie wie beim Bewertungsstempel. */
+.lernbild{
+  display:flex;align-items:stretch;gap:0;flex-wrap:wrap;
+  border:1px solid var(--linie);border-top:3px solid var(--tinte);
+  background:var(--blatt);max-width:820px;margin-bottom:16px;
+}
+.lernbild-zahl{
+  padding:16px 20px;border-right:1px solid var(--linie);
+  display:flex;flex-direction:column;justify-content:center;min-width:190px;
+}
+.lernbild-zahl b{font-family:var(--mono);font-size:34px;line-height:1;letter-spacing:-.02em}
+.lernbild-zahl span{font-size:12px;color:var(--schwach);margin-top:6px}
+.lernbild-zahl small{display:block;font-family:var(--mono);font-size:10.5px;margin-top:2px}
+.lernbild-punkt{
+  flex:1 1 180px;padding:16px 20px;display:flex;flex-direction:column;gap:3px;
+  justify-content:center;border-right:1px solid var(--linie-hell);
+}
+.lernbild-punkt:last-child{border-right:0}
+.lernbild-punkt .marke{font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;color:var(--schwach)}
+.lernbild-punkt b{font-size:14px}
+.lernbild-punkt span:last-child{font-size:12px;color:var(--schwach)}
+.lernbild-punkt.gut b{color:var(--gruen)}
+.lernbild-punkt.schlecht b{color:var(--rot)}
+@media (max-width:520px){.lernbild-zahl{border-right:0;border-bottom:1px solid var(--linie)}}
 .fokus-schalter{
   display:inline-flex;align-items:center;gap:9px;font-size:13.5px;color:var(--tinte);
   border:1px solid var(--linie);border-radius:var(--r);padding:7px 12px;background:var(--blatt);cursor:pointer;
@@ -1235,6 +1274,74 @@ const fokusSpeichern = () => { try { localStorage.setItem(FOKUS_STORE, fokusAn ?
 function nachSchwaecheSortieren(liste, t) {
   if (!fokusAn) return liste;
   return liste.slice().sort((a, b) => schwaeche(b.b, t) - schwaeche(a.b, t));
+}
+
+/* ============================================================
+   WIEDERHOLUNG — Häufigkeit und Abstand statt Sperren
+   ------------------------------------------------------------
+   Richtig beantwortete Einträge werden NICHT gelöscht. Jeder Eintrag
+   bekommt ein Gewicht aus zwei Größen:
+
+     Schwäche — wie dringend der Bereich ist (mit Fokus), sonst neutral
+     Abstand  — wie lange die letzte Begegnung her ist (gerade ≈ 1)
+
+   Gezogen wird gewichtet und ohne Wiederholung: jede Kennung kommt in
+   einer Runde höchstens einmal vor, und was gerade dran war, fällt nach
+   hinten. So kommt keine Frage zweimal hintereinander — aber nichts
+   verschwindet dauerhaft. Vergessen ist in einer Prüfungsvorbereitung
+   der Normalfall; Gesperrtes wäre nicht mehr abfragbar.
+
+   Der Merker liegt bewusst NEBEN dem Fortschritt: der Fortschritt zählt
+   Punkte je Aufgabe, hier steht der Augenblick der letzten Begegnung.
+   ============================================================ */
+const GESEHEN_STORE = 'ap1-trainer-gesehen-v1';
+let gesehen = {};   // { '<kennung>': Zeitstempel in ms }
+try {
+  const g = JSON.parse(localStorage.getItem(GESEHEN_STORE));
+  if (g && typeof g === 'object') gesehen = g;
+} catch (e) { /* kein Speicher */ }
+const gesehenSpeichern = () => {
+  try { localStorage.setItem(GESEHEN_STORE, JSON.stringify(gesehen)); } catch (e) {}
+  syncPlanen();
+};
+/* Die Kennung eines Eintrags: feste id, sonst der Aufgabentext. */
+function gesehenKennung(o) {
+  return (istAp2() ? 'ap2-' : 'ap1-') + (o && (o.id || o.f || o.q) || '?');
+}
+/* Ein Eintrag wurde gesehen/beantwortet — Zeitpunkt merken. */
+function gesehenMerken(o) {
+  if (!o) return;
+  gesehen[gesehenKennung(o)] = Date.now();
+  gesehenSpeichern();
+}
+/* Abstand: gerade gesehen ≈ 1, vor sechs Stunden ≈ 0,5, lange her → klein. */
+function abstandFaktor(o, jetzt) {
+  const t = gesehen[gesehenKennung(o)];
+  if (!t) return 0.25;                       // noch nie gesehen: seltener, aber sichtbar
+  const stunden = Math.max(0, ((jetzt || Date.now()) - t) / 3.6e6);
+  return 1 / (1 + stunden / 6);
+}
+/* Gewichtet ziehen, ohne Wiederholung innerhalb des Aufrufs. Liefert n Einträge.
+   Ohne Schwächen-Fokus wirkt nur der Abstand — dann ist die Reihenfolge rein
+   „was lange nicht dran war, kommt zuerst". */
+function gewichtetZiehen(liste, n, jetzt) {
+  const topf = liste.slice();
+  const ziel = Math.max(0, Math.min(n, topf.length));
+  const t0 = jetzt || Date.now();
+  const raus = [];
+  while (raus.length < ziel && topf.length) {
+    let summe = 0;
+    const gewichte = topf.map(o => {
+      const schwere = fokusAn ? (1 + 2 * schwaeche(o.b, teil)) : 1;   // 1 … 3
+      const w = Math.max(0.05, schwere * abstandFaktor(o, t0));
+      summe += w;
+      return w;
+    });
+    let r = Math.random() * summe, idx = 0;
+    while (idx < gewichte.length - 1 && (r -= gewichte[idx]) > 0) idx++;
+    raus.push(topf.splice(idx, 1)[0]);
+  }
+  return raus;
 }
 
 
@@ -7711,6 +7818,10 @@ async function syncJetzt() {
         serie: fortschritt.serie,
         punkte: fortschritt.punkte,
         karten: kartenFaecher,
+        /* Der Lernstand und der Begegnungs-Merker reisen im freien JSON-Feld
+           `data` mit – keine dritte Tabelle (Entscheidung 0015/0008). */
+        lernstand: lernstand,
+        gesehen: gesehen,
         stand: new Date().toISOString()
       }
     });
@@ -7738,6 +7849,17 @@ async function standHolen() {
       fortschritt.serie = d.serie || 0;
       fortschritt.punkte = d.punkte || 0;
       if (d.karten && typeof d.karten === 'object') kartenFaecher = d.karten;
+      /* Lernstand und Begegnungs-Merker mitnehmen (Entscheidung 0015): nur so
+         kennt ein zweiter Rechner die Schwächen des Nutzers. Der Server ist
+         weiter, also ist auch sein Lernstand der weiterere. */
+      if (d.lernstand && typeof d.lernstand === 'object') {
+        lernstand = d.lernstand;
+        try { localStorage.setItem(LERNSTAND_STORE, JSON.stringify(lernstand)); } catch (e) { }
+      }
+      if (d.gesehen && typeof d.gesehen === 'object') {
+        gesehen = d.gesehen;
+        try { localStorage.setItem(GESEHEN_STORE, JSON.stringify(gesehen)); } catch (e) { }
+      }
       try { localStorage.setItem(STORE, JSON.stringify(fortschritt)); } catch (e) { }
       try { localStorage.setItem(KARTEN_STORE, JSON.stringify(kartenFaecher)); } catch (e) { }
       syncStand = 'gut';
@@ -8138,6 +8260,7 @@ function pruefen() {
      mindestens die Hälfte der Zeilen stimmt – sonst wäre eine 8-Zeilen-
      Aufgabe nie „geschafft". */
   lernstandErfassen(task.bereich, teil, richtig / gesamt >= 0.5);
+  gesehenMerken(task);
   serieSetzen(punkte === task.punkte ? (teil === 'ap2' ? serieAp2 + 1 : fortschritt.serie + 1) : 0);
   speichern(); statistikZeichnen();
 
@@ -8605,7 +8728,7 @@ async function profilAuswahlZeigen() {
   blatt.innerHTML = `
     <div class="kopfstreifen">
       <h2>Anmeldung</h2>
-      <div class="meta">${mitAuth ? 'Mit E-Mail und Passwort oder ohne Konto über den Namen.' : 'Ohne Konto: Name wählen – der Fortschritt hängt am Profil.'}</div>
+      <div class="meta">${mitAuth ? 'Empfohlen: mit E-Mail und Passwort. Ohne Konto geht es jederzeit über den Namen.' : 'Ohne Konto: Name wählen – der Fortschritt hängt am Profil.'}</div>
     </div>
 
     <div class="anmeldung">
@@ -8621,13 +8744,15 @@ async function profilAuswahlZeigen() {
           </div>
         </div>
         <div class="probeblatt">
-          <h3>Warum ein Konto?</h3>
+          <h3>${mitAuth ? 'Empfohlen: mit Konto' : 'Warum ein Profil?'}</h3>
           <div class="probe">
             <ol>
               <li>Dein <b>Fortschritt</b> bleibt am Profil – auf jedem Rechner.</li>
-              <li>Der Trainer merkt sich <b>Schwächen</b> und zeigt sie öfter.</li>
-              <li>Sicheres kommt <b>seltener</b> vor – du übst, was fehlt.</li>
+              <li>Der Trainer <b>wertet deine Antworten aus</b>: er zeigt dir, wo du sicher bist und wo noch nicht.</li>
+              <li>Was du kannst, kommt <b>seltener</b> wieder – keine Frage zweimal hintereinander.</li>
             </ol>
+            ${mitAuth ? `<p class="probe-fuss">Das Konto ist <b>empfohlen</b>, aber nicht Pflicht:
+              ohne Konto geht es jederzeit über deinen Namen.</p>` : ''}
           </div>
         </div>
       </div>
@@ -8822,12 +8947,18 @@ async function anmelden(p) {
   profilMerken();
   jahr = profil.jahr;
 
-  /* Lokalen Fortschritt dieses Rechners verwerfen, damit nicht der Stand
-     eines anderen Namens hängen bleibt. Danach den eigenen holen. */
+  /* Lokalen Stand dieses Rechners verwerfen, damit nicht der Stand eines
+     anderen Namens hängen bleibt. Danach den eigenen holen. Der Lernstand
+     und der Begegnungs-Merker gehören dazu — sonst zeigt der Bildschirm
+     „Meine Schwächen" die Zahlen der vorigen Person. */
   fortschritt = { tasks: {}, serie: 0, punkte: 0 };
   kartenFaecher = {};
+  lernstand = {};
+  gesehen = {};
   try { localStorage.removeItem(STORE); } catch (e) { }
   try { localStorage.removeItem(KARTEN_STORE); } catch (e) { }
+  try { localStorage.removeItem(LERNSTAND_STORE); } catch (e) { }
+  try { localStorage.removeItem(GESEHEN_STORE); } catch (e) { }
 
   await standHolen();
   statistikZeichnen();
@@ -8889,6 +9020,17 @@ function jahrAuswahlZeigen() {
    Zeigt je Bereich, wie sicher er sitzt, und sortiert Schwaches nach oben.
    Alles kommt aus dem lokalen Lernstand; nichts wird geschätzt oder erfunden.
    ============================================================ */
+/* Ein Urteil je Bereich — aus der Quote, aber erst ab genug Antworten.
+   Unter drei Antworten ist jede Quote Zufall und wird als „zu wenig" benannt. */
+function bereichUrteil(q, n) {
+  if (q === null || n === 0) return { kurz: '–', text: 'noch nichts geübt', klasse: 'leer' };
+  if (n < 3) return { kurz: '?', text: 'noch zu wenig Antworten', klasse: 'leer' };
+  if (q >= 0.8) return { kurz: 'sitzt', text: 'sitzt – seltener wiederholen', klasse: 'gut' };
+  if (q >= 0.5) return { kurz: 'übt', text: 'Grundwissen steht, Sicherheit fehlt', klasse: 'mittel' };
+  return { kurz: 'fehlt', text: 'hier fehlt noch das Meiste', klasse: 'schlecht' };
+}
+/* Der Lernstand als Bogen: je Bereich eine Zeile mit Urteil. Der Bogen sagt,
+   WO man steht — er ist die Auswertung der Antworten, nicht nur eine Liste. */
 function schwachenZeigen() {
   modus = 'schwaechen';
   sim = null;
@@ -8899,18 +9041,36 @@ function schwachenZeigen() {
     const e = lernstand[lernstandSchluessel(b.id, teil)];
     const n = e ? e.r + e.f : 0;
     const q = lernstandQuote(b.id, teil);
-    zeilen.push({ b, n, q });
+    zeilen.push({ b, n, q, r: e ? e.r : 0, f: e ? e.f : 0, urteil: bereichUrteil(q, n) });
   }
   /* Schwächste zuerst; ohne Versuche stehen sie in der Mitte. */
   zeilen.sort((a, b) => schwaeche(b.b.id, teil) - schwaeche(a.b.id, teil));
   const mitDaten = zeilen.filter(z => z.n > 0);
+  /* Gesamtbild: nur Bereiche mit genug Antworten zählen für das Urteil. */
+  const genug = zeilen.filter(z => z.n >= 3);
+  const rSum = genug.reduce((s, z) => s + z.r, 0);
+  const fSum = genug.reduce((s, z) => s + z.f, 0);
+  const gesamtQ = (rSum + fSum) ? Math.round(rSum / (rSum + fSum) * 100) : null;
+  const stark = genug.slice().filter(z => z.q !== null).sort((a, b) => b.q - a.q)[0];
+  const schwach = genug.slice().filter(z => z.q !== null).sort((a, b) => a.q - b.q)[0];
 
   blatt.innerHTML = `
     <div class="kopfstreifen">
       <h2>Meine Schwächen</h2>
       <div class="meta">${istAp2() ? 'Teil 2' : 'Teil 1'} · ${mitDaten.length} von ${zeilen.length} Bereichen bearbeitet<br>
-        Sortiert nach Handlungsbedarf – oben, was am meisten fehlt.</div>
+        Auswertung deiner Antworten – oben, was am meisten fehlt.</div>
     </div>
+
+    ${gesamtQ !== null ? `<div class="lernbild">
+      <div class="lernbild-zahl">
+        <b>${gesamtQ} %</b>
+        <span>richtig, wo du geantwortet hast <small>${rSum + fSum} Antworten</small></span>
+      </div>
+      ${stark ? `<div class="lernbild-punkt gut"><span class="marke">Stärkste</span><b>${stark.b.name}</b>
+        <span>${Math.round(stark.q * 100)} % richtig</span></div>` : ''}
+      ${schwach && schwach !== stark ? `<div class="lernbild-punkt schlecht"><span class="marke">Schwächste</span><b>${schwach.b.name}</b>
+        <span>${Math.round(schwach.q * 100)} % richtig</span></div>` : ''}
+    </div>` : ''}
 
     <div class="start">
       <div class="wahlreihe" style="display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-bottom:16px">
@@ -8919,17 +9079,17 @@ function schwachenZeigen() {
         <button class="akt zweit" type="button" id="schwach-reset">Lernstand zurücksetzen</button>
       </div>
       <p style="font-size:13px">Der Fokus wirkt in Quiz und Karteikarten: Bereiche mit mehr Fehlern kommen
-        häufiger, sichere seltener. Die Zahlen hier zählen richtig gegen falsch.</p>
+        häufiger, sichere seltener. Die Zahlen hier zählen richtig gegen falsch – und ab drei Antworten
+        entsteht daraus ein Urteil.</p>
     </div>
 
     <div class="schwach-liste">
       ${zeilen.map(z => {
         const p = z.q === null ? 0 : Math.round(z.q * 100);
-        const gut = z.q !== null && z.q >= 0.8;
-        return `<div class="schwach-zeile${gut ? ' gut' : ''}">
-          <span class="name">${z.b.name}</span>
+        return `<div class="schwach-zeile ${z.urteil.klasse}">
+          <span class="name">${z.b.name}<small>${z.urteil.text}</small></span>
           <span class="balken" aria-hidden="true"><i style="width:${p}%"></i></span>
-          <span class="wert">${z.q === null ? '–' : p + ' %'}<small>${z.n ? z.n + ' Antworten' : 'noch nichts'}</small></span>
+          <span class="wert">${z.q === null ? '–' : p + ' %'}<small>${z.n ? z.r + ' von ' + z.n + ' richtig' : 'noch nichts'}</small></span>
         </div>`;
       }).join('')}
     </div>
@@ -9165,22 +9325,10 @@ function starteQuiz(bereich) {
   modus = 'quiz';
   let reihe = hole('QUIZ', bereich);
   if (!reihe.length) return nichtsDa('Multiple-Choice-Quiz');
-  reihe = reihe.slice();
-  /* Schwächen-Fokus: gemischt, aber Bereiche mit Handlungsbedarf kommen
-     zuerst und darum häufiger vor. Ohne Fokus bleibt es beim reinen Zufall. */
-  if (fokusAn && !bereich) {
-    const gewichtet = [];
-    for (const q of reihe) {
-      const w = 1 + Math.round(schwaeche(q.b, teil) * 3);   // 1 bis 4 Lose
-      for (let i = 0; i < w; i++) gewichtet.push(q);
-    }
-    reihe = gewichtet;
-  }
-  reihe = reihe.slice().sort(() => Math.random() - 0.5);
-  /* Doppelte entfernen, die durch die Gewichtung mehrfach in der Reihe sind. */
-  const gesehen = new Set();
-  reihe = reihe.filter(q => (gesehen.has(q) ? false : gesehen.add(q)));
-  reihe = reihe.slice(0, 12);
+  /* Häufigkeit und Abstand statt Sperren: 12 Fragen gewichtet ziehen, ohne
+     Wiederholung. Was gerade dran war, fällt nach hinten; mit Fokus kommen
+     schwache Bereiche häufiger. Ohne Fokus wirkt nur der Abstand. */
+  reihe = gewichtetZiehen(reihe, 12);
   quizLauf = { reihe, idx: 0, richtig: 0, beantwortet: 0, gewaehlt: null, bereich: bereich || null };
   zeichneQuiz();
   railZeichnen();
@@ -9249,6 +9397,8 @@ function zeichneQuiz() {
       /* Für den Schwächen-Fokus zählt zusätzlich der Bereich – nicht die
          einzelne Frage, die bei jedem Aufruf anders zusammengesetzt ist. */
       lernstandErfassen(q.b, teil, ok);
+      /* Begegnung merken: die Frage kommt nicht sofort wieder, aber später. */
+      gesehenMerken(q);
       serieSetzen(ok ? (istAp2() ? serieAp2 + 1 : (fortschritt.serie || 0) + 1) : 0);
       speichern(); statistikZeichnen();
       zeigeQuizAufloesung();
@@ -9351,13 +9501,18 @@ function starteKarten(bereich) {
   let stapel = hole('KARTEN', bereich);
   if (!stapel.length) return nichtsDa('Karteikarten');
   /* Karten in niedrigen Fächern zuerst – das ist der Kern von Spaced Repetition.
-     Mit Schwächen-Fokus zählt zusätzlich der Handlungsbedarf des Bereichs:
-     unsichere Bereiche rutschen nach vorn. */
+     Die letzte Begegnung entscheidet, welche Karte INNERHALB eines Fachs zuerst
+     kommt: was gerade dran war, fällt zurück. So führt nie dieselbe Karte die
+     Runde an, und mit Schwächen-Fokus rücken unsichere Bereiche nach vorn. */
+  const jetztK = Date.now();
   stapel = stapel.slice().sort((a, b) => {
     const fa = (kartenFaecher[a.f] || 0), fb = (kartenFaecher[b.f] || 0);
     if (fa !== fb) return fa - fb;
-    if (fokusAn) return schwaeche(b.b, teil) - schwaeche(a.b, teil);
-    return 0;
+    if (fokusAn) {
+      const s = schwaeche(b.b, teil) - schwaeche(a.b, teil);
+      if (s) return s;
+    }
+    return abstandFaktor(a, jetztK) - abstandFaktor(b, jetztK);
   });
   kartenLauf = { stapel, idx: 0, aufgedeckt: false, gewusst: 0, nicht: 0, bereich: bereich || null };
   zeichneKarte();
@@ -9427,6 +9582,7 @@ function bewerteKarte(gewusst) {
   kartenFaecher[k.f] = gewusst ? Math.min(4, fach + 1) : 1;
   kartenSpeichern();
   lernstandErfassen(k.b, teil, gewusst);
+  gesehenMerken(k);
   if (gewusst) kartenLauf.gewusst++; else kartenLauf.nicht++;
   naechsteKarte();
 }
@@ -9583,6 +9739,7 @@ function lueckenPruefen() {
   fortschritt.tasks[key] = f;
   fortschritt.punkte = (fortschritt.punkte || 0) + punkte;
   lernstandErfassen(lueckenLauf.ex.b, teil, richtig / luecken.length >= 0.5);
+  gesehenMerken(lueckenLauf.ex);
   serieSetzen(richtig === luecken.length ? (istAp2() ? serieAp2 + 1 : (fortschritt.serie || 0) + 1) : 0);
   speichern(); statistikZeichnen();
   document.getElementById('rueckmeldung').textContent =
@@ -9674,6 +9831,7 @@ function fehlerPruefen() {
   fortschritt.tasks[ex.id] = f;
   fortschritt.punkte = (fortschritt.punkte || 0) + punkte;
   lernstandErfassen(ex.b, teil, richtig / ex.zeilen.length >= 0.5);
+  gesehenMerken(ex);
   serieSetzen(richtig === ex.zeilen.length ? (istAp2() ? serieAp2 + 1 : (fortschritt.serie || 0) + 1) : 0);
   speichern(); statistikZeichnen();
   zeichneFehler();
@@ -9767,6 +9925,7 @@ function zeichneFall() {
       fortschritt.tasks[fall.id] = f;
       fortschritt.punkte = (fortschritt.punkte || 0) + p;
       lernstandErfassen(fall.b, teil, p === 3);
+      gesehenMerken(fall);
       serieSetzen(p === 3 ? (istAp2() ? serieAp2 + 1 : (fortschritt.serie || 0) + 1) : 0);
       speichern(); statistikZeichnen();
       zeichneFall();

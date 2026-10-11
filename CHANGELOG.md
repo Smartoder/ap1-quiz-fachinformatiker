@@ -4,6 +4,41 @@ Das Format folgt *Keep a Changelog*. Bruchstellen sind ausdrücklich gekennzeich
 
 ## [Nicht veröffentlicht]
 
+### Hinzugefügt — Lernstand-Analyse, Häufigkeitssteuerung, Konto empfohlen (2026-10-11)
+
+Drei Wünsche des Betreibers in einer Änderung (Entscheidung
+[0015](../../AP1-Trainer-api/docs/entscheidungen/0015-personalisierung-wiederholung-und-konto.md)):
+
+**1. Auswertung je Nutzer.** „Meine Schwächen" ist jetzt ein **Korrekturbogen**:
+links das Urteil je Bereich (`sitzt` · `übt` · `fehlt` · `noch zu wenig`), in der
+Mitte der Balken, rechts `5 von 8 richtig` in Schreibmaschinenschrift. Darüber
+eine Kopfzeile mit der Gesamtquote und dem stärksten bzw. schwächsten Bereich.
+Ein Urteil entsteht erst **ab drei Antworten** — darunter ist jede Quote Zufall
+und wird als „noch zu wenig Antworten" benannt.
+
+**2. Keine Frage zweimal hintereinander.** Richtig beantwortete Einträge werden
+**nicht gelöscht und nicht gesperrt**. Jeder Eintrag bekommt ein Gewicht aus
+Bereichsstärke und **Abstand seit der letzten Begegnung**; gezogen wird
+gewichtet und **ohne Wiederholung** innerhalb einer Runde. So kommt nichts
+ständig wieder, aber auch nichts verschwindet dauerhaft — in einer
+Prüfungsvorbereitung ist Vergessen der Normalfall. Der Begegnungs-Merker liegt
+in einem eigenen Speicher (`ap1-trainer-gesehen-v1`); Karteikarten behalten
+ihr Leitner-Fach, der Abstand entscheidet nur **innerhalb** eines Fachs.
+
+**3. Konto empfohlen, nicht Pflicht.** Der Anmeldebogen sagt jetzt ausdrücklich:
+Konten sind **empfohlen** (personalisiertes Lernen über Geräte hinweg), der
+Name-Weg bleibt jederzeit offen. Das Konto ist der bequemere Weg zur
+Profil-Kennung, nicht der einzige.
+
+**Wandert mit:** Lernstand und Begegnungs-Merker reisen im freien JSON-Feld
+`data` des Fortschritts mit — **keine dritte Tabelle** (Entscheidung 0008).
+Damit kennt auch ein zweiter Rechner die Schwächen des Nutzers.
+
+**Prüfung.** `npm run check` grün (51 Prüfungen; das Vertragstor prüft jetzt
+auch die beiden neuen Speicher-Namen). Am 2026-10-11 im Browser gegen die
+ausgelieferte Fassung durchgeklickt: Quiz beantwortet → Merker und Lernstand
+geschrieben → Bogen zeigt Bereichsurtelle, Gesamtquote und Stärkste/Schwächste.
+
 ### Hinzugefügt — Inhalte Teil 1 mehr als verdoppelt (2026-10-09)
 
 Der Aufgabenbestand zu **Teil 1 (AP1)** wurde von 629 auf **1.176 Einträge**
