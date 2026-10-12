@@ -4,6 +4,26 @@ Das Format folgt *Keep a Changelog*. Bruchstellen sind ausdrücklich gekennzeich
 
 ## [Nicht veröffentlicht]
 
+### Geändert — Tor unterscheidet anon von service_role (2026-10-12)
+
+**Der Fehler im Tor.** `tools/pruefe-frontend.mjs`, Abschnitt 6, lehnte
+pauschal **jedes** JWT ab. Das ist zu grob: Der `anon`-Schlüssel einer
+Supabase-Instanz ist selbst ein JWT und darf als öffentlicher Schlüssel in der
+Seite stehen; nur der geheime `service_role` ist verboten. Das pauschale Verbot
+hätte den anon-Schlüssel des neuen Projekts mit abgelehnt.
+
+**Die Korrektur.** Das Tor liest jetzt die Nutzlast (mittlerer Teil, base64url)
+und prüft das Feld `role`. Erlaubt ist nur `anon`. Jede andere Rolle —
+insbesondere `service_role` — wird abgelehnt, und eine **nicht lesbare**
+Nutzlast gilt als Geheimnis (fail closed). Dazu zwei neue Muster für den
+modernen `sb_secret_…-Schlüssel`. Das Tor ist damit **strenger und richtig**
+statt nur „passend gemacht" — belegt durch drei Selbstproben: anon erkannt und
+erlaubt, service_role erkannt und abgelehnt, unlesbare Nutzlast abgelehnt.
+
+**Prüfung.** `npm run check` grün (**55** Prüfungen, vorher 51). Zusätzlich von
+Hand belegt: ein eingefügter `service_role`-JWT wird als Fehler gemeldet, ein
+eingefügter `anon`-JWT passiert das Tor (`1 × anon erlaubt`).
+
 ### Behoben — Name-Weg auch mit gesetztem AUTH bedienbar (2026-10-12)
 
 **Der Fehler.** Ist `AUTH` gesetzt, war der Weg „ohne Konto, nur mit Name" nicht

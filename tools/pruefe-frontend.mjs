@@ -265,7 +265,7 @@ const MUSTER = [
   ['Stripe Test Secret', /sk_test_[A-Za-z0-9]{20,}/],
   ['Stripe Webhook Secret', /whsec_[A-Za-z0-9]{20,}/],
   ['OpenRouter-Schlüssel', /sk-or-v1-[a-f0-9]{20,}/],
-  ['JWT (Dienstschlüssel)', /eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9\.[A-Za-z0-9_-]{20,}/]
+  ['Supabase-Geheimschlüssel', /sb_secret_[A-Za-z0-9_-]{10,}/]
 ];
 let trefferAnzahl = 0;
 const zeilen = html.split('\n');
@@ -278,6 +278,76 @@ for (const [name, muster] of MUSTER) {
   });
 }
 if (!trefferAnzahl) ok('kein Secret-Muster in index.html');
+
+/* ---------- 6a. JWT: anon erlaubt, service_role verboten ----------
+   Ein pauschales JWT-Verbot wäre falsch: Der `anon`-Schlüssel einer
+   Supabase-Instanz IST ein JWT und darf als öffentlicher Schlüssel in der
+   Seite stehen (Entscheidung 0016). Verboten ist nur der geheime
+   `service_role` – und jeder andere Schlüssel-Typ. Deshalb wird die
+   Nutzlast (mittlerer Teil, base64url) gelesen und die Rolle geprüft.
+   Lässt sich die Nutzlast nicht lesen, gilt der Fund als Geheimnis:
+   im Zweifel ablehnen (fail closed). */
+const OEFFENTLICHE_JWT_ROLLEN = ['anon'];   // nur der öffentliche Schlüssel
+
+const jwtRolle = (token) => {
+  const teile = String(token).split('.');
+  if (teile.length !== 3) throw new Error('kein JWT (drei Teile erwartet)');
+  const roh = Buffer.from(teile[1].replace(/-/g, '+').replace(/_/g, '/'), 'base64').toString('utf8');
+  const nutz = JSON.parse(roh);
+  if (!nutz || typeof nutz.role !== 'string') throw new Error('keine Rolle in der Nutzlast');
+  return nutz.role;
+};
+
+const jwtMuster = /\beyJ[A-Za-z0-9_-]{5,}\.[A-Za-z0-9_-]{5,}\.[A-Za-z0-9_-]{5,}/g;
+let jwtAnon = 0, jwtVerboten = 0;
+zeilen.forEach((zeile, i) => {
+  for (const token of (zeile.match(jwtMuster) || [])) {
+    let rolle = null;
+    try { rolle = jwtRolle(token); }
+    catch (e) {
+      jwtVerboten++;
+      fehl('JWT ohne lesbare Nutzlast in index.html:' + (i + 1),
+        'Rolle nicht prüfbar (' + e.message + ') — im Zweifel abgelehnt');
+      continue;
+    }
+    if (OEFFENTLICHE_JWT_ROLLEN.includes(rolle)) jwtAnon++;
+    else {
+      jwtVerboten++;
+      fehl('JWT mit Rolle "' + rolle + '" in index.html:' + (i + 1),
+        'Nur der öffentliche anon-Schlüssel darf in der Seite stehen — kein "' + rolle + '"');
+    }
+  }
+});
+if (!jwtVerboten) ok('kein geheimer JWT-Schlüssel in index.html (' + jwtAnon + ' × anon erlaubt)');
+
+/* Selbstprobe: Das Tor muss den Unterschied nachweislich erkennen — sonst
+   wäre es nur „passend gemacht". Zwei erfundene JWTs, gleiche Form,
+   verschiedene Rolle. */
+const probeJwt = (rolle) => {
+  const b64 = (o) => Buffer.from(JSON.stringify(o)).toString('base64url');
+  return b64({ alg: 'HS256', typ: 'JWT' }) + '.' +
+    b64({ iss: 'supabase', role: rolle, exp: 9999999999 }) + '.signatur-test';
+};
+try {
+  const anonProbe = probeJwt('anon');
+  const serviceProbe = probeJwt('service_role');
+  (jwtRolle(anonProbe) === 'anon' && OEFFENTLICHE_JWT_ROLLEN.includes(jwtRolle(anonProbe)))
+    ? ok('Selbstprobe: anon-JWT wird erkannt und ist erlaubt')
+    : fehl('Selbstprobe: anon-JWT wurde nicht als erlaubt erkannt');
+
+  (jwtRolle(serviceProbe) === 'service_role' && !OEFFENTLICHE_JWT_ROLLEN.includes(jwtRolle(serviceProbe)))
+    ? ok('Selbstprobe: service_role-JWT wird erkannt und abgelehnt')
+    : fehl('Selbstprobe: service_role-JWT wurde NICHT als geheim erkannt');
+
+  let failClosed = false;
+  try { jwtRolle('eyJhbGciOiJIUzI1NiJ9.kein-json.hier'); } catch (e) { failClosed = true; }
+  failClosed
+    ? ok('Selbstprobe: unlesbare Nutzlast wird abgelehnt (fail closed)')
+    : fehl('Selbstprobe: unlesbare Nutzlast wurde NICHT abgelehnt');
+} catch (e) {
+  fehl('Selbstprobe der JWT-Prüfung abgebrochen', String(e.message));
+}
+
 // Zugangsdaten dürfen in einer öffentlichen Datei grundsätzlich nicht stehen.
 for (const [was, muster] of [
   ['Zuweisung eines Geheimnisses', /(?:api[_-]?key|secret|passwort|password|token)\s*[:=]\s*['"][^'"\s]{16,}['"]/i]
