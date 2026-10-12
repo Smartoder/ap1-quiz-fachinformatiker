@@ -8728,7 +8728,7 @@ async function profilAuswahlZeigen() {
   blatt.innerHTML = `
     <div class="kopfstreifen">
       <h2>Anmeldung</h2>
-      <div class="meta">${mitAuth ? 'Empfohlen: mit E-Mail und Passwort. Ohne Konto geht es jederzeit über den Namen.' : 'Ohne Konto: Name wählen – der Fortschritt hängt am Profil.'}</div>
+      <div class="meta">${mitAuth ? 'Empfohlen: mit E-Mail und Passwort. Ohne Konto geht es jederzeit über den Namen – eigene Schaltfläche im Formular.' : 'Ohne Konto: Name wählen – der Fortschritt hängt am Profil.'}</div>
     </div>
 
     <div class="anmeldung">
@@ -8752,7 +8752,8 @@ async function profilAuswahlZeigen() {
               <li>Was du kannst, kommt <b>seltener</b> wieder – keine Frage zweimal hintereinander.</li>
             </ol>
             ${mitAuth ? `<p class="probe-fuss">Das Konto ist <b>empfohlen</b>, aber nicht Pflicht:
-              ohne Konto geht es jederzeit über deinen Namen.</p>` : ''}
+              ohne Konto geht es jederzeit über deinen Namen – dafür gibt es die
+              Schaltfläche <b>„Ohne Konto – mit Namen fortfahren"</b> im Formular.</p>` : ''}
           </div>
         </div>
       </div>
@@ -8762,6 +8763,8 @@ async function profilAuswahlZeigen() {
         <div id="pf-liste"></div>
 
         <h3 style="margin:22px 0 10px;font-size:15px">${mitAuth ? 'Neues Konto' : 'Neues Profil'}</h3>
+        ${mitAuth ? `<p style="margin:0 0 14px;font-size:12.5px;color:var(--schwach)">
+          Beides ist möglich: Konto anlegen (empfohlen) oder ohne Konto mit dem Namen fortfahren.</p>` : ''}
 
         ${mitAuth ? `
         <div class="feld">
@@ -8783,14 +8786,17 @@ async function profilAuswahlZeigen() {
           <label for="pf-neu">Anzeigename</label>
           <input type="text" id="pf-neu" name="name" maxlength="40" autocomplete="off"
                  placeholder="z. B. Alireza H.">
-          <span class="hinweis">Jeder Name gibt es nur einmal – ein zweites „Anna" ist nicht möglich.</span>
+          <span class="hinweis">Jeder Name gibt es nur einmal – ein zweites „Anna" ist nicht möglich.${mitAuth ? ' Der Name gilt für beide Wege.' : ''}</span>
         </div>
 
         <div class="wahlreihe">
-          <button class="akt" type="button" id="pf-anlegen">${mitAuth ? 'Konto anlegen' : 'Profil anlegen'}</button>
-          ${mitAuth ? `<button class="wechsel" type="button" id="pf-login">Ich habe schon ein Konto – anmelden</button>` : ''}
-          ${mitAuth ? `<button class="wechsel" type="button" id="pf-vergessen">Passwort vergessen?</button>` : ''}
+          ${mitAuth ? `<button class="akt" type="button" id="pf-anlegen">Konto anlegen</button>` : ''}
+          <button class="akt${mitAuth ? ' zweit' : ''}" type="button" id="pf-anlegen-name">${mitAuth ? 'Ohne Konto – mit Namen fortfahren' : 'Profil anlegen'}</button>
         </div>
+        ${mitAuth ? `<div class="wahlreihe" style="margin-top:8px">
+          <button class="wechsel" type="button" id="pf-login">Ich habe schon ein Konto – anmelden</button>
+          <button class="wechsel" type="button" id="pf-vergessen">Passwort vergessen?</button>
+        </div>` : ''}
         <p id="pf-fehler" role="status" aria-live="polite" style="color:var(--rot);font-size:13px;margin-top:10px"></p>
       </div>
     </div>`;
@@ -8819,37 +8825,49 @@ async function profilAuswahlZeigen() {
     });
   }
 
-  const anlegen = document.getElementById('pf-anlegen');
-  anlegen.onclick = async () => {
+  /* Zwei getrennte Handlungen, ein Name-Feld. Der Name-Weg ist IMMER bedienbar
+     – auch bei gesetztem AUTH – und läuft über genau einen Pfad: nameWeg()
+     mit POST /profile { name, jahr: 1 }. Der Konto-Weg (nur mit AUTH) legt
+     erst das Konto an; authRegistrieren() legt darin das Profil ebenfalls über
+     POST /profile an, sodass es keine zweite Fassung des Name-Wegs gibt. */
+  const anlegen = document.getElementById('pf-anlegen');           // Konto-Weg, nur mit AUTH
+  const anlegenName = document.getElementById('pf-anlegen-name');  // Name-Weg, immer – trägt die Beschriftung „Profil anlegen" ohne AUTH
+
+  const nameWeg = async () => {
     fehler.textContent = '';
     const name = document.getElementById('pf-neu').value.trim();
     if (!name) { fehler.textContent = 'Bitte einen Anzeigenamen eingeben.'; document.getElementById('pf-neu').focus(); return; }
-
-    /* Konto-Weg mit E-Mail und Passwort, wenn Supabase verbunden ist. */
-    if (mitAuth) {
-      const mail = document.getElementById('pf-mail').value.trim();
-      const pw = document.getElementById('pf-pw').value;
-      if (!mail) { fehler.textContent = 'Bitte eine E-Mail eingeben.'; document.getElementById('pf-mail').focus(); return; }
-      if (!pw || pw.length < 8) { fehler.textContent = 'Das Passwort braucht mindestens 8 Zeichen.'; document.getElementById('pf-pw').focus(); return; }
-      anlegen.disabled = true;
-      try {
-        await authRegistrieren(mail, pw, name);
-      } catch (e) {
-        fehler.textContent = e.message + ' – ohne Konto geht es über „Profil anlegen" mit Name allein.';
-        anlegen.disabled = false;
-      }
-      return;
-    }
-
-    anlegen.disabled = true;
+    anlegenName.disabled = true;
+    if (anlegen) anlegen.disabled = true;
     try {
       const j = await api('/profile', 'POST', { name, jahr: 1 });
       await anmelden(j.profil);
     } catch (e) {
       fehler.textContent = e.message;
-      anlegen.disabled = false;
+      anlegenName.disabled = false;
+      if (anlegen) anlegen.disabled = false;
       document.getElementById('pf-neu').focus();
       document.getElementById('pf-neu').select();
+    }
+  };
+  anlegenName.onclick = nameWeg;
+
+  /* Konto-Weg mit E-Mail und Passwort, wenn Supabase verbunden ist. */
+  if (anlegen) anlegen.onclick = async () => {
+    fehler.textContent = '';
+    const name = document.getElementById('pf-neu').value.trim();
+    if (!name) { fehler.textContent = 'Bitte einen Anzeigenamen eingeben.'; document.getElementById('pf-neu').focus(); return; }
+
+    const mail = document.getElementById('pf-mail').value.trim();
+    const pw = document.getElementById('pf-pw').value;
+    if (!mail) { fehler.textContent = 'Bitte eine E-Mail eingeben.'; document.getElementById('pf-mail').focus(); return; }
+    if (!pw || pw.length < 8) { fehler.textContent = 'Das Passwort braucht mindestens 8 Zeichen.'; document.getElementById('pf-pw').focus(); return; }
+    anlegen.disabled = true;
+    try {
+      await authRegistrieren(mail, pw, name);
+    } catch (e) {
+      fehler.textContent = e.message + ' – ohne Konto stattdessen „Ohne Konto – mit Namen fortfahren" nutzen.';
+      anlegen.disabled = false;
     }
   };
 
@@ -8881,7 +8899,7 @@ async function profilAuswahlZeigen() {
   };
 
   const nameFeld = document.getElementById('pf-neu');
-  nameFeld.addEventListener('keydown', e => { if (e.key === 'Enter') anlegen.click(); });
+  nameFeld.addEventListener('keydown', e => { if (e.key === 'Enter') anlegenName.click(); });
   kopfJahrZeichnen();
   railZeichnen();
 }

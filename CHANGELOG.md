@@ -4,6 +4,31 @@ Das Format folgt *Keep a Changelog*. Bruchstellen sind ausdrücklich gekennzeich
 
 ## [Nicht veröffentlicht]
 
+### Behoben — Name-Weg auch mit gesetztem AUTH bedienbar (2026-10-12)
+
+**Der Fehler.** Ist `AUTH` gesetzt, war der Weg „ohne Konto, nur mit Name" nicht
+mehr bedienbar: Der eine Knopf rief immer `authRegistrieren`, und die
+Fehlermeldung verwies auf ein „Profil anlegen", das es dann gar nicht gab. Der
+Deckblatt-Text „ohne Konto geht es jederzeit über den Namen" war damit nur Text
+ohne Bedienelement. War der Konto-Weg serverseitig abgeschaltet
+(`disable_signup`), ließ sich der Anmeldebogen **überhaupt nicht** mehr ausfüllen
+— man kam nicht in den Trainer.
+
+**Die Änderung.** Das Formular hat jetzt **immer** einen sichtbaren Name-Weg:
+eine eigene Schaltfläche „Ohne Konto – mit Namen fortfahren" (ohne `AUTH` weiter
+„Profil anlegen"). Mit `AUTH` steht der Konto-Knopf „Konto anlegen" **daneben** —
+empfohlen, aber nicht Pflicht (Entscheidung 0015). Beide Wege münden in **einen**
+Profil-Pfad `POST /profile { name, jahr: 1 }`, also keine zweite Fassung des
+Name-Wegs. Die Fehlermeldung bei gescheiterter Registrierung nennt die
+**vorhandene** Schaltfläche statt eines erfundenen Knopfs. Die meta-Werte
+`ap1-auth-url` / `ap1-auth-key` bleiben leer; kein Schlüssel im Repository.
+
+**Prüfung.** `npm run check` grün (51 Prüfungen). Im Browser gegen das echte
+Backend durchgeklickt: (a) ohne `AUTH` legt der Name-Weg ein Profil an und führt
+in den Trainer; (b) mit simuliertem `AUTH` erscheinen E-Mail und Passwort **und**
+der Name-Weg bleibt bedienbar und führt in den Trainer; der absichtlich
+fehlschlagende Konto-Weg nennt in seiner Meldung genau diesen Name-Knopf.
+
 ### Hinzugefügt — Lernstand-Analyse, Häufigkeitssteuerung, Konto empfohlen (2026-10-11)
 
 Drei Wünsche des Betreibers in einer Änderung (Entscheidung
