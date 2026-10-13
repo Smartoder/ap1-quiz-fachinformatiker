@@ -1,0 +1,26 @@
+---
+description: Token-/Jev-Playbook lite für AP1 — Scope klein halten
+alwaysApply: true
+---
+
+# Token-Playbook (AP1 lite)
+
+Ziel: wenig Context Pollution, kein Blindread der riesigen `index.html`.
+
+| Aufgabe | Werkzeug |
+|---|---|
+| 1–3 gezielte Stellen | Cursor fast; gezieltes Grep / `npm run check` |
+| „Welche Stellen gehören zum Feature?“ | Jev `jev_ask` nur mit engen Globs (Budget beachten) |
+| Bulk-Überblick 50+ Muster | Gemini wenn nicht 429 — sonst gezielte Scripts |
+| Deploy-Status | Vercel MCP / CLI — Projekt **`ap1-trainer`** |
+| API-Zustand | HTTP `/ap1/health`; Details im API-Repo |
+
+## Verbote
+
+- Multi-Root-Coding mit HofZeit/Leckerbissen
+- „Lies mal ganz `index.html`“ ohne Frageziel
+- Skills/Kontext aus Restaurant-Repos laden
+- Jev-Globs auf `.cursor/**` erwarten
+- `user-ap1` nutzen solange Namespace `error` (Fix später)
+
+Jev-Wochenbudget: Control-Plane `BUDGET.md` (Start ~40 Calls/Woche).

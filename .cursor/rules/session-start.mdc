@@ -1,0 +1,16 @@
+---
+description: Chat-Start AP1-Trainer — Produktwahl, Single-Root, Grenzen
+alwaysApply: true
+---
+
+# Session-Start (AP1-Trainer Oberfläche)
+
+1. Produkt nennen: **AP1** (nicht HofZeit, nicht Leckerbissen, nicht Alltag-App).
+2. Nur dieses Repo als Coding-Root — kein Multi-Root-Coding.
+3. `git fetch` + `git status -sb`.
+4. `AGENTS.md` + `docs/START.md` skimmen (Skill-Router, Grenzen).
+5. Nicht-trivial? → Feature-Pipeline lite, kein Sofort-Großumbau an `index.html`.
+6. Deploy/DB/Server-Aussagen nur nach MCP/HTTP/CLI — nie „müsste“.
+7. MCP `user-ap1` ist derzeit **broken** → HTTP `/ap1/health` + Vercel-Projekt `ap1-trainer`.
+
+Control-Plane: `Desktop\Projekte\control-plane\2026-10-13-radikal-system-dienste.md`
