@@ -4,6 +4,11 @@ Das Format folgt *Keep a Changelog*. Bruchstellen sind ausdrücklich gekennzeich
 
 ## [Nicht veröffentlicht]
 
+### Geändert — Agent-OS Option R Phase 2 (2026-10-14)
+
+**Was.** DB-Ref-Whitelist in `AGENTS.md`; `docs/START.md` Stand Phase 2.
+Kein App-Code.
+
 ### Hinzugefügt — Agent-OS Option R Phase 1 (2026-10-13)
 
 **Warum.** Der Oberfläche fehlte ein vollständiges Cursor-Agent-OS (Skill-Router,
