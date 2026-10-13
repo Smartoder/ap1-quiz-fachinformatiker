@@ -4,6 +4,17 @@ Das Format folgt *Keep a Changelog*. Bruchstellen sind ausdrücklich gekennzeich
 
 ## [Nicht veröffentlicht]
 
+### Hinzugefügt — Agent-OS Option R Phase 1 (2026-10-13)
+
+**Warum.** Der Oberfläche fehlte ein vollständiges Cursor-Agent-OS (Skill-Router,
+Session-Start, Pipeline lite). Option-R-Plan Task 5.
+
+**Was.** `AGENTS.md` mit Produktgrenzen (nicht HofZeit, nicht Leckerbissen),
+Skill-Stubs (`quiz-content`, `deploy`, `api-contract`), Hinweis Vercel-Projekt
+`ap1-trainer`, Hinweis dass MCP `user-ap1` derzeit broken ist; `docs/START.md`;
+`.cursor/rules/` (session-start, feature-pipeline, token-playbook); Link auf
+Control-Plane-Plan. Kein App-Code geändert.
+
 ### Geändert — Tor unterscheidet anon von service_role (2026-10-12)
 
 **Der Fehler im Tor.** `tools/pruefe-frontend.mjs`, Abschnitt 6, lehnte

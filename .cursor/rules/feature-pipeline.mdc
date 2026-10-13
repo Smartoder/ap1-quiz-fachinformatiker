@@ -1,0 +1,49 @@
+---
+description: Feature-Pipeline lite AP1 — Hotfix vs. Full; kein Restaurant-Stack
+alwaysApply: true
+---
+
+# Feature-Pipeline lite (AP1-Trainer)
+
+Pfad für **nicht-triviale** Arbeit:
+
+**Idee → knappe Spec/Notiz → Plan → Implement → Review → fertig**
+
+Artefakte lokal z. B. unter `docs/`. Skill-Router: `AGENTS.md`.
+
+## Hotfix vs. Feature
+
+**Full Pipeline**, wenn mindestens eines gilt:
+
+- Neues Lernverhalten / UI-Flow / AP1↔AP2-Umschaltung
+- Änderung am API-Vertrag (`API`, `STORE`, Profile, Fortschritt)
+- Viele Einträge / neue Bereiche / ID-Migration
+- Deploy-/Rewrite-/Auth-meta betroffen
+- Unklare Anforderung oder Design-Tradeoff
+
+**Hotfix**, nur wenn **alles** gilt:
+
+- Tippfehler, Copy-Fix, einzeilige Doku, offensichtlicher CSS-Fleck
+- Kein Vertragsbruch, keine Auth, keine Massen-IDs
+- Eine Datei, Diff klar
+
+Im Zweifel: Full Pipeline.
+
+## Skills je Phase
+
+| Phase | Werkzeug |
+|---|---|
+| Kontext | `AGENTS.md`, `docs/START.md`, Router-Stubs |
+| Spec/Plan | superpowers brainstorming / writing-plans bei größeren Features |
+| Implement | `quiz-content` / `api-contract` / `deploy` (Stubs) + Plugin UI bei Bedarf |
+| Review | Diff gegen Plan; Vertrag intakt; `npm run check` |
+| Fertig | CHANGELOG; ggf. Backend-Entscheidung bei Vertrag |
+
+## Hard Rules (AP1)
+
+1. Nicht HofZeit-DB, nicht Leckerbissen-DB/Kasse/Stripe.
+2. Nichts Secret-haltiges in dieses öffentliche Repo.
+3. Ein Skriptblock, ein Stilblock in `index.html`.
+4. Eintrags-`id` nicht ohne Grund ändern.
+5. Zustand = Befehl/MCP/HTTP.
+6. Shared Hosting: Backend nur im API-Repo anfassen.
