@@ -4,6 +4,15 @@ Das Format folgt *Keep a Changelog*. Bruchstellen sind ausdrücklich gekennzeich
 
 ## [Nicht veröffentlicht]
 
+### Geändert — Layout: PC-Breite + Mobile-Drawer (2026-10-14)
+
+**Warum.** Quiz/Lernblatt war auf ~920px gekappt — großer Leerraum rechts am PC.
+Auf dem Handy klappte die Rail den Inhalt nach unten statt darüber zu liegen.
+
+**Was.** `.blatt` füllt die Rasterspalte; Quiz volle Breite, Optionen ab 1100px
+zweispaltig. Mobile: Rail als Overlay-Drawer + Scrim, sticky Aktionsleiste,
+größere Touch-Ziele. Kein API-/Store-Vertrag geändert.
+
 ### Geändert — UI Radical Welle 4: a11y-Pass + Abnahme (2026-10-14)
 
 **Warum.** Shell-/Start-/Rail-Änderungen brauchten einen gezielten Accessibility-Pass

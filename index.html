@@ -88,6 +88,8 @@
   --rail-breite:232px;
   --schale-kopf:108px;
   --z-kopf:10;
+  --z-drawer:20;
+  --blatt-pad-x:30px;
   --motion-schnell:160ms ease-out;
 
   /* Schriftskala — ruhig, aber abgestuft. Zwei Familien tun hier die Arbeit:
@@ -308,7 +310,7 @@ button.teil-marke:focus-visible{outline:2px solid var(--tinte);outline-offset:2p
   display:grid;
   grid-template-columns:var(--rail-breite) minmax(0,1fr);
   gap:0;
-  min-height:calc(100vh - 66px);
+  min-height:calc(100dvh - var(--schale-kopf));
   align-items:start;
 }
 /* ---------- Rail: Inhaltsverzeichnis ----------
@@ -434,7 +436,18 @@ button.rail-kopf.titel .chev{
 }
 
 /* ---------- Blatt ---------- */
-.blatt{padding:26px 30px 80px;max-width:920px;scroll-margin-top:14px}
+/* Volle Rasterspalte — kein künstliches 920px (sonst Leerraum rechts auf dem PC).
+   Fließtext behält ch-Maß; Lernflächen (Quiz, Formate) nutzen 100 %. */
+.blatt{
+  padding:26px var(--blatt-pad-x) 80px;
+  width:100%;max-width:none;min-width:0;
+  box-sizing:border-box;scroll-margin-top:14px;
+}
+.rail-scrim{
+  display:none;position:fixed;inset:0;z-index:calc(var(--z-drawer) - 1);
+  border:0;padding:0;margin:0;cursor:pointer;
+  background:rgba(17,28,46,.38);
+}
 /* Der Kopfstreifen ist die Bogenkennung: eine Zeile, die sagt, welcher Teil
    der Prüfung hier liegt. Der kurze Querstrich vor dem Titel ist dasselbe
    Zeichen wie in der Seitenleiste — es bindet Kopf und Liste aneinander. */
@@ -724,10 +737,15 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
 .quiz{
   border:1px solid var(--linie);border-top:var(--kante) solid var(--tinte);
   background:var(--blatt);border-radius:var(--r-flaeche);
-  padding:0 0 4px;position:relative;
+  padding:0 0 4px;position:relative;width:100%;max-width:none;
 }
 .quiz-frage{padding:17px 20px 6px;font-size:var(--t-gross);font-weight:600;max-width:72ch;text-wrap:pretty}
 .quiz-optionen{display:flex;flex-direction:column;gap:2px;padding:8px 12px 12px}
+@media (min-width:1100px){
+  .blatt{--blatt-pad-x:36px}
+  .quiz-optionen{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .karten-stapel{max-width:min(760px,100%)}
+}
 .quiz-opt{
   display:flex;gap:11px;align-items:flex-start;
   font:inherit;font-size:var(--t-text);text-align:left;cursor:pointer;
@@ -766,7 +784,7 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
 .fortschrittsbalken > i{display:block;height:100%;background:var(--tinte);transition:width .25s ease}
 
 /* ---------- Karteikarten ---------- */
-.karten-stapel{max-width:620px}
+.karten-stapel{max-width:min(720px,100%);width:100%}
 /* Die Karte ist ein echter Karton: sie darf schwerer sein als alles andere,
    weil sie das einzige Element ist, das man in die Hand nimmt. */
 .karte{
@@ -897,12 +915,18 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
   /* minmax(0,1fr) statt 1fr: sonst erzwingt der min-content der Zelle
      einen waagerechten Ueberlauf der ganzen Seite. */
   .raster{grid-template-columns:minmax(0,1fr)}
+  /* Rail als Overlay-Drawer — Inhalt bleibt, kein Seitenwachstum. */
   .rail{
-    display:none;position:static;max-height:none;overflow:visible;
-    border-right:0;border-bottom:1px solid var(--linie);
-    padding-bottom:calc(16px + env(safe-area-inset-bottom));
+    display:none;position:fixed;left:0;top:0;bottom:0;
+    width:min(304px,88vw);z-index:var(--z-drawer);
+    max-height:none;overflow:auto;
+    border-right:1px solid var(--linie);border-bottom:0;
+    background:var(--blatt);box-shadow:var(--heben-hover);
+    padding:calc(12px + env(safe-area-inset-top)) 0 calc(16px + env(safe-area-inset-bottom));
   }
   body.rail-offen .rail{display:block}
+  body.rail-offen .rail-scrim{display:block}
+  body.rail-offen{overflow:hidden}
   .rail-formate{margin:0 12px 10px}
   .rail-toggle{display:inline-flex}
   /* Erklärender Hinweis steht im „Mehr"-Block als letzter Eintrag — er
@@ -928,12 +952,29 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
   .rail-toggle{flex:0 1 auto;padding:6px 10px}
   .stand{order:2;padding:8px 0;gap:0}
   .stand-mass{flex:1 1 110px;margin-left:0}
-  .blatt{padding:18px max(16px,env(safe-area-inset-right)) calc(64px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));min-width:0}
+  .blatt{
+    --blatt-pad-x:max(16px,env(safe-area-inset-left));
+    padding:18px max(16px,env(safe-area-inset-right)) calc(88px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));
+    min-width:0;width:100%;max-width:none;
+  }
   .kopfstreifen h2{font-size:20px}
   .kopfstreifen .meta{margin-left:0;text-align:left;max-width:none}
   /* Breite Tabellen duerfen im eigenen Rahmen scrollen statt die Seite zu dehnen */
   .daten{overflow-x:auto}
   .daten table{min-width:max-content}
+  /* Primäraktionen am Daumen: sticky unten, volle Breite */
+  .aktionen{
+    position:sticky;bottom:0;z-index:6;
+    margin:18px calc(-1 * max(16px,env(safe-area-inset-right))) 0 calc(-1 * max(16px,env(safe-area-inset-left)));
+    padding:12px max(16px,env(safe-area-inset-right)) calc(12px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));
+    background:var(--papier);border-top:1px solid var(--linie-hell);
+    gap:8px;
+  }
+  button.akt{min-height:48px;flex:1 1 140px;touch-action:manipulation}
+  .quiz-opt{min-height:48px;padding:12px 12px}
+  .karten-aktionen button.akt{flex:1 1 120px}
+  .format{min-height:0}
+  .format-streifen{min-height:44px}
 }
 
 @media (max-width:700px){
@@ -955,10 +996,10 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
   .stempel b{font-size:18px}
   .stempel span{font-size:9.5px}
   .ergebnis .quote{font-size:36px}
-  /* Quiz & Karten */
-  .quiz-frage{font-size:14.5px;padding:14px 14px 4px}
-  .quiz-optionen{padding:6px 8px 10px}
-  .quiz-erklaerung{margin:4px 14px 14px}
+  /* Quiz & Karten — eine Spalte, volle Breite, große Touch-Ziele */
+  .quiz-frage{font-size:14.5px;padding:14px 14px 4px;max-width:none}
+  .quiz-optionen{display:flex;flex-direction:column;padding:6px 8px 10px;gap:6px}
+  .quiz-erklaerung{margin:4px 14px 14px;max-width:none}
   .karte{padding:20px 18px;min-height:180px}
   .karte .vorderseite{font-size:16px}
   .luecke input{min-width:88px;font-size:13.5px}
@@ -1206,6 +1247,7 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
 </header>
 
 <div class="raster">
+  <button type="button" class="rail-scrim" id="rail-scrim" tabindex="-1" aria-hidden="true" hidden></button>
   <nav class="rail" id="rail" aria-label="Aufgabenbereiche"></nav>
   <main class="blatt" id="blatt" tabindex="-1" aria-live="polite" aria-atomic="false"></main>
 </div>
@@ -8272,6 +8314,18 @@ function mobilEinklappen() {
   if (window.innerWidth <= 900) {
     document.body.classList.remove('rail-offen');
     document.getElementById('rail-toggle').setAttribute('aria-expanded', 'false');
+    const scrim = document.getElementById('rail-scrim');
+    if (scrim) { scrim.hidden = true; scrim.setAttribute('aria-hidden', 'true'); }
+  }
+}
+
+function railMobilSetzen(offen) {
+  document.body.classList.toggle('rail-offen', offen);
+  document.getElementById('rail-toggle').setAttribute('aria-expanded', String(offen));
+  const scrim = document.getElementById('rail-scrim');
+  if (scrim) {
+    scrim.hidden = !offen;
+    scrim.setAttribute('aria-hidden', String(!offen));
   }
 }
 
@@ -10180,8 +10234,13 @@ function fallAuswertung() {
    START
    ============================================================ */
 document.getElementById('rail-toggle').addEventListener('click', e => {
-  const offen = document.body.classList.toggle('rail-offen');
+  const offen = !document.body.classList.contains('rail-offen');
+  railMobilSetzen(offen);
   e.currentTarget.setAttribute('aria-expanded', String(offen));
+});
+document.getElementById('rail-scrim').addEventListener('click', () => mobilEinklappen());
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && document.body.classList.contains('rail-offen')) mobilEinklappen();
 });
 /* Rückweg zur Übersicht – behält den Fortschritt, im Gegensatz zum Zurücksetzen. */
 /* Umschalter zwischen Teil 1 und Teil 2 — sitzt am Wortzeichen, damit immer
