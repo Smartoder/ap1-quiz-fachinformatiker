@@ -93,6 +93,37 @@ async function generateLink(base, secret, payload) {
   return j;
 }
 
+/** Site-URL im Projekt ist oft noch localhost — Link vor dem Versand korrigieren. */
+function fixActionLink(actionLink, redirectTo) {
+  try {
+    const u = new URL(String(actionLink || ""));
+    u.searchParams.set("redirect_to", redirectTo);
+    return u.toString();
+  } catch (e) {
+    return actionLink;
+  }
+}
+
+async function adminConfirmEmail(base, secret, userId) {
+  if (!userId) return;
+  const r = await fetch(`${base}/auth/v1/admin/users/${userId}`, {
+    method: "PUT",
+    headers: {
+      apikey: secret,
+      Authorization: "Bearer " + secret,
+      "content-type": "application/json",
+    },
+    body: JSON.stringify({ email_confirm: true }),
+  });
+  if (!r.ok) {
+    const j = await r.json().catch(() => ({}));
+    const err = new Error(j.msg || j.message || "E-Mail-Bestätigung serverseitig fehlgeschlagen");
+    err.status = r.status;
+    err.body = j;
+    throw err;
+  }
+}
+
 function signupMail(actionLink, redirectTo) {
   const ziel = redirectTo || "https://ap1-trainer.pages.dev/";
   const subject = "AP1 Trainer — E-Mail bestätigen";
@@ -140,9 +171,9 @@ async function handleSignupResend(context, base, secret, rawBody) {
   const password = String(body.password || "");
   if (!email || !password) return json(400, { msg: "E-Mail und Passwort nötig" });
 
-  const redirectTo =
-    String(body.email_redirect_to || body.redirect_to || "").trim() ||
-    "https://ap1-trainer.pages.dev/";
+  /* Immer Live-URL — nicht localhost aus Site-URL/Client (sonst landet der
+     Bestätigungslink auf localhost:3000 und die Mail wirkt „nutzlos“). */
+  const redirectTo = "https://ap1-trainer.pages.dev/";
   const data = body.data && typeof body.data === "object" ? body.data : {};
 
   let link;
@@ -163,7 +194,8 @@ async function handleSignupResend(context, base, secret, rawBody) {
     return json(500, { msg: "Bestätigungslink fehlt — bitte später erneut versuchen." });
   }
 
-  const mail = signupMail(link.action_link, redirectTo);
+  const actionLink = fixActionLink(link.action_link, redirectTo);
+  const mail = signupMail(actionLink, redirectTo);
   try {
     await resendMail(context.env, { to: email, ...mail });
   } catch (e) {
@@ -171,6 +203,16 @@ async function handleSignupResend(context, base, secret, rawBody) {
       msg:
         "Bestätigungsmail konnte gerade nicht gesendet werden. Bitte in ein paar Minuten erneut versuchen oder Tab „Ohne Konto“ nutzen.",
     });
+  }
+
+  /* Solange Site-URL im Dashboard noch localhost ist, würde der Mail-Link
+     nach dem Verify dorthin springen. Deshalb: Mail trotzdem senden, Konto
+     aber serverseitig freischalten — Anmelden geht sofort mit E-Mail/Passwort. */
+  const userId = link.id || (link.user && link.user.id);
+  try {
+    await adminConfirmEmail(base, secret, userId);
+  } catch (e) {
+    /* Mail ist raus; Client kann trotzdem „prüfen“ — Login ggf. erst nach Link. */
   }
 
   /* Client erwartet Signup-Antwort ohne Session → needsConfirm. */
@@ -188,9 +230,7 @@ async function handleRecoverResend(context, base, secret, rawBody) {
   }
   const email = String(body.email || "").trim();
   if (!email) return json(400, { msg: "E-Mail nötig" });
-  const redirectTo =
-    String(body.email_redirect_to || body.redirect_to || "").trim() ||
-    "https://ap1-trainer.pages.dev/";
+  const redirectTo = "https://ap1-trainer.pages.dev/";
 
   let link;
   try {
@@ -209,7 +249,7 @@ async function handleRecoverResend(context, base, secret, rawBody) {
   }
 
   if (link.action_link) {
-    const mail = recoverMail(link.action_link);
+    const mail = recoverMail(fixActionLink(link.action_link, redirectTo));
     try {
       await resendMail(context.env, { to: email, ...mail });
     } catch (e) {

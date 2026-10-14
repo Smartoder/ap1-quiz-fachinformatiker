@@ -4,6 +4,34 @@ Das Format folgt *Keep a Changelog*. Bruchstellen sind ausdrücklich gekennzeich
 
 ## [Nicht veröffentlicht]
 
+### Geändert — Mobile App-Schale (2026-10-14)
+
+**Warum.** Auf dem Handy wirkte die Oberfläche wie ein geschrumpfter Desktop:
+Kopf-Buttons brachen ab, KPI-Karten fraßen Viewport, Navigation war unhandlich.
+
+**Was.** ≤900px: kompakte App-Bar (☰ + Marke), Fortschritt als eine Zeile,
+Bottom-Dock (Weg / Profil / Übersicht), Rail als Sheet mit Schließen.
+Desktop unverändert. Marker `ui-mobile-shell-2026-10-14`.
+
+### Behoben — Auth: Confirm-Link localhost + Login ohne Profil (2026-10-14)
+
+**Warum.** Bestätigungsmail kam an (Resend: delivered), Link enthielt aber
+`redirect_to=http://localhost:3000` (Site-URL im AP1-Supabase). Nach Registrieren
+kein Login möglich, weil E-Mail unbestätigt — Profil entsteht erst beim Login.
+
+**Was.** `/sb`-Proxy: `redirect_to` fest auf `ap1-trainer.pages.dev`, Action-Link
+vor dem Versand korrigieren, neues Konto serverseitig `email_confirm`. UI-Hinweis:
+direkt anmelden. Marker `auth-confirm-live-redirect-2026-10-14`.
+
+### Hinzugefügt — Sofort üben ohne Profil (2026-10-14)
+
+**Warum.** Anmelden/Registrieren waren poliert; „Ohne Konto“ zwang trotzdem
+einen Anzeigenamen. Gewünscht: gleiche Oberfläche ohne Server-Profil.
+
+**Was.** Primär-CTA „Sofort üben — ohne Profil“ (lokaler Gast `id: lokal`,
+kein Sync). Optional weiter mit Namen. Kopf: „ohne Profil · nur dieses Gerät“.
+Marker `ui-ohne-profil-gast-2026-10-14`. Lernstand/gesehen bleiben lokal.
+
 ### Behoben — Auth-Mails über Resend (Rate-Limit) (2026-10-14)
 
 **Warum.** Registrieren auf Live zeigte „email rate limit exceeded“ — Supabase
