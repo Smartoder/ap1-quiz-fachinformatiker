@@ -4,6 +4,14 @@ Das Format folgt *Keep a Changelog*. Bruchstellen sind ausdrücklich gekennzeich
 
 ## [Nicht veröffentlicht]
 
+### Hinzugefügt — Themenwechsel bei Rechen-Aufgaben (2026-10-14)
+
+**Warum.** Nach dem Öffnen von Rechen-Aufgaben blieb man auf dem ersten Typ
+stecken; Wechsel z. B. zu Handelskalkulation rückwärts war nicht möglich.
+
+**Was.** Dropdown „Thema“ über dem Aufgabenblatt listet alle für Jahr/Teil
+sichtbaren Rechenaufgaben; Auswahl startet den gewählten Typ sofort.
+
 ### Geändert — Antwortlängen Quiz/Fallstudien + Live-URL Pages (2026-10-14)
 
 **Warum.** Richtige Optionen waren oft die längsten und standen fest an Position A —

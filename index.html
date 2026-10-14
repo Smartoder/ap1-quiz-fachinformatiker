@@ -419,6 +419,27 @@ button.teil-marke:focus-visible{outline:2px solid var(--tinte);outline-offset:2p
 }
 .kopfstreifen .meta b{font-family:var(--mono);color:var(--tinte);font-variant-numeric:tabular-nums}
 
+/* Themenwechsel nur bei Rechen-Aufgaben: Auswahl der Aufgabentypen */
+.themenwahl{
+  display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;
+  margin:0 0 18px;padding:10px 12px;
+  background:var(--papier);border:1px solid var(--linie);border-left:3px solid var(--tinte);
+}
+.themenwahl label{
+  font-size:12px;font-weight:600;color:var(--schwach);letter-spacing:.01em;
+  flex:0 0 auto;
+}
+.themenwahl select{
+  flex:1 1 220px;min-width:0;max-width:100%;
+  font:inherit;font-size:14.5px;color:var(--tinte);
+  background:var(--blatt);border:1px solid var(--linie);border-radius:var(--r);
+  padding:7px 10px;cursor:pointer;
+}
+.themenwahl select:focus-visible{
+  outline:2px solid var(--tinte);outline-offset:2px;
+}
+.themenwahl select:disabled{opacity:.55;cursor:not-allowed}
+
 .szenario{margin:0 0 18px;max-width:74ch}
 .szenario p{margin:0 0 10px}
 .daten{
@@ -8184,6 +8205,7 @@ function zeichneAufgabe() {
         <b>${task.punkte}</b> Punkte · ${istAp2() ? 'Teil 2' : 'AP1-Häufigkeit ' + (achse().find(b => b.id === task.bereich) || {}).neben}
       </div>
     </div>
+    ${themenwahlHTML(task.id)}
     <div class="szenario">${inst.szenario}</div>
     ${inst.daten || ''}
     ${infoBlock(task, 'rechnen', task.bereich)}
@@ -8203,6 +8225,12 @@ function zeichneAufgabe() {
   `;
 
   infoVerdrahten();
+  const thema = document.getElementById('task-thema');
+  if (thema) {
+    thema.onchange = () => {
+      if (thema.value && thema.value !== task.id) starteAufgabe(thema.value);
+    };
+  }
   document.getElementById('btn-pruefen').onclick = pruefen;
   document.getElementById('btn-neu').onclick = () => { aktuell.inst = task.gen(); zeichneAufgabe(); };
   document.getElementById('btn-weg').onclick = zeigeWeg;
@@ -8600,9 +8628,23 @@ function jahrKurz() {
   const x = JAHRE.find(y => y.id === jahr);
   return x ? x.kurz : 'ohne Auswahl';
 }
-function ersteAufgabe() {
+function aufgabenListe() {
   const liste = daten(teil).TASKS;
-  return liste.filter(t => teil === 'ap2' || passtJahr(t))[0] || liste[0];
+  const sichtbar = liste.filter(t => teil === 'ap2' || passtJahr(t));
+  return sichtbar.length ? sichtbar : liste;
+}
+function ersteAufgabe() {
+  return aufgabenListe()[0] || daten(teil).TASKS[0];
+}
+function themenwahlHTML(aktiveId) {
+  if (sim) return '';
+  const opts = aufgabenListe().map(t =>
+    `<option value="${t.id}"${t.id === aktiveId ? ' selected' : ''}>${t.titel}</option>`
+  ).join('');
+  return `<div class="themenwahl">
+      <label for="task-thema">Thema</label>
+      <select id="task-thema" aria-label="Rechenaufgabe wählen">${opts}</select>
+    </div>`;
 }
 
 function kopfJahrZeichnen() {
