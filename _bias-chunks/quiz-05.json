@@ -1,0 +1,2562 @@
+[
+  {
+    "sammlung": "QUIZ",
+    "i": 459,
+    "q": "Welche Kardinalität besteht typischerweise zwischen UserAccount und LogEntry (Beispielaufgabe)?",
+    "a": [
+      "1:n – ein Benutzerkonto kann mehrere Log-Einträge erzeugen",
+      "m:n – viele Konten zu vielen Einträgen",
+      "1:1 – ein Eintrag pro Konto",
+      "Es gibt keine Beziehung"
+    ],
+    "r": 0,
+    "e": "In der offiziellen Beispielaufgabe (IT 3.3) besteht zwischen UserAccount und LogEntry eine 1:n-Beziehung: Ein Benutzerkonto kann mehrere Log-Einträge haben, aber jeder Log-Eintrag gehört zu genau einem Konto. Deshalb wandert der PK von UserAccount als FK in LogEntry.",
+    "b": "datenbank",
+    "q_": "PK-04 · Kardinalitäten",
+    "cs": [
+      58,
+      38,
+      27,
+      23
+    ],
+    "ws": [
+      8,
+      7,
+      6,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.52
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 274,
+    "q": "Was kennzeichnet eine Matrixorganisation?",
+    "a": [
+      "Mitarbeiter haben zwei Vorgesetzte – fachlich und disziplinarisch",
+      "Jeder hat genau einen Vorgesetzten",
+      "Es gibt keine Vorgesetzten",
+      "Nur der Chef entscheidet allein"
+    ],
+    "r": 0,
+    "e": "In der Matrixorganisation ist ein Mitarbeiter gleichzeitig fachlich (z. B. Projektleiter) und disziplinarisch (z. B. Abteilungsleiter) unterstellt. Vorteil: bündelt Fachkompetenz; Nachteil: mögliche Konflikte durch Doppelunterstellung.",
+    "b": "vertrag",
+    "q_": "PK7",
+    "cs": [
+      65,
+      34,
+      26,
+      31
+    ],
+    "ws": [
+      8,
+      5,
+      4,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.5
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 329,
+    "q": "Was bedeutet Ergonomie am Bildschirmarbeitsplatz?",
+    "a": [
+      "Der Arbeitsplatz ist so gestaltet, dass körperliche Belastungen minimiert werden",
+      "Der Bildschirm steht möglichst weit oben",
+      "Möglichst helle Beleuchtung von hinten",
+      "Die Tastatur liegt auf dem Schoß"
+    ],
+    "r": 0,
+    "e": "Ergonomie passt Arbeitsmittel an den Menschen an: Bildschirmoberkante etwa auf Augenhöhe, 50–70 cm Sitzabstand, blendfreie Anordnung (Fenster seitlich), neutrale Sitzhaltung, Pausen. Ziel: Gesundheitsbelastung senken.",
+    "b": "hardware",
+    "q_": "PK-03 · Ergonomie",
+    "cs": [
+      80,
+      40,
+      38,
+      32
+    ],
+    "ws": [
+      10,
+      6,
+      5,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.5
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 455,
+    "q": "Was ist der Primärschlüssel (PK)?",
+    "a": [
+      "Ein Attribut, das jeden Datensatz eindeutig identifiziert",
+      "Ein Attribut, das auf eine andere Tabelle verweist",
+      "Ein Attribut ohne Werte",
+      "Ein Attribut mit doppelten Werten"
+    ],
+    "r": 0,
+    "e": "Der Primärschlüssel identifiziert jeden Datensatz eindeutig – niemals doppelt und nie NULL. Kurz und stabil halten (z. B. künstlicher Integer-Schlüssel mit AUTO_INCREMENT), da er in referenzierende Tabellen übernommen wird.",
+    "b": "datenbank",
+    "q_": "PK-04 · Schlüssel",
+    "cs": [
+      57,
+      50,
+      23,
+      33
+    ],
+    "ws": [
+      7,
+      8,
+      4,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 1.48
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 41,
+    "q": "Welche Pflichtangabe fehlt auf einer ordnungsgemäßen Rechnung am häufigsten in Übungsaufgaben?",
+    "a": [
+      "Der Name des Sachbearbeiters",
+      "Steuernummer bzw. USt-IdNr. und Steuersatz",
+      "Die Farbwahl des Papiers",
+      "Die Telefonnummer"
+    ],
+    "r": 1,
+    "e": "Eine Rechnung muss u. a. Steuernummer bzw. USt-IdNr. des Rechnungsstellers, Entgelt, Steuersatz und Steuerbetrag enthalten. Fehlt das, ist der Vorsteuerabzug gefährdet.",
+    "b": "kaufmaennisch",
+    "q_": "AP2 · Rechnungswesen",
+    "cs": [
+      28,
+      42,
+      24,
+      17
+    ],
+    "ws": [
+      4,
+      5,
+      4,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.47
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 373,
+    "q": "Ein Nutzer kann im Browser keine Internetseite öffnen, aber der Ping auf 8.8.8.8 funktioniert. Was ist die wahrscheinlichste Ursache?",
+    "a": [
+      "Die Namensauflösung (DNS) funktioniert nicht, die IP-Verbindung schon",
+      "Die Netzwerkkarte ist defekt",
+      "Das Kabel ist nicht angeschlossen",
+      "Der Rechner hat keinen Strom"
+    ],
+    "r": 0,
+    "e": "Ping auf eine IP gelingt, der Name wird aber nicht aufgelöst → das Problem liegt beim DNS. Typischer Test: nslookup www.beispiel.de. Lösung: DNS-Server prüfen oder korrigieren. So grenzt man Schicht 3 (funktioniert) von der Namensauflösung ab.",
+    "b": "netzwerk",
+    "q_": "PK-01 · Fehleranalyse",
+    "cs": [
+      69,
+      28,
+      33,
+      28
+    ],
+    "ws": [
+      8,
+      4,
+      5,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.46
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 51,
+    "q": "Was ist der Zweck einer Nutzwertanalyse?",
+    "a": [
+      "Den billigsten Anbieter zu finden",
+      "Die Lieferzeit zu verkürzen",
+      "Die Umsatzsteuer zu berechnen",
+      "Mehrere Angebote nach gewichteten Kriterien vergleichbar zu machen"
+    ],
+    "r": 3,
+    "e": "Die Nutzwertanalyse bewertet Angebote nach mehreren Kriterien mit unterschiedlicher Gewichtung. Für jeden Anbieter wird Erfüllung × Gewichtung summiert – der höchste Gesamtnutzwert gewinnt.",
+    "b": "angebot",
+    "q_": "FIN",
+    "cs": [
+      33,
+      27,
+      29,
+      66
+    ],
+    "ws": [
+      5,
+      4,
+      4,
+      8
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.44
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 240,
+    "q": "Aus welchen Kategorien kann ein zweiter Faktor (2FA) bestehen?",
+    "a": [
+      "Wissen (Passwort), Besitz (Token/Gerät), Biometrie (Fingerabdruck)",
+      "Nur aus einem zweiten Passwort",
+      "Nur aus einem Fingerabdruck",
+      "Aus zwei Passwörtern desselben Kontos"
+    ],
+    "r": 0,
+    "e": "Zwei-Faktor-Authentifizierung kombiniert Faktoren aus verschiedenen Kategorien: Wissen (etwas, das man weiß), Besitz (etwas, das man hat) und Biometrie (etwas, das man ist). Zwei Passwörter wären nur 2× dieselbe Kategorie – kein echter zweiter Faktor.",
+    "b": "sicherheit",
+    "q_": "PK6",
+    "cs": [
+      66,
+      30,
+      27,
+      37
+    ],
+    "ws": [
+      6,
+      5,
+      4,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.44
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 8,
+    "q": "Wozu dient ein Netzfilter in elektronischen Geräten?",
+    "a": [
+      "Er begrenzt hochfrequente Störungen und verbessert die EMV",
+      "Er wandelt Wechselstrom in Gleichstrom",
+      "Er erhöht die Ausgangsspannung",
+      "Er lädt die USV-Batterie"
+    ],
+    "r": 0,
+    "e": "Der Netzfilter arbeitet als Tiefpass aus Induktivitäten und Kondensatoren: Er hält Störsignale aus dem Gerät heraus und aus dem Netz fern und verbessert so die elektromagnetische Verträglichkeit (EMV).",
+    "b": "hardware",
+    "q_": "USV",
+    "cs": [
+      58,
+      38,
+      30,
+      24
+    ],
+    "ws": [
+      8,
+      5,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.42
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 315,
+    "q": "Was ist ein All-in-One-PC?",
+    "a": [
+      "Ein Rechner, bei dem Computer und Bildschirm in einem Gehäuse verbaut sind",
+      "Ein Rechner mit zwei Betriebssystemen",
+      "Ein Server für alle Abteilungen",
+      "Ein Notebook mit abnehmbarer Tastatur"
+    ],
+    "r": 0,
+    "e": "Beim All-in-One steckt die gesamte Technik hinter dem Display. Vorteile: wenig Kabel, platzsparend. Nachteile: schwer aufrüstbar, Reparatur oft nur beim Hersteller.",
+    "b": "hardware",
+    "q_": "PK-04 · Geräteklassen",
+    "cs": [
+      74,
+      37,
+      31,
+      37
+    ],
+    "ws": [
+      12,
+      5,
+      5,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.39
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 458,
+    "q": "Wofür steht die Abkürzung PK/FK in einem Tabellenentwurf?",
+    "a": [
+      "PK = Primary Key (Primärschlüssel), FK = Foreign Key (Fremdschlüssel)",
+      "PK = Programm-Kennung, FK = Fehlerkennung",
+      "PK = Privatkonto, FK = Firmenkonto",
+      "PK = Protokoll, FK = Frequenz"
+    ],
+    "r": 0,
+    "e": "PK = Primary Key (Primärschlüssel, eindeutig), FK = Foreign Key (Fremdschlüssel, verweist auf eine andere Tabelle). Diese Kennzeichnung ist in der Beispielaufgabe (Anlage 12) ausdrücklich verlangt.",
+    "b": "datenbank",
+    "q_": "PK-04 · Schlüssel",
+    "cs": [
+      69,
+      41,
+      34,
+      29
+    ],
+    "ws": [
+      10,
+      6,
+      6,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.38
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 54,
+    "q": "Wie ist das duale System der Berufsausbildung aufgebaut?",
+    "a": [
+      "Ausbildungsbetrieb und Berufsschule teilen sich die Ausbildung",
+      "Nur die Berufsschule bildet aus",
+      "Nur der Betrieb bildet aus",
+      "Es besteht aus Uni und Fachhochschule"
+    ],
+    "r": 0,
+    "e": "Im dualen System lernen Auszubildende an zwei Lernorten: im Betrieb (praktische Ausbildung, Ausbildungsordnung) und in der Berufsschule (Rahmenlehrplan).",
+    "b": "wiso",
+    "q_": "AP2 · Berufsbildung",
+    "cs": [
+      62,
+      31,
+      26,
+      37
+    ],
+    "ws": [
+      7,
+      5,
+      5,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.38
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 56,
+    "q": "Was ist ein Aufschwung in der Konjunktur?",
+    "a": [
+      "Eine Phase steigender wirtschaftlicher Aktivität nach einem Tief",
+      "Eine Phase sinkender Preise",
+      "Der Stillstand der Wirtschaft",
+      "Ein Rückgang des Bruttoinlandsprodukts"
+    ],
+    "r": 0,
+    "e": "Konjunkturphasen: Aufschwung (Expansion), Hochkonjunktur (Boom), Abschwung (Rezession), Tiefstand (Depression). Im Aufschwung steigen Produktion, Beschäftigung und Einkommen.",
+    "b": "wiso",
+    "q_": "AP2 · WiSo",
+    "cs": [
+      64,
+      27,
+      29,
+      38
+    ],
+    "ws": [
+      8,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.37
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 257,
+    "q": "Was bedeutet „Pay-per-Use\" als Beschaffungsform?",
+    "a": [
+      "Es wird nach tatsächlicher Nutzung abgerechnet statt über Kauf oder feste Rate",
+      "Man zahlt einen einmaligen Kaufpreis",
+      "Man least für eine feste Laufzeit",
+      "Man erhält die Software kostenlos"
+    ],
+    "r": 0,
+    "e": "Bei Pay-per-Use (nutzungsabhängige Abrechnung) zahlt man nur das, was man tatsächlich verwendet – typisch für Cloud-Dienste. Vorteil: geringe Fixkosten; Nachteil: schwer kalkulierbar bei schwankender Nutzung.",
+    "b": "angebot",
+    "q_": "PK3",
+    "cs": [
+      78,
+      36,
+      33,
+      33
+    ],
+    "ws": [
+      12,
+      5,
+      6,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.36
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 532,
+    "q": "Welche Aufgabe hat das Steuerwerk der CPU?",
+    "a": [
+      "Es holt und interpretiert die Befehle und steuert deren Ausführung",
+      "Es führt die Rechenoperationen aus",
+      "Es speichert Daten dauerhaft",
+      "Es versorgt das Gerät mit Strom"
+    ],
+    "r": 0,
+    "e": "Die CPU besteht aus Steuerwerk und Rechenwerk (ALU). Das Steuerwerk holt Befehle, entschlüsselt sie und koordiniert den Ablauf; das Rechenwerk führt Rechen- und Logikoperationen aus. Register und Cache sind Arbeitsspeicher der CPU.",
+    "b": "hardware",
+    "q_": "PK-03 · CPU",
+    "cs": [
+      66,
+      34,
+      28,
+      31
+    ],
+    "ws": [
+      10,
+      5,
+      4,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.36
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 52,
+    "q": "Welche Aussage zum Jugendarbeitsschutzgesetz ist richtig?",
+    "a": [
+      "Jugendliche dürfen höchstens 8 Stunden täglich und 40 Stunden wöchentlich beschäftigt werden",
+      "Jugendliche dürfen unbegrenzt Überstunden machen",
+      "Nachtarbeit ist uneingeschränkt erlaubt",
+      "Es gilt nur für Auszubildende über 18 Jahre"
+    ],
+    "r": 0,
+    "e": "Das JArbSchG schützt unter 18-Jährige: höchstens 8 h/Tag und 40 h/Woche, Nachtarbeit grundsätzlich verboten, Mindestruhepausen und Urlaub von mindestens 25 Werktagen.",
+    "b": "wiso",
+    "q_": "AP2 · Arbeitsschutz",
+    "cs": [
+      92,
+      48,
+      39,
+      43
+    ],
+    "ws": [
+      12,
+      5,
+      4,
+      8
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.36
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 170,
+    "q": "Was unterscheidet Klassifikation von Regression?",
+    "a": [
+      "Klassifikation ordnet diskrete Klassen zu, Regression sagt kontinuierliche Werte voraus",
+      "Klassifikation ist unüberwacht, Regression überwacht",
+      "Regression liefert nur Wahrheitswerte",
+      "Beide sind identisch, nur der Name unterscheidet sich"
+    ],
+    "r": 0,
+    "e": "Klassifikation teilt Objekte in feste Klassen ein (Spam/Nicht-Spam, Tierarten). Regression sagt einen stetigen Zahlenwert voraus (Hauspreis, Umsatz). Beide gehören zum überwachten Lernen.",
+    "b": "ki",
+    "q_": "ML",
+    "cs": [
+      87,
+      52,
+      37,
+      53
+    ],
+    "ws": [
+      10,
+      5,
+      4,
+      8
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.35
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 263,
+    "q": "Wofür stehen die vier Buchstaben des PDCA-Zyklus?",
+    "a": [
+      "Plan, Do, Check, Act",
+      "Plan, Document, Control, Adjust",
+      "Prüfen, Dokumentieren, Korrigieren, Abschließen",
+      "Plan, Design, Code, Audit"
+    ],
+    "r": 0,
+    "e": "PDCA (Deming-Kreis): Plan = Ziele und Maßnahmen festlegen, Do = umsetzen, Check = Soll-Ist vergleichen, Act = korrigieren und Standard anpassen. Der Zyklus läuft immer wieder.",
+    "b": "qs",
+    "q_": "PK5",
+    "cs": [
+      20,
+      31,
+      47,
+      25
+    ],
+    "ws": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 1.35
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 300,
+    "q": "Was bedeutet „downtime in der IT?",
+    "a": [
+      "Ausfallzeit – die Zeit, in der ein System nicht verfügbar ist",
+      "Die Laufzeit eines Servers",
+      "Die Zeit bis zum nächsten Update",
+      "Die Bildschirmzeit eines Nutzers"
+    ],
+    "r": 0,
+    "e": "„downtime\" = Ausfallzeit. „uptime\" = Betriebszeit/Verfügbarkeit. Beide sind zentrale Begriffe im SLA.",
+    "b": "englisch",
+    "q_": "EN",
+    "cs": [
+      61,
+      26,
+      32,
+      32
+    ],
+    "ws": [
+      11,
+      4,
+      6,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.35
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 523,
+    "q": "Ein Mitarbeiter öffnet einen E-Mail-Anhang und der Rechner verhält sich auffällig. Was ist der erste richtige Schritt?",
+    "a": [
+      "Rechner vom Netz trennen und den Vorfall melden (Meldeweg einhalten)",
+      "Weiterarbeiten und beobachten",
+      "Den Anhang an Kollegen weiterleiten",
+      "Nichts tun, bis es schlimmer wird"
+    ],
+    "r": 0,
+    "e": "Bei Verdacht auf Malware gilt: betroffenes System isolieren (Netz trennen), Vorfall melden, weitere Ausbreitung verhindern. Danach Analyse, Bereinigung, Wiederherstellung aus sauberem Backup. Vorgehen nach dem Notfall-/Incident-Plan.",
+    "b": "sicherheit",
+    "q_": "PK-06 · Notfall",
+    "cs": [
+      68,
+      29,
+      35,
+      33
+    ],
+    "ws": [
+      10,
+      3,
+      5,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.34
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 418,
+    "q": "Was besagt der PDCA-Zyklus?",
+    "a": [
+      "Plan, Do, Check, Act – ein Kreislauf zur ständigen Verbesserung",
+      "Preis, Dauer, Chaos, Abnahme",
+      "Priorität, Dokument, Code, Ablage",
+      "Plan, Deploy, Close, Archiv"
+    ],
+    "r": 0,
+    "e": "Der PDCA-Zyklus (Demingkreis) beschreibt die ständige Verbesserung: Plan (planen), Do (umsetzen), Check (prüfen), Act (verbessern/eingreifen). Er ist Grundlage vieler Qualitätsmanagementsysteme, z. B. nach ISO 9001.",
+    "b": "qs",
+    "q_": "PK-05 · QM",
+    "cs": [
+      63,
+      28,
+      33,
+      27
+    ],
+    "ws": [
+      10,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.33
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 54,
+    "q": "Was bedeutet Amortisation?",
+    "a": [
+      "Die Verzinsung eines Kredits",
+      "Die Abschreibung über die Nutzungsdauer",
+      "Die Zeit, bis eine Investition ihre Kosten wieder eingespielt hat",
+      "Der Wiederverkaufswert eines Geräts"
+    ],
+    "r": 2,
+    "e": "Die Amortisationszeit ergibt sich aus Anschaffungskosten ÷ jährliche Einsparung. Sie sagt, wie viele Jahre es dauert, bis sich eine Investition bezahlt gemacht hat.",
+    "b": "angebot",
+    "q_": "FIN",
+    "cs": [
+      28,
+      39,
+      65,
+      35
+    ],
+    "ws": [
+      4,
+      5,
+      10,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.32
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 293,
+    "q": "„The server is down.“ – Was bedeutet das?",
+    "a": [
+      "Der Server ist ausgefallen / nicht erreichbar",
+      "Der Server wurde heruntergefahren und neu gestartet",
+      "Der Server ist zu heiß",
+      "Der Server wurde verkauft"
+    ],
+    "r": 0,
+    "e": "„to be down\" bedeutet: ein System ist nicht verfügbar (Ausfall). Das Gegenteil ist „up\" bzw. „up and running\" = läuft.",
+    "b": "englisch",
+    "q_": "EN",
+    "cs": [
+      45,
+      51,
+      22,
+      25
+    ],
+    "ws": [
+      7,
+      7,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 1.32
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 298,
+    "q": "„The backup is stored off-site.“ – Was bedeutet das?",
+    "a": [
+      "Die Sicherung liegt an einem anderen Ort (außerhalb des Betriebs)",
+      "Die Sicherung ist gerade fehlgeschlagen",
+      "Die Sicherung wurde gelöscht",
+      "Die Sicherung liegt auf demselben Server"
+    ],
+    "r": 0,
+    "e": "„off-site\" = außerhalb des Betriebs / an einem anderen Standort. Das ist die 1 in der 3-2-1-Regel: eine Kopie außer Haus.",
+    "b": "englisch",
+    "q_": "EN",
+    "cs": [
+      65,
+      39,
+      28,
+      40
+    ],
+    "ws": [
+      10,
+      5,
+      4,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.32
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 390,
+    "q": "Was bedeuten „Security by Design“ und „Security by Default“?",
+    "a": [
+      "Sicherheit wird von Beginn an mitgedacht und ist in der Standardeinstellung aktiv",
+      "Sicherheit wird später nachgerüstet",
+      "Nur der Administrator darf das System nutzen",
+      "Das System ist standardmäßig unsicher"
+    ],
+    "r": 0,
+    "e": "Security by Design: Sicherheit ist Teil der Konzeption, nicht ein Nachtrag. Security by Default: Die Standardeinstellung ist sicher (z. B. Verschlüsselung an, starke Passwörter erzwungen). Beides senkt Risiken von Anfang an.",
+    "b": "sicherheit",
+    "q_": "PK-06 · Sicherheitskonzept",
+    "cs": [
+      81,
+      35,
+      44,
+      37
+    ],
+    "ws": [
+      12,
+      4,
+      7,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.31
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 457,
+    "q": "Was ist mit „referentielle Integrität“ gemeint?",
+    "a": [
+      "Ein Fremdschlüssel verweist immer auf einen existierenden Datensatz",
+      "Alle Tabellen haben dieselbe Größe",
+      "Alle Spalten sind gleich benannt",
+      "Es gibt keine doppelten Werte"
+    ],
+    "r": 0,
+    "e": "Referentielle Integrität bedeutet: Ein Fremdschlüsselwert muss einen passenden Datensatz in der Zieltabelle haben. Die Datenbank lehnt Einfügen/Ändern sonst ab. Beim Löschen kann ON DELETE CASCADE oder RESTRICT regeln, was geschieht.",
+    "b": "datenbank",
+    "q_": "PK-04 · Integrität",
+    "cs": [
+      67,
+      34,
+      32,
+      29
+    ],
+    "ws": [
+      8,
+      5,
+      5,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.31
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 171,
+    "q": "Was misst der Informationsgewinn (Information Gain) bei einem Entscheidungsbaum?",
+    "a": [
+      "Die Anzahl der Trainingsdatensätze",
+      "Die Abnahme der Entropie durch eine Aufteilung",
+      "Die Tiefe des Baumes",
+      "Die Rechenzeit des Algorithmus"
+    ],
+    "r": 1,
+    "e": "Der Informationsgewinn ist die Differenz der Entropie vor und nach einem Split. Ein hoher Wert bedeutet, dass die Aufteilung die Zielvariable deutlich besser trennt. Der Gini-Index ist ein recheneffizienteres Maß für dasselbe Ziel.",
+    "b": "ki",
+    "q_": "ML",
+    "cs": [
+      34,
+      46,
+      20,
+      30
+    ],
+    "ws": [
+      4,
+      7,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.3
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 278,
+    "q": "Welche drei Mängelarten unterscheidet der Prüfungskatalog?",
+    "a": [
+      "Schlechtleistung, Falschlieferung und Minderlieferung",
+      "Verzug, Zahlung und Kündigung",
+      "Kauf, Miete und Leasing",
+      "Hardware-, Software- und Netzfehler"
+    ],
+    "r": 0,
+    "e": "Schlechtleistung: das Werk hat nicht die geschuldete Beschaffenheit. Falschlieferung: etwas anderes als geschuldet geliefert. Minderlieferung: die Menge stimmt nicht.",
+    "b": "vertrag",
+    "q_": "PK7",
+    "cs": [
+      53,
+      29,
+      23,
+      35
+    ],
+    "ws": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 1.3
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 314,
+    "q": "Für welchen Einsatz ist ein Thin Client typischerweise ungeeignet?",
+    "a": [
+      "Grafikintensive CAD-Arbeit ohne zentrale Rechenleistung",
+      "Buchhaltung im Rechenzentrumsbetrieb",
+      "Arbeitsplätze mit wechselnden Nutzern",
+      "Terminals in Callcentern"
+    ],
+    "r": 0,
+    "e": "Grafikintensive Anwendungen brauchen lokale GPU-Leistung. Ein Thin Client ohne dedizierte Grafik (bzw. ohne GPU-Server im Hintergrund) ist dafür ungeeignet. Für Standardbüroaufgaben ist er ideal.",
+    "b": "hardware",
+    "q_": "PK-04 · Geräteklassen",
+    "cs": [
+      55,
+      36,
+      37,
+      24
+    ],
+    "ws": [
+      5,
+      3,
+      4,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.29
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 30,
+    "q": "Wozu dient ein Index in einer Datenbank?",
+    "a": [
+      "Er beschleunigt Suche und Sortierung, kostet aber Schreibaufwand",
+      "Er verhindert doppelte Werte garantiert",
+      "Er verschlüsselt die Tabelle",
+      "Er ersetzt den Primärschlüssel"
+    ],
+    "r": 0,
+    "e": "Ein Index ist eine zusätzliche Suchstruktur, die Abfragen beschleunigt. Jeder Schreibvorgang muss ihn mitpflegen — deshalb sparsam einsetzen.",
+    "b": "systemloesung",
+    "q_": "AP2 · Datenbanken",
+    "cs": [
+      64,
+      39,
+      28,
+      30
+    ],
+    "ws": [
+      8,
+      5,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.29
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 453,
+    "q": "Wie wird eine 1:n-Beziehung relational umgesetzt?",
+    "a": [
+      "Der Primärschlüssel der 1-Seite wandert als Fremdschlüssel in die n-Seite",
+      "Der Primärschlüssel der n-Seite wandert in die 1-Seite",
+      "Man legt eine Zwischentabelle an",
+      "Man speichert beide Tabellen zusammen"
+    ],
+    "r": 0,
+    "e": "Bei 1:n kann ein Datensatz der 1-Seite mehrfach referenziert werden: Der Primärschlüssel der 1-Seite wird als Fremdschlüssel in die n-Seite übernommen. Eine Zwischentabelle ist nur bei m:n nötig.",
+    "b": "datenbank",
+    "q_": "PK-04 · ERM",
+    "cs": [
+      73,
+      54,
+      32,
+      37
+    ],
+    "ws": [
+      10,
+      8,
+      5,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.28
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 4,
+    "q": "Wie werden Projektarbeit und Präsentation für die Note des Kundenauftrags gewichtet?",
+    "a": [
+      "Jeweils 50 Prozent",
+      "Projektarbeit 70, Präsentation 30 Prozent",
+      "Projektarbeit 100 Prozent",
+      "Präsentation 60, Projektarbeit 40 Prozent"
+    ],
+    "r": 0,
+    "e": "Die betriebliche Projektarbeit samt Dokumentation zählt 50 Prozent, die Präsentation samt Fachgespräch ebenfalls 50 Prozent.",
+    "b": "kundenauftrag",
+    "q_": "IHK-Erläuterungen AP2 · Bereich 1",
+    "cs": [
+      18,
+      41,
+      25,
+      41
+    ],
+    "ws": [
+      3,
+      5,
+      3,
+      5
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 1.28
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 359,
+    "q": "Welche Aufgabe hat DHCP im Netz?",
+    "a": [
+      "Es vergibt IP-Adressen und weitere Netzkonfiguration automatisch an Clients",
+      "Es löst Domainnamen in IP-Adressen auf",
+      "Es übersetzt IP-Adressen in MAC-Adressen",
+      "Es verschlüsselt den Datenverkehr"
+    ],
+    "r": 0,
+    "e": "DHCP (Dynamic Host Configuration Protocol) verteilt automatisch IP-Adresse, Subnetzmaske, Standard-Gateway und DNS-Server per Lease. Ohne DHCP müsste man jede Adresse manuell fest vergeben.",
+    "b": "netzwerk",
+    "q_": "PK-04 · Netzwerkdienste",
+    "cs": [
+      75,
+      38,
+      40,
+      33
+    ],
+    "ws": [
+      9,
+      6,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.27
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 567,
+    "q": "Was bedeutet „Please escalate this issue to second level support.“?",
+    "a": [
+      "Bitte reichen Sie dieses Problem an den Second-Level-Support weiter.",
+      "Bitte löschen Sie dieses Ticket.",
+      "Bitte schließen Sie das Ticket sofort.",
+      "Bitte rufen Sie den Kunden an."
+    ],
+    "r": 0,
+    "e": "„to escalate“ = weiterreichen/hochstufen, „second level support“ = zweite Supportebene. Typischer Satz im Ticketsystem, wenn die erste Ebene nicht weiterkommt.",
+    "b": "englisch",
+    "q_": "PK-02 · Englische Texte",
+    "cs": [
+      68,
+      32,
+      38,
+      30
+    ],
+    "ws": [
+      9,
+      5,
+      6,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.27
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 308,
+    "q": "„Please ensure the firewall rules are up to date.“ – Was ist verlangt?",
+    "a": [
+      "Sicherstellen, dass die Firewall-Regeln aktuell sind",
+      "Die Firewall ausschalten",
+      "Die Firewall neu kaufen",
+      "Die Firewall-Regeln öffentlich zeigen"
+    ],
+    "r": 0,
+    "e": "„to ensure\" = sicherstellen, „up to date\" = aktuell. Es geht um die Pflege der Firewall-Regeln – Teil des Patch-/Sicherheitsmanagements.",
+    "b": "englisch",
+    "q_": "EN",
+    "cs": [
+      52,
+      24,
+      23,
+      37
+    ],
+    "ws": [
+      6,
+      3,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.26
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 61,
+    "q": "Wer beschließt die Berufung der Ausbilder und die Eignung des Ausbildungsbetriebs?",
+    "a": [
+      "Die zuständige Stelle, z. B. die IHK",
+      "Die Berufsschule",
+      "Das Arbeitsgericht",
+      "Der Betriebsrat allein"
+    ],
+    "r": 0,
+    "e": "Die zuständige Stelle (IHK oder HWK) überwacht die Berufsausbildung, prüft die Eignung des Betriebs und der Ausbilder und berät beide Seiten.",
+    "b": "wiso",
+    "q_": "AP2 · Berufsbildung",
+    "cs": [
+      36,
+      16,
+      18,
+      22
+    ],
+    "ws": [
+      7,
+      2,
+      2,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.25
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 265,
+    "q": "Was ist die Aufgabe der Qualitätslenkung?",
+    "a": [
+      "Sie setzt die geplanten Maßnahmen um und kontrolliert den Soll-Ist-Vergleich",
+      "Sie legt nur den Ziel-Zustand fest",
+      "Sie ersetzt die Qualitätsplanung vollständig",
+      "Sie betrifft nur die Rechnungsprüfung"
+    ],
+    "r": 0,
+    "e": "Die Qualitätslenkung ist die Umsetzungsphase der Planung: Sie steuert die Prozesse, damit der geplante Ziel-Zustand erreicht wird, und greift über den Soll-Ist-Vergleich nach. Zusammen mit der Planung bildet sie den PDCA-Kreislauf.",
+    "b": "qs",
+    "q_": "PK5",
+    "cs": [
+      76,
+      34,
+      44,
+      37
+    ],
+    "ws": [
+      10,
+      6,
+      5,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.24
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 316,
+    "q": "Was ist der Vorteil eines UEFI gegenüber dem klassischen BIOS?",
+    "a": [
+      "Es unterstützt größere Festplatten (GPT) und Secure Boot",
+      "Es benötigt weniger Arbeitsspeicher",
+      "Es funktioniert nur ohne Betriebssystem",
+      "Es ersetzt die Festplatte"
+    ],
+    "r": 0,
+    "e": "UEFI löst das alte BIOS ab: 64-Bit-Betrieb, Start von GPT-Datenträgern über 2 TB (MBR-Grenze entfällt), Secure Boot gegen manipulierte Bootloader und eine grafische Oberfläche.",
+    "b": "hardware",
+    "q_": "PK-04 · Installation",
+    "cs": [
+      56,
+      35,
+      39,
+      25
+    ],
+    "ws": [
+      8,
+      4,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.24
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 320,
+    "q": "Was gibt der Wirkungsgrad eines Netzteils an?",
+    "a": [
+      "Das Verhältnis von abgegebener zu aufgenommener Leistung",
+      "Wie lange das Netzteil hält",
+      "Die maximale Spannung am Ausgang",
+      "Die Anzahl der Anschlüsse"
+    ],
+    "r": 0,
+    "e": "Wirkungsgrad = abgegebene Leistung ÷ aufgenommene Leistung (in Prozent). Ein Netzteil mit 90 % Wirkungsgrad wandelt nur 10 % der aufgenommenen Leistung in Verlustwärme um. Effizientere Netzteile sparen Strom und Wärme.",
+    "b": "hardware",
+    "q_": "PK-03 · Energieeffizienz",
+    "cs": [
+      56,
+      27,
+      32,
+      25
+    ],
+    "ws": [
+      7,
+      5,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.24
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 594,
+    "q": "Was bedeutet Zweckbindung bei personenbezogenen Daten?",
+    "a": [
+      "Daten dürfen nur für den festgelegten, ursprünglichen Zweck verwendet werden",
+      "Daten dürfen beliebig weiterverwendet werden",
+      "Daten müssen immer verschlüsselt sein",
+      "Daten dürfen nicht gelöscht werden"
+    ],
+    "r": 0,
+    "e": "Zweckbindung: Daten werden für einen vorab festgelegten Zweck erhoben und dürfen nicht ohne neue Rechtsgrundlage anders verwendet werden. Gehört zu den Grundsätzen der DSGVO neben Datenminimierung und Speicherbegrenzung.",
+    "b": "recht",
+    "q_": "PK-06 · DSGVO",
+    "cs": [
+      76,
+      44,
+      37,
+      34
+    ],
+    "ws": [
+      10,
+      5,
+      5,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.24
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 222,
+    "q": "Welche Firewall-Art prüft den Verbindungszustand und lässt nur Antworten auf zuvor erlaubte Verbindungen durch?",
+    "a": [
+      "Stateful Inspection Firewall",
+      "Packet Filter",
+      "Proxy (Application Layer)",
+      "Personal Firewall ohne Regeln"
+    ],
+    "r": 0,
+    "e": "Eine Stateful-Inspection-Firewall führt eine Zustandstabelle und lässt nur erwartete Antwortpakete passieren. Ein reiner Packet Filter prüft nur einzelne Pakete nach Adresse/Port. Application-Layer-Firewalls (WAF/Proxy) prüfen zusätzlich Inhalte.",
+    "b": "netzwerk",
+    "q_": "NW",
+    "cs": [
+      28,
+      13,
+      25,
+      29
+    ],
+    "ws": [
+      3,
+      2,
+      3,
+      4
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 1.23
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 247,
+    "q": "Welche Aussage über einen Brandabschnitt ist richtig?",
+    "a": [
+      "Ein Brandabschnitt begrenzt die Ausbreitung von Feuer und Rauch durch bauliche Trennung",
+      "Ein Brandabschnitt ist ein Software-Backup",
+      "Ein Brandabschnitt ist ein RAID-Verbund",
+      "Ein Brandabschnitt schützt nur das Netzwerk"
+    ],
+    "r": 0,
+    "e": "Ein Brandabschnitt ist eine bauliche Maßnahme: Wände, Türen und Decken mit Feuerwiderstand trennen Gebäudeteile, damit sich ein Brand nicht ausbreitet. Er ist Teil der Verfügbarkeits- und Sicherheitsmaßnahmen im Serverraum.",
+    "b": "sicherheit",
+    "q_": "PK6",
+    "cs": [
+      87,
+      42,
+      39,
+      43
+    ],
+    "ws": [
+      12,
+      5,
+      5,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.23
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 398,
+    "q": "Was verlangt die Datenminimierung (Datensparsamkeit)?",
+    "a": [
+      "Es dürfen nur die für den Zweck notwendigen Daten erhoben werden",
+      "Möglichst viele Daten sammeln",
+      "Alle Daten dauerhaft speichern",
+      "Daten ohne Einwilligung weiterverkaufen"
+    ],
+    "r": 0,
+    "e": "Der Grundsatz der Datenminimierung fordert: nur das Nötige erheben, nur solange wie nötig speichern (Speicherbegrenzung), zweckgebunden verwenden. Weniger gespeicherte Daten bedeuten weniger Risiko und Kosten.",
+    "b": "recht",
+    "q_": "PK-06 · Datenschutz",
+    "cs": [
+      64,
+      29,
+      30,
+      39
+    ],
+    "ws": [
+      11,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.21
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 37,
+    "q": "Was kennzeichnet eine NoSQL-Datenbank wie MongoDB?",
+    "a": [
+      "Sie speichert ausschließlich in Tabellen mit festem Schema",
+      "Sie ist schemalos und speichert Dokumente im JSON-ähnlichen Format",
+      "Sie ist immer schneller als eine relationale Datenbank",
+      "Sie kennt keine Abfragesprache"
+    ],
+    "r": 1,
+    "e": "MongoDB ist dokumentenorientiert: Datenbank → Collection → Dokument → Feld entspricht SQL → Datenbank → Tabelle → Zeile → Spalte. Das Schema ist flexibel, Abfragen laufen über die MongoDB-Shell.",
+    "b": "datenbank",
+    "q_": "NOS",
+    "cs": [
+      58,
+      66,
+      54,
+      30
+    ],
+    "ws": [
+      8,
+      9,
+      8,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.2
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 218,
+    "q": "Welche VPN-Topologie verbindet zwei ganze Standorte dauerhaft miteinander?",
+    "a": [
+      "Site-to-Site",
+      "End-to-End",
+      "End-to-Site",
+      "Broadcast-to-Broadcast"
+    ],
+    "r": 0,
+    "e": "Site-to-Site verbindet zwei Netzwerke (z. B. Firmenstandorte) über einen Tunnel. End-to-Site bindet ein einzelnes Gerät an ein Netz an (typisch Homeoffice), End-to-End verbindet zwei Endgeräte direkt.",
+    "b": "netzwerk",
+    "q_": "NW",
+    "cs": [
+      12,
+      10,
+      11,
+      22
+    ],
+    "ws": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 1.2
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 177,
+    "q": "Was ist ein Merkmal eines guten Prompts?",
+    "a": [
+      "Möglichst kurz und ungenau",
+      "Klar formuliert, mit Kontext, Ziel und gewünschtem Format",
+      "Nur ein einzelnes Stichwort",
+      "Ohne jede Rollen- oder Zielangabe"
+    ],
+    "r": 1,
+    "e": "Ein guter Prompt nennt Aufgabe, Kontext, Zielgruppe und das gewünschte Ausgabeformat. Rollenangaben („Du bist …\") und Beispiele verbessern das Ergebnis zusätzlich.",
+    "b": "ki",
+    "q_": "KI",
+    "cs": [
+      26,
+      57,
+      27,
+      33
+    ],
+    "ws": [
+      4,
+      8,
+      4,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.19
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 184,
+    "q": "Was beschreibt der Begriff „Computer Vision\"?",
+    "a": [
+      "Die automatische Analyse und Deutung von Bildern durch KI",
+      "Das Aufbauen von Monitoren",
+      "Das Verschlüsseln von Grafiken",
+      "Das Komprimieren von Videos"
+    ],
+    "r": 0,
+    "e": "Computer Vision ist das KI-Teilgebiet der Bildverarbeitung: Gesichtserkennung, Objekterkennung, Qualitätskontrolle in der Produktion. Meist kommen dabei Convolutional Neural Networks (CNNs) zum Einsatz.",
+    "b": "ki",
+    "q_": "DL",
+    "cs": [
+      57,
+      26,
+      30,
+      27
+    ],
+    "ws": [
+      9,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.19
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 333,
+    "q": "Was kennzeichnet Pay-per-Use bei Software?",
+    "a": [
+      "Es wird nach tatsächlicher Nutzung abgerechnet, nicht pauschal gekauft",
+      "Die Software ist immer kostenlos",
+      "Man zahlt einmalig und für immer",
+      "Die Software gehört danach dem Kunden"
+    ],
+    "r": 0,
+    "e": "Bei Pay-per-Use zahlt der Kunde nur die tatsächliche Nutzung (Zeit, Abrufe, Volumen). Vorteil: keine hohe Anfangsinvestition. Nachteil: laufende, schwer planbare Kosten. Typisch bei Cloud-Diensten.",
+    "b": "software",
+    "q_": "PK-04 · Lizenzmodelle",
+    "cs": [
+      70,
+      32,
+      32,
+      37
+    ],
+    "ws": [
+      9,
+      5,
+      6,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.19
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 34,
+    "q": "Was bewirkt UNION ALL gegenüber UNION?",
+    "a": [
+      "Es entfernt Duplikate",
+      "Es sortiert automatisch",
+      "Es behält Duplikate",
+      "Es erlaubt unterschiedliche Spaltenzahlen"
+    ],
+    "r": 2,
+    "e": "UNION entfernt doppelte Zeilen und sortiert, UNION ALL gibt alle Zeilen unverändert zurück und ist dadurch schneller. Voraussetzung bei beiden: gleiche Spaltenzahl und kompatible Datentypen.",
+    "b": "datenbank",
+    "q_": "DQL",
+    "cs": [
+      21,
+      23,
+      19,
+      41
+    ],
+    "ws": [
+      3,
+      3,
+      3,
+      4
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 1.16
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 154,
+    "q": "In welcher Beziehung stehen Künstliche Intelligenz (KI), Maschinelles Lernen (ML) und Deep Learning (DL)?",
+    "a": [
+      "KI ist ein Teilgebiet von DL, das wiederum ein Teilgebiet von ML ist",
+      "KI umfasst ML, und ML umfasst DL",
+      "ML und DL sind dasselbe, KI ist der Oberbegriff für beide",
+      "DL ist der Oberbegriff und umfasst KI und ML"
+    ],
+    "r": 1,
+    "e": "Es gilt die Hierarchie KI ⊃ ML ⊃ DL: KI ist der Oberbegriff, ML ist ein Teilgebiet der KI (lernen aus Daten ohne explizite Regeln), DL ist wiederum ein Subfeld des ML mit tiefen neuronalen Netzen.",
+    "b": "ki",
+    "q_": "KI",
+    "cs": [
+      68,
+      32,
+      57,
+      44
+    ],
+    "ws": [
+      13,
+      7,
+      11,
+      9
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 1.13
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 295,
+    "q": "„We need to schedule a maintenance window.“ – Was bedeutet das?",
+    "a": [
+      "Wir müssen ein Wartungsfenster (einen Zeitraum für Wartung) planen",
+      "Wir brauchen ein größeres Fenster im Serverraum",
+      "Wir müssen die Software neu installieren",
+      "Wir brauchen eine neue Firewall"
+    ],
+    "r": 0,
+    "e": "Ein „maintenance window\" ist ein geplanter Zeitraum, in dem ein System gewartet wird und deshalb kurz nicht verfügbar ist. „to schedule\" = terminlich einplanen.",
+    "b": "englisch",
+    "q_": "EN",
+    "cs": [
+      66,
+      47,
+      40,
+      31
+    ],
+    "ws": [
+      9,
+      7,
+      6,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.13
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 176,
+    "q": "Was versteht man unter einem Prompt?",
+    "a": [
+      "Die Rechenleistung des Modells",
+      "Die Eingabeaufforderung bzw. Anweisung an ein KI-Modell",
+      "Die gespeicherten Gewichte",
+      "Die Fehlerquote des Modells"
+    ],
+    "r": 1,
+    "e": "Der Prompt ist die Eingabe an ein generatives Modell. Je präziser und vollständiger die Anweisung, desto brauchbarer das Ergebnis – das nennt man Prompting.",
+    "b": "ki",
+    "q_": "KI",
+    "cs": [
+      30,
+      55,
+      26,
+      27
+    ],
+    "ws": [
+      4,
+      7,
+      3,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.12
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 20,
+    "q": "Was ist ein Primärschlüssel?",
+    "a": [
+      "Ein Attribut, das jeden Datensatz eindeutig identifiziert",
+      "Ein Attribut, das auf eine andere Tabelle verweist",
+      "Der erste Datensatz einer Tabelle",
+      "Ein Index über alle Spalten"
+    ],
+    "r": 0,
+    "e": "Der Primärschlüssel (PK) identifiziert jeden Datensatz eindeutig und darf sich nie wiederholen. Ein Fremdschlüssel (FK) verweist dagegen auf den Primärschlüssel einer anderen Tabelle.",
+    "b": "datenbank",
+    "q_": "DBG",
+    "cs": [
+      57,
+      50,
+      33,
+      27
+    ],
+    "ws": [
+      7,
+      8,
+      5,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 1.11
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 484,
+    "q": "Was bedeutet „Please confirm the delivery date and the total price.“?",
+    "a": [
+      "Bitte bestätigen Sie das Lieferdatum und den Gesamtpreis.",
+      "Bitte ändern Sie den Preis.",
+      "Bitte stornieren Sie die Bestellung.",
+      "Bitte senden Sie die Ware zurück."
+    ],
+    "r": 0,
+    "e": "„confirm“ = bestätigen, „delivery date“ = Lieferdatum, „total price“ = Gesamtpreis. Typische Formulierung in Angebots- und Bestellmails.",
+    "b": "englisch",
+    "q_": "PK-02 · Englische Texte",
+    "cs": [
+      57,
+      27,
+      36,
+      33
+    ],
+    "ws": [
+      8,
+      5,
+      5,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.11
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 452,
+    "q": "Welche Elemente hat ein einfaches ER-Modell in der Chen-Notation?",
+    "a": [
+      "Rechtecke = Entitäten, Ellipsen = Attribute, Rauten = Beziehungen",
+      "Kreise = Tabellen, Linien = Spalten",
+      "Rechtecke = Programme, Ellipsen = Daten",
+      "Rauten = Server, Linien = Kabel"
+    ],
+    "r": 0,
+    "e": "Im ER-Modell (Chen) sind Rechtecke die Entitäten (Objekte), Ellipsen die Attribute und Rauten die Beziehungen zwischen Entitäten. Linien tragen die Kardinalitäten (1, n, m). Der Katalog fordert „einfache ER-Modelle“.",
+    "b": "datenbank",
+    "q_": "PK-04 · ERM",
+    "cs": [
+      65,
+      35,
+      39,
+      31
+    ],
+    "ws": [
+      9,
+      6,
+      6,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.1
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 46,
+    "q": "Was ist ein Brandabschnitt?",
+    "a": [
+      "Ein Netzsegment mit eigenem VLAN",
+      "Die Absicherung eines Servers mit einem Passwort",
+      "Ein Bereich, der Feuer und Rauch für eine bestimmte Zeit zurückhält",
+      "Der Teil eines Rechners, der heiß wird"
+    ],
+    "r": 2,
+    "e": "Brandabschnitte unterteilen Gebäude so, dass Feuer und Rauch für eine definierte Zeit (meist 30, 60 oder 90 Minuten) zurückgehalten werden. Sie schützen Serverräume und Fluchtwege.",
+    "b": "sicherheit",
+    "q_": "USV",
+    "cs": [
+      32,
+      48,
+      67,
+      38
+    ],
+    "ws": [
+      5,
+      7,
+      11,
+      7
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.09
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 258,
+    "q": "Welche Vertriebsform liegt vor, wenn ein Hersteller über Systemhäuser und Distributoren verkauft?",
+    "a": [
+      "Indirekter Vertrieb",
+      "Direkter Vertrieb",
+      "Pay-per-Use",
+      "Franchising ohne Handel"
+    ],
+    "r": 0,
+    "e": "Indirekter Vertrieb läuft über Zwischenhandel, Distributoren oder Partner. Direkter Vertrieb verkauft ohne Zwischenstufe an den Endkunden – etwa eigener Webshop oder Außendienst.",
+    "b": "angebot",
+    "q_": "PK2",
+    "cs": [
+      19,
+      17,
+      11,
+      23
+    ],
+    "ws": [
+      2,
+      2,
+      1,
+      3
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 1.09
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 249,
+    "q": "Was ist das Prinzip der minimalen Rechte (Least Privilege)?",
+    "a": [
+      "Jeder Nutzer erhält nur die Rechte, die er für seine Aufgabe unbedingt benötigt",
+      "Jeder bekommt Administratorrechte für Flexibilität",
+      "Alle Rechte werden zentral gespeichert",
+      "Rechte werden grundsätzlich abgeschafft"
+    ],
+    "r": 0,
+    "e": "Least Privilege begrenzt den Schaden bei Missbrauch oder Kompromittierung: Wer weniger darf, kann weniger anrichten. Ergänzend gilt das Need-to-know-Prinzip für den Zugriff auf Daten.",
+    "b": "sicherheit",
+    "q_": "PK6",
+    "cs": [
+      79,
+      50,
+      38,
+      39
+    ],
+    "ws": [
+      13,
+      5,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.08
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 335,
+    "q": "Welchen Nachteil hat Cloud-Nutzung gegenüber lokalen Systemen?",
+    "a": [
+      "Abhängigkeit von der Internetverbindung und vom Anbieter (Datenschutz, Ausfall)",
+      "Man braucht immer mehr eigene Hardware",
+      "Cloud ist grundsätzlich langsamer zu aktualisieren",
+      "Man kann nie von mehreren Geräten zugreifen"
+    ],
+    "r": 0,
+    "e": "Cloud bringt Flexibilität und geringe Anfangskosten, aber auch Risiken: Ausfall der Internetverbindung, Abhängigkeit vom Anbieter (Vendor Lock-in), Fragen des Datenschutzes und laufende Kosten.",
+    "b": "software",
+    "q_": "PK-03 · Cloudlösungen",
+    "cs": [
+      79,
+      38,
+      50,
+      43
+    ],
+    "ws": [
+      9,
+      6,
+      6,
+      7
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.08
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 379,
+    "q": "Was kennzeichnet eine symmetrische Verschlüsselung?",
+    "a": [
+      "Sender und Empfänger nutzen denselben geheimen Schlüssel",
+      "Es gibt einen öffentlichen und einen privaten Schlüssel",
+      "Der Schlüssel wird immer per E-Mail versendet",
+      "Sie arbeitet ohne Schlüssel"
+    ],
+    "r": 0,
+    "e": "Bei der symmetrischen Verschlüsselung teilen sich Sender und Empfänger EINEN geheimen Schlüssel. Vorteil: sehr schnell – gut für große Datenmengen. Nachteil: Der Schlüssel muss sicher ausgetauscht werden („Schlüsselverteilungsproblem“). Bekannt: AES.",
+    "b": "sicherheit",
+    "q_": "PK-06 · Verschlüsselung",
+    "cs": [
+      56,
+      55,
+      45,
+      27
+    ],
+    "ws": [
+      7,
+      8,
+      7,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 1.07
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 19,
+    "q": "Welche Kosten sind bei einem Darlehen, welche beim Leasing typisch?",
+    "a": [
+      "Darlehen: Monatsrate und Restwert; Leasing: Zinssatz und Tilgung",
+      "Beide werden nur über den Zinssatz abgerechnet",
+      "Beide haben nur eine Monatsrate",
+      "Darlehen: Zinssatz und Tilgung; Leasing: Monatsrate und Restwert"
+    ],
+    "r": 3,
+    "e": "Beim Darlehen zählen Darlehensbetrag, Zinssatz pro Jahr, Tilgungsbetrag, Laufzeit und Restschuld. Beim Leasing zählen Leasingbetrag, eventuelle Anzahlung, Monatsrate (Rückzahlung, Abwicklung, Service, Wartung), Laufzeit und Restwert.",
+    "b": "wirtschaft",
+    "q_": "FIN",
+    "cs": [
+      64,
+      46,
+      31,
+      64
+    ],
+    "ws": [
+      8,
+      7,
+      5,
+      8
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 1.06
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 5,
+    "q": "Was ist ein Meilenstein im Projekt?",
+    "a": [
+      "Eine Tätigkeit mit langer Dauer",
+      "Ein terminierbares Ereignis ohne eigene Dauer",
+      "Ein Puffer im Netzplan",
+      "Eine Rechnung über Teilzahlungen"
+    ],
+    "r": 1,
+    "e": "Ein Meilenstein markiert ein erreichtes Zwischenergebnis und dauert selbst nicht — er hat die Dauer null und wird zu einem festen Termin gesetzt.",
+    "b": "kundenauftrag",
+    "q_": "AP2 · Projektmanagement",
+    "cs": [
+      31,
+      45,
+      22,
+      32
+    ],
+    "ws": [
+      5,
+      6,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.05
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 202,
+    "q": "Was bedeutet „human in the loop\" beim Einsatz von KI?",
+    "a": [
+      "Ein Mensch prüft oder bestätigt die Entscheidung des KI-Systems",
+      "Der Mensch programmiert das Modell",
+      "Das Modell arbeitet völlig ohne Kontrolle",
+      "Der Mensch ersetzt die Hardware"
+    ],
+    "r": 0,
+    "e": "Bei „human in the loop\" bleibt der Mensch in der Entscheidungskette: Er prüft Ergebnisse und gibt sie frei. Das ist Pflicht bei kritischen Anwendungen (Personal, Medizin, Recht) und reduziert Fehler durch Halluzinationen oder Bias.",
+    "b": "ki",
+    "q_": "KI",
+    "cs": [
+      63,
+      34,
+      41,
+      31
+    ],
+    "ws": [
+      9,
+      5,
+      6,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.03
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 121,
+    "q": "Welcher Konsolenbefehl zeigt unter Windows die aktuelle IP-Konfiguration eines Rechners?",
+    "a": [
+      "ping",
+      "ipconfig",
+      "nslookup",
+      "chmod"
+    ],
+    "r": 1,
+    "e": "ipconfig zeigt IP-Adresse, Subnetzmaske und Gateway (unter Linux ifconfig bzw. ip). ping prüft die Erreichbarkeit, nslookup fragt den DNS-Server ab, traceroute bzw. tracert verfolgt den Weg zum Ziel – chmod setzt unter Linux Dateirechte.",
+    "b": "software",
+    "q_": "PK4",
+    "cs": [
+      4,
+      8,
+      8,
+      5
+    ],
+    "ws": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 1
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 122,
+    "q": "Sie wollen prüfen, ob ein Server überhaupt erreichbar ist. Welches Werkzeug nutzen Sie?",
+    "a": [
+      "nslookup",
+      "chmod",
+      "ping",
+      "mkdir"
+    ],
+    "r": 2,
+    "e": "ping sendet ICMP-Pakete und misst die Antwortzeit – ein fehlendes Echo spricht für fehlende Erreichbarkeit (oder eine blockierende Firewall). Für die Namensauflösung nimmt man nslookup, für den Weg durchs Netz tracert bzw. traceroute.",
+    "b": "software",
+    "q_": "PK4",
+    "cs": [
+      8,
+      5,
+      4,
+      5
+    ],
+    "ws": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 1
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 185,
+    "q": "Welche Architektur ist für Bildverarbeitung besonders geeignet?",
+    "a": [
+      "Long Short-Term Memory (LSTM)",
+      "Convolutional Neural Network (CNN)",
+      "Lineare Regression",
+      "Entscheidungsbaum"
+    ],
+    "r": 1,
+    "e": "CNNs (Convolutional Neural Networks) sind auf Bilder spezialisiert: Faltungsschichten erkennen lokale Muster wie Kanten und Formen. LSTMs bzw. RNNs eignen sich dagegen für Sequenzen wie Text und Zeitreihen.",
+    "b": "ki",
+    "q_": "DL",
+    "cs": [
+      29,
+      34,
+      18,
+      17
+    ],
+    "ws": [
+      4,
+      4,
+      2,
+      1
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 1
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 208,
+    "q": "Welche Aufgabe hat DHCP in einem Netzwerk?",
+    "a": [
+      "Es vergibt IP-Adressen und weitere Netzparameter automatisch",
+      "Es wandelt Domainnamen in IP-Adressen um",
+      "Es verschlüsselt den Datenverkehr",
+      "Es filtert unerwünschte Pakete"
+    ],
+    "r": 0,
+    "e": "DHCP (Dynamic Host Configuration Protocol) vergibt IP-Adresse, Subnetzmaske, Gateway und DNS automatisch. Der Ablauf heißt DORA: Discover → Offer → Request → Acknowledge. DNS macht dagegen Namensauflösung.",
+    "b": "netzwerk",
+    "q_": "NW",
+    "cs": [
+      60,
+      40,
+      33,
+      30
+    ],
+    "ws": [
+      7,
+      6,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 242,
+    "q": "Welche Angriffsart gibt sich als vertrauenswürdige Stelle aus, um Zugangsdaten zu erbeuten?",
+    "a": [
+      "Phishing",
+      "Sniffing",
+      "DDoS",
+      "Hashing"
+    ],
+    "r": 0,
+    "e": "Beim Phishing wird der Nutzer über gefälschte Mails oder Seiten zur Preisgabe von Zugangsdaten verleitet. Sniffing ist das Mitlesen des Datenverkehrs, DDoS zielt auf die Überlastung eines Dienstes; Hashing ist keine Angriffsart.",
+    "b": "sicherheit",
+    "q_": "PK6",
+    "cs": [
+      8,
+      8,
+      4,
+      7
+    ],
+    "ws": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 1
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 364,
+    "q": "Wie viele nutzbare Hosts hat ein Subnetz /29?",
+    "a": [
+      "6",
+      "8",
+      "14",
+      "30"
+    ],
+    "r": 0,
+    "e": "/29 heißt 32 − 29 = 3 Host-Bits, also 2³ = 8 Adressen. Abzüglich Netz- und Broadcastadresse bleiben 6 nutzbare Hosts. Typisch für Punkt-zu-Punkt-Verbindungen zwischen Routern verwendet man /30 (2 Hosts).",
+    "b": "netzwerk",
+    "q_": "PK-03 · Subnetting",
+    "cs": [
+      1,
+      1,
+      2,
+      2
+    ],
+    "ws": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 1
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 375,
+    "q": "Was versteht man unter „Vertraulichkeit“?",
+    "a": [
+      "Informationen sind nur für berechtigte Personen zugänglich",
+      "Informationen sind immer verfügbar",
+      "Informationen sind unverändert",
+      "Informationen sind steuerfrei"
+    ],
+    "r": 0,
+    "e": "Vertraulichkeit schützt vor unbefugter Kenntnisnahme: Verschlüsselung, Zugriffskontrolle, Rechtevergabe, Vertraulichkeitsstufen (z. B. „intern“, „streng vertraulich“).",
+    "b": "sicherheit",
+    "q_": "PK-06 · Schutzziele",
+    "cs": [
+      58,
+      34,
+      30,
+      29
+    ],
+    "ws": [
+      7,
+      4,
+      3,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 569,
+    "q": "Was bedeutet „We will provide a quotation within two business days.“?",
+    "a": [
+      "Wir senden innerhalb von zwei Werktagen ein Angebot.",
+      "Wir senden innerhalb von zwei Tagen eine Rechnung.",
+      "Wir liefern in zwei Tagen.",
+      "Wir stornieren die Bestellung."
+    ],
+    "r": 0,
+    "e": "„quotation“ = Angebot, „business days“ = Werktage. Wichtige Vokabeln für Auftragskommunikation: quotation (Angebot), invoice (Rechnung), delivery (Lieferung).",
+    "b": "englisch",
+    "q_": "PK-02 · Englische Texte",
+    "cs": [
+      52,
+      50,
+      26,
+      30
+    ],
+    "ws": [
+      8,
+      8,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 1
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 59,
+    "q": "Welche Kündigungsfristen gelten für die ordentliche Kündigung nach dem BGB in der Grundform?",
+    "a": [
+      "4 Wochen zum 15. oder zum Monatsende",
+      "2 Wochen jederzeit",
+      "6 Monate zum Jahresende",
+      "Es gibt keine Frist"
+    ],
+    "r": 0,
+    "e": "Die gesetzliche ordentliche Kündigungsfrist für Arbeitnehmer beträgt 4 Wochen zum 15. oder zum Monatsende. Für Arbeitgeber staffelt sie sich nach Betriebszugehörigkeit.",
+    "b": "wiso",
+    "q_": "AP2 · Arbeitsrecht",
+    "cs": [
+      36,
+      18,
+      23,
+      19
+    ],
+    "ws": [
+      7,
+      3,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 172,
+    "q": "Welche ethische Herausforderung entsteht, wenn ein KI-Modell mit verzerrten Daten trainiert wird?",
+    "a": [
+      "Das Modell wird zwangsläufig langsamer",
+      "Algorithmische Verzerrung (Bias) kann zu unfairen Entscheidungen führen",
+      "Das Modell vergisst die Trainingsdaten",
+      "Die Genauigkeit sinkt immer auf null"
+    ],
+    "r": 1,
+    "e": "Ein Modell übernimmt die Vorurteile seiner Trainingsdaten. Gegenmaßnahmen sind repräsentative Daten, Prüfung auf Bias und Erklärbarkeit der Entscheidungen. Ein KI-Modell ist nicht automatisch objektiv.",
+    "b": "ki",
+    "q_": "KI",
+    "cs": [
+      38,
+      71,
+      38,
+      36
+    ],
+    "ws": [
+      5,
+      8,
+      5,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.97
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 16,
+    "q": "Wozu dient ein VLAN in einem Firmennetz?",
+    "a": [
+      "Es trennt logische Netze auf gemeinsamer physischer Infrastruktur",
+      "Es erhöht die Bandbreite jeder Leitung",
+      "Es ersetzt den Router vollständig",
+      "Es verschlüsselt automatisch alle Daten"
+    ],
+    "r": 0,
+    "e": "Ein VLAN trennt Geräte logisch, auch wenn sie an denselben Switches hängen. Das verbessert Sicherheit, Übersicht und Lastverteilung, ohne neue Kabel zu ziehen.",
+    "b": "systemloesung",
+    "q_": "AP2 · Netzwerk",
+    "cs": [
+      65,
+      38,
+      33,
+      39
+    ],
+    "ws": [
+      8,
+      6,
+      5,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.97
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 482,
+    "q": "Was bedeutet „The server is down due to a hardware failure.“?",
+    "a": [
+      "Der Server ist wegen eines Hardwarefehlers ausgefallen.",
+      "Der Server wird gerade installiert.",
+      "Der Server ist aktualisiert worden.",
+      "Der Server läuft fehlerfrei."
+    ],
+    "r": 0,
+    "e": "„to be down“ = ausgefallen sein, „due to“ = wegen, „hardware failure“ = Hardwarefehler. Wichtige Vokabeln für Störungsmeldungen.",
+    "b": "englisch",
+    "q_": "PK-02 · Englische Texte",
+    "cs": [
+      55,
+      35,
+      35,
+      28
+    ],
+    "ws": [
+      7,
+      5,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.96
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 169,
+    "q": "Warum benötigt Deep Learning häufig eine GPU statt nur einer CPU?",
+    "a": [
+      "Weil GPUs einen größeren Festplattenspeicher haben",
+      "Weil dieselben Matrixoperationen für viele Datenpunkte parallel anfallen",
+      "Weil neuronale Netze nur auf GPUs laufen können",
+      "Weil GPUs weniger Energie verbrauchen"
+    ],
+    "r": 1,
+    "e": "Das Training eines tiefen Netzes besteht aus sehr vielen Matrixmultiplikationen, die sich gut parallelisieren lassen. GPUs führen Tausende Rechenoperationen gleichzeitig aus und sind dadurch deutlich schneller als CPUs.",
+    "b": "ki",
+    "q_": "DL",
+    "cs": [
+      50,
+      72,
+      47,
+      37
+    ],
+    "ws": [
+      6,
+      8,
+      8,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.95
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 18,
+    "q": "Woran erkennt man eine Eigenkapitalfinanzierung?",
+    "a": [
+      "Befristete Überlassung ohne Mitspracherecht",
+      "Feste Zins- und Tilgungszahlungen",
+      "Dauerhafte Überlassung mit Mitspracherecht und Gewinnbeteiligung",
+      "Der Geldgeber erhält keinen Anteil am Gewinn"
+    ],
+    "r": 2,
+    "e": "Eigenkapital bleibt dauerhaft im Unternehmen, der Geldgeber erhält Mitspracherechte und Gewinnbeteiligung und haftet im Insolvenzfall meist mit der ganzen Einlage. Fremdkapital ist befristet und ohne Mitspracherecht.",
+    "b": "wirtschaft",
+    "q_": "FIN",
+    "cs": [
+      43,
+      33,
+      64,
+      44
+    ],
+    "ws": [
+      4,
+      4,
+      6,
+      7
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.94
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 47,
+    "q": "Was ist der kritische Pfad im Netzplan?",
+    "a": [
+      "Der Weg mit den meisten Vorgängen",
+      "Der Weg mit den meisten Pufferzeiten",
+      "Der Weg mit den geringsten Kosten",
+      "Der längste Weg durch den Netzplan, der die Gesamtdauer bestimmt"
+    ],
+    "r": 3,
+    "e": "Der kritische Pfad ist der längste Weg von Start bis Ende. Alle Vorgänge darauf haben keine freie Pufferzeit (FAZ = FEZ, SAZ = SEZ) – jede Verzögerung verzögert das ganze Projekt.",
+    "b": "pm",
+    "q_": "PM",
+    "cs": [
+      33,
+      36,
+      33,
+      64
+    ],
+    "ws": [
+      6,
+      6,
+      6,
+      10
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.94
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 374,
+    "q": "Welche drei Schutzziele bilden das „CIA-Trio“ der Informationssicherheit?",
+    "a": [
+      "Vertraulichkeit, Integrität, Verfügbarkeit",
+      "Kosten, Image, Ausfall",
+      "Authentizität, Anonymität, Autorisierung",
+      "Sicherheit, Schnelligkeit, Stabilität"
+    ],
+    "r": 0,
+    "e": "Der offizielle Prüfungskatalog nennt für AP1 drei Schutzziele: Vertraulichkeit (nur Berechtigte lesen), Integrität (Daten sind unverändert/korrekt) und Verfügbarkeit (Systeme sind nutzbar). Authentizität wird oft als viertes Ziel ergänzt, ist aber kein AP1-Pflichtstoff.",
+    "b": "sicherheit",
+    "q_": "PK-06 · Schutzziele",
+    "cs": [
+      42,
+      22,
+      40,
+      37
+    ],
+    "ws": [
+      3,
+      3,
+      3,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.91
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 232,
+    "q": "Welche drei Klassen von Schutzmaßnahmen unterscheidet die IT-Sicherheit?",
+    "a": [
+      "Technische, organisatorische und personelle Maßnahmen",
+      "Software, Hardware und Netzwerk",
+      "Kurzfristige, mittelfristige und langfristige",
+      "Interne, externe und hybride"
+    ],
+    "r": 0,
+    "e": "Technische Maßnahmen (Virenschutz, Firewall, Verschlüsselung), organisatorische Maßnahmen (IT-Sicherheitsbeauftragter, Richtlinien, Passwort-Policy) und personelle Maßnahmen (Sicherheitsbewusstsein der Mitarbeiter).",
+    "b": "sicherheit",
+    "q_": "PK6",
+    "cs": [
+      53,
+      31,
+      45,
+      28
+    ],
+    "ws": [
+      5,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.89
+    }
+  }
+]

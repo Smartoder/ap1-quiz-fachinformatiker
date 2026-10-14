@@ -1,0 +1,882 @@
+[
+  {
+    "sammlung": "QUIZ",
+    "i": 596,
+    "a": [
+      "Bei umfangreicher Überwachung oder sensibler Verarbeitung besteht DSB-Pflicht",
+      "Jeder Einzelunternehmer muss unabhängig von der Größe einen DSB bestellen",
+      "Kleine Betriebe mit wenig Daten sind von der DSGVO vollständig ausgenommen",
+      "Die Pflicht zur Bestellung gilt ausschließlich in Kliniken und Arztpraxen"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 44,
+    "a": [
+      "Spätestens 30 Tage nach Rechnungszugang in Verzug; Mahnung dann entbehrlich",
+      "Bereits am Tag der Rechnungsstellung, noch vor Zugang der Rechnung beim Kunden",
+      "Erst nach schriftlicher Mahnung und einer weiteren Wartefrist von 60 Tagen",
+      "Erst wenn die Rechnungssumme die gesetzliche Kleinbetragsgrenze überschreitet"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 598,
+    "a": [
+      "Auftakttermin, an dem Ziele, Umfang, Rollen und Vorgehen abgestimmt werden",
+      "Formeller Abschlussbericht mit Übergabe aller Projektdokumente an den AG",
+      "Rechnungsstellung nach Erreichen des ersten Projektmeilensteins",
+      "Abschlussprüfung der Software durch den internen Qualitätsbeauftragten"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 214,
+    "a": [
+      "traceroute unter Linux bzw. tracert unter Windows für Hop-Analyse",
+      "ping zur Prüfung der Erreichbarkeit ohne Anzeige der Zwischenstationen",
+      "nslookup zur Abfrage von DNS-Einträgen und Namensauflösung",
+      "chmod zum Setzen von Datei- und Verzeichnisrechten im Dateisystem"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 585,
+    "a": [
+      "Erfassung installierter Software inkl. Version und Standort für Lizenzen",
+      "Fahrzeugliste der Firma mit Kennzeichen und zugeordneten Fahrern",
+      "Sicherungskopie der Serverdaten auf externem Wechselmedium",
+      "Übersicht der Patchfelder, Dosen und Kabelwege im Rechenzentrum"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 225,
+    "a": [
+      "Logisch getrenntes Teilnetz auf gemeinsamer Hardware, z. B. per VLAN",
+      "Spezielles Kupferkabel mit höherer Übertragungsrate als Cat 6A",
+      "Drahtloses Gastnetz ohne Authentifizierung für Besucher im Büro",
+      "Einzelne Firewall-Regel zum Blockieren eines TCP-Ports im Gateway"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 445,
+    "a": [
+      "Rechtsgrundlage der DSGVO: Verarbeitung nach Abwägung ohne Einwilligung",
+      "Verbindliche Klausel in jedem Kaufvertrag über Liefer- und Zahlungsfristen",
+      "Steuerliche Einstufung von Einnahmen in der Gewinn- und Verlustrechnung",
+      "Mängelrüge des Käufers wegen nicht vertragsgemäß gelieferter Ware"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 447,
+    "a": [
+      "Zusatzkosten beim Wareneinkauf wie Fracht, Versicherung und Verpackung",
+      "Handelsspanne zwischen Einstandspreis und verkauftem Endkundenpreis",
+      "Umsatzsteuerbetrag, der auf den Nettowarenwert der Rechnung entfällt",
+      "Nachlass vom Lieferanten auf den Listenpreis vor Skontoabzug"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 593,
+    "a": [
+      "Verbindliches Regelwerk zu Passwörtern, Daten und Meldewege im Betrieb",
+      "Physisches Verbindungskabel zwischen Switch und Arbeitsplatzdose",
+      "Regelmäßige Sicherung der Anwendungsdaten auf Bandlaufwerk",
+      "Kaufvertrag über die Nutzungsrechte an einer Softwarelizenz"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 583,
+    "a": [
+      "Aktualisierte Treiberversion mit Fehlerbehebungen und neuer Kompatibilität",
+      "Komplettes Upgrade des Betriebssystems auf die nächste Hauptversion",
+      "Protokoll zur adressierten Datenübertragung im lokalen Netzwerk",
+      "Vertragliche Regelung zur zeitlich begrenzten Nutzung von Software"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 623,
+    "a": [
+      "Gezielte Anfrage an die DB in einer Abfragesprache wie SQL formuliert",
+      "Kopie der Datenbank auf einem zweiten Server für Ausfallsicherheit",
+      "Diagnosebefehl zur Prüfung der Erreichbarkeit eines Netzwerkhosts",
+      "Betriebssystemkernel, der Hardware-Ressourcen für Prozesse verwaltet"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 607,
+    "a": [
+      "Nicht oder nicht ordnungsgemäße Erfüllung, z. B. Verzug oder Mangel",
+      "Rechtswirksamer Abschluss eines Kauf- oder Werkvertrags zwischen Parteien",
+      "Forderung des Verkäufers nach erbrachter Leistung mit Zahlungsziel",
+      "Urheberrechtliche Lizenz zur Vervielfältigung geschützter Werke"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 564,
+    "a": [
+      "Verteilung der Anschaffungskosten eines Wirtschaftsguts über die Nutzungsdauer",
+      "Direkte Zahlung an das Finanzamt für die laufende Umsatzsteuerperiode",
+      "Preisnachlass des Lieferanten bei Mengen- oder Treuerabattvereinbarung",
+      "Geldbuße wegen Verstoßes gegen gesetzliche Vorschriften im Betrieb"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 574,
+    "a": [
+      "Sprachkonstrukt zur Ablaufsteuerung, z. B. Verzweigung und Schleife",
+      "Mechanisches Speichermedium zur dauerhaften Ablage von Dateien",
+      "Systemsoftware zur Verwaltung von Prozessen, Speicher und Geräten",
+      "Verbindungsleitung zwischen Patchfeld und Netzwerkdose am Arbeitsplatz"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 550,
+    "a": [
+      "Mit Rechtsgrundlage und Wahrung der Betroffenenrechte an Dritte übermitteln",
+      "An externe Dienstleister, wenn die Geschäftsführung dies mündlich wünscht",
+      "Per unverschlüsselter E-Mail an beliebige Empfänger ohne Dokumentation",
+      "Wenn der Empfänger das gleiche Passwort wie der Absender kennt"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 581,
+    "a": [
+      "Netzwerkspeicher (Network Attached Storage) für zentrale Dateiablage",
+      "Twisted-Pair-Kabel der Kategorie 6A für Gigabit-Ethernet am Arbeitsplatz",
+      "Gerät zur Weiterleitung von IP-Paketen zwischen verschiedenen Netzsegmenten",
+      "Verfahren zur symmetrischen Verschlüsselung großer Datenmengen"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 545,
+    "a": [
+      "Fester Kabelabschluss am Arbeitsplatz, verbunden mit dem Patchfeld",
+      "Funkaccess-Point zur Bereitstellung eines drahtlosen Netzwerks im Büro",
+      "Rechner mit Diensten und Anwendungen für viele Clients im Netz",
+      "Wiederaufladbare Energiequelle für mobile Geräte ohne Netzanschluss"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 621,
+    "a": [
+      "Beide Entitäten sind eindeutig zugeordnet, z. B. aus Datenschutzgründen",
+      "Ein Datensatz kann beliebig viele Partnerdatensätze in der Tabelle haben",
+      "Viele Datensätze einer Tabelle verweisen auf viele Partner in einer n:1-Beziehung",
+      "Tabellen ohne Fremdschlüssel und ohne referenzielle Integrität im Modell"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 612,
+    "a": [
+      "Verkaufspreis abzüglich variabler Kosten zur Deckung der Fixkosten",
+      "Gesamterlös aus allen Verkäufen einer Periode vor Abzug der Kosten",
+      "Jahresüberschuss nach Abzug aller Steuern und Sonderposten",
+      "Summe aus Anschaffungs-, Personal- und Betriebskosten eines Projekts"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 388,
+    "a": [
+      "ISMS: Regelwerk zur dauerhaften Planung, Umsetzung und Prüfung der IT-Sicherheit",
+      "Einzelnes Antivirenprogramm auf den Arbeitsplatzrechnern der Mitarbeiter",
+      "Signaturbasierte Erkennung von Schadcode beim E-Mail-Eingang im Gateway",
+      "Physische Komponente auf dem Mainboard zur Spannungsversorgung der CPU"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 446,
+    "a": [
+      "Leistungsbeschreibung, Preise, Mengen und Konditionen wie Liefer- und Zahlungsziel",
+      "Alleinig die Firmenbezeichnung und Adresse des anbietenden Unternehmens",
+      "Rechnungsentwurf mit bereits festgesetztem Rechnungsdatum und Steuersatz",
+      "Lieferadresse des Kunden ohne Angabe zu Leistung, Preis oder Fristen"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 608,
+    "a": [
+      "Vorformulierte Vertragsbedingungen des Verwenders für eine Vielzahl von Verträgen",
+      "Individuell ausgehandelter Einzelvertrag mit genau einem Geschäftspartner",
+      "Zahlungsaufforderung nach Lieferung und Leistungserbringung gegenüber dem Kunden",
+      "Unverbindliches Preisangebot mit kurzer Gültigkeitsfrist von wenigen Tagen"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 287,
+    "a": [
+      "Eigene Erhebung und Auswertung vorhandener Daten, bezogen auf die Zielgruppe",
+      "Schätzung des Bedarfs ohne Rückfrage bei Nutzern oder Auswertung von Daten",
+      "Festlegung des Angebots allein anhand des niedrigsten Marktpreises",
+      "Überlassung der Bedarfsermittlung vollständig an den Kunden ohne Beratung"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 381,
+    "a": [
+      "Feste Prüfsumme über Daten; jede Änderung führt zu einem anderen Wert",
+      "Verschlüsselte Nachricht, die mit dem privaten Schlüssel entschlüsselt wird",
+      "Geheimnis zur Anmeldung an einem Dienst, oft zusammen mit Benutzennamen",
+      "Digitales Dokument zur Bestätigung der Identität eines Zertifikatsinhabers"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 417,
+    "a": [
+      "Interessierte und betroffene Parteien identifizieren und Einfluss bewerten",
+      "Ausschließlich die zahlenden Endkunden ohne interne oder externe Partner",
+      "Lediglich die Geschäftsführung als alleinige Entscheidungsträger im Projekt",
+      "Ausschließlich die IT-Abteilung als technische Umsetzer ohne Fachabteilungen"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 624,
+    "a": [
+      "Merkmal einer Entität, in relationalen Tabellen als Spalte abgebildet",
+      "Relation im Datenbankschema mit mehreren Spalten und Datensätzen",
+      "Einzelner Datensatz in einer Tabelle mit Werten für alle Spalten",
+      "Ausführbare Anwendung, die auf Daten in der Datenbank zugreift"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 421,
+    "a": [
+      "Statische Tests (Review, Schreibtischtest) und dynamische Tests bei Ausführung",
+      "Abschließende Prüfung unmittelbar vor Produktivnahme ohne Vortests",
+      "Belastungstest der Infrastruktur unter hoher gleichzeitiger Nutzerzahl",
+      "Prüfung auf Schwachstellen und Angriffsvektoren in der Anwendung"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 603,
+    "a": [
+      "Regressionstest: zuvor fehlgeschlagener Testfall muss nach Fix bestehen",
+      "Mündliche Bestätigung des Entwicklers ohne dokumentiertes Testprotokoll",
+      "Löschen der fehlerhaften Quelldateien aus dem Versionsverwaltungssystem",
+      "Neuinstallation der Anwendung auf dem Client ohne erneute Funktionsprüfung"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 553,
+    "a": [
+      "Project Charter: offizieller Projektstart mit Ziel, Umfang, Budget und Rollen",
+      "Angebot an den Kunden mit Preis, Leistung und Bindefrist vor Vertragsabschluss",
+      "Rechnung über bereits erbrachte Leistungen mit Zahlungsziel und Skonto",
+      "Protokoll über durchgeführte Tests mit Ergebnissen und offenen Mängeln"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 277,
+    "a": [
+      "Gegenstand, Beteiligte, Ort/Datum, Zustand des Werks und festgestellte Mängel",
+      "Verkaufspreis der Leistung und vereinbarte Zahlungsmodalitäten im Vertrag",
+      "Unterschrift des Kunden ohne weitere Angaben zu Mängeln oder Prüfgegenstand",
+      "Seriennummer des gelieferten Geräts ohne Protokollierung des Prüfergebnisses"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 14,
+    "a": [
+      "Datum und Uhrzeit der Abnahme ohne Angabe zu Mängeln oder Beteiligten",
+      "Prüfgegenstand, Mängel mit Fristen, Abnahmeergebnis und Unterschriften",
+      "Vollständige technische Dokumentation aller installierten Softwarekomponenten",
+      "Namen der anwesenden Personen ohne Festhalten von Mängeln oder Ergebnis"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 275,
+    "a": [
+      "In Vertretung: Unterzeichnung durch eine Person mit Vertretungsbefugnis",
+      "In Verzug: Hinweis auf verspätete Zahlung gegenüber dem Geschäftspartner",
+      "In Vollmacht ohne Rechte: reine Empfangsvollmacht ohne Zeichnungsrecht",
+      "Interne Verrechnung: Buchung zwischen Kostenstellen innerhalb des Konzerns"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 397,
+    "a": [
+      "Z. B. Einwilligung, Vertrag, rechtliche Verpflichtung, berechtigtes Interesse",
+      "Bei jeder Verarbeitung ist stets eine ausdrückliche Einwilligung erforderlich",
+      "Personenbezogene Daten dürfen ohne besondere Voraussetzung verarbeitet werden",
+      "Allein das Bundesdatenschutzgesetz gilt, die DSGVO ist für Betriebe irrelevant"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 573,
+    "a": [
+      "Geordnete Sammlung gleichartiger Elemente mit Zugriff über einen Index",
+      "Aktives Netzwerkgerät zur Weiterleitung von Ethernet-Frames auf Layer 2",
+      "Abgabe an das Finanzamt, z. B. Umsatz- oder Lohnsteuer im Monatsrhythmus",
+      "Organisatorische Maßnahme zur Erhöhung der Informationssicherheit im Betrieb"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 311,
+    "a": [
+      "Plan, wie bei Problemen auf den vorherigen Systemzustand zurückgerollt wird",
+      "Konzept für den strukturierten Datentransfer zwischen zwei Standorten",
+      "Abrechnungsunterlage mit Positionen, Preisen und Zahlungsbedingungen",
+      "Neues Anmeldegeheimnis für den Administrator nach einem Sicherheitsvorfall"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 440,
+    "a": [
+      "Verbindliche Servicequalität: Verfügbarkeit, Reaktionszeiten, ggf. Sanktionen",
+      "Festgelegter Kaufpreis für gelieferte Hardware ohne Servicezusagen",
+      "Anzahl der Lizenzen pro Produkt in der Software-Asset-Verwaltung",
+      "Regelung zum Schutz geistigen Eigentums an Texten, Bildern und Software"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 625,
+    "a": [
+      "Zusammenfassung prüft Verständnis und vermeidet Missverständnisse im Gespräch",
+      "Längeres Schweigen, um dem Kunden Zeit für eigene Überlegungen zu geben",
+      "Eindruck durch Fachbegriffe ohne Bezug zum konkreten Kundenbedarf",
+      "Formale Pflicht aus dem Handelsgesetzbuch bei jedem Erstkontakt"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 382,
+    "a": [
+      "Bestätigt Authentizität und Integrität: Urheber und Unverändertheit des Dokuments",
+      "Verschlüsselt die gesamte Festplatte des Rechners mit einem Volume-Key",
+      "Entfernt Schadsoftware aus E-Mail-Anhängen beim Durchlauf des Gateways",
+      "Erhöht die Übertragungsgeschwindigkeit im Netz durch Kompression der Pakete"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 527,
+    "a": [
+      "Vergleich geplanter und tatsächlicher Kosten zur Bewertung der Wirtschaftlichkeit",
+      "Erhöhung des Rechnungsbetrags nachträglich ohne Zustimmung des Auftraggebers",
+      "Ersetzt die Schlussrechnung vollständig, wenn die Vorkalkulation abweicht",
+      "Entfällt bei kleinen Projekten, weil die geplanten Werte stets ausreichend sind"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 595,
+    "a": [
+      "Übersicht der Verarbeitungen mit Zweck, Rechtsgrundlage, Empfängern und Fristen",
+      "Inventarliste aller Arbeitsplatz-PCs mit Seriennummer und Standort",
+      "Dokumentation der VLAN-Struktur und IP-Adressierung im Unternehmensnetz",
+      "Chronologische Liste ausgestellter Rechnungen mit Betrag und Zahlungsstatus"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 475,
+    "a": [
+      "Fernzugriff auf einen entfernten Rechner zur Steuerung über das Netzwerk",
+      "Lokale Sicherung von Benutzerdaten auf USB-Stick am Arbeitsplatz",
+      "Ausgabe von Dokumenten auf einem Netzwerkdrucker im Bürobereich",
+      "Aufruf der Firmware-Einstellungen beim Start des Rechners vor dem OS-Boot"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 337,
+    "a": [
+      "Verbindet Objektdateien und Bibliotheken zu einer ausführbaren Programmdatei",
+      "Sortiert Dateien in Ordnern nach Datum, Typ oder alphabetischer Reihenfolge",
+      "Erstellt und bearbeitet HTML-Seiten für die Darstellung im Webbrowser",
+      "Prüft laufende Prozesse und Dateien auf bekannte Schadsoftware-Signaturen"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 412,
+    "a": [
+      "Sprints mit Rollen (PO, SM), Daily, Review und Retrospektive in festem Takt",
+      "Eine ausführliche Anforderungsphase ohne lieferbare Zwischenergebnisse",
+      "Flexible Arbeit ohne Zeitrahmen und ohne regelmäßige Abstimmung im Team",
+      "Ausführliche Projektdokumentation ohne Abstimmungstermine mit Stakeholdern"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 425,
+    "a": [
+      "Systematische Analyse möglicher Fehler, ihrer Ursachen und Auswirkungen",
+      "Programm zum Erkennen von Viren und Trojanern auf dem Dateisystem",
+      "Schriftliche Aufzeichnung durchgeführter Tests mit Soll- und Ist-Ergebnissen",
+      "Regeln für den Datenaustausch zwischen Geräten in einem Netzwerk"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 404,
+    "a": [
+      "Einmaligkeit, klares Ziel, begrenzte Ressourcen und eigene Organisation",
+      "Wiederkehrende Tätigkeit nach festem Standardablauf in der Linie",
+      "Offenes Vorhaben ohne verbindlichen Endtermin und ohne Budgetrahmen",
+      "Mehrere gleichrangige Ziele ohne Priorisierung und ohne Projektauftrag"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 276,
+    "a": [
+      "Prokura nach HGB §§ 48 ff. als weitreichendste handelsrechtliche Vollmacht",
+      "Handlungsvollmacht für bestimmte Geschäfte innerhalb erteilter Grenzen",
+      "i.A. (im Auftrag): Unterzeichnung mit eingeschränkter Vertretungsmacht",
+      "Sämtliche Vollmachtsarten haben im Handelsrecht den gleichen Umfang"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 393,
+    "a": [
+      "Angaben, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen",
+      "Ausschließlich Name und postalische Adresse natürlicher Personen im CRM-System",
+      "Daten, die ausschließlich in Cloud-Diensten außerhalb der EU gespeichert sind",
+      "Geschäftsdaten juristischer Personen wie Firmenname, HRB-Nr. und USt-IdNr."
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 543,
+    "a": [
+      "Trennt LAN und Internet, dient als Standard-Gateway für Clients",
+      "Verteilt Druckaufträge von Workstations an mehrere Netzwerkdrucker",
+      "Verschlüsselt lokale Festplatteninhalte mit Full-Disk-Encryption",
+      "Speichert und verwaltet strukturierte Daten in Tabellen mit SQL-Zugriff"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 549,
+    "a": [
+      "Bei Auftragsverarbeitung personenbezogener Daten durch externe Dienstleister",
+      "Bei jedem Kauf von Hardware ohne Bezug zu personenbezogenen Daten",
+      "Ausschließlich bei Verträgen mit Behörden und öffentlichen Auftraggebern",
+      "Ausschließlich bei Datenübermittlung innerhalb der Europäischen Union"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 601,
+    "a": [
+      "Prüfung durch den Auftraggeber, ob die Lösung die vereinbarten Anforderungen erfüllt",
+      "Funktionstest der Hardwarekomponenten ohne Bezug zum vereinbarten Pflichtenheft",
+      "Messung der Netzwerkperformance zwischen Client und Server im lokalen LAN",
+      "Interner Test des Entwicklungsteams vor Übergabe an den Auftraggeber"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 609,
+    "a": [
+      "Formfreier Vertrag möglich, wenn Angebot und Annahme übereinstimmen",
+      "Mündliche Vereinbarungen sind im BGB grundsätzlich unwirksam",
+      "Kaufverträge zwischen Unternehmen bedürfen stets der Schriftform",
+      "Ein Vertrag entsteht erst mit Ausstellung und Versand der Rechnung"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 448,
+    "a": [
+      "Preisnachlass bei Zahlung innerhalb einer vereinbarten Skontofrist",
+      "Vertragsstrafe, die bei verspäteter Zahlung zusätzlich fällig wird",
+      "Steuerbetrag auf den Nettowarenwert gemäß Umsatzsteuergesetz",
+      "Unverbindlicher Listenpreis des Herstellers vor Rabatt und Skonto"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 283,
+    "a": [
+      "Angst vor Kompetenzverlust, Wissenslücken und negative persönliche Erfahrungen",
+      "Faulheit der Mitarbeiter als alleinige und ausreichende Erklärung im Team",
+      "Technische Defekte an Hard- und Software als einzige Ursache der Ablehnung",
+      "Hohe Projektkosten als alleiniger Grund für Ablehnung von Veränderungen"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 540,
+    "a": [
+      "Wiederherstellbares Abbild eines Systems für Deployment oder Recovery",
+      "Grafikdatei im JPEG-Format für Präsentationen und Marketingmaterial",
+      "Netzwerkkabel zwischen Patchfeld und Dose am Arbeitsplatz",
+      "Softwarepaket zur Ansteuerung eines angeschlossenen Druckers"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 339,
+    "a": [
+      "Prozedural: Funktionen und Abläufe; OOP: Klassen/Objekte mit Daten und Methoden",
+      "Prozedurale Programme laufen auf jeder Hardware grundsätzlich schneller",
+      "Objektorientierte Sprachen kennen keine Unterprogramme oder Funktionen",
+      "Beide Paradigmen sind in Syntax und Struktur praktisch identisch"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 385,
+    "a": [
+      "Technisch: Systeme; organisatorisch: Regeln/Abläufe; personell: Schulung/Sensibilisierung",
+      "Technische, organisatorische und personelle Maßnahmen sind synonym zu verstehen",
+      "Personelle Maßnahmen betreffen ausschließlich den Einsatz neuer Hardware",
+      "Organisatorische Maßnahmen beschränken sich auf Installation von Software"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 485,
+    "a": [
+      "Klarer Betreff, höfliche Anrede, verständlicher Text, konkrete Angaben, Grußformel",
+      "Möglichst viele interne Abkürzungen ohne Erklärung für den Empfänger",
+      "Reine Stichwortliste ohne Anrede, Struktur oder Kontaktdaten des Absenders",
+      "Kurze Nachricht ohne Absenderangaben und ohne schriftliche Grußformel"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 626,
+    "a": [
+      "Offene Haltung, Blickkontakt und angemessene Distanz stärken die Beziehungsebene",
+      "Körpersprache spielt in der Beratung gegenüber dem Inhalt keine Rolle",
+      "Ausschließlich die gewählten Worte bestimmen die Wirkung der Kommunikation",
+      "Schriftliche E-Mail-Kommunikation ersetzt nonverbale Signale vollständig"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 498,
+    "a": [
+      "LWL: Licht, EMV-unempfindlich, teurer; Kupfer: günstiger, im LAN üblich",
+      "Lichtwellenleiter erreichen grundsätzlich geringere Datenraten als Kupfer",
+      "Kupferkabel übertragen Daten als moduliertes Licht im Glaskern",
+      "Beide Medien unterscheiden sich in der Praxis nicht in Einsatz und Kosten"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 53,
+    "a": [
+      "Grundsätzlich 8 Stunden werktäglich, verlängerbar auf 10 Stunden mit Ausgleich",
+      "Höchstens 6 Stunden täglich ohne Ausnahme und ohne Verlängerungsmöglichkeit",
+      "Keine gesetzliche Obergrenze, solange der Arbeitgeber dem ausdrücklich zustimmt",
+      "Bis zu 12 Stunden täglich dauerhaft ohne Ausgleich in Freizeit oder Ruhe"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 599,
+    "a": [
+      "Geregelter Umgang mit Änderungen: Antrag, Bewertung, Freigabe, Planaktualisierung",
+      "Löschen aller Change-Anträge aus dem Ticketsystem ohne fachliche Bewertung",
+      "Planung der Urlaubszeiten der Projektmitarbeiter im Ressourcenkalender",
+      "Erstellung und Versand der Projektabrechnung an den internen Auftraggeber"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 529,
+    "a": [
+      "Ca. 20–25 % Leistungsreserve über der Summenlast der angeschlossenen Verbraucher",
+      "Preisnachlass des Herstellers beim Kauf der USV-Anlage im Sonderangebot",
+      "Zusätzlicher Akku, der erst bei Netzausfall in die Versorgung schaltet",
+      "Herstellergarantie auf die Batteriezellen über die vereinbarte Laufzeit"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 508,
+    "a": [
+      "Abweichung zwischen geplantem Soll-Wert und tatsächlichem Ist-Wert",
+      "Programmfehler, der durch fehlerhafte Syntax im Quellcode verursacht wird",
+      "Art der Steuer, die auf den Umsatz eines Unternehmens erhoben wird",
+      "Addition sämtlicher Kostenarten eines Projekts ohne Soll-Ist-Vergleich"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 580,
+    "a": [
+      "ECC-RAM erkennt und korrigiert Bitfehler, reduziert Abstürze und Datenfehler",
+      "ECC-Speicher ist gegenüber Standard-RAM in der Anschaffung günstiger",
+      "ECC erhöht die Taktfrequenz und damit die Rechenleistung des Prozessors",
+      "ECC-Speicher reduziert den Stromverbrauch des Servers im Dauerbetrieb"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 239,
+    "a": [
+      "By Design: Sicherheit von Anfang an; By Default: sichere Grundeinstellungen",
+      "Beide Begriffe beschreiben identische Maßnahmen in der IT-Sicherheit",
+      "By Default bedeutet, alle Sicherheitsfunktionen im System zu deaktivieren",
+      "By Design ersetzt regelmäßige Datensicherung und Wiederherstellungskonzepte"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 489,
+    "a": [
+      "RAM verliert ohne Strom den Inhalt; SSD/HDD/ROM behalten Daten dauerhaft",
+      "Sowohl RAM als auch Festplatten verlieren nach Abschalten alle gespeicherten Daten",
+      "Arbeitsspeicher behält gespeicherte Programme auch ohne Stromversorgung",
+      "Solid-State-Laufwerke gelten als flüchtig wie der Hauptspeicher des PCs"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 503,
+    "a": [
+      "Nutzen: Vorteil einer Alternative; Nutzwert: gewichteter Vergleich mehrerer Kriterien",
+      "Nutzwert wird stets ausschließlich in Euro als monetärer Betrag ausgedrückt",
+      "Nutzen entspricht der Summe der Anschaffungspreise aller verglichenen Angebote",
+      "Nutzen und Nutzwert sind in der Angebotsbewertung synonym zu verwenden"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 416,
+    "a": [
+      "Überlappung, mehr Ressourcen, Puffer umverteilen, Umfang neu priorisieren",
+      "Weiterarbeiten ohne Anpassung und ohne Information an den Auftraggeber",
+      "Sofortiger Stopp aller Projektaktivitäten bis zum neuen Basistermin",
+      "Löschen der Projektplanung, um den Termindruck nicht dokumentieren zu müssen"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 558,
+    "a": [
+      "Logik- oder Zustandsfehler, z. B. nicht initialisierte oder geteilte Variable",
+      "Syntaxfehler, der bereits beim Übersetzen des Quellcodes erkannt wird",
+      "Tippfehler in der Benutzeroberfläche ohne Auswirkung auf die Programmlogik",
+      "Fehlende physische Netzwerkverbindung zwischen Client und Server"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 196,
+    "a": [
+      "Vortrainiertes Modell auf neue ähnliche Aufgabe übertragen und anpassen",
+      "Kopieren von Dateien von einem Rechner auf einen anderen im Netzwerk",
+      "Entfernen eines trainierten Modells aus dem Speicher des Servers",
+      "Training eines Modells komplett ohne jegliche Trainings- oder Beispieldaten"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 520,
+    "a": [
+      "Dokumentierter Ist-Zustand von HW/SW/Netz/Rechten für Änderungen und Störungen",
+      "Erhöhung des Papierverbrauchs in der IT-Abteilung ohne fachlichen Nutzen",
+      "Erhöhung des Verkaufspreises gegenüber dem Kunden ohne Leistungsänderung",
+      "Pflicht des Kunden, die Konfiguration des gelieferten Systems zu pflegen"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 597,
+    "a": [
+      "Planung, Steuerung, Kontrolle, Kommunikation und Verantwortung für Projektziele",
+      "Erstellung und Ablage der Projektdokumentation ohne Steuerung des Teams",
+      "Programmierung der Lösung durch die Projektleitung ohne Koordination",
+      "Rechnungsstellung und Mahnwesen gegenüber dem Auftraggeber im Projekt"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 336,
+    "a": [
+      "Compiler übersetzt gesamten Code vorab; Interpreter führt Zeile für Zeile aus",
+      "Compiler und Interpreter sind in Funktion und Ergebnis vollständig gleichwertig",
+      "Compiler wandelt ausschließlich Grafikdateien in ausführbaren Maschinencode um",
+      "Interpreter erzeugt stets eine standalone EXE-Datei ohne Laufzeitumgebung"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 406,
+    "a": [
+      "Wichtiges, terminiertes Ereignis oder Ergebnis im Projektverlauf (Dauer oft null)",
+      "Beliebiger Arbeitsschritt im Tagesgeschäft ohne Bezug zum Projektplan",
+      "Benannte Person im Projektteam mit definierter Rolle und Verantwortung",
+      "Einzelposition in der Projektkostenplanung mit budgetiertem Geldbetrag"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 535,
+    "a": [
+      "Kern: physische Recheneinheit; Thread: Ausführungseinheit, ggf. pro Kern simuliert",
+      "CPU-Kern und Thread bezeichnen in der Architektur dasselbe Konzept",
+      "Ein Thread liefert stets die doppelte Leistung eines physischen CPU-Kerns",
+      "Physische Kerne existieren ausschließlich in Server-CPUs, nicht in Desktop-CPUs"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 347,
+    "a": [
+      "Gesamtkosten alternativer Beschaffungsmodelle über die Nutzungsdauer vergleichen",
+      "Den Anbieter mit dem niedrigsten Listenpreis ohne Nebenkosten wählen",
+      "Summe der Netto-Listenpreise ohne Betriebs- und Finanzierungskosten bilden",
+      "Ausschließlich Versand- und Transportkosten der Lieferanten gegenüberstellen"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 565,
+    "a": [
+      "KI-Modell, trainiert auf großen Textmengen, versteht und erzeugt Sprache",
+      "Regelbasiertes Wörterbuchprogramm ohne maschinelles Training auf Daten",
+      "Relationales Datenbanksystem zur Speicherung strukturierter Geschäftsdaten",
+      "Protokoll zur paketorientierten Kommunikation im Internet (z. B. TCP/IP)"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 301,
+    "a": [
+      "Mehrfach vorhandene Bauteile oder Daten, damit ein Ausfall nicht alles stoppt",
+      "Verkleinerung der IT-Infrastruktur zur Reduktion der Betriebskosten",
+      "Schwachstelle in der Sicherheitsarchitektur durch fehlende Zugriffskontrolle",
+      "Verschlüsselung sensibler Daten bei Speicherung und Übertragung"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 495,
+    "a": [
+      "Kleiner Beispieldatensatz (z. B. zwei CSV-Zeilen) zum manuellen Nachrechnen",
+      "Messung der Ausführungszeit des Programms unter Last auf dem Server",
+      "Entfernen der Anwendung vom Entwicklungsrechner vor dem eigentlichen Test",
+      "Anpassung der Farben in der Benutzeroberfläche ohne Logikprüfung"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 554,
+    "a": [
+      "Mit AG Umfang, Termine oder Budget neu verhandeln bzw. Angebot anpassen",
+      "Zusage erteilen und Mehrkosten später unangekündigt aus Eigenmitteln tragen",
+      "Budgetvorgabe ignorieren und Leistung im geplanten Umfang erbringen",
+      "Leistungsumfang heimlich reduzieren, ohne den Auftraggeber zu informieren"
+    ],
+    "r": 0
+  }
+]

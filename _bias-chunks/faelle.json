@@ -1,0 +1,2999 @@
+[
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-usv",
+    "si": 0,
+    "situation": "<p><b>Erster Termin bei der Geschäftsführung.</b> Der Geschäftsführer fragt, wogegen eine USV\n          überhaupt schützt und was sie nicht leistet.</p>",
+    "kunde": "„Wir hatten doch einen Überspannungsschutz in der Mehrfachsteckdose. Warum hat das nicht gereicht?\"",
+    "optionen": [
+      {
+        "t": "Eine USV schützt gegen Netzausfall, Spannungsspitzen und liefert sauberen Strom – aber sie ersetzt kein Backup und keine Brandschutzmaßnahmen.",
+        "p": 3
+      },
+      {
+        "t": "Eine USV verhindert alle Schäden am Server und macht Datensicherungen überflüssig.",
+        "p": 0
+      },
+      {
+        "t": "Eine USV schützt nur gegen Blitzeinschlag ins Gebäude.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      142,
+      82,
+      54
+    ],
+    "ws": [
+      19,
+      11,
+      8
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.63
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-usv",
+    "si": 1,
+    "situation": "<p><b>Leistungsaufnahme erfassen.</b> Sie gehen durch den Serverraum und notieren die Verbraucher.</p>",
+    "kunde": "„Welche Leistung muss die USV mindestens liefern – in Watt und in VA?\"",
+    "optionen": [
+      {
+        "t": "Wirkleistung rund 1.020 W ohne Reserve, mit 20 % Reserve rund 1.224 W; Scheinleistung rund 1.897 VA.",
+        "p": 3
+      },
+      {
+        "t": "Wirkleistung rund 1.020 W, Scheinleistung identisch 1.020 VA.",
+        "p": 0
+      },
+      {
+        "t": "Wirkleistung rund 1.897 W, Scheinleistung rund 1.224 VA.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      100,
+      61,
+      56
+    ],
+    "ws": [
+      17,
+      8,
+      8
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.79
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-usv",
+    "si": 2,
+    "situation": "<p><b>Autonomiezeit festlegen.</b> Die Geschäftsführung will wissen, wie lange der Betrieb\n          ohne Netzstrom aufrechterhalten werden kann.</p>",
+    "kunde": "„Reichen 10 Minuten, oder brauchen wir eine Stunde?\"",
+    "optionen": [
+      {
+        "t": "Die Zeit richtet sich nach dem Zweck: so lange, dass kritische Systeme weiterlaufen und ein koordinierter Shutdown mit Datensicherung möglich ist.",
+        "p": 3
+      },
+      {
+        "t": "Immer mindestens 4 Stunden, damit auf jeden Fall alles weiterläuft.",
+        "p": 0
+      },
+      {
+        "t": "Die Autonomiezeit ist unabhängig von der angeschlossenen Last.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      146,
+      67,
+      62
+    ],
+    "ws": [
+      21,
+      10,
+      8
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.35
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-usv",
+    "si": 3,
+    "situation": "<p><b>USV-Bauart auswählen.</b> Ein Anbieter legt drei Varianten vor.</p>",
+    "kunde": "„Welche Bauart passt für einen Serverraum mit sensibler Datenbank?\"",
+    "optionen": [
+      {
+        "t": "VFI-USV (Online) – Dauerwandlerprinzip, keine Umschaltzeit, arbeitet permanent über den Akku.",
+        "p": 3
+      },
+      {
+        "t": "VFD-USV (Offline) – die einfachste und günstigste Variante.",
+        "p": 0
+      },
+      {
+        "t": "VI-USV (netzinteraktiv) reicht für Server immer aus.",
+        "p": 1
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      93,
+      59,
+      52
+    ],
+    "ws": [
+      11,
+      8,
+      7
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.79
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-usv",
+    "si": 4,
+    "situation": "<p><b>Akku-Bestückung berechnen.</b> Die gewählte USV hat 12 Akku-Packs mit je 12 V und 4,5 Ah.\n          Die Last beträgt 1.822 VA.</p>",
+    "kunde": "„Wie lange hält das – und wie viele Packs brauchen wir für 1,3 Stunden?\"",
+    "optionen": [
+      {
+        "t": "Autonomie rund 0,36 h (etwa 21 Minuten); für 1,3 h sind rund 44 Packs nötig.",
+        "p": 3
+      },
+      {
+        "t": "Autonomie rund 1,3 h; es sind keine weiteren Packs nötig.",
+        "p": 0
+      },
+      {
+        "t": "Autonomie rund 4,5 h; es reichen 6 Packs.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      76,
+      57,
+      41
+    ],
+    "ws": [
+      15,
+      10,
+      8
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.85
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-db",
+    "si": 0,
+    "situation": "<p><b>Ist-Zustand aufnehmen.</b> Sie sehen sich die Tabelle an.</p>",
+    "kunde": "„Welche Probleme sehen Sie in dieser Tabelle?\"",
+    "optionen": [
+      {
+        "t": "Redundanz (Adresse mehrfach), mehrfache Werte in einer Zelle und Anomalien beim Ändern, Einfügen und Löschen.",
+        "p": 3
+      },
+      {
+        "t": "Die Tabelle ist zu klein, um Fehler zu enthalten.",
+        "p": 0
+      },
+      {
+        "t": "Nur die Schreibweise der Adressen ist unsauber.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      109,
+      49,
+      47
+    ],
+    "ws": [
+      15,
+      9,
+      7
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.32
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-db",
+    "si": 1,
+    "situation": "<p><b>Erste Normalform herstellen.</b> Die Artikelspalte enthält mehrere Werte.</p>",
+    "kunde": "„Wie bringen Sie die Tabelle in die 1. Normalform?\"",
+    "optionen": [
+      {
+        "t": "Die Liste auflösen: Für jeden Artikel wird eine eigene Zeile angelegt, sodass jede Zelle genau einen Wert enthält.",
+        "p": 3
+      },
+      {
+        "t": "Die Artikelspalte verbreitern, damit mehr Text hineinpasst.",
+        "p": 0
+      },
+      {
+        "t": "Die Artikel in einer zweiten Tabelle als Freitext speichern.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      114,
+      59,
+      60
+    ],
+    "ws": [
+      18,
+      7,
+      9
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.93
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-db",
+    "si": 2,
+    "situation": "<p><b>Zweite Normalform herstellen.</b> Der Schlüssel ist zusammengesetzt aus Auftragsnummer und\n          Artikelnummer.</p>",
+    "kunde": "„Warum darf der Kundenname nicht in dieser Tabelle bleiben?\"",
+    "optionen": [
+      {
+        "t": "Weil er nur von der Auftragsnummer abhängt, also von einem Teil des Schlüssels – das ist eine partielle Abhängigkeit.",
+        "p": 3
+      },
+      {
+        "t": "Weil Kundennamen zu lang für die Tabelle sind.",
+        "p": 0
+      },
+      {
+        "t": "Weil der Kundenname keinen Primärschlüssel hat.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      117,
+      46,
+      47
+    ],
+    "ws": [
+      19,
+      8,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.54
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-db",
+    "si": 3,
+    "situation": "<p><b>Dritte Normalform herstellen.</b> In der Kundentabelle stehen Postleitzahl und Ort.</p>",
+    "kunde": "„Können PLZ und Ort zusammen in der Kundentabelle bleiben?\"",
+    "optionen": [
+      {
+        "t": "Nein – der Ort hängt von der PLZ ab, nicht direkt vom Kunden. Das ist eine transitive Abhängigkeit.",
+        "p": 3
+      },
+      {
+        "t": "Ja – PLZ und Ort gehören immer zusammen und stören nie.",
+        "p": 0
+      },
+      {
+        "t": "Nur wenn die PLZ der Primärschlüssel ist.",
+        "p": 1
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      99,
+      55,
+      41
+    ],
+    "ws": [
+      18,
+      11,
+      7
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.41
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-db",
+    "si": 4,
+    "situation": "<p><b>Relationales Modell aufbauen.</b> Sie haben nun die Entitäten Kunde, Auftrag, Artikel und\n          Ort.</p>",
+    "kunde": "„Wie setzen Sie die Beziehung zwischen Kunde und Auftrag um?\"",
+    "optionen": [
+      {
+        "t": "Als 1:n – der Primärschlüssel des Kunden wandert als Fremdschlüssel in die Auftragstabelle.",
+        "p": 3
+      },
+      {
+        "t": "Als m:n über eine Zwischentabelle mit zwei Fremdschlüsseln.",
+        "p": 0
+      },
+      {
+        "t": "Als 1:1 – beide Tabellen erhalten den gleichen Primärschlüssel.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      91,
+      59,
+      63
+    ],
+    "ws": [
+      13,
+      8,
+      9
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.54
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-db",
+    "si": 5,
+    "situation": "<p><b>Umsetzung prüfen.</b> Bevor die Datenbank gebaut wird, wollen Sie das Modell testen.</p>",
+    "kunde": "„Wie prüfen Sie, ob das Modell alle Fälle abdeckt?\"",
+    "optionen": [
+      {
+        "t": "Mit einem Schreibtischtest: konkrete Beispieldatensätze gedanklich durchspielen und prüfen, ob jede Beziehung belegbar ist.",
+        "p": 3
+      },
+      {
+        "t": "Indem die Datenbank einfach angelegt und befüllt wird.",
+        "p": 1
+      },
+      {
+        "t": "Ein Modell muss nicht geprüft werden.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      123,
+      54,
+      37
+    ],
+    "ws": [
+      14,
+      8,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.32
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-angebot",
+    "si": 0,
+    "situation": "<p><b>Angebote sichten.</b> Drei Anbieter legen Angebote vor.</p>",
+    "kunde": "„Welcher Anbieter ist der günstigste?\"",
+    "optionen": [
+      {
+        "t": "Nach Listeneinkaufspreis B – aber nach Skonto und unter Einbeziehung von Lieferzeit und Service ist die Entscheidung nicht so eindeutig.",
+        "p": 3
+      },
+      {
+        "t": "Eindeutig B, weil B den niedrigsten Preis nennt.",
+        "p": 0
+      },
+      {
+        "t": "Eindeutig C, weil C den besten Service hat.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      136,
+      48,
+      43
+    ],
+    "ws": [
+      20,
+      8,
+      8
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.16
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-angebot",
+    "si": 1,
+    "situation": "<p><b>Skonto bewerten.</b> Anbieter C gewährt 3 % Skonto bei Zahlung innerhalb von 45 Tagen.</p>",
+    "kunde": "„Was bringt das Skonto konkret?\"",
+    "optionen": [
+      {
+        "t": "Bei 41.000 € netto sind 3 % Skonto 1.230 € – das ist ein direkter Preisnachlass.",
+        "p": 3
+      },
+      {
+        "t": "Skonto ist nur eine Zahlungsfrist ohne finanziellen Vorteil.",
+        "p": 0
+      },
+      {
+        "t": "Skonto ist ein Rabatt, der bereits im Listenpreis enthalten ist.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      80,
+      60,
+      64
+    ],
+    "ws": [
+      16,
+      8,
+      10
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.33
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-angebot",
+    "si": 2,
+    "situation": "<p><b>Nutzwertanalyse durchführen.</b> Die Geschäftsführung gewichtet die Kriterien wie folgt.</p>",
+    "kunde": "„Anbieter C erfüllt das Kriterium Service zu 90 %. Welchen Teilnutzen bringt das?\"",
+    "optionen": [
+      {
+        "t": "27 Punkte (90 × 0,30).",
+        "p": 3
+      },
+      {
+        "t": "90 Punkte.",
+        "p": 0
+      },
+      {
+        "t": "120 Punkte.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      22,
+      10,
+      11
+    ],
+    "ws": [
+      5,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.2
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-angebot",
+    "si": 3,
+    "situation": "<p><b>Finanzierung klären.</b> Die Investition beträgt rund 41.000 €. Die Bank bietet ein\n          Darlehen an, der Anbieter alternativ Leasing.</p>",
+    "kunde": "„Worin unterscheiden sich Darlehen und Leasing?\"",
+    "optionen": [
+      {
+        "t": "Darlehen: Zinssatz und Tilgung, Eigentum geht über. Leasing: Monatsrate inkl. Service, Eigentum bleibt beim Leasinggeber, Rückgabe zum Restwert.",
+        "p": 3
+      },
+      {
+        "t": "Beide sind identisch, nur der Name ist anders.",
+        "p": 0
+      },
+      {
+        "t": "Leasing bedeutet, dass man das Gerät sofort kauft.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      144,
+      46,
+      50
+    ],
+    "ws": [
+      18,
+      8,
+      8
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.13
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-angebot",
+    "si": 4,
+    "situation": "<p><b>Amortisation prüfen.</b> Die neuen Arbeitsplätze verbrauchen 60 % weniger Strom als die\n          alten. Die jährliche Stromersparnis beträgt 4.800 €.</p>",
+    "kunde": "„Nach wie vielen Jahren hat sich die Investition bezahlt?\"",
+    "optionen": [
+      {
+        "t": "Nach rund 8,5 Jahren (41.000 € ÷ 4.800 €).",
+        "p": 3
+      },
+      {
+        "t": "Nach rund 1,2 Jahren.",
+        "p": 0
+      },
+      {
+        "t": "Amortisation lässt sich nicht berechnen.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      42,
+      21,
+      40
+    ],
+    "ws": [
+      9,
+      4,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-arbeitsplatz",
+    "si": 0,
+    "situation": "<p><b>Anforderungen aufnehmen.</b> Die Geschäftsführerin schildert ihren Bedarf.</p>",
+    "kunde": "„Welche Anforderungskriterien würden Sie aus dieser Mail ableiten?\"",
+    "optionen": [
+      {
+        "t": "Leistungsstarke Grafikkarte, mindestens 32 GB RAM, SSD ab 500 GB, geringe Geräuschentwicklung, hohe Energieeffizienz und GreenIT-Konformität – alles innerhalb des Budgets.",
+        "p": 3
+      },
+      {
+        "t": "Nur der Preis ist entscheidend, die technischen Details ergeben sich aus dem Angebot.",
+        "p": 0
+      },
+      {
+        "t": "Möglichst viele Kerne und die größte Festplatte, alles andere ist Nebensache.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      171,
+      85,
+      77
+    ],
+    "ws": [
+      21,
+      13,
+      11
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.22
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-arbeitsplatz",
+    "si": 1,
+    "situation": "<p><b>Angebote vergleichen.</b> Drei Geräte stehen zur Auswahl.</p>",
+    "kunde": "„Welches Gerät empfehlen Sie und warum?\"",
+    "optionen": [
+      {
+        "t": "PC2 – erfüllt alle Kriterien: 32 GB RAM, dedizierte Grafikkarte, schnelle NVMe-SSD, mit 25 dB(A) der leiseste und mit 80 Plus Gold sehr effizient.",
+        "p": 3
+      },
+      {
+        "t": "PC1 – er ist der günstigste und erfüllt damit das Budget am besten.",
+        "p": 0
+      },
+      {
+        "t": "PC3 – er hat die meiste Leistung und ist damit zukunftssicher.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      146,
+      67,
+      62
+    ],
+    "ws": [
+      24,
+      13,
+      11
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.35
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-arbeitsplatz",
+    "si": 2,
+    "situation": "<p><b>Angebot kalkulieren.</b> 15 Arbeitsplätze zu PC2 (850 € netto). Dazu kommen\n          Installation und Aufbau (40 € je Platz) sowie je eine Windows-10-Pro-Lizenz (110 €).</p>\n          <p>Die Li",
+    "kunde": "„Wie hoch ist der Gesamtbetrag brutto – und was bringt das Skonto?\"",
+    "optionen": [
+      {
+        "t": "15 × (850 + 40 + 110) = 15.000 € netto, brutto 17.850 €. Skonto 2 % = 300 € Ersparnis bei Zahlung innerhalb von 14 Tagen.",
+        "p": 3
+      },
+      {
+        "t": "15 × 850 = 12.750 € netto, brutto 15.172,50 €. Skonto ist im Preis bereits enthalten.",
+        "p": 0
+      },
+      {
+        "t": "15 × (850 + 110) = 14.400 € netto, brutto 17.136 €. Skonto gibt es nur bei Barzahlung vor Lieferung.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      121,
+      85,
+      100
+    ],
+    "ws": [
+      27,
+      16,
+      20
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.42
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-arbeitsplatz",
+    "si": 3,
+    "situation": "<p><b>Kaufvertrag prüfen.</b> Ein Mitarbeiter der Einkaufsabteilung möchte sofort bestellen,\n          weil aus seiner Sicht mit dem Angebot bereits ein rechtsverbindlicher Kaufvertrag zustande gekomm",
+    "kunde": "„Ist mit dem abgegebenen Angebot schon ein Kaufvertrag zustande gekommen?\"",
+    "optionen": [
+      {
+        "t": "Nein – ein Kaufvertrag entsteht erst durch zwei übereinstimmende Willenserklärungen: Angebot und Annahme. Die Bestellung wäre das Angebot, die Auftragsbestätigung die Annahme.",
+        "p": 3
+      },
+      {
+        "t": "Ja – ein Angebot ist rechtlich bindend, sobald es beim Kunden eingeht.",
+        "p": 0
+      },
+      {
+        "t": "Ja – sobald die Rechnung gestellt ist, gilt der Vertrag als geschlossen.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      175,
+      70,
+      72
+    ],
+    "ws": [
+      22,
+      12,
+      12
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.5
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-arbeitsplatz",
+    "si": 4,
+    "situation": "<p><b>Zeiterfassungssystem absichern.</b> Das System speichert Arbeitszeiten lokal in einer\n          <b>unverschlüsselten XML-Datei</b> im Benutzerprofil. Fällt die Netzwerkverbindung aus, werden die",
+    "kunde": "„Wie beurteilen Sie den Schutzbedarf dieser Informationen?\"",
+    "optionen": [
+      {
+        "t": "Vertraulichkeit: vertraulich (Rückschlüsse auf das Arbeitsverhalten einzelner Personen) – Integrität: normale Anforderungen (Fehler sind korrigierbar, Abrechnungen können nachträglich berichtigt werden) – Verfügbarkeit: normal bis hoch, da Arbeitsabläufe ohne Erfassung weiterlaufen.",
+        "p": 3
+      },
+      {
+        "t": "Alle drei Schutzziele sind „streng vertraulich\" bzw. „extrem hoch\", weil Personendaten betroffen sind.",
+        "p": 0
+      },
+      {
+        "t": "Der Schutzbedarf ist überall „normal\", weil es sich nur um Arbeitszeiten handelt.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      283,
+      102,
+      81
+    ],
+    "ws": [
+      30,
+      13,
+      12
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.49
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-arbeitsplatz",
+    "si": 5,
+    "situation": "<p><b>Datenhaltung neu planen.</b> Die XML-Datei ist nicht verschlüsselt und für jeden lesbar.\n          Die Daten sollen künftig lokal und verschlüsselt in einer kleinen Datenbank vorgehalten werden.",
+    "kunde": "„Können Sie die Tabellenstruktur ableiten – und wie ist das Verhältnis zwischen Benutzerkonto und Einträgen?\"",
+    "optionen": [
+      {
+        "t": "Zwei Tabellen: tblUserAccount (mit eigenem PK) und tblLogEntry (mit eigenem PK und dem FK auf den Benutzer). Es ist eine 1:n-Beziehung – ein Benutzer hat viele Einträge, jeder Eintrag gehört genau einem Benutzer. Der FK gehört auf die n-Seite.",
+        "p": 3
+      },
+      {
+        "t": "Eine einzige Tabelle mit allen Informationen – das ist einfacher und schneller.",
+        "p": 0
+      },
+      {
+        "t": "Drei Tabellen mit einer Zwischentabelle, weil Benutzer und Einträge in einer m:n-Beziehung stehen.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      243,
+      79,
+      98
+    ],
+    "ws": [
+      39,
+      12,
+      13
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.08
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-arbeitsplatz",
+    "si": 6,
+    "situation": "<p><b>Zusätzlich: Netzwerkproblem klären.</b> Einige Beschäftigte berichten, dass das Netzwerk\n          in bestimmten Büros „langsam\" wird, sobald die Klimaanlage läuft. In diesen Räumen wurden vor w",
+    "kunde": "„Wie erklären Sie sich diesen Zusammenhang?\"",
+    "optionen": [
+      {
+        "t": "Sehr wahrscheinlich fehlt die elektromagnetische Abschirmung der Leitung (z. B. U/UTP statt S/FTP) oder die Leitungen wurden neben starken Stromleitungen verlegt – der Motor der Klimaanlage erzeugt Störungen und belegte Frequenzbänder. Abhilfe: geschirmte Leitung verlegen oder den Abstand zu Stromleitungen vergrößern.",
+        "p": 3
+      },
+      {
+        "t": "Die Klimaanlage verbraucht so viel Strom, dass dem Netzwerk die Spannung fehlt.",
+        "p": 0
+      },
+      {
+        "t": "Der Router muss neu gestartet werden – das behebt solche Störungen zuverlässig.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      319,
+      79,
+      79
+    ],
+    "ws": [
+      41,
+      12,
+      12
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 3.04
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-beratung",
+    "si": 0,
+    "situation": "<p><b>Erstgespräch.</b> Der Geschäftsführer kommt direkt zur Sache und fragt nach konkreten\n          Produkten, bevor er sein Problem beschrieben hat.</p>",
+    "kunde": "„Was kostet denn so ein Arbeitsplatz bei Ihnen?\"",
+    "optionen": [
+      {
+        "t": "Zuerst offene Fragen stellen: Welche Aufgaben werden bearbeitet, wie viele Plätze, welche Software ist im Einsatz, welche Anforderungen gibt es an Verfügbarkeit und Budget? Ohne Bedarfsanalyse ist jeder Preis unseriös.",
+        "p": 3
+      },
+      {
+        "t": "Sofort den günstigsten Preis nennen, um Aufmerksamkeit zu erzeugen.",
+        "p": 0
+      },
+      {
+        "t": "Sagen, dass das erst nach der Prüfung des Lastenhefts möglich ist und das Gespräch vertagen.",
+        "p": 1
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      218,
+      67,
+      92
+    ],
+    "ws": [
+      30,
+      9,
+      15
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.25
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-beratung",
+    "si": 1,
+    "situation": "<p><b>Bedarfsanalyse vertiefen.</b> Die Einkaufsleiterin bringt einen konkreten Wunsch ein.</p>",
+    "kunde": "„Wir haben gehört, dass Cloud-Lösungen günstiger sind. Können wir nicht einfach alles in die Cloud geben?\"",
+    "optionen": [
+      {
+        "t": "Cloud prüfen, aber differenziert: SaaS für Standardanwendungen kann günstig sein, während für Fertigungsdaten mit hoher Verfügbarkeitsanforderung und besonderem Schutzbedarf die lokale Lösung sinnvoll bleibt. Betriebskosten, Datenhaltung, Datenschutz und Anbindung vergleichen.",
+        "p": 3
+      },
+      {
+        "t": "Cloud ist immer günstiger – sofort zustimmen.",
+        "p": 0
+      },
+      {
+        "t": "Cloud kommt für ein Produktionsunternehmen grundsätzlich nicht infrage.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      277,
+      45,
+      71
+    ],
+    "ws": [
+      30,
+      7,
+      8
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 5.16
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-beratung",
+    "si": 2,
+    "situation": "<p><b>Angebot erstellen.</b> Sie sollen ein verbindliches Angebot abgeben. Ihr Kollege hat\n          bereits einen Entwurf vorbereitet, in dem nur die Hardware und der Preis stehen.</p>",
+    "kunde": "„Reicht das so aus?\"",
+    "optionen": [
+      {
+        "t": "Nein – ein Angebot muss Leistungsumfang, Preis, Liefer- und Zahlungsbedingungen, Liefertermin, Gewährleistung und Bindefrist enthalten. Sonst ist es für den Kunden nicht vergleichbar und rechtlich angreifbar.",
+        "p": 3
+      },
+      {
+        "t": "Ja – Kunden schauen ohnehin nur auf den Preis.",
+        "p": 0
+      },
+      {
+        "t": "Es fehlt nur die Umsatzsteuer, alles andere ist optional.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      208,
+      46,
+      57
+    ],
+    "ws": [
+      26,
+      9,
+      9
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 3.52
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-beratung",
+    "si": 3,
+    "situation": "<p><b>Präsentation und Entscheidung.</b> Sie stellen Ihr Konzept vor. Der Geschäftsführer\n          unterbricht Sie und fragt nach einem technischen Detail, das er nicht versteht.</p>",
+    "kunde": "„Erklären Sie mir das nochmal – was genau heißt das für unseren Betrieb?\"",
+    "optionen": [
+      {
+        "t": "Auf die allgemein verständliche Nutzene bene wechseln, das Fachwort einmal einordnen, dann den betrieblichen Nutzen konkret benennen – und erst danach ins Detail gehen.",
+        "p": 3
+      },
+      {
+        "t": "Das Fachwort mehrfach wiederholen, damit er sich daran gewöhnt.",
+        "p": 0
+      },
+      {
+        "t": "Auf die spätere technische Dokumentation verweisen.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      168,
+      63,
+      51
+    ],
+    "ws": [
+      24,
+      9,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.29
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-beratung",
+    "si": 4,
+    "situation": "<p><b>Projekt umsetzen, ohne den Betrieb zu stören.</b> Die Umstellung betrifft 40 Arbeitsplätze.\n          Sie sollen in drei Wellen migriert werden. Nach zwei Dritteln stellt sich heraus, dass eine\n",
+    "kunde": "„Wie gehen Sie vor, und was sagen Sie der Geschäftsführung?\"",
+    "optionen": [
+      {
+        "t": "Ruhig und ergebnisorientiert informieren: Auswirkung benennen, Lösungsoptionen mit Kosten und Terminen vorlegen (Kompatibilitätsmodus, virtuelle Maschine, Anwendungsupgrade, Ausnahme für die betroffenen Plätze). Ziel: alle Optionen mit Vor- und Nachteilen, dann gemeinsam entscheiden.",
+        "p": 3
+      },
+      {
+        "t": "Das Problem verschweigen und hoffen, dass es niemand merkt.",
+        "p": 0
+      },
+      {
+        "t": "Sofort die Migration komplett stoppen und auf unbestimmte Zeit aussetzen.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      284,
+      59,
+      73
+    ],
+    "ws": [
+      31,
+      9,
+      10
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 3.81
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-beratung",
+    "si": 5,
+    "situation": "<p><b>Leistungsübergabe und Abnahme.</b> Nach Abschluss der Migration soll die Abnahme\n          erfolgen. Einige Bildschirme sind nicht geliefert worden, zwei Rechner laufen instabil.</p>",
+    "kunde": "„Können wir die Abnahme trotzdem durchführen?\"",
+    "optionen": [
+      {
+        "t": "Abnahme unter Vorbehalt mit Protokoll: Datum, Beteiligte, Prüfumfang, festgestellte Mängel (Minderlieferung bei den Bildschirmen, Schlechtleistung bei den zwei Rechnern), Fristen zur Behebung und Unterschriften. So wird die Leistung nachgewiesen, die Mängel bleiben aber gewahrt.",
+        "p": 3
+      },
+      {
+        "t": "Die Abnahme ohne Mängelnennung durchführen und die Probleme informell klären.",
+        "p": 0
+      },
+      {
+        "t": "Die Abnahme verweigern, bis alles perfekt ist.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      279,
+      77,
+      46
+    ],
+    "ws": [
+      34,
+      10,
+      7
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 5.07
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-beratung",
+    "si": 6,
+    "situation": "<p><b>Projekt bewerten.</b> Das Projekt ist abgeschlossen. Die geplanten Kosten lagen bei\n          42.000 €, tatsächlich angefallen sind 45.600 €. Hauptursache: die nicht vorhergesehene\n          Anw",
+    "kunde": "„Was machen Sie mit dieser Erkenntnis?\"",
+    "optionen": [
+      {
+        "t": "Soll-Ist-Vergleich dokumentieren und die Abweichung analysieren (Ursache: ungeprüfte Anwendungskompatibilität). Daraus eine Nachkalkulation und einen Lessons-Learned-Eintrag erstellen: künftig Anwendungskompatibilität vor der Angebotsabgabe prüfen. Das qualifiziert für Nachfolgeaufträge.",
+        "p": 3
+      },
+      {
+        "t": "Die Abweichung im Bericht nicht erwähnen, um keinen schlechten Eindruck zu machen.",
+        "p": 0
+      },
+      {
+        "t": "Die Mehrkosten dem Kunden ohne weitere Analyse in Rechnung stellen.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      288,
+      82,
+      67
+    ],
+    "ws": [
+      26,
+      12,
+      10
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 3.3
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-ki-support",
+    "si": 0,
+    "situation": "<p><b>Kickoff mit der Geschäftsführung.</b> Der Geschäftsführer hat von „KI\", „maschinellem\n          Lernen\" und „Deep Learning\" gehört und fragt, was davon hier gebraucht wird.</p>",
+    "kunde": "„Was ist der Unterschied zwischen KI, maschinellem Lernen und Deep Learning – und was davon brauchen wir?\"",
+    "optionen": [
+      {
+        "t": "KI ist der Oberbegriff, ML ein Teilgebiet der KI und DL ein Subfeld des ML mit tiefen neuronalen Netzen. Für die Textklassifizierung kommen ML und ggf. DL in Frage.",
+        "p": 3
+      },
+      {
+        "t": "Alle drei Begriffe meinen dasselbe Verfahren und sind austauschbar.",
+        "p": 0
+      },
+      {
+        "t": "Deep Learning ist der Oberbegriff und enthält KI und ML.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      164,
+      67,
+      56
+    ],
+    "ws": [
+      29,
+      9,
+      10
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.93
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-ki-support",
+    "si": 1,
+    "situation": "<p><b>Welche Lernart?</b> Das System soll Tickets den Kategorien „Netzwerk\", „Hardware\",\n          „Software\" und „Zugang\" zuordnen.</p>",
+    "kunde": "„Welche Lernart brauchen wir dafür – und was setzt sie voraus?\"",
+    "optionen": [
+      {
+        "t": "Überwachtes Lernen: Die vorhandenen Tickets müssen zuvor von Hand gelabelt werden.",
+        "p": 3
+      },
+      {
+        "t": "Unüberwachtes Lernen: Das System erfindet die Kategorien selbst, Labels sind nicht nötig.",
+        "p": 1
+      },
+      {
+        "t": "Bestärkendes Lernen durch Belohnung für jedes richtig sortierte Ticket.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      82,
+      89,
+      71
+    ],
+    "ws": [
+      11,
+      12,
+      9
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.25
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-ki-support",
+    "si": 2,
+    "situation": "<p><b>Datengrundlage prüfen.</b> Sie sehen sich die historischen Tickets an: 9.000 Stück,\n          davon 6.000 mit Label, 3.000 ohne. Bei den Labels fällt auf, dass „Netzwerk\" viel öfter falsch\n     ",
+    "kunde": "„Reicht dieser Datensatz – und welche Risiken sehen Sie?\"",
+    "optionen": [
+      {
+        "t": "Die gelabelten Tickets reichen als Startpunkt, sind aber fehlerhaft. Verzerrte Labels führen zu Bias im Modell – die Daten müssen bereinigt und repräsentativ sein.",
+        "p": 3
+      },
+      {
+        "t": "Label-Fehler sind egal, das Modell lernt von selbst das Richtige.",
+        "p": 0
+      },
+      {
+        "t": "Nur die 3.000 Tickets ohne Label sollten verwendet werden.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      163,
+      65,
+      58
+    ],
+    "ws": [
+      24,
+      10,
+      9
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.81
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-ki-support",
+    "si": 3,
+    "situation": "<p><b>Bewertung des Modells.</b> Nach dem Training nennt der Entwickler eine Genauigkeit von\n          99 % auf den Trainingsdaten. Auf den Testdaten sind es nur 82 %.</p>",
+    "kunde": "„Welche Zahl gilt – und was ist hier passiert?\"",
+    "optionen": [
+      {
+        "t": "Es liegt Overfitting vor: Das Modell hat die Trainingsdaten zu genau gelernt. Es muss getestet und regularisiert werden; die 82 % auf den Testdaten sind maßgeblich.",
+        "p": 3
+      },
+      {
+        "t": "Die 99 % sind maßgeblich, die Testdaten sind nur Zufall.",
+        "p": 0
+      },
+      {
+        "t": "Beide Werte sind gleichwertig, man nimmt den Mittelwert.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      164,
+      56,
+      56
+    ],
+    "ws": [
+      26,
+      10,
+      8
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.93
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-ki-ethik",
+    "si": 0,
+    "situation": "<p><b>Erstes Gespräch mit dem Betriebsrat.</b> Gefragt wird, welche grundsätzlichen Risiken\n          ein solches KI-System birgt.</p>",
+    "kunde": "„Welche Risiken sehen Sie bei einem KI-Modell zur Bewerberauswahl?\"",
+    "optionen": [
+      {
+        "t": "Algorithmischer Bias durch verzerrte Trainingsdaten, mangelnde Transparenz (Black Box) und datenschutzrechtliche Fragen (DSGVO).",
+        "p": 3
+      },
+      {
+        "t": "Nur die Anschaffungskosten sind ein Risiko, sonst nichts.",
+        "p": 0
+      },
+      {
+        "t": "KI-Modelle sind grundsätzlich objektiv und können keine Vorurteile haben.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      128,
+      57,
+      73
+    ],
+    "ws": [
+      13,
+      8,
+      9
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.25
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-ki-ethik",
+    "si": 1,
+    "situation": "<p><b>Modellwahl.</b> Ein Anbieter schwärmt von einem tiefen neuronalen Netz, ein anderer\n          schlägt einen Entscheidungsbaum vor.</p>",
+    "kunde": "„Welches Modell passt besser, wenn die Entscheidungen nachvollziehbar sein müssen?\"",
+    "optionen": [
+      {
+        "t": "Der Entscheidungsbaum (White-Box): Jeder Schritt ist erklärbar. Das tiefe Netz ist ein Black-Box-Modell und schwer zu begründen.",
+        "p": 3
+      },
+      {
+        "t": "Immer das tiefe neuronale Netz, weil es moderner ist.",
+        "p": 0
+      },
+      {
+        "t": "Beide sind gleich gut erklärbar.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      128,
+      53,
+      32
+    ],
+    "ws": [
+      17,
+      9,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 3
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-ki-ethik",
+    "si": 2,
+    "situation": "<p><b>Fachliche Prüfung.</b> Der Anbieter behauptet, das System „lerne aus Erfahrung und\n          werde von selbst immer gerechter\".</p>",
+    "kunde": "„Stimmt diese Aussage so?\"",
+    "optionen": [
+      {
+        "t": "Nein. Ein Modell übernimmt die Verzerrungen seiner Daten. „Gerechtigkeit\" muss aktiv durch Datenauswahl, Prüfung und Kontrolle sichergestellt werden.",
+        "p": 3
+      },
+      {
+        "t": "Ja, ein KI-Modell verbessert sich automatisch und entfernt Vorurteile.",
+        "p": 0
+      },
+      {
+        "t": "Nur wenn man es lange genug laufen lässt, wird es von selbst fair.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      149,
+      70,
+      66
+    ],
+    "ws": [
+      18,
+      9,
+      13
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.26
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-ki-ethik",
+    "si": 3,
+    "situation": "<p><b>Rechtlicher Rahmen.</b> Es sollen Bewerberdaten in einem EU-Land verarbeitet werden.</p>",
+    "kunde": "„Welche Vorschriften sind einzuhalten?\"",
+    "optionen": [
+      {
+        "t": "Die DSGVO (Datenschutz) und der EU AI Act (Risikostufen für KI-Systeme) – Bewerberauswahl gilt als Hochrisiko-Anwendung.",
+        "p": 3
+      },
+      {
+        "t": "Nur die Hausordnung des Betriebs.",
+        "p": 0
+      },
+      {
+        "t": "Keine – KI ist gesetzlich nicht geregelt.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      120,
+      33,
+      41
+    ],
+    "ws": [
+      16,
+      5,
+      7
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.64
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-ki-generativ",
+    "si": 0,
+    "situation": "<p><b>Erstes Briefing.</b> Der Geschäftsführer will den Assistenten sofort live schalten,\n          ohne Kontrolle der Antworten.</p>",
+    "kunde": "„Die KI schreibt doch perfekt – warum sollte ein Mensch die Antworten noch prüfen?\"",
+    "optionen": [
+      {
+        "t": "Weil generative Modelle halluzinieren können: Sie erzeugen plausibel klingende, aber falsche Aussagen (z. B. erfundene Preise oder Bedingungen). Eine Freigabe durch einen Menschen ist Pflicht.",
+        "p": 3
+      },
+      {
+        "t": "Eine Kontrolle ist nicht nötig, die KI ist immer korrekt.",
+        "p": 0
+      },
+      {
+        "t": "Nur die Rechtsabteilung muss einmal am Anfang zustimmen, danach nie wieder.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      192,
+      57,
+      75
+    ],
+    "ws": [
+      25,
+      10,
+      11
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.37
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-ki-generativ",
+    "si": 1,
+    "situation": "<p><b>Prompt gestalten.</b> Der Assistent soll Antworten entwerfen, aber gelegentlich zu\n          lang und zu allgemein.</p>",
+    "kunde": "„Wie bekommen wir kürzere, passgenauere Antworten?\"",
+    "optionen": [
+      {
+        "t": "Mit einem klaren Prompt: Rolle, Zielgruppe, Ton, gewünschte Länge und Format vorgeben, dazu ein Beispiel.",
+        "p": 3
+      },
+      {
+        "t": "Das Modell per Zufall mehrere Male aufrufen und das kürzeste Ergebnis nehmen.",
+        "p": 0
+      },
+      {
+        "t": "Alle Kundenanfragen künftig ignorieren.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      105,
+      77,
+      39
+    ],
+    "ws": [
+      15,
+      12,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.69
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-ki-generativ",
+    "si": 2,
+    "situation": "<p><b>Datenschutz.</b> Kundenanfragen enthalten Namen, Adressen und Buchungsdaten.</p>",
+    "kunde": "„Dürfen wir die echten Kundenanfragen einfach in das Modell geben?\"",
+    "optionen": [
+      {
+        "t": "Nur mit Rechtsgrundlage und nach DSGVO: Datenminimierung, Zweckbindung, evtl. Anonymisierung. Nicht alle Daten ungeprüft in einen externen Dienst geben.",
+        "p": 3
+      },
+      {
+        "t": "Ja, sobald es technisch möglich ist, ist es erlaubt.",
+        "p": 0
+      },
+      {
+        "t": "Datenschutz spielt bei Text keine Rolle.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      152,
+      52,
+      40
+    ],
+    "ws": [
+      19,
+      9,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.8
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-ki-projekt",
+    "si": 0,
+    "situation": "<p><b>Ziel klären.</b> Gefragt ist eine Risikoeinschätzung je Sendung.</p>",
+    "kunde": "„Ist das eine Klassifikation oder eine Regression – und wann welche?\"",
+    "optionen": [
+      {
+        "t": "Klassifikation, wenn es um Klassen geht (Verzögerung ja/nein); Regression, wenn eine Zahl geschätzt wird (Verzögerung in Stunden).",
+        "p": 3
+      },
+      {
+        "t": "Immer Regression, weil Zahlen genauer sind.",
+        "p": 0
+      },
+      {
+        "t": "Immer Klassifikation, weil Klassen einfacher sind.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      130,
+      43,
+      50
+    ],
+    "ws": [
+      17,
+      6,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.02
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-ki-projekt",
+    "si": 1,
+    "situation": "<p><b>Daten prüfen.</b> Von 50.000 Sendungen haben nur 800 ein Label\n          „Verzögerung ja/nein\".</p>",
+    "kunde": "„Reicht das – und was ist das Problem?\"",
+    "optionen": [
+      {
+        "t": "Die Klassen sind stark ungleich verteilt (wenige Verzögerungen). Accuracy allein täuscht – deshalb Precision, Recall und F1 prüfen und ggf. Daten ergänzen.",
+        "p": 3
+      },
+      {
+        "t": "Die Datenmenge ist immer ausreichend, unabhängig von der Verteilung.",
+        "p": 0
+      },
+      {
+        "t": "Ungleiche Klassen sind kein Problem, Accuracy genügt.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      155,
+      68,
+      53
+    ],
+    "ws": [
+      22,
+      9,
+      7
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.92
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-ki-projekt",
+    "si": 2,
+    "situation": "<p><b>Modell bewerten.</b> Modell A hat Precision 90 %, Recall 40 %; Modell B hat\n          Precision 60 %, Recall 85 %.</p>",
+    "kunde": "„Welches Modell nehmen wir, wenn wir möglichst wenige Verzögerungen übersehen dürfen?\"",
+    "optionen": [
+      {
+        "t": "Modell B, weil der Recall zählt: Wir dürfen möglichst keine echte Verzögerung übersehen.",
+        "p": 3
+      },
+      {
+        "t": "Modell A, weil Precision immer wichtiger ist als Recall.",
+        "p": 0
+      },
+      {
+        "t": "Es spielt keine Rolle, beide sind gleichwertig.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      88,
+      56,
+      47
+    ],
+    "ws": [
+      13,
+      9,
+      7
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.87
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-ki-projekt",
+    "si": 3,
+    "situation": "<p><b>Ergebnis einsetzen.</b> Das Modell ist fertig.</p>",
+    "kunde": "„Wer entscheidet künftig über die Sendungen?\"",
+    "optionen": [
+      {
+        "t": "Das Modell liefert eine Einschätzung, der Mensch entscheidet. Vorhersagen sind Unterstützung, keine unfehlbare Wahrheit.",
+        "p": 3
+      },
+      {
+        "t": "Das Modell entscheidet allein und endgültig.",
+        "p": 0
+      },
+      {
+        "t": "Das Modell ist unnötig, sobald es gebaut ist.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      120,
+      44,
+      45
+    ],
+    "ws": [
+      14,
+      6,
+      8
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.73
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-ki-prozess",
+    "si": 0,
+    "situation": "<p><b>Nutzen klären.</b> Heute fallen Maschinen ungeplant aus; jede Stunde Stillstand ist\n          teuer.</p>",
+    "kunde": "„Was bringt Predictive Maintenance überhaupt – und wie messen wir den Nutzen?\"",
+    "optionen": [
+      {
+        "t": "Das Modell erkennt drohende Ausfälle vorher, sodass Wartung planbar wird. Nutzen = vermiedene Stillstandskosten minus Kosten des Systems.",
+        "p": 3
+      },
+      {
+        "t": "Predictive Maintenance macht Maschinen grundsätzlich unzerstörbar.",
+        "p": 0
+      },
+      {
+        "t": "Der Nutzen lässt sich nicht messen, also braucht man keinen Nachweis.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      137,
+      66,
+      69
+    ],
+    "ws": [
+      18,
+      6,
+      11
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.08
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-ki-prozess",
+    "si": 1,
+    "situation": "<p><b>Datenlage.</b> Die Maschinen liefern bereits Sensordaten, es gibt aber kaum\n          dokumentierte Ausfälle.</p>",
+    "kunde": "„Reichen die Daten für ein gutes Modell?\"",
+    "optionen": [
+      {
+        "t": "Nein. Ohne viele dokumentierte Ausfallbeispiele lernt das Modell kaum Muster. Datenqualität und Labels müssen zuerst verbessert werden.",
+        "p": 3
+      },
+      {
+        "t": "Ja, KI lernt auch ohne Beispiele.",
+        "p": 0
+      },
+      {
+        "t": "Fast-Ausfälle werden von selbst zu Fehlern.",
+        "p": 1
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      135,
+      33,
+      43
+    ],
+    "ws": [
+      17,
+      6,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 3.09
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-ki-prozess",
+    "si": 2,
+    "situation": "<p><b>Wirtschaftlichkeit.</b> Das System kostet 60.000 € einmalig und 1.200 €/Monat.\n          Es sollen voraussichtlich 3 ungeplante Ausfälle je Jahr mit je 8.000 € vermieden werden.</p>",
+    "kunde": "„Wie rechnet sich das?\"",
+    "optionen": [
+      {
+        "t": "Jährlicher Nutzen 24.000 €; laufende Kosten 14.400 €/Jahr; Überschuss 9.600 €/Jahr → Amortisation der 60.000 € in etwa 6,25 Jahren. Grenzwertig – Einsparungen und Folgekosten genau prüfen.",
+        "p": 3
+      },
+      {
+        "t": "Es lohnt sich immer, weil KI immer Gewinn bringt.",
+        "p": 0
+      },
+      {
+        "t": "Die laufenden Kosten zählen bei der Bewertung nicht.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      188,
+      49,
+      52
+    ],
+    "ws": [
+      27,
+      9,
+      8
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.84
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-ki-prozess",
+    "si": 3,
+    "situation": "<p><b>Betrieb.</b> Das Modell läuft, warnt aber sehr häufig fälschlich (viele\n          Fehlalarme), sodass die Werkstatt die Warnungen bald ignoriert.</p>",
+    "kunde": "„Was ist am Modell zu verbessern?\"",
+    "optionen": [
+      {
+        "t": "Die Precision ist zu niedrig: Zu viele Fehlalarme. Das Modell oder der Schwellenwert muss angepasst werden, sonst verliert es das Vertrauen.",
+        "p": 3
+      },
+      {
+        "t": "Es ist alles in Ordnung, Fehlalarme sind egal.",
+        "p": 0
+      },
+      {
+        "t": "Man sollte die Warnungen einfach abschalten.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      140,
+      46,
+      44
+    ],
+    "ws": [
+      21,
+      8,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.18
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-netz",
+    "si": 0,
+    "situation": "<p><b>Erstgespräch.</b> Die Kanzlei hat sensible Mandantendaten und wünscht getrennte\n          Netze für Verwaltung und Gäste.</p>",
+    "kunde": "„Wie trennen wir den Gästezugang sauber vom internen Netz?\"",
+    "optionen": [
+      {
+        "t": "Über ein eigenes Gäste-WLAN/VLAN, das vom internen Netz getrennt ist und keinen Zugriff auf interne Server hat.",
+        "p": 3
+      },
+      {
+        "t": "Der Gästezugang bekommt einfach dasselbe WLAN-Passwort wie die Mitarbeiter.",
+        "p": 0
+      },
+      {
+        "t": "Wir schalten das WLAN für Gäste ganz ab und teilen LAN-Kabel aus.",
+        "p": 1
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      111,
+      75,
+      65
+    ],
+    "ws": [
+      17,
+      9,
+      12
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.71
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-netz",
+    "si": 1,
+    "situation": "<p><b>Verkabelung.</b> Es sollen 12 Arbeitsplätze, ein Serverraum und ein WLAN-Access-\n          Point angebunden werden.</p>",
+    "kunde": "„Welche Geräte brauchen wir – und was macht der Router, was der Switch?\"",
+    "optionen": [
+      {
+        "t": "Ein Router als Verbindung nach außen, Switches fürs LAN (Schicht 2, MAC), Access Point fürs WLAN. Der Server steht im internen Netz.",
+        "p": 3
+      },
+      {
+        "t": "Nur ein einziges Gerät – ein Router ersetzt Switch und Access Point.",
+        "p": 1
+      },
+      {
+        "t": "Zwölf einzelne Router, einer je Arbeitsplatz.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      132,
+      68,
+      45
+    ],
+    "ws": [
+      22,
+      12,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.93
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-netz",
+    "si": 2,
+    "situation": "<p><b>Adressierung.</b> Die Kanzlei will für jedes Gerät eine feste, automatisch\n          vergebene Adresse mit klarer Struktur.</p>",
+    "kunde": "„Wie vergeben wir die IP-Adressen?\"",
+    "optionen": [
+      {
+        "t": "Automatisch per DHCP aus einem privaten Bereich (z. B. 192.168.x.x), Server und Drucker mit fester Adresse.",
+        "p": 3
+      },
+      {
+        "t": "Jedes Gerät bekommt eine öffentliche IP-Adresse.",
+        "p": 0
+      },
+      {
+        "t": "Es werden gar keine Adressen gebraucht.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      107,
+      48,
+      39
+    ],
+    "ws": [
+      16,
+      6,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.74
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-netz",
+    "si": 3,
+    "situation": "<p><b>Sicherheit.</b> Die Kanzlei fragt nach dem Schutz der Mandantendaten.</p>",
+    "kunde": "„Welche Sicherheitsmaßnahmen schlagen Sie vor?\"",
+    "optionen": [
+      {
+        "t": "Zentrale Firewall, getrennte Netze/VLANs, Verschlüsselung des WLANs (WPA2/WPA3), aktuelle Patches, Zugriffsrechte nach Notwendigkeit, Backups (3-2-1).",
+        "p": 3
+      },
+      {
+        "t": "Ein starkes WLAN-Passwort genügt.",
+        "p": 0
+      },
+      {
+        "t": "Antivirus auf einem Rechner reicht aus.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      150,
+      33,
+      39
+    ],
+    "ws": [
+      15,
+      4,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 3.55
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-sicherheit",
+    "si": 0,
+    "situation": "<p><b>Erstmaßnahmen.</b> Die Verschlüsselung läuft noch, es gibt eine Lösegeldforderung.</p>",
+    "kunde": "„Was ist jetzt zuerst zu tun?\"",
+    "optionen": [
+      {
+        "t": "Betroffene Systeme vom Netz trennen, Ausbreitung stoppen, Vorfall dokumentieren und Verantwortliche/Behörden informieren – kein Lösegeld.",
+        "p": 3
+      },
+      {
+        "t": "Sofort zahlen, dann ist das Problem weg.",
+        "p": 0
+      },
+      {
+        "t": "Erst einmal nichts tun und abwarten, vielleicht heilt es sich.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      137,
+      40,
+      62
+    ],
+    "ws": [
+      15,
+      7,
+      10
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.42
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-sicherheit",
+    "si": 1,
+    "situation": "<p><b>Backups prüfen.</b> Es gibt eine Vollsicherung von gestern, sie hing aber dauerhaft am\n          Netz.</p>",
+    "kunde": "„Können wir daraus wiederherstellen?\"",
+    "optionen": [
+      {
+        "t": "Nur prüfen, ob die Sicherung nicht ebenfalls verschlüsselt wurde. Ideal ist eine unveränderbare/offline Kopie (3-2-1-Regel).",
+        "p": 3
+      },
+      {
+        "t": "Die Sicherung ist garantiert unversehrt, weil sie ein Backup ist.",
+        "p": 0
+      },
+      {
+        "t": "Auf Backups kann man grundsätzlich verzichten.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      124,
+      65,
+      46
+    ],
+    "ws": [
+      15,
+      10,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.7
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-sicherheit",
+    "si": 2,
+    "situation": "<p><b>Ursache suchen.</b> Wie kam die Schadsoftware überhaupt ins Netz?</p>",
+    "kunde": "„Welche typischen Einfallstore gibt es?\"",
+    "optionen": [
+      {
+        "t": "Phishing-Mails mit Anhang/Link, ungepatchte Schwachstellen, unsichere Fernzugänge (VPN, RDP) und geschwächte Rechte.",
+        "p": 3
+      },
+      {
+        "t": "Nur ein defektes Netzwerkkabel.",
+        "p": 0
+      },
+      {
+        "t": "Ausschließlich fehlerhafte Hardware.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      116,
+      31,
+      36
+    ],
+    "ws": [
+      12,
+      4,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.74
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-sicherheit",
+    "si": 3,
+    "situation": "<p><b>Nach dem Vorfall.</b> Die Geschäftsführung will, dass so etwas nicht wieder passiert.</p>",
+    "kunde": "„Wie verbessern wir unsere Sicherheit nachhaltig?\"",
+    "optionen": [
+      {
+        "t": "Ein ISMS aufbauen (orientiert am BSI IT-Grundschutz), Security by Design/Default, Patch- und Backup-Prozesse, Notfallplan und Schulungen.",
+        "p": 3
+      },
+      {
+        "t": "Nur eine neue Firewall kaufen und sonst nichts ändern.",
+        "p": 0
+      },
+      {
+        "t": "Zukünftig ganz auf IT verzichten.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      137,
+      54,
+      33
+    ],
+    "ws": [
+      16,
+      9,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 3.15
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-angebot2",
+    "si": 0,
+    "situation": "<p><b>Kriterien festlegen.</b> Die Praxis will nicht nur nach dem Preis entscheiden.</p>",
+    "kunde": "„Welche Kriterien sollten wir für den Vergleich heranziehen?\"",
+    "optionen": [
+      {
+        "t": "Quantitative (Preis, Stromverbrauch, Lieferzeit) und qualitative (Service, Ergonomie, Zukunftssicherheit) Kriterien, dazu die Kosten über die Nutzungsdauer.",
+        "p": 3
+      },
+      {
+        "t": "Nur den Anschaffungspreis.",
+        "p": 0
+      },
+      {
+        "t": "Nur die Marke des Herstellers.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      156,
+      26,
+      30
+    ],
+    "ws": [
+      16,
+      3,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 5
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-angebot2",
+    "si": 1,
+    "situation": "<p><b>Gewichtung.</b> Die Praxis entscheidet, dass Zuverlässigkeit und Service wichtiger\n          sind als der Preis.</p>",
+    "kunde": "„Wie machen wir das rechnerisch vergleichbar?\"",
+    "optionen": [
+      {
+        "t": "Mit einer Nutzwertanalyse: Kriterien gewichten, jede Alternative bewerten, gewichtete Summe bilden, höchster Nutzwert gewinnt.",
+        "p": 3
+      },
+      {
+        "t": "Indem wir einfach den günstigsten Anbieter nehmen.",
+        "p": 0
+      },
+      {
+        "t": "Indem wir würfeln.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      126,
+      50,
+      18
+    ],
+    "ws": [
+      14,
+      7,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 6
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-angebot2",
+    "si": 2,
+    "situation": "<p><b>Nutzwerte.</b> Anbieter A erreicht 82 Punkte, ist aber 6 % teurer. Anbieter B erreicht\n          74 Punkte und ist am günstigsten. Anbieter C erreicht 80 Punkte.</p>",
+    "kunde": "„Für welchen Anbieter sollten wir uns entscheiden?\"",
+    "optionen": [
+      {
+        "t": "Für A: höchster Nutzwert. Der Mehrpreis muss gegen den höheren Nutzen abgewogen und begründet werden.",
+        "p": 3
+      },
+      {
+        "t": "Für B, weil er am günstigsten ist.",
+        "p": 1
+      },
+      {
+        "t": "Immer für C, weil er in der Mitte liegt.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      101,
+      34,
+      40
+    ],
+    "ws": [
+      15,
+      7,
+      9
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.97
+    }
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-angebot2",
+    "si": 3,
+    "situation": "<p><b>Leistungsbeschreibung.</b> Vor der Bestellung soll festgehalten werden, was genau\n          gefordert ist.</p>",
+    "kunde": "„Was kommt ins Lastenheft, was ins Pflichtenheft?\"",
+    "optionen": [
+      {
+        "t": "Ins Lastenheft (Auftraggeber) das WAS und WOFÜR; ins Pflichtenheft (Auftragnehmer) das WIE und WOMIT.",
+        "p": 3
+      },
+      {
+        "t": "Beide sind dasselbe Dokument.",
+        "p": 0
+      },
+      {
+        "t": "Ins Lastenheft kommt nur der Preis.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      101,
+      29,
+      35
+    ],
+    "ws": [
+      14,
+      4,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.48
+    }
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-kundenauftrag",
+    "si": 0,
+    "situation": "<p><b>Projektstart.</b> Ihr Projektleiter fragt, welches Dokument Sie zuerst vom Kunden brauchen.</p>",
+    "kunde": "„Wir sagen Ihnen, was wir wollen – und Sie sagen uns dann, wie.\"",
+    "optionen": [
+      {
+        "t": "Zuerst das Lastenheft vom Kunden anfordern, darauf aufbauend das eigene Pflichtenheft erstellen.",
+        "p": 3
+      },
+      {
+        "t": "Sofort das Pflichtenheft schreiben und Hardware bestellen.",
+        "p": 0
+      },
+      {
+        "t": "Mit der Installation beginnen und die Wünsche später aufnehmen.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      96,
+      58,
+      63
+    ],
+    "ws": [
+      12,
+      7,
+      9
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.66
+    }
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-kundenauftrag",
+    "si": 1,
+    "situation": "<p><b>Angebot und Preis.</b> Sie kalkulieren die Leistung. Die Kundenanfrage enthält eine unklare Position: „Wartung nach Aufwand\".</p>",
+    "kunde": "„Was kostet uns die Betreuung im ersten Jahr?\"",
+    "optionen": [
+      {
+        "t": "Eine serverseitige Wartung pauschal und eine vor-Ort-Betreuung über einen Stundensatz ansetzen und beides getrennt ausweisen.",
+        "p": 3
+      },
+      {
+        "t": "Einen runden Gesamtpreis nennen, ohne ihn zu gliedern.",
+        "p": 0
+      },
+      {
+        "t": "Die Wartung kostenlos anbieten, um den Auftrag zu bekommen.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      125,
+      54,
+      59
+    ],
+    "ws": [
+      15,
+      8,
+      9
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.31
+    }
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-kundenauftrag",
+    "si": 2,
+    "situation": "<p><b>Reihenfolge festlegen.</b> Das Projekt ist groß: Netzwerk, Warenwirtschaft, Arbeitsplätze. Der Kunde will alles gleichzeitig.</p>",
+    "kunde": "„Können Sie nicht alles parallel machen? Dann sind wir schneller fertig.\"",
+    "optionen": [
+      {
+        "t": "Erst ein Projektstrukturplan mit Abhängigkeiten und Meilensteinen, dann in sinnvoller Reihenfolge umsetzen — Netzwerk vor Warenwirtschaft, weil diese darauf aufsetzt.",
+        "p": 3
+      },
+      {
+        "t": "Alles parallel starten, um Zeit zu sparen.",
+        "p": 0
+      },
+      {
+        "t": "Mit den Arbeitsplätzen anfangen, weil das die wenigste Arbeit ist.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      166,
+      42,
+      66
+    ],
+    "ws": [
+      20,
+      7,
+      10
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.95
+    }
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-kundenauftrag",
+    "si": 3,
+    "situation": "<p><b>Kostenrahmen und Zeit.</b> Nach der Planung liegt Ihre Schätzung bei 52.000 € und zwölf Wochen — mehr als gefordert.</p>",
+    "kunde": "„Das sprengt unser Budget und den Termin. Was schlagen Sie vor?\"",
+    "optionen": [
+      {
+        "t": "Die Ursachen offenlegen, den Umfang in Stufen aufteilen (z. B. zwei Filialen zuerst) und die Aufwandsfolgen statt einer reinen Absage darlegen.",
+        "p": 3
+      },
+      {
+        "t": "Den Preis einfach auf 45.000 € senken und intern sparen.",
+        "p": 0
+      },
+      {
+        "t": "Den Auftrag ablehnen und das Angebot zurückziehen.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      143,
+      56,
+      50
+    ],
+    "ws": [
+      21,
+      10,
+      7
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.86
+    }
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-kundenauftrag",
+    "si": 4,
+    "situation": "<p><b>Fachgespräch.</b> Der Prüfungsausschuss fragt: Wie hängen Projektziel und Ergebnisse zusammen?</p>",
+    "kunde": "„Wie zeigen Sie, dass das Projekt das Ziel erreicht hat?\"",
+    "optionen": [
+      {
+        "t": "Über messbare Kriterien im Projektauftrag (SMART) und einen Soll-Ist-Vergleich bei der Abnahme.",
+        "p": 3
+      },
+      {
+        "t": "Über die Menge der installierten Geräte.",
+        "p": 1
+      },
+      {
+        "t": "Über die Zufriedenheit, die man eben spürt.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      95,
+      40,
+      43
+    ],
+    "ws": [
+      12,
+      6,
+      7
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.38
+    }
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-verfuegbarkeit",
+    "si": 0,
+    "situation": "<p><b>Verfügbarkeit bewerten.</b> Der Vorfall kostete drei Stunden.</p>",
+    "kunde": "„Wie viel Verfügbarkeit haben wir dann im Jahr überhaupt?\"",
+    "optionen": [
+      {
+        "t": "Der Ausfall allein sagt nichts über die Jahresverfügbarkeit — dazu müssen Ausfallhäufigkeit, Wiederherstellungszeit und MTTF/MTTR über den Zeitraum betrachtet werden.",
+        "p": 3
+      },
+      {
+        "t": "Drei Stunden sind im Jahr vernachlässigbar, also 100 % Verfügbarkeit.",
+        "p": 0
+      },
+      {
+        "t": "Verfügbarkeit ist nicht messbar.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      166,
+      69,
+      32
+    ],
+    "ws": [
+      20,
+      10,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.19
+    }
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-verfuegbarkeit",
+    "si": 1,
+    "situation": "<p><b>Redundanz wählen.</b> Die Datenbank soll einen Plattenausfall ohne Stillstand überstehen.</p>",
+    "kunde": "„Wie sichern wir die Platten ab?\"",
+    "optionen": [
+      {
+        "t": "RAID 5 (mindestens 3 Platten) oder RAID 10 für höhere Leistung – ergänzt um ein Backup, das RAID nicht ersetzt.",
+        "p": 3
+      },
+      {
+        "t": "RAID 0, weil es die beste Leistung bringt.",
+        "p": 0
+      },
+      {
+        "t": "Eine einzelne große SSD ohne Redundanz.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      111,
+      42,
+      39
+    ],
+    "ws": [
+      20,
+      8,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.85
+    }
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-verfuegbarkeit",
+    "si": 2,
+    "situation": "<p><b>Backup planen.</b> Der Ausfall hat gezeigt, dass eine Sicherung nötig ist.</p>",
+    "kunde": "„Wie sichern wir vernünftig?\"",
+    "optionen": [
+      {
+        "t": "Nach der 3-2-1-Regel: drei Kopien, zwei Medien, eine außer Haus; regelmäßig rücklesen und testen.",
+        "p": 3
+      },
+      {
+        "t": "Eine tägliche Kopie auf dieselbe Platte im Server.",
+        "p": 0
+      },
+      {
+        "t": "Nur jährlich eine vollständige Sicherung.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      97,
+      50,
+      41
+    ],
+    "ws": [
+      14,
+      8,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.37
+    }
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-verfuegbarkeit",
+    "si": 3,
+    "situation": "<p><b>SLA formulieren.</b> Der Kunde verlangt klare Zusagen.</p>",
+    "kunde": "„Was garantieren Sie uns schriftlich?\"",
+    "optionen": [
+      {
+        "t": "Ein SLA mit Reaktionszeit, Wiederherstellungszeit, definierter Verfügbarkeit, Servicezeiten und Eskalationsstufen.",
+        "p": 3
+      },
+      {
+        "t": "„Wir bemühen uns\" als Zusage.",
+        "p": 0
+      },
+      {
+        "t": "Nur die Wartungskosten als Betrag.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      114,
+      29,
+      34
+    ],
+    "ws": [
+      10,
+      5,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.93
+    }
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-verfuegbarkeit",
+    "si": 4,
+    "situation": "<p><b>Monitoring einführen.</b> Man möchte den nächsten Ausfall früher erkennen.</p>",
+    "kunde": "„Wie hätten wir das vorher merken können?\"",
+    "optionen": [
+      {
+        "t": "Mit einem Monitoring-System, das Kennzahlen wie Auslastung, Speicher, Dienste und Erreichbarkeit überwacht und bei Schwellenwerten alarmiert.",
+        "p": 3
+      },
+      {
+        "t": "Indem man den Anwendern glaubt, wenn es wieder klemmt.",
+        "p": 0
+      },
+      {
+        "t": "Man kann Ausfälle nicht früh erkennen.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      141,
+      54,
+      38
+    ],
+    "ws": [
+      16,
+      9,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.71
+    }
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-invest",
+    "si": 0,
+    "situation": "<p><b>Angebote vergleichbar machen.</b> Angebot A nennt nur den Listenpreis, Angebot B enthält schon einen Rabatt.</p>",
+    "kunde": "„Wie vergleiche ich die beiden Angebote richtig?\"",
+    "optionen": [
+      {
+        "t": "Zuerst den Bezugspreis je Gerät nach Rabatt ermitteln, dann die jährlichen Betriebskosten aus der Leistungsaufnahme hinzurechnen und beide über die Nutzungsdauer vergleichen.",
+        "p": 3
+      },
+      {
+        "t": "Nur die Listenpreise vergleichen.",
+        "p": 0
+      },
+      {
+        "t": "Nur die Leistungsaufnahme vergleichen.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      174,
+      33,
+      38
+    ],
+    "ws": [
+      22,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.27
+    }
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-invest",
+    "si": 1,
+    "situation": "<p><b>Betriebskosten rechnen.</b> Ein Gerät läuft 8 Stunden an 250 Tagen.</p>",
+    "kunde": "„Wie viel Strom kostet ein Gerät pro Jahr – in beiden Varianten?\"",
+    "optionen": [
+      {
+        "t": "A: 120 W × 2.000 h = 240 kWh → 72 €; B: 70 W × 2.000 h = 140 kWh → 42 €.",
+        "p": 3
+      },
+      {
+        "t": "A: 120 kWh → 36 €; B: 70 kWh → 21 €.",
+        "p": 0
+      },
+      {
+        "t": "Beide verbrauchen gleich viel.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      72,
+      36,
+      30
+    ],
+    "ws": [
+      24,
+      12,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.4
+    }
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-invest",
+    "si": 2,
+    "situation": "<p><b>Amortisation der Mehrkosten.</b> Angebot B kostet je Gerät 30 € mehr, spart aber 30 € pro Jahr.</p>",
+    "kunde": "„Nach wie vielen Jahren lohnt sich der Aufpreis?\"",
+    "optionen": [
+      {
+        "t": "Nach rund einem Jahr — die Mehrkosten von 30 € sind nach einem Jahr durch 30 € Ersparnis ausgeglichen.",
+        "p": 3
+      },
+      {
+        "t": "Erst nach 5 Jahren.",
+        "p": 0
+      },
+      {
+        "t": "Nie, weil B teurer ist.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      102,
+      19,
+      23
+    ],
+    "ws": [
+      19,
+      4,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.37
+    }
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-invest",
+    "si": 3,
+    "situation": "<p><b>Gesamtkosten vergleichen.</b> 40 Geräte, 5 Jahre Nutzungsdauer.</p>",
+    "kunde": "„Was kostet uns jede Variante über die fünf Jahre?\"",
+    "optionen": [
+      {
+        "t": "A: 40 × 600 € + 40 × 5 × 72 € = 38.400 €; B: 40 × 630 € + 40 × 5 × 42 € = 33.600 €.",
+        "p": 3
+      },
+      {
+        "t": "A: 40 × 600 € = 24.000 €; B: 40 × 700 € = 28.000 €.",
+        "p": 0
+      },
+      {
+        "t": "Beide kosten gleich viel.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      83,
+      51,
+      25
+    ],
+    "ws": [
+      30,
+      16,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.32
+    }
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-invest",
+    "si": 4,
+    "situation": "<p><b>Entscheidung begründen.</b> Die Geschäftsführung will eine Empfehlung mit Begründung.</p>",
+    "kunde": "„Für welche Variante entscheiden Sie sich?\"",
+    "optionen": [
+      {
+        "t": "Für B: höherer Anschaffungspreis, aber nach einem Jahr amortisiert und über die Laufzeit 4.800 € günstiger sowie energieeffizienter.",
+        "p": 3
+      },
+      {
+        "t": "Für A, weil der Anschaffungspreis niedriger ist.",
+        "p": 0
+      },
+      {
+        "t": "Für A, weil Green IT nur ein Trend ist.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      132,
+      48,
+      39
+    ],
+    "ws": [
+      18,
+      7,
+      9
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.38
+    }
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-arbeitsrecht",
+    "si": 0,
+    "situation": "<p><b>Überstunden eines Auszubildenden.</b> Ein 17-jähriger Auszubildender soll an einem\n          Werktag von 8 auf 11 Uhr arbeiten, weil ein Projekt drängt.</p>",
+    "kunde": "„Darf er heute drei Stunden länger bleiben?\"",
+    "optionen": [
+      {
+        "t": "Nein — nach dem Jugendarbeitsschutzgesetz darf ein unter 18-Jähriger höchstens 8 Stunden täglich arbeiten, ohne Ausgleich auf 8,5 mit Verkürzung an anderen Tagen.",
+        "p": 3
+      },
+      {
+        "t": "Ja, weil Projekte Vorrang haben.",
+        "p": 0
+      },
+      {
+        "t": "Ja, solange er es freiwillig tut.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      162,
+      32,
+      33
+    ],
+    "ws": [
+      23,
+      5,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.06
+    }
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-arbeitsrecht",
+    "si": 1,
+    "situation": "<p><b>Urlaubsanspruch.</b> Der Auszubildende fragt, wie viel Urlaub ihm 2026 zusteht.</p>",
+    "kunde": "„Wie viele Urlaubstage habe ich Anspruch auf mindestens?\"",
+    "optionen": [
+      {
+        "t": "Nach dem Jugendarbeitsschutzgesetz mindestens 25 Werktage, sofern er zu Beginn des Kalenderjahres unter 18 war.",
+        "p": 3
+      },
+      {
+        "t": "Genau 20 Tage wie jeder Erwachsene.",
+        "p": 0
+      },
+      {
+        "t": "Keinen Anspruch als Auszubildender.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      111,
+      35,
+      35
+    ],
+    "ws": [
+      15,
+      6,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.17
+    }
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-arbeitsrecht",
+    "si": 2,
+    "situation": "<p><b>Kündigung in der Probezeit.</b> Ein Auszubildender will seine Ausbildung nach drei Wochen beenden.</p>",
+    "kunde": "„Kann er einfach gehen?\"",
+    "optionen": [
+      {
+        "t": "In der Probezeit kann das Ausbildungsverhältnis jederzeit ohne Frist gekündigt werden — schriftlich, jederzeit.",
+        "p": 3
+      },
+      {
+        "t": "Erst nach sechs Monaten.",
+        "p": 0
+      },
+      {
+        "t": "Nur mit Zustimmung der Berufsschule.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      111,
+      24,
+      36
+    ],
+    "ws": [
+      14,
+      4,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 3.63
+    }
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-arbeitsrecht",
+    "si": 3,
+    "situation": "<p><b>Berufsschule.</b> Der Auszubildende wird an einem Berufsschultag erst spät zurück im Betrieb sein.</p>",
+    "kunde": "„Muss er danach noch in den Betrieb?\"",
+    "optionen": [
+      {
+        "t": "An Berufsschultagen mit mehr als fünf Unterrichtsstunden (mindestens 25 Minuten) gilt der Berufsschulbesuch als Arbeitszeit; an einem solchen Tag ist keine Rückkehr zumutbar.",
+        "p": 3
+      },
+      {
+        "t": "Er muss immer danach in den Betrieb zurückkehren.",
+        "p": 0
+      },
+      {
+        "t": "Berufsschule ist Freizeit.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      174,
+      49,
+      26
+    ],
+    "ws": [
+      23,
+      8,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 5.69
+    }
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-arbeitsrecht",
+    "si": 4,
+    "situation": "<p><b>Betriebsrat oder JAV.</b> Der Auszubildende fühlt sich bei Pausenregelungen benachteiligt.</p>",
+    "kunde": "„An wen kann er sich wenden?\"",
+    "optionen": [
+      {
+        "t": "An die Jugend- und Auszubildendenvertretung (JAV) bzw. den Betriebsrat — diese haben Informations-, Mitwirkungs- und Mitbestimmungsrechte.",
+        "p": 3
+      },
+      {
+        "t": "Nur direkt an die Geschäftsführung.",
+        "p": 0
+      },
+      {
+        "t": "An niemanden, er muss selbst verhandeln.",
+        "p": 0
+      }
+    ],
+    "richtig": 0,
+    "cs": [
+      138,
+      35,
+      40
+    ],
+    "ws": [
+      16,
+      5,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.94
+    }
+  }
+]

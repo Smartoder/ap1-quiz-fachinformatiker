@@ -1,0 +1,2562 @@
+[
+  {
+    "sammlung": "QUIZ",
+    "i": 367,
+    "q": "Wozu dient ein VPN?",
+    "a": [
+      "Es baut über ein unsicheres Netz einen verschlüsselten Tunnel zu einem entfernten Netz auf",
+      "Es beschleunigt die Internetverbindung",
+      "Es vergibt IP-Adressen",
+      "Es ersetzt die Firewall"
+    ],
+    "r": 0,
+    "e": "Ein VPN (Virtual Private Network) verschlüsselt eine Verbindung über das Internet, sodass Geräte so kommunizieren, als wären sie im lokalen Netz. Einsatz: Homeoffice-Zugriff auf Firmenressourcen, Standortkopplung, sichere Nutzung öffentlicher WLANs.",
+    "b": "netzwerk",
+    "q_": "PK-04 · VPN",
+    "cs": [
+      90,
+      38,
+      22,
+      23
+    ],
+    "ws": [
+      14,
+      4,
+      3,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 3.09
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 195,
+    "q": "Wofür steht die Transformer-Architektur (2017)?",
+    "a": [
+      "Sie ist die Grundlage moderner Sprachmodelle und nutzt Aufmerksamkeit (Attention) statt fester Reihenfolge",
+      "Sie ist ein Speichermedium",
+      "Sie ist ein Netzwerkprotokoll",
+      "Sie ist ein klassisches Datenbankschema"
+    ],
+    "r": 0,
+    "e": "Der Transformer nutzt den Attention-Mechanismus, um Beziehungen zwischen allen Wörtern eines Textes zu erfassen. Er ist die Grundlage großer Sprachmodelle wie GPT und damit heutiger generativer KI.",
+    "b": "ki",
+    "q_": "DL",
+    "cs": [
+      106,
+      26,
+      29,
+      39
+    ],
+    "ws": [
+      13,
+      4,
+      4,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 3.08
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 250,
+    "q": "Warum ist die Verfügbarkeit im Serverraum auch eine bauliche Aufgabe?",
+    "a": [
+      "Weil Stromausfall, Brand, Hitze und Wasser die Systeme unabhängig von der Software ausfallen lassen können",
+      "Weil Software nie ausfällt",
+      "Weil nur Backups die Verfügbarkeit sichern",
+      "Weil der Serverraum keine Rolle spielt"
+    ],
+    "r": 0,
+    "e": "Verfügbarkeit entsteht durch Zusammenspiel: USV für Strom, Brandabschnitt und Löschanlage, Klimatisierung, redundante Anbindungen und gesicherte Zugänge. Die beste Software scheitert an einem überfluteten Serverraum.",
+    "b": "sicherheit",
+    "q_": "PK6",
+    "cs": [
+      106,
+      26,
+      42,
+      38
+    ],
+    "ws": [
+      15,
+      4,
+      6,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 3.08
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 351,
+    "q": "Was besagt das Wirtschaftlichkeitsprinzip in der Beschaffung?",
+    "a": [
+      "Mit gegebenem Aufwand maximalen Nutzen oder mit minimalem Aufwand den geforderten Nutzen erreichen",
+      "Immer das billigste Produkt kaufen",
+      "Immer das teuerste Produkt kaufen",
+      "Nie Angebote vergleichen"
+    ],
+    "r": 0,
+    "e": "Wirtschaftlichkeit ist das Verhältnis von Ertrag zu Aufwand. Man erreicht entweder mit festem Budget den höchsten Nutzen (Maximalprinzip) oder den geforderten Nutzen mit dem geringsten Aufwand (Minimalprinzip).",
+    "b": "wirtschaft",
+    "q_": "PK-01 · Wirtschaftlichkeit",
+    "cs": [
+      98,
+      34,
+      33,
+      24
+    ],
+    "ws": [
+      13,
+      5,
+      5,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 3.08
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 357,
+    "q": "Welche Aufgabe hat ein Access Point?",
+    "a": [
+      "Er verbindet drahtlose Geräte (WLAN) mit dem kabelgebundenen Netz",
+      "Er vergibt IP-Adressen",
+      "Er filtert Viren",
+      "Er speichert Dateien für das Netz"
+    ],
+    "r": 0,
+    "e": "Ein Access Point (AP) ist die Brücke zwischen WLAN und LAN. Er sendet das Funksignal der Clients in das kabelgebundene Netz und umgekehrt. IP-Adressen vergibt (meist) der DHCP-Server, z. B. der Router.",
+    "b": "netzwerk",
+    "q_": "PK-03 · Netzkomponenten",
+    "cs": [
+      65,
+      22,
+      16,
+      33
+    ],
+    "ws": [
+      9,
+      3,
+      3,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 3.06
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 464,
+    "q": "Was ist eine Tabelle (Relation) in der relationalen Datenbank?",
+    "a": [
+      "Eine Tabelle – eine Zeile ist ein Datensatz, eine Spalte ein Attribut",
+      "Ein Programm zur Abfrage",
+      "Ein Netzwerkgerät",
+      "Eine Verschlüsselung"
+    ],
+    "r": 0,
+    "e": "Relational: Die Tabelle heißt Relation, eine Zeile ist der Datensatz (Tupel), eine Spalte das Attribut (Feld). Der Primärschlüssel identifiziert die Zeile eindeutig.",
+    "b": "datenbank",
+    "q_": "PK-04 · Datenbankgrundlagen",
+    "cs": [
+      69,
+      24,
+      17,
+      20
+    ],
+    "ws": [
+      12,
+      4,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 3.06
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 362,
+    "q": "Wofür steht die Abkürzung LAN gegenüber WAN?",
+    "a": [
+      "LAN = lokales Netz eines Standorts, WAN = weiträumiges Netz über Standorte hinweg",
+      "LAN ist drahtlos, WAN ist kabelgebunden",
+      "LAN ist immer größer",
+      "Es gibt keinen Unterschied"
+    ],
+    "r": 0,
+    "e": "LAN (Local Area Network) ist ein Netz innerhalb eines begrenzten Bereichs (Büro, Gebäude). WAN (Wide Area Network) umfasst große Entfernungen über mehrere Standorte, oft über Provider-Leitungen. Das Internet ist das größte WAN.",
+    "b": "netzwerk",
+    "q_": "PK-03 · Netztypen",
+    "cs": [
+      81,
+      39,
+      20,
+      26
+    ],
+    "ws": [
+      13,
+      6,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 3.05
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 435,
+    "q": "Was kennzeichnet eine zielgruppengerechte Präsentation?",
+    "a": [
+      "Sprache, Detailtiefe und Medien sind auf die Zielgruppe und den Anlass abgestimmt",
+      "Möglichst viele Fachbegriffe ohne Erklärung",
+      "Nur Text ohne Bilder",
+      "Die gleiche Präsentation für alle"
+    ],
+    "r": 0,
+    "e": "Gute Präsentation richtet sich nach Zielgruppe und Ziel: Fachliche Tiefe, Sprache, Beispiele und Medien passen zum Publikum (z. B. Geschäftsführung vs. Technikteam). Wenige, klare Kernaussagen sind wirksamer als ein Blätterwald.",
+    "b": "kommunikation",
+    "q_": "PK-02 · Präsentation",
+    "cs": [
+      81,
+      43,
+      20,
+      33
+    ],
+    "ws": [
+      12,
+      5,
+      4,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 3.05
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 253,
+    "q": "In welchen Schritten läuft eine Nutzwertanalyse ab?",
+    "a": [
+      "Kriterien festlegen → gewichten → je Alternative bewerten → gewichtete Summe bilden → vergleichen",
+      "Preis ermitteln → kaufen",
+      "Stakeholder fragen → sofort entscheiden",
+      "Nur die Anschaffungskosten vergleichen"
+    ],
+    "r": 0,
+    "e": "Kriterien, Gewichtung, Bewertung je Alternative, gewichtete Summe (Punkte × Gewichtung), dann Vergleich. Der höchste Gesamtnutzwert gewinnt. Nachteil: Die Gewichtung ist subjektiv.",
+    "b": "angebot",
+    "q_": "PK3",
+    "cs": [
+      97,
+      24,
+      39,
+      38
+    ],
+    "ws": [
+      14,
+      4,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 3.04
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 451,
+    "q": "Anbieter A ist 8 % teurer, erreicht aber einen um 12 % höheren Nutzwert. Wie ist die Entscheidung zu begründen?",
+    "a": [
+      "Für A entscheiden, wenn der höhere Nutzwert den Mehrpreis rechtfertigt – und die Begründung dokumentieren",
+      "Immer den teuersten nehmen",
+      "Immer den billigsten nehmen",
+      "Die Entscheidung dem Zufall überlassen"
+    ],
+    "r": 0,
+    "e": "Ein höherer Nutzwert kann einen Mehrpreis rechtfertigen – entscheidend ist die Abwägung und die nachvollziehbare Dokumentation. Wirtschaftlichkeit heißt nicht „billigster Preis“, sondern bestes Verhältnis von Nutzen zu Aufwand über die Nutzungsdauer (TCO).",
+    "b": "angebot",
+    "q_": "PK-03 · Wirtschaftlichkeit",
+    "cs": [
+      105,
+      26,
+      27,
+      38
+    ],
+    "ws": [
+      15,
+      4,
+      4,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 3.04
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 230,
+    "q": "Welches Gerät arbeitet als Verbindung zwischen zwei unterschiedlichen Netzwerken und leitet auf Basis von IP-Adressen?",
+    "a": [
+      "Router",
+      "Switch",
+      "Hub",
+      "Access Point"
+    ],
+    "r": 0,
+    "e": "Der Router verbindet unterschiedliche Netze (Schicht 3) und entscheidet anhand der IP-Adresse über den Weg. Ein Hub verteilt nur stumpf an alle Ports (veraltet), ein Switch arbeitet mit MAC-Adressen in einem Netz.",
+    "b": "netzwerk",
+    "q_": "NW",
+    "cs": [
+      6,
+      6,
+      3,
+      12
+    ],
+    "ws": [
+      1,
+      1,
+      1,
+      2
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 3
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 241,
+    "q": "Warum sind Backups eine Maßnahme der Verfügbarkeit?",
+    "a": [
+      "Sie ermöglichen die Wiederherstellung von Daten nach Ausfall, Löschung oder Verschlüsselung durch Ransomware",
+      "Sie verschlüsseln die Daten",
+      "Sie verhindern jeden Angriff",
+      "Sie ersetzen die Feuerlöscher"
+    ],
+    "r": 0,
+    "e": "Ein Backup sorgt dafür, dass Daten und Systeme nach einem Ausfall wiederhergestellt werden können – das ist Verfügbarkeit. Die 3-2-1-Regel hilft: mindestens 3 Kopien, auf 2 verschiedenen Medien, davon 1 außer Haus.",
+    "b": "sicherheit",
+    "q_": "PK6",
+    "cs": [
+      108,
+      27,
+      28,
+      29
+    ],
+    "ws": [
+      13,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 3
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 505,
+    "q": "Was ist ein Arbeitspaket im Projektstrukturplan?",
+    "a": [
+      "Die kleinste, klar abgrenzbare und verantwortbare Arbeitseinheit",
+      "Ein ganzes Projekt",
+      "Ein Teammitglied",
+      "Eine Kostenstelle"
+    ],
+    "r": 0,
+    "e": "Ein Arbeitspaket ist die unterste Ebene des Projektstrukturplans: klar abgegrenzt, einem Verantwortlichen zugeordnet, mit definiertem Ergebnis und Aufwand. Aus Arbeitspaketen werden Termine und Kosten geplant.",
+    "b": "pm",
+    "q_": "PK-01 · Projektstrukturplan",
+    "cs": [
+      64,
+      18,
+      16,
+      17
+    ],
+    "ws": [
+      7,
+      3,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 3
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 570,
+    "q": "Was ist der Sinn einer Zwischentabelle bei m:n?",
+    "a": [
+      "Sie speichert die Verknüpfungen und enthält die Fremdschlüssel beider Seiten",
+      "Sie speichert Fotos",
+      "Sie ersetzt den Primärschlüssel",
+      "Sie verschlüsselt die Daten"
+    ],
+    "r": 0,
+    "e": "Weil eine Tabelle relational keine m:n-Beziehung direkt abbilden kann, legt man eine Zwischentabelle (Assoziationstabelle) an. Sie enthält je Zeile eine Kombination der FKs beider Seiten – oft als zusammengesetzten Primärschlüssel.",
+    "b": "datenbank",
+    "q_": "PK-04 · ERM",
+    "cs": [
+      76,
+      19,
+      31,
+      27
+    ],
+    "ws": [
+      10,
+      3,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 3
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 511,
+    "q": "Welche Vertriebsform beschreibt der direkte Vertrieb?",
+    "a": [
+      "Der Hersteller verkauft direkt an den Endkunden, z. B. über Außendienst oder eigenen Onlineshop",
+      "Der Verkauf über Zwischenhändler",
+      "Der Verkauf nur an Wiederverkäufer",
+      "Der Verzicht auf Verkauf"
+    ],
+    "r": 0,
+    "e": "Direkter Vertrieb = Anbieter und Kunde haben direkten Kontakt (eigener Shop, Außendienst). Indirekter Vertrieb nutzt Handel/Distributoren. Das beeinflusst Marge, Kontrolle und Kundennähe.",
+    "b": "kommunikation",
+    "q_": "PK-02 · Vertrieb",
+    "cs": [
+      95,
+      32,
+      34,
+      24
+    ],
+    "ws": [
+      14,
+      4,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.96
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 486,
+    "q": "Ein Kunde versteht einen Fachbegriff nicht. Wie reagieren Sie?",
+    "a": [
+      "Den Sachverhalt in einfacher Sprache erklären und bei Bedarf ein Beispiel geben",
+      "Den Fachbegriff einfach wiederholen",
+      "Den Kunden auf das Handbuch verweisen",
+      "Das Gespräch beenden"
+    ],
+    "r": 0,
+    "e": "Kundenorientierte Kommunikation heißt: Fachliches in verständliche Sprache übersetzen, Beispiele geben, Rückfragen zulassen. So wird der Nutzen klar und Missverständnisse werden vermieden – Kern der Kundenberatung (PK-02).",
+    "b": "kommunikation",
+    "q_": "PK-02 · Kundenkommunikation",
+    "cs": [
+      79,
+      35,
+      37,
+      20
+    ],
+    "ws": [
+      12,
+      4,
+      6,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.95
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 559,
+    "q": "Was ist ein Lastenheft aus Sicht des Kunden?",
+    "a": [
+      "Das Dokument, in dem der Kunde seine Anforderungen an die Leistung festhält",
+      "Das Angebot des Kunden",
+      "Die Rechnung des Kunden",
+      "Ein Wartungsvertrag"
+    ],
+    "r": 0,
+    "e": "Das Lastenheft stellt der Auftraggeber (Kunde) auf: WAS wird gebraucht und WOFÜR. Damit fordert er Angebote an, und es wird zum Maßstab, ob die Lösung passt. Der Anbieter antwortet mit dem Pflichtenheft (WIE).",
+    "b": "kommunikation",
+    "q_": "PK-02 · Kundenberatung",
+    "cs": [
+      75,
+      22,
+      23,
+      19
+    ],
+    "ws": [
+      12,
+      4,
+      4,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.95
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 221,
+    "q": "Was ist eine DMZ?",
+    "a": [
+      "Eine abgeschirmte Pufferzone zwischen Internet und internem Netz für öffentlich erreichbare Server",
+      "Ein verschlüsselter Tunnel",
+      "Ein VLAN ohne IP-Adressen",
+      "Ein Ersatz für die Firewall"
+    ],
+    "r": 0,
+    "e": "Die DMZ (Demilitarized Zone) liegt zwischen dem externen und dem internen Netz. Dort stehen Server, die aus dem Internet erreichbar sein müssen (Web-, Mailserver). Wird so einer kompromittiert, bleibt das interne Netz geschützt.",
+    "b": "netzwerk",
+    "q_": "NW",
+    "cs": [
+      98,
+      26,
+      25,
+      27
+    ],
+    "ws": [
+      12,
+      3,
+      4,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.92
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 380,
+    "q": "Was ist hybride Verschlüsselung und warum setzt man sie ein?",
+    "a": [
+      "Sie kombiniert Vorteile: Austausch eines Sitzungsschlüssels asymmetrisch, Datenübertragung symmetrisch",
+      "Sie verschlüsselt jede Datei zweimal",
+      "Sie ist eine ungesicherte Verbindung",
+      "Sie nutzt keinen Schlüssel"
+    ],
+    "r": 0,
+    "e": "Hybrid verbindet beides: Der schnelle symmetrische Schlüssel wird über die sichere asymmetrische Verschlüsselung ausgetauscht; danach laufen die Daten symmetrisch und damit schnell. So funktioniert z. B. HTTPS/TLS. Der Katalog fordert ausdrücklich alle drei: symmetrisch, asymmetrisch, hybrid.",
+    "b": "sicherheit",
+    "q_": "PK-06 · Verschlüsselung",
+    "cs": [
+      102,
+      36,
+      36,
+      26
+    ],
+    "ws": [
+      9,
+      5,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.92
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 266,
+    "q": "Was ist der Zweck eines Testprotokolls beim Einrichten eines Arbeitsplatzes?",
+    "a": [
+      "Es dokumentiert nachvollziehbar, was, von wem, wann und mit welchem Ergebnis geprüft wurde",
+      "Es ersetzt die Rechnung",
+      "Es ist eine Bedienungsanleitung",
+      "Es listet nur die Preise der Komponenten"
+    ],
+    "r": 0,
+    "e": "Ein Testprotokoll hält Prüfgegenstand, durchführende Person, Datum, Ergebnisse und Abweichungen fest. Es dient als Nachweis, als Abnahmegrundlage und als Beleg gegenüber dem Kunden.",
+    "b": "qs",
+    "q_": "PK5",
+    "cs": [
+      90,
+      23,
+      31,
+      40
+    ],
+    "ws": [
+      13,
+      4,
+      4,
+      7
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.91
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 590,
+    "q": "Was bedeutet „Datensicherheit ist ein Prozess, kein Produkt“?",
+    "a": [
+      "Sicherheit muss ständig gepflegt, geprüft und verbessert werden – nicht nur einmal gekauft",
+      "Ein einmaliger Virenscanner reicht",
+      "Sicherheit ist ein Bauteil",
+      "Sicherheit ist optional"
+    ],
+    "r": 0,
+    "e": "Sicherheit ist eine dauerhafte Aufgabe: aktuelle Patches, geprüfte Rechte, getestete Backups, Sensibilisierung, Kontrolle und Verbesserung (ISMS/PDCA). Ein einzelnes Produkt kann das nicht ersetzen.",
+    "b": "sicherheit",
+    "q_": "PK-06 · ISMS",
+    "cs": [
+      90,
+      34,
+      26,
+      23
+    ],
+    "ws": [
+      13,
+      4,
+      4,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.91
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 423,
+    "q": "Wozu dient ein Abnahmeprotokoll?",
+    "a": [
+      "Es dokumentiert die formale Abnahme der Leistung und ggf. festgestellte Mängel",
+      "Es ist eine Rechnung",
+      "Es listet die Passwörter",
+      "Es ersetzt das Pflichtenheft"
+    ],
+    "r": 0,
+    "e": "Das Abnahmeprotokoll bestätigt, dass die vereinbarte Leistung übergeben und geprüft wurde, welche Mängel es gibt und wann die Abnahme erfolgt. Mit der Abnahme beginnt meist die Gewährleistung. Es ist damit ein wichtiges Beweisdokument.",
+    "b": "qs",
+    "q_": "PK-07 · Abnahme",
+    "cs": [
+      78,
+      20,
+      24,
+      28
+    ],
+    "ws": [
+      11,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.9
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 334,
+    "q": "Was bedeutet SaaS?",
+    "a": [
+      "Software as a Service – Software wird über das Internet als Dienst genutzt",
+      "Server as a Service",
+      "Security as a Service",
+      "Storage as a Standard"
+    ],
+    "r": 0,
+    "e": "SaaS = Software as a Service: Anwendungen laufen beim Anbieter und werden über das Internet genutzt (z. B. Webmail, Office 365). Der Kunde muss keine Server betreiben, zahlt aber meist laufend und ist vom Anbieter und der Internetverbindung abhängig.",
+    "b": "software",
+    "q_": "PK-03 · Cloudlösungen",
+    "cs": [
+      74,
+      19,
+      21,
+      21
+    ],
+    "ws": [
+      13,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.89
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 534,
+    "q": "Was bedeutet der Takt einer CPU (z. B. 3,6 GHz)?",
+    "a": [
+      "Die Anzahl der Rechenschritte/Arbeitstakte pro Sekunde (Gigahertz)",
+      "Die Anzahl der Kerne",
+      "Die Speichergröße",
+      "Die Leistungsaufnahme in Watt"
+    ],
+    "r": 0,
+    "e": "Die Taktrate gibt an, wie viele Arbeitstakte die CPU pro Sekunde ausführt (1 GHz = 1 Mrd. Takte/s). Höherer Takt bedeutet aber nicht automatisch mehr Leistung – auch Kerne, Cache und Architektur zählen.",
+    "b": "hardware",
+    "q_": "PK-03 · CPU",
+    "cs": [
+      66,
+      20,
+      17,
+      29
+    ],
+    "ws": [
+      7,
+      4,
+      2,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.88
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 228,
+    "q": "Welche Standards werden für WLAN verwendet?",
+    "a": [
+      "Die IEEE-802.11-Familie (z. B. 802.11ac, 802.11ax/Wi-Fi 6)",
+      "Die IEEE-802.3-Familie (Ethernet)",
+      "Die USB-Familie",
+      "Die H.264-Familie"
+    ],
+    "r": 0,
+    "e": "WLAN wird durch die IEEE-802.11-Standards beschrieben: 802.11n, 802.11ac (Wi-Fi 5), 802.11ax (Wi-Fi 6). 802.3 ist dagegen der Ethernet-Standard für Kabelnetze.",
+    "b": "netzwerk",
+    "q_": "NW",
+    "cs": [
+      58,
+      33,
+      15,
+      17
+    ],
+    "ws": [
+      7,
+      3,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.87
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 460,
+    "q": "Was ist der Unterschied zwischen Redundanz und Inkonsistenz?",
+    "a": [
+      "Redundanz ist die mehrfache Speicherung, Inkonsistenz der Widerspruch zwischen den Kopien",
+      "Beide bedeuten dasselbe",
+      "Inkonsistenz ist gewollt",
+      "Redundanz ist immer verboten"
+    ],
+    "r": 0,
+    "e": "Redundanz = dieselbe Information steht mehrfach. Inkonsistenz entsteht, wenn diese Kopien sich widersprechen, weil nur eine geändert wurde. Redundanz ist die Ursache, Inkonsistenz die Folge – deshalb normalisiert man.",
+    "b": "datenbank",
+    "q_": "PK-04 · Datenbankgrundlagen",
+    "cs": [
+      89,
+      23,
+      24,
+      28
+    ],
+    "ws": [
+      11,
+      3,
+      3,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.87
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 243,
+    "q": "Was kennzeichnet einen Man-in-the-Middle-Angriff?",
+    "a": [
+      "Ein Angreifer schaltet sich unbemerkt zwischen die Kommunikationspartner und kann Daten lesen oder verändern",
+      "Ein Angreifer löscht nur Backups",
+      "Ein Angreifer füllt eine Festplatte",
+      "Ein Angreifer sendet Werbung"
+    ],
+    "r": 0,
+    "e": "Beim MitM-Angriff sitzt der Angreifer in der Mitte der Verbindung und liest oder manipuliert den Verkehr. Schutz: Verschlüsselung (TLS), Zertifikatsprüfung und geprüfte Netzwerke.",
+    "b": "sicherheit",
+    "q_": "PK6",
+    "cs": [
+      108,
+      32,
+      35,
+      28
+    ],
+    "ws": [
+      14,
+      5,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.86
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 468,
+    "q": "Was kennzeichnet maschinelles Lernen gegenüber klassischer Programmierung?",
+    "a": [
+      "Das System lernt Muster aus Daten, statt jede Regel explizit programmiert zu bekommen",
+      "Es braucht keine Daten",
+      "Es folgt nur festen if-Anweisungen",
+      "Es arbeitet ohne Rechenleistung"
+    ],
+    "r": 0,
+    "e": "Beim maschinellen Lernen lernt das System aus Beispieldaten ein Modell, das Vorhersagen trifft. Klassische Programmierung legt dagegen alle Regeln explizit fest. Mehr und passende Daten verbessern die Qualität des Modells.",
+    "b": "ki",
+    "q_": "PK-04 · KI",
+    "cs": [
+      85,
+      22,
+      34,
+      31
+    ],
+    "ws": [
+      13,
+      4,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.86
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 513,
+    "q": "Was bedeutet eine Machbarkeitsprüfung hinsichtlich der Budgetvorgabe?",
+    "a": [
+      "Zu prüfen, ob der Auftrag mit dem vorhandenen Budget wirtschaftlich umsetzbar ist",
+      "Den Auftrag immer annehmen",
+      "Das Budget ignorieren",
+      "Nur die Hardware prüfen"
+    ],
+    "r": 0,
+    "e": "Die Machbarkeitsanalyse prüft technisch, wirtschaftlich (Budget), rechtlich und terminlich, ob und wie ein Auftrag umgesetzt werden kann. Passt das Budget nicht, muss man Umfang, Vorgehen oder Angebot anpassen.",
+    "b": "pm",
+    "q_": "PK-01 · Machbarkeit",
+    "cs": [
+      81,
+      26,
+      21,
+      23
+    ],
+    "ws": [
+      12,
+      4,
+      3,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.86
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 206,
+    "q": "Was unterscheidet TCP von UDP?",
+    "a": [
+      "TCP ist verbindungsorientiert und sichert die Übertragung, UDP ist verbindungslos ohne Sicherung",
+      "UDP ist langsamer, aber sicherer als TCP",
+      "Beide sind verbindungslos",
+      "TCP wird nur für Video, UDP nur für E-Mail genutzt"
+    ],
+    "r": 0,
+    "e": "TCP baut eine Verbindung auf (3-Way-Handshake), bestätigt den Empfang und ordnet Pakete – ideal für Dateien und Web. UDP verzichtet darauf – ideal für Streaming oder DNS, wo Tempo wichtiger ist als Vollständigkeit.",
+    "b": "netzwerk",
+    "q_": "NW",
+    "cs": [
+      96,
+      40,
+      25,
+      50
+    ],
+    "ws": [
+      12,
+      7,
+      3,
+      10
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.84
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 248,
+    "q": "Warum sind Backups gegen Ransomware kein Selbstschutz, wenn sie permanent am Netz hängen?",
+    "a": [
+      "Die Verschlüsselungssoftware kann auch die verbundenen Backups erreichen – deshalb sind Offline- oder unveränderbare Sicherungen nötig",
+      "Weil Backups grundsätzlich nutzlos sind",
+      "Weil Ransomware nur Festplatten zerstört",
+      "Weil Backups nur für Systeme gelten"
+    ],
+    "r": 0,
+    "e": "Hängt die Sicherung dauerhaft am Netz, wird sie vom Angreifer mitverschlüsselt. Deshalb gilt: eine Kopie offline/außer Haus, unveränderbare Sicherungen (WORM) und Wiederherstellung testen.",
+    "b": "sicherheit",
+    "q_": "PK6",
+    "cs": [
+      134,
+      39,
+      40,
+      35
+    ],
+    "ws": [
+      16,
+      5,
+      5,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.83
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 547,
+    "q": "Was ist ein Schwachstellen-Scan?",
+    "a": [
+      "Eine automatische Prüfung von Systemen auf bekannte Sicherheitslücken",
+      "Ein Virenscan ausschließlich der E-Mail",
+      "Eine Datensicherung",
+      "Eine Rechtevergabe"
+    ],
+    "r": 0,
+    "e": "Ein Schwachstellen-Scan prüft Systeme automatisch auf bekannte Lücken und Konfigurationsfehler (veraltete Versionen, offene Dienste). Ergebnis: eine Liste mit Prioritäten. Ausdrückliche Freigabe des Betreibers nötig – sonst unzulässig.",
+    "b": "sicherheit",
+    "q_": "PK-06 · Härtung",
+    "cs": [
+      69,
+      39,
+      19,
+      18
+    ],
+    "ws": [
+      8,
+      5,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.83
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 610,
+    "q": "Warum sollte man beim Angebot die Gesamtkosten über die Nutzungsdauer betrachten?",
+    "a": [
+      "Weil Anschaffung, Betrieb, Wartung und Entsorgung zusammen über die Laufzeit entscheiden",
+      "Weil nur der Kaufpreis zählt",
+      "Weil Energie gratis ist",
+      "Weil Lizenzen nichts kosten"
+    ],
+    "r": 0,
+    "e": "Der Blick nur auf den Kaufpreis täuscht: Betrieb (Strom), Wartung, Lizenzen, Schulung und Entsorgung können den Kaufpreis übersteigen. Deshalb vergleicht man die TCO über die Nutzungsdauer – wirtschaftlich und häufig auch ökologisch sinnvoll.",
+    "b": "angebot",
+    "q_": "PK-03 · Wirtschaftlichkeit",
+    "cs": [
+      88,
+      28,
+      23,
+      27
+    ],
+    "ws": [
+      11,
+      5,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.83
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 60,
+    "q": "Was ist der Unterschied zwischen Brutto- und Nettolohn?",
+    "a": [
+      "Vom Bruttolohn werden Steuern und Sozialabgaben abgezogen, was bleibt, ist der Nettolohn",
+      "Der Bruttolohn ist kleiner als der Nettolohn",
+      "Beide sind immer gleich",
+      "Der Nettolohn enthält die Sozialabgaben"
+    ],
+    "r": 0,
+    "e": "Der Arbeitgeber zieht vom Bruttolohn Lohnsteuer, Solidaritätszuschlag, ggf. Kirchensteuer und die Arbeitnehmeranteile der Sozialversicherung ab. Der Auszahlungsbetrag ist der Nettolohn.",
+    "b": "wiso",
+    "q_": "AP2 · Entgelt",
+    "cs": [
+      88,
+      44,
+      23,
+      39
+    ],
+    "ws": [
+      12,
+      7,
+      4,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.83
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 326,
+    "q": "Warum eignet sich FAT32 schlecht für eine Systempartition eines modernen Rechners?",
+    "a": [
+      "Es kann keine Dateien größer als 4 GiB und keine Rechte verwalten",
+      "Es ist zu schnell",
+      "Es unterstützt keine Ordner",
+      "Es funktioniert nur auf SSDs"
+    ],
+    "r": 0,
+    "e": "FAT32 begrenzt eine einzelne Datei auf 4 GiB minus 1 Byte und kennt keine Zugriffsrechte, kein Journaling und keine Verschlüsselung. Für Systeme nimmt man NTFS, ext4 oder APFS; FAT32/exFAT bleiben für Wechselmedien.",
+    "b": "hardware",
+    "q_": "PK-03 · Filesysteme",
+    "cs": [
+      65,
+      17,
+      27,
+      28
+    ],
+    "ws": [
+      12,
+      4,
+      4,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.82
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 58,
+    "q": "Was bezeichnet der Begriff Nachhaltigkeit im betrieblichen Kontext?",
+    "a": [
+      "Ökologische, soziale und wirtschaftliche Verantwortung gleichermaßen zu erfüllen",
+      "Nur den Gewinn zu maximieren",
+      "Nur Energie zu sparen",
+      "Nur Spenden zu leisten"
+    ],
+    "r": 0,
+    "e": "Nachhaltigkeit verbindet die drei Dimensionen Ökologie, Soziales und Ökonomie (auch als ESG zusammengefasst). Ein Betrieb muss alle drei im Blick behalten.",
+    "b": "wiso",
+    "q_": "AP2 · WiSo",
+    "cs": [
+      80,
+      28,
+      21,
+      22
+    ],
+    "ws": [
+      8,
+      5,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.81
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 506,
+    "q": "Ein Kunde verlangt, dass seine Daten „auf jeden Fall in Deutschland“ liegen. Was ist zu beachten?",
+    "a": [
+      "Hoster/Standort prüfen, Auftragsverarbeitungsvertrag, Datenschutzanforderungen – und vertraglich zusichern",
+      "Einfach zusagen, ohne den Anbieter zu prüfen",
+      "Das ist datenschutzrechtlich egal",
+      "Nur die Rechnung ist wichtig"
+    ],
+    "r": 0,
+    "e": "Bei „Daten in Deutschland“ geht es um Datenschutz und Auftragsverarbeitung: Standort des Hosters/Rechenzentrums, Auftragsverarbeitungsvertrag (AVV), technische und organisatorische Maßnahmen. Die Zusage muss belegbar sein, nicht nur behauptet.",
+    "b": "recht",
+    "q_": "PK-06 · Datenschutz",
+    "cs": [
+      106,
+      44,
+      33,
+      28
+    ],
+    "ws": [
+      8,
+      7,
+      4,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.79
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 605,
+    "q": "Wie erkennt man einen klassischen Suggestivfrage-Fehler im Kundengespräch?",
+    "a": [
+      "Die Frage legt die Antwort schon nahe, z. B. „Sie wollen doch sicher die teurere Variante?“",
+      "Man fragt offen nach dem Bedarf",
+      "Man wiederholt die Aussage",
+      "Man schweigt und hört zu"
+    ],
+    "r": 0,
+    "e": "Suggestivfragen („Sie stimmen doch zu, dass …?“) manipulieren und zerstören Vertrauen. Besser: neutrale offene Fragen zur Bedarfsermittlung und Alternativfragen für den Abschluss. So entscheidet der Kunde selbst.",
+    "b": "kommunikation",
+    "q_": "PK-02 · Kundenkommunikation",
+    "cs": [
+      91,
+      31,
+      26,
+      24
+    ],
+    "ws": [
+      16,
+      6,
+      4,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.79
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 613,
+    "q": "Was ist der Unterschied zwischen Betriebskosten und Anschaffungskosten?",
+    "a": [
+      "Anschaffungskosten fallen einmalig beim Kauf an, Betriebskosten laufend während der Nutzung",
+      "Beide fallen einmalig an",
+      "Betriebskosten sind der Kaufpreis",
+      "Anschaffungskosten sind monatlich"
+    ],
+    "r": 0,
+    "e": "Anschaffungskosten entstehen einmalig (Kauf, Installation). Betriebskosten laufen dauerhaft: Strom, Wartung/Support, Lizenzen, Verbrauchsmaterial, ggf. Reparatur. Für die Wirtschaftlichkeit zählt die Summe über die Nutzungsdauer.",
+    "b": "wirtschaft",
+    "q_": "PK-03 · Kosten",
+    "cs": [
+      91,
+      24,
+      33,
+      33
+    ],
+    "ws": [
+      11,
+      4,
+      4,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.79
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 20,
+    "q": "Was leistet ein Site-to-Site-VPN?",
+    "a": [
+      "Es verbindet zwei Standorte über einen verschlüsselten Tunnel zu einem gemeinsamen Netz",
+      "Es beschleunigt die Internetverbindung",
+      "Es ersetzt die Firewall",
+      "Es sichert Daten auf Band"
+    ],
+    "r": 0,
+    "e": "Ein Site-to-Site-VPN koppelt zwei Standorte über das öffentliche Internet verschlüsselt, sodass beide Netze sich wie ein gemeinsames Netz verhalten.",
+    "b": "systemloesung",
+    "q_": "AP2 · Netzwerk",
+    "cs": [
+      87,
+      38,
+      23,
+      25
+    ],
+    "ws": [
+      12,
+      4,
+      4,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.78
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 436,
+    "q": "Ein Kunde beschwert sich emotional über eine Störung. Wie reagieren Sie professionell?",
+    "a": [
+      "Zuhören, Verständnis zeigen, Fakten klären, Lösung und Zeitplan zusagen, nachfassen",
+      "Sofort Widerspruch anmelden",
+      "Das Problem kleinreden",
+      "Die Schuld auf einen Kollegen schieben"
+    ],
+    "r": 0,
+    "e": "Professioneller Umgang mit Beschwerden: aktiv zuhören (auch die Beziehungsebene im 4-Ohren-Modell beachten), Verständnis signalisieren, sachlich Ursache klären, realistische Lösung mit Termin zusagen und Ergebnis nachfassen. So wird aus Kritik Kundenbindung.",
+    "b": "kommunikation",
+    "q_": "PK-02 · Kundenkommunikation",
+    "cs": [
+      83,
+      27,
+      22,
+      38
+    ],
+    "ws": [
+      10,
+      3,
+      3,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.77
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 584,
+    "q": "Was bedeutet „Softwareverteilung“ (Deployment) im Betrieb?",
+    "a": [
+      "Programme und Updates werden zentral und automatisiert auf viele Rechner ausgerollt",
+      "Software wird verkauft",
+      "Software wird gelöscht",
+      "Software wird programmiert"
+    ],
+    "r": 0,
+    "e": "Bei der Softwareverteilung werden Programme, Updates und Einstellungen zentral auf viele Rechner verteilt (z. B. per Management-Tool). Vorteile: einheitlicher Stand, Zeitersparnis, weniger Fehler. Updates vorher auf einer Testgruppe prüfen.",
+    "b": "software",
+    "q_": "PK-04 · Installation",
+    "cs": [
+      83,
+      22,
+      22,
+      26
+    ],
+    "ws": [
+      11,
+      3,
+      3,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.77
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 256,
+    "q": "Was ist beim Vergleich von Kauf und Leasing besonders zu beachten?",
+    "a": [
+      "Beim Leasing bleibt das Eigentum beim Leasinggeber, dafür entstehen laufende Raten und meist ein Restwert",
+      "Leasing ist immer günstiger als Kauf",
+      "Beim Kauf gibt es keine laufenden Kosten",
+      "Leasing kennt keinen Vertrag"
+    ],
+    "r": 0,
+    "e": "Beim Kauf geht das Eigentum über und es entstehen einmalige Anschaffungskosten; beim Leasing bleibt das Eigentum beim Geber, dafür fallen Raten und oft ein Restwert an. Der Vergleich erfolgt über die Gesamtkosten der Nutzungsdauer.",
+    "b": "angebot",
+    "q_": "PK3",
+    "cs": [
+      105,
+      36,
+      40,
+      28
+    ],
+    "ws": [
+      15,
+      6,
+      7,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.75
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 281,
+    "q": "Welche vier Leistungen gehören zum Soll-Ist-Vergleich und Abschluss eines Auftrags?",
+    "a": [
+      "Soll-Ist-Vergleich, Abweichungsanalyse, Nachkalkulation und Lessons Learned",
+      "Angebot, Bestellung, Lieferung, Rechnung",
+      "Plan, Do, Check, Act",
+      "Analyse, Design, Umsetzung, Test"
+    ],
+    "r": 0,
+    "e": "Zum Abschluss gehören Soll-Ist-Vergleich (Plan vs. Ergebnis), Abweichungsanalyse (Ursachen), Nachkalkulation (tatsächliche Kosten) und Lessons Learned. Daraus entstehen oft Nachfolgeaufträge.",
+    "b": "vertrag",
+    "q_": "PK7",
+    "cs": [
+      75,
+      40,
+      20,
+      32
+    ],
+    "ws": [
+      6,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.75
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 616,
+    "q": "Warum braucht KI-Software oft viel Rechenleistung?",
+    "a": [
+      "Training und Ausführung großer Modelle benötigen viele Rechenoperationen – häufig GPUs",
+      "Weil sie sonst abstürzt",
+      "Weil Tastaturen langsam sind",
+      "Weil Netze schnell sind"
+    ],
+    "r": 0,
+    "e": "Neuronale Netze führen sehr viele Matrix-Operationen aus. Beim Training großer Modelle und bei der Nutzung (Inferenz) helfen GPUs/TPUs. Das bedeutet Energie- und Kostenbedarf – ein Kriterium bei der Auswahl.",
+    "b": "ki",
+    "q_": "PK-04 · KI",
+    "cs": [
+      86,
+      23,
+      28,
+      23
+    ],
+    "ws": [
+      11,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.74
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 191,
+    "q": "Was ist der Unterschied zwischen Klassifikation und Clustering?",
+    "a": [
+      "Klassifikation ordnet bekannten Klassen zu, Clustering findet Gruppen ohne Vorgabe",
+      "Beide sind unüberwacht",
+      "Clustering braucht Labels",
+      "Klassifikation gruppiert nur Zahlen"
+    ],
+    "r": 0,
+    "e": "Klassifikation ist überwacht (bekannte Klassen) und ordnet zu. Clustering ist unüberwacht und entdeckt unbekannte Gruppen. Deshalb spricht man beim Clustering von „Entdecken\", bei der Klassifikation von „Zuordnen\".",
+    "b": "ki",
+    "q_": "ML",
+    "cs": [
+      82,
+      22,
+      25,
+      35
+    ],
+    "ws": [
+      10,
+      3,
+      3,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.73
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 504,
+    "q": "Ein Projekt hat Aufgaben A (3 Tage) → B (4 Tage) → C (2 Tage) in Reihe und parallel X (5 Tage). Welche Kette bestimmt die Dauer?",
+    "a": [
+      "Die Kette A+B+C = 9 Tage, wenn sie länger ist als der Parallelzweig",
+      "Immer X mit 5 Tagen",
+      "Die Summe aller Aufgaben",
+      "Die kürzeste Kette"
+    ],
+    "r": 0,
+    "e": "Der kritische Pfad ist die längste Kette voneinander abhängiger Vorgänge. Hier sind A+B+C = 3+4+2 = 9 Tage; der Parallelzweig X mit 5 Tagen hat Puffer. Verzögert sich ein Vorgang auf dem kritischen Pfad, verzögert sich das Projekt.",
+    "b": "pm",
+    "q_": "PK-01 · Netzplan",
+    "cs": [
+      67,
+      19,
+      24,
+      18
+    ],
+    "ws": [
+      13,
+      5,
+      4,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.72
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 38,
+    "q": "Warum ist eine reine JSON-Datei keine echte Datenbank?",
+    "a": [
+      "Weil sie kein Format für Computer ist",
+      "Weil sie zu klein ist",
+      "Weil Nebenläufigkeit, Integrität, Transaktionen und Mehrbenutzerzugriff fehlen",
+      "Weil sie sich nicht auslesen lässt"
+    ],
+    "r": 2,
+    "e": "Eine JSON-Datei speichert nur strukturierte Daten. Es fehlen Transaktionen (ACID), referentielle Integrität, Mehrbenutzerbetrieb und Zugriffskontrolle – genau das leistet ein DBMS.",
+    "b": "datenbank",
+    "q_": "NOS",
+    "cs": [
+      37,
+      21,
+      78,
+      34
+    ],
+    "ws": [
+      7,
+      5,
+      7,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 2.71
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 394,
+    "q": "Welche Rechte haben Betroffene nach der DSGVO?",
+    "a": [
+      "Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch",
+      "Nur ein Recht auf Löschung",
+      "Keine besonderen Rechte",
+      "Nur ein Recht auf Auskunft"
+    ],
+    "r": 0,
+    "e": "Betroffene können Auskunft über gespeicherte Daten verlangen, Berichtigung falscher Daten, Löschung („Recht auf Vergessenwerden“), Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Diese Rechte muss ein Unternehmen umsetzen können.",
+    "b": "recht",
+    "q_": "PK-06 · Betroffenenrechte",
+    "cs": [
+      85,
+      26,
+      23,
+      26
+    ],
+    "ws": [
+      7,
+      5,
+      3,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.7
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 449,
+    "q": "Was ist der Unterschied zwischen Rabatt und Skonto?",
+    "a": [
+      "Rabatt mindert den Ausgangspreis (z. B. Treuerabatt), Skonto belohnt schnelle Zahlung",
+      "Beide bedeuten dasselbe",
+      "Skonto erhöht den Preis",
+      "Rabatt gibt es nur bei Leasing"
+    ],
+    "r": 0,
+    "e": "Rabatt ist ein Preisnachlass auf den Kaufpreis (z. B. Kunden-, Mengen-, Treurabatt). Skonto ist ein Nachlass speziell für schnelle Zahlung innerhalb einer Frist. In der Handelskalkulation werden beide unterschiedlich gerechnet.",
+    "b": "angebot",
+    "q_": "PK-03 · Kalkulation",
+    "cs": [
+      85,
+      23,
+      23,
+      30
+    ],
+    "ws": [
+      11,
+      3,
+      4,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.7
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 270,
+    "q": "Was unterscheidet einen Black-Box-Test von einem White-Box-Test?",
+    "a": [
+      "Black-Box prüft nur über die Schnittstellen ohne Code-Kenntnis, White-Box mit Kenntnis des Codes",
+      "Black-Box ist immer genauer",
+      "White-Box funktioniert ohne Programm",
+      "Beide prüfen nur die Optik"
+    ],
+    "r": 0,
+    "e": "Beim Black-Box-Test wird nur Ein- und Ausgabe über die Schnittstelle geprüft (ohne Blick in den Code). Beim White-Box-Test kennt der Prüfer den Code und testet gezielt Pfade und Bedingungen.",
+    "b": "qs",
+    "q_": "PK5",
+    "cs": [
+      96,
+      27,
+      36,
+      26
+    ],
+    "ws": [
+      13,
+      4,
+      4,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.69
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 32,
+    "q": "Was zählt zu den Bezugskosten?",
+    "a": [
+      "Neben dem reinen Kaufpreis anfallende Kosten wie Fracht und Verpackung",
+      "Nur die Umsatzsteuer",
+      "Der Gewinn des Lieferanten",
+      "Die Handlungskosten"
+    ],
+    "r": 0,
+    "e": "Bezugskosten sind alle mit dem Bezug der Ware verbundenen Neben kosten: Fracht, Transportversicherung, Verpackung, Zoll. Sie erhöhen den Einstandspreis.",
+    "b": "kaufmaennisch",
+    "q_": "AP2 · Kalkulation",
+    "cs": [
+      70,
+      20,
+      26,
+      19
+    ],
+    "ws": [
+      10,
+      3,
+      4,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.68
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 592,
+    "q": "Warum sollte der Admin-Account nicht für die tägliche Arbeit genutzt werden?",
+    "a": [
+      "Bei einem Angriff über alltägliche Anwendungen wären sonst höchste Rechte kompromittiert",
+      "Damit er schneller tippt",
+      "Weil Admin-Accounts langsamer sind",
+      "Damit er öfter gesperrt wird"
+    ],
+    "r": 0,
+    "e": "Arbeitet ein Nutzer mit Admin-Rechten, könnte jede kompromittierte Anwendung (Browser, Mail) sofort höchste Rechte erlangen. Deshalb trennt man: normaler Account für Alltag, Admin-Konto nur bei Bedarf (Need-to-know/Least Privilege).",
+    "b": "sicherheit",
+    "q_": "PK-06 · Zugriffskontrolle",
+    "cs": [
+      88,
+      24,
+      34,
+      28
+    ],
+    "ws": [
+      11,
+      4,
+      4,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.67
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 617,
+    "q": "Was bedeutet „Trainingsdaten müssen repräsentativ sein“?",
+    "a": [
+      "Sie müssen die spätere Realität abbilden, sonst wird das Modell unzuverlässig",
+      "Sie müssen teuer sein",
+      "Sie dürfen nur Zahlen enthalten",
+      "Sie müssen klein sein"
+    ],
+    "r": 0,
+    "e": "Sind Trainingsdaten einseitig, verallgemeinert das Modell falsch (Bias) – z. B. Gesichtserkennung, die nur einen Hauttyp kennt. Deshalb: Daten passend zum Anwendungsfall und zur Zielgruppe sammeln und prüfen.",
+    "b": "ki",
+    "q_": "PK-04 · KI",
+    "cs": [
+      77,
+      21,
+      31,
+      21
+    ],
+    "ws": [
+      11,
+      4,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.67
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 432,
+    "q": "Was ist der Unterschied zwischen direktem und indirektem Vertrieb?",
+    "a": [
+      "Direkt: Der Hersteller verkauft selbst; indirekt: über Zwischenhändler/Distributoren",
+      "Direkt: nur online; indirekt: nur vor Ort",
+      "Es gibt keinen Unterschied",
+      "Direkt ist immer teurer"
+    ],
+    "r": 0,
+    "e": "Beim direkten Vertrieb verkauft der Hersteller an den Endkunden (z. B. eigener Onlineshop, Außendienst). Beim indirekten Vertrieb schaltet er den Handel/distributoren dazwischen. Beides beeinflusst Marge, Kundennähe und Aufwand.",
+    "b": "kommunikation",
+    "q_": "PK-02 · Vertriebsformen",
+    "cs": [
+      84,
+      41,
+      26,
+      23
+    ],
+    "ws": [
+      8,
+      7,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.65
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 348,
+    "q": "Was ist der Unterschied zwischen qualitativem und quantitativen Angebotsvergleich?",
+    "a": [
+      "Quantitativ vergleicht messbare Größen (Preis, Menge), qualitativ weiche Kriterien (Service, Qualität)",
+      "Qualitativ vergleicht nur den Preis",
+      "Beide vergleichen nur Zahlen",
+      "Quantitativ ist immer subjektiv"
+    ],
+    "r": 0,
+    "e": "Quantitativ = rechnerisch vergleichbar (Preis, Lieferzeit, Verbrauch, Menge). Qualitativ = nicht direkt in Zahlen (Service, Zuverlässigkeit, Ergonomie, Zukunftssicherheit). Oft kombiniert man beide in der Nutzwertanalyse.",
+    "b": "wirtschaft",
+    "q_": "PK-03 · Angebotsvergleich",
+    "cs": [
+      102,
+      35,
+      28,
+      31
+    ],
+    "ws": [
+      11,
+      5,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.64
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 579,
+    "q": "Was bedeutet „Nettokapazität“ in der RAID-Auslegung?",
+    "a": [
+      "Der tatsächlich nutzbare Speicher nach Abzug von Redundanz",
+      "Die Bruttokapazität aller Platten",
+      "Der Stromverbrauch",
+      "Die Garantiezeit"
+    ],
+    "r": 0,
+    "e": "Die Nettokapazität ist der nutzbare Speicher. Bei RAID 1 halbiert sie sich, bei RAID 5 geht eine Plattenkapazität für die Parität verloren, bei RAID 0 bleibt alles nutzbar (ohne Redundanz). Mehr Schutz kostet nutzbaren Platz.",
+    "b": "hardware",
+    "q_": "PK-03 · RAID",
+    "cs": [
+      58,
+      33,
+      18,
+      16
+    ],
+    "ws": [
+      8,
+      4,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.63
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 238,
+    "q": "Was unterscheidet eine digitale Signatur von der Verschlüsselung?",
+    "a": [
+      "Die Signatur weist Echtheit und Unverändertheit nach (mit dem privaten Schlüssel erzeugt, mit dem öffentlichen geprüft)",
+      "Die Signatur verschlüsselt den gesamten Inhalt",
+      "Die Signatur ersetzt ein Passwort",
+      "Die Signatur ist nur für Papierdokumente relevant"
+    ],
+    "r": 0,
+    "e": "Die digitale Signatur ist das Gegenstück zur Verschlüsselung: Sie sichert Nachweisbarkeit. Der Sender signiert mit seinem privaten Schlüssel, der Empfänger prüft mit dem öffentlichen – so wird die Herkunft und Unverändertheit belegt.",
+    "b": "sicherheit",
+    "q_": "PK6",
+    "cs": [
+      119,
+      46,
+      33,
+      49
+    ],
+    "ws": [
+      16,
+      6,
+      5,
+      7
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.61
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 492,
+    "q": "Was ist ein Compiler-Fehler gegenüber einem Laufzeitfehler?",
+    "a": [
+      "Compilerfehler sind Syntax-/Typfehler vor dem Start; Laufzeitfehler treten während der Ausführung auf",
+      "Beide treten erst später auf",
+      "Ein Compiler-Fehler betrifft nur Grafiken",
+      "Laufzeitfehler findet der Compiler"
+    ],
+    "r": 0,
+    "e": "Compilerfehler (Syntax, Typen) verhindern das Übersetzen und treten vor der Ausführung auf. Laufzeitfehler (Division durch null, fehlende Datei, Nullpointer) treten erst beim Ausführen auf. Beide Arten müssen getestet werden.",
+    "b": "software",
+    "q_": "PK-04 · Fehlersuche",
+    "cs": [
+      101,
+      28,
+      41,
+      34
+    ],
+    "ws": [
+      12,
+      5,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.61
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 538,
+    "q": "Wozu dient eine USV mit reiner Sinus-Ausgangsspannung?",
+    "a": [
+      "Sie liefert sauberen, netzähnlichen Strom für empfindliche Geräte",
+      "Sie erhöht die Spannung auf 400 V",
+      "Sie lädt nur Akkus",
+      "Sie ersetzt das Netzteil"
+    ],
+    "r": 0,
+    "e": "Empfindliche Netzteile (mit Active PFC) brauchen eine sinusförmige Ausgangsspannung. Eine USV mit reiner Sinus-Ausgabe liefert netzähnlichen Strom und vermeidet Störungen; einfache USVs geben teils eine Stufen-/Rechteckform aus.",
+    "b": "hardware",
+    "q_": "PK-03 · USV",
+    "cs": [
+      65,
+      33,
+      18,
+      24
+    ],
+    "ws": [
+      8,
+      7,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.61
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 456,
+    "q": "Was ist ein Fremdschlüssel (FK)?",
+    "a": [
+      "Ein Attribut, das auf den Primärschlüssel einer anderen Tabelle verweist",
+      "Der eindeutige Schlüssel einer Tabelle",
+      "Ein Attribut ohne Bedeutung",
+      "Ein berechneter Wert"
+    ],
+    "r": 0,
+    "e": "Der Fremdschlüssel verweist auf den Primärschlüssel einer anderen Tabelle und stellt die Beziehung her. In UML wird der PK mit <<PK>>, der FK mit <<FK>> gekennzeichnet. Er sorgt für referentielle Integrität.",
+    "b": "datenbank",
+    "q_": "PK-04 · Schlüssel",
+    "cs": [
+      72,
+      38,
+      27,
+      20
+    ],
+    "ws": [
+      10,
+      5,
+      4,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.6
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 551,
+    "q": "Was ist bei Auftragsarbeit an fremder Software urheberrechtlich zu klären?",
+    "a": [
+      "Wem die Nutzungsrechte am Ergebnis gehören – am besten im Vertrag regeln",
+      "Es gibt keine Rechte",
+      "Der Auftraggeber erhält immer alle Rechte automatisch",
+      "Nur die IHK entscheidet"
+    ],
+    "r": 0,
+    "e": "Der Urheber ist zunächst der Entwickler. Nutzungs-/Verwertungsrechte muss der Auftraggeber vertraglich erwerben (Umfang: Nutzung, Vervielfältigung, Weitergabe, Anpassung). Deshalb gehört eine Rechteklausel in jeden Entwicklungsvertrag.",
+    "b": "recht",
+    "q_": "PK-04 · Urheberrecht",
+    "cs": [
+      72,
+      20,
+      53,
+      23
+    ],
+    "ws": [
+      12,
+      4,
+      7,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.6
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 223,
+    "q": "Wodurch unterscheiden sich IPv4 und IPv6?",
+    "a": [
+      "IPv4 nutzt 32 Bit (etwa 4,3 Mrd. Adressen), IPv6 nutzt 128 Bit – dadurch praktisch unerschöpflich",
+      "IPv6 ist langsamer als IPv4",
+      "IPv4 arbeitet ohne Subnetzmaske",
+      "IPv6 ist eine Erweiterung der MAC-Adresse"
+    ],
+    "r": 0,
+    "e": "IPv4 hat 32-Bit-Adressen (Punktnotation), IPv6 hat 128-Bit-Adressen (Hexadezimal mit Doppelpunkten) und vergrößert den Adressraum enorm. IPv6 bringt zusätzlich SLAAC (automatische Konfiguration) und ist heute in vielen Netzen parallel aktiv (Dual-Stack).",
+    "b": "netzwerk",
+    "q_": "NW",
+    "cs": [
+      97,
+      27,
+      31,
+      41
+    ],
+    "ws": [
+      16,
+      5,
+      4,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.59
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 525,
+    "q": "Warum ist Fachsprache gegenüber Kunden kritisch?",
+    "a": [
+      "Unverständliche Fachbegriffe führen zu Missverständnissen und Vertrauensverlust",
+      "Sie ist immer verboten",
+      "Sie verkürzt die Rechnung",
+      "Sie ist ein Zeichen von Kompetenz"
+    ],
+    "r": 0,
+    "e": "Fachsprache kann beeindrucken, aber auch ausschließen: Kunden verstehen den Nutzen nicht und misstrauen. Professionell ist, den Sachverhalt verständlich zu erklären und Fachbegriffe nur bei Bedarf mit Erläuterung zu nutzen.",
+    "b": "kommunikation",
+    "q_": "PK-02 · Kundenkommunikation",
+    "cs": [
+      79,
+      22,
+      25,
+      33
+    ],
+    "ws": [
+      7,
+      4,
+      4,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.59
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 181,
+    "q": "Wozu dient ein „Trainings-, Validierungs- und Testdatensatz\" im ML?",
+    "a": [
+      "Nur zum Speichern der Daten",
+      "Trainieren des Modells, Optimieren der Parameter und ehrliches Bewerten auf ungesehenen Daten",
+      "Zur Verschlüsselung der Daten",
+      "Zum Löschen von Ausreißern"
+    ],
+    "r": 1,
+    "e": "Trainingsdaten: Modell lernen. Validierungsdaten: Parameter einstellen. Testdaten: einmalige, ehrliche Bewertung. Wird das Testset zum Optimieren benutzt, verliert es seine Aussagekraft.",
+    "b": "ki",
+    "q_": "ML",
+    "cs": [
+      27,
+      93,
+      29,
+      26
+    ],
+    "ws": [
+      5,
+      12,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.58
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 198,
+    "q": "Was ist ein Diffusionsmodell?",
+    "a": [
+      "Ein generatives KI-Modell, das Bilder erzeugt, indem es schrittweise Rauschen entfernt",
+      "Ein Modell zur Berechnung von Netzwerkadressen",
+      "Ein Datenkompressionsverfahren",
+      "Ein Sicherheitsprotokoll"
+    ],
+    "r": 0,
+    "e": "Diffusionsmodelle erzeugen Bilder und andere Medien, indem sie aus zufälligem Rauschen schrittweise ein Bild formen. Sie sind neben GANs die Grundlage moderner Bildgenerierung.",
+    "b": "ki",
+    "q_": "DL",
+    "cs": [
+      86,
+      46,
+      30,
+      24
+    ],
+    "ws": [
+      11,
+      6,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.58
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 410,
+    "q": "Was ist ein Projektstrukturplan (PSP)?",
+    "a": [
+      "Eine hierarchische Zerlegung des Projekts in Teilaufgaben und Arbeitspakete",
+      "Ein Zeitplan mit Balken",
+      "Eine Liste der Kosten",
+      "Ein Organigramm des Unternehmens"
+    ],
+    "r": 0,
+    "e": "Der Projektstrukturplan (auch Work Breakdown Structure) gliedert das Gesamtprojekt von oben nach unten in Teilprojekte, Aufgaben und Arbeitspakete. Er beantwortet „WAS ist zu tun?“, bevor im Terminplan das „WANN“ folgt.",
+    "b": "pm",
+    "q_": "PK-01 · Projektplanung",
+    "cs": [
+      75,
+      23,
+      21,
+      32
+    ],
+    "ws": [
+      9,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.57
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 264,
+    "q": "Was ist das Ziel der Qualitätsplanung?",
+    "a": [
+      "Ist-Zustand ermitteln und einen messbaren Ziel-Zustand festlegen",
+      "Fehler produzieren",
+      "Mitarbeiter entlassen",
+      "Nur den Preis festlegen"
+    ],
+    "r": 0,
+    "e": "Qualitätsplanung heißt: den Ist-Zustand erheben und einen erreichbaren, messbaren Ziel-Zustand festlegen (Qualitätsziele). Die Qualitätslenkung setzt diesen Plan dann operativ um.",
+    "b": "qs",
+    "q_": "PK5",
+    "cs": [
+      64,
+      18,
+      21,
+      23
+    ],
+    "ws": [
+      7,
+      2,
+      2,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.56
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 536,
+    "q": "Warum kann zu wenig Arbeitsspeicher einen Rechner „langsam“ machen?",
+    "a": [
+      "Das Betriebssystem verlagert Daten auf die Platte (Auslagerung) – das ist viel langsamer als RAM",
+      "Der Prozessor drosselt automatisch",
+      "Die Festplatte dreht langsamer",
+      "Das Netzwerk wird langsamer"
+    ],
+    "r": 0,
+    "e": "Reicht der RAM nicht, lagert das Betriebssystem Teile in eine Auslagerungsdatei auf dem Datenträger aus (Swapping/Paging). Der Zugriff ist um Größenordnungen langsamer – der Rechner reagiert zäh. Abhilfe: mehr RAM.",
+    "b": "hardware",
+    "q_": "PK-03 · Speicher",
+    "cs": [
+      96,
+      34,
+      30,
+      27
+    ],
+    "ws": [
+      15,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.56
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 628,
+    "q": "Was ist ein Benutzerkonto und wozu dient es?",
+    "a": [
+      "Es ordnet Aktionen einer Person zu und regelt ihre Rechte",
+      "Es speichert Dateien",
+      "Es ist eine Festplatte",
+      "Es ist ein Kabel"
+    ],
+    "r": 0,
+    "e": "Ein Benutzerkonto identifiziert einen Nutzer und trägt seine Rechte/Einstellungen. Mehrere Konten je Rechner trennen Personen und Rechte; zentral (Domäne) verwaltet, ergibt das einheitliche Anmeldung und Rechte über viele Rechner.",
+    "b": "software",
+    "q_": "PK-04 · Betriebssysteme",
+    "cs": [
+      57,
+      20,
+      22,
+      16
+    ],
+    "ws": [
+      10,
+      3,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.56
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 167,
+    "q": "Was bedeutet Overfitting beim maschinellen Lernen?",
+    "a": [
+      "Das Modell passt sich so stark an die Trainingsdaten an, dass es auf neuen Daten schlecht generalisiert",
+      "Das Modell ist zu einfach und erkennt kein Muster",
+      "Die Trainingsdaten wurden falsch formatiert",
+      "Das Modell rechnet zu langsam"
+    ],
+    "r": 0,
+    "e": "Bei Overfitting lernt das Modell die Trainingsdaten inklusive Rauschen auswendig. Gegenmaßnahmen sind mehr Daten, Regularisierung (z. B. Dropout, L2), Pruning beim Entscheidungsbaum und Kreuzvalidierung.",
+    "b": "ki",
+    "q_": "ML",
+    "cs": [
+      103,
+      49,
+      43,
+      29
+    ],
+    "ws": [
+      17,
+      9,
+      5,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.55
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 28,
+    "q": "Wozu dient eine DMZ?",
+    "a": [
+      "Sie stellt öffentlich erreichbare Dienste abgeschirmt vom internen Netz bereit",
+      "Sie ist der schnellste Netzwerkbereich",
+      "Sie ersetzt das Backup",
+      "Sie speichert die Benutzerpasswörter"
+    ],
+    "r": 0,
+    "e": "Die demilitarisierte Zone (DMZ) liegt zwischen externem und internem Netz. Öffentlich erreichbare Server stehen dort, damit ein Angriff nicht direkt ins interne Netz durchschlägt.",
+    "b": "systemloesung",
+    "q_": "AP2 · IT-Sicherheit",
+    "cs": [
+      78,
+      38,
+      22,
+      36
+    ],
+    "ws": [
+      10,
+      5,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.55
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 515,
+    "q": "Was zählt zum betrieblichen Fehlermanagement (PK-01)?",
+    "a": [
+      "Störungen erfassen, priorisieren, bearbeiten und Ursachen abstellen",
+      "Nur Hardware kaufen",
+      "Nur die Webseite gestalten",
+      "Nur Rechnungen schreiben"
+    ],
+    "r": 0,
+    "e": "Fehlermanagement umfasst das Erkennen, Melden, Priorisieren, Bearbeiten und Nachverfolgen von Störungen – möglichst mit Beseitigung der Ursache, nicht nur des Symptoms. Ticketsystem und Support-Level unterstützen das.",
+    "b": "pm",
+    "q_": "PK-01 · Fehlermanagement",
+    "cs": [
+      67,
+      19,
+      26,
+      24
+    ],
+    "ws": [
+      7,
+      3,
+      4,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.53
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 338,
+    "q": "Was kennzeichnet eine Skriptsprache?",
+    "a": [
+      "Sie wird in der Regel zur Laufzeit interpretiert und ist weniger streng typisiert",
+      "Sie kann nur kompiliert werden",
+      "Sie hat keine Variablen",
+      "Sie läuft nur auf Servern"
+    ],
+    "r": 0,
+    "e": "Skriptsprachen (z. B. Shell, Python, PowerShell) werden meist interpretiert, sind schnell zu schreiben und eignen sich für Automatisierung. Klassische Programmiersprachen werden oft kompiliert und bieten strengere Typprüfung.",
+    "b": "software",
+    "q_": "PK-04 · Programmiersprachen",
+    "cs": [
+      81,
+      30,
+      23,
+      25
+    ],
+    "ws": [
+      13,
+      5,
+      4,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.52
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 356,
+    "q": "Wodurch unterscheiden sich Hub und Switch?",
+    "a": [
+      "Der Switch leitet Frames gezielt nur an den Zielanschluss weiter, der Hub sendet an alle",
+      "Der Hub ist intelligenter",
+      "Der Switch arbeitet auf Schicht 3",
+      "Es gibt keinen Unterschied"
+    ],
+    "r": 0,
+    "e": "Ein Hub kopiert jedes eingehende Signal an ALLE Ports (eine Kollisionsdomäne, geringer Durchsatz). Ein Switch lernt MAC-Adressen und leitet gezielt weiter: jeder Port bildet eine eigene Kollisionsdomäne. Deshalb hat der Switch die Nase vorn.",
+    "b": "netzwerk",
+    "q_": "PK-03 · Netzkomponenten",
+    "cs": [
+      88,
+      25,
+      33,
+      26
+    ],
+    "ws": [
+      15,
+      4,
+      6,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.52
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 571,
+    "q": "Warum sollte man Primärschlüssel nicht aus fachlichen Daten mit häufigen Änderungen bilden?",
+    "a": [
+      "Weil Änderungen dann in alle referenzierenden Tabellen nachgezogen werden müssten",
+      "Weil Zahlen verboten sind",
+      "Weil Text schneller ist",
+      "Weil es keine Vorteile hat"
+    ],
+    "r": 0,
+    "e": "Ein Primärschlüssel muss stabil sein. Wird er aus einem änderbaren Fachwert gebildet (z. B. E-Mail), müsste bei jeder Änderung der Wert überall mitgeändert werden. Besser: künstlicher, unveränderlicher Schlüssel (Integer/AUTO_INCREMENT).",
+    "b": "datenbank",
+    "q_": "PK-04 · Schlüssel",
+    "cs": [
+      81,
+      25,
+      23,
+      26
+    ],
+    "ws": [
+      10,
+      4,
+      4,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.52
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 199,
+    "q": "Was ist „Prompt Injection\" als Sicherheitsrisiko bei LLM-Anwendungen?",
+    "a": [
+      "Eine versteckte Anweisung in Eingabedaten, die das Modell zu ungewollten Aktionen verleitet",
+      "Ein Fehler in der Tastatur",
+      "Ein Angriff auf das Netzwerkkabel",
+      "Eine Methode zum Modelltraining"
+    ],
+    "r": 0,
+    "e": "Bei der Prompt Injection schmuggelt ein Angreifer Anweisungen in Text, den das Modell verarbeitet (z. B. in eine E-Mail oder Webseite). Das Modell kann dann Regeln umgehen. Gegenmaßnahmen: Eingaben prüfen und Rechte des Modells begrenzen.",
+    "b": "ki",
+    "q_": "KI",
+    "cs": [
+      91,
+      26,
+      33,
+      31
+    ],
+    "ws": [
+      12,
+      5,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.5
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 493,
+    "q": "Was ist ein Haltepunkt (Breakpoint) beim Debuggen?",
+    "a": [
+      "Eine markierte Stelle, an der das Programm zur Kontrolle anhält",
+      "Ein Fehler im Quellcode",
+      "Das Ende des Programms",
+      "Ein Netzwerkzugang"
+    ],
+    "r": 0,
+    "e": "Ein Haltepunkt lässt das Programm an einer gewählten Stelle anhalten. Dann kann man Variablenwerte prüfen und schrittweise weiterlaufen – so findet man die Stelle, an der ein falscher Wert entsteht, statt zu raten.",
+    "b": "software",
+    "q_": "PK-04 · Fehlersuche",
+    "cs": [
+      63,
+      23,
+      22,
+      18
+    ],
+    "ws": [
+      10,
+      4,
+      4,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.5
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 389,
+    "q": "Was ist eine Schutzbedarfsanalyse?",
+    "a": [
+      "Die Einstufung, wie stark Anwendungen, Systeme, Räume und Verbindungen geschützt werden müssen",
+      "Eine Zählung aller Computer im Haus",
+      "Die Preiskalkulation der Sicherheit",
+      "Eine Liste aller Passwörter"
+    ],
+    "r": 0,
+    "e": "In der Schutzbedarfsanalyse (nach BSI IT-Grundschutz) wird je Objekt (Anwendung, IT-System, Raum, Verbindung) bewertet, welcher Schaden bei Verlust von Vertraulichkeit, Integrität oder Verfügbarkeit entsteht. Kategorien: normal, hoch, sehr hoch. Daraus leiten sich Maßnahmen ab.",
+    "b": "sicherheit",
+    "q_": "PK-06 · Schutzbedarf",
+    "cs": [
+      94,
+      35,
+      35,
+      27
+    ],
+    "ws": [
+      12,
+      6,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.48
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 422,
+    "q": "Wie läuft ein Schreibtischtest ab?",
+    "a": [
+      "Ein Test desselben Programms/Modells mit konkreten Beispieldaten ohne Ausführung",
+      "Ein Test mit echter Hardware",
+      "Ein Test mit dem Kunden",
+      "Eine Messung der Geschwindigkeit"
+    ],
+    "r": 0,
+    "e": "Beim Schreibtischtest (Trockentest) geht man ein Programm, einen Algorithmus oder ein Datenmodell gedanklich mit konkreten Werten durch und prüft Schritt für Schritt das erwartete Verhalten – ohne den Rechner zu bemühen. Der Katalog nennt es für Quellcode und Datenbanken.",
+    "b": "qs",
+    "q_": "PK-04 · Schreibtischtest",
+    "cs": [
+      80,
+      28,
+      23,
+      32
+    ],
+    "ws": [
+      9,
+      5,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2.48
+    }
+  }
+]

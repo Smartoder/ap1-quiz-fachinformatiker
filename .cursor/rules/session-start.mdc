@@ -11,6 +11,6 @@ alwaysApply: true
 4. `AGENTS.md` + `docs/START.md` skimmen (Skill-Router, Grenzen).
 5. Nicht-trivial? → Feature-Pipeline lite, kein Sofort-Großumbau an `index.html`.
 6. Deploy/DB/Server-Aussagen nur nach MCP/HTTP/CLI — nie „müsste“.
-7. MCP `user-ap1` ist derzeit **broken** → HTTP `/ap1/health` + Vercel-Projekt `ap1-trainer`.
+7. MCP `user-ap1` ist derzeit **broken** → HTTP https://ap1-trainer.pages.dev/ + `/ap1/health`.
 
 Control-Plane: `Desktop\Projekte\control-plane\2026-10-13-radikal-system-dienste.md`

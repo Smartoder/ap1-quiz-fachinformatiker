@@ -4,6 +4,15 @@ Das Format folgt *Keep a Changelog*. Bruchstellen sind ausdrücklich gekennzeich
 
 ## [Nicht veröffentlicht]
 
+### Geändert — Antwortlängen Quiz/Fallstudien + Live-URL Pages (2026-10-14)
+
+**Warum.** Richtige Optionen waren oft die längsten und standen fest an Position A —
+Nutzer konnten die Lösung an Länge/Position erkennen.
+
+**Was.** Antworttexte in Quiz und Fallstudien auf ähnliche Länge gebracht;
+Anzeige-Reihenfolge wird gemischt (`mischeArray`). Live-Host dokumentiert als
+https://ap1-trainer.pages.dev/ (Cloudflare Pages).
+
 ### Geändert — Agent-OS Option R Phase 2 (2026-10-14)
 
 **Was.** DB-Ref-Whitelist in `AGENTS.md`; `docs/START.md` Stand Phase 2.

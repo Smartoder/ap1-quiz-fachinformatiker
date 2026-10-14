@@ -1,0 +1,2562 @@
+[
+  {
+    "sammlung": "QUIZ",
+    "i": 290,
+    "q": "Wofür stehen die vier Seiten einer Nachricht nach Schulz von Thun?",
+    "a": [
+      "Sachinhalt, Selbstoffenbarung, Beziehung und Appell",
+      "Sender, Empfänger, Kanal, Störung",
+      "Hören, Sprechen, Lesen, Schreiben",
+      "Frage, Antwort, Kritik, Lob"
+    ],
+    "r": 0,
+    "e": "Jede Nachricht hat vier Seiten: Sachinhalt (worüber informiert wird), Selbstoffenbarung (was der Sender von sich zeigt), Beziehung (wie er zum Empfänger steht) und Appell (was er erreichen will). Missverständnisse entstehen, wenn man nur eine Seite hört.",
+    "b": "kommunikation",
+    "q_": "PK2",
+    "cs": [
+      51,
+      33,
+      33,
+      27
+    ],
+    "ws": [
+      5,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.89
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 481,
+    "q": "Übersetze ins Deutsche: „Please submit a support ticket and describe the error.“",
+    "a": [
+      "Bitte legen Sie eine Supportanfrage an und beschreiben Sie den Fehler.",
+      "Bitte löschen Sie alle Support-Dateien.",
+      "Bitte schicken Sie uns Ihre Rechnung.",
+      "Bitte rufen Sie den Support nicht an."
+    ],
+    "r": 0,
+    "e": "„submit a support ticket“ = eine Supportanfrage anlegen, „describe the error“ = den Fehler beschreiben. Solche Aufforderungen sind typisch in englischsprachigen Support-Texten (PK-02).",
+    "b": "englisch",
+    "q_": "PK-02 · Englische Texte",
+    "cs": [
+      70,
+      39,
+      37,
+      37
+    ],
+    "ws": [
+      11,
+      5,
+      6,
+      7
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.89
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 296,
+    "q": "E-mail: „The deadline has been postponed to next Monday.“ – Was bedeutet das?",
+    "a": [
+      "Der Termin wurde auf nächsten Montag verschoben",
+      "Der Termin wurde abgesagt",
+      "Der Termin bleibt unverändert",
+      "Der Termin wurde vorverlegt auf Montag"
+    ],
+    "r": 0,
+    "e": "„to postpone\" = verschieben (später). Nicht verwechseln mit „to cancel\" (absagen) oder „to bring forward\" (vorziehen).",
+    "b": "englisch",
+    "q_": "EN",
+    "cs": [
+      47,
+      25,
+      29,
+      38
+    ],
+    "ws": [
+      7,
+      4,
+      4,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.88
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 363,
+    "q": "Was bedeutet Dual-Stack bei IP-Netzen?",
+    "a": [
+      "Geräte laufen parallel mit IPv4 und IPv6",
+      "Zwei Router hintereinander",
+      "Zwei Leitungen pro Computer",
+      "Zwei IP-Adressen im selben Subnetz für einen Port"
+    ],
+    "r": 0,
+    "e": "Bei Dual-Stack sprechen Geräte und Dienste sowohl IPv4 als auch IPv6 gleichzeitig. Das ist der übliche Weg der Migration: Der laufende Betrieb bleibt über IPv4 stabil, IPv6 wird schrittweise eingeführt.",
+    "b": "netzwerk",
+    "q_": "PK-04 · IP-Konfiguration",
+    "cs": [
+      40,
+      26,
+      27,
+      49
+    ],
+    "ws": [
+      7,
+      3,
+      4,
+      8
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.88
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 582,
+    "q": "Ein Server soll 99,9 % im Jahr verfügbar sein. Wie viel Ausfallzeit ist das etwa?",
+    "a": [
+      "Rund 8,76 Stunden pro Jahr",
+      "Rund 87,6 Stunden",
+      "Rund 52 Minuten",
+      "Rund 3 Minuten"
+    ],
+    "r": 0,
+    "e": "0,1 % von 365 Tagen × 24 h = 8,76 h. 99 % wären ~87,6 h, 99,99 % ~52,6 min, 99,999 % ~5,26 min. Aus der geforderten Verfügbarkeit leitet man Redundanz und Wartungsfenster ab.",
+    "b": "hardware",
+    "q_": "PK-06 · Verfügbarkeit",
+    "cs": [
+      26,
+      17,
+      15,
+      14
+    ],
+    "ws": [
+      5,
+      3,
+      3,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.86
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 322,
+    "q": "Welche drei Faktoren prüft eine Green-IT-Bewertung eines Arbeitsplatzrechners besonders?",
+    "a": [
+      "Energieverbrauch, Reparierbarkeit/Recycling sowie Langlebigkeit",
+      "Farbe, Gewicht und Herstellermarke",
+      "Preis, Lieferzeit und Verpackungsgröße",
+      "Anzahl der USB-Ports und Lautsprecherleistung"
+    ],
+    "r": 0,
+    "e": "Green IT/Öko-Design betrachtet den ganzen Lebenszyklus: Energieeffizienz im Betrieb, Langlebigkeit, Reparierbarkeit, Recyclingfähigkeit und Schadstoffarmut (RoHS). Geprüft wird über Zertifikate wie Energy Star.",
+    "b": "hardware",
+    "q_": "PK-03 · Ökologische Aspekte",
+    "cs": [
+      63,
+      34,
+      38,
+      45
+    ],
+    "ws": [
+      4,
+      4,
+      4,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.85
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 620,
+    "q": "Was bedeutet „We recommend enabling two-factor authentication.“?",
+    "a": [
+      "Wir empfehlen, die Zwei-Faktor-Authentifizierung zu aktivieren.",
+      "Wir empfehlen, Passwörter zu teilen.",
+      "Wir empfehlen, die Firewall auszuschalten.",
+      "Wir empfehlen, Backups zu löschen."
+    ],
+    "r": 0,
+    "e": "„enabling“ = aktivieren, „two-factor authentication“ = Zwei-Faktor-Authentifizierung. Eine Sicherheitsempfehlung: Wissen + Besitz. Damit hilft ein gestohlenes Passwort allein nicht.",
+    "b": "englisch",
+    "q_": "PK-02 · Englische Texte",
+    "cs": [
+      63,
+      36,
+      42,
+      34
+    ],
+    "ws": [
+      6,
+      5,
+      5,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.85
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 24,
+    "q": "Was bedeutet Redundanz in einer Datenbank?",
+    "a": [
+      "Mehrfache, unnötige Speicherung derselben Information",
+      "Die Sicherung der Daten auf einem zweiten Server",
+      "Ein doppelter Primärschlüssel",
+      "Die Wiederholung einer Abfrage"
+    ],
+    "r": 0,
+    "e": "Redundanz ist die mehrfache Speicherung derselben Information. Sie kostet Speicher und führt zu Inkonsistenz, wenn nur eine der Kopien geändert wird – deshalb normalisiert man.",
+    "b": "datenbank",
+    "q_": "NF",
+    "cs": [
+      53,
+      48,
+      29,
+      30
+    ],
+    "ws": [
+      5,
+      8,
+      3,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.83
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 83,
+    "q": "Welche drei Zieldimensionen nennt der Prüfungskatalog für das Unternehmensleitbild?",
+    "a": [
+      "Gewinn, Umsatz und Marktanteil",
+      "Plan, Do und Check",
+      "Kunde, Mitarbeiter und Lieferant",
+      "Ökonomisch, ökologisch und sozial"
+    ],
+    "r": 3,
+    "e": "PK-07 Themenkreis 02 fordert, Ziele dem Leitbild zu entnehmen: ökonomische Ziele (Umsatz, Gewinn), ökologische Ziele (Ressourcenschonung, Nachhaltigkeit) und soziale Ziele (Arbeitsbedingungen). Dieses Dreigestirn ist der Standardbegriff der Nachhaltigkeit.",
+    "b": "vertrag",
+    "q_": "PK7",
+    "cs": [
+      30,
+      18,
+      32,
+      33
+    ],
+    "ws": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.83
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 98,
+    "q": "Bei welchem Backup-Verfahren werden jeden Tag nur die Änderungen seit der letzten Vollsicherung gesichert?",
+    "a": [
+      "Bei der Vollsicherung",
+      "Bei der inkrementellen Sicherung",
+      "Bei der differenziellen Sicherung",
+      "Bei der Spiegelung"
+    ],
+    "r": 2,
+    "e": "Die differenzielle Sicherung sammelt immer die Änderungen seit der letzten Vollsicherung – die Rücksicherung braucht also nur zwei Sicherungen (Voll + letzte Differenz), benötigt aber wachsenden Speicher. Die inkrementelle Variante sichert nur seit der letzten Sicherung überhaupt.",
+    "b": "recht",
+    "q_": "PK6",
+    "cs": [
+      21,
+      32,
+      33,
+      18
+    ],
+    "ws": [
+      3,
+      4,
+      4,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.83
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 174,
+    "q": "Was bezeichnet man als generische (generative) KI?",
+    "a": [
+      "KI, die bestehende Daten nur sortiert",
+      "KI, die neue Inhalte wie Text, Bilder oder Code erzeugt",
+      "KI, die ausschließlich rechnet",
+      "KI, die keine Trainingsdaten benötigt"
+    ],
+    "r": 1,
+    "e": "Generative KI erzeugt neue Inhalte – Text (LLM wie ChatGPT), Bilder (Diffusionsmodelle) oder Code. Grundlage sind meist große neuronale Netze, die aus sehr vielen Beispielen Muster gelernt haben.",
+    "b": "ki",
+    "q_": "KI",
+    "cs": [
+      37,
+      55,
+      30,
+      37
+    ],
+    "ws": [
+      6,
+      10,
+      4,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.83
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 48,
+    "q": "Welche fünf Säulen umfasst die deutsche Sozialversicherung?",
+    "a": [
+      "Kranken-, Pflege-, Renten-, Arbeitslosen- und Unfallversicherung",
+      "Nur Renten- und Krankenversicherung",
+      "Kranken-, Steuer-, Renten-, Auto- und Unfallversicherung",
+      "Nur die gesetzliche Unfallversicherung"
+    ],
+    "r": 0,
+    "e": "Die fünf Säulen sind Kranken-, Pflege-, Renten-, Arbeitslosen- und gesetzliche Unfallversicherung. Bis auf die Unfallversicherung zahlen Arbeitgeber und Arbeitnehmer je etwa die Hälfte.",
+    "b": "wiso",
+    "q_": "AP2 · Sozialversicherung",
+    "cs": [
+      64,
+      35,
+      56,
+      38
+    ],
+    "ws": [
+      6,
+      4,
+      6,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.83
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 29,
+    "q": "Warum soll der Primärschlüssel einfach gehalten werden?",
+    "a": [
+      "Weil er sonst nicht indiziert werden kann",
+      "Weil er sich sonst in jeder Fremdschlüsseltabelle wiederholt",
+      "Weil er sonst nicht eindeutig ist",
+      "Weil die Datenbank ihn sonst nicht akzeptiert"
+    ],
+    "r": 1,
+    "e": "Ein langer oder zusammengesetzter Primärschlüssel wird in jede referenzierende Tabelle übernommen und bläht die Datenbank auf. Deshalb empfiehlt sich ein künstlicher Integer-Schlüssel mit AUTO_INCREMENT.",
+    "b": "datenbank",
+    "q_": "NF",
+    "cs": [
+      41,
+      60,
+      33,
+      45
+    ],
+    "ws": [
+      7,
+      8,
+      6,
+      7
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.82
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 45,
+    "q": "Was beschreibt die Verfügbarkeit in Prozent (z. B. 99,9 %)?",
+    "a": [
+      "Den Anteil der fehlerfreien Datensätze",
+      "Den Anteil der Zeit, in der das System vertraglich nutzbar ist",
+      "Die Zahl der gleichzeitigen Nutzer",
+      "Die Geschwindigkeit der Antwortzeiten"
+    ],
+    "r": 1,
+    "e": "Verfügbarkeit ist der Anteil der vereinbarten Betriebszeit, in der das System nutzbar ist. Sie wird meist über die jährliche Ausfallzeit angegeben: 99,9 % bedeutet rund 8,76 Stunden Ausfall im Jahr.",
+    "b": "sicherheit",
+    "q_": "NW",
+    "cs": [
+      38,
+      62,
+      34,
+      37
+    ],
+    "ws": [
+      5,
+      11,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.82
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 183,
+    "q": "Warum ist Erklärbarkeit (Transparenz) bei KI in der Personalauswahl wichtig?",
+    "a": [
+      "Weil Entscheidungen nachvollziehbar und begründbar sein müssen",
+      "Weil sonst die Rechenleistung steigt",
+      "Weil intransparente Modelle immer genauer sind",
+      "Weil die Daten dann kleiner werden"
+    ],
+    "r": 0,
+    "e": "Bei Bewerberauswahl und Kreditvergabe muss begründet werden können, wie eine Entscheidung zustande kommt. Black-Box-Modelle sind dort problematisch – man bevorzugt erklärbare Verfahren oder ergänzt Erklärbarkeitsmethoden.",
+    "b": "ki",
+    "q_": "KI",
+    "cs": [
+      62,
+      36,
+      46,
+      34
+    ],
+    "ws": [
+      7,
+      5,
+      6,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.82
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 186,
+    "q": "Welche Aussage über KI und KI-generierte Ergebnisse ist richtig?",
+    "a": [
+      "KI-Ergebnisse sind immer korrekt und müssen nicht geprüft werden",
+      "KI-Ergebnisse können falsch sein und müssen fachlich geprüft werden",
+      "KI kann nur rechnen, nie Text erzeugen",
+      "KI-Modelle sind immer ethisch neutral"
+    ],
+    "r": 1,
+    "e": "KI-Ergebnisse sind Wahrscheinlichkeitsergebnisse – sie können halluzinieren, veraltet sein oder Bias enthalten. Jede Veröffentlichung braucht eine fachliche Prüfung („human in the loop\").",
+    "b": "ki",
+    "q_": "KI",
+    "cs": [
+      64,
+      67,
+      38,
+      37
+    ],
+    "ws": [
+      9,
+      9,
+      7,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.81
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 369,
+    "q": "Welche der genannten Konsolenbefehle dienen dem Netzwerk-Troubleshooting (PK-04)?",
+    "a": [
+      "ping, traceroute und nslookup",
+      "mkdir, rm und cp",
+      "dir, cd und type",
+      "print, edit und save"
+    ],
+    "r": 0,
+    "e": "ping prüft die Erreichbarkeit eines Hosts, traceroute (bzw. tracert) zeigt den Weg der Pakete, nslookup prüft die Namensauflösung (DNS). ipconfig/ip zeigt die eigene Konfiguration. mkdir, cp, rm sind Dateibefehle.",
+    "b": "netzwerk",
+    "q_": "PK-04 · Konsolenbefehle",
+    "cs": [
+      29,
+      16,
+      16,
+      20
+    ],
+    "ws": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.81
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 22,
+    "q": "Wo steht der Fremdschlüssel bei einer 1:n-Beziehung?",
+    "a": [
+      "In der Tabelle auf der 1-Seite",
+      "In einer eigenen Zwischentabelle",
+      "In der Tabelle auf der n-Seite",
+      "In beiden Tabellen"
+    ],
+    "r": 2,
+    "e": "Bei 1:n wandert der Primärschlüssel der 1-Seite als Fremdschlüssel in die n-Seite. Nur so kann ein Datensatz der 1-Seite mehrfach referenziert werden.",
+    "b": "datenbank",
+    "q_": "DBG",
+    "cs": [
+      30,
+      32,
+      30,
+      18
+    ],
+    "ws": [
+      6,
+      4,
+      6,
+      3
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.78
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 405,
+    "q": "Wofür steht das SMART-Prinzip bei Zielen?",
+    "a": [
+      "Spezifisch, Messbar, Attraktiv/Akzeptiert, Realistisch, Terminiert",
+      "Schnell, Modern, Aktiv, Richtig, Toll",
+      "Sicher, Mehrfach, Automatisch, Reduziert, Transparent",
+      "Sofort, Manuell, Abgeschlossen, Ruhig, Taktisch"
+    ],
+    "r": 0,
+    "e": "SMART hilft, Ziele prüfbar zu machen: Spezifisch (klar was), Messbar (woran erkennbar), Attraktiv/Akzeptiert (motivierend, abgestimmt), Realistisch (machbar), Terminiert (mit Datum). So sind Ziele nicht schwammig.",
+    "b": "pm",
+    "q_": "PK-01 · Projektziele",
+    "cs": [
+      66,
+      37,
+      53,
+      47
+    ],
+    "ws": [
+      5,
+      5,
+      5,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.78
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 7,
+    "q": "Wofür stehen die Buchstaben in der SMART-Regel zur Zielformulierung?",
+    "a": [
+      "Schnell, messbar, alt, riskant, teuer",
+      "Spezifisch, messbar, attraktiv/akzeptiert, realistisch, terminiert",
+      "Sicher, modern, agil, robust, transparent",
+      "Standard, manuell, aktuell, rückverfolgbar, termingerecht"
+    ],
+    "r": 1,
+    "e": "SMART hilft, ein Ziel prüfbar zu formulieren: spezifisch, messbar, attraktiv bzw. akzeptiert, realistisch und terminiert.",
+    "b": "kundenauftrag",
+    "q_": "AP2 · Projektmanagement",
+    "cs": [
+      37,
+      66,
+      41,
+      57
+    ],
+    "ws": [
+      5,
+      5,
+      5,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.78
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 34,
+    "q": "Was ist der Deckungsbeitrag eines Produkts?",
+    "a": [
+      "Der Umsatz abzüglich der variablen Kosten",
+      "Der Umsatz abzüglich aller Kosten",
+      "Der Gewinn nach Steuern",
+      "Die Summe der Fixkosten"
+    ],
+    "r": 0,
+    "e": "Der Deckungsbeitrag je Stück ist Verkaufspreis minus variable Kosten. Er deckt zunächst die Fixkosten; erst darüber entsteht Gewinn.",
+    "b": "kaufmaennisch",
+    "q_": "AP2 · Kostenrechnung",
+    "cs": [
+      41,
+      33,
+      23,
+      23
+    ],
+    "ws": [
+      6,
+      5,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.78
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 133,
+    "q": "Wofür steht ERP?",
+    "a": [
+      "Für ein Netzwerkprotokoll zur sicheren Datenübertragung",
+      "Für ein System zur Steuerung der Unternehmensressourcen",
+      "Für ein Verschlüsselungsverfahren im Zahlungsverkehr",
+      "Für ein Dateisystem auf Servern"
+    ],
+    "r": 1,
+    "e": "Enterprise Resource Planning bündelt zentrale Geschäftsprozesse wie Beschaffung, Lager, Produktion, Vertrieb und Buchhaltung in einem System. Daneben stehen CRM (Kundenbeziehungen) und SCM (Lieferkette). PK-03 nennt ERP, SCM und CRM als typische Branchensoftware.",
+    "b": "software",
+    "q_": "PK3",
+    "cs": [
+      55,
+      55,
+      52,
+      31
+    ],
+    "ws": [
+      6,
+      7,
+      5,
+      5
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": true,
+      "span": 0.77
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 152,
+    "q": "Ein Vorgang hat einen Gesamtpuffer von 4 Tagen. Was folgt daraus?",
+    "a": [
+      "Er kann sich um bis zu 4 Tage verzögern, ohne den Endtermin zu gefährden",
+      "Er liegt auf dem kritischen Pfad des Projekts",
+      "Er ist unkritisch und darf ganz entfallen",
+      "Der Projektendtermin verschiebt sich um 4 Tage"
+    ],
+    "r": 0,
+    "e": "Der Gesamtpuffer ist die Zeitspanne, um die sich ein Vorgang verschieben darf, ohne den Endtermin zu verschieben. Puffer 0 bedeutet dagegen: Der Vorgang liegt auf dem kritischen Pfad – jede Verzögerung schlägt direkt auf das Projekt durch.",
+    "b": "pm",
+    "q_": "PM",
+    "cs": [
+      72,
+      45,
+      41,
+      46
+    ],
+    "ws": [
+      14,
+      8,
+      7,
+      7
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.76
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 32,
+    "q": "Welche SQL-Klausel gehört NICHT in eine WHERE-Bedingung?",
+    "a": [
+      "COUNT",
+      "IS NULL",
+      "LIKE",
+      "BETWEEN"
+    ],
+    "r": 0,
+    "e": "Aggregatfunktionen wie COUNT, SUM, AVG, MIN und MAX dürfen nicht in WHERE stehen. Für Bedingungen auf Aggregate verwendet man HAVING nach GROUP BY.",
+    "b": "datenbank",
+    "q_": "DQL",
+    "cs": [
+      5,
+      7,
+      4,
+      7
+    ],
+    "ws": [
+      1,
+      2,
+      1,
+      1
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.75
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 478,
+    "q": "Wozu dient ein Konsolenbefehl wie „mkdir“?",
+    "a": [
+      "Er legt ein Verzeichnis (Ordner) an",
+      "Er löscht eine Datei",
+      "Er zeigt die IP-Konfiguration",
+      "Er startet den Rechner neu"
+    ],
+    "r": 0,
+    "e": "mkdir (make directory) legt einen Ordner an. Weitere Dateibefehle: ls/dir (auflisten), cp/copy (kopieren), rm/del (löschen), cd (wechseln), chmod (Rechte setzen). Der Katalog nennt genau diese Grundbefehle.",
+    "b": "software",
+    "q_": "PK-04 · Konsolenbefehle",
+    "cs": [
+      35,
+      20,
+      29,
+      26
+    ],
+    "ws": [
+      6,
+      4,
+      4,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.75
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 2,
+    "q": "Was muss vor der Durchführung der betrieblichen Projektarbeit beim Prüfungsausschuss eingereicht werden?",
+    "a": [
+      "Die fertige Dokumentation",
+      "Eine Projektbeschreibung zur Genehmigung",
+      "Ein polizeiliches Führungszeugnis",
+      "Die Präsentationsfolien"
+    ],
+    "r": 1,
+    "e": "Vor der Durchführung ist dem Prüfungsausschuss eine Projektbeschreibung mit Ausgangssituation, Projektziel und Zeitplanung zur Genehmigung vorzulegen.",
+    "b": "kundenauftrag",
+    "q_": "IHK-Erläuterungen AP2 · Bereich 1",
+    "cs": [
+      25,
+      40,
+      33,
+      23
+    ],
+    "ws": [
+      3,
+      4,
+      3,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.74
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 129,
+    "q": "Welches Gütesiegel kennzeichnet besonders energieeffiziente IT-Geräte?",
+    "a": [
+      "Das CE-Zeichen der Europäischen Union",
+      "Das Energy Star Siegel",
+      "Das GS-Zeichen für geprüfte Sicherheit",
+      "Die RoHS-Richtlinie für Gefahrstoffe"
+    ],
+    "r": 1,
+    "e": "Energy Star kennzeichnet besonders sparsame Geräte. Das CE-Zeichen bestätigt die Einhaltung EU-weiter Richtlinien (kein Umweltzeichen), GS steht für geprüfte Sicherheit, RoHS verbietet bestimmte Gefahrstoffe. PK-03 fordert Gütesiegel für Energieeffizienz und Recyclingfähigkeit.",
+    "b": "software",
+    "q_": "PK3",
+    "cs": [
+      37,
+      22,
+      38,
+      36
+    ],
+    "ws": [
+      5,
+      4,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.73
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 234,
+    "q": "Welche drei Stufen kennt die Schutzbedarfskategorie im BSI IT-Grundschutz?",
+    "a": [
+      "Normal, hoch, sehr hoch",
+      "Niedrig, mittel, hoch",
+      "Grün, gelb, rot",
+      "Öffentlich, intern, geheim"
+    ],
+    "r": 0,
+    "e": "Der BSI IT-Grundschutz kennt die Stufen „normal\", „hoch\" und „sehr hoch\". Die Schutzbedarfsanalyse bewertet Objektkategorien – Anwendungen, IT-Systeme, Räume/Infrastruktur und Kommunikationsverbindungen.",
+    "b": "sicherheit",
+    "q_": "PK6",
+    "cs": [
+      23,
+      21,
+      15,
+      26
+    ],
+    "ws": [
+      4,
+      3,
+      3,
+      3
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": true,
+      "span": 0.73
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 307,
+    "q": "„The software is licensed per user.“ – Was bedeutet das?",
+    "a": [
+      "Für jeden Nutzer ist eine eigene Lizenz nötig",
+      "Die Software ist kostenlos",
+      "Eine Lizenz gilt für beliebig viele Nutzer",
+      "Die Software darf nicht installiert werden"
+    ],
+    "r": 0,
+    "e": "„per user\" = je Nutzer. Das ist ein Lizenzmodell (Named User) – jede Person braucht eine eigene Lizenz. Alternative Modelle: per device, concurrent user, site license.",
+    "b": "englisch",
+    "q_": "EN",
+    "cs": [
+      45,
+      26,
+      42,
+      42
+    ],
+    "ws": [
+      8,
+      4,
+      7,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.73
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 166,
+    "q": "Was sucht eine Support Vector Machine (SVM)?",
+    "a": [
+      "Die größte Gruppe ähnlicher Datenpunkte",
+      "Die Hyperplane mit maximalem Abstand zu den nächstgelegenen Punkten",
+      "Die kürzeste Verbindung zwischen zwei Klassen",
+      "Die Häufigkeit der Merkmale im Datensatz"
+    ],
+    "r": 1,
+    "e": "Die SVM sucht die beste Trenngrenze (Hyperplane) zwischen zwei Klassen und maximiert dabei den Abstand (Margin) zu den nächstgelegenen Punkten – den Support Vectors. Für nichtlineare Fälle hilft der Kernel-Trick.",
+    "b": "ki",
+    "q_": "ML",
+    "cs": [
+      39,
+      67,
+      45,
+      40
+    ],
+    "ws": [
+      5,
+      9,
+      6,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.72
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 572,
+    "q": "Was bedeutet konsistente Datenhaltung?",
+    "a": [
+      "Die gespeicherten Daten widersprechen sich nicht",
+      "Die Daten sind verschlüsselt",
+      "Die Daten sind doppelt gespeichert",
+      "Die Daten sind immer verfügbar"
+    ],
+    "r": 0,
+    "e": "Konsistenz heißt Widerspruchsfreiheit: Alle Daten passen zusammen und Regeln (z. B. Schlüssel, Beziehungen) sind eingehalten. Redundanz ohne Kontrolle führt zu Inkonsistenz – deshalb normalisieren und Integritätsregeln nutzen.",
+    "b": "datenbank",
+    "q_": "PK-04 · Datenbankgrundlagen",
+    "cs": [
+      48,
+      28,
+      34,
+      30
+    ],
+    "ws": [
+      6,
+      4,
+      5,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.71
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 273,
+    "q": "Welche drei Aufbauorganisationsformen nennt der Prüfungskatalog?",
+    "a": [
+      "Einlinien-, Mehrlinien- und Matrixorganisation",
+      "Wasserfall, Scrum und Kanban",
+      "Direkt, indirekt und hybrid",
+      "Zentral, dezentral und virtuell"
+    ],
+    "r": 0,
+    "e": "Der Katalog nennt Einliniensystem (ein Vorgesetzter), Mehrliniensystem (mehrere Vorgesetzte) und Matrixorganisation (fachlich und disziplinarisch zugleich). Das Stabliniensystem zählt nicht dazu.",
+    "b": "vertrag",
+    "q_": "PK7",
+    "cs": [
+      46,
+      28,
+      27,
+      31
+    ],
+    "ws": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.7
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 30,
+    "q": "Welche Befehle gehören zur DDL (Data Definition Language)?",
+    "a": [
+      "SELECT, INSERT, UPDATE",
+      "GRANT, REVOKE",
+      "CREATE, ALTER, DROP",
+      "COMMIT, ROLLBACK"
+    ],
+    "r": 2,
+    "e": "DDL = Datendefinition: CREATE, ALTER, DROP, TRUNCATE. DML ändert Daten (INSERT, UPDATE, DELETE), DQL liest (SELECT), DCL regelt Rechte (GRANT, REVOKE), TCL steuert Transaktionen (COMMIT, ROLLBACK).",
+    "b": "datenbank",
+    "q_": "DDL",
+    "cs": [
+      22,
+      13,
+      19,
+      16
+    ],
+    "ws": [
+      3,
+      2,
+      3,
+      2
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.69
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 164,
+    "q": "Warum gilt ein Entscheidungsbaum als White-Box-Modell?",
+    "a": [
+      "Weil er keine Trainingsdaten benötigt",
+      "Weil jeder Entscheidungsschritt logisch nachvollziehbar ist",
+      "Weil er immer die höchste Genauigkeit liefert",
+      "Weil er nur bei Zahlen funktioniert"
+    ],
+    "r": 1,
+    "e": "Ein Entscheidungsbaum zerlegt den Datensatz durch nachvollziehbare Regeln (Wurzel → Entscheidungsknoten → Blatt). Deshalb ist er im Gegensatz zu tiefen neuronalen Netzen leicht erklärbar – ein White-Box-Modell.",
+    "b": "ki",
+    "q_": "ML",
+    "cs": [
+      37,
+      59,
+      45,
+      35
+    ],
+    "ws": [
+      5,
+      6,
+      7,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.69
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 17,
+    "q": "Wie heißt der Effekt, bei dem Abschreibungen sofort in zusätzliches Anlagevermögen reinvestiert werden?",
+    "a": [
+      "Kapitalfreisetzungseffekt",
+      "Lohmann-Ruchti-Effekt",
+      "Skontierungseffekt",
+      "Leverage-Effekt"
+    ],
+    "r": 1,
+    "e": "Der Lohmann-Ruchti-Effekt (auch Kapazitätserweiterungseffekt) beschreibt die sofortige Reinvestition der aus Abschreibungen freigesetzten Mittel – ohne Zuführung von Eigen- oder Fremdkapital.",
+    "b": "wirtschaft",
+    "q_": "FIN",
+    "cs": [
+      25,
+      21,
+      18,
+      15
+    ],
+    "ws": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.67
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 144,
+    "q": "Was ist ein Meilenstein?",
+    "a": [
+      "Ein terminierbares Ereignis ohne eigene Dauer",
+      "Ein einzelner Arbeitsschritt im gesamten Projektverlauf",
+      "Der Abschluss des gesamten Projekts",
+      "Ein besonders teures Arbeitspaket"
+    ],
+    "r": 0,
+    "e": "Ein Meilenstein ist ein terminierbares Ereignis ohne eigene Dauer – etwa „Konzept freigegeben\" oder „Abnahme erfolgt\". Er strukturiert das Projekt und dient der Fortschrittskontrolle. PK-01 nennt ihn ausdrücklich.",
+    "b": "pm",
+    "q_": "PK1",
+    "cs": [
+      45,
+      55,
+      35,
+      33
+    ],
+    "ws": [
+      6,
+      6,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.67
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 213,
+    "q": "Welcher Befehl zeigt unter Windows die aktuelle IP-Konfiguration an?",
+    "a": [
+      "ipconfig",
+      "ip route",
+      "netstat -r",
+      "arp -a"
+    ],
+    "r": 0,
+    "e": "Unter Windows zeigt ipconfig IP-Adresse, Subnetzmaske und Gateway. Unter Linux heißen die Werkzeuge ifconfig bzw. ip (iproute2). Mit ipconfig /all erhält man zusätzlich MAC-Adresse und DHCP-Informationen.",
+    "b": "netzwerk",
+    "q_": "NW",
+    "cs": [
+      8,
+      8,
+      10,
+      6
+    ],
+    "ws": [
+      1,
+      2,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.67
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 209,
+    "q": "Welche Aufgabe hat DNS?",
+    "a": [
+      "Es ordnet Domainnamen IP-Adressen zu",
+      "Es vergibt IP-Adressen",
+      "Es routet Pakete zwischen Netzen",
+      "Es verschlüsselt Webseiten"
+    ],
+    "r": 0,
+    "e": "DNS (Domain Name System) ist das „Telefonbuch\" des Internets: Es löst Namen wie example.de in IP-Adressen auf. Wichtige Eintragstypen: A (IPv4), AAAA (IPv6), MX (Mail), CNAME (Alias), NS (Nameserver).",
+    "b": "netzwerk",
+    "q_": "NW",
+    "cs": [
+      36,
+      22,
+      32,
+      26
+    ],
+    "ws": [
+      5,
+      3,
+      5,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.64
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 10,
+    "q": "Bei der Handelskalkulation: Was bedeutet „im Hundert“ rechnen?",
+    "a": [
+      "Der Prozentsatz bezieht sich auf den Ausgangswert",
+      "Man rechnet mit 100 % Zuschlag",
+      "Der Prozentsatz ist im Zielwert bereits enthalten",
+      "Der Prozentsatz wird auf 100 € bezogen"
+    ],
+    "r": 2,
+    "e": "Beim Rechnen „im Hundert\" steckt der Prozentsatz schon im Zielwert. Deshalb wird geteilt: Betrag ÷ (1 − Prozentsatz). Typisch für Kundenrabatt, Kundenskonto und Umsatzsteuer.",
+    "b": "wirtschaft",
+    "q_": "HK",
+    "cs": [
+      49,
+      30,
+      49,
+      38
+    ],
+    "ws": [
+      7,
+      6,
+      7,
+      7
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.63
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 86,
+    "q": "Für welche Objekt-Kategorien wird eine Schutzbedarfsanalyse durchgeführt?",
+    "a": [
+      "Nur für Server und Netzwerkkomponenten",
+      "Nur für personenbezogene Datenbestände im Betrieb",
+      "Anwendungen, IT-Systeme, Räume und Verbindungen",
+      "Hardware und Software getrennt"
+    ],
+    "r": 2,
+    "e": "PK-06 Themenkreis 02 nennt vier Objekt-Kategorien: Anwendungen, IT-Systeme, Räume und Infrastruktur sowie Kommunikationsverbindungen. Für jede wird der Schutzbedarf getrennt ermittelt – oft in einer Matrix.",
+    "b": "recht",
+    "q_": "PK6",
+    "cs": [
+      38,
+      49,
+      47,
+      30
+    ],
+    "ws": [
+      5,
+      6,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.63
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 224,
+    "q": "Ein Subnetz hat die Maske 255.255.255.192. Welche CIDR-Notation und wie viele nutzbare Hosts ergeben sich?",
+    "a": [
+      "/26 mit 62 nutzbaren Hosts",
+      "/24 mit 254 Hosts",
+      "/27 mit 30 Hosts",
+      "/25 mit 126 Hosts"
+    ],
+    "r": 0,
+    "e": "192 im letzten Oktett entspricht den Bits 11000000, also /26. Host-Bits = 32 − 26 = 6 → 2⁶ = 64 Adressen, davon 2 abziehen (Netz- und Broadcastadresse) = 62 nutzbare Hosts.",
+    "b": "netzwerk",
+    "q_": "NW",
+    "cs": [
+      26,
+      17,
+      16,
+      17
+    ],
+    "ws": [
+      5,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.63
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 303,
+    "q": "„The contract is about to expire.“ – Was bedeutet das?",
+    "a": [
+      "Der Vertrag läuft demnächst aus",
+      "Der Vertrag wurde gerade unterschrieben",
+      "Der Vertrag wurde verlängert",
+      "Der Vertrag ist ungültig"
+    ],
+    "r": 0,
+    "e": "„to expire\" = auslaufen/ablaufen, „about to\" = kurz davor, etwas zu tun. Der Vertrag läuft also bald aus und muss ggf. verlängert werden.",
+    "b": "englisch",
+    "q_": "EN",
+    "cs": [
+      31,
+      39,
+      28,
+      24
+    ],
+    "ws": [
+      5,
+      5,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.63
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 313,
+    "q": "Welche Geräteklasse ist ein besonders schlanker Arbeitsplatzrechner, der Programme und Daten vom Server bezieht?",
+    "a": [
+      "Thin Client",
+      "All-in-One-PC",
+      "Workstation",
+      "Notebook"
+    ],
+    "r": 0,
+    "e": "Ein Thin Client hat kaum eigene Rechenleistung und holt Anwendungen bzw. Daten über das Netz (oft per Terminalserver/Virtual Desktop). Vorteile: geringe Anschaffungs- und Administrationskosten. Nachteil: ohne Netz funktioniert er kaum.",
+    "b": "hardware",
+    "q_": "PK-04 · Geräteklassen",
+    "cs": [
+      11,
+      13,
+      11,
+      8
+    ],
+    "ws": [
+      2,
+      1,
+      1,
+      1
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": true,
+      "span": 0.63
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 49,
+    "q": "Wozu dient ein Lastenheft?",
+    "a": [
+      "Der Auftragnehmer beschreibt seine Lösung",
+      "Der Auftraggeber beschreibt seine Anforderungen",
+      "Der Prüfer dokumentiert das Ergebnis",
+      "Die Kosten werden abgerechnet"
+    ],
+    "r": 1,
+    "e": "Das Lastenheft kommt vom Auftraggeber und beschreibt WAS gefordert ist. Das Pflichtenheft kommt vom Auftragnehmer und beschreibt WIE die Anforderung umgesetzt wird.",
+    "b": "pm",
+    "q_": "PM",
+    "cs": [
+      41,
+      47,
+      36,
+      29
+    ],
+    "ws": [
+      5,
+      5,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.62
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 22,
+    "q": "Was besagt die 3-2-1-Regel für Backups?",
+    "a": [
+      "3 Kopien, 2 verschiedene Medien, 1 Kopie extern",
+      "3 Server, 2 Netze, 1 Passwort",
+      "3 Wochen Aufbewahrung, 2 Generationen, 1 Band",
+      "3 Backups pro Tag, 2 pro Woche, 1 pro Monat"
+    ],
+    "r": 0,
+    "e": "Die 3-2-1-Regel verlangt drei Datenkopien auf mindestens zwei verschiedenen Medien, davon mindestens eine außer Haus.",
+    "b": "systemloesung",
+    "q_": "AP2 · Datensicherung",
+    "cs": [
+      47,
+      29,
+      45,
+      43
+    ],
+    "ws": [
+      8,
+      6,
+      7,
+      10
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.62
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 25,
+    "q": "Was fordert die 1. Normalform?",
+    "a": [
+      "Keine transitiven Abhängigkeiten",
+      "Jede Zelle enthält genau einen Wert (Atomisierung)",
+      "Keine partiellen Abhängigkeiten",
+      "Jede Tabelle hat genau einen Fremdschlüssel"
+    ],
+    "r": 1,
+    "e": "Die 1. NF verlangt Atomisierung: In jeder Zelle steht genau ein Wert – keine Listen wie „Maus, Tastatur, Monitor\" in einem Feld.",
+    "b": "datenbank",
+    "q_": "NF",
+    "cs": [
+      32,
+      50,
+      31,
+      43
+    ],
+    "ws": [
+      3,
+      7,
+      3,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.61
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 70,
+    "q": "Der Kunde bestellt 10 Notebooks, geliefert werden 10 Tablets. Wie heißt diese Mängelart?",
+    "a": [
+      "Minderlieferung",
+      "Schlechtleistung",
+      "Falschlieferung",
+      "Sachmangel"
+    ],
+    "r": 2,
+    "e": "Bei einer Falschlieferung wird eine andere Sache geliefert als bestellt (aliud). Sie ist von der Schlechtleistung (mangelhafte Beschaffenheit der richtigen Sache) und der Minderlieferung (zu geringe Menge) zu unterscheiden.",
+    "b": "vertrag",
+    "q_": "PK7",
+    "cs": [
+      15,
+      16,
+      15,
+      10
+    ],
+    "ws": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.6
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 117,
+    "q": "Was gehört NICHT zu den Grundprinzipien der objektorientierten Programmierung?",
+    "a": [
+      "Kapselung",
+      "Sequenz",
+      "Polymorphie",
+      "Vererbung"
+    ],
+    "r": 1,
+    "e": "Die drei Grundprinzipien sind Kapselung (Zugriff nur über definierte Schnittstellen), Vererbung (Unterklassen übernehmen Eigenschaften der Oberklasse) und Polymorphie (gleicher Aufruf, unterschiedliche Umsetzung). Prozedurale Programmierung arbeitet dagegen mit Funktionen ohne Objekte.",
+    "b": "software",
+    "q_": "PK4",
+    "cs": [
+      9,
+      7,
+      11,
+      9
+    ],
+    "ws": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.57
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 163,
+    "q": "Was ist ein Dendrogramm?",
+    "a": [
+      "Eine Tabelle mit allen Trainingsdaten",
+      "Ein Baumdiagramm zur Darstellung hierarchischen Clustering",
+      "Ein Maß für die Genauigkeit eines Modells",
+      "Ein Optimierungsverfahren für neuronale Netze"
+    ],
+    "r": 1,
+    "e": "Das Dendrogramm zeigt das Ergebnis hierarchischer Clusterverfahren: Die horizontale Achse führt die Objekte, die vertikale die Verschmelzungsdistanz. Eine hohe Verbindungslinie bedeutet geringe Ähnlichkeit.",
+    "b": "ki",
+    "q_": "ML",
+    "cs": [
+      37,
+      58,
+      41,
+      45
+    ],
+    "ws": [
+      5,
+      6,
+      7,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.57
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 259,
+    "q": "Wofür steht das AIDA-Modell in der Werbung?",
+    "a": [
+      "Attention, Interest, Desire, Action – vier Stufen der Werbewirkung",
+      "Analyse, Implementierung, Dokumentation, Abnahme",
+      "Anfrage, Inventar, Durchführung, Abschluss",
+      "Ausschreibung, Ideal, Entscheidung, Auftrag"
+    ],
+    "r": 0,
+    "e": "AIDA beschreibt die Wirkungskette der Werbung: Aufmerksamkeit erregen, Interesse wecken, Verlangen erzeugen, zur Handlung (Kauf) führen. Wichtig: Jede Stufe muss erreicht werden, sonst bricht die Kette ab.",
+    "b": "angebot",
+    "q_": "PK2",
+    "cs": [
+      66,
+      48,
+      42,
+      43
+    ],
+    "ws": [
+      9,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.57
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 285,
+    "q": "Welche Marktform liegt vor, wenn es nur einen Anbieter gibt?",
+    "a": [
+      "Monopol",
+      "Oligopol",
+      "Polypol",
+      "Käufermarkt"
+    ],
+    "r": 0,
+    "e": "Monopol = ein Anbieter. Oligopol = wenige Anbieter. Polypol = viele Anbieter. Zusätzlich unterscheidet man Käufermarkt (Nachfrage bestimmt) und Verkäufermarkt (Angebot bestimmt).",
+    "b": "kommunikation",
+    "q_": "PK2",
+    "cs": [
+      7,
+      8,
+      7,
+      11
+    ],
+    "ws": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.57
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 332,
+    "q": "Welche Lizenzart regelt die Nutzung von Massensoftware, die beim Gerätekauf bereits vorinstalliert ist?",
+    "a": [
+      "OEM-Lizenz",
+      "GNU GPL",
+      "Pay-per-Use",
+      "Site-Lizenz"
+    ],
+    "r": 0,
+    "e": "OEM (Original Equipment Manufacturer): Die Lizenz ist an ein Gerät gebunden und beim Kauf des Rechners vorinstalliert. Sie darf in der Regel nicht auf ein anderes Gerät übertragen werden.",
+    "b": "software",
+    "q_": "PK-04 · Lizenzmodelle",
+    "cs": [
+      10,
+      7,
+      11,
+      11
+    ],
+    "ws": [
+      1,
+      2,
+      1,
+      1
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.57
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 56,
+    "q": "Der Kunde sagt: „Das Licht ist grün.\" Nach dem 4-Ohren-Modell – welche Deutung entspricht dem Appell?",
+    "a": [
+      "Fahr endlich los! – eine Aufforderung",
+      "Die Ampel zeigt Grün – reine Information",
+      "Ich kenne die Verkehrsregeln – Selbstoffenbarung",
+      "Du fährst immer viel zu langsam"
+    ],
+    "r": 0,
+    "e": "Dieselbe Aussage kann unterschiedlich gehört werden. Der Appell ist die Aufforderung („Fahr los!\"), die Sachebene die reine Information, die Selbstoffenbarung der Hinweis auf die eigene Person und die Beziehungsebene die Aussage über das Verhältnis der Beteiligten.",
+    "b": "kommunikation",
+    "q_": "PK2",
+    "cs": [
+      37,
+      40,
+      48,
+      31
+    ],
+    "ws": [
+      6,
+      7,
+      6,
+      6
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.55
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 36,
+    "q": "Wozu dient ein Index in einer Datenbank?",
+    "a": [
+      "Er beschleunigt das Suchen und Sortieren",
+      "Er verschlüsselt die Daten",
+      "Er verhindert doppelte Datensätze",
+      "Er sichert die Daten gegen Verlust"
+    ],
+    "r": 0,
+    "e": "Ein Index ist eine zusätzliche Sortierstruktur, die Such- und Sortiervorgänge beschleunigt – erkauft aber durch Schreibaufwand und Speicherplatz. Eindeutigkeit erzwingt erst UNIQUE oder PRIMARY KEY.",
+    "b": "datenbank",
+    "q_": "DDL",
+    "cs": [
+      40,
+      26,
+      33,
+      34
+    ],
+    "ws": [
+      6,
+      4,
+      4,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.54
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 105,
+    "q": "Warum ist ein NAS eine Maßnahme zur Sicherung der Verfügbarkeit?",
+    "a": [
+      "Weil es die Daten verschlüsselt speichert",
+      "Weil es zentralen, mehrfach gesicherten Speicher bereitstellt",
+      "Weil es den Zugriff auf das Internet sperrt",
+      "Weil es die Passwörter zentral verwaltet"
+    ],
+    "r": 1,
+    "e": "Ein Network Attached Storage stellt zentralen Speicher im Netz bereit – meist mit mehreren Platten (RAID) und damit gegen den Ausfall einzelner Platten geschützt. Es dient als Ablage- und Sicherungsziel und sichert damit die Verfügbarkeit. PK-06 nennt NAS ausdrücklich.",
+    "b": "recht",
+    "q_": "PK6",
+    "cs": [
+      41,
+      61,
+      43,
+      40
+    ],
+    "ws": [
+      6,
+      7,
+      8,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.53
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 149,
+    "q": "Wozu dient ein Ticketsystem im Support?",
+    "a": [
+      "Ausschließlich zur Erfassung der geleisteten Arbeitszeiten",
+      "Zur zentralen Erfassung und Nachverfolgung aller Anfragen",
+      "Zum Versenden von Werbeangeboten an Kunden",
+      "Zur Berechnung der Gehälter im Support"
+    ],
+    "r": 1,
+    "e": "Ein Ticketsystem erfasst Anfragen zentral, vergibt eine eindeutige Nummer, klassifiziert und priorisiert sie und dokumentiert den Bearbeitungsstatus. So bleiben Anfragen nachvollziehbar und auswertbar – PK-01 nennt die Bearbeitung mittels Ticketsystem und KI-Unterstützung.",
+    "b": "pm",
+    "q_": "PK1",
+    "cs": [
+      58,
+      57,
+      42,
+      38
+    ],
+    "ws": [
+      6,
+      7,
+      6,
+      6
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": true,
+      "span": 0.53
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 78,
+    "q": "Was ist eine Konventionalstrafe?",
+    "a": [
+      "Eine vom Gericht verhängte Strafe",
+      "Eine Strafe für den Kunden bei Rückgabe",
+      "Eine vertraglich vereinbarte Geldstrafe bei Verzug",
+      "Eine Steuer auf abgeschlossene Verträge"
+    ],
+    "r": 2,
+    "e": "Die Konventionalstrafe (Vertragsstrafe) wird bereits im Vertrag vereinbart und greift, wenn eine Vertragspflicht nicht oder verspätet erfüllt wird. Sie gehört zu den Vertragsbestandteilen, die PK-07 neben Leistungsbeschreibung, Terminen und Entgelten nennt.",
+    "b": "vertrag",
+    "q_": "PK7",
+    "cs": [
+      33,
+      39,
+      50,
+      39
+    ],
+    "ws": [
+      5,
+      7,
+      6,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.52
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 327,
+    "q": "Ein Kunde braucht aus Budgetgründen maximale Kapazität, hohe Verfügbarkeit und geringe Kosten pro TB. Was passt am besten?",
+    "a": [
+      "HDDs im RAID-Verbund (z. B. RAID 5)",
+      "Nur NVMe-SSDs ohne RAID",
+      "Eine einzelne große SSD",
+      "Speicherkarten im Wechsel"
+    ],
+    "r": 0,
+    "e": "Für viel Kapazität zu niedrigen Kosten und Ausfallsicherheit sind HDDs im RAID 5 sinnvoll: (n − 1) Platten nutzbar, eine Platte darf ausfallen. SSDs wären schneller, aber pro TB deutlich teurer.",
+    "b": "hardware",
+    "q_": "PK-03 · Wirtschaftlichkeit",
+    "cs": [
+      35,
+      23,
+      23,
+      25
+    ],
+    "ws": [
+      7,
+      4,
+      4,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.52
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 130,
+    "q": "Was bedeutet Green IT im Beschaffungszusammenhang?",
+    "a": [
+      "Beschaffung nach rein wirtschaftlichen Kriterien",
+      "Nur der Kauf von grün lackierter Hardware",
+      "Beschaffung nach Energieverbrauch, Langlebigkeit und Recycling",
+      "Der vollständige Verzicht auf IT-Ausstattung"
+    ],
+    "r": 2,
+    "e": "Green IT betrachtet den gesamten Lebenszyklus: Energieverbrauch im Betrieb, Langlebigkeit und Aufrüstbarkeit, Recyclingfähigkeit der Materialien sowie Schadstofffreiheit. Die offizielle Beispielaufgabe verlangt genau diese Begründung, wenn ein Unternehmen einer GreenIT-Initiative beigetreten ist.",
+    "b": "software",
+    "q_": "PK3",
+    "cs": [
+      48,
+      41,
+      62,
+      44
+    ],
+    "ws": [
+      5,
+      7,
+      6,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.51
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 6,
+    "q": "Ein Akku hat 4,0 Ah. Wie lange kann er 1 Ampere liefern?",
+    "a": [
+      "0,25 Stunden",
+      "1 Stunde",
+      "4 Stunden",
+      "40 Stunden"
+    ],
+    "r": 2,
+    "e": "Amperestunden geben die Ladungsmenge an: 1 Ah bedeutet 1 Stunde lang 1 Ampere. Ein Akku mit 4,0 Ah liefert also 4 Stunden lang 1 A.",
+    "b": "hardware",
+    "q_": "USV",
+    "cs": [
+      12,
+      8,
+      9,
+      10
+    ],
+    "ws": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.5
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 15,
+    "q": "Was ist Factoring?",
+    "a": [
+      "Die Erhöhung der Gesellschaftereinlagen",
+      "Die Aufnahme eines langfristigen Darlehens",
+      "Die Bildung stiller Reserven",
+      "Der Verkauf von Forderungen an Dritte"
+    ],
+    "r": 3,
+    "e": "Beim Factoring verkauft ein Unternehmen seine Forderungen an einen Factoring-Dienstleister und erhält den Großteil des Geldes vor dem eigentlichen Fälligkeitstermin. Es gehört zur Außenfinanzierung.",
+    "b": "wirtschaft",
+    "q_": "FIN",
+    "cs": [
+      39,
+      42,
+      28,
+      37
+    ],
+    "ws": [
+      4,
+      5,
+      4,
+      6
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": true,
+      "span": 0.5
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 39,
+    "q": "Wie viele nutzbare Host-Adressen hat das Subnetz 192.168.10.0/26?",
+    "a": [
+      "126",
+      "64",
+      "30",
+      "62"
+    ],
+    "r": 3,
+    "e": "/26 bedeutet 32 − 26 = 6 Host-Bits, also 2⁶ = 64 Adressen. Netz- und Broadcastadresse abziehen ergibt 62 nutzbare Hosts.",
+    "b": "netzwerk",
+    "q_": "NW",
+    "cs": [
+      3,
+      2,
+      2,
+      2
+    ],
+    "ws": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.5
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 50,
+    "q": "Wofür steht PDCA?",
+    "a": [
+      "Prepare, Do, Confirm, Adjust",
+      "Plan, Develop, Control, Apply",
+      "Plan, Do, Check, Act",
+      "Plan, Document, Check, Archive"
+    ],
+    "r": 2,
+    "e": "Der PDCA-Zyklus (Demingkreis) beschreibt kontinuierliche Verbesserung: Planen, Umsetzen, Überprüfen, Handeln. PDSA ersetzt „Check\" durch „Study\".",
+    "b": "pm",
+    "q_": "PM",
+    "cs": [
+      28,
+      29,
+      20,
+      30
+    ],
+    "ws": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.5
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 11,
+    "q": "Welche Positionen werden „im Hundert“ gerechnet?",
+    "a": [
+      "Handlungskosten und Gewinnzuschlag",
+      "Lieferrabatt und Lieferskonto",
+      "Bezugskosten und Selbstkosten",
+      "Kundenrabatt, Kundenskonto und Umsatzsteuer"
+    ],
+    "r": 3,
+    "e": "Auf der Verkaufsseite („Kundensicht, Grundwerte unten\") wird im Hundert gerechnet: Kundenskonto, Kundenrabatt und Umsatzsteuer. Lieferrabatt und Lieferskonto dagegen auf Hundert.",
+    "b": "wirtschaft",
+    "q_": "HK",
+    "cs": [
+      34,
+      29,
+      29,
+      43
+    ],
+    "ws": [
+      3,
+      3,
+      3,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.48
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 75,
+    "q": "Welche ist eine typische Ursache für Widerstand gegen eine Veränderung?",
+    "a": [
+      "Zu hohe Gehälter im betroffenen Team",
+      "Fehlende Überstunden im Projekt",
+      "Zu viel direkter Kundenkontakt",
+      "Angst vor Kompetenzverlust und Wissenslücken"
+    ],
+    "r": 3,
+    "e": "PK-07 nennt drei Ursachen: Angst vor Kompetenzverlust, Wissenslücken und die persönliche Historie (schlechte Erfahrungen mit früheren Projekten). Deshalb setzt man auf Mitarbeiterqualifizierung (z. B. Blended-Learning, Multiplikatoren) und Einbeziehung der Betroffenen.",
+    "b": "vertrag",
+    "q_": "PK7",
+    "cs": [
+      36,
+      31,
+      30,
+      44
+    ],
+    "ws": [
+      6,
+      4,
+      4,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.47
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 568,
+    "q": "Was bedeutet „The system is scheduled for maintenance tonight.“?",
+    "a": [
+      "Das System wird heute Nacht planmäßig gewartet.",
+      "Das System ist heute Nacht ausgefallen.",
+      "Das System wird heute Nacht gekauft.",
+      "Das System wird heute Nacht neu gestartet ohne Grund."
+    ],
+    "r": 0,
+    "e": "„to be scheduled for maintenance“ = für eine Wartung eingeplant sein. Solche Hinweise sind Teil der Kundenkommunikation zu Wartungsfenstern – wichtig ist, Zeitraum und Auswirkung klar zu nennen.",
+    "b": "englisch",
+    "q_": "PK-02 · Englische Texte",
+    "cs": [
+      47,
+      39,
+      36,
+      53
+    ],
+    "ws": [
+      7,
+      6,
+      6,
+      9
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.47
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 114,
+    "q": "Wofür steht EULA?",
+    "a": [
+      "Enterprise Unified License Application",
+      "European Uniform License Act",
+      "End User License Agreement",
+      "Endless Use License Agreement"
+    ],
+    "r": 2,
+    "e": "Die EULA ist der Lizenzvertrag zwischen Hersteller und Endnutzer. Sie legt fest, wie viele Geräte die Software nutzen dürfen, ob sie übertragen werden darf und was ausdrücklich verboten ist. PK-04 nennt EULA, OEM und GNU als Lizenzarten.",
+    "b": "software",
+    "q_": "PK4",
+    "cs": [
+      38,
+      28,
+      26,
+      29
+    ],
+    "ws": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.46
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 305,
+    "q": "„The shipment will be delayed by two days.“ – Was bedeutet das?",
+    "a": [
+      "Die Lieferung verzögert sich um zwei Tage",
+      "Die Lieferung kommt zwei Tage früher",
+      "Die Lieferung ist verloren gegangen",
+      "Die Lieferung wird storniert"
+    ],
+    "r": 0,
+    "e": "„to be delayed\" = sich verzögern. „shipment\" = Sendung/Lieferung. Achtung: „by two days\" = um zwei Tage, „within two days\" = innerhalb von zwei Tagen.",
+    "b": "englisch",
+    "q_": "EN",
+    "cs": [
+      41,
+      36,
+      35,
+      28
+    ],
+    "ws": [
+      7,
+      6,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.46
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 466,
+    "q": "Welche drei Anomalien entstehen durch fehlende Normalisierung?",
+    "a": [
+      "Änderungs-, Einfüge- und Löschanomalie",
+      "Lese-, Schreib- und Rechenfehler",
+      "Start-, Laufzeit- und Endfehler",
+      "Grün-, Gelb- und Rotfehler"
+    ],
+    "r": 0,
+    "e": "Redundanz führt zu Änderungsanomalien (eine Änderung muss mehrfach nachgezogen werden), Einfügeanomalien (Daten können nicht erfasst werden, weil andere fehlen) und Löschanomalien (beim Löschen verschwinden ungewollt weitere Informationen).",
+    "b": "datenbank",
+    "q_": "PK-04 · Normalformen",
+    "cs": [
+      38,
+      32,
+      31,
+      26
+    ],
+    "ws": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.46
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 41,
+    "q": "Welche Adresse darf NICHT an einen Host vergeben werden?",
+    "a": [
+      "Die zweite Adresse im Subnetz",
+      "Die erste Adresse im Subnetz (Netzadresse)",
+      "Die vorletzte Adresse im Subnetz",
+      "Die mittlere Adresse im Subnetz"
+    ],
+    "r": 1,
+    "e": "Die erste Adresse (alle Host-Bits 0) ist die Netzadresse, die letzte (alle Host-Bits 1) die Broadcastadresse. Beide sind für Hosts reserviert und nicht nutzbar.",
+    "b": "netzwerk",
+    "q_": "NW",
+    "cs": [
+      29,
+      42,
+      32,
+      31
+    ],
+    "ws": [
+      5,
+      6,
+      5,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.45
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 77,
+    "q": "Wodurch kommt ein Kaufvertrag wirksam zustande?",
+    "a": [
+      "Durch die Bestellung des Kunden allein",
+      "Durch Angebot und Annahme, also zwei Willenserklärungen",
+      "Durch die Zahlung des Kaufpreises an den Verkäufer",
+      "Durch die Rechnungsstellung nach der Lieferung"
+    ],
+    "r": 1,
+    "e": "Ein Kaufvertrag entsteht durch Angebot und Annahme. Wichtig: Die Bestellung eines Kunden ist rechtlich bereits ein Angebot – die Auftragsbestätigung des Verkäufers ist die Annahme. Die Zahlung ist nur die Erfüllung, nicht die Entstehung.",
+    "b": "vertrag",
+    "q_": "PK7",
+    "cs": [
+      38,
+      55,
+      50,
+      46
+    ],
+    "ws": [
+      6,
+      7,
+      8,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.45
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 147,
+    "q": "Wozu dient eine Retrospektive wie Lessons Learned?",
+    "a": [
+      "Um im Projekt die Schuldigen zu identifizieren",
+      "Um das Projekt künstlich zu verlängern",
+      "Um die Abschlussrechnung für den Kunden zu erstellen",
+      "Um aus dem Verlauf zu lernen und Prozesse zu verbessern"
+    ],
+    "r": 3,
+    "e": "Lessons Learned sammelt am Projektende (oder am Sprintende) systematisch, was gut lief und was nicht – ohne Schuldzuweisung. Die Erkenntnisse fließen in die Verbesserung der Arbeitsprozesse ein. PK-01 nennt Reflexionsmethoden und Feedback-Kultur.",
+    "b": "pm",
+    "q_": "PK1",
+    "cs": [
+      46,
+      38,
+      52,
+      55
+    ],
+    "ws": [
+      7,
+      6,
+      8,
+      10
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.45
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 155,
+    "q": "Wer entwickelte 1957 das Perzeptron – das Ur-Modell eines künstlichen Neurons?",
+    "a": [
+      "Marvin Minsky",
+      "Warren McCulloch",
+      "Frank Rosenblatt",
+      "Donald Hebb"
+    ],
+    "r": 2,
+    "e": "Frank Rosenblatt stellte 1957 das Perzeptron vor. McCulloch und Pitts führten 1943 das logische Schwellwert-Element ein, Hebb formulierte 1949 die Hebb-Lernregel. Minsky und Papert kritisierten das Perzeptron 1969 wegen des XOR-Problems.",
+    "b": "ki",
+    "q_": "KI",
+    "cs": [
+      13,
+      16,
+      16,
+      11
+    ],
+    "ws": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.45
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 4,
+    "q": "Welche USV-Bauart arbeitet nach dem Dauerwandlerprinzip und hat keine Umschaltzeit?",
+    "a": [
+      "VFI-USV (Online)",
+      "VI-USV (Netzinteraktiv)",
+      "VFD-USV (Offline)",
+      "USV mit Netzfilter"
+    ],
+    "r": 0,
+    "e": "Die VFI-USV (Voltage and Frequency Independant, „Online-USV\") versorgt immer über den Akku und wandelt permanent Wechsel- in Gleichspannung und zurück. Nachteil: Verluste und Wärme, Wirkungsgrad unter 100 %.",
+    "b": "hardware",
+    "q_": "USV",
+    "cs": [
+      16,
+      23,
+      17,
+      18
+    ],
+    "ws": [
+      2,
+      2,
+      2,
+      3
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.44
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 21,
+    "q": "Wie wird eine m:n-Beziehung im relationalen Modell aufgelöst?",
+    "a": [
+      "Der PK der einen Seite wandert in die andere Tabelle",
+      "Über eine Zwischentabelle mit zwei Fremdschlüsseln",
+      "Beide Tabellen werden zusammengelegt",
+      "Gar nicht – m:n ist direkt speicherbar"
+    ],
+    "r": 1,
+    "e": "Eine m:n-Beziehung wird in zwei 1:n-Beziehungen zerlegt. Die Zwischentabelle enthält die Fremdschlüssel beider Seiten – oft als zusammengesetzten Primärschlüssel.",
+    "b": "datenbank",
+    "q_": "DBG",
+    "cs": [
+      52,
+      50,
+      36,
+      38
+    ],
+    "ws": [
+      10,
+      6,
+      4,
+      7
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.44
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 33,
+    "q": "Wofür stehen die Wildcards % und _ in LIKE?",
+    "a": [
+      "% = genau ein Zeichen, _ = beliebig viele Zeichen",
+      "% = beliebig viele Zeichen, _ = genau ein Zeichen",
+      "Beide stehen für beliebig viele Zeichen",
+      "Beide stehen für genau ein Zeichen"
+    ],
+    "r": 1,
+    "e": "Das Prozentzeichen ersetzt beliebig viele Zeichen (auch null), der Unterstrich genau ein Zeichen. Beispiel: LIKE 'M_ier%' findet „Maier\" und „Meier\".",
+    "b": "datenbank",
+    "q_": "DQL",
+    "cs": [
+      49,
+      49,
+      39,
+      34
+    ],
+    "ws": [
+      10,
+      10,
+      6,
+      6
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.44
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 119,
+    "q": "Wozu dient ein Debugger?",
+    "a": [
+      "Er schreibt Programmcode automatisch fertig",
+      "Er verschlüsselt den Quellcode vor dem Kompilieren",
+      "Er beschleunigt die Ausführung des fertigen Programms deutlich",
+      "Er führt Programme schrittweise aus und zeigt Werte an"
+    ],
+    "r": 3,
+    "e": "Ein Debugger ist das wichtigste Werkzeug zur Fehlersuche: Er erlaubt Haltepunkte (Breakpoints), Einzelschrittausführung und die Beobachtung von Variablen zur Laufzeit. So findet man formal korrekte, aber inhaltlich falsche Logik.",
+    "b": "software",
+    "q_": "PK4",
+    "cs": [
+      43,
+      50,
+      62,
+      54
+    ],
+    "ws": [
+      5,
+      7,
+      8,
+      9
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": true,
+      "span": 0.44
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 135,
+    "q": "Was ist der Zweck einer Zertifizierung nach einer QS-Norm wie ISO 9001?",
+    "a": [
+      "Sie ist nur für Großunternehmen möglich",
+      "Sie garantiert, dass das einzelne Produkt fehlerfrei ist",
+      "Sie ersetzt jede Prüfung durch den Kunden",
+      "Ein unabhängiger Prüfer bestätigt die Normerfüllung"
+    ],
+    "r": 3,
+    "e": "Zertifizierung bedeutet: Ein unabhängiges Prüfunternehmen bestätigt, dass das QM-System die Anforderungen der Norm erfüllt. Zertifiziert wird das System – nicht das einzelne Produkt. Deshalb ist sie ein Wettbewerbsvorteil, aber kein Produktversprechen.",
+    "b": "qs",
+    "q_": "PK5",
+    "cs": [
+      39,
+      56,
+      41,
+      51
+    ],
+    "ws": [
+      6,
+      8,
+      7,
+      6
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.44
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 317,
+    "q": "Wie lautet die Formel für die elektrische Leistung?",
+    "a": [
+      "P = U × I",
+      "P = U ÷ I",
+      "P = I ÷ U",
+      "P = U × I ÷ 2"
+    ],
+    "r": 0,
+    "e": "Leistung P (Watt) = Spannung U (Volt) × Stromstärke I (Ampere). Beispiel: 230 V × 0,4 A = 92 W. Merke: W = P × t (Arbeit = Leistung × Zeit).",
+    "b": "hardware",
+    "q_": "PK-03 · Energieeffizienz",
+    "cs": [
+      9,
+      9,
+      9,
+      13
+    ],
+    "ws": [
+      5,
+      5,
+      5,
+      7
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.44
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 84,
+    "q": "Welche Schutzziele nennt der offizielle Prüfungskatalog für die Informationssicherheit?",
+    "a": [
+      "Vertraulichkeit, Integrität und Verfügbarkeit",
+      "Vertraulichkeit, Integrität, Verfügbarkeit und Authentizität",
+      "Sicherheit, Datenschutz und Datensicherung",
+      "Verfügbarkeit, Redundanz und Verschlüsselung"
+    ],
+    "r": 0,
+    "e": "Achtung, klassische Falle: Der offizielle PK nennt nur drei Schutzziele – Vertraulichkeit, Integrität und Verfügbarkeit. Authentizität wird oft als viertes ergänzt, ist im PK-Pflichtstoff aber nicht aufgeführt.",
+    "b": "recht",
+    "q_": "PK6",
+    "cs": [
+      45,
+      60,
+      42,
+      44
+    ],
+    "ws": [
+      4,
+      5,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.43
+    }
+  }
+]

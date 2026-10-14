@@ -1,0 +1,1826 @@
+[
+  {
+    "sammlung": "QUIZ",
+    "i": 95,
+    "q": "Warum nutzt TLS eine hybride Verschlüsselung?",
+    "a": [
+      "Weil symmetrische Verfahren allein nicht sicher genug sind",
+      "Weil die DSGVO diese Verfahrensart vorschreibt",
+      "Weil hybride Verfahren ganz ohne Schlüssel auskommen",
+      "Weil sie sicheren Schlüsselaustausch und Geschwindigkeit verbindet"
+    ],
+    "r": 3,
+    "e": "Hybrid heißt: Zuerst wird über ein asymmetrisches Verfahren sicher ein Sitzungsschlüssel ausgetauscht, danach läuft die eigentliche Datenübertragung mit dem schnellen symmetrischen Verfahren. So bekommt man Sicherheit und Performance.",
+    "b": "recht",
+    "q_": "PK6",
+    "cs": [
+      58,
+      46,
+      52,
+      66
+    ],
+    "ws": [
+      8,
+      6,
+      7,
+      7
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.43
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 156,
+    "q": "Welche Aufgabe hat der Bias b in einem künstlichen Neuron?",
+    "a": [
+      "Er verschiebt die Aktivierungsschwelle des Neurons",
+      "Er multipliziert die Eingaben mit den Gewichten",
+      "Er normiert die Ausgabe auf Werte zwischen 0 und 1",
+      "Er ersetzt die Aktivierungsfunktion"
+    ],
+    "r": 0,
+    "e": "Der Bias ist ein zusätzlicher Parameter, der die gewichtete Summe verschiebt – er entspricht einem negativen Schwellenwert. Erst zusammen mit den Gewichten bestimmt er, ab wann ein Neuron auslöst.",
+    "b": "ki",
+    "q_": "KI",
+    "cs": [
+      50,
+      47,
+      50,
+      35
+    ],
+    "ws": [
+      6,
+      7,
+      10,
+      4
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.43
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 28,
+    "q": "Welche drei Anomaliearten werden durch Normalisierung vermieden?",
+    "a": [
+      "Änderungs-, Einfüge- und Löschanomalie",
+      "Lese-, Schreib- und Sperranomalie",
+      "Syntax-, Logik- und Laufzeitfehler",
+      "Redundanz-, Konsistenz- und Integritätsanomalie"
+    ],
+    "r": 0,
+    "e": "Man unterscheidet Änderungs-, Einfüge- und Löschanomalie. Sie entstehen durch Redundanz und sind der Hauptgrund für Normalisierung.",
+    "b": "datenbank",
+    "q_": "NF",
+    "cs": [
+      38,
+      33,
+      34,
+      47
+    ],
+    "ws": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.42
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 44,
+    "q": "Was besagt das „A\" in ACID?",
+    "a": [
+      "Atomicity – eine Transaktion läuft ganz oder gar nicht",
+      "Availability – die Datenbank ist immer erreichbar",
+      "Authentication – jeder Nutzer wird geprüft",
+      "Authorization – Rechte werden vergeben"
+    ],
+    "r": 0,
+    "e": "ACID steht für Atomicity (ganz oder gar nicht), Consistency (Konsistenz), Isolation (Nebenläufigkeit ohne Störung) und Durability (Dauerhaftigkeit). BASE ist das lockerere Gegenmodell verteilter Systeme.",
+    "b": "sicherheit",
+    "q_": "DBG",
+    "cs": [
+      54,
+      49,
+      42,
+      38
+    ],
+    "ws": [
+      9,
+      7,
+      6,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.42
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 204,
+    "q": "Wie viele Schichten hat das OSI-Modell, und auf welcher Schicht arbeitet ein Router?",
+    "a": [
+      "4 Schichten; Router auf Schicht 2",
+      "7 Schichten; Router auf Schicht 3 (Vermittlung)",
+      "7 Schichten; Router auf Schicht 1",
+      "5 Schichten; Router auf Schicht 4"
+    ],
+    "r": 1,
+    "e": "Das OSI-Modell hat 7 Schichten. Der Router arbeitet auf Schicht 3 (Vermittlung/Network) und leitet Pakete anhand von IP-Adressen weiter. Ein Switch arbeitet auf Schicht 2 mit MAC-Adressen.",
+    "b": "netzwerk",
+    "q_": "NW",
+    "cs": [
+      33,
+      47,
+      33,
+      33
+    ],
+    "ws": [
+      6,
+      7,
+      6,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.42
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 139,
+    "q": "Welche Aussage über PDCA im Qualitätsmanagement ist richtig?",
+    "a": [
+      "PDCA ist ein einmalig abzuarbeitendes Verfahren im Projekt",
+      "PDCA ersetzt jede Form von Kundenfeedback",
+      "PDCA gilt ausschließlich in der Produktion",
+      "PDCA ist ein Kreislauf der kontinuierlichen Verbesserung"
+    ],
+    "r": 3,
+    "e": "PDCA ist ausdrücklich ein Zyklus: Nach dem Handeln (Act) folgt erneut die Planung. So werden Prozesse schrittweise verbessert (KVP). PK-05 nennt PDCA als den zentralen Qualitätsmanagementzyklus.",
+    "b": "qs",
+    "q_": "PK5",
+    "cs": [
+      58,
+      41,
+      42,
+      56
+    ],
+    "ws": [
+      8,
+      6,
+      6,
+      7
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.41
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 9,
+    "q": "Welche Aufgabe hat ein Gleichrichter?",
+    "a": [
+      "Gleichstrom in Wechselstrom wandeln",
+      "Wechselstrom in Gleichstrom wandeln",
+      "Die Frequenz konstant halten",
+      "Spannungsspitzen ableiten"
+    ],
+    "r": 1,
+    "e": "Der Gleichrichter wandelt Wechsel- oder Drehstrom in Gleichstrom – deshalb sitzt er in jedem Ladegerät. Das Gegenstück ist der Wechselrichter (Gleich- zu Wechselstrom).",
+    "b": "hardware",
+    "q_": "USV",
+    "cs": [
+      35,
+      35,
+      28,
+      25
+    ],
+    "ws": [
+      4,
+      4,
+      4,
+      2
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.4
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 210,
+    "q": "Welche Netzwerkkomponente verbindet mehrere Geräte in einem LAN und leitet anhand von MAC-Adressen weiter?",
+    "a": [
+      "Switch",
+      "Router",
+      "Gateway",
+      "Modem"
+    ],
+    "r": 0,
+    "e": "Ein Switch arbeitet auf Schicht 2 und leitet Frames anhand der MAC-Adresse gezielt an den richtigen Port. Ein Router verbindet Netze auf Schicht 3 anhand von IP-Adressen.",
+    "b": "netzwerk",
+    "q_": "NW",
+    "cs": [
+      6,
+      6,
+      7,
+      5
+    ],
+    "ws": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.4
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 46,
+    "q": "Wie berechnet man die Umsatzrentabilität?",
+    "a": [
+      "Gewinn × 100 ÷ Umsatz",
+      "Umsatz × 100 ÷ Gewinn",
+      "Gewinn + Umsatz",
+      "Umsatz − Kosten"
+    ],
+    "r": 0,
+    "e": "Umsatzrentabilität = Gewinn × 100 ÷ Umsatz. Sie zeigt, wie viel Gewinn je 100 € Umsatz übrig bleibt.",
+    "b": "kaufmaennisch",
+    "q_": "AP2 · Kennzahlen",
+    "cs": [
+      21,
+      21,
+      15,
+      15
+    ],
+    "ws": [
+      5,
+      5,
+      3,
+      3
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.4
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 145,
+    "q": "Worin unterscheidet sich das Wasserfallmodell grundlegend von Scrum?",
+    "a": [
+      "Scrum arbeitet streng sequenziell, das Wasserfallmodell iterativ",
+      "Wasserfall arbeitet streng sequenziell, Scrum in kurzen Sprints",
+      "Beide Modelle arbeiten mit völlig identischen Phasen",
+      "Scrum kennt keine festen Rollen im Projektteam"
+    ],
+    "r": 1,
+    "e": "Im Wasserfallmodell werden die Phasen Analyse, Entwurf, Umsetzung, Test und Einführung strikt nacheinander durchlaufen – Änderungen sind teuer. Scrum arbeitet in kurzen Sprints mit Rollen (Product Owner, Scrum Master, Team), Daily und Retrospektive – Änderungen sind eingeplant.",
+    "b": "pm",
+    "q_": "PK1",
+    "cs": [
+      64,
+      63,
+      52,
+      46
+    ],
+    "ws": [
+      7,
+      8,
+      7,
+      7
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": true,
+      "span": 0.39
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 146,
+    "q": "Was ist eine Risikoanalyse im Projekt?",
+    "a": [
+      "Die nachträgliche Auswertung bereits aufgetretener Fehler",
+      "Die Prüfung der Qualifikation aller Mitarbeiter",
+      "Die Bewertung von Risiken nach Wahrscheinlichkeit und Schaden",
+      "Die Berechnung des erwarteten Projektgewinns"
+    ],
+    "r": 2,
+    "e": "Bei der Risikoanalyse werden mögliche Risiken gesammelt, nach Eintrittswahrscheinlichkeit und Schadenshöhe bewertet (oft in einer Matrix) und mit Gegenmaßnahmen hinterlegt. PK-01 nennt sie im Themenkreis zur Wirtschaftlichkeit und Machbarkeit.",
+    "b": "pm",
+    "q_": "PK1",
+    "cs": [
+      57,
+      47,
+      61,
+      44
+    ],
+    "ws": [
+      6,
+      6,
+      8,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.39
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 23,
+    "q": "Wann ist eine 1:1-Beziehung sinnvoll?",
+    "a": [
+      "Wenn zwei Tabellen gleich viele Spalten haben",
+      "Wenn beide Tabellen dieselbe Zeilenzahl haben",
+      "Immer, wenn es keinen Primärschlüssel gibt",
+      "Aus Datenschutz-, Performance- oder Strukturierungsgründen"
+    ],
+    "r": 3,
+    "e": "1:1 wird bewusst eingesetzt: um sensible Daten getrennt zu halten (Datenschutz), um selten genutzte Spalten auszulagern (Performance) oder um optionale Daten zu separieren.",
+    "b": "datenbank",
+    "q_": "DBG",
+    "cs": [
+      45,
+      45,
+      42,
+      58
+    ],
+    "ws": [
+      7,
+      6,
+      6,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.38
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 66,
+    "q": "Ihr Kunde versteht ein Fachwort nicht. Welches Verhalten ist professionell?",
+    "a": [
+      "Das Fachwort mehrfach wiederholen, bis es bekannt ist",
+      "Den Kunden auf seine Wissenslücke hinweisen",
+      "Allgemein verständlich formulieren und den Nutzen erklären",
+      "Die Beratung an eine Fachabteilung abgeben"
+    ],
+    "r": 2,
+    "e": "Kundenorientierte Kommunikation heißt, die Sprache des Gegenübers zu treffen und den Nutzen statt der Technik zu erklären. Fachbegriffe sind erlaubt, müssen aber erklärt werden – der PK fordert ausdrücklich, deutsche und englische Fachbegriffe sicher anzuwenden.",
+    "b": "kommunikation",
+    "q_": "PK2",
+    "cs": [
+      53,
+      43,
+      58,
+      42
+    ],
+    "ws": [
+      8,
+      6,
+      7,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.38
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 161,
+    "q": "Welche Aufgabe ist typisch für unüberwachtes Lernen?",
+    "a": [
+      "Vorhersage des Hauspreises aus Wohnfläche",
+      "Erkennung von Spam anhand gelernter Beispiele",
+      "Bildung von Kundengruppen (Segmentierung) ohne Vorgaben",
+      "Klassifikation handgeschriebener Ziffern"
+    ],
+    "r": 2,
+    "e": "Unüberwachtes Lernen erkennt Strukturen in Daten ohne Labels – etwa Cluster (Kundensegmente) oder reduzierte Dimensionen. Die übrigen Aufgaben sind überwacht, weil Zielwerte oder Klassen bekannt sind.",
+    "b": "ki",
+    "q_": "ML",
+    "cs": [
+      41,
+      45,
+      55,
+      40
+    ],
+    "ws": [
+      5,
+      6,
+      6,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.38
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 67,
+    "q": "Worin liegt der zentrale Unterschied zwischen Werkvertrag und Dienstvertrag?",
+    "a": [
+      "Der Unterschied betrifft nur die Höhe der Vergütung",
+      "Der Dienstvertrag schuldet einen Erfolg, der Werkvertrag die Tätigkeit",
+      "Beide Vertragsarten schulden einen konkreten Erfolg",
+      "Der Werkvertrag schuldet einen Erfolg, der Dienstvertrag die Tätigkeit"
+    ],
+    "r": 3,
+    "e": "Beim Werkvertrag wird ein bestimmter Erfolg geschuldet (der Kunde zahlt erst, wenn das Werk abgenommen ist). Beim Dienstvertrag wird die Tätigkeit selbst geschuldet – das Ergebnis ist nicht garantiert. Klassische Begriffsfalle in der AP1.",
+    "b": "vertrag",
+    "q_": "PK7",
+    "cs": [
+      51,
+      70,
+      51,
+      70
+    ],
+    "ws": [
+      8,
+      9,
+      6,
+      9
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.37
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 109,
+    "q": "Welches UML-Diagramm zeigt, welche Akteure welche Funktionen eines Systems nutzen?",
+    "a": [
+      "Das Klassendiagramm",
+      "Das Anwendungsfalldiagramm",
+      "Das Aktivitätsdiagramm",
+      "Das Sequenzdiagramm"
+    ],
+    "r": 1,
+    "e": "Das Use-Case- bzw. Anwendungsfalldiagramm stellt Akteure (Strichfiguren) und ihre Anwendungsfälle (Ellipsen) gegenüber und grenzt den Systemumfang ab. Es zeigt, WAS das System leisten soll – nicht wie. In AP1 ist es nachweislich vorgekommen.",
+    "b": "software",
+    "q_": "PK4",
+    "cs": [
+      19,
+      26,
+      22,
+      19
+    ],
+    "ws": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.37
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 110,
+    "q": "Welches UML-Diagramm stellt die zeitliche Reihenfolge von Nachrichten zwischen Objekten dar?",
+    "a": [
+      "Das Klassendiagramm",
+      "Das Anwendungsfalldiagramm",
+      "Das Sequenzdiagramm",
+      "Das Zustandsdiagramm"
+    ],
+    "r": 2,
+    "e": "Das Sequenzdiagramm zeigt beteiligte Objekte als Lebenslinien und den Nachrichtenaustausch in zeitlicher Abfolge. Das Klassendiagramm zeigt den statischen Aufbau mit Klassen, Attributen und Methoden – das Aktivitätsdiagramm dagegen den Ablauf von Arbeitsschritten.",
+    "b": "software",
+    "q_": "PK4",
+    "cs": [
+      19,
+      26,
+      19,
+      20
+    ],
+    "ws": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.37
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 111,
+    "q": "Was wird bei einem Schreibtischtest gemacht?",
+    "a": [
+      "Der Code wird auf dem Schreibtisch liegend abgelegt",
+      "Der Bildschirm wird für die Ausgabe kalibriert",
+      "Der Code wird automatisch durch eine Testsoftware geprüft",
+      "Der Algorithmus wird gedanklich mit Beispieldaten durchgespielt"
+    ],
+    "r": 3,
+    "e": "Beim Schreibtischtest geht man den Code oder das Modell gedanklich mit konkreten Werten durch und notiert die Variablenbelegung nach jedem Schritt. So findet man Logikfehler, bevor überhaupt ein Rechner beteiligt ist – ein Klassiker in der AP1 (2024 und 2025 abgefragt).",
+    "b": "software",
+    "q_": "PK4",
+    "cs": [
+      51,
+      46,
+      57,
+      63
+    ],
+    "ws": [
+      8,
+      7,
+      8,
+      7
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.37
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 115,
+    "q": "Was besagt eine OEM-Lizenz?",
+    "a": [
+      "Sie ist frei weitergebbar und auf andere Geräte übertragbar",
+      "Sie ist nur für Behörden und Schulen gültig",
+      "Sie gilt für beliebig viele Geräte gleichzeitig",
+      "Sie ist an ein Gerät gebunden und wird damit verkauft"
+    ],
+    "r": 3,
+    "e": "OEM (Original Equipment Manufacturer) bedeutet: Die Lizenz wird zusammen mit einem neuen Gerät ausgeliefert und ist an dieses gebunden – sie darf nicht auf andere Rechner übertragen werden. Das ist deutlich günstiger als eine Einzelhandelslizenz.",
+    "b": "software",
+    "q_": "PK4",
+    "cs": [
+      59,
+      43,
+      47,
+      53
+    ],
+    "ws": [
+      9,
+      8,
+      7,
+      10
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": true,
+      "span": 0.37
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 48,
+    "q": "Was bedeutet ein Puffer von 0 Tagen für einen Vorgang?",
+    "a": [
+      "Er liegt auf dem kritischen Pfad",
+      "Er ist nicht durchführbar",
+      "Er kann beliebig verschoben werden",
+      "Er wurde noch nicht geplant"
+    ],
+    "r": 0,
+    "e": "Puffer 0 heißt: frühester und spätester Termin fallen zusammen. Der Vorgang liegt auf dem kritischen Pfad und darf sich nicht verzögern.",
+    "b": "pm",
+    "q_": "PM",
+    "cs": [
+      32,
+      25,
+      34,
+      27
+    ],
+    "ws": [
+      6,
+      4,
+      5,
+      5
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": true,
+      "span": 0.36
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 60,
+    "q": "Welche Marktform liegt vor, wenn wenige große Anbieter den Markt beherrschen?",
+    "a": [
+      "Das Oligopol",
+      "Das Monopol",
+      "Das Polypol",
+      "Der Käufermarkt"
+    ],
+    "r": 0,
+    "e": "Monopol = ein Anbieter, Oligopol = wenige Anbieter, Polypol = viele Anbieter. Der Käufer-/Verkäufermarkt beschreibt dagegen, wer die stärkere Verhandlungsposition hat (Angebot größer oder kleiner als Nachfrage).",
+    "b": "kommunikation",
+    "q_": "PK2",
+    "cs": [
+      12,
+      11,
+      11,
+      15
+    ],
+    "ws": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 0.36
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 137,
+    "q": "Welche Aufgabe hat ein Testprotokoll beim Einrichten eines Arbeitsplatzes?",
+    "a": [
+      "Es ersetzt die Rechnung gegenüber dem Kunden",
+      "Es dokumentiert nachvollziehbar die durchgeführten Prüfungen",
+      "Es beschreibt die ursprünglichen Wünsche des Kunden",
+      "Es listet die Gehälter der beteiligten Techniker"
+    ],
+    "r": 1,
+    "e": "Das Testprotokoll hält fest, was geprüft wurde (z. B. Hardware, Netzwerk, Drucker), mit welchen Ergebnissen und wer die Prüfung durchgeführt hat. Es ist Prüfungsnachweis, Grundlage der Abnahme und Beleg gegenüber dem Kunden – PK-05 nennt es als Pflicht-Stoff.",
+    "b": "qs",
+    "q_": "PK5",
+    "cs": [
+      44,
+      60,
+      51,
+      48
+    ],
+    "ws": [
+      7,
+      6,
+      7,
+      7
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.36
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 140,
+    "q": "Was verlangt das SMART-Prinzip von einem Projektziel?",
+    "a": [
+      "Spezifisch, Messbar, Attraktiv, Realistisch, Terminiert",
+      "Es soll möglichst intelligent formuliert sein",
+      "Schnell, Modern, Agil, Robust und Testbar",
+      "Strategisch, Motivierend, Aktiv und Transparent"
+    ],
+    "r": 0,
+    "e": "SMART fordert fünf Eigenschaften: spezifisch (eindeutig formuliert), messbar (überprüfbare Kriterien), attraktiv bzw. akzeptiert, realistisch erreichbar und terminiert. PK-01 nennt das SMART-Prinzip ausdrücklich im Projektmanagement-Themenkreis.",
+    "b": "pm",
+    "q_": "PK1",
+    "cs": [
+      55,
+      45,
+      41,
+      47
+    ],
+    "ws": [
+      5,
+      6,
+      6,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.34
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 55,
+    "q": "Wie viele Seiten hat eine Nachricht nach dem 4-Ohren-Modell von Schulz von Thun?",
+    "a": [
+      "Zwei: Sender und Empfänger der Nachricht",
+      "Eine: nur der reine Sachinhalt der Nachricht",
+      "Drei: Inhalt, Ton und Wirkung der Nachricht",
+      "Vier: Sachebene, Appell, Selbstoffenbarung, Beziehung"
+    ],
+    "r": 3,
+    "e": "Jede Nachricht hat vier Aspekte, die der Empfänger auf vier „Ohren\" hören kann: Sachebene (der Inhalt), Appell (was erreicht werden soll), Selbstoffenbarung (was der Sender über sich verrät) und Beziehung (wie er zum Empfänger steht).",
+    "b": "kommunikation",
+    "q_": "PK2",
+    "cs": [
+      40,
+      44,
+      43,
+      53
+    ],
+    "ws": [
+      6,
+      7,
+      7,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.33
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 104,
+    "q": "Was bedeutet die Härtung eines Betriebssystems?",
+    "a": [
+      "Das Reduzieren auf ein sicheres Mindestmaß an Diensten",
+      "Die Installation einer zusätzlichen Antivirensoftware",
+      "Die vollständige Neuinstallation des Systems",
+      "Das Verschlüsseln der gesamten Festplatte"
+    ],
+    "r": 0,
+    "e": "Härtung heißt: unnötige Dienste und Ports abschalten, Software aktuell halten, Standardkonten sperren, Rechte nach dem Minimalprinzip vergeben, Firewall und Logging konfigurieren. PK-06 nennt „Härtung Betriebssystem\" ausdrücklich.",
+    "b": "recht",
+    "q_": "PK6",
+    "cs": [
+      54,
+      53,
+      44,
+      41
+    ],
+    "ws": [
+      8,
+      5,
+      5,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.32
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 158,
+    "q": "Was beschreibt die Backpropagation in einem neuronalen Netz?",
+    "a": [
+      "Das Vorwärtsleiten der Eingaben durch die Schichten",
+      "Das zufällige Initialisieren der Gewichte",
+      "Das Rückführen des Fehlers, um die Gewichte anzupassen",
+      "Das Aufteilen der Daten in Trainings- und Testdaten"
+    ],
+    "r": 2,
+    "e": "Bei der Backpropagation wird der Fehler (Abweichung zwischen Vorhersage und Ziel) rückwärts durch das Netz geführt und die Gewichte entsprechend angepasst. Das Vorwärtsleiten heißt Vorwärtspropagation.",
+    "b": "ki",
+    "q_": "DL",
+    "cs": [
+      51,
+      41,
+      54,
+      51
+    ],
+    "ws": [
+      7,
+      5,
+      8,
+      8
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.32
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 2,
+    "q": "Warum muss eine USV auch die Scheinleistung (VA) der Verbraucher aushalten?",
+    "a": [
+      "Weil die Scheinleistung den Stromverbrauch bestimmt",
+      "Weil VA den Maximalstrom je Leitung begrenzt",
+      "Weil die Blindleistung durch Kabel und USV fließen muss",
+      "Weil die USV sonst die Frequenz nicht hält"
+    ],
+    "r": 2,
+    "e": "Die Blindleistung pendelt zwischen Erzeuger und Verbraucher und wird nicht bezahlt – aber Kabel und USV müssen sie übertragen können. Deshalb gelten zwei Grenzen: maximale Wirkleistung und maximale Scheinleistung.",
+    "b": "hardware",
+    "q_": "USV",
+    "cs": [
+      51,
+      44,
+      55,
+      42
+    ],
+    "ws": [
+      6,
+      7,
+      9,
+      8
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.31
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 128,
+    "q": "Der Kunde klagt über Nackenschmerzen bei der Bildschirmarbeit. Welche Empfehlung gehört zur Ergonomie?",
+    "a": [
+      "Monitorhöhe, Sitzhöhe, Abstand und Beleuchtung anpassen",
+      "Einen möglichst kleinen Monitor anschaffen",
+      "Den Monitor als zusätzliche Lichtquelle nutzen",
+      "Möglichst weit nach unten auf die Tastatur schauen"
+    ],
+    "r": 0,
+    "e": "Ergonomie umfasst die richtige Höhe und Neigung von Monitor, Tastatur und Stuhl, ausreichenden Sehabstand (etwa 50–80 cm), blendfreie Beleuchtung und eine bewegungsfördernde Sitzhaltung. PK-03 nennt Ergonomie als ökonomischen und gesundheitlichen Aspekt bei der Systembeurteilung.",
+    "b": "software",
+    "q_": "PK3",
+    "cs": [
+      55,
+      42,
+      46,
+      50
+    ],
+    "ws": [
+      6,
+      5,
+      6,
+      8
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.31
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 74,
+    "q": "Bei einem Veränderungsprojekt im Unternehmen – wie werden die Personengruppen nach ihrer Haltung bezeichnet?",
+    "a": [
+      "Treiber, Helfer, Beobachter und Gegner",
+      "Sponsor, Kunde, Nutzer und Betreiber",
+      "Promoter, Bremser, Skeptiker und Widerständler",
+      "Forming, Storming, Norming und Performing"
+    ],
+    "r": 2,
+    "e": "PK-07 verlangt, Promoter, Bremser, Skeptiker und Widerständler zu erkennen. Promoter treiben aktiv voran, Bremser halten still zurück, Skeptiker zweifeln und wollen Argumente, Widerständler lehnen offen ab. Jede Gruppe braucht eine andere Ansprache.",
+    "b": "vertrag",
+    "q_": "PK7",
+    "cs": [
+      38,
+      36,
+      46,
+      41
+    ],
+    "ws": [
+      5,
+      5,
+      5,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.28
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 143,
+    "q": "Was wird in einer Machbarkeitsanalyse geprüft?",
+    "a": [
+      "Nur die technische Umsetzbarkeit des Projekts",
+      "Nur die Verfügbarkeit der Mitarbeiter",
+      "Nur die Höhe der entstehenden Kosten",
+      "Technik, Wirtschaftlichkeit, Recht und Termine"
+    ],
+    "r": 3,
+    "e": "Die Machbarkeitsanalyse betrachtet mehrere Dimensionen: technische Umsetzbarkeit, Wirtschaftlichkeit (Budgetvorgabe), rechtliche Zulässigkeit, terminliche Realisierbarkeit und personelle Ressourcen. PK-01 nennt sie zusammen mit der Budgetvorgabe und der Stakeholder-Beurteilung.",
+    "b": "pm",
+    "q_": "PK1",
+    "cs": [
+      45,
+      37,
+      36,
+      46
+    ],
+    "ws": [
+      6,
+      5,
+      6,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.28
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 284,
+    "q": "Welche vier Stakeholder-Typen nennt der Katalog im Change Management?",
+    "a": [
+      "Promoter, Bremser, Skeptiker und Widerständler",
+      "Kunde, Lieferant, Partner, Wettbewerber",
+      "Planer, Tester, Entwickler, Betreiber",
+      "Chef, Mitarbeiter, Azubi, Praktikant"
+    ],
+    "r": 0,
+    "e": "Promoter treiben aktiv voran, Bremser sind passiv dagegen, Skeptiker fragen und warten ab, Widerständler arbeiten aktiv dagegen. Der Promoter ist der wichtigste Verbündete für Veränderungen.",
+    "b": "vertrag",
+    "q_": "PK7",
+    "cs": [
+      46,
+      39,
+      37,
+      36
+    ],
+    "ws": [
+      5,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.28
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 59,
+    "q": "Was bezeichnet der Kanal im Sender-Empfänger-Modell?",
+    "a": [
+      "Die Störung, die während der Übertragung auftritt",
+      "Die emotionale Stimmung des Senders beim Sprechen",
+      "Die Rückmeldung des Empfängers an den Sender",
+      "Das Übertragungsmedium wie Gespräch, Telefon oder E-Mail"
+    ],
+    "r": 3,
+    "e": "Der Kanal ist das Übertragungsmedium (Gespräch, Telefon, E-Mail, Chat). Jeder Kanal hat eigene Stärken und Störrisiken: Beim Telefon fehlt die Mimik, bei E-Mail der Tonfall – Missverständnisse entstehen besonders leicht bei rein schriftlicher Kommunikation.",
+    "b": "kommunikation",
+    "q_": "PK2",
+    "cs": [
+      49,
+      49,
+      44,
+      56
+    ],
+    "ws": [
+      7,
+      7,
+      7,
+      7
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.27
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 150,
+    "q": "Was gehört in einen Projektstrukturplan?",
+    "a": [
+      "Die Gehälter aller am Projekt Beteiligten",
+      "Ausschließlich der verbindliche Endtermin",
+      "Die Zerlegung in Teilaufgaben und Arbeitspakete",
+      "Die Liste aller möglichen Lieferanten"
+    ],
+    "r": 2,
+    "e": "Der Projektstrukturplan (PSP) zerlegt das Gesamtprojekt hierarchisch in Teilaufgaben und Arbeitspakete. Er schafft die Grundlage für Aufwandsschätzung, Terminplanung und Verantwortlichkeiten – PK-01 nennt Strukturplan, Netzplan und Gantt-Diagramm zusammen.",
+    "b": "pm",
+    "q_": "PK1",
+    "cs": [
+      41,
+      41,
+      47,
+      37
+    ],
+    "ws": [
+      6,
+      4,
+      6,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.27
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 207,
+    "q": "Wie läuft der 3-Way-Handshake von TCP ab?",
+    "a": [
+      "SYN → SYN-ACK → ACK",
+      "ACK → SYN → FIN",
+      "PING → PONG → PING",
+      "GET → POST → OK"
+    ],
+    "r": 0,
+    "e": "Der Client sendet SYN, der Server antwortet mit SYN-ACK, der Client bestätigt mit ACK. Danach steht die Verbindung und die Datenübertragung beginnt.",
+    "b": "netzwerk",
+    "q_": "NW",
+    "cs": [
+      19,
+      15,
+      18,
+      15
+    ],
+    "ws": [
+      5,
+      5,
+      5,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.27
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 219,
+    "q": "Welche Protokolle werden typischerweise für einen VPN-Tunnel verwendet?",
+    "a": [
+      "IPsec und L2TP",
+      "HTTP und FTP",
+      "SMTP und POP3",
+      "SMB und NFS"
+    ],
+    "r": 0,
+    "e": "Für VPN sind IPsec (Sicherung auf IP-Ebene) und L2TP (Tunnel) typisch, häufig kombiniert (L2TP/IPsec). OpenVPN und WireGuard sind moderne Alternativen. HTTP/FTP sind Anwendungsprotokolle.",
+    "b": "netzwerk",
+    "q_": "NW",
+    "cs": [
+      14,
+      12,
+      13,
+      11
+    ],
+    "ws": [
+      3,
+      3,
+      3,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.27
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 294,
+    "q": "„Please find attached the invoice.“ – Was ist gemeint?",
+    "a": [
+      "Die Rechnung ist dieser Nachricht beigefügt",
+      "Die Rechnung wurde bereits bezahlt",
+      "Die Rechnung ist verloren gegangen",
+      "Die Rechnung wird per Post geschickt"
+    ],
+    "r": 0,
+    "e": "„Please find attached …\" ist die Standardformel für „… finden Sie im Anhang\". Die Rechnung liegt also als Anhang bei.",
+    "b": "englisch",
+    "q_": "EN",
+    "cs": [
+      43,
+      34,
+      34,
+      36
+    ],
+    "ws": [
+      6,
+      5,
+      5,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.26
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 116,
+    "q": "Welche Freiheit gewährt die GNU General Public License (GPL)?",
+    "a": [
+      "Die Software darf genutzt, geändert und weitergegeben werden",
+      "Nur die private Nutzung auf einem einzigen Gerät",
+      "Die Software darf nur gegen Gebühr verwendet werden",
+      "Die Software darf nur im Quellcode gelesen werden"
+    ],
+    "r": 0,
+    "e": "Die GPL ist eine freie Copyleft-Lizenz: Nutzen, Verändern und Weitergeben sind erlaubt. Wer die Software verändert weitergibt, muss den Quellcode offenlegen und wieder unter GPL stellen („viraler Effekt\"). Das prüft PK-04 unter den Lizenzarten.",
+    "b": "software",
+    "q_": "PK4",
+    "cs": [
+      60,
+      48,
+      51,
+      49
+    ],
+    "ws": [
+      8,
+      8,
+      8,
+      8
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.25
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 297,
+    "q": "„The device is out of warranty.“ – Was bedeutet das?",
+    "a": [
+      "Das Gerät ist außerhalb der Garantiezeit",
+      "Das Gerät wurde gerade geliefert",
+      "Das Gerät hat noch volle Garantie",
+      "Das Gerät ist defekt geliefert worden"
+    ],
+    "r": 0,
+    "e": "„warranty\" = (Hersteller-)Garantie. „out of warranty\" = die Garantie ist abgelaufen. Die gesetzliche Gewährleistung heißt dagegen „statutory warranty\".",
+    "b": "englisch",
+    "q_": "EN",
+    "cs": [
+      40,
+      32,
+      33,
+      37
+    ],
+    "ws": [
+      6,
+      5,
+      6,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.25
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 81,
+    "q": "Was unterscheidet einen Lizenzvertrag von einem Kaufvertrag bei Software?",
+    "a": [
+      "Bei der Lizenz geht volles Eigentum an der Software über",
+      "Bei der Lizenz geht kein Eigentum über, nur ein Nutzungsrecht",
+      "Beide Vertragsarten sind rechtlich völlig identisch",
+      "Ein Lizenzvertrag ist ohne Unterschrift unwirksam"
+    ],
+    "r": 1,
+    "e": "Software wird nicht verkauft, sondern zur Nutzung überlassen. Der Hersteller behält das Urheberrecht, der Kunde erhält definierte Nutzungsrechte – je nach Lizenz etwa Anzahl Arbeitsplätze, Laufzeit und Nutzungsumfang. Deshalb gehört der Lizenzvertrag neben Kauf-, Miet- und Leasingvertrag zu den PK-07-Vertragsarten.",
+    "b": "vertrag",
+    "q_": "PK7",
+    "cs": [
+      56,
+      61,
+      51,
+      49
+    ],
+    "ws": [
+      10,
+      10,
+      6,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.24
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 107,
+    "q": "Welche Aufgabe hat der Linker?",
+    "a": [
+      "Er schreibt den Quellcode nach Vorgabe des Entwicklers",
+      "Er sucht inhaltliche Fehler im geschriebenen Quellcode",
+      "Er führt das fertige Programm auf dem Rechner aus",
+      "Er verbindet Objektdateien und Bibliotheken zur Programmdatei"
+    ],
+    "r": 3,
+    "e": "Der Compiler erzeugt aus jeder Quelldatei ein Objektfile. Der Linker fügt diese Objektdateien und die eingebundenen Bibliotheken zu einer einzigen ausführbaren Datei zusammen und löst die Verweise zwischen ihnen auf.",
+    "b": "software",
+    "q_": "PK4",
+    "cs": [
+      54,
+      54,
+      49,
+      61
+    ],
+    "ws": [
+      8,
+      7,
+      9,
+      7
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.24
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 132,
+    "q": "Was ist ein virtueller Desktop?",
+    "a": [
+      "Ein Betriebssystem auf einem Server, auf das man zugreift",
+      "Ein besonders großer Bildschirm am Arbeitsplatz",
+      "Ein zweiter Bildschirm am gleichen Arbeitsplatz",
+      "Eine vollständige lokale Kopie aller Firmendaten am Client"
+    ],
+    "r": 0,
+    "e": "Beim virtuellen Desktop (VDI) läuft das Betriebssystem in einer virtuellen Maschine auf einem Server – der Nutzer greift per Client oder Browser darauf zu. Vorteile: zentrale Administration, Daten bleiben im Rechenzentrum, Geräteunabhängigkeit. PK-03 nennt virtuelle Desktops (Cloud oder lokal) neu im Katalog.",
+    "b": "software",
+    "q_": "PK3",
+    "cs": [
+      57,
+      47,
+      47,
+      58
+    ],
+    "ws": [
+      9,
+      6,
+      6,
+      8
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": true,
+      "span": 0.23
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 120,
+    "q": "Was ist eine IDE?",
+    "a": [
+      "Eine Integrierte Entwicklungsumgebung mit Editor und Debugger",
+      "Ein Betriebssystem, das speziell für Entwickler gedacht ist",
+      "Ein Datenbankmanagementsystem für betriebliche Anwendungen",
+      "Ein Netzwerkprotokoll zur Verteilung von Quellcode"
+    ],
+    "r": 0,
+    "e": "Eine Integrated Development Environment bündelt alle Werkzeuge an einem Ort: Editor mit Syntaxhervorhebung, Compiler bzw. Interpreter, Debugger, Versionsverwaltung und Projektverwaltung. Das erhöht die Produktivität und senkt Fehlerquellen. PK-04 nennt die IDE namentlich.",
+    "b": "software",
+    "q_": "PK4",
+    "cs": [
+      61,
+      59,
+      58,
+      50
+    ],
+    "ws": [
+      7,
+      8,
+      5,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.22
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 134,
+    "q": "Ein Notebook soll einen 3-stündigen Ausfall überbrücken und ist mit 92 Wh nutzbarer Kapazität angegeben. Wie hoch ist die durchschnittliche Aufnahme bei dieser Laufzeit?",
+    "a": [
+      "rund 9,2 W",
+      "rund 276 W",
+      "rund 30,7 W",
+      "rund 92 W"
+    ],
+    "r": 2,
+    "e": "Aufnahme = Energie ÷ Zeit = 92 Wh ÷ 3 h ≈ 30,7 W. Der Akku liefert also im Schnitt etwa 31 Watt. Wer Energie und Zeit multipliziert statt teilt, erhält entgegengesetzt zu hohe Werte – ein typischer Rechenfehler.",
+    "b": "software",
+    "q_": "PK3",
+    "cs": [
+      10,
+      10,
+      11,
+      9
+    ],
+    "ws": [
+      3,
+      3,
+      3,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.22
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 136,
+    "q": "Was unterscheidet Qualitätsplanung von Qualitätslenkung?",
+    "a": [
+      "Die Planung legt Ist und Ziel fest, die Lenkung setzt um",
+      "Die Lenkung legt den Ziel-Zustand fest, die Planung setzt um",
+      "Beide Begriffe bezeichnen im QM denselben Vorgang",
+      "Die Planung betrifft ausschließlich die entstehenden Kosten"
+    ],
+    "r": 0,
+    "e": "In der Qualitätsplanung wird der Ist-Zustand ermittelt und der anzustrebende Ziel-Zustand festgelegt. Die Qualitätslenkung ist die Umsetzungsphase: Sie sorgt dafür, dass die Prozesse diesen Ziel-Zustand tatsächlich erreichen. PK-05 fordert beide Begriffe.",
+    "b": "qs",
+    "q_": "PK5",
+    "cs": [
+      56,
+      60,
+      49,
+      59
+    ],
+    "ws": [
+      11,
+      10,
+      7,
+      7
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": true,
+      "span": 0.22
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 42,
+    "q": "Wofür steht das Kürzel VPN?",
+    "a": [
+      "Virtual Public Network",
+      "Very Protected Node",
+      "Virtual Private Network",
+      "Verified Private Node"
+    ],
+    "r": 2,
+    "e": "Ein Virtual Private Network baut über ein unsicheres Netz (meist das Internet) einen verschlüsselten Tunnel auf, durch den die Teilnehmer so kommunizieren, als wären sie im gleichen lokalen Netz.",
+    "b": "netzwerk",
+    "q_": "NW",
+    "cs": [
+      22,
+      19,
+      23,
+      21
+    ],
+    "ws": [
+      3,
+      3,
+      3,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.21
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 88,
+    "q": "Wofür ist der IT-Sicherheitsbeauftragte im Unterschied zum Datenschutzbeauftragten zuständig?",
+    "a": [
+      "Für die gesamte Informationssicherheit des Betriebs",
+      "Für die Einhaltung von DSGVO und BDSG im Betrieb",
+      "Für die Betreuung der betroffenen Personen",
+      "Für die Zertifizierung des Qualitätsmanagements"
+    ],
+    "r": 0,
+    "e": "Der Datenschutzbeauftragte achtet auf die Einhaltung von DSGVO und BDSG und ist weisungsfrei. Der IT-Sicherheitsbeauftragte verantwortet die Informationssicherheit im Ganzen – also auch nicht-personenbezogene Systeme. PK-06 verlangt ausdrücklich die Unterscheidung.",
+    "b": "recht",
+    "q_": "PK6",
+    "cs": [
+      51,
+      48,
+      42,
+      47
+    ],
+    "ws": [
+      6,
+      9,
+      6,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.21
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 57,
+    "q": "Welche Bestandteile hat das Sender-Empfänger-Modell?",
+    "a": [
+      "Sender, Empfänger und ein Störfilter im Kanal",
+      "Sender, Empfänger, Nachricht, Kodierung und Störquelle",
+      "Nur Sender und Empfänger ohne weitere Elemente",
+      "Sachebene, Appell, Selbstoffenbarung und Beziehung"
+    ],
+    "r": 1,
+    "e": "Der Sender kodiert eine Nachricht, der Empfänger dekodiert sie. Auf jeder Stufe können Störungen (Rauschen) auftreten – deshalb ist die gesendete nicht automatisch die verstandene Nachricht.",
+    "b": "kommunikation",
+    "q_": "PK2",
+    "cs": [
+      45,
+      54,
+      46,
+      50
+    ],
+    "ws": [
+      7,
+      6,
+      7,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.2
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 101,
+    "q": "Welche Anforderung stellt eine gute Passwort-Policy?",
+    "a": [
+      "Möglichst kurze Passwörter für schnelle Eingabe",
+      "Länge, Komplexität, Wechsel und keine Mehrfachnutzung",
+      "Passwörter aufschreiben und am Monitor befestigen",
+      "Immer den Firmennamen als Kennwort verwenden"
+    ],
+    "r": 1,
+    "e": "Wirksame Passwörter sind lang (heute mindestens 12 Zeichen), enthalten Zeichen aus mehreren Kategorien, werden nirgends wiederverwendet und regelmäßig gewechselt. Zusätzlich empfiehlt sich ein Passwortmanager – nicht der Zettel am Monitor.",
+    "b": "recht",
+    "q_": "PK6",
+    "cs": [
+      47,
+      53,
+      49,
+      44
+    ],
+    "ws": [
+      6,
+      6,
+      6,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.2
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 355,
+    "q": "Auf welcher OSI-Schicht arbeitet ein Router?",
+    "a": [
+      "Schicht 3 – Vermittlungsschicht",
+      "Schicht 2 – Sicherungsschicht",
+      "Schicht 4 – Transportschicht",
+      "Schicht 1 – Bitübertragung"
+    ],
+    "r": 0,
+    "e": "Ein Router verbindet Netzwerke und leitet Pakete auf Schicht 3 anhand von IP-Adressen und der Routing-Tabelle weiter. Er trennt Broadcast-Domänen und bildet das Standard-Gateway für ein Netz.",
+    "b": "netzwerk",
+    "q_": "PK-03 · Netzkomponenten",
+    "cs": [
+      31,
+      29,
+      28,
+      26
+    ],
+    "ws": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.19
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 73,
+    "q": "Wodurch ist die Matrixorganisation gekennzeichnet?",
+    "a": [
+      "Jede Abteilung arbeitet völlig unabhängig vom Projekt",
+      "Es gilt gleichzeitig fachliche und projektbezogene Leitung",
+      "Es gibt nur eine einzige Führungsebene im Betrieb",
+      "Es gibt keine festen Verantwortlichkeiten im Team"
+    ],
+    "r": 1,
+    "e": "In der Matrixorganisation überlagern sich eine horizontale (fachliche, z. B. Abteilung) und eine vertikale (projektbezogene) Weisungslinie. Vorteil ist die flexible Nutzung von Fachwissen, Nachteil sind Kompetenzkonflikte und höherer Abstimmungsaufwand.",
+    "b": "vertrag",
+    "q_": "PK7",
+    "cs": [
+      53,
+      58,
+      49,
+      49
+    ],
+    "ws": [
+      7,
+      7,
+      8,
+      7
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.18
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 108,
+    "q": "Was ist Pseudocode?",
+    "a": [
+      "Eine sprachunabhängige Beschreibung eines Algorithmus",
+      "Ein kompilierbarer Programmcode für viele Systeme",
+      "Eine verschlüsselte Darstellung von Programmabläufen",
+      "Ein Fehlerprotokoll des verwendeten Compilers"
+    ],
+    "r": 0,
+    "e": "Pseudocode beschreibt den Lösungsweg mit Kontrollstrukturen (Verzweigung, Schleife) in einer an Programmiersprachen angelehnten, aber nicht ausführbaren Notation. So lässt sich der Algorithmus unabhängig von der späteren Sprache planen und prüfen – PK-04-Pflichtstoff.",
+    "b": "software",
+    "q_": "PK4",
+    "cs": [
+      53,
+      49,
+      52,
+      45
+    ],
+    "ws": [
+      5,
+      6,
+      5,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.18
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 91,
+    "q": "Welches ist KEIN Grundsatz der DSGVO-Verarbeitung?",
+    "a": [
+      "Zweckbindung und Datenminimierung",
+      "Richtigkeit und Speicherbegrenzung",
+      "Integrität und Vertraulichkeit",
+      "Unbegrenzte Speicherung aller Daten"
+    ],
+    "r": 3,
+    "e": "Die DSGVO verlangt im Gegenteil Speicherbegrenzung: Daten dürfen nur so lange gespeichert werden, wie der Zweck es erfordert. Weitere Grundsätze sind Rechtmäßigkeit, Zweckbindung, Datenminimierung, Richtigkeit, Integrität und Vertraulichkeit sowie Rechenschaftspflicht.",
+    "b": "recht",
+    "q_": "PK6",
+    "cs": [
+      33,
+      34,
+      30,
+      35
+    ],
+    "ws": [
+      3,
+      3,
+      3,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.17
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 103,
+    "q": "Welches Werk ist nach dem Urheberrechtsgesetz geschützt?",
+    "a": [
+      "Nur Musik- und Filmwerke mit Copyright-Zeichen",
+      "Nur Werke, die beim Patentamt eingetragen sind",
+      "Nur gedruckte Bücher und Fachzeitschriften",
+      "Jedes Werk aus Literatur, Wissenschaft und Kunst"
+    ],
+    "r": 3,
+    "e": "Das Urheberrecht schützt Werke in den Bereichen Literatur, Wissenschaft und Kunst – dazu zählen auch Software, Texte, Bilder, Grafiken und Datenbanken. Der Schutz entsteht automatisch mit der Schöpfung, ein Copyright-Zeichen ist nicht nötig.",
+    "b": "recht",
+    "q_": "PK6",
+    "cs": [
+      46,
+      46,
+      42,
+      48
+    ],
+    "ws": [
+      6,
+      7,
+      5,
+      7
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.14
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 58,
+    "q": "Sie wollen vom Kunden möglichst viele Informationen erhalten. Welche Frageform eignet sich?",
+    "a": [
+      "Die geschlossene Frage mit zwei Antwortmöglichkeiten",
+      "Die Suggestivfrage, die die Antwort bereits nahelegt",
+      "Die offene Frage, etwa „Was ist Ihnen wichtig?\"",
+      "Die rhetorische Frage ohne echte Antwortoption"
+    ],
+    "r": 2,
+    "e": "Offene Fragen (W-Fragen) liefern die meisten Informationen, weil sie nicht auf Ja/Nein oder vorgegebene Optionen einschränken. Geschlossene Fragen nutzt man später zur Bestätigung, Suggestivfragen sind manipulativ und zerstören Vertrauen.",
+    "b": "kommunikation",
+    "q_": "PK2",
+    "cs": [
+      52,
+      52,
+      47,
+      46
+    ],
+    "ws": [
+      6,
+      7,
+      8,
+      6
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": true,
+      "span": 0.13
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 106,
+    "q": "Worin unterscheiden sich Compiler und Interpreter?",
+    "a": [
+      "Beide übersetzen den Code vorab und erzeugen eine Programmdatei",
+      "Der Interpreter übersetzt vorab, der Compiler führt zur Laufzeit aus",
+      "Der Compiler übersetzt vorab, der Interpreter führt Zeile für Zeile aus",
+      "Der Compiler erzeugt Fehlerlisten, der Interpreter den Maschinencode"
+    ],
+    "r": 2,
+    "e": "Der Compiler übersetzt den kompletten Quellcode einmal in eine ausführbare Datei – danach läuft sie schnell, aber Änderungen erfordern Neukompilieren. Der Interpreter liest und führt den Code zeilenweise aus – flexibler und plattformunabhängig, aber langsamer.",
+    "b": "software",
+    "q_": "PK4",
+    "cs": [
+      63,
+      68,
+      71,
+      68
+    ],
+    "ws": [
+      9,
+      10,
+      11,
+      8
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 0.13
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 153,
+    "q": "Sie sollen ein neues Qualitätsziel formulieren. Welche Formulierung ist SMART?",
+    "a": [
+      "Wir wollen in Zukunft insgesamt deutlich besser werden",
+      "Die Fehlerquote sinkt bis 31.03. von 8 % auf 3 %",
+      "Mehr Qualität für alle Beteiligten im ganzen Betrieb",
+      "Der Kunde soll mit uns zufriedener sein als bisher"
+    ],
+    "r": 1,
+    "e": "Nur die zweite Formulierung ist spezifisch (Fehlerquote bei der Übergabe), messbar (8 % auf 3 %), realistisch, terminiert (31.03.) und für die Beteiligten nachvollziehbar. Die anderen sind Wünsche ohne Prüfmaßstab – typische Null-Antworten.",
+    "b": "pm",
+    "q_": "PK5",
+    "cs": [
+      54,
+      48,
+      52,
+      50
+    ],
+    "ws": [
+      8,
+      11,
+      8,
+      9
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": true,
+      "span": 0.13
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 61,
+    "q": "Auf einem Polypol mit vielen Anbietern und geringer Nachfrage – wer ist in der stärkeren Position?",
+    "a": [
+      "Der Verkäufer, weil er die Ware besitzt und liefern kann",
+      "Der Käufer, weil er zwischen vielen Anbietern wählen kann",
+      "Beide gleich stark, weil der Staat die Preise reguliert",
+      "Der Hersteller, weil er die Produktionskosten bestimmt"
+    ],
+    "r": 1,
+    "e": "Das ist ein Käufermarkt: Das Angebot übersteigt die Nachfrage, der Käufer kann wählen und Preise drücken. Im Verkäufermarkt ist es umgekehrt – dort kann der Verkäufer seine Konditionen durchsetzen.",
+    "b": "kommunikation",
+    "q_": "PK2",
+    "cs": [
+      56,
+      57,
+      55,
+      54
+    ],
+    "ws": [
+      10,
+      9,
+      9,
+      7
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 0.06
+    }
+  }
+]

@@ -16,27 +16,12 @@ in `tools/`.
 | IST | NICHT |
 |-----|--------|
 | Öffentliches Frontend-Repo | HofZeit / speisekarte / Control-Tower |
-| Live https://ap1-trainer.vercel.app/ | Leckerbissen / WinOrder / Hotfolder / Stripe |
-| Vercel-Projekt **`ap1-trainer`** | Fremde DB-Refs anderer Produkte |
+| Live https://ap1-trainer.pages.dev/ | Leckerbissen / WinOrder / Hotfolder / Stripe |
+| Cloudflare Pages (Vercel `ap1-trainer` pausiert) | Fremde DB-Refs anderer Produkte |
 | Inhalte + UI + Client-Vertrag zu `/ap1/*` | Backend-Compose, Server-Pfade, Geheimnisse |
 
 Lokaler Arbeitsordner (Hilfsskripte, `Trainer starten.cmd`) kann neben diesem
 Repo unter `Desktop\ordner\AP1-Trainer` liegen — Coding-Grenzen bleiben: Web ≠ API.
-Dort liegt eine Spiegel-Kopie von `AGENTS.md` und `.cursor/rules/` (Parent ohne
-eigenes Git).
-
-## Datenbank-Refs (Whitelist)
-
-Diese Oberfläche **spricht keine Postgres/Supabase-Clients an** — nur HTTP
-`/ap1/*` zum Backend. Trotzdem: keine falschen MCP-Refs in Chats.
-
-| AP1 (erlaubt) | Fremd (tabu) |
-|---|---|
-| Backend Postgres auf Hetzner: Tabellen `trainer_profile`, `trainer_progress` | HofZeit-DB `jxqhqarszulgwktorzfc` |
-| Wissensspeicher: Supabase Üben, Tabelle `project_memory`, Keys `ap1.*` (Doku) | Leckerbissen-Bestellungen, Stripe, WinOrder |
-| Metropol-Instanz nur laut `DATEN-ORTE.md` / Entscheidungen | Üben-DB `mqenqyhcdcswaijeglbm` für **Orders** |
-
-Details und Migration: Backend `docs/DATEN-ORTE.md`.
 
 ## Die harten Regeln dieses Repositories
 
@@ -56,7 +41,7 @@ Details und Migration: Backend `docs/DATEN-ORTE.md`.
 | Aufgabe | Must-use (Stub) | When-matches | Do-not-use |
 |---|---|---|---|
 | Quiz-Inhalte / Formate / Jahrgang | `quiz-content` | Einträge, Bereiche, AP1/AP2 | HofZeit-Menü-Skills |
-| Deploy / Live | `deploy` | Vercel `ap1-trainer`, Preview | Leckerbissen-Deploy als Vorlage ohne Anpassung |
+| Deploy / Live | `deploy` | Pages `ap1-trainer.pages.dev`, `/ap1` | Leckerbissen-Deploy als Vorlage ohne Anpassung |
 | API-Vertrag Client | `api-contract` | Stores, Profile, Fortschritt | Secrets/Compose hierher kopieren |
 | UI / a11y | Plugin frontend-design / web-design-guidelines | Layout, Kontrast | Domain-Logik dort lösen |
 
@@ -78,14 +63,14 @@ Details und Migration: Backend `docs/DATEN-ORTE.md`.
 
 | Behauptung | Pflicht-Check |
 |---|---|
-| Oberfläche live | HTTP https://ap1-trainer.vercel.app/ |
+| Oberfläche live | HTTP https://ap1-trainer.pages.dev/ |
 | API über Rewrite | HTTP `/ap1/health` (keine Secrets loggen) |
-| Vercel | Projektname **`ap1-trainer`** via Vercel-MCP/CLI |
+| Cloudflare Pages | HTTP Live-URL; altes Vercel `ap1-trainer` pausiert |
 
 ### `user-ap1` MCP — derzeit broken
 
 Stand 2026-10-13: `user-ap1` schlägt bei der Tool-Discovery fehl (`namespaceStatus: error`).
-**Später fixen** (Auth/Reload). Bis dahin Vercel-MCP + HTTP; Backend-Abnahme nur im
+**Später fixen** (Auth/Reload). Bis dahin HTTP auf `ap1-trainer.pages.dev`; Backend-Abnahme nur im
 API-Repo.
 
 ## Nach jeder Änderung
