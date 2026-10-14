@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#142033">
-<meta name="ap1-ui-build" content="ui-radical-v3-2026-10-14">
+<meta name="ap1-ui-build" content="ui-radical-v3-header-scroll-2026-10-14">
 <title>AP1-Trainer · Kaufmann für IT-System-Management</title>
 <!-- Anmeldung: Projekt-Adresse und öffentlicher Schlüssel des Anmeldedienstes.
      Beides ist öffentlich. Der geheime Schlüssel gehört hier NICHT hinein.
@@ -104,18 +104,35 @@ h1,h2,h3,h4{margin:0}
   border-bottom:var(--kante) solid var(--tinte);
   box-shadow:0 12px 40px rgba(20,32,51,.08);
   position:sticky;top:0;z-index:var(--z-kopf);
+  /* Eine undurchsichtige Schicht — sonst scheinen Inhalte beim Sticky durch */
+  isolation:isolate;overflow:hidden;
 }
 .kopf::after{
   content:"";display:block;grid-column:1/-1;
   height:4px;background:linear-gradient(90deg,var(--gruen) 0 42%,var(--amber) 42% 58%,var(--tinte) 58%);
+  flex-shrink:0;
 }
+/* Beim Scrollen: KPI-Zeile weg, Brand schrumpft — Header bleibt nutzbar */
+.kopf.kompakt{
+  grid-template-areas:"brand wahl";
+  grid-template-rows:auto;
+  box-shadow:0 8px 28px rgba(20,32,51,.14);
+}
+.kopf.kompakt .stand{display:none}
+.kopf.kompakt .kopf-oben{padding:10px 20px 10px}
+.kopf.kompakt .kopf-wahl{padding:10px 20px}
+.kopf.kompakt .logo{width:36px;height:36px;flex-basis:36px}
+.kopf.kompakt .wortmarke{font-size:1.25rem}
+.kopf.kompakt .unter{display:none}
+.kopf.kompakt .kopf-stand{display:none}
+.kopf.kompakt::after{height:3px}
 .kopf-oben{
   grid-area:brand;
   display:flex;align-items:center;gap:20px;
   min-width:0;padding:18px 28px 14px;
   background:linear-gradient(135deg,var(--tinte) 0%,var(--tinte-hoch) 100%);
   color:var(--blatt);
-  clip-path:polygon(0 0,100% 0,calc(100% - 28px) 100%,0 100%);
+  /* kein clip-path: bricht Sticky-Stacking und erzeugt Überlappungen */
 }
 .kopf h1{
   display:flex;align-items:center;gap:14px;
@@ -720,8 +737,9 @@ button.akt:focus-visible{outline:2px solid var(--gruen);outline-offset:3px}
   .kopf{
     display:flex;flex-wrap:wrap;grid-template:none;
   }
+  .kopf.kompakt{display:flex;flex-wrap:wrap}
   .kopf-oben{
-    flex:1 1 100%;clip-path:none;padding:14px max(16px,env(safe-area-inset-right)) 12px max(16px,env(safe-area-inset-left));
+    flex:1 1 100%;padding:14px max(16px,env(safe-area-inset-right)) 12px max(16px,env(safe-area-inset-left));
   }
   .kopf .unter{display:none}
   .kopf-wahl{
@@ -10005,7 +10023,7 @@ function starteBereich(id) {
   if (id === 'fall') { adresseSetzen(null); starteFall(); return; }
 }
 
-/* Sticky-Kopf + Rail-Offset: feste 108px lagen oft daneben, sobald KPIs umbrechen. */
+/* Sticky-Kopf: Höhe messen (Rail/Scrim) + beim Scrollen kompakt zusammenschrumpfen. */
 function kopfSchaleMessen() {
   const kopf = document.querySelector('.kopf');
   if (!kopf) return;
@@ -10013,9 +10031,18 @@ function kopfSchaleMessen() {
     const h = Math.ceil(kopf.getBoundingClientRect().height);
     if (h > 0) document.documentElement.style.setProperty('--schale-kopf', h + 'px');
   };
+  const kompaktSchalten = () => {
+    const soll = window.scrollY > 48;
+    if (kopf.classList.contains('kompakt') === soll) return;
+    kopf.classList.toggle('kompakt', soll);
+    /* Nach Layout-Wechsel Höhe neu setzen (ResizeObserver folgt oft einen Frame später). */
+    requestAnimationFrame(setzen);
+  };
   setzen();
+  kompaktSchalten();
   if (typeof ResizeObserver !== 'undefined') new ResizeObserver(setzen).observe(kopf);
   else window.addEventListener('resize', setzen);
+  window.addEventListener('scroll', kompaktSchalten, { passive: true });
 }
 kopfSchaleMessen();
 
