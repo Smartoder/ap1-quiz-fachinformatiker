@@ -4,6 +4,57 @@ Das Format folgt *Keep a Changelog*. Bruchstellen sind ausdrücklich gekennzeich
 
 ## [Nicht veröffentlicht]
 
+### Geändert — Bereiche Welle 2: Katalog 2025 + Formate (2026-10-14)
+
+**Warum.** AP1-Katalog ab 2025 ohne SQL/RAID/NoSQL/PAP/Vererbung-Fokus; neue Bereiche
+brauchen FEHLER und Rechnen, damit die Varianten-Leiste nicht leer bleibt.
+
+**Was.** Dedizierte SQL-/RAID-/NoSQL-/PAP-/Vererbungs-Items entfernt (relationale
+Grundlagen ERM/NF/Schlüssel bleiben). RAID-TASK ersetzt durch `ablauf-test` und
+`barriere-kontrast`. FEHLER `fehler-ablauf` / `fehler-barriere`. Spec:
+`docs/PLAN-bereiche-welle2.md` (Parent). Marker `bereiche-welle2-katalog-2026-10-14`.
+
+### Hinzugefügt — Bereiche Welle 1 + Varianten-Leiste (2026-10-14)
+
+**Warum.** Ansatz B: neue Themenbereiche und Formatwechsel im gewählten Bereich,
+wie in der Prüfung (mehrere Formate zum selben Stoff).
+
+**Was.** `BEREICHE`: `ablauf`, `barriere`; KI umbenannt zu „KI am Arbeitsplatz“.
+Neue AP1-Inhalte (Quiz/Karten/Lücke/Fall) zu Ablauf, Barrierefreiheit & Medien,
+Client-Server und Dateiformate/ASCII–Binär. Im Hauptblatt bei gewähltem Bereich:
+Format-Chips mit Zählern, „Nächste Variante“ (Round-Robin), Hinweistext.
+Marker `bereiche-welle1-varianten-2026-10-14`. Spec: `docs/PLAN-bereiche-welle1.md`.
+Kein API-/ID-Bruch; SQL/RAID-Massenbereinigung bewusst nicht.
+
+### Geändert — Auth verbunden (same-origin Proxy) + leerer AUTH nicht mehr Sackgasse (2026-10-14)
+
+**Warum.** Live zeigte Anmelden/Registrieren ausfüllbar, scheiterte aber beim
+Klick mit „Konto-Anmeldung noch nicht verbunden…“ — wirkte wie ein Fehler.
+Anon-Key des AP1-Projekts lag lokal nicht vor (Management-API ohne Key-Rechte;
+Dashboard-Login nötig). Auth-Dienst auf Ref `ojkpm…` war bereits erreichbar
+(E-Mail-Signup, Bestätigung an).
+
+**Was.** Pages-Function `/sb/auth/v1/*` proxyt nur signup/token/recover/… an
+AP1-Supabase; `AP1_SUPABASE_URL` + `AP1_SUPABASE_SECRET` nur als CF-Secrets.
+Deploy-Stage setzt öffentliche meta `ap1-auth-url=/sb` und `ap1-auth-key=ap1-web`
+(kein service_role in Git). Ohne AUTH: Tabs Anmelden/Registrieren deaktiviert,
+Start auf „Ohne Konto“. Marker `ui-auth-proxy-2026-10-14`. Gast-Weg unverändert.
+
+### Geändert — Anmeldung: Tabs, Pitch-Fix, Profilsuche (2026-10-14)
+
+**Warum.** Deckblatt-Pitch nutzte fälschlich `.zeile` (Rechen-Raster) und stapelte
+Wörter vertikal; grauer Kontrast auf Tinte; „Vorhandene Profile“ listete alle
+Namen öffentlich; Auth-UI ohne klare Anmelden/Registrieren-Trennung.
+
+**Was.** Linksbündiger Pitch (`.deckblatt-pitch` / `.deckblatt-punkte`); Tabs
+Anmelden | Registrieren | Ohne Konto; bei leerem AUTH ehrlicher Hinweis;
+Bestätigungs-Mail und Passwort-vergessen verdrahtet; Gast mit Namenssuche
+(max. 5 Treffer, Exact-Match öffnet bestehendes Profil); Kopf „Anmelden“ wenn
+ausgeloggt; Start-Meta zu Stärken/Schwächen. Marker `ui-auth-tabs-flow-2026-10-14`.
+meta `ap1-auth-*` leer bis AP1-Supabase (nicht HofZeit/Üben) verbunden.
+Personalisierung (Lernstand / Begegnungs-Merker / gewichtete Ziehung) intakt.
+Kein API-/ID-Bruch.
+
 ### Geändert — Marketing-Copy: IT-Berufe statt Ein-Beruf (2026-10-14)
 
 **Warum.** Positioning widersprach dem Produktziel und der eigenen Quellen-Seite
