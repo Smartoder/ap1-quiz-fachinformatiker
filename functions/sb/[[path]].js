@@ -52,8 +52,9 @@ function authEndpoint(authRest) {
 
 async function resendMail(env, { to, subject, html, text }) {
   const key = env.AP1_RESEND_API_KEY;
-  const from = env.AP1_RESEND_FROM || "AP1 Trainer <noreply@leckerbissen.online>";
+  const from = env.AP1_RESEND_FROM;
   if (!key) throw new Error("AP1_RESEND_API_KEY fehlt");
+  if (!from) throw new Error("AP1_RESEND_FROM fehlt");
   const r = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: {
