@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#142033">
-<meta name="ap1-ui-build" content="ui-mobile-header-clean-2026-10-14">
+<meta name="ap1-ui-build" content="ui-format-chips-fix-2026-10-14">
 <title>AP1 · IHK-Prüfungsvorbereitung für IT-Berufe</title>
 <meta name="description" content="Gemeinsames AP1 für alle IT-Ausbildungsberufe. AP2 nach Beruf — aktuell Kaufmann/-frau für IT-System-Management. Übungsfragen im IHK-Stil: Aufbau, Inhalte, Themen die oft vorkommen.">
 <!-- Anmeldung: öffentlich. Live-Deploy setzt url="/sb") + key("ap1-web") —
@@ -8126,18 +8126,33 @@ function variantenLeisteHTML(bereichId) {
     </div>`;
 }
 
+/* Die Varianten-Leiste wird bei JEDEM Neuzeichnen des Blatts ersetzt
+   (Karten, Quiz, Lücken, Fehler, Fall, Rechnen). Deshalb nicht pro Render
+   einzelne Handler setzen — das wurde leicht vergessen (z. B. zeichneKarte)
+   und die Chips waren dann sichtbar, aber tot. Stattdessen EIN delegierter
+   Listener am Blatt, der für alle Formate und alle Neuzeichnungen gilt. */
+let variantenDelegiert = false;
 function variantenLeisteVerdrahten() {
-  const box = blatt.querySelector('[data-varianten]');
-  if (!box) return;
-  const bereichId = box.getAttribute('data-varianten');
-  box.querySelectorAll('.varianten-chip').forEach(btn => {
-    btn.onclick = () => {
-      if (btn.disabled) return;
-      starteBereichFormat(btn.getAttribute('data-format'), bereichId);
-    };
+  if (variantenDelegiert) return;
+  variantenDelegiert = true;
+  blatt.addEventListener('click', e => {
+    if (!(e.target instanceof Element)) return;
+    const chip = e.target.closest('.varianten-chip');
+    if (chip) {
+      if (chip.disabled) return;
+      const leiste = chip.closest('[data-varianten]');
+      if (!leiste) return;
+      starteBereichFormat(chip.getAttribute('data-format'), leiste.getAttribute('data-varianten'));
+      return;
+    }
+    const next = e.target.closest('[data-variante-next]');
+    if (next) {
+      if (next.disabled) return;
+      const leiste = next.closest('[data-varianten]');
+      if (!leiste) return;
+      naechsteBereichVariante(leiste.getAttribute('data-varianten'));
+    }
   });
-  const next = box.querySelector('[data-variante-next]');
-  if (next) next.onclick = () => naechsteBereichVariante(bereichId);
 }
 
 function railZeichnen() {

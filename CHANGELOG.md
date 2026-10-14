@@ -4,6 +4,18 @@ Das Format folgt *Keep a Changelog*. Bruchstellen sind ausdrücklich gekennzeich
 
 ## [Nicht veröffentlicht]
 
+### Behoben — Formate in der Themensicht nicht schaltbar (2026-10-14)
+
+**Warum.** In jedem Themenfeld ließen sich die Format-Chips (Quiz, Karten,
+Lücken, Fehler, Fall, Rechnen) nicht anklicken — nur das Menü oben im Header
+schaltete sauber um. Die Leiste wurde bei jedem Neuzeichnen des Blatts ersetzt,
+die Klick-Handler aber pro Render neu gesetzt; `zeichneKarte()` vergaß das.
+Die Chips waren sichtbar, aber ohne Wirkung.
+
+**Was.** Ein delegierter Klick-Handler am Blatt statt Handler pro Render; die
+Leiste funktioniert damit in allen sechs Formaten und über jede Neuzeichnung.
+Marker `ui-format-chips-fix-2026-10-14`.
+
 ### Geändert — Mobile Header sauber (2026-10-14)
 
 **Warum.** App-Bar zeigte AP1 doppelt; Lernstand-Zeile wirkte wie zwei dunkle Bänder.
