@@ -1,0 +1,882 @@
+[
+  {
+    "sammlung": "QUIZ",
+    "i": 178,
+    "a": [
+      "Das Modell lehnt die Bearbeitung der Anfrage ab",
+      "Es entstehen plausible, fachlich aber falsche Inhalte",
+      "Das Modell bricht wegen eines Laufzeitfehlers ab",
+      "Die Antwortzeit überschreitet dauerhaft ein Zeitlimit"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 190,
+    "a": [
+      "Merkmale werden auf vergleichbare Wertebereiche gebracht",
+      "Merkmale werden vollständig aus dem Datensatz entfernt",
+      "Merkmale werden mehrfach im Datensatz vervielfacht",
+      "Die Anzahl der Modellparameter im Modell wird erhöht"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 343,
+    "a": [
+      "Der Auftraggeber beschreibt, WAS gefordert ist (Anforderungen, Ziele)",
+      "Der Auftragnehmer beschreibt, WIE die Lösung umgesetzt wird",
+      "Es regelt vor allem den Preis und die Zahlungsbedingungen",
+      "Es ersetzt den Kaufvertrag als alleinige Vertragsgrundlage"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 349,
+    "a": [
+      "Das Verhältnis von erzieltem Nutzen bzw. Leistung zum gezahlten Preis",
+      "Der absolute Verkaufspreis ohne Bezug zum erzielten Nutzen der Leistung",
+      "Die Höhe der Umsatzsteuer auf dem Rechnungsbetrag einer Rechnung",
+      "Die vertraglich vereinbarte Lieferfrist in Kalendertagen laut Vertrag"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 368,
+    "a": [
+      "Jeder Nutzer hat eigene Zugangsdaten – zentral prüfbar (z. B. RADIUS)",
+      "Die Einrichtung ist einfacher als bei WPA2 mit Pre-Shared-Key",
+      "Es kommt ganz ohne kryptographischen Schlüssel aus auf Anwenderebene",
+      "Der Zugang funktioniert ohne Passwort und ohne Server für den Kunden"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 507,
+    "a": [
+      "Korrektur behebt einen Fehler, Vorbeugung verhindert sein erneutes Auftreten",
+      "Beide Maßnahmen dienen ausschließlich der nachträglichen Fehlerbehebung",
+      "Vorbeugung betrifft vorrangig Hardware und weniger Prozesse auf Anwenderebene",
+      "Korrektur ist in der Regel teurer als jede Vorbeugemaßnahme für den Kunden"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 47,
+    "a": [
+      "Unbegrenzt mit dem gesamten Privatvermögen haftet der Gesellschafter",
+      "Die Haftung beschränkt sich auf die Einlage in die Gesellschaft",
+      "Der Gesellschafter haftet nicht für Verbindlichkeiten der GmbH",
+      "Die Haftung beschränkt sich auf das laufende Arbeitseinkommen"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 203,
+    "a": [
+      "Mustererkennung, Prognosen und Anomalieerkennung in Prozessdaten",
+      "Automatisches Drucken und Versenden von Rechnungsbelegen",
+      "Physisches Verlegen von Netzwerkkabeln in Gebäuden auf Anwenderebene",
+      "Montage und Einrichtung von Server-Hardware im Rechenzentrum"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 268,
+    "a": [
+      "Eine unabhängige Stelle bestätigt die Erfüllung der QS-Norm (z. B. ISO 9001)",
+      "Der Betrieb vergibt sich selbst ein internes Qualitätssiegel nach Projektplan",
+      "Ein Mitarbeiter erhält eine persönliche Schulungsurkunde auf Anwenderebene",
+      "Das Produkt wird ab Zertifizierung kostenfrei ausgeliefert für den Kunden"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 312,
+    "a": [
+      "Das Gerät hat das Ende seiner Nutzungsdauer erreicht (EOL, Ersatz empfohlen)",
+      "Das Gerät ist neu auf dem Markt und noch nicht im Einsatz nach Projektplan",
+      "Das Gerät wurde repariert und ist wieder einsatzbereit nach Projektplan",
+      "Das Gerät ist an einen anderen Standort ausgeliehen nach Projektplan"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 49,
+    "a": [
+      "Der Staat legt Löhne und Arbeitsbedingungen per Gesetz fest auf Anwenderebene",
+      "Arbeitgeberverbände und Gewerkschaften schließen Tarifverträge eigenständig",
+      "Jeder Arbeitnehmer verhandelt seine Entlohnung individuell nach Projektplan",
+      "Die IHK bestimmt verbindlich die Höhe der Branchenlöhne nach Projektplan"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 350,
+    "a": [
+      "Der Wertzuwachs, den ein Unternehmen durch seine Leistung erzeugt",
+      "Der Einkaufspreis der bezogenen Vorprodukte und Materialien",
+      "Die Summe gewährter Rabatte auf Verkaufspreise im Zeitraum",
+      "Der Umsatz vor Abzug von Steuern und sonstigen Abgaben"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 531,
+    "a": [
+      "Ziel, Umfang, Termin, Budget und Zuständigkeiten schriftlich festhalten",
+      "Den Preis nennen und auf weitere Details verzichten auf Anwenderebene",
+      "Sofort mit der Umsetzung beginnen, ohne Abstimmung auf Anwenderebene",
+      "Auf eine schriftliche Bestätigung der Vereinbarungen verzichten"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 227,
+    "a": [
+      "Ethernet ist der Standard für kabelgebundene LANs; Frames nutzen MAC-Adressen",
+      "Ethernet ist ein reines Funkverfahren für drahtlose LANs in der IT-Praxis",
+      "Ethernet funktioniert ausschließlich über Glasfaserverbindungen",
+      "Ethernet ist ein VPN-Protokoll für verschlüsselte Tunnel für den Kunden"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 157,
+    "a": [
+      "Sie speichert Trainingsdaten dauerhaft zwischen den Schichten",
+      "Sie führt Nichtlinearität ein, damit komplexe Muster lernbar sind",
+      "Sie zählt und benennt die Schichten des neuronalen Netzes",
+      "Sie ersetzt die trainierbaren Gewichte in jeder Schicht"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 286,
+    "a": [
+      "Das Angebot übersteigt die Nachfrage – Käufer haben die stärkere Position",
+      "Die Nachfrage übersteigt das Angebot – Verkäufer dominieren",
+      "Es gibt einen einzigen Anbieter ohne substituierbare Konkurrenz",
+      "Es besteht kein Wettbewerb zwischen den Marktteilnehmern nach Projektplan"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 340,
+    "a": [
+      "Attribute, Methoden und Sichtbarkeiten (z. B. public, private)",
+      "Variablen ohne zugehörige Methoden und ohne Kapselung",
+      "Kommentare zur Dokumentation ohne ausführbaren Programmcode",
+      "Datenbanktabellen als Abbild der objektorientierten Struktur"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 552,
+    "a": [
+      "Er fängt unerwartete Verzögerungen ab, ohne den Endtermin zu gefährden",
+      "Er ist ungenutzte Arbeitszeit ohne Planungsbezug im Projekt",
+      "Er verlängert das Projekt in jedem Fall um zusätzliche Wochen",
+      "Er ist eine separate Kostenstelle ohne Bezug zum Netzplan"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 19,
+    "a": [
+      "Namen in IP-Adressen auflösen (DNS-Aufgabe) im Geschäftsprozess",
+      "IP-Adresse, Maske, Gateway und DNS automatisch an Clients vergeben",
+      "Den Datenverkehr zwischen Client und Server verschlüsseln",
+      "Dateien zentral im Netzwerk für Clients bereitstellen"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 42,
+    "a": [
+      "Körperliche Bestandsaufnahme von Vermögen und Schulden zum Stichtag",
+      "Ermittlung des Jahresüberschusses aus Erträgen und Aufwendungen",
+      "Begleichung offener Verbindlichkeiten gegenüber Lieferanten",
+      "Aufstellung des öffentlichen Haushaltsplans einer Gebietskörperschaft"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 31,
+    "a": [
+      "DROP löscht die Datensätze, TRUNCATE entfernt die Tabellenstruktur",
+      "TRUNCATE lässt sich widerrufen, ein DROP-Befehl hingegen nicht",
+      "Beide Befehle entfernen ausschließlich die enthaltenen Datensätze",
+      "DROP entfernt die Tabelle inkl. Struktur, TRUNCATE leert die Daten"
+    ],
+    "r": 3
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 245,
+    "a": [
+      "Er tarnt sich als nützliche Software und führt schädliche Aktionen aus",
+      "Er verbreitet sich selbstständig über Netzwerke wie ein Wurm",
+      "Er ist ein Schutzprogramm zur Erkennung von Schadcode auf Anwenderebene",
+      "Er befällt ausschließlich Hardware ohne Betriebssystem für den Kunden"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 530,
+    "a": [
+      "Unsere Sicherungsstrategie kombiniert lokale und externe Kopien",
+      "Wir führen keinerlei Datensicherungen im Unternehmen durch",
+      "Wir sichern ausschließlich auf dem lokalen Dateiserver",
+      "Wir löschen vorhandene Sicherungskopien nach jedem Backup-Lauf"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 631,
+    "a": [
+      "Das Unternehmen muss die Einhaltung des Datenschutzes nachweisen können",
+      "Der Datenschutzbeauftragte haftet allein persönlich für jede Verletzung",
+      "Ausschließlich der Kunde trägt die Verantwortung für personenbezogene Daten",
+      "Rechenschaftspflicht ist in der DSGVO nicht vorgesehen nach Projektplan"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 27,
+    "a": [
+      "Es überwacht Systeme fortlaufend und meldet Abweichungen frühzeitig",
+      "Es installiert Software automatisch auf allen Clients nach Projektplan",
+      "Es ersetzt eine Firewall vollständig im Perimeter auf Anwenderebene",
+      "Es verwaltet Benutzerkonten und deren Berechtigungen für den Kunden"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 483,
+    "a": [
+      "Wir empfehlen dringend ein verschlüsseltes Backup außer Haus",
+      "Wir empfehlen, vorhandene Backups regelmäßig zu löschen",
+      "Backups sind für den Betrieb grundsätzlich überflüssig",
+      "Die Verschlüsselung von Sicherungen ist gesetzlich untersagt"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 344,
+    "a": [
+      "Der Auftragnehmer beschreibt, WIE und WOMIT er die Anforderungen umsetzt",
+      "Der Kunde beschreibt seine Wünsche ohne technische Spezifikation",
+      "Es enthält ausschließlich die Rechnung und Zahlungsmodalitäten",
+      "Es ist eine unveränderte Kopie des eingereichten Angebots nach Projektplan"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 244,
+    "a": [
+      "Viele Anfragen überlasten einen Dienst, bis er nicht mehr erreichbar ist",
+      "Passwörter werden durch Brute-Force-Angriffe entschlüsselt",
+      "Daten auf dem Server werden durch Ransomware verschlüsselt",
+      "Ein vorhandenes Backup wird durch Fehlbedienung überschrieben"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 45,
+    "a": [
+      "Viel gebundenes Kapital und höhere Lagerkosten bei langer Reichweite",
+      "Sofort höherer Gewinn durch größere Lagerbestände in der IT-Praxis",
+      "Geringere Kapitalbindung durch längere Lagerdauer nach Projektplan",
+      "Keine wirtschaftlichen Auswirkungen auf Liquidität und Kosten"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 188,
+    "a": [
+      "Trainingsdaten dürfen beliebig aus dem Internet übernommen werden",
+      "Es gilt die DSGVO – Datenminimierung, Zweckbindung, Rechtsgrundlage",
+      "Datenschutzvorschriften gelten nicht für KI-Anwendungen",
+      "Personenbezogen sind ausschließlich Bilddateien, nicht Text"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 454,
+    "a": [
+      "Über eine Zwischentabelle mit Fremdschlüsseln beider beteiligten Entitäten",
+      "Der Primärschlüssel der einen Seite wandert direkt in die andere Tabelle",
+      "Mehrere Werte werden in einer Tabellenzelle kommagetrennt gespeichert",
+      "Eine m:n-Beziehung lässt sich relational nicht abbilden nach Projektplan"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 321,
+    "a": [
+      "Es erreicht einen definierten Mindestwirkungsgrad bei verschiedenen Lasten",
+      "Das Netzteil hält mindestens 80 Stunden länger als andere Modelle",
+      "Es kann gleichzeitig 80 Endgeräte mit Strom versorgen auf Anwenderebene",
+      "Es arbeitet ausschließlich bei einer Last von 80 Prozent für den Kunden"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 488,
+    "a": [
+      "4. Generation DDR-Speicher mit 3200 MT/s Übertragungsrate",
+      "3200 Gigabyte Kapazität auf einem Speichermodul",
+      "DDR4-Speicher mit 3200 Rechenkernen auf dem Riegel",
+      "Arbeitsspeicher mit einer Leistungsaufnahme von 3200 Watt"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 192,
+    "a": [
+      "Regelbasiertes System, das Wissen und Schlussregeln eines Experten abbildet",
+      "Neuronales Netz mit sehr vielen Hidden Layers ohne Regeln auf Anwenderebene",
+      "Datenbanksystem ohne Integritätsregeln und ohne Abfragesprache",
+      "Reines Rechenprogramm ohne gespeichertes Domänenwissen nach Projektplan"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 304,
+    "a": [
+      "Skonto – Preisnachlass bei schneller Zahlung innerhalb der Frist",
+      "Rabatt – Preisnachlass unabhängig von der Zahlungsfrist",
+      "Zuschlag – zusätzlicher Aufpreis auf den Listenpreis",
+      "Provision – Vergütung für die Vermittlung eines Geschäfts"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 306,
+    "a": [
+      "Datenschutzvorfall – unerlaubter Zugriff auf oder Verlust von Daten",
+      "Planmäßige Datensicherung nach dem Backup-Konzept in der IT-Praxis",
+      "Verschlüsselung einer Festplatte mit einem Volume-Key nach Projektplan",
+      "Löschen alter Dateien nach Ablauf der Aufbewahrungsfrist"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 12,
+    "a": [
+      "Sie wählt stets den günstigsten Anbieter ohne weitere Kriterien",
+      "Sie bewertet weiche Kriterien durch Gewichtung und Punktvergabe",
+      "Sie ersetzt die spätere Rechnungsprüfung im Beschaffungsprozess",
+      "Sie berechnet die Umsatzsteuer für das Angebot nach Projektplan"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 39,
+    "a": [
+      "Verhältnis eines Erfolgs zur eingesetzten Basis, ausgedrückt in Prozent",
+      "Absolute Höhe des Jahresgewinns ohne Bezugsgröße auf Anwenderebene",
+      "Summe aller im Geschäftsjahr angefallenen Kosten für den Kunden",
+      "Anzahl der Beschäftigten am Stichtag nach Projektplan in der Beschaffung"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 330,
+    "a": [
+      "Standardsoftware ist fertig und lizenziert, Individualsoftware wird entwickelt",
+      "Standardsoftware ist in der Regel kostenfrei ohne Lizenzgebühren",
+      "Individualsoftware läuft ausschließlich im Webbrowser des Clients",
+      "Standardsoftware darf an Kundenbedürfnisse nicht angepasst werden"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 555,
+    "a": [
+      "Wichtige Zwischenergebnisse mit Termin und Verantwortlichem festlegen",
+      "Alle Rechnungen und Zahlungseingänge des Projekts auflisten",
+      "Adressen und Kontaktdaten aller Projektbeteiligten sammeln",
+      "Den Quellcode der eingesetzten Software vollständig dokumentieren"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 426,
+    "a": [
+      "Grundsätze und Verfahren des Unternehmens zur Qualitätssicherung",
+      "Bedienungsanleitung für Endkunden zu einem Produkt in der IT-Praxis",
+      "Liste der Notfallnummern für Störungen außerhalb der Geschäftszeit",
+      "Personalverzeichnis mit Namen und Abteilungszugehörigkeit"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 521,
+    "a": [
+      "Anpassungen dokumentieren und bei Updates mitführen, sonst brechen sie",
+      "Anpassungen an Standardsoftware sind grundsätzlich unzulässig",
+      "Anpassungen führen automatisch zum Verlust der Softwarelizenz",
+      "Anpassungen betreffen ausschließlich Farben in der Benutzeroberfläche"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 542,
+    "a": [
+      "Nachricht an alle Hosts des Subnetzes (Broadcastadresse, Host-Bits = 1)",
+      "Nachricht an genau einen Host mit bekannter Unicast-Adresse",
+      "Nachricht an einen dedizierten Server im gleichen VLAN auf Anwenderebene",
+      "Verschlüsselte Nachricht an alle Empfänger im Netzwerk für den Kunden"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 473,
+    "a": [
+      "Logisch abgetrennter Bereich; das Dateisystem wird auf der Partition angelegt",
+      "Physisches Kabel zur Verbindung von Laufwerk und Mainboard in der IT-Praxis",
+      "Benutzerkonto mit Rechten auf einem bestimmten Dateisystem nach Projektplan",
+      "Einzelne Datei, die den gesamten Speicherplatz repräsentiert im Supportalltag"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 439,
+    "a": [
+      "Leasinggeber überlässt Objekt gegen Raten, bleibt meist Eigentümer",
+      "Kunde erwirbt sofort und endgültig das Eigentum am Objekt",
+      "Vertrag ist ohne Gegenleistung für den Leasingnehmer auf Anwenderebene",
+      "Eigentum wechselt unmittelbar bei Vertragsunterzeichnung zum Kunden"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 589,
+    "a": [
+      "LAN funktioniert – vermutlich fehlt Standard-Gateway oder DNS-Auflösung",
+      "Die Netzwerkkarte des Clients ist hardwareseitig defekt in der IT-Praxis",
+      "Das Kabel zwischen Drucker und Switch ist falsch belegt nach Projektplan",
+      "Der Netzwerkdrucker verursacht die fehlende Internetverbindung"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 162,
+    "a": [
+      "Datenpunkte in k Gruppen mit geringster Gesamtabweichung zu Zentroiden",
+      "Gerade durch alle Punkte per linearer Regression berechnen",
+      "Daten anhand vorher bekannter Klassenlabels zuordnen (überwacht)",
+      "Zahlenwerte der Größe nach aufsteigend sortieren nach Projektplan"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 8,
+    "a": [
+      "Projektkosten aus Einzelpositionen summieren und ausweisen",
+      "Projekt hierarchisch in Teilaufgaben und Arbeitspakete zerlegen",
+      "Abnahmeprotokoll mit Mängelliste für den Auftraggeber erstellen",
+      "Netzwerklast auf Switches und Router dauerhaft messen"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 428,
+    "a": [
+      "Sender kodiert Nachricht, Empfänger dekodiert – Störungen (Rauschen) möglich",
+      "Ausschließlich der Sender bestimmt die Bedeutung der Nachricht",
+      "Nachrichten erreichen den Empfänger stets ohne Informationsverlust",
+      "Kommunikation erfolgt zwingend in schriftlicher Form nach Projektplan"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 24,
+    "a": [
+      "Bessere Hardwareauslastung und schnellere Bereitstellung neuer Server",
+      "Physische Server-Hardware entfällt nach Virtualisierung vollständig",
+      "Virtualisierung ersetzt Datensicherungen und Backup-Konzepte",
+      "Virtualisierung macht dedizierte Netzwerkinfrastruktur überflüssig"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 193,
+    "a": [
+      "Symbolische KI nutzt feste Regeln, ML lernt Muster aus Daten",
+      "Beide Ansätze benötigen keinerlei menschliche Einbindung auf Anwenderebene",
+      "ML arbeitet ohne jegliche Trainings- oder Eingabedaten auf Anwenderebene",
+      "Symbolische KI setzt zwingend eine GPU für jede Regelauswertung voraus"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 211,
+    "a": [
+      "Er bindet WLAN-Geräte drahtlos an das kabelgebundene LAN an",
+      "Er vergibt automatisch IP-Adressen an Clients (DHCP-Rolle)",
+      "Er verschlüsselt Festplatten auf den angeschlossenen Clients",
+      "Er ersetzt Router, Switch und Firewall in einem Gerät vollständig"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 399,
+    "a": [
+      "Bundesamt für Sicherheit in der Informationstechnik (IT-Grundschutz)",
+      "Bundesverband der Software-Industrie für Lizenzfragen in der IT-Praxis",
+      "Betriebliches Sicherheitsinstitut für Arbeitsschutz am Arbeitsplatz",
+      "Bundesdatenschutz-Schlichtungsstelle für Verbraucherbeschwerden"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 461,
+    "a": [
+      "Nicht-Schlüssel-Attribut hängt von einem Teil des zusammengesetzten Schlüssels ab",
+      "Eine Tabellenzelle enthält mehrere Werte nebeneinander in der IT-Praxis",
+      "Attribut hängt von einem anderen Nicht-Schlüssel-Attribut ab (3. NF)",
+      "Die Tabelle besitzt keinen Primärschlüssel zur Identifikation für den Kunden"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 57,
+    "a": [
+      "Qualifizierung und Umschulung von Arbeitslosen durch den Staat",
+      "Erhöhung der Mehrwertsteuer zur Finanzierung des Haushalts",
+      "Senkung von Importzöllen auf Wirtschaftsgüter auf Anwenderebene",
+      "Verkauf von Staatsanleihen an private Investoren für den Kunden"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 438,
+    "a": [
+      "Werkvertrag schuldet ein Ergebnis, Dienstvertrag schuldet die Tätigkeit",
+      "Beide Vertragsarten schulden stets ein bestimmtes Werkergebnis",
+      "Dienstvertrag betrifft ausschließlich Lieferung von Hardware",
+      "Werkvertrag betrifft ausschließlich Entwicklung von Software"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 69,
+    "a": [
+      "Gelieferte Ware entspricht nicht der vereinbarten Qualität (Schlechtleistung)",
+      "Gelieferte Menge ist geringer als bestellt (Minderlieferung) nach Projektplan",
+      "Gelieferte Ware ist ein anderer Artikel (Falschlieferung) nach Projektplan",
+      "Lieferung erfolgt nach dem vereinbarten Termin (Verzug) nach Projektplan"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 216,
+    "a": [
+      "ARP – ordnet IP-Adressen den zugehörigen MAC-Adressen zu",
+      "Ping – prüft per ICMP die Erreichbarkeit eines Hosts",
+      "Ipconfig – zeigt die lokale IP-Konfiguration unter Windows",
+      "Tracert – verfolgt den Weg von Paketen durch das Netzwerk"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 429,
+    "a": [
+      "Sachinhalt, Selbstoffenbarung, Beziehungsebene und Appell an den Empfänger",
+      "Sender, Empfänger, Übertragungskanal und mögliche Störquelle",
+      "W-Fragen: Wer, Wie, Wo und Wann einer Nachricht auf Anwenderebene",
+      "Sinneskanäle: Sehen, Hören, Fühlen und Sprechen für den Kunden"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 619,
+    "a": [
+      "Der Kunde verlangt Rückerstattung für nicht genutzte Lizenzen",
+      "Der Kunde bestellt zusätzliche Lizenzen für weitere Arbeitsplätze",
+      "Der Kunde besitzt keine gültige Lizenz für die Software",
+      "Der Kunde verlangt Ersatz einer defekten Festplatte im Server"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 237,
+    "a": [
+      "Hash ist Einwegfunktion – Originaldaten lassen sich nicht zurückrechnen",
+      "Hashes sind kürzer als Passwörter und deshalb nicht umkehrbar",
+      "Hash-Verfahren funktionieren ausschließlich für Bilddateien",
+      "Hashwerte dürfen aus Sicherheitsgründen nicht gespeichert werden"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 11,
+    "a": [
+      "Eigenfertigung ist grundsätzlich günstiger als jeder Fremdbezug in der IT-Praxis",
+      "Selbstkosten liegen dauerhaft unter dem Fremdbezugspreis, Know-how bleibt im Haus",
+      "Eigenfertigung lohnt sich, wenn keine eigenen Mitarbeiter verfügbar sind",
+      "Eigenfertigung ist Pflicht, wenn Fremdkosten unbekannt sind nach Projektplan"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 267,
+    "a": [
+      "Betriebliche QM-Systeme, QS-Normen und externe Zertifizierung",
+      "Beschaffungsformen: Kauf, Leasing und Miete von Anlagen",
+      "Marketing-Mix: Plan, Preis und Produktpolitik auf Anwenderebene",
+      "IT-Bereiche: Hardware, Software und Netzwerkinfrastruktur"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 443,
+    "a": [
+      "Beim Kauf geht Eigentum über, beim Lizenzvertrag werden Nutzungsrechte eingeräumt",
+      "Beide übertragen das wirtschaftliche Eigentum an der Software nach Projektplan",
+      "Bei Software kommen Lizenzen in der Praxis nicht vor auf Anwenderebene",
+      "Ein Lizenzvertrag untersagt jede Nutzung der Software für den Kunden"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 187,
+    "a": [
+      "Expertensystem oder KI-Assistent für Standardfälle im First-Level-Support",
+      "Austausch sämtlicher Server im Rechenzentrum des Unternehmens",
+      "Löschen der internen Wissensdatenbank für Support-Mitarbeiter",
+      "Stilllegung des Ticketsystems zugunsten von E-Mail-Kommunikation"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 434,
+    "a": [
+      "Bedarfe systematisch erheben (Befragung, Ist-Analyse) und auswerten",
+      "Das teuerste verfügbare Produkt ohne Bedarfsermittlung verkaufen",
+      "Angebot schreiben, ohne den Kunden zu befragen auf Anwenderebene",
+      "Ausschließlich die öffentliche Website des Kunden betrachten"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 18,
+    "a": [
+      "Automatische Vergabe von IP-Adressen an Clients (DHCP-Aufgabe)",
+      "Auflösung von Domainnamen in IP-Adressen und umgekehrt (DNS)",
+      "Verschlüsselung des HTTP-Datenverkehrs im Browser nach Projektplan",
+      "Filterung unerwünschter E-Mails am Mail-Gateway nach Projektplan"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 36,
+    "a": [
+      "Gemeinkosten werden über Zuschlagsätze auf die Einzelkosten aufgeschlagen",
+      "Sämtliche Kosten werden pauschal geschätzt ohne Kalkulationsschema",
+      "In der Kalkulation zählen ausschließlich Material-Einzelkosten",
+      "Die Höhe der Kosten legt der Kunde verbindlich fest nach Projektplan"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 160,
+    "a": [
+      "Unbeschriftete Daten ohne bekannte Zielwerte im Geschäftsprozess",
+      "Beschriftete Daten mit bekannten Zielwerten (Labels)",
+      "Belohnungs- und Bestrafungsignal für einen lernenden Agenten",
+      "Datenbank ohne festgelegtes relationales Schema für den Kunden"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 462,
+    "a": [
+      "1:n – ein Kunde kann viele Rechnungen haben, jede Rechnung einem Kunden",
+      "m:n – viele Kunden stehen vielen Rechnungen gegenüber nach Projektplan",
+      "1:1 – genau eine Rechnung pro Kunde und umgekehrt auf Anwenderebene",
+      "Keine relationale Beziehung zwischen den Entitäten für den Kunden"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 470,
+    "a": [
+      "Beispieldaten, mit denen das Modell Muster und Zusammenhänge lernt",
+      "Das fertig trainierte Modell zur Produktivnutzung nach Projektplan",
+      "Verkabelung und Kühlung im Rechenzentrum auf Anwenderebene",
+      "Rechnung des Cloud-Anbieters für GPU-Nutzung für den Kunden"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 168,
+    "a": [
+      "Aufteilung dient vor allem der Normalisierung der Eingangsmerkmale",
+      "Modell wird auf ungesehenen Daten ehrlich bewertet (Generalisierung)",
+      "Speicherbedarf beim Training wird durch Aufteilung reduziert",
+      "Labels in den Trainingsdaten werden vollständig entfernt"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 280,
+    "a": [
+      "Werkvertrag schuldet Erfolg, Dienstvertrag schuldet die erbrachte Tätigkeit",
+      "Dienstvertrag schuldet ein bestimmtes Werkergebnis wie beim Werkvertrag",
+      "Beide schulden ausschließlich eine Tätigkeit ohne Erfolgsbezug",
+      "Beide Verträge sind ausschließlich mündlich wirksam nach Projektplan"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 309,
+    "a": [
+      "Der Kunde hat ein Angebot bzw. einen Kostenvoranschlag angefragt",
+      "Der Kunde hat den Vertrag bereits rechtswirksam unterschrieben",
+      "Der Kunde hat eine Rechnung zur Zahlung erhalten auf Anwenderebene",
+      "Der Kunde hat eine Mängelrüge gegen die Lieferung erhoben"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 480,
+    "a": [
+      "Vermittlung zwischen Betriebssystem und einer Hardwarekomponente",
+      "Verwaltung von Benutzerkonten und deren Anmeldedaten",
+      "Ersetzen des Dateisystems auf einer Partition auf Anwenderebene",
+      "Verschlüsselung des gesamten Netzwerkverkehrs im LAN"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 254,
+    "a": [
+      "Qualitative Faktoren vergleichbar machen; Gewichtung bleibt subjektiv",
+      "Völlig objektiv und in jedem Fall eindeutig ohne Diskussion",
+      "Berücksichtigt ausschließlich den niedrigsten Angebotspreis",
+      "Geeignet ausschließlich für Software-Beschaffungen, nicht Hardware"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 0,
+    "a": [
+      "Einmalig, mit definiertem Ziel sowie begrenztem Zeit- und Kostenrahmen",
+      "Wiederholt sich regelmäßig nach gleichbleibendem Standardablauf",
+      "Wird ohne jegliche Beteiligung von Kunden oder Stakeholdern durchgeführt",
+      "Hat keinen festen Endtermin und läuft unbegrenzt weiter nach Projektplan"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 212,
+    "a": [
+      "Lichtwellenleiter – geringe EMV-Störung, hohe Bandbreite, große Distanzen",
+      "Lokales Wähl-Leitungssystem – günstig, aber geringe Datenrate",
+      "Langsame WAN-Leitung – primär für analoge Telefonie auf Anwenderebene",
+      "Leistungsstarker WLAN-Layer – ausschließlich für Funkverbindungen"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 345,
+    "a": [
+      "Gesamtkosten eines Systems über die gesamte Nutzungsdauer (TCO)",
+      "Ausschließlich der einmalige Anschaffungspreis ohne Folgekosten",
+      "Umsatzsteueranteil auf den ursprünglichen Kaufpreis",
+      "Erlös aus dem Wiederverkauf am Ende der Nutzungsdauer"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 346,
+    "a": [
+      "Kosten, die unabhängig von produzierter oder genutzter Menge anfallen",
+      "Kosten, die mit jeder zusätzlichen Stückzahl steigen in der IT-Praxis",
+      "Kosten, die einmalig anfallen und sich nie wiederholen nach Projektplan",
+      "Kosten, die in jeder Verhandlung beliebig reduziert werden können"
+    ],
+    "r": 0
+  }
+]

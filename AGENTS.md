@@ -22,21 +22,6 @@ in `tools/`.
 
 Lokaler Arbeitsordner (Hilfsskripte, `Trainer starten.cmd`) kann neben diesem
 Repo unter `Desktop\ordner\AP1-Trainer` liegen — Coding-Grenzen bleiben: Web ≠ API.
-Dort liegt eine Spiegel-Kopie von `AGENTS.md` und `.cursor/rules/` (Parent ohne
-eigenes Git).
-
-## Datenbank-Refs (Whitelist)
-
-Diese Oberfläche **spricht keine Postgres/Supabase-Clients an** — nur HTTP
-`/ap1/*` zum Backend. Trotzdem: keine falschen MCP-Refs in Chats.
-
-| AP1 (erlaubt) | Fremd (tabu) |
-|---|---|
-| Backend Postgres auf Hetzner: Tabellen `trainer_profile`, `trainer_progress` | HofZeit-DB `jxqhqarszulgwktorzfc` |
-| Wissensspeicher: Supabase Üben, Tabelle `project_memory`, Keys `ap1.*` (Doku) | Leckerbissen-Bestellungen, Stripe, WinOrder |
-| Metropol-Instanz nur laut `DATEN-ORTE.md` / Entscheidungen | Üben-DB `mqenqyhcdcswaijeglbm` für **Orders** |
-
-Details und Migration: Backend `docs/DATEN-ORTE.md`.
 
 ## Die harten Regeln dieses Repositories
 

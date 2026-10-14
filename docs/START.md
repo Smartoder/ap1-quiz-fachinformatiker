@@ -1,6 +1,6 @@
-﻿# Einstieg — AP1-Trainer (Oberfläche)
+# Einstieg — AP1-Trainer (Oberfläche)
 
-**Stand:** 2026-10-14 · Option R Phase 2
+**Stand:** 2026-10-13
 
 Dies ist die Tür für Assistenten in **diesem** öffentlichen Frontend-Repo.
 Die führende Langform (Betrieb, Entscheidungen) liegt im **Backend-Repo**

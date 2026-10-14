@@ -1,0 +1,2562 @@
+[
+  {
+    "sammlung": "QUIZ",
+    "i": 596,
+    "q": "Wann braucht ein Betrieb einen Datenschutzbeauftragten?",
+    "a": [
+      "U. a. bei umfangreicher Überwachung oder Verarbeitung sensibler Daten – sonst kann er freiwillig benannt werden",
+      "Immer, auch für ein Einzelbüro",
+      "Nie",
+      "Nur im Gesundheitswesen"
+    ],
+    "r": 0,
+    "e": "Pflicht ist ein DSB u. a. bei umfangreicher systematischer Überwachung oder umfangreicher Verarbeitung besonderer Datenkategorien. Auch ohne Pflicht schadet eine freiwillige Bestellung nicht. Der DSB ist weisungsfrei und berichtet der Leitung.",
+    "b": "recht",
+    "q_": "PK-06 · Datenschutz",
+    "cs": [
+      111,
+      30,
+      3,
+      23
+    ],
+    "ws": [
+      16,
+      5,
+      1,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 36
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 44,
+    "q": "Wann gerät ein Kunde in Zahlungsverzug, wenn kein Zahlungsziel vereinbart wurde?",
+    "a": [
+      "Sofort nach Rechnungserhalt",
+      "Erst nach einer Mahnung, aber spätestens 30 Tage nach Rechnungszugang",
+      "Nie",
+      "Erst nach 6 Monaten"
+    ],
+    "r": 1,
+    "e": "Ohne Zahlungsziel kommt der Kunde 30 Tage nach Fälligkeit und Rechnungszugang in Verzug; eine Mahnung ist dann nicht mehr Voraussetzung. Bei Vereinbarung gilt der vereinbarte Termin.",
+    "b": "kaufmaennisch",
+    "q_": "AP2 · Zahlungsverkehr",
+    "cs": [
+      27,
+      69,
+      3,
+      19
+    ],
+    "ws": [
+      3,
+      10,
+      1,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 22
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 598,
+    "q": "Was ist ein Kick-off im Projekt?",
+    "a": [
+      "Die Auftaktveranstaltung, in der Ziel, Umfang, Rollen und Vorgehen abgestimmt werden",
+      "Der Projektabschluss",
+      "Eine Rechnung",
+      "Ein Test"
+    ],
+    "r": 0,
+    "e": "Beim Kick-off kommen Auftraggeber und Team zusammen, um Ziel, Umfang, Rollen, Termine und Vorgehen zu klären. Ein gutes Kick-off schafft ein gemeinsames Verständnis und beugt Missverständnissen vor.",
+    "b": "pm",
+    "q_": "PK-01 · Projektmanagement",
+    "cs": [
+      84,
+      20,
+      13,
+      8
+    ],
+    "ws": [
+      11,
+      2,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 9.5
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 214,
+    "q": "Sie wollen prüfen, über welche Zwischenstationen ein Ziel im Netz erreicht wird. Welches Werkzeug nutzen Sie?",
+    "a": [
+      "traceroute (Linux) bzw. tracert (Windows)",
+      "ping",
+      "nslookup",
+      "chmod"
+    ],
+    "r": 0,
+    "e": "traceroute/tracert zeigt alle Zwischenstationen (Hops) bis zum Ziel. ping prüft nur die grundsätzliche Erreichbarkeit. nslookup dient der DNS-Abfrage.",
+    "b": "netzwerk",
+    "q_": "NW",
+    "cs": [
+      41,
+      4,
+      8,
+      5
+    ],
+    "ws": [
+      5,
+      1,
+      1,
+      1
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 9.25
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 585,
+    "q": "Was ist ein Software-Inventar und wozu dient es?",
+    "a": [
+      "Es erfasst, welche Software in welcher Version wo installiert ist – Grundlage für Lizenzen und Updates",
+      "Die Liste der Firmenwagen",
+      "Ein Backup",
+      "Ein Netzwerkplan"
+    ],
+    "r": 0,
+    "e": "Das Software-Inventar dokumentiert installierte Programme, Versionen und Anzahl. Es dient der Lizenz-Compliance (nicht zu wenige/zu viele Lizenzen), der Patch-Planung und der Sicherheitsbewertung (keine nicht genehmigte Software).",
+    "b": "software",
+    "q_": "PK-04 · Software",
+    "cs": [
+      102,
+      25,
+      10,
+      16
+    ],
+    "ws": [
+      16,
+      4,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 9.2
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 225,
+    "q": "Was ist ein VLAN und welchen Zweck erfüllt es?",
+    "a": [
+      "Ein logisch getrenntes Netz innerhalb derselben physischen Infrastruktur – trennt Abteilungen und erhöht die Sicherheit",
+      "Ein Kabeltyp",
+      "Ein drahtloses Netz ohne Verschlüsselung",
+      "Eine Firewall-Regel"
+    ],
+    "r": 0,
+    "e": "Ein VLAN (Virtual LAN) teilt einen Switch logisch in getrennte Netze. So lassen sich Abteilungen trennen, ohne eigene Hardware. Vorteile: Sicherheit (Trennung), weniger Broadcast-Traffic und flexible Zuordnung.",
+    "b": "netzwerk",
+    "q_": "NW",
+    "cs": [
+      119,
+      12,
+      40,
+      19
+    ],
+    "ws": [
+      15,
+      2,
+      5,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 8.92
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 445,
+    "q": "Was ist ein „berechtigtes Interesse“ im Datenschutzkontext (nicht Vertrag)?",
+    "a": [
+      "Ein Grund, der eine Datenverarbeitung auch ohne Einwilligung rechtfertigen kann (nach Abwägung)",
+      "Ein Vertragsbestandteil",
+      "Eine Steuerart",
+      "Ein Mangel"
+    ],
+    "r": 0,
+    "e": "Das berechtigte Interesse ist eine der Rechtsgrundlagen der DSGVO: Eine Verarbeitung kann zulässig sein, wenn ein überwiegendes berechtigtes Interesse des Verantwortlichen besteht und keine schutzwürdigen Interessen der Betroffenen überwiegen – es muss abgewogen werden.",
+    "b": "vertrag",
+    "q_": "PK-06 · Datenschutz",
+    "cs": [
+      95,
+      23,
+      14,
+      10
+    ],
+    "ws": [
+      12,
+      2,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 8.5
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 447,
+    "q": "Was sind Bezugskosten?",
+    "a": [
+      "Kosten, die zusätzlich zum Einkaufspreis beim Bezug anfallen (Fracht, Versicherung, Verpackung)",
+      "Der Gewinn des Händlers",
+      "Die Umsatzsteuer",
+      "Der Rabatt"
+    ],
+    "r": 0,
+    "e": "Bezugskosten entstehen beim Beschaffen der Ware: Transport/Fracht, Versicherung, Verpackung, Zölle. Sie erhöhen den Bezugspreis (Einstandspreis). Kalkulatorisch gehören sie zwischen Bareinkaufspreis und Bezugspreis.",
+    "b": "angebot",
+    "q_": "PK-03 · Kalkulation",
+    "cs": [
+      95,
+      23,
+      16,
+      10
+    ],
+    "ws": [
+      11,
+      4,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 8.5
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 593,
+    "q": "Was ist eine Sicherheitsrichtlinie im Betrieb?",
+    "a": [
+      "Ein verbindliches Dokument mit Regeln – z. B. Passwort-Policy, Umgang mit Daten, Meldewege",
+      "Ein Netzwerkkabel",
+      "Ein Backup",
+      "Eine Lizenz"
+    ],
+    "r": 0,
+    "e": "Eine Sicherheitsrichtlinie legt verbindliche Regeln fest: Passwörter, Umgang mit Informationen, Nutzung privater Geräte, Meldung von Vorfällen. Sie ist eine organisatorische Maßnahme und muss bekannt und gelebt werden.",
+    "b": "sicherheit",
+    "q_": "PK-06 · Richtlinien",
+    "cs": [
+      90,
+      17,
+      10,
+      11
+    ],
+    "ws": [
+      13,
+      2,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 8
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 583,
+    "q": "Was ist ein Treiber-Update und warum kann es nötig sein?",
+    "a": [
+      "Eine aktualisierte Treibersoftware, die Fehler behebt oder neue Funktionen/Kompatibilität bringt",
+      "Ein neues Betriebssystem",
+      "Ein Netzwerkprotokoll",
+      "Eine Lizenz"
+    ],
+    "r": 0,
+    "e": "Hersteller liefern Treiber-Updates, um Fehler zu beheben, Sicherheitslücken zu schließen und neue Hardware/Features zu unterstützen. Vor Einspielen testen – ein falscher Treiber kann Systeme lahmlegen. Vorher Wiederherstellungspunkt/Image anlegen.",
+    "b": "software",
+    "q_": "PK-04 · Betriebssysteme",
+    "cs": [
+      96,
+      24,
+      21,
+      11
+    ],
+    "ws": [
+      10,
+      3,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 7.73
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 623,
+    "q": "Was ist eine Datenbankabfrage (Query)?",
+    "a": [
+      "Eine Anfrage an die Datenbank, die mit einer Abfragesprache (z. B. SQL) formuliert wird",
+      "Ein Backup",
+      "Ein Netzwerkbefehl",
+      "Ein Betriebssystem"
+    ],
+    "r": 0,
+    "e": "Eine Query ist eine gezielte Anfrage an die Datenbank, um Daten zu lesen oder zu ändern – formuliert in SQL. Sie ist die Schnittstelle zwischen Anwendung und DBMS und wird über den Datenbankzugriff ausgeführt.",
+    "b": "datenbank",
+    "q_": "PK-04 · Datenbankgrundlagen",
+    "cs": [
+      87,
+      10,
+      18,
+      18
+    ],
+    "ws": [
+      14,
+      2,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 7.7
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 607,
+    "q": "Was ist eine Vertragsstörung?",
+    "a": [
+      "Die nicht oder nicht richtige Erfüllung des Vertrags – z. B. Verzug oder mangelhafte Leistung",
+      "Ein Vertragsabschluss",
+      "Eine Rechnung",
+      "Eine Lizenz"
+    ],
+    "r": 0,
+    "e": "Vertragsstörungen sind Abweichungen von der geschuldeten Leistung: Verzug (zu spät), Schlechtleistung (mangelhaft), Falsch-/Minderlieferung. Mögliche Folgen: Nachbesserung, Schadensersatz, Rücktritt oder Konventionalstrafe.",
+    "b": "vertrag",
+    "q_": "PK-07 · Vertragsrecht",
+    "cs": [
+      93,
+      21,
+      13,
+      11
+    ],
+    "ws": [
+      15,
+      2,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 7.45
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 564,
+    "q": "Was ist eine Abschreibung?",
+    "a": [
+      "Die Verteilung der Anschaffungskosten eines Wirtschaftsguts über seine Nutzungsdauer",
+      "Eine Steuer",
+      "Ein Rabatt",
+      "Eine Bußgeldzahlung"
+    ],
+    "r": 0,
+    "e": "Eine Abschreibung verteilt die Kosten einer Investition auf die Jahre der Nutzung. Sie ist Aufwand, aber kein Geldabfluss – deshalb erhöht sie die Liquidität. Aus Abschreibungen freigesetzte Mittel können reinvestiert werden.",
+    "b": "wirtschaft",
+    "q_": "PK-03 · Finanzierung",
+    "cs": [
+      84,
+      11,
+      10,
+      19
+    ],
+    "ws": [
+      9,
+      2,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 7.4
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 574,
+    "q": "Was ist eine Kontrollstruktur?",
+    "a": [
+      "Ein Sprachelement, das den Ablauf steuert – z. B. Verzweigung und Schleife",
+      "Eine Festplatte",
+      "Ein Betriebssystem",
+      "Ein Kabel"
+    ],
+    "r": 0,
+    "e": "Kontrollstrukturen steuern den Programmablauf: Sequenz (nacheinander), Verzweigung (if/switch), Schleife (for/while). Sie sind Grundlage jedes Algorithmus und werden im Pseudocode/Struktogramm dargestellt.",
+    "b": "software",
+    "q_": "PK-04 · Programmierung",
+    "cs": [
+      74,
+      15,
+      18,
+      9
+    ],
+    "ws": [
+      12,
+      2,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 7.22
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 550,
+    "q": "Wann dürfen personenbezogene Daten an Dritte übermittelt werden?",
+    "a": [
+      "Nur mit Rechtsgrundlage (z. B. Einwilligung, Vertrag, gesetzliche Pflicht) und unter Wahrung der Betroffenenrechte",
+      "Immer, wenn der Chef es will",
+      "Nur per E-Mail",
+      "Nur mit Passwort"
+    ],
+    "r": 0,
+    "e": "Eine Übermittlung braucht eine Rechtsgrundlage und muss in der Datenschutzerklärung dokumentiert sein. Empfänger (z. B. Dienstleister) werden über einen AVV eingebunden. Ohne Grundlage wäre die Übermittlung rechtswidrig.",
+    "b": "recht",
+    "q_": "PK-06 · DSGVO",
+    "cs": [
+      114,
+      28,
+      14,
+      16
+    ],
+    "ws": [
+      14,
+      6,
+      3,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 7.14
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 581,
+    "q": "Was ist ein NAS?",
+    "a": [
+      "Ein Netzwerkspeicher, der Dateien im Netz bereitstellt (Network Attached Storage)",
+      "Ein Netzwerkkabel",
+      "Ein Router",
+      "Ein Verschlüsselungsverfahren"
+    ],
+    "r": 0,
+    "e": "Ein NAS (Network Attached Storage) ist ein Speichergerät, das Dateien über das Netzwerk bereitstellt – oft mit RAID, Backups und Zugriffsrechten. Es erhöht die Verfügbarkeit zentraler Daten und ist eine übliche Backup-/Ablage-Lösung.",
+    "b": "hardware",
+    "q_": "PK-03 · Speicher",
+    "cs": [
+      81,
+      17,
+      10,
+      29
+    ],
+    "ws": [
+      10,
+      2,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 7.1
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 545,
+    "q": "Was ist eine Netzwerkdose (Anschlussdose) im strukturierten Netz?",
+    "a": [
+      "Der feste Kabelabschluss am Arbeitsplatz, vom Patchfeld kommend",
+      "Ein WLAN-Router",
+      "Ein Server",
+      "Ein Akku"
+    ],
+    "r": 0,
+    "e": "Die Netzwerkdose ist der feste Anschlusspunkt am Arbeitsplatz. Von dort führt die Tertiärverkabelung zum Etagenverteiler/Patchfeld, an dem per Patchkabel der Switch hängt. So entsteht eine saubere, dokumentierbare Struktur.",
+    "b": "netzwerk",
+    "q_": "PK-03 · Verkabelung",
+    "cs": [
+      63,
+      15,
+      10,
+      8
+    ],
+    "ws": [
+      8,
+      2,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 6.88
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 621,
+    "q": "Was ist eine 1:1-Beziehung und wann setzt man sie ein?",
+    "a": [
+      "Beide Seiten gehören eindeutig zusammen – sinnvoll aus Datenschutz-, Performance- oder Strukturierungsgründen",
+      "Ein Datensatz hat viele Partner",
+      "Viele zu viele",
+      "Keine Beziehung"
+    ],
+    "r": 0,
+    "e": "Bei 1:1 hat jeder Datensatz genau einen Partner. Man nutzt sie, um sensible Daten zu trennen (Datenschutz), selten genutzte Spalten auszulagern (Performance) oder optionale Daten zu separieren. Der PK der einen Seite ist auch PK/FK der anderen.",
+    "b": "datenbank",
+    "q_": "PK-04 · Kardinalitäten",
+    "cs": [
+      109,
+      31,
+      14,
+      15
+    ],
+    "ws": [
+      12,
+      5,
+      3,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 6.79
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 612,
+    "q": "Was ist der Deckungsbeitrag?",
+    "a": [
+      "Verkaufspreis minus variable Kosten – er trägt zur Deckung der Fixkosten bei",
+      "Der Umsatz",
+      "Der Gewinn nach Steuern",
+      "Die Summe aller Kosten"
+    ],
+    "r": 0,
+    "e": "Der Deckungsbeitrag ist der Betrag, der von jedem Verkauf nach Abzug der variablen Kosten übrig bleibt. Er deckt erst die Fixkosten, danach entsteht Gewinn. Break-even = Fixkosten/Deckungsbeitrag je Stück.",
+    "b": "wirtschaft",
+    "q_": "PK-03 · Wirtschaftlichkeit",
+    "cs": [
+      76,
+      10,
+      23,
+      22
+    ],
+    "ws": [
+      12,
+      2,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 6.6
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 388,
+    "q": "Welchen Nutzen stiftet ein ISMS einem Betrieb?",
+    "a": [
+      "Ein Informations-Sicherheits-Managementsystem: ein Regelwerk, um Sicherheit dauerhaft zu planen, umzusetzen und zu prüfen",
+      "Ein einzelnes Sicherheitsprogramm",
+      "Ein Virenscanner",
+      "Ein Hardwarebauteil"
+    ],
+    "r": 0,
+    "e": "Ein ISMS organisiert Informationssicherheit auf Dauer: Verantwortliche, Richtlinien, Risikobewertung, Maßnahmen, Kontrolle und Verbesserung (Kreislauf). Der BSI IT-Grundschutz und die ISO/IEC 27001 sind bekannte Grundlagen.",
+    "b": "sicherheit",
+    "q_": "PK-06 · ISMS",
+    "cs": [
+      121,
+      33,
+      16,
+      19
+    ],
+    "ws": [
+      13,
+      3,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 6.56
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 446,
+    "q": "Was gehört in ein Angebot an einen Kunden?",
+    "a": [
+      "Leistungsbeschreibung, Preise (Menge × Einzelpreis), Konditionen wie Lieferzeit und Zahlungsziel",
+      "Nur den Namen",
+      "Nur die Rechnung",
+      "Nur die Versandadresse"
+    ],
+    "r": 0,
+    "e": "Ein Angebot benennt klar: Positionen mit Menge und Einzel-/Gesamtpreis, netto und brutto, Liefer- und Zahlungsbedingungen (z. B. Skonto), Gültigkeit. So ist es prüfbar und wird zur Grundlage des Vertrags, wenn der Kunde annimmt.",
+    "b": "angebot",
+    "q_": "PK-02 · Angebot",
+    "cs": [
+      96,
+      13,
+      16,
+      22
+    ],
+    "ws": [
+      10,
+      3,
+      3,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 6.38
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 608,
+    "q": "Was sind allgemeine Geschäftsbedingungen (AGB)?",
+    "a": [
+      "Vorformulierte Vertragsbedingungen für viele Verträge, die der Verwender stellt",
+      "Ein einzelner Vertrag",
+      "Eine Rechnung",
+      "Ein Angebot"
+    ],
+    "r": 0,
+    "e": "AGB sind für eine Vielzahl von Verträgen vorformulierte Bedingungen. Sie gelten nur, wenn sie wirksam einbezogen wurden, und dürfen keine überraschenden oder unangemessenen Klauseln enthalten (AGB-Recht).",
+    "b": "vertrag",
+    "q_": "PK-07 · Vertragsrecht",
+    "cs": [
+      79,
+      21,
+      13,
+      11
+    ],
+    "ws": [
+      9,
+      3,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 6.18
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 287,
+    "q": "Wie führt man eine zielgruppengerechte Bedarfsanalyse durch?",
+    "a": [
+      "Durch eigene Datenerhebung (z. B. Befragung) und Auswertung vorhandener Daten, bezogen auf die Zielgruppe",
+      "Nur durch Raten",
+      "Nur durch den Preis",
+      "Gar nicht, das macht der Kunde selbst"
+    ],
+    "r": 0,
+    "e": "Zwei Wege: eigene Erhebung (Kundenbefragung, Interview) und Auswertung vorhandener Daten (Anforderungen an Büroarbeitsplätze, Nutzungsstatistiken). Wichtig ist die Abgrenzung der Zielgruppe.",
+    "b": "kommunikation",
+    "q_": "PK2",
+    "cs": [
+      105,
+      15,
+      19,
+      37
+    ],
+    "ws": [
+      14,
+      3,
+      4,
+      7
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 6
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 381,
+    "q": "Was ist ein Hashwert?",
+    "a": [
+      "Eine feste Prüfsumme über Daten, die eine Änderung erkennbar macht (nicht umkehrbar)",
+      "Eine verschlüsselte Nachricht",
+      "Ein Passwort",
+      "Ein Zertifikat"
+    ],
+    "r": 0,
+    "e": "Eine Hashfunktion erzeugt aus beliebigen Daten eine Prüfsumme fester Länge (z. B. SHA-256). Schon die kleinste Änderung ergibt einen völlig anderen Wert. Hashes prüfen Integrität und werden zum Speichern von Passwörtern genutzt. Sie sind nicht umkehrbar.",
+    "b": "sicherheit",
+    "q_": "PK-06 · Hashwerte",
+    "cs": [
+      84,
+      29,
+      12,
+      14
+    ],
+    "ws": [
+      12,
+      3,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 6
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 417,
+    "q": "Was gehört zur Stakeholder-Analyse?",
+    "a": [
+      "Alle interessierten bzw. betroffenen Parteien identifizieren und ihren Einfluss/Interesse bewerten",
+      "Nur die Kunden",
+      "Nur die Geschäftsführung",
+      "Nur die IT-Abteilung"
+    ],
+    "r": 0,
+    "e": "Stakeholder sind alle, die ein Interesse am Projekt haben oder davon betroffen sind: Auftraggeber, Nutzer, Fachabteilungen, Betriebsrat, Lieferanten usw. Ihre Haltung und Macht beeinflussen den Erfolg – deshalb identifiziert und bewertet man sie früh.",
+    "b": "pm",
+    "q_": "PK-01 · Stakeholder",
+    "cs": [
+      98,
+      14,
+      24,
+      20
+    ],
+    "ws": [
+      10,
+      3,
+      3,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 6
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 624,
+    "q": "Was bedeutet „Attribut“ in einem Datenmodell?",
+    "a": [
+      "Ein Merkmal/eine Eigenschaft einer Entität – als Spalte in der Tabelle",
+      "Eine Tabelle",
+      "Eine Zeile",
+      "Ein Programm"
+    ],
+    "r": 0,
+    "e": "Ein Attribut ist ein Merkmal einer Entität (z. B. Kunde: Name, Adresse, Kundennummer). In der Tabelle entspricht es einer Spalte; die Zeile ist der Datensatz; die Tabelle selbst die Relation.",
+    "b": "datenbank",
+    "q_": "PK-04 · Datenbankgrundlagen",
+    "cs": [
+      70,
+      12,
+      10,
+      12
+    ],
+    "ws": [
+      11,
+      2,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 6
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 421,
+    "q": "Welche Testarten unterscheidet man beim Ablauf der Fehlersuche?",
+    "a": [
+      "Statische Tests (Review, Schreibtischtest) und dynamische Tests (Programm wird ausgeführt)",
+      "Nur den Endtest",
+      "Nur Lasttests",
+      "Nur Sicherheitstests"
+    ],
+    "r": 0,
+    "e": "Statische Tests prüfen, ohne das Programm auszuführen (Reviews, Schreibtischtest, Codeanalyse). Dynamische Tests führen das Programm aus (Unit-, Integrations-, System-, Abnahmetest). Sicherheits- und Lasttests sind spezielle dynamische Tests.",
+    "b": "qs",
+    "q_": "PK-05 · Testarten",
+    "cs": [
+      90,
+      15,
+      13,
+      20
+    ],
+    "ws": [
+      10,
+      3,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 5.92
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 603,
+    "q": "Wie weist man nach, dass ein Fehler behoben ist?",
+    "a": [
+      "Durch einen erneuten Testfall (Regressionstest), der vorher fehlschlug und jetzt besteht",
+      "Durch Behauptung",
+      "Durch Löschen",
+      "Durch erneutes Installieren"
+    ],
+    "r": 0,
+    "e": "Nach dem Beheben führt man den betroffenen Testfall erneut aus (er muss bestehen) und zusätzlich Regressionstests, um keine neuen Fehler eingebaut zu haben. Das Ergebnis wird im Testprotokoll dokumentiert.",
+    "b": "qs",
+    "q_": "PK-05 · Test",
+    "cs": [
+      88,
+      16,
+      13,
+      27
+    ],
+    "ws": [
+      11,
+      2,
+      2,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 5.77
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 553,
+    "q": "Was ist ein Projektauftrag (Project Charter)?",
+    "a": [
+      "Das Dokument, das ein Projekt offiziell startet – Ziel, Umfang, Verantwortliche, Budget",
+      "Ein Angebot an den Kunden",
+      "Eine Rechnung",
+      "Ein Testprotokoll"
+    ],
+    "r": 0,
+    "e": "Der Projektauftrag formuliert nach der Entscheidung zum Start die Eckpunkte: Ziel, Umfang, Auftraggeber/Projektleitung, Budget, Termine und Rahmenbedingungen. Er schafft Verbindlichkeit und ist die Basis der Planung.",
+    "b": "pm",
+    "q_": "PK-01 · Projektmanagement",
+    "cs": [
+      87,
+      25,
+      13,
+      17
+    ],
+    "ws": [
+      12,
+      5,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 5.69
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 277,
+    "q": "Welche Angaben gehören in ein Abnahmeprotokoll?",
+    "a": [
+      "Gegenstand, Beteiligte, Ort/Datum/Uhrzeit, Zustand des Werks und festgestellte Mängel",
+      "Nur der Preis",
+      "Nur die Unterschrift des Kunden",
+      "Nur die Seriennummer"
+    ],
+    "r": 0,
+    "e": "Ein Abnahmeprotokoll hält fest: was abgenommen wird, wer beteiligt war, wann und wo, in welchem Zustand das Werk ist und welche Mängel vorliegen. Es ist die Grundlage für die Gewährleistung.",
+    "b": "vertrag",
+    "q_": "PK7",
+    "cs": [
+      85,
+      13,
+      31,
+      20
+    ],
+    "ws": [
+      9,
+      3,
+      5,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 5.54
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 14,
+    "q": "Was hält ein Abnahmeprotokoll fest?",
+    "a": [
+      "Nur das Datum",
+      "Prüfgegenstand, festgestellte Mängel mit Fristen, Abnahmeergebnis und Unterschriften",
+      "Die komplette Software-Dokumentation",
+      "Nur die Namen der Beteiligten"
+    ],
+    "r": 1,
+    "e": "Das Abnahmeprotokoll dokumentiert Prüfgegenstand, Beteiligte, festgestellte Mängel mit Fristen, das Ergebnis (abgenommen, unter Vorbehalt, verweigert) und wird von beiden Seiten unterschrieben.",
+    "b": "kundenauftrag",
+    "q_": "AP2 · Leistungserbringung",
+    "cs": [
+      13,
+      84,
+      36,
+      29
+    ],
+    "ws": [
+      3,
+      8,
+      3,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 5.46
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 275,
+    "q": "Was bedeutet die Unterschrift „i.V.\"?",
+    "a": [
+      "In Vertretung – eine unterzeichnet mit Vertretungsbefugnis",
+      "Im Verzug",
+      "In Vollmacht ohne Rechte",
+      "Interne Verrechnung"
+    ],
+    "r": 0,
+    "e": "i.V. = in Vertretung. Daneben: i.A. = im Auftrag (untergeordnete Vollmacht) und ppa. = per procura (mit Prokura, der weitreichendsten Vollmacht).",
+    "b": "vertrag",
+    "q_": "PK7",
+    "cs": [
+      58,
+      9,
+      24,
+      19
+    ],
+    "ws": [
+      7,
+      2,
+      4,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 5.44
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 397,
+    "q": "Was ist die Rechtsgrundlage der DSGVO für die Verarbeitung personenbezogener Daten?",
+    "a": [
+      "Z. B. Einwilligung, Vertrag, rechtliche Verpflichtung, berechtigtes Interesse",
+      "Immer die Einwilligung",
+      "Es gibt keine Voraussetzung",
+      "Nur das BDSG"
+    ],
+    "r": 0,
+    "e": "Die DSGVO erlaubt Verarbeitung nur mit Rechtsgrundlage: u. a. Einwilligung, Vertragserfüllung, rechtliche Verpflichtung, Schutz lebenswichtiger Interessen, öffentliches Interesse oder berechtigtes Interesse. Zusätzlich gilt der Grundsatz der Datenminimierung.",
+    "b": "recht",
+    "q_": "PK-06 · Datenschutz",
+    "cs": [
+      77,
+      22,
+      27,
+      12
+    ],
+    "ws": [
+      8,
+      3,
+      4,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 5.42
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 573,
+    "q": "Was ist eine Datenstruktur wie ein Array?",
+    "a": [
+      "Eine geordnete Sammlung gleichartiger Elemente, auf die über einen Index zugegriffen wird",
+      "Ein Netzwerkgerät",
+      "Eine Steuerart",
+      "Ein Sicherheitsverfahren"
+    ],
+    "r": 0,
+    "e": "Ein Array speichert mehrere gleichartige Werte unter einem Namen, erreichbar über einen Index (0, 1, 2 …). Weitere Strukturen: Liste (flexibel), Stack (LIFO), Queue (FIFO), Baum. Sie organisieren Daten für Programme.",
+    "b": "software",
+    "q_": "PK-04 · Programmierung",
+    "cs": [
+      89,
+      17,
+      14,
+      24
+    ],
+    "ws": [
+      12,
+      2,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 5.36
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 311,
+    "q": "„Please provide a rollback plan.“ – Was ist verlangt?",
+    "a": [
+      "Einen Plan, wie man auf den vorherigen Zustand zurückrollt, falls etwas schiefgeht",
+      "Einen Plan für den Datentransfer",
+      "Eine Rechnung",
+      "Ein neues Passwort"
+    ],
+    "r": 0,
+    "e": "„rollback\" = Zurückrollen auf den vorherigen Stand. Ein Rollback-Plan ist bei Änderungen (Deployments, Updates) Pflicht, damit man bei Problemen schnell zurück kann.",
+    "b": "englisch",
+    "q_": "EN",
+    "cs": [
+      82,
+      32,
+      13,
+      18
+    ],
+    "ws": [
+      12,
+      5,
+      2,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 5.31
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 440,
+    "q": "Was regelt ein SLA (Service Level Agreement)?",
+    "a": [
+      "Verbindlich zugesagte Servicequalität, z. B. Verfügbarkeit, Reaktions- und Lösungszeiten, Sanktionen",
+      "Den Kaufpreis der Hardware",
+      "Die Anzahl der Lizenzen",
+      "Das Urheberrecht"
+    ],
+    "r": 0,
+    "e": "Ein SLA ist ein Servicevertrag und definiert messbare Serviceziele: Verfügbarkeit (z. B. 99,9 %), Reaktions- und Entstörzeiten, Servicezeiten, Eskalationswege und Sanktionen (Konventionalstrafen). Es ist die Grundlage, um Serviceleistung prüfbar zu machen.",
+    "b": "vertrag",
+    "q_": "PK-07 · Servicevertrag",
+    "cs": [
+      100,
+      26,
+      23,
+      16
+    ],
+    "ws": [
+      10,
+      4,
+      4,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 5.25
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 625,
+    "q": "Warum ist es wichtig, im Kundengespräch zwischendurch zusammenzufassen?",
+    "a": [
+      "Es prüft das gemeinsame Verständnis und verhindert Missverständnisse – typisch nach der Bedarfsermittlung",
+      "Um Zeit zu füllen",
+      "Um den Kunden zu beeindrucken",
+      "Weil es Vorschrift ist"
+    ],
+    "r": 0,
+    "e": "Eine Zusammenfassung fasst den verstandenen Bedarf in eigenen Worten zusammen und lässt den Kunden bestätigen. So stellt man sicher, dass man das Richtige verstanden hat, bevor man eine Lösung anbietet.",
+    "b": "kommunikation",
+    "q_": "PK-02 · Kundenberatung",
+    "cs": [
+      105,
+      17,
+      29,
+      22
+    ],
+    "ws": [
+      13,
+      4,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 5.18
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 382,
+    "q": "Wozu dient eine digitale Signatur?",
+    "a": [
+      "Sie sichert Authentizität und Integrität eines Dokuments (wer hat es erstellt, ist es unverändert)",
+      "Sie verschlüsselt die Festplatte",
+      "Sie löscht Viren",
+      "Sie beschleunigt die Übertragung"
+    ],
+    "r": 0,
+    "e": "Der Absender erzeugt aus dem Dokument einen Hash und verschlüsselt ihn mit seinem privaten Schlüssel (= Signatur). Der Empfänger prüft mit dem öffentlichen Schlüssel: Stimmt der Hash, ist das Dokument echt und unverändert. Grundlage für Zertifikate.",
+    "b": "sicherheit",
+    "q_": "PK-06 · Signaturen",
+    "cs": [
+      98,
+      32,
+      16,
+      32
+    ],
+    "ws": [
+      14,
+      4,
+      3,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 5.13
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 527,
+    "q": "Wozu dient eine Nachkalkulation nach dem Auftrag?",
+    "a": [
+      "Sie vergleicht geplante und tatsächliche Kosten und zeigt, ob der Auftrag wirtschaftlich war",
+      "Sie erhöht den Preis nachträglich",
+      "Sie ersetzt die Rechnung",
+      "Sie ist unnötig"
+    ],
+    "r": 0,
+    "e": "Die Nachkalkulation ermittelt die tatsächlichen Kosten und stellt sie der Vorkalkulation gegenüber (Soll-Ist). Ergebnis: Erkenntnis über Wirtschaftlichkeit, Grundlage für zukünftige Angebote und Lessons Learned.",
+    "b": "angebot",
+    "q_": "PK-07 · Nachkalkulation",
+    "cs": [
+      92,
+      33,
+      24,
+      15
+    ],
+    "ws": [
+      13,
+      5,
+      4,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 5.13
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 595,
+    "q": "Was ist ein Datenverarbeitungsverzeichnis?",
+    "a": [
+      "Eine Übersicht aller Verarbeitungen personenbezogener Daten mit Zweck, Rechtsgrundlage und Fristen",
+      "Die Liste der Computer",
+      "Ein Netzwerkplan",
+      "Die Rechnungsliste"
+    ],
+    "r": 0,
+    "e": "Das Verzeichnis der Verarbeitungstätigkeiten (Art. 30 DSGVO) listet je Verarbeitung: Zweck, Datenkategorien, Betroffene, Empfänger, Speicherdauer und Sicherheitsmaßnahmen. Es ist Basis für Auskünfte, Aufsicht und Kontrolle.",
+    "b": "recht",
+    "q_": "PK-06 · DSGVO",
+    "cs": [
+      98,
+      22,
+      16,
+      18
+    ],
+    "ws": [
+      11,
+      4,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 5.13
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 475,
+    "q": "Wozu dient ein Remote-Desktop?",
+    "a": [
+      "Zur Fernsteuerung/Übernahme eines entfernten Rechners über das Netz",
+      "Zur lokalen Datensicherung",
+      "Zum Drucken",
+      "Zum Starten des BIOS"
+    ],
+    "r": 0,
+    "e": "Ein Remote-Desktop (z. B. RDP, VNC) überträgt Bildschirminhalt und Eingaben über das Netz, sodass man einen entfernten Rechner bedienen kann. Wichtig für Support und Wartung – aber sicherheitsrelevant: Zugriff absichern (VPN, starke Auth), Port nicht offen im Internet.",
+    "b": "software",
+    "q_": "PK-04 · Remote",
+    "cs": [
+      67,
+      26,
+      11,
+      20
+    ],
+    "ws": [
+      8,
+      3,
+      2,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 5.09
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 337,
+    "q": "Was ist ein Linker?",
+    "a": [
+      "Ein Werkzeug, das Programmteile und Bibliotheken zu einem lauffähigen Programm verbindet (linkt)",
+      "Ein Programm zum Sortieren von Dateien",
+      "Ein Editor für HTML",
+      "Ein Virenscanner"
+    ],
+    "r": 0,
+    "e": "Der Linker (Binder) verbindet übersetzte Objektdateien und benötigte Bibliotheken zu einer ausführbaren Datei. So entsteht aus einzelnen Modulen ein vollständiges Programm.",
+    "b": "software",
+    "q_": "PK-04 · Programmiersprachen",
+    "cs": [
+      96,
+      38,
+      19,
+      16
+    ],
+    "ws": [
+      12,
+      6,
+      4,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 5
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 412,
+    "q": "Welche Merkmale hat Scrum als Vorgehensmodell?",
+    "a": [
+      "Iterative Sprints mit festem Zeitrahmen, Rollen wie Product Owner und Scrum Master, Daily, Review, Retrospektive",
+      "Eine einzige große Planungsphase ohne Zwischenergebnisse",
+      "Kein festes Zeitmaß",
+      "Nur Dokumentation ohne Meetings"
+    ],
+    "r": 0,
+    "e": "Scrum arbeitet in kurzen, festen Iterationen (Sprints, meist 2–4 Wochen). Rollen: Product Owner, Scrum Master, Entwicklungsteam. Ereignisse: Sprint Planning, Daily Scrum, Sprint Review, Retrospektive. Nach jedem Sprint entsteht ein nutzbares Zwischenergebnis.",
+    "b": "pm",
+    "q_": "PK-01 · Vorgehensmodelle",
+    "cs": [
+      112,
+      56,
+      19,
+      31
+    ],
+    "ws": [
+      15,
+      6,
+      3,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.89
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 425,
+    "q": "Was ist eine FMEA?",
+    "a": [
+      "Eine Fehlermöglichkeits- und -einflussanalyse zur Bewertung möglicher Fehler und ihrer Folgen",
+      "Ein Virenscanner",
+      "Ein Testprotokoll",
+      "Ein Netzwerkprotokoll"
+    ],
+    "r": 0,
+    "e": "Die FMEA (Failure Mode and Effects Analysis) bewertet systematisch, welche Fehler auftreten können, wie schädlich ihre Folgen sind und wie leicht sie entdeckt werden. So priorisiert man Vorbeugemaßnahmen. Ein Werkzeug der Qualitätssicherung.",
+    "b": "qs",
+    "q_": "PK-05 · QM",
+    "cs": [
+      93,
+      16,
+      17,
+      21
+    ],
+    "ws": [
+      11,
+      2,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.81
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 404,
+    "q": "Welche Merkmale kennzeichnen ein Projekt?",
+    "a": [
+      "Einmaligkeit, definiertes Ziel, begrenzte Zeit/Ressourcen und eigene Organisation",
+      "Wiederholung nach festem Ablauf",
+      "Kein Endtermin",
+      "Beliebig viele Ziele ohne Priorität"
+    ],
+    "r": 0,
+    "e": "Ein Projekt ist einmalig, hat ein klares Ziel, einen begrenzten Zeit- und Kostenrahmen, begrenzte Ressourcen und häufig eine eigene Projektorganisation. Routineaufgaben wiederholen sich dagegen.",
+    "b": "pm",
+    "q_": "PK-01 · Projektmanagement",
+    "cs": [
+      81,
+      31,
+      14,
+      35
+    ],
+    "ws": [
+      8,
+      4,
+      2,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.79
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 276,
+    "q": "Welche Vollmacht ist die umfangreichste im Handelsrecht?",
+    "a": [
+      "Prokura (HGB §§ 48 ff.)",
+      "Handlungsvollmacht",
+      "i.A.",
+      "Keine, alle sind gleich"
+    ],
+    "r": 0,
+    "e": "Die Prokura ist die weitreichendste handelsrechtliche Vollmacht – der Prokurist kann das Unternehmen weitgehend vertreten. Die Handlungsvollmacht ist eingeschränkter und an bestimmte Geschäfte gebunden.",
+    "b": "vertrag",
+    "q_": "PK7",
+    "cs": [
+      23,
+      18,
+      4,
+      23
+    ],
+    "ws": [
+      5,
+      1,
+      1,
+      4
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": true,
+      "span": 4.75
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 393,
+    "q": "Was sind personenbezogene Daten nach DSGVO?",
+    "a": [
+      "Alle Informationen, die sich auf eine bestimmte oder bestimmbare natürliche Person beziehen",
+      "Nur Name und Adresse",
+      "Nur Daten in der Cloud",
+      "Alle Firmendaten"
+    ],
+    "r": 0,
+    "e": "Personenbezogen sind alle Angaben, mit denen sich eine natürliche Person direkt oder indirekt identifizieren lässt (Name, E-Mail, IP-Adresse, Standort, Kennnummer). Der Schutz gilt für Personen, nicht für Sachen oder Firmen.",
+    "b": "recht",
+    "q_": "PK-06 · Datenschutz",
+    "cs": [
+      91,
+      20,
+      22,
+      16
+    ],
+    "ws": [
+      12,
+      4,
+      5,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.69
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 543,
+    "q": "Wofür wird ein Router mit zwei Schnittstellen in einem kleinen Netz genutzt?",
+    "a": [
+      "Zur Trennung von innen (LAN) und außen (Internet) und als Standard-Gateway",
+      "Nur als Druckerverteiler",
+      "Zur Verschlüsselung der Festplatte",
+      "Als Datenbank"
+    ],
+    "r": 0,
+    "e": "Der Router verbindet zwei Netze (LAN ↔ Internet/WAN), leitet anhand der Routing-Tabelle weiter und ist das Standard-Gateway der Clients. Häufig übernimmt er zusätzlich NAT, DHCP (oft) und eine Firewall.",
+    "b": "netzwerk",
+    "q_": "PK-03 · Netzkomponenten",
+    "cs": [
+      74,
+      24,
+      34,
+      13
+    ],
+    "ws": [
+      11,
+      3,
+      4,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.69
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 549,
+    "q": "Was ist ein Auftragsverarbeitungsvertrag (AVV) und wann braucht man ihn?",
+    "a": [
+      "Wenn ein Dienstleister personenbezogene Daten im Auftrag verarbeitet – er regelt Weisung, Sicherheit und Löschung",
+      "Bei jedem Hardwarekauf",
+      "Nur bei Verträgen mit Behörden",
+      "Nur innerhalb der EU"
+    ],
+    "r": 0,
+    "e": "Sobald ein externer Dienstleister personenbezogene Daten im Auftrag verarbeitet (z. B. Cloud, Wartung), ist ein AVV nach Art. 28 DSGVO erforderlich. Er verpflichtet zu Weisungen, technisch-organisatorischen Maßnahmen und Löschung nach Auftragsende.",
+    "b": "recht",
+    "q_": "PK-06 · Datenschutz",
+    "cs": [
+      113,
+      22,
+      30,
+      20
+    ],
+    "ws": [
+      15,
+      3,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.65
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 601,
+    "q": "Was ist ein Abnahmetest?",
+    "a": [
+      "Der Test durch den Auftraggeber, ob die Lösung die Anforderungen erfüllt – Grundlage der Abnahme",
+      "Ein Test der Hardware",
+      "Ein Test des Netzwerks",
+      "Ein interner Test"
+    ],
+    "r": 0,
+    "e": "Der Abnahmetest prüft nach den vereinbarten Kriterien, ob die Lösung die Anforderungen (Pflichtenheft) erfüllt. Erst danach wird abgenommen. Ergebnis und Mängel werden im Abnahmeprotokoll festgehalten.",
+    "b": "qs",
+    "q_": "PK-05 · Test",
+    "cs": [
+      96,
+      21,
+      22,
+      17
+    ],
+    "ws": [
+      15,
+      4,
+      4,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.65
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 609,
+    "q": "Der Kunde akzeptiert das Angebot mündlich. Was gilt?",
+    "a": [
+      "Ein Vertrag kann auch mündlich wirksam sein, wenn Angebot und Annahme übereinstimmen",
+      "Mündlich gilt nie",
+      "Nur schriftlich",
+      "Nur mit Rechnung"
+    ],
+    "r": 0,
+    "e": "Grundsätzlich sind Verträge formfrei – auch mündlich oder durch schlüssiges Handeln möglich, solange Angebot und Annahme passen. Schriftform ist nur bei bestimmten Verträgen nötig. Für Beweiszwecke empfiehlt sich trotzdem die Schriftform.",
+    "b": "vertrag",
+    "q_": "PK-07 · Vertragsrecht",
+    "cs": [
+      84,
+      17,
+      15,
+      16
+    ],
+    "ws": [
+      12,
+      3,
+      2,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.6
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 448,
+    "q": "Was bedeutet Skonto bei einer Rechnung?",
+    "a": [
+      "Ein Preisnachlass, den der Kunde bei schneller Zahlung innerhalb einer Frist erhält",
+      "Ein Strafzuschlag bei später Zahlung",
+      "Die Umsatzsteuer",
+      "Der Listenpreis"
+    ],
+    "r": 0,
+    "e": "Skonto ist ein Nachlass für schnelle Zahlung (z. B. „2 % Skonto bei Zahlung innerhalb 14 Tagen“). Anders als der Rabatt wird Skonto „im Hundert“ gerechnet. Für den Verkäufer bedeutet Skonto Liquidität, für den Käufer Preisvorteil.",
+    "b": "angebot",
+    "q_": "PK-03 · Kalkulation",
+    "cs": [
+      83,
+      36,
+      16,
+      15
+    ],
+    "ws": [
+      12,
+      5,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.53
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 283,
+    "q": "Welche Ursachen für Widerstand gegen Veränderungen nennt der Prüfungskatalog?",
+    "a": [
+      "Angst vor Kompetenzverlust, Wissenslücken und persönliche Historie",
+      "Nur Faulheit",
+      "Nur technische Fehler",
+      "Nur Kostengründe"
+    ],
+    "r": 0,
+    "e": "Drei Ursachen: Angst, Kompetenz zu verlieren; Wissenslücken (man weiß nicht, wie es geht); persönliche Historie (schlechte Erfahrungen). Umgang: motivierend informieren, Chancen betonen, qualifizieren.",
+    "b": "vertrag",
+    "q_": "PK7",
+    "cs": [
+      66,
+      12,
+      21,
+      16
+    ],
+    "ws": [
+      7,
+      2,
+      3,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.5
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 540,
+    "q": "Was ist ein Betriebssystem-Image (Installations-Image)?",
+    "a": [
+      "Ein Abbild eines installierten Systems, das zurückspielbar ist (Deployment/Wiederherstellung)",
+      "Eine Bilddatei für Fotos",
+      "Ein Netzwerkkabel",
+      "Ein Druckertreiber"
+    ],
+    "r": 0,
+    "e": "Ein Image ist ein 1:1-Abbild einer Installation. Man nutzt es zur schnellen, einheitlichen Ausrollung vieler Arbeitsplätze oder zur Wiederherstellung nach Fehlern. Vorteil: identische, getestete Konfiguration.",
+    "b": "software",
+    "q_": "PK-04 · Installation",
+    "cs": [
+      93,
+      24,
+      17,
+      18
+    ],
+    "ws": [
+      9,
+      4,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.47
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 339,
+    "q": "Worin unterscheiden sich prozedurale und objektorientierte Programmierung?",
+    "a": [
+      "Prozedural gliedert in Funktionen und Abläufe, objektorientiert in Klassen und Objekte mit Daten und Methoden",
+      "Prozedural ist immer schneller",
+      "Objektorientiert kennt keine Funktionen",
+      "Beide sind identisch"
+    ],
+    "r": 0,
+    "e": "Prozedural denkt in Abläufen und Funktionen. Objektorientiert kapselt Daten (Attribute) und Verhalten (Methoden) in Klassen; Objekte sind konkrete Ausprägungen. Vorteile der OOP: Wiederverwendung, Kapselung, leichtere Erweiterbarkeit.",
+    "b": "software",
+    "q_": "PK-04 · Programmiersprachen",
+    "cs": [
+      109,
+      30,
+      39,
+      20
+    ],
+    "ws": [
+      15,
+      4,
+      4,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.45
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 385,
+    "q": "Was ist der Unterschied zwischen technischen, organisatorischen und personellen Maßnahmen (TOM)?",
+    "a": [
+      "Technisch = Systeme (Firewall, Verschlüsselung), organisatorisch = Regeln (Richtlinien, Abläufe), personell = Menschen (Schulung, Sensibilisierung)",
+      "Alle drei bedeuten dasselbe",
+      "Personell betrifft nur Hardware",
+      "Organisatorisch betrifft nur Software"
+    ],
+    "r": 0,
+    "e": "Technische Maßnahmen wirken im System (Firewall, Virenschutz, Verschlüsselung, Rechte). Organisatorische regeln Abläufe und Zuständigkeiten (Sicherheitsrichtlinien, Backup-Prozesse, Notfallplan). Personelle Maßnahmen bilden den Menschen (Schulung, Sicherheitsbewusstsein).",
+    "b": "sicherheit",
+    "q_": "PK-06 · TOM",
+    "cs": [
+      147,
+      27,
+      31,
+      37
+    ],
+    "ws": [
+      15,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.44
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 485,
+    "q": "Worauf ist beim Verfassen einer geschäftlichen E-Mail an einen Kunden zu achten?",
+    "a": [
+      "Klare Betreffzeile, höfliche Anrede, verständlicher Text, konkrete Angaben, Grußformel und Kontakt",
+      "Möglichst viele Abkürzungen ohne Erklärung",
+      "Nur Stichworte ohne Anrede",
+      "Keine Unterschrift"
+    ],
+    "r": 0,
+    "e": "Eine professionelle E-Mail hat klaren Betreff, passende Anrede, verständlich und sachlich formulierten Inhalt, konkrete Angaben (Termine, Preise) und eine Grußformel mit Kontaktdaten. Hektik und unklare Aussagen erzeugen Rückfragen und Fehler.",
+    "b": "kommunikation",
+    "q_": "PK-02 · Kundenkommunikation",
+    "cs": [
+      98,
+      42,
+      26,
+      18
+    ],
+    "ws": [
+      11,
+      5,
+      4,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.44
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 626,
+    "q": "Welche Rolle spielt die Körpersprache in der Kundenberatung?",
+    "a": [
+      "Sie beeinflusst die Beziehungsebene – offene Haltung, Blickkontakt, angemessene Distanz",
+      "Sie ist unwichtig",
+      "Nur Worte zählen",
+      "Nur die E-Mail zählt"
+    ],
+    "r": 0,
+    "e": "Neben den Worten wirken Ton und Körpersprache stark auf die Beziehungsebene. Offene Haltung, Blickkontakt und angemessene Distanz schaffen Vertrauen. Widersprechen Worte und Körpersprache, wirkt Signal 1 meist stärker.",
+    "b": "kommunikation",
+    "q_": "PK-02 · Kommunikation",
+    "cs": [
+      87,
+      17,
+      16,
+      20
+    ],
+    "ws": [
+      10,
+      3,
+      3,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.44
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 498,
+    "q": "Was ist der Unterschied zwischen LWL und Kupferkabel?",
+    "a": [
+      "Lichtwellenleiter überträgt Licht, ist unempfindlich gegen EMV, aber teurer; Kupfer ist günstiger und üblich",
+      "LWL ist immer langsamer",
+      "Kupfer überträgt Licht",
+      "Beide sind identisch"
+    ],
+    "r": 0,
+    "e": "LWL (Glasfaser) überträgt Daten als Licht: hohe Reichweite, unempfindlich gegen elektromagnetische Störungen, aber teurer in Material und Handling. Kupfer (Twisted Pair) ist günstiger und reicht im LAN meist aus. Für lange Strecken/EMV-Störungen nimmt man LWL.",
+    "b": "netzwerk",
+    "q_": "PK-03 · Verkabelung",
+    "cs": [
+      108,
+      23,
+      22,
+      20
+    ],
+    "ws": [
+      14,
+      4,
+      3,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.4
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 53,
+    "q": "Wie lange darf die werktägliche Arbeitszeit nach dem Arbeitszeitgesetz grundsätzlich dauern?",
+    "a": [
+      "Höchstens 8 Stunden, verlängerbar auf 10 bei Ausgleich",
+      "Höchstens 6 Stunden",
+      "Unbegrenzt",
+      "Höchstens 12 Stunden ohne Ausgleich"
+    ],
+    "r": 0,
+    "e": "Die Werktagsarbeitszeit beträgt grundsätzlich 8 Stunden und kann auf bis zu 10 Stunden verlängert werden, wenn sie im Ausgleich verkürzt wird. Nach der Arbeit ist eine Ruhezeit von mindestens 11 Stunden einzuhalten.",
+    "b": "wiso",
+    "q_": "AP2 · Arbeitsschutz",
+    "cs": [
+      54,
+      19,
+      10,
+      35
+    ],
+    "ws": [
+      8,
+      3,
+      1,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.4
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 599,
+    "q": "Was ist die Change Control im Projekt?",
+    "a": [
+      "Der geregelte Umgang mit Änderungen (Antrag, Bewertung, Freigabe, Nachführung von Plan und Doku)",
+      "Das Löschen von Änderungen",
+      "Die Urlaubsplanung",
+      "Die Rechnungsstellung"
+    ],
+    "r": 0,
+    "e": "Change Control (Änderungsmanagement) stellt sicher, dass Änderungen an Anforderungen/Umfang bewertet (Auswirkung auf Termin, Kosten, Qualität), freigegeben und in Plan und Dokumentation nachgeführt werden – so bleibt das Projekt unter Kontrolle.",
+    "b": "pm",
+    "q_": "PK-01 · Projektmanagement",
+    "cs": [
+      96,
+      26,
+      18,
+      21
+    ],
+    "ws": [
+      13,
+      4,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.33
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 529,
+    "q": "Was ist bei der USV-Dimensionierung mit „Reserve“ gemeint?",
+    "a": [
+      "Ein Zuschlag (ca. 20–25 %) über der Summenlast, damit die USV nicht am Limit arbeitet",
+      "Ein Rabatt beim Kauf",
+      "Ein zweiter Akku in Reserve",
+      "Die Garantiezeit"
+    ],
+    "r": 0,
+    "e": "Die USV wird mit Reserve dimensioniert: Ausgangsleistung rund 20–25 % über der Gesamtlast der Verbraucher. So bleibt Raum für Erweiterung und Spitzen. Zusätzlich müssen beide Grenzen passen: Watt und VA.",
+    "b": "hardware",
+    "q_": "PK-03 · USV",
+    "cs": [
+      85,
+      20,
+      27,
+      16
+    ],
+    "ws": [
+      15,
+      4,
+      5,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.31
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 508,
+    "q": "Was ist eine Soll-Ist-Abweichung?",
+    "a": [
+      "Der Unterschied zwischen geplantem (Soll) und tatsächlichem (Ist) Ergebnis",
+      "Ein Fehler in der Software",
+      "Eine Steuerart",
+      "Die Summe aller Kosten"
+    ],
+    "r": 0,
+    "e": "Der Soll-Ist-Vergleich stellt Plan- und Ist-Werte gegenüber. Abweichungen werden analysiert (Abweichungsanalyse), um Ursachen zu finden und gegenzusteuern – z. B. bei Terminen, Kosten oder Qualität.",
+    "b": "qs",
+    "q_": "PK-05 · QM",
+    "cs": [
+      74,
+      26,
+      14,
+      22
+    ],
+    "ws": [
+      9,
+      5,
+      2,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.29
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 580,
+    "q": "Warum setzt man im Server ECC-Arbeitsspeicher ein?",
+    "a": [
+      "Erkennt und korrigiert Bitfehler, um Abstürze und Datenfehler zu vermeiden",
+      "Er ist günstiger",
+      "Er macht den Server schneller",
+      "Er spart Strom"
+    ],
+    "r": 0,
+    "e": "ECC (Error Correcting Code) erkennt und korrigiert einzelne Bitfehler im RAM. Im Dauerbetrieb eines Servers sind Speicherfehler sonst eine Quelle für Abstürze und stille Datenfehler. Büro-PCs brauchen das meist nicht.",
+    "b": "hardware",
+    "q_": "PK-03 · Speicher",
+    "cs": [
+      74,
+      16,
+      29,
+      14
+    ],
+    "ws": [
+      10,
+      3,
+      5,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.29
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 239,
+    "q": "Was leistet Security by Design im Gegensatz zu Security by Default?",
+    "a": [
+      "Security by Design verankert Sicherheit schon in der Entwicklung, Security by Default setzt sichere Standardeinstellungen",
+      "Beide bedeuten dasselbe",
+      "Security by Default bedeutet, alle Regeln abzuschalten",
+      "Security by Design ersetzt das Backup"
+    ],
+    "r": 0,
+    "e": "Security by Design: Sicherheit wird von Anfang an mitgedacht und eingebaut. Security by Default: Die Grundeinstellung ist sicher (z. B. Standardpasswörter müssen geändert werden, unnötige Dienste sind aus).",
+    "b": "sicherheit",
+    "q_": "PK6",
+    "cs": [
+      121,
+      23,
+      54,
+      37
+    ],
+    "ws": [
+      15,
+      3,
+      7,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.26
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 489,
+    "q": "Was ist der Unterschied zwischen flüchtigem und nicht-flüchtigem Speicher?",
+    "a": [
+      "Flüchtiger Speicher (RAM) verliert Daten ohne Strom, nicht-flüchtiger (SSD/HDD/ROM) behält sie",
+      "Beide verlieren ihre Daten",
+      "RAM behält Daten dauerhaft",
+      "SSDs sind flüchtig"
+    ],
+    "r": 0,
+    "e": "RAM ist flüchtig: ohne Strom sind die Daten weg – daher ist Speichern auf Platte nötig. ROM, SSD und HDD sind nicht-flüchtig und behalten Daten dauerhaft. Diese Unterscheidung ist grundlegend für Datenhaltung und Backups.",
+    "b": "hardware",
+    "q_": "PK-03 · Speicher",
+    "cs": [
+      94,
+      26,
+      26,
+      18
+    ],
+    "ws": [
+      11,
+      4,
+      4,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.22
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 503,
+    "q": "Was ist der Unterschied zwischen Nutzen und Nutzwert?",
+    "a": [
+      "Nutzen ist der Vorteil einer Alternative; der Nutzwert macht mehrere Alternativen über gewichtete Kriterien vergleichbar",
+      "Nutzwert ist immer in Euro",
+      "Nutzen ist die Summe der Preise",
+      "Beide bedeuten dasselbe"
+    ],
+    "r": 0,
+    "e": "Der Nutzen beschreibt den Vorteil einer Lösung für den Kunden. Der Nutzwert rechnet mehrere Kriterien mit Gewichtung in eine Zahl um, damit Alternativen vergleichbar werden – Ergebnis der Nutzwertanalyse.",
+    "b": "kommunikation",
+    "q_": "PK-02 · Nutzwertanalyse",
+    "cs": [
+      120,
+      26,
+      31,
+      23
+    ],
+    "ws": [
+      15,
+      5,
+      6,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.22
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 416,
+    "q": "Ein Projekt droht den Endtermin zu reißen. Welche Gegenmaßnahmen sind sinnvoll?",
+    "a": [
+      "Zeitliche Überlappung von Vorgängen, zusätzliche Ressourcen, Umverteilung von Puffern, ggf. Umfang/Anforderungen neu priorisieren",
+      "Einfach weiterarbeiten und den Termin ignorieren",
+      "Sofort alle Aufgaben einstellen",
+      "Die Dokumentation löschen"
+    ],
+    "r": 0,
+    "e": "Bei Terminproblemen prüft man Maßnahmen wie Fast Tracking (Überlappung), zusätzliche Ressourcen (Crashing), Puffer umverteilen, Umfang neu priorisieren (auch im Dialog mit dem Auftraggeber). Wichtig: frühzeitig kommunizieren und sauber begründen.",
+    "b": "pm",
+    "q_": "PK-01 · Terminprobleme",
+    "cs": [
+      129,
+      48,
+      31,
+      25
+    ],
+    "ws": [
+      13,
+      6,
+      4,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.16
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 558,
+    "q": "Ein Skript liefert für denselben Eingabewert manchmal ein anderes Ergebnis. Welche Fehlerart ist wahrscheinlich?",
+    "a": [
+      "Ein Logik- oder Zustandsfehler (z. B. nicht initialisierte oder geteilte Variable)",
+      "Ein Syntaxfehler",
+      "Ein Tippfehler in der Beschriftung",
+      "Ein fehlendes Netzwerkkabel"
+    ],
+    "r": 0,
+    "e": "Unterschiedliche Ergebnisse bei gleicher Eingabe deuten auf einen Zustands-/Logikfehler hin (z. B. nicht zurückgesetzte oder geteilte Variablen, Timing). Tests mit festen Eingaben und ein Schreibtischtest/Debugger grenzen die Stelle ein.",
+    "b": "qs",
+    "q_": "PK-05 · Test",
+    "cs": [
+      82,
+      16,
+      34,
+      27
+    ],
+    "ws": [
+      11,
+      2,
+      5,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.13
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 196,
+    "q": "Was bedeutet „Transfer Learning\"?",
+    "a": [
+      "Ein bereits trainiertes Modell auf eine neue, ähnliche Aufgabe übertragen und nachtrainieren",
+      "Daten von einem Rechner auf einen anderen kopieren",
+      "Ein Modell löschen",
+      "Ein Modell ohne Daten trainieren"
+    ],
+    "r": 0,
+    "e": "Beim Transfer Learning startet man mit einem vortrainierten Modell und passt es an eine neue Aufgabe an (Feintuning). Das spart Rechenzeit und Daten, weil das Modell schon allgemeine Muster gelernt hat.",
+    "b": "ki",
+    "q_": "DL",
+    "cs": [
+      92,
+      50,
+      18,
+      32
+    ],
+    "ws": [
+      12,
+      8,
+      3,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.11
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 520,
+    "q": "Warum ist ein Konfigurationsmanagement (Dokumentation) wichtig?",
+    "a": [
+      "Nur mit dokumentiertem Aufbau (Hardware, Software, Netz, Rechte) sind Änderungen und Störungen sicher nachvollziehbar",
+      "Um Papier zu verbrauchen",
+      "Um den Preis zu erhöhen",
+      "Weil es Pflicht des Kunden ist"
+    ],
+    "r": 0,
+    "e": "Konfigurationsmanagement hält den aktuellen Stand von Systemen fest: Hardware, Software/Versionen, Netz, Adressen, Rechte. Ohne Dokumentation sind Änderungen riskant und Störungen langsam zu finden.",
+    "b": "hardware",
+    "q_": "PK-04 · Dokumentation",
+    "cs": [
+      117,
+      24,
+      23,
+      30
+    ],
+    "ws": [
+      14,
+      4,
+      5,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.09
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 597,
+    "q": "Was ist die Aufgabe der Projektleitung?",
+    "a": [
+      "Planung, Steuerung, Kontrolle und Kommunikation des Projekts sowie Zielerreichung",
+      "Nur die Dokumentation",
+      "Nur die Programmierung",
+      "Nur die Rechnung"
+    ],
+    "r": 0,
+    "e": "Die Projektleitung plant und steuert das Projekt, verteilt Aufgaben, überwacht Termine/Kosten/Qualität, managt Risiken und kommuniziert mit Auftraggeber und Team. Sie trägt die Verantwortung für die Zielerreichung.",
+    "b": "pm",
+    "q_": "PK-01 · Projektmanagement",
+    "cs": [
+      81,
+      21,
+      22,
+      16
+    ],
+    "ws": [
+      9,
+      3,
+      3,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.06
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 336,
+    "q": "Was ist der Unterschied zwischen Compiler und Interpreter?",
+    "a": [
+      "Der Compiler übersetzt den ganzen Quellcode vorab, der Interpreter führt ihn Zeile für Zeile aus",
+      "Beide sind dasselbe",
+      "Der Compiler kompiliert nur Grafiken",
+      "Der Interpreter erzeugt eine EXE-Datei"
+    ],
+    "r": 0,
+    "e": "Ein Compiler übersetzt den gesamten Quellcode in Maschinencode, der danach schnell läuft. Ein Interpreter führt den Code Befehl für Befehl aus – flexibel, aber langsamer. Ein Linker verbindet anschließend übersetzte Teile und Bibliotheken zu einem Programm.",
+    "b": "software",
+    "q_": "PK-04 · Programmiersprachen",
+    "cs": [
+      96,
+      19,
+      36,
+      38
+    ],
+    "ws": [
+      15,
+      3,
+      5,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4.05
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 406,
+    "q": "Was ist ein Meilenstein im Projekt?",
+    "a": [
+      "Ein besonders wichtiges, klar definiertes Ereignis bzw. Ergebnis zu einem Termin",
+      "Ein beliebiger Arbeitsschritt",
+      "Eine Person im Team",
+      "Ein Kostenposten"
+    ],
+    "r": 0,
+    "e": "Meilensteine markieren wichtige Zwischenergebnisse oder Entscheidungspunkte im Zeitplan. Sie haben oft keine Dauer (Dauer null) und dienen der Fortschrittskontrolle sowie der Kommunikation mit dem Auftraggeber.",
+    "b": "pm",
+    "q_": "PK-01 · Projektplanung",
+    "cs": [
+      80,
+      29,
+      19,
+      16
+    ],
+    "ws": [
+      11,
+      3,
+      4,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 535,
+    "q": "Was ist der Unterschied zwischen einem Kern und einem Thread einer CPU?",
+    "a": [
+      "Ein Kern ist eine physische Recheneinheit, ein Thread eine (ggf. simulierte) Ausführungseinheit",
+      "Beide sind dasselbe",
+      "Ein Thread ist schneller als ein Kern",
+      "Kerne gibt es nur bei Servern"
+    ],
+    "r": 0,
+    "e": "Ein Kern ist eine echte Recheneinheit. Threads sind Ausführungseinheiten – bei Simultaneous Multithreading (z. B. Hyper-Threading) kann ein Kern mehrere Threads abarbeiten, ohne die doppelte Leistung zu bringen. Mehr Kerne helfen bei paralleler Arbeit.",
+    "b": "hardware",
+    "q_": "PK-03 · CPU",
+    "cs": [
+      95,
+      19,
+      37,
+      29
+    ],
+    "ws": [
+      12,
+      3,
+      7,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 4
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 347,
+    "q": "Was ist ein einfacher Kostenvergleich für IT-Beschaffung?",
+    "a": [
+      "Die Gesamtkosten von Alternativen über einen Zeitraum (z. B. Kauf, Leasing, Finanzierung, Pay-per-Use) gegenüberstellen",
+      "Nur den billigsten Anbieter nehmen",
+      "Den Listenpreis addieren",
+      "Nur die Versandkosten vergleichen"
+    ],
+    "r": 0,
+    "e": "Beim einfachen Kostenvergleich werden die Anschaffungs- und Betriebskosten alternativer Beschaffungsmodelle (Kauf, Leasing, Kreditfinanzierung, Miete/Pay-per-Use) über die Nutzungsdauer addiert und verglichen. Liquidität und Eigentum unterscheiden sich je Modell.",
+    "b": "wirtschaft",
+    "q_": "PK-03 · Beschaffung",
+    "cs": [
+      119,
+      34,
+      24,
+      33
+    ],
+    "ws": [
+      14,
+      5,
+      3,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 3.96
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 565,
+    "q": "Was ist ein Sprachmodell (Large Language Model)?",
+    "a": [
+      "Ein KI-Modell, das auf sehr viel Text trainiert wurde, um Sprache zu verstehen und zu erzeugen",
+      "Ein Übersetzungsprogramm ohne Training",
+      "Ein Datenbanksystem",
+      "Ein Netzwerkprotokoll"
+    ],
+    "r": 0,
+    "e": "Ein Sprachmodell (LLM) lernt aus sehr großen Textmengen Muster der Sprache und kann daraufhin Text vervollständigen, zusammenfassen oder übersetzen. Es „versteht“ nicht wie ein Mensch und kann Fehler (Halluzinationen) machen – Inhalte deshalb prüfen.",
+    "b": "ki",
+    "q_": "PK-04 · KI",
+    "cs": [
+      94,
+      38,
+      19,
+      21
+    ],
+    "ws": [
+      16,
+      4,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 3.95
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 301,
+    "q": "Was bedeutet „redundancy im IT-Kontext?",
+    "a": [
+      "Redundanz – Bauteile oder Daten sind mehrfach vorhanden, damit ein Ausfall nicht zum Totalausfall führt",
+      "Die Verkleinerung eines Systems",
+      "Ein Sicherheitsfehler",
+      "Die Verschlüsselung von Daten"
+    ],
+    "r": 0,
+    "e": "„redundancy\" = Redundanz. Sie erhöht die Verfügbarkeit (z. B. RAID, doppelte Netzteile, USV). Nicht verwechseln mit „redundant\" im Sinne von überflüssig.",
+    "b": "englisch",
+    "q_": "EN",
+    "cs": [
+      103,
+      31,
+      21,
+      29
+    ],
+    "ws": [
+      15,
+      4,
+      2,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 3.9
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 495,
+    "q": "Ein Programm liest Daten aus einer CSV-Datei und rechnet Werte. Wo läge ein typischer Testfall für einen Schreibtischtest?",
+    "a": [
+      "Ein Beispieldatensatz mit zwei Zeilen, für den man das Ergebnis von Hand Schritt für Schritt prüft",
+      "Die Geschwindigkeit messen",
+      "Das Programm löschen",
+      "Die Farbe der Oberfläche ändern"
+    ],
+    "r": 0,
+    "e": "Beim Schreibtischtest nimmt man kleine, konkrete Beispieldaten (z. B. zwei Zeilen mit Werten) und rechnet Schritt für Schritt nach, was das Programm tun müsste. So findet man Logikfehler, bevor der Rechner den Code ausführt.",
+    "b": "software",
+    "q_": "PK-04 · Schreibtischtest",
+    "cs": [
+      98,
+      26,
+      20,
+      31
+    ],
+    "ws": [
+      16,
+      3,
+      3,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 3.9
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 554,
+    "q": "Ein Auftrag ist technisch machbar, aber das Budget reicht nicht. Was ist die richtige Konsequenz?",
+    "a": [
+      "Umfang/Anforderungen, Termine oder Budget mit dem Auftraggeber neu verhandeln oder das Angebot anpassen",
+      "Einfach zusagen und später draufzahlen",
+      "Das Budget ignorieren",
+      "Die Leistung heimlich kürzen"
+    ],
+    "r": 0,
+    "e": "Wenn Budget und Leistung auseinanderfallen, muss man transparent verhandeln: Umfang reduzieren, Termine strecken, Budget erhöhen oder die Anforderungen priorisieren. Einfach zusagen führt zu Verlust und Streit bei der Abnahme.",
+    "b": "pm",
+    "q_": "PK-01 · Machbarkeit",
+    "cs": [
+      103,
+      38,
+      21,
+      28
+    ],
+    "ws": [
+      13,
+      5,
+      3,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 3.9
+    }
+  }
+]

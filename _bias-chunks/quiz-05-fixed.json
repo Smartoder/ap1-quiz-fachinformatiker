@@ -1,0 +1,882 @@
+[
+  {
+    "sammlung": "QUIZ",
+    "i": 459,
+    "a": [
+      "1:n – ein Benutzerkonto kann mehrere Log-Einträge erzeugen",
+      "m:n – viele Konten stehen vielen Log-Einträgen gegenüber",
+      "1:1 – genau ein Log-Eintrag ist je Konto zulässig auf Anwenderebene",
+      "Zwischen den Entitäten besteht keine datenbankseitige Beziehung"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 274,
+    "a": [
+      "Mitarbeiter haben zwei Vorgesetzte – fachlich und disziplinarisch",
+      "Jeder Mitarbeiter hat genau einen Vorgesetzten in der Linie",
+      "In der Organisation gibt es keine formalen Vorgesetzten",
+      "Entscheidungen trifft ausschließlich die Geschäftsführung allein"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 329,
+    "a": [
+      "Arbeitsplatz ist so gestaltet, dass körperliche Belastungen minimiert werden",
+      "Der Bildschirm steht möglichst hoch über der Schreibtischoberfläche",
+      "Sehr helle Beleuchtung von hinten auf den Monitor gerichtet nach Projektplan",
+      "Die Tastatur liegt bequem auf dem Schoß des Anwenders nach Projektplan"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 455,
+    "a": [
+      "Attribut, das jeden Datensatz in der Tabelle eindeutig identifiziert",
+      "Attribut, das auf einen Datensatz in einer anderen Tabelle verweist",
+      "Attribut ohne gespeicherte Werte in der betreffenden Spalte",
+      "Attribut, in dem sich Werte mehrfach wiederholen dürfen"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 41,
+    "a": [
+      "Name des Sachbearbeiters auf der Rechnung im Geschäftsprozess",
+      "Steuernummer bzw. USt-IdNr. und ausgewiesener Steuersatz",
+      "Farbe des Papieres, auf dem die Rechnung gedruckt wird",
+      "Telefonnummer des Rechnungsstellers für Rückfragen"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 373,
+    "a": [
+      "Namensauflösung (DNS) ausgefallen, IP-Verbindung ins Internet funktioniert",
+      "Netzwerkkarte des Clients ist hardwareseitig defekt auf Anwenderebene",
+      "Netzwerkkabel zwischen PC und Switch ist nicht angeschlossen",
+      "Der Rechner erhält keinen Strom von der Steckdose nach Projektplan"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 51,
+    "a": [
+      "Den billigsten Anbieter ohne weitere Bewertungskriterien ermitteln",
+      "Die Lieferzeit des bevorzugten Lieferanten verkürzen in der IT-Praxis",
+      "Die Umsatzsteuer für das Angebot berechnen und ausweisen",
+      "Mehrere Angebote nach gewichteten Kriterien vergleichbar machen"
+    ],
+    "r": 3
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 240,
+    "a": [
+      "Wissen (Passwort), Besitz (Token/Gerät), Biometrie (Fingerabdruck)",
+      "Zwei unabhängige Passwörter desselben Benutzerkontos in der IT-Praxis",
+      "Ausschließlich biometrische Merkmale ohne weiteren Faktor",
+      "Zwei Passwörter, die zur gleichen Authentifizierungskategorie gehören"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 8,
+    "a": [
+      "Er dämpft hochfrequente Störungen und verbessert die EMV",
+      "Er wandelt Wechselstrom in Gleichstrom für die Platine",
+      "Er erhöht die Ausgangsspannung über den Nennwert hinaus",
+      "Er lädt die Batterie der unterbrechungsfreien Stromversorgung"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 315,
+    "a": [
+      "Rechner, bei dem System und Bildschirm in einem Gehäuse verbaut sind",
+      "Rechner mit zwei parallel installierten Betriebssystemen",
+      "Zentraler Server, der alle Abteilungen des Unternehmens bedient",
+      "Notebook mit abnehmbarer Tastatur und separatem Display"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 458,
+    "a": [
+      "PK = Primary Key (Primärschlüssel), FK = Foreign Key (Fremdschlüssel)",
+      "PK = Programmkennung, FK = Fehlerkennung im Logfile auf Anwenderebene",
+      "PK = Privatkonto, FK = Firmenkonto in der Buchhaltung für den Kunden",
+      "PK = Protokolltyp, FK = Trägerfrequenz im Netzwerk nach Projektplan"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 54,
+    "a": [
+      "Ausbildungsbetrieb und Berufsschule teilen sich die Ausbildung",
+      "Ausschließlich die Berufsschule bildet den Berufsnachwuchs aus",
+      "Ausschließlich der Betrieb übernimmt die gesamte Ausbildung",
+      "Das duale System besteht aus Universität und Fachhochschule"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 56,
+    "a": [
+      "Phase steigender wirtschaftlicher Aktivität nach einem Konjunkturtief",
+      "Phase allgemein sinkender Preise (Deflation) in der Wirtschaft",
+      "Phase des wirtschaftlichen Stillstands ohne Wachstum auf Anwenderebene",
+      "Phase mit rückläufigem Bruttoinlandsprodukt über mehrere Quartale"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 257,
+    "a": [
+      "Abrechnung nach tatsächlicher Nutzung statt Kauf oder fester Monatsrate",
+      "Einmaliger Kaufpreis mit dauerhaftem Nutzungsrecht in der IT-Praxis",
+      "Leasingvertrag mit fester Laufzeit und konstanter Rate nach Projektplan",
+      "Kostenfreie Nutzung der Leistung ohne vertragliche Pflichten"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 532,
+    "a": [
+      "Es holt und interpretiert Befehle und steuert deren Ausführung in der CPU",
+      "Es führt arithmetische und logische Rechenoperationen aus (ALU)",
+      "Es speichert Daten dauerhaft auf dem Massenspeicher des Systems",
+      "Es versorgt Mainboard und Peripherie mit der benötigten Spannung"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 52,
+    "a": [
+      "Jugendliche höchstens 8 h/Tag und 40 h/Woche; Nachtarbeit eingeschränkt",
+      "Jugendliche dürfen unbegrenzt Überstunden leisten in der IT-Praxis",
+      "Nachtarbeit ist für Jugendliche ohne Einschränkung zulässig",
+      "Das Gesetz gilt ausschließlich für Auszubildende über 18 Jahre"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 170,
+    "a": [
+      "Klassifikation ordnet diskrete Klassen zu, Regression sagt stetige Werte voraus",
+      "Klassifikation ist unüberwacht, Regression immer überwachtes Lernen",
+      "Regression liefert ausschließlich boolesche Wahrheitswerte auf Anwenderebene",
+      "Beide Verfahren sind identisch und unterscheiden sich im Namen für den Kunden"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 263,
+    "a": [
+      "Plan, Do, Check, Act – kontinuierlicher Verbesserungskreislauf",
+      "Plan, Document, Control, Adjust – Dokumentationszyklus",
+      "Prüfen, Dokumentieren, Korrigieren, Abschließen – Abschlussphase",
+      "Plan, Design, Code, Audit – Software-Entwicklungsmodell"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 300,
+    "a": [
+      "Ausfallzeit – Zeitraum, in dem ein System nicht verfügbar ist",
+      "Betriebszeit eines Servers ohne Unterbrechung seit dem Boot",
+      "Zeitspanne bis zum nächsten geplanten Software-Update",
+      "Bildschirmzeit eines Benutzers an einem Arbeitstag"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 523,
+    "a": [
+      "Rechner vom Netz trennen und den Vorfall melden (Meldeweg einhalten)",
+      "Weiterarbeiten und das Verhalten des Systems beobachten auf Anwenderebene",
+      "Den verdächtigen Anhang an Kollegen zur Prüfung weiterleiten",
+      "Abwarten, bis sich der Schaden deutlich verschlimmert nach Projektplan"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 418,
+    "a": [
+      "Plan, Do, Check, Act – Kreislauf zur ständigen Verbesserung",
+      "Preis, Dauer, Chaos, Abnahme – Projektphasen im Support",
+      "Priorität, Dokument, Code, Ablage – Ticketbearbeitung",
+      "Plan, Deploy, Close, Archiv – Release-Management"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 54,
+    "a": [
+      "Verzinsung eines aufgenommenen Kredits über die Laufzeit im Geschäftsprozess",
+      "Abschreibung eines Wirtschaftsguts über die Nutzungsdauer auf Anwenderebene",
+      "Zeit bis eine Investition ihre Anschaffungskosten wieder eingebracht hat",
+      "Erlös aus dem Verkauf eines Anlageguts am Ende der Nutzung im Supportalltag"
+    ],
+    "r": 2
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 293,
+    "a": [
+      "Server ist ausgefallen bzw. für Clients nicht erreichbar",
+      "Server wurde heruntergefahren und anschließend neu gestartet",
+      "Server überschreitet die zulässige Betriebstemperatur im Rack",
+      "Server wurde an einen anderen Betreiber verkauft nach Projektplan"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 298,
+    "a": [
+      "Sicherung liegt an einem anderen Ort außerhalb des Betriebs (off-site)",
+      "Die letzte Sicherung ist fehlgeschlagen und unvollständig auf Anwenderebene",
+      "Vorhandene Sicherungskopien wurden absichtlich gelöscht auf Anwenderebene",
+      "Sicherung liegt auf demselben physischen Server wie die Produktivdaten"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 390,
+    "a": [
+      "Sicherheit von Beginn an mitgedacht; Standardeinstellung ist sicher",
+      "Sicherheitsmaßnahmen werden erst nach Inbetriebnahme nachgerüstet",
+      "Ausschließlich der Administrator darf das System bedienen",
+      "Das System ist in der Werkseinstellung bewusst unsicher konfiguriert"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 457,
+    "a": [
+      "Fremdschlüssel verweist auf einen existierenden Datensatz in der Zieltabelle",
+      "Alle Tabellen einer Datenbank haben dieselbe Zeilenanzahl nach Projektplan",
+      "Alle Spalten heißen in jeder Tabelle identisch auf Anwenderebene",
+      "In keiner Spalte dürfen sich Werte wiederholen für den Kunden"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 171,
+    "a": [
+      "Anzahl der Trainingsdatensätze im gesamten Datensatz",
+      "Abnahme der Entropie durch eine Aufteilung der Daten",
+      "Maximale Tiefe des Entscheidungsbaums in Ebenen",
+      "Rechenzeit, die der Algorithmus auf der CPU benötigt"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 278,
+    "a": [
+      "Schlechtleistung, Falschlieferung und Minderlieferung als Mängelarten",
+      "Verzug, Zahlungsverzug und außerordentliche Kündigung auf Anwenderebene",
+      "Kauf, Miete und Leasing als Beschaffungsformen auf Anwenderebene",
+      "Hardware-, Software- und Netzwerkfehler als Störungsarten"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 314,
+    "a": [
+      "Grafikintensive CAD-Arbeit ohne zentrale GPU-Leistung im Hintergrund",
+      "Buchhaltung im Rechenzentrumsbetrieb mit Terminalserver auf Anwenderebene",
+      "Arbeitsplätze mit wechselnden Nutzern an festen Terminals für den Kunden",
+      "Callcenter-Arbeitsplätze mit Standardbüroanwendungen nach Projektplan"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 30,
+    "a": [
+      "Beschleunigt Suche und Sortierung, erfordert aber Schreibaufwand",
+      "Verhindert doppelte Werte in der Tabelle mit Sicherheit",
+      "Verschlüsselt alle Spaltenwerte der indizierten Tabelle",
+      "Ersetzt den Primärschlüssel als eindeutiges Identifikationsmerkmal"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 453,
+    "a": [
+      "Primärschlüssel der 1-Seite wandert als Fremdschlüssel in die n-Seite",
+      "Primärschlüssel der n-Seite wandert in die Tabelle der 1-Seite",
+      "Für 1:n wird zwingend eine Zwischentabelle angelegt auf Anwenderebene",
+      "Beide Tabellen werden zu einer einzigen Tabelle zusammengeführt"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 4,
+    "a": [
+      "Projektarbeit und Präsentation werden jeweils mit 50 Prozent gewichtet",
+      "Projektarbeit 70 Prozent, Präsentation 30 Prozent der Note",
+      "Die Note setzt sich ausschließlich aus der Projektarbeit zusammen",
+      "Präsentation 60 Prozent, Projektarbeit 40 Prozent der Gesamtnote"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 359,
+    "a": [
+      "Vergibt IP-Adressen und weitere Netzparameter automatisch an Clients",
+      "Löst Domainnamen in IP-Adressen auf und umgekehrt (DNS)",
+      "Übersetzt IP-Adressen in MAC-Adressen im lokalen Ethernet",
+      "Verschlüsselt den gesamten IP-Datenverkehr zwischen zwei Hosts"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 567,
+    "a": [
+      "Bitte das Problem an den Second-Level-Support weiterreichen",
+      "Bitte dieses Ticket ohne Rückfrage aus dem System löschen",
+      "Bitte das Ticket sofort schließen, ohne Lösungsdokumentation",
+      "Bitte den Kunden anrufen und das Gespräch protokollieren"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 308,
+    "a": [
+      "Sicherstellen, dass die Firewall-Regeln auf dem aktuellen Stand sind",
+      "Die Firewall dauerhaft abschalten, um Latenz zu vermeiden",
+      "Die Firewall-Hardware durch ein neues Modell ersetzen auf Anwenderebene",
+      "Die Firewall-Regeln öffentlich im Intranet veröffentlichen"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 61,
+    "a": [
+      "Zuständige Stelle, z. B. IHK, entscheidet über Ausbilder und Betriebseignung",
+      "Die Berufsschule allein genehmigt Ausbildungsverträge in der IT-Praxis",
+      "Das Arbeitsgericht prüft die Eignung jedes Ausbildungsbetriebs",
+      "Der Betriebsrat allein bestellt und beruft die Ausbilder für den Kunden"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 265,
+    "a": [
+      "Setzt geplante Maßnahmen um und kontrolliert den Soll-Ist-Vergleich",
+      "Legt ausschließlich den Ziel-Zustand ohne Umsetzung fest nach Projektplan",
+      "Ersetzt die Qualitätsplanung vollständig im QM-System auf Anwenderebene",
+      "Beschränkt sich auf die Prüfung von Eingangsrechnungen für den Kunden"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 316,
+    "a": [
+      "Unterstützt große Festplatten (GPT) und Secure Boot beim Systemstart",
+      "Benötigt weniger Arbeitsspeicher als das klassische BIOS",
+      "Funktioniert ausschließlich ohne installiertes Betriebssystem",
+      "Ersetzt die Festplatte als bootfähiges Speichermedium nach Projektplan"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 320,
+    "a": [
+      "Verhältnis abgegebener zu aufgenommener elektrischer Leistung",
+      "Erwartete Lebensdauer des Netzteils in Betriebsstunden",
+      "Maximale Spannung, die am Ausgang dauerhaft geliefert wird",
+      "Anzahl der Stecker und Anschlüsse am Netzteilgehäuse"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 594,
+    "a": [
+      "Daten dürfen für den festgelegten, ursprünglichen Zweck verwendet werden",
+      "Daten dürfen für beliebige neue Zwecke weiterverwendet werden",
+      "Daten müssen in jedem Fall verschlüsselt gespeichert werden",
+      "Daten dürfen nach Ablauf der Frist nicht mehr gelöscht werden"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 222,
+    "a": [
+      "Stateful Inspection – Verbindungszustand, Antworten auf erlaubte Sessions",
+      "Packet Filter – prüft einzelne Pakete ohne Zustandsinformation",
+      "Application-Layer-Proxy – analysiert Inhalte auf Anwendungsebene",
+      "Personal Firewall ohne konfigurierbare Regeln auf dem Client"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 247,
+    "a": [
+      "Brandabschnitt begrenzt Feuer und Rauch durch bauliche Trennung",
+      "Brandabschnitt ist ein softwareseitiges Backup der Serverdaten",
+      "Brandabschnitt ist ein RAID-Verbund aus mehreren Festplatten",
+      "Brandabschnitt schützt ausschließlich die Netzwerkinfrastruktur"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 398,
+    "a": [
+      "Es dürfen für den Zweck notwendige personenbezogene Daten erhoben werden",
+      "Es sollen möglichst viele Daten für spätere Auswertungen gesammelt werden",
+      "Alle erhobenen Daten sind dauerhaft ohne Löschfrist zu speichern",
+      "Daten dürfen ohne Einwilligung an Dritte verkauft werden nach Projektplan"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 37,
+    "a": [
+      "Speicherung ausschließlich in Tabellen mit festem, starrem Schema",
+      "Schemalose Speicherung von Dokumenten im JSON-ähnlichen Format",
+      "Immer höhere Geschwindigkeit als jede relationale Datenbank",
+      "Keine Abfragemöglichkeit für gespeicherte Dokumente nach Projektplan"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 218,
+    "a": [
+      "Site-to-Site – verbindet zwei Standortnetze dauerhaft per VPN-Tunnel",
+      "End-to-End – verbindet zwei Endgeräte direkt ohne Gateway",
+      "End-to-Site – bindet ein Endgerät an ein entferntes Netz",
+      "Broadcast-to-Broadcast – sendet VPN-Tunnel an alle Hosts"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 177,
+    "a": [
+      "Möglichst kurze Eingabe ohne Kontext oder Zielvorgabe",
+      "Klar formuliert mit Kontext, Ziel und gewünschtem Ausgabeformat",
+      "Ein einzelnes Stichwort ohne weitere Qualitätsanforderungen",
+      "Anweisung ohne Rollen-, Ziel- oder Formatangabe nach Projektplan"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 184,
+    "a": [
+      "Automatische Analyse und Deutung von Bildern durch KI-Verfahren",
+      "Montage und Kalibrierung von LCD-Monitoren in der Produktion",
+      "Verschlüsselung von Grafikdateien vor der Speicherung",
+      "Verlustfreie Komprimierung von Videodateien für Streaming"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 333,
+    "a": [
+      "Abrechnung nach tatsächlicher Nutzung, nicht pauschal per Kauf",
+      "Die Software steht dauerhaft kostenfrei zur Verfügung",
+      "Einmalzahlung schafft unbegrenztes Nutzungsrecht ohne Folgekosten",
+      "Nach Vertragsende geht das Eigentum an der Software an den Kunden"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 34,
+    "a": [
+      "Entfernt doppelte Zeilen aus der kombinierten Ergebnismenge",
+      "Sortiert die Ergebnismenge automatisch nach der ersten Spalte",
+      "Behält alle Zeilen inklusive Duplikate in der Ergebnismenge",
+      "Erlaubt unterschiedliche Spaltenzahlen in den kombinierten SELECTs"
+    ],
+    "r": 2
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 154,
+    "a": [
+      "KI ist Teilgebiet von DL, DL wiederum Oberbegriff über ML und KI",
+      "KI umfasst ML, und ML umfasst Deep Learning als Teilgebiet",
+      "ML und DL sind synonym; KI ist der gemeinsame Oberbegriff",
+      "DL ist Oberbegriff und umfasst KI sowie klassisches ML"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 295,
+    "a": [
+      "Wir müssen ein Wartungsfenster für geplante Arbeiten terminieren",
+      "Wir benötigen ein größeres Fenster im Serverraum für Kühlung",
+      "Wir müssen die Anwendungssoftware vollständig neu installieren",
+      "Wir benötigen eine neue Firewall-Appliance im Perimeter"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 176,
+    "a": [
+      "Rechenleistung des Modells während der Inferenz phase",
+      "Eingabeaufforderung bzw. Anweisung an ein KI-Modell (Prompt)",
+      "Gespeicherte Gewichte des trainierten neuronalen Netzes",
+      "Fehlerquote des Modells auf dem Validierungsdatensatz"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 20,
+    "a": [
+      "Attribut, das jeden Datensatz in der Tabelle eindeutig identifiziert",
+      "Attribut, das auf den Primärschlüssel einer anderen Tabelle verweist",
+      "Erster Datensatz einer Tabelle nach der Erstellung auf Anwenderebene",
+      "Index über mehrere Spalten zur Beschleunigung von Abfragen"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 484,
+    "a": [
+      "Bitte Lieferdatum und Gesamtpreis schriftlich bestätigen",
+      "Bitte den vereinbarten Preis nachträglich erhöhen",
+      "Bitte die Bestellung ohne Angabe von Gründen stornieren",
+      "Bitte die gelieferte Ware an den Absender zurücksenden"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 452,
+    "a": [
+      "Rechtecke = Entitäten, Ellipsen = Attribute, Rauten = Beziehungen",
+      "Kreise = Tabellen, gerade Linien = Spalten einer Tabelle",
+      "Rechtecke = Programme, Ellipsen = Datenbankdateien nach Projektplan",
+      "Rauten = Server, Linien = physische Netzwerkkabel nach Projektplan"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 46,
+    "a": [
+      "Logisches VLAN zur Trennung von Broadcast-Domänen im LAN",
+      "Passwortschutz auf einem einzelnen Server im Serverraum",
+      "Baulicher Bereich, der Feuer und Rauch für eine Zeit zurückhält",
+      "Kühlzone im Gehäuse, in der Komponenten besonders warm werden"
+    ],
+    "r": 2
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 258,
+    "a": [
+      "Indirekter Vertrieb über Systemhäuser, Distributoren oder Partner",
+      "Direkter Vertrieb ohne Zwischenhändler an den Endkunden",
+      "Pay-per-Use-Abrechnung nach tatsächlich genutzten Ressourcen",
+      "Franchising ohne handelnde Zwischenstufe zum Markt nach Projektplan"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 249,
+    "a": [
+      "Nutzer erhält nur die für seine Aufgabe erforderlichen Rechte",
+      "Jeder Nutzer erhält Administratorrechte für maximale Flexibilität",
+      "Alle Berechtigungen werden zentral in einer Datei gespeichert",
+      "Berechtigungen werden generell abgeschafft zugunsten offener Systeme"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 335,
+    "a": [
+      "Abhängigkeit von Internet und Anbieter; Datenschutz- und Ausfallrisiken",
+      "Es ist stets mehr eigene Hardware im Rechenzentrum nötig in der IT-Praxis",
+      "Cloud-Updates dauern grundsätzlich länger als lokale Patches",
+      "Zugriff von mehreren Geräten ist in der Cloud ausgeschlossen"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 379,
+    "a": [
+      "Sender und Empfänger nutzen denselben geheimen Schlüssel",
+      "Es gibt ein Schlüsselpaar aus öffentlichem und privatem Schlüssel",
+      "Der geheime Schlüssel wird unverschlüsselt per E-Mail versendet",
+      "Die Verschlüsselung arbeitet ohne jeglichen Schlüssel"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 19,
+    "a": [
+      "Darlehen: Monatsrate und Restwert; Leasing: Zinssatz und Tilgung",
+      "Beide Formen werden über laufende Zinsen abgerechnet",
+      "Beide Formen haben eine fixe Monatsrate ohne Restwert",
+      "Darlehen: Zinssatz und Tilgung; Leasing: Monatsrate und Restwert"
+    ],
+    "r": 3
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 5,
+    "a": [
+      "Vorgang mit langer Dauer im Projektnetzplan im Geschäftsprozess",
+      "Terminierbares Ereignis ohne eigene Dauer im Projektplan",
+      "Eingeplanter Puffer zur Absorption von Terminabweichungen",
+      "Rechnung über Teilzahlungen an den Auftraggeber für den Kunden"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 202,
+    "a": [
+      "Mensch prüft oder bestätigt Entscheidungen des KI-Systems mit",
+      "Mensch programmiert ausschließlich die Architektur des Modells",
+      "Modell arbeitet völlig autonom ohne menschliche Kontrolle",
+      "Mensch ersetzt fehlende GPU-Hardware im Rechenzentrum"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 121,
+    "a": [
+      "ICMP-Echo zum Prüfen der Erreichbarkeit eines Remote-Hosts",
+      "Anzeige der IP-Konfiguration des lokalen Windows-Rechners",
+      "Abfrage des DNS-Servers zu einem Domainnamen auf Anwenderebene",
+      "Setzen von Dateirechten unter Unix/Linux auf dem Client"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 122,
+    "a": [
+      "Abfrage beim DNS-Server zu einem Hostnamen",
+      "Setzen von Zugriffsrechten auf Dateien unter Linux",
+      "ICMP-Echo zum Test der Netzwerk-Erreichbarkeit",
+      "Anlegen eines neuen Verzeichnisses im Dateisystem"
+    ],
+    "r": 2
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 185,
+    "a": [
+      "Long Short-Term Memory (LSTM) für Sequenzdaten und Zeitreihen",
+      "Convolutional Neural Network (CNN) für Bildverarbeitung",
+      "Lineare Regression für stetige Zielgrößen auf Anwenderebene",
+      "Entscheidungsbaum für tabellarische Klassifikation"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 208,
+    "a": [
+      "Vergibt IP-Adressen und Netzparameter automatisch an Clients",
+      "Wandelt Domainnamen in IP-Adressen um (DNS-Aufgabe) in der IT-Praxis",
+      "Verschlüsselt den Datenverkehr zwischen zwei Kommunikationspartnern",
+      "Filtert unerwünschte oder schädliche Netzwerkpakete für den Kunden"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 242,
+    "a": [
+      "Phishing – täuscht vertrauenswürdige Absender vor, um Zugangsdaten zu erlangen",
+      "Sniffing – passives Mitlesen des Netzwerkverkehrs in der IT-Praxis",
+      "DDoS – Überlastung eines Dienstes durch Massenanfragen nach Projektplan",
+      "Hashing – Einwegfunktion zur Integritätsprüfung von Dateien im Supportalltag"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 364,
+    "a": [
+      "Sechs nutzbare Host-Adressen in einem /29-Subnetz",
+      "Acht nutzbare Host-Adressen in einem /29-Subnetz",
+      "Vierzehn nutzbare Host-Adressen in einem /29-Subnetz",
+      "Dreißig nutzbare Host-Adressen in einem /29-Subnetz"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 375,
+    "a": [
+      "Informationen sind berechtigten Personen vorbehalten (Vertraulichkeit)",
+      "Informationen sind jederzeit für alle Nutzer verfügbar in der IT-Praxis",
+      "Informationen sind unverändert und vollständig (Integrität)",
+      "Informationen sind steuerlich begünstigt oder steuerfrei für den Kunden"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 569,
+    "a": [
+      "Wir senden innerhalb von zwei Werktagen ein Angebot (quotation)",
+      "Wir senden innerhalb von zwei Tagen eine Rechnung (invoice)",
+      "Wir liefern die bestellte Ware innerhalb von zwei Tagen",
+      "Wir stornieren die Bestellung ohne weitere Rücksprache"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 59,
+    "a": [
+      "Vier Wochen zum 15. oder zum Monatsende (Grundfrist BGB)",
+      "Zwei Wochen jederzeit ohne Terminbindung in der IT-Praxis",
+      "Sechs Monate zum Ende des Kalenderjahres nach Projektplan",
+      "Es gilt keine gesetzliche Kündigungsfrist für Arbeitnehmer"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 172,
+    "a": [
+      "Das Modell wird durch verzerrte Trainingsdaten tendenziell langsamer",
+      "Bias im Modell kann zu unfairen oder diskriminierenden Entscheidungen führen",
+      "Das Modell vergisst nach dem Training alle Eingabedaten vollständig",
+      "Die Genauigkeit sinkt bei verzerrten Daten zwangsläufig auf null"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 16,
+    "a": [
+      "Trennt logische Netze auf gemeinsamer physischer Infrastruktur",
+      "Erhöht die Bandbreite jeder einzelnen Leitung im Switch",
+      "Ersetzt Router und Firewalls im Unternehmensnetz vollständig",
+      "Verschlüsselt automatisch den gesamten VLAN-internen Verkehr"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 482,
+    "a": [
+      "Server ist wegen eines Hardwarefehlers ausgefallen (down)",
+      "Server wird gerade neu installiert und konfiguriert",
+      "Server wurde erfolgreich aktualisiert und ist up to date",
+      "Server läuft fehlerfrei und ist für Nutzer erreichbar"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 169,
+    "a": [
+      "GPUs haben mehr Festplattenspeicher als CPUs für große Modelle",
+      "Viele parallele Matrixoperationen lassen sich auf GPUs ausführen",
+      "Neuronale Netze können ausschließlich auf GPUs ausgeführt werden",
+      "GPUs verbrauchen beim Training weniger Energie als CPUs"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 18,
+    "a": [
+      "Befristete Überlassung von Kapital ohne Mitspracherecht (Fremdkapital)",
+      "Feste Zins- und Tilgungszahlungen an Gläubiger (Fremdkapital)",
+      "Dauerhafte Beteiligung mit Mitsprache und Gewinnanteil (Eigenkapital)",
+      "Geldgeber erhält keinen Anteil am Gewinn und keine Stimmrechte"
+    ],
+    "r": 2
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 47,
+    "a": [
+      "Pfad mit den meisten Vorgängen im Projektnetzplan im Geschäftsprozess",
+      "Pfad mit den größten Pufferzeiten zwischen den Vorgängen",
+      "Pfad mit den geringsten monetären Kosten aller Alternativen",
+      "Längster Weg von Start bis Ende; bestimmt die Gesamtprojektdauer"
+    ],
+    "r": 3
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 374,
+    "a": [
+      "Vertraulichkeit, Integrität und Verfügbarkeit der Informationen",
+      "Kosten, Image und Ausfallwahrscheinlichkeit in der IT-Praxis",
+      "Authentizität, Anonymität und Autorisierung von Nutzern",
+      "Sicherheit, Geschwindigkeit und Stabilität der IT-Systeme"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 232,
+    "a": [
+      "Technische, organisatorische und personelle Schutzmaßnahmen",
+      "Software-, Hardware- und Netzwerk-Kategorien der IT-Landschaft",
+      "Kurzfristige, mittelfristige und langfristige Maßnahmenpläne",
+      "Interne, externe und hybride Bereitstellungsmodelle"
+    ],
+    "r": 0
+  }
+]

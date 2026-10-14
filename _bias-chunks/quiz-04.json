@@ -1,0 +1,2562 @@
+[
+  {
+    "sammlung": "QUIZ",
+    "i": 178,
+    "q": "Was bedeutet eine „Halluzination\" bei einem Sprachmodell?",
+    "a": [
+      "Das Modell verweigert die Antwort",
+      "Das Modell erzeugt plausibel klingende, aber falsche Inhalte",
+      "Das Modell stürzt ab",
+      "Das Modell rechnet zu langsam"
+    ],
+    "r": 1,
+    "e": "Sprachmodelle erzeugen wahrscheinliche Textfortsetzungen – nicht unbedingt wahre Aussagen. Deshalb müssen Ergebnisse fachlich geprüft werden, besonders bei Zahlen und Fakten.",
+    "b": "ki",
+    "q_": "KI",
+    "cs": [
+      33,
+      60,
+      20,
+      29
+    ],
+    "ws": [
+      5,
+      8,
+      4,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 190,
+    "q": "Was bedeutet „Skalierung/Normierung\" von Merkmalen vor dem Training?",
+    "a": [
+      "Merkmale auf vergleichbare Wertebereiche bringen",
+      "Merkmale löschen",
+      "Merkmale vervielfachen",
+      "Das Modell vergrößern"
+    ],
+    "r": 0,
+    "e": "Liegen Merkmale auf stark verschiedenen Skalen (z. B. Alter 0–100 vs. Einkommen 0–100.000), dominieren große Werte. Deshalb werden sie normiert – besonders wichtig für SVM und K-Means.",
+    "b": "ki",
+    "q_": "ML",
+    "cs": [
+      48,
+      16,
+      22,
+      21
+    ],
+    "ws": [
+      5,
+      2,
+      2,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 343,
+    "q": "Was ist der Zweck eines Lastenhefts?",
+    "a": [
+      "Der Auftraggeber beschreibt, WAS gefordert ist (Anforderungen, Ziele)",
+      "Der Auftragnehmer beschreibt, WIE umgesetzt wird",
+      "Es regelt nur den Preis",
+      "Es ersetzt den Kaufvertrag"
+    ],
+    "r": 0,
+    "e": "Das Lastenheft kommt vom Auftraggeber und beschreibt das WAS und WOFÜR (Anforderungen, Soll-Zustand). Das Pflichtenheft des Auftragnehmers beschreibt das WIE und WOMIT. Das Lastenheft ist Grundlage für Angebot und Vergleich.",
+    "b": "software",
+    "q_": "PK-04 · Lasten-/Pflichtenheft",
+    "cs": [
+      69,
+      48,
+      23,
+      26
+    ],
+    "ws": [
+      8,
+      6,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 349,
+    "q": "Was beschreibt das Preis-Leistungs-Verhältnis?",
+    "a": [
+      "Das Verhältnis von erzieltem Nutzen bzw. Leistung zum gezahlten Preis",
+      "Den absoluten Preis eines Produkts",
+      "Die Höhe der Mehrwertsteuer",
+      "Die Lieferzeit in Tagen"
+    ],
+    "r": 0,
+    "e": "Das Preis-Leistungs-Verhältnis setzt Nutzen und Preis ins Verhältnis: Gute Leistung zu niedrigem Preis ist vorteilhaft. Es ist ein zentrales Kriterium, wenn die reine Kostensicht zu kurz greift.",
+    "b": "wirtschaft",
+    "q_": "PK-03 · Wirtschaftlichkeit",
+    "cs": [
+      69,
+      34,
+      27,
+      23
+    ],
+    "ws": [
+      10,
+      5,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 368,
+    "q": "Welchen Vorteil bietet WPA2-Enterprise gegenüber WPA2 mit Pre-Shared-Key?",
+    "a": [
+      "Jeder Nutzer hat eigene Zugangsdaten – zentral prüfbar (z. B. über einen RADIUS-Server)",
+      "Es ist einfacher einzurichten",
+      "Es verwendet keinen Schlüssel",
+      "Es funktioniert nur ohne Passwort"
+    ],
+    "r": 0,
+    "e": "Bei Pre-Shared-Key (PSK) nutzen alle denselben Schlüssel – wer ihn kennt, kommt rein, und bei Weggang eines Mitarbeiters müsste er für alle geändert werden. WPA2-Enterprise authentifiziert jeden Nutzer einzeln über einen Server (RADIUS) mit eigenen Zugangsdaten.",
+    "b": "netzwerk",
+    "q_": "PK-04 · WLAN-Sicherheit",
+    "cs": [
+      87,
+      29,
+      29,
+      33
+    ],
+    "ws": [
+      13,
+      4,
+      4,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 507,
+    "q": "Was ist der Unterschied zwischen Korrektur und Vorbeugung in der Qualitätssicherung?",
+    "a": [
+      "Korrektur behebt einen eingetretenen Fehler, Vorbeugung verhindert ihn künftig",
+      "Beide beheben Fehler nachträglich",
+      "Vorbeugung betrifft nur Hardware",
+      "Korrektur ist immer teurer"
+    ],
+    "r": 0,
+    "e": "Korrekturmaßnahmen beseitigen einen konkreten Fehler; Vorbeugemaßnahmen (präventiv) verhindern, dass er erneut oder überhaupt auftritt. Vorbeugung ist meist günstiger als spätes Korrigieren – Grundidee des PDCA-Zyklus.",
+    "b": "qs",
+    "q_": "PK-05 · QM",
+    "cs": [
+      78,
+      33,
+      32,
+      26
+    ],
+    "ws": [
+      9,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 2
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 47,
+    "q": "Wie haftet ein Gesellschafter einer GmbH?",
+    "a": [
+      "Unbegrenzt mit seinem gesamten Privatvermögen",
+      "Beschränkt auf seine Einlage",
+      "Überhaupt nicht",
+      "Nur mit seinem Gehalt"
+    ],
+    "r": 1,
+    "e": "Die GmbH ist eine Kapitalgesellschaft mit beschränkter Haftung: Gesellschafter haften nur mit ihrer Einlage, nicht mit dem Privatvermögen. Mindestkapital 25.000 €.",
+    "b": "wiso",
+    "q_": "AP2 · WiSo",
+    "cs": [
+      45,
+      28,
+      15,
+      21
+    ],
+    "ws": [
+      5,
+      4,
+      2,
+      4
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 2
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 203,
+    "q": "Wofür wird KI im Rahmen der Prozessanalyse genutzt?",
+    "a": [
+      "Für Mustererkennung, Prognosen und Anomalieerkennung in Prozessdaten",
+      "Zum Ausdrucken von Rechnungen",
+      "Zum Verlegen von Netzwerkkabeln",
+      "Zum Aufbau der Hardware"
+    ],
+    "r": 0,
+    "e": "KI hilft in der Prozessanalyse bei Mustererkennung, Vorhersagen (Predictive Maintenance) und Anomalieerkennung. Sie unterstützt Entscheidungen – die fachliche Bewertung bleibt beim Menschen.",
+    "b": "ki",
+    "q_": "KI",
+    "cs": [
+      68,
+      29,
+      31,
+      23
+    ],
+    "ws": [
+      7,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.96
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 268,
+    "q": "Was bedeutet eine Zertifizierung nach einer QS-Norm wie ISO 9001?",
+    "a": [
+      "Eine unabhängige Stelle bestätigt, dass das Managementsystem die Norm erfüllt",
+      "Der Betrieb schreibt sich selbst ein Gütesiegel",
+      "Ein Mitarbeiter bekommt eine Urkunde",
+      "Das Produkt wird kostenlos"
+    ],
+    "r": 0,
+    "e": "Zertifizierung heißt: Eine unabhängige Stelle prüft, ob das Managementsystem die Anforderungen der Norm (z. B. ISO 9001) erfüllt, und bestätigt das durch ein Zertifikat. Danach folgen regelmäßige Überprüfungen.",
+    "b": "qs",
+    "q_": "PK5",
+    "cs": [
+      77,
+      47,
+      36,
+      26
+    ],
+    "ws": [
+      10,
+      7,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.96
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 312,
+    "q": "„The equipment has reached its end of life.“ – Was bedeutet das?",
+    "a": [
+      "Das Gerät hat das Ende seiner Lebensdauer erreicht (sollte ersetzt werden)",
+      "Das Gerät ist neu auf dem Markt",
+      "Das Gerät wurde repariert",
+      "Das Gerät ist ausgeliehen"
+    ],
+    "r": 0,
+    "e": "„end of life\" (EOL) = Ende der Nutzungs- oder Supportdauer. Danach gibt es oft keine Updates mehr – ein Sicherheitsrisiko.",
+    "b": "englisch",
+    "q_": "EN",
+    "cs": [
+      74,
+      31,
+      25,
+      25
+    ],
+    "ws": [
+      11,
+      7,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.96
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 49,
+    "q": "Was bedeutet Tarifautonomie?",
+    "a": [
+      "Der Staat legt die Löhne fest",
+      "Arbeitgeberverbände und Gewerkschaften vereinbaren Tarifverträge eigenständig",
+      "Jeder Arbeitnehmer verhandelt einzeln",
+      "Die IHK bestimmt die Löhne"
+    ],
+    "r": 1,
+    "e": "Tarifautonomie heißt: Gewerkschaften und Arbeitgeber(verbände) handeln Löhne und Arbeitsbedingungen ohne staatliche Vorgabe in Tarifverträgen aus.",
+    "b": "wiso",
+    "q_": "AP2 · Arbeitsrecht",
+    "cs": [
+      29,
+      77,
+      37,
+      26
+    ],
+    "ws": [
+      6,
+      6,
+      4,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 1.96
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 350,
+    "q": "Wodurch entsteht Wertschöpfung im Unternehmen?",
+    "a": [
+      "Der Wertzuwachs, den ein Unternehmen durch seine Leistung erzeugt",
+      "Der Einkaufspreis eines Produkts",
+      "Die Summe aller Rabatte",
+      "Der Umsatz vor Steuern"
+    ],
+    "r": 0,
+    "e": "Wertschöpfung ist die Differenz zwischen dem Wert der erstellten Leistung und den von außen bezogenen Vorleistungen. Sie ist die Grundlage für Löhne, Zinsen, Steuern und Gewinn.",
+    "b": "wirtschaft",
+    "q_": "PK-03 · Wertschöpfung",
+    "cs": [
+      65,
+      32,
+      23,
+      22
+    ],
+    "ws": [
+      9,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.95
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 531,
+    "q": "Was gehört zu einer guten Auftragsklärung mit dem Kunden?",
+    "a": [
+      "Ziel, Umfang, Termin, Budget und Zuständigkeiten festhalten",
+      "Nur den Preis nennen",
+      "Sofort mit der Arbeit beginnen",
+      "Auf schriftliche Bestätigung verzichten"
+    ],
+    "r": 0,
+    "e": "Die Auftragsklärung legt Ziel, Leistungsumfang, Termine, Budget und Verantwortlichkeiten fest – möglichst schriftlich. So sind Erwartungen abgeglichen und die Basis für die Abnahme ist klar. Kern der Kundenkommunikation.",
+    "b": "kommunikation",
+    "q_": "PK-02 · Kundenberatung",
+    "cs": [
+      59,
+      20,
+      30,
+      39
+    ],
+    "ws": [
+      7,
+      4,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.95
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 227,
+    "q": "Welche Aussage über Ethernet ist richtig?",
+    "a": [
+      "Ethernet ist der Standard für kabelgebundene LANs und überträgt Frames über MAC-Adressen",
+      "Ethernet ist ein reines WLAN-Verfahren",
+      "Ethernet funktioniert nur über Glasfaser",
+      "Ethernet ist ein VPN-Protokoll"
+    ],
+    "r": 0,
+    "e": "Ethernet ist der LAN-Standard auf Schicht 1 und 2. Daten werden in Frames übertragen, adressiert über die MAC-Adresse. Übliche Geschwindigkeiten reichen von 100 Mbit/s bis 10 Gbit/s und darüber.",
+    "b": "netzwerk",
+    "q_": "NW",
+    "cs": [
+      88,
+      38,
+      40,
+      30
+    ],
+    "ws": [
+      12,
+      5,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.93
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 157,
+    "q": "Welche Aufgabe hat eine Aktivierungsfunktion wie ReLU oder Sigmoid in einem neuronalen Netz?",
+    "a": [
+      "Sie speichert die Trainingsdaten zwischen",
+      "Sie führt Nichtlinearität ein, damit auch komplexe Muster lernbar sind",
+      "Sie zählt die Schichten des Netzes",
+      "Sie ersetzt die Gewichte"
+    ],
+    "r": 1,
+    "e": "Ohne Nichtlinearität bliebe jedes noch so tiefe Netz eine einzige lineare Funktion. Aktivierungsfunktionen wie ReLU oder Sigmoid machen das Modell erst fähig, nichtlineare Zusammenhänge abzubilden.",
+    "b": "ki",
+    "q_": "DL",
+    "cs": [
+      41,
+      70,
+      34,
+      24
+    ],
+    "ws": [
+      5,
+      10,
+      6,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.92
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 286,
+    "q": "Was kennzeichnet einen Käufermarkt?",
+    "a": [
+      "Das Angebot übersteigt die Nachfrage – Käufer haben die stärkere Position",
+      "Die Nachfrage übersteigt das Angebot",
+      "Es gibt nur einen Anbieter",
+      "Es gibt keinen Wettbewerb"
+    ],
+    "r": 0,
+    "e": "Im Käufermarkt ist das Angebot größer als die Nachfrage: Der Käufer kann wählen und verhandeln. Im Verkäufermarkt ist es umgekehrt – der Anbieter bestimmt die Bedingungen.",
+    "b": "kommunikation",
+    "q_": "PK2",
+    "cs": [
+      73,
+      36,
+      26,
+      25
+    ],
+    "ws": [
+      11,
+      5,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.92
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 340,
+    "q": "Welche Elemente gehören zu einer Klasse in der objektorientierten Programmierung?",
+    "a": [
+      "Attribute, Methoden und Sichtbarkeiten",
+      "Nur Variablen",
+      "Nur Kommentare",
+      "Ausschließlich Datenbanktabellen"
+    ],
+    "r": 0,
+    "e": "Eine Klasse bündelt Attribute (Eigenschaften), Methoden (Verhalten) und Sichtbarkeiten (public, protected, private). Objekte sind Instanzen der Klasse; Bibliotheken und Frameworks stellen fertige Klassen bereit.",
+    "b": "software",
+    "q_": "PK-04 · OOP",
+    "cs": [
+      38,
+      13,
+      14,
+      32
+    ],
+    "ws": [
+      4,
+      2,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.92
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 552,
+    "q": "Was ist der Sinn eines Puffers im Projektplan?",
+    "a": [
+      "Er fängt unerwartete Verzögerungen ab, ohne den Endtermin zu gefährden",
+      "Er ist ungenutzte Arbeitszeit",
+      "Er verlängert das Projekt immer",
+      "Er ist eine Kostenstelle"
+    ],
+    "r": 0,
+    "e": "Puffer (Reserve) sind eingeplante Zeitreserven, die Verzögerungen auffangen. Man unterscheidet Vorgangs-, Gesamt- und Projekttpuffer. Sinnvoll verwaltet, halten sie den Endtermin stabil; ungenutzt verfallen sie.",
+    "b": "pm",
+    "q_": "PK-01 · Netzplan",
+    "cs": [
+      70,
+      29,
+      31,
+      24
+    ],
+    "ws": [
+      10,
+      4,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.92
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 19,
+    "q": "Was ist die Hauptaufgabe von DHCP?",
+    "a": [
+      "Namen in IP-Adressen übersetzen",
+      "Netzwerkkonfiguration wie IP-Adresse, Maske und Gateway automatisch zuteilen",
+      "Datenverkehr verschlüsseln",
+      "Dateien im Netz bereitstellen"
+    ],
+    "r": 1,
+    "e": "DHCP teilt Clients automatisch eine IP-Adresse, Subnetzmaske, Gateway und DNS-Server zu — mit einer festen Leihdauer (Lease).",
+    "b": "systemloesung",
+    "q_": "AP2 · Netzwerk",
+    "cs": [
+      31,
+      76,
+      26,
+      29
+    ],
+    "ws": [
+      4,
+      8,
+      2,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.92
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 42,
+    "q": "Was ist eine Inventur?",
+    "a": [
+      "Die körperliche Bestandsaufnahme von Vermögen und Schulden zu einem Stichtag",
+      "Die Berechnung des Gewinns",
+      "Die Zahlung offener Rechnungen",
+      "Die Aufstellung des Haushaltsplans"
+    ],
+    "r": 0,
+    "e": "Die Inventur erfasst Bestände (Vorräte, Anlagevermögen, Forderungen, Schulden) körperlich zum Stichtag. Sie ist Grundlage der Bilanz.",
+    "b": "kaufmaennisch",
+    "q_": "AP2 · Rechnungswesen",
+    "cs": [
+      76,
+      26,
+      30,
+      34
+    ],
+    "ws": [
+      10,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.92
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 31,
+    "q": "Was ist der Unterschied zwischen DROP TABLE und TRUNCATE TABLE?",
+    "a": [
+      "DROP löscht nur die Daten, TRUNCATE die Struktur",
+      "TRUNCATE kann nicht rückgängig gemacht werden, DROP schon",
+      "Beide löschen nur Daten",
+      "DROP löscht die ganze Tabelle samt Struktur, TRUNCATE nur die Daten"
+    ],
+    "r": 3,
+    "e": "DROP TABLE entfernt die Tabelle vollständig mit ihrer Struktur. TRUNCATE TABLE leert die Tabelle, behält aber die Struktur – und ist deutlich schneller als DELETE ohne WHERE.",
+    "b": "datenbank",
+    "q_": "DDL",
+    "cs": [
+      48,
+      57,
+      23,
+      67
+    ],
+    "ws": [
+      8,
+      8,
+      4,
+      11
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.91
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 245,
+    "q": "Was ist ein Trojaner im Gegensatz zu einem Virus?",
+    "a": [
+      "Ein Trojaner tarnt sich als nützliches Programm und führt im Hintergrund schädliche Aktionen aus",
+      "Ein Trojaner verbreitet sich selbstständig wie ein Wurm",
+      "Ein Trojaner ist ein Schutzprogramm",
+      "Ein Trojaner befällt nur Hardware"
+    ],
+    "r": 0,
+    "e": "Ein Trojaner (trojanisches Pferd) gelangt als scheinbar nützliche Software auf das System und führt dann schädliche Aktionen aus. Ein Virus hängt sich an Wirtsdateien und verbreitet sich, ein Wurm verbreitet sich selbstständig über Netze.",
+    "b": "sicherheit",
+    "q_": "PK6",
+    "cs": [
+      96,
+      55,
+      35,
+      33
+    ],
+    "ws": [
+      14,
+      8,
+      5,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.91
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 530,
+    "q": "Was bedeutet „Our backup strategy is a combination of local and off-site copies.“?",
+    "a": [
+      "Unsere Sicherungsstrategie kombiniert lokale und externe Kopien.",
+      "Wir sichern gar nicht.",
+      "Wir sichern nur lokal.",
+      "Wir löschen alle Kopien."
+    ],
+    "r": 0,
+    "e": "„combination of local and off-site copies“ = Kombination aus lokalen und externen Kopien – genau die 3-2-1-Regel. „off-site“ = außer Haus.",
+    "b": "englisch",
+    "q_": "PK-02 · Englische Texte",
+    "cs": [
+      64,
+      22,
+      22,
+      24
+    ],
+    "ws": [
+      7,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.91
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 631,
+    "q": "Was bedeutet „Rechenschaftspflicht“ (Accountability) der DSGVO?",
+    "a": [
+      "Das Unternehmen muss die Einhaltung des Datenschutzes nachweisen können – nicht nur behaupten",
+      "Der Datenschutzbeauftragte haftet persönlich",
+      "Nur der Kunde ist verantwortlich",
+      "Rechenschaftspflicht gibt es nicht"
+    ],
+    "r": 0,
+    "e": "Rechenschaftspflicht heißt: Der Verantwortliche muss belegen können, dass er die DSGVO einhält – über Verzeichnisse, Konzepte, AVV, Schulungen und Dokumentation. Nicht nur einhalten, sondern nachweisen.",
+    "b": "recht",
+    "q_": "PK-06 · DSGVO",
+    "cs": [
+      93,
+      44,
+      32,
+      34
+    ],
+    "ws": [
+      13,
+      4,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.91
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 27,
+    "q": "Wozu dient ein Monitoring-System im Betrieb?",
+    "a": [
+      "Es überwacht Systeme fortlaufend und meldet Abweichungen frühzeitig",
+      "Es installiert Software automatisch",
+      "Es ersetzt die Firewall",
+      "Es verwaltet Benutzerrechte"
+    ],
+    "r": 0,
+    "e": "Monitoring erfasst laufend Kennzahlen wie Auslastung, Speicher, Erreichbarkeit und Dienste und alarmiert bei Schwellenwerten — bevor der Ausfall den Anwender trifft.",
+    "b": "systemloesung",
+    "q_": "AP2 · Betrieb",
+    "cs": [
+      67,
+      35,
+      23,
+      27
+    ],
+    "ws": [
+      8,
+      4,
+      4,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.91
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 483,
+    "q": "Was bedeutet „We strongly recommend an encrypted backup off-site.“?",
+    "a": [
+      "Wir empfehlen dringend ein verschlüsseltes Backup außer Haus.",
+      "Wir empfehlen, Backups zu löschen.",
+      "Backups sind unnötig.",
+      "Die Verschlüsselung ist verboten."
+    ],
+    "r": 0,
+    "e": "„strongly recommend“ = dringend empfehlen, „encrypted“ = verschlüsselt, „backup off-site“ = Sicherung außer Haus. Genau die 3-2-1-Empfehlung aus dem Sicherheitsbereich.",
+    "b": "englisch",
+    "q_": "PK-02 · Englische Texte",
+    "cs": [
+      61,
+      34,
+      21,
+      33
+    ],
+    "ws": [
+      8,
+      5,
+      3,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.9
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 344,
+    "q": "Was ist der Zweck eines Pflichtenhefts?",
+    "a": [
+      "Der Auftragnehmer beschreibt, WIE und WOMIT er die Anforderungen umsetzen will",
+      "Der Kunde beschreibt seine Wünsche",
+      "Es enthält nur die Rechnung",
+      "Es ist eine Kopie des Angebots"
+    ],
+    "r": 0,
+    "e": "Im Pflichtenheft legt der Auftragnehmer dar, wie er das Lastenheft umsetzt: Lösungskonzept, Technik, Termine. Damit wird die Leistung prüfbar und dient später als Grundlage für die Abnahme.",
+    "b": "software",
+    "q_": "PK-04 · Lasten-/Pflichtenheft",
+    "cs": [
+      78,
+      34,
+      27,
+      30
+    ],
+    "ws": [
+      11,
+      5,
+      5,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.89
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 244,
+    "q": "Wie funktioniert ein DoS/DDoS-Angriff?",
+    "a": [
+      "Viele Anfragen überlasten einen Dienst, sodass er nicht mehr erreichbar ist",
+      "Passwörter werden geknackt",
+      "Daten werden verschlüsselt",
+      "Ein Back-up wird überschrieben"
+    ],
+    "r": 0,
+    "e": "Ein DoS (Denial of Service) überflutet einen Dienst mit Anfragen, bis er ausfällt. Bei DDoS kommt die Last von vielen verteilten Systemen (Botnetz). Ziel ist die Verletzung der Verfügbarkeit.",
+    "b": "sicherheit",
+    "q_": "PK6",
+    "cs": [
+      75,
+      26,
+      26,
+      30
+    ],
+    "ws": [
+      11,
+      3,
+      3,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.88
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 45,
+    "q": "Welche Konsequenz hat eine hohe Lagerreichweite in Tagen?",
+    "a": [
+      "Viel gebundenes Kapital und höhere Lagerkosten",
+      "Sofort mehr Gewinn",
+      "Weniger Kapitalbindung",
+      "Keine Auswirkung"
+    ],
+    "r": 0,
+    "e": "Je länger Ware im Lager liegt, desto länger ist Kapital gebunden (Lagerkosten, Zinsen, Verderb, Abschreibung). Ziel ist ein niedriger, aber lieferfähiger Bestand.",
+    "b": "kaufmaennisch",
+    "q_": "AP2 · Beschaffung",
+    "cs": [
+      46,
+      18,
+      22,
+      16
+    ],
+    "ws": [
+      6,
+      3,
+      2,
+      2
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.88
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 188,
+    "q": "Was ist bei KI mit personenbezogenen Daten datenschutzrechtlich besonders zu beachten?",
+    "a": [
+      "Trainingsdaten dürfen beliebig aus dem Internet genommen werden",
+      "Es gilt die DSGVO – Datenminimierung, Zweckbindung und Rechtsgrundlage sind Pflicht",
+      "Datenschutz gilt für KI nicht",
+      "Nur Bilder sind personenbezogen"
+    ],
+    "r": 1,
+    "e": "Auch für KI-Training und -Einsatz gilt die DSGVO: Datenminimierung, Zweckbindung, Rechtsgrundlage, Auskunfts- und Löschrechte. Personenbezogene Daten dürfen nicht ohne Grundlage in Modelle einfließen.",
+    "b": "ki",
+    "q_": "KI",
+    "cs": [
+      63,
+      83,
+      29,
+      31
+    ],
+    "ws": [
+      8,
+      11,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.86
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 454,
+    "q": "Wie wird eine m:n-Beziehung relational umgesetzt?",
+    "a": [
+      "Über eine Zwischentabelle mit den Fremdschlüsseln beider Seiten",
+      "Der PK der einen Seite wandert in die andere",
+      "Man speichert die Werte in einer Zelle getrennt durch Kommas",
+      "Es ist nicht umsetzbar"
+    ],
+    "r": 0,
+    "e": "Eine m:n-Beziehung kann relational nicht direkt gespeichert werden. Man zerlegt sie über eine Zwischentabelle (Assoziations-/Verknüpfungstabelle) mit den Fremdschlüsseln beider Seiten – oft als zusammengesetzter Primärschlüssel.",
+    "b": "datenbank",
+    "q_": "PK-04 · ERM",
+    "cs": [
+      63,
+      44,
+      60,
+      22
+    ],
+    "ws": [
+      8,
+      9,
+      10,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 1.86
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 321,
+    "q": "Was sagt eine 80-Plus-Zertifizierung über ein Netzteil aus?",
+    "a": [
+      "Es erreicht einen definierten Mindestwirkungsgrad bei verschiedenen Lasten",
+      "Es hält 80 Plusstunden länger als andere",
+      "Es kann 80 Geräte versorgen",
+      "Es läuft nur bei 80 % Last"
+    ],
+    "r": 0,
+    "e": "80 Plus zertifiziert Netzteile nach ihrem Wirkungsgrad bei 20 %, 50 % und 100 % Last (z. B. Bronze, Gold, Platinum, Titanium). Höhere Stufen = weniger Verluste, weniger Wärme, geringere Betriebskosten.",
+    "b": "hardware",
+    "q_": "PK-03 · Energieeffizienz",
+    "cs": [
+      74,
+      40,
+      27,
+      26
+    ],
+    "ws": [
+      8,
+      7,
+      5,
+      7
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.85
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 488,
+    "q": "Was bedeutet die Angabe „DDR4-3200“ bei Arbeitsspeicher?",
+    "a": [
+      "4. Generation DDR-Speicher mit 3200 MT/s Übertragungsrate",
+      "3200 GB Speicherkapazität",
+      "DDR4 mit 3200 Kernen",
+      "Ein Speicher mit 3200 Watt"
+    ],
+    "r": 0,
+    "e": "DDR4 gibt die Speichergeneration an, 3200 die Übertragungsrate in Megatransfers pro Sekunde (MT/s). Wichtig für die Kompatibilität: Mainboard und CPU müssen die Generation unterstützen. Dual-Channel (zwei Riegel) erhöht die Bandbreite.",
+    "b": "hardware",
+    "q_": "PK-03 · Arbeitsspeicher",
+    "cs": [
+      57,
+      25,
+      20,
+      26
+    ],
+    "ws": [
+      7,
+      3,
+      4,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.85
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 192,
+    "q": "Was ist ein Expertensystem?",
+    "a": [
+      "Ein regelbasiertes KI-System, das Wissen und Schlussregeln eines Fachexperten nachbildet",
+      "Ein neuronales Netz mit vielen Schichten",
+      "Ein Datenbanksystem ohne Regeln",
+      "Ein reines Rechenprogramm ohne Wissen"
+    ],
+    "r": 0,
+    "e": "Ein Expertensystem gehört zur klassischen, symbolischen KI: Der Mensch hinterlegt Wissen als Regeln (WENN … DANN …). Es braucht keine großen Datenmengen – im Gegensatz zum maschinellen Lernen.",
+    "b": "ki",
+    "q_": "KI",
+    "cs": [
+      88,
+      40,
+      31,
+      37
+    ],
+    "ws": [
+      10,
+      6,
+      4,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.84
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 304,
+    "q": "„We offer a 5% discount for early payment.“ – Welcher deutschen kaufmännischen Position entspricht das?",
+    "a": [
+      "Skonto – Preisnachlass bei schneller Zahlung",
+      "Rabatt – Preisnachlass unabhängig von der Zahlungszeit",
+      "Zuschlag – Aufpreis",
+      "Provision – Vergütung für Vermittlung"
+    ],
+    "r": 0,
+    "e": "Bestimmte Zeit für die Zahlung → Skonto („discount for early payment\"/„cash discount\"). Rabatt wäre „discount\" ohne Zeitbezug. Merke: Skonto = Zeitvorteil, Rabatt = Mengen-/Kundenbezug.",
+    "b": "englisch",
+    "q_": "EN",
+    "cs": [
+      44,
+      54,
+      19,
+      37
+    ],
+    "ws": [
+      6,
+      7,
+      3,
+      5
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 1.84
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 306,
+    "q": "Was ist ein „data breach?",
+    "a": [
+      "Ein Datenschutzvorfall – unerlaubter Zugriff auf oder Verlust von Daten",
+      "Die planmäßige Datensicherung",
+      "Die Verschlüsselung einer Festplatte",
+      "Das Löschen alter Dateien"
+    ],
+    "r": 0,
+    "e": "„data breach\" = Datenschutzvorfall/Verletzung der Datensicherheit. Meldepflichtig nach DSGVO, wenn personenbezogene Daten betroffen sind.",
+    "b": "englisch",
+    "q_": "EN",
+    "cs": [
+      71,
+      29,
+      36,
+      25
+    ],
+    "ws": [
+      10,
+      3,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.84
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 12,
+    "q": "Wozu dient die Nutzwertanalyse im Angebotsvergleich?",
+    "a": [
+      "Sie wählt immer den günstigsten Anbieter",
+      "Sie bewertet auch weiche Kriterien durch Gewichtung und Punktvergabe",
+      "Sie ersetzt die Rechnung",
+      "Sie berechnet die Umsatzsteuer"
+    ],
+    "r": 1,
+    "e": "Die Nutzwertanalyse macht qualitative Kriterien vergleichbar: Jedes Kriterium wird gewichtet, jeder Anbieter je Kriterium bewertet, die Teilnutzen werden summiert. Der höchste Nutzwert gewinnt.",
+    "b": "kundenauftrag",
+    "q_": "AP2 · Beschaffung",
+    "cs": [
+      40,
+      68,
+      24,
+      30
+    ],
+    "ws": [
+      6,
+      9,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.83
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 39,
+    "q": "Was sagt die Rentabilität aus?",
+    "a": [
+      "Das Verhältnis eines Erfolgs zur eingesetzten Basis in Prozent",
+      "Die absolute Höhe des Gewinns",
+      "Die Summe aller Kosten",
+      "Die Anzahl der Beschäftigten"
+    ],
+    "r": 0,
+    "e": "Rentabilität ist immer ein Prozentverhältnis: z. B. Eigenkapitalrentabilität = Gewinn × 100 ÷ Eigenkapital. Sie macht Betriebe und Jahre vergleichbar.",
+    "b": "kaufmaennisch",
+    "q_": "AP2 · Kennzahlen",
+    "cs": [
+      62,
+      29,
+      22,
+      28
+    ],
+    "ws": [
+      9,
+      5,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.82
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 330,
+    "q": "Was unterscheidet Standardsoftware von Individualsoftware?",
+    "a": [
+      "Standardsoftware ist fertig und wird lizenziert, Individualsoftware wird für einen Auftrag entwickelt",
+      "Standardsoftware ist immer kostenlos",
+      "Individualsoftware läuft nur im Browser",
+      "Standardsoftware darf nicht angepasst werden"
+    ],
+    "r": 0,
+    "e": "Standardsoftware (z. B. Office, ERP-Module) ist für viele Kunden fertig und sofort verfügbar – günstig, aber oft Kompromiss. Individualsoftware wird genau für den Bedarf entwickelt – passgenau, aber teurer und wartungsintensiver.",
+    "b": "software",
+    "q_": "PK-04 · Softwareauswahl",
+    "cs": [
+      101,
+      36,
+      39,
+      44
+    ],
+    "ws": [
+      12,
+      4,
+      5,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.81
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 555,
+    "q": "Welche Aufgabe hat eine Meilensteinliste im Projekt?",
+    "a": [
+      "Sie legt wichtige Zwischenergebnisse mit Termin und Verantwortlichem fest",
+      "Sie listet alle Rechnungen",
+      "Sie enthält die Mitarbeiteradressen",
+      "Sie beschreibt die Software"
+    ],
+    "r": 0,
+    "e": "Meilensteine markieren entscheidende Zwischenergebnisse/Entscheidungen mit Termin. Eine Meilensteinliste dient der Steuerung und Kommunikation – man erkennt früh, ob ein Termin wackelt (Meilensteintrendanalyse).",
+    "b": "pm",
+    "q_": "PK-01 · Terminplanung",
+    "cs": [
+      73,
+      26,
+      35,
+      27
+    ],
+    "ws": [
+      9,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.81
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 426,
+    "q": "Was ist ein Qualitätsmanagement-Handbuch?",
+    "a": [
+      "Es beschreibt die Grundsätze und Verfahren eines Unternehmens zur Qualitätssicherung",
+      "Es ist ein Handbuch für Kunden",
+      "Es enthält nur die Notfallnummern",
+      "Es listet alle Mitarbeiter auf"
+    ],
+    "r": 0,
+    "e": "Das QM-Handbuch (z. B. nach ISO 9001) legt fest, wie das Unternehmen Qualität plant, sichert und verbessert: Zuständigkeiten, Prozesse, Prüfungen, Dokumentation. Es ist die Richtlinie für alle QM-Verfahren.",
+    "b": "qs",
+    "q_": "PK-05 · QM",
+    "cs": [
+      84,
+      30,
+      33,
+      30
+    ],
+    "ws": [
+      10,
+      6,
+      5,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.8
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 521,
+    "q": "Was ist bei der Anpassung von Software (Customizing) zu beachten?",
+    "a": [
+      "Anpassungen müssen dokumentiert und bei Updates mitgeführt werden, sonst brechen sie",
+      "Anpassungen sind immer verboten",
+      "Anpassungen löschen die Lizenz",
+      "Anpassungen betreffen nur Farben"
+    ],
+    "r": 0,
+    "e": "Customizing passt Standardsoftware an den Bedarf an. Wichtig: Änderungen dokumentieren, testen und bei Updates/Upgrades nachziehen – sonst gehen sie verloren oder verursachen Fehler. Ggf. Herstellerrichtlinien beachten.",
+    "b": "software",
+    "q_": "PK-04 · Software",
+    "cs": [
+      84,
+      31,
+      30,
+      32
+    ],
+    "ws": [
+      11,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.8
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 542,
+    "q": "Was ist der Broadcast in einem IPv4-Subnetz?",
+    "a": [
+      "Eine Nachricht an alle Hosts des Subnetzes (höchste Adresse, Host-Bits alle 1)",
+      "Eine Nachricht an einen Host",
+      "Eine Nachricht an einen Server",
+      "Eine verschlüsselte Nachricht"
+    ],
+    "r": 0,
+    "e": "Die Broadcastadresse ist die letzte Adresse im Subnetz (Host-Bits alle 1), z. B. 192.168.10.255 bei /24. Sie erreicht alle Hosts. Nicht an Hosts vergeben. IPv6 kennt keinen Broadcast, sondern Multicast.",
+    "b": "netzwerk",
+    "q_": "PK-03 · Subnetting",
+    "cs": [
+      78,
+      28,
+      30,
+      29
+    ],
+    "ws": [
+      12,
+      5,
+      5,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.79
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 473,
+    "q": "Welche Aussage über die Partitionierung einer Festplatte ist richtig?",
+    "a": [
+      "Eine Partition ist ein logisch abgetrennter Bereich; das Dateisystem wird auf der Partition angelegt",
+      "Eine Partition ist ein Kabel im Rechner",
+      "Eine Partition ist ein Benutzerkonto",
+      "Eine Partition ist immer nur eine Datei"
+    ],
+    "r": 0,
+    "e": "Bei der Einrichtung wird die Festplatte in Partitionen (logisch getrennte Bereiche) geteilt und jede Partition formatiert (Dateisystem, z. B. NTFS, ext4). So trennt man System, Daten und ggf. Sicherungsbereiche – auch für Multiboot.",
+    "b": "software",
+    "q_": "PK-04 · Installation",
+    "cs": [
+      100,
+      39,
+      36,
+      39
+    ],
+    "ws": [
+      14,
+      7,
+      5,
+      7
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.78
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 439,
+    "q": "Was ist ein Leasingvertrag?",
+    "a": [
+      "Der Leasinggeber überlässt ein Objekt zur Nutzung gegen Raten, bleibt meist Eigentümer",
+      "Der Kunde kauft sofort und endgültig",
+      "Der Vertrag ist immer kostenlos",
+      "Das Objekt wechselt sofort den Eigentümer"
+    ],
+    "r": 0,
+    "e": "Beim Leasing bleibt der Leasinggeber Eigentümer, der Kunde zahlt Raten für die Nutzung. Vorteil: geringe Anfangskosten, steuerliche Gestaltung. Nach Vertragsende Rückgabe, Weiterführung oder Kaufoption zum Restwert. Abgrenzung zum Mietvertrag: meist fester, längerer Nutzungszeitraum.",
+    "b": "vertrag",
+    "q_": "PK-07 · Vertragsarten",
+    "cs": [
+      86,
+      36,
+      31,
+      41
+    ],
+    "ws": [
+      12,
+      6,
+      5,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.77
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 589,
+    "q": "Ein Nutzer meldet „kein Internet“, kann aber den Drucker im LAN erreichen. Was ist wahrscheinlich?",
+    "a": [
+      "Das LAN funktioniert – es fehlt das Standard-Gateway oder DNS",
+      "Die Netzwerkkarte ist defekt",
+      "Das Kabel zum Drucker ist falsch",
+      "Der Drucker ist schuld"
+    ],
+    "r": 0,
+    "e": "Wenn das LAN/das Druckerziel erreichbar ist, funktioniert die lokale Verbindung. Fehlt das Internet, liegt es häufig am Standard-Gateway (Router) oder DNS. Prüfen: ipconfig (Gateway/DNS), ping auf Gateway und auf eine externe IP, dann nslookup.",
+    "b": "netzwerk",
+    "q_": "PK-01 · Fehleranalyse",
+    "cs": [
+      61,
+      28,
+      32,
+      22
+    ],
+    "ws": [
+      10,
+      4,
+      6,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.77
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 162,
+    "q": "Was macht der K-Means-Algorithmus?",
+    "a": [
+      "Er teilt Datenpunkte in k Gruppen ein, deren Zentroide die geringste Gesamtabweichung haben",
+      "Er berechnet eine Gerade durch alle Punkte",
+      "Er klassifiziert Daten anhand vorher bekannter Labels",
+      "Er sortiert Zahlen der Größe nach"
+    ],
+    "r": 0,
+    "e": "K-Means ist ein Verfahren des unüberwachten Lernens: k Cluster werden schrittweise so gebildet, dass die Summe der quadrierten Abstände der Punkte zu ihrem Clusterzentrum (Zentroid) minimal wird.",
+    "b": "ki",
+    "q_": "ML",
+    "cs": [
+      91,
+      42,
+      53,
+      33
+    ],
+    "ws": [
+      13,
+      7,
+      7,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.76
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 8,
+    "q": "Wozu dient der Projektstrukturplan (PSP)?",
+    "a": [
+      "Er rechnet die Projektkosten aus",
+      "Er zerlegt das Projekt hierarchisch in Teilaufgaben und Arbeitspakete",
+      "Er protokolliert die Abnahme",
+      "Er misst die Netzwerklast"
+    ],
+    "r": 1,
+    "e": "Der PSP gliedert das Gesamtprojekt in überschaubare Teilaufgaben und Arbeitspakete. Er ist die Grundlage für Aufwandsschätzung, Termin- und Kostplanung.",
+    "b": "kundenauftrag",
+    "q_": "AP2 · Projektmanagement",
+    "cs": [
+      32,
+      69,
+      28,
+      25
+    ],
+    "ws": [
+      5,
+      9,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.76
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 428,
+    "q": "Was besagt das Sender-Empfänger-Modell?",
+    "a": [
+      "Der Sender kodiert eine Nachricht, der Empfänger dekodiert sie – Störungen (Rauschen) möglich",
+      "Nur der Sender bestimmt die Bedeutung",
+      "Nachrichten laufen immer ungestört",
+      "Kommunikation ist immer schriftlich"
+    ],
+    "r": 0,
+    "e": "Das Modell (Shannon/Weaver) beschreibt Kommunikation als Übertragung einer Nachricht vom Sender zum Empfänger über einen Kanal, mit Kodierung, Dekodierung und möglichen Störungen. Es erklärt, warum Missverständnisse entstehen.",
+    "b": "kommunikation",
+    "q_": "PK-02 · Kommunikationsmodelle",
+    "cs": [
+      93,
+      37,
+      34,
+      35
+    ],
+    "ws": [
+      13,
+      6,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.74
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 24,
+    "q": "Welcher Vorteil spricht für Servervirtualisierung?",
+    "a": [
+      "Bessere Auslastung der Hardware und schnellere Bereitstellung neuer Server",
+      "Die Hardware kann danach wegfallen",
+      "Sie ersetzt Datensicherungen",
+      "Sie macht Netze überflüssig"
+    ],
+    "r": 0,
+    "e": "Virtualisierung bündelt mehrere virtuelle Server auf einer physischen Maschine: höhere Auslastung, schnellere Bereitstellung, einfachere Sicherung über Snapshots. Ausfallsicherheit muss aber durch Redundanz ergänzt werden.",
+    "b": "systemloesung",
+    "q_": "AP2 · Systemlösung",
+    "cs": [
+      74,
+      34,
+      28,
+      27
+    ],
+    "ws": [
+      9,
+      5,
+      3,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.74
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 193,
+    "q": "Welche Aussage unterscheidet symbolische KI von maschinellem Lernen?",
+    "a": [
+      "Symbolische KI nutzt feste Regeln, ML lernt Muster aus Daten",
+      "Beide benötigen keinen Menschen",
+      "ML arbeitet ohne Daten",
+      "Symbolische KI braucht immer eine GPU"
+    ],
+    "r": 0,
+    "e": "Symbolische KI (z. B. Expertensystem) arbeitet mit vom Menschen formulierten Regeln. Maschinelles Lernen leitet die Regeln aus Beispieldaten ab. Deshalb brauchen ML und DL viele Daten.",
+    "b": "ki",
+    "q_": "KI",
+    "cs": [
+      60,
+      31,
+      22,
+      37
+    ],
+    "ws": [
+      10,
+      4,
+      4,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.73
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 211,
+    "q": "Welche Rolle hat ein Access Point im Netzwerk?",
+    "a": [
+      "Er bindet WLAN-Geräte drahtlos an das kabelgebundene Netz an",
+      "Er vergibt IP-Adressen",
+      "Er verschlüsselt Festplatten",
+      "Er ersetzt den Router vollständig"
+    ],
+    "r": 0,
+    "e": "Ein Access Point (AP) ist der drahtlose Zugangspunkt: Er verbindet WLAN-Clients mit dem LAN. Häufig ist er im WLAN-Router integriert. Ein WLAN-Router vereint Router, Switch und Access Point.",
+    "b": "netzwerk",
+    "q_": "NW",
+    "cs": [
+      60,
+      22,
+      28,
+      33
+    ],
+    "ws": [
+      9,
+      3,
+      3,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.73
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 399,
+    "q": "Wofür steht die Abkürzung BSI?",
+    "a": [
+      "Bundesamt für Sicherheit in der Informationstechnik – es gibt den IT-Grundschutz heraus",
+      "Bundesverband Software Industrie",
+      "Betriebliches Sicherheitsinstitut",
+      "Bundesdatenschutz-Schlichtungsinstanz"
+    ],
+    "r": 0,
+    "e": "Das BSI (Bundesamt für Sicherheit in der Informationstechnik) ist die nationale Cyber-Sicherheitsbehörde. Sein IT-Grundschutz-Kompendium liefert Bausteine, Maßnahmen und Methoden für die Praxis und die Schutzbedarfsanalyse.",
+    "b": "recht",
+    "q_": "PK-06 · BSI",
+    "cs": [
+      87,
+      32,
+      33,
+      37
+    ],
+    "ws": [
+      12,
+      3,
+      2,
+      1
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.72
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 461,
+    "q": "Wann verletzt eine Tabelle die 2. Normalform?",
+    "a": [
+      "Wenn ein Nicht-Schlüssel-Attribut nur von einem Teil eines zusammengesetzten Schlüssels abhängt",
+      "Wenn eine Zelle mehrere Werte enthält",
+      "Wenn ein Attribut von einem anderen Nicht-Schlüssel-Attribut abhängt",
+      "Wenn es keinen Primärschlüssel gibt"
+    ],
+    "r": 0,
+    "e": "Die 2. NF verlangt, dass jedes Nicht-Schlüssel-Attribut vom vollständigen (zusammengesetzten) Schlüssel abhängt – nicht nur von einem Teil davon. Mehrere Werte in einer Zelle verletzen die 1. NF; Abhängigkeit von einem anderen Nicht-Schlüssel-Attribut die 3. NF.",
+    "b": "datenbank",
+    "q_": "PK-04 · Normalformen",
+    "cs": [
+      95,
+      37,
+      68,
+      35
+    ],
+    "ws": [
+      11,
+      6,
+      8,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.71
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 57,
+    "q": "Welche Maßnahme ist eine aktive arbeitsmarktpolitische Maßnahme des Staates?",
+    "a": [
+      "Qualifizierung und Umschulung von Arbeitslosen",
+      "Erhöhung der Mehrwertsteuer",
+      "Senkung der Zölle",
+      "Verkauf von Staatsanleihen"
+    ],
+    "r": 0,
+    "e": "Aktive Arbeitsmarktpolitik gestaltet den Markt, etwa durch Qualifizierung, Umschulung und Beschäftigungsförderung. Passive Maßnahmen zahlen Geld, z. B. Arbeitslosengeld.",
+    "b": "wiso",
+    "q_": "AP2 · WiSo",
+    "cs": [
+      46,
+      27,
+      17,
+      26
+    ],
+    "ws": [
+      5,
+      3,
+      3,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.71
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 438,
+    "q": "Was ist der Unterschied zwischen Werkvertrag und Dienstvertrag?",
+    "a": [
+      "Werkvertrag schuldet ein Erfolgsergebnis, Dienstvertrag nur die Tätigkeit",
+      "Beide schulden ein Ergebnis",
+      "Dienstvertrag betrifft nur Hardware",
+      "Werkvertrag betrifft nur Software"
+    ],
+    "r": 0,
+    "e": "Beim Werkvertrag wird ein bestimmtes Ergebnis („Werk“) geschuldet – z. B. eine fertige Website; erst der Erfolg ist geschuldet. Beim Dienstvertrag wird die Tätigkeit selbst geschuldet (z. B. Beratung, Support), ohne Erfolgsgarantie. Das beeinflusst Haftung und Vergütung.",
+    "b": "vertrag",
+    "q_": "PK-07 · Vertragsarten",
+    "cs": [
+      73,
+      27,
+      35,
+      33
+    ],
+    "ws": [
+      8,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.7
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 69,
+    "q": "Der Lieferant schickt 8 von 10 bestellten Notebooks. Um welche Mängelart handelt es sich?",
+    "a": [
+      "Schlechtleistung",
+      "Minderlieferung",
+      "Falschlieferung",
+      "Verzug"
+    ],
+    "r": 1,
+    "e": "Minderlieferung = zu wenig geliefert. Schlechtleistung = mangelhafte Qualität, Falschlieferung = falscher Artikel (aliud). Verzug ist dagegen eine Terminüberschreitung. Die drei Mängelarten sind PK-07-Pflichtstoff.",
+    "b": "vertrag",
+    "q_": "PK7",
+    "cs": [
+      16,
+      15,
+      15,
+      6
+    ],
+    "ws": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 1.67
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 216,
+    "q": "Welcher Befehl ordnet einer IP-Adresse die zugehörige MAC-Adresse zu?",
+    "a": [
+      "arp",
+      "ping",
+      "ipconfig",
+      "tracert"
+    ],
+    "r": 0,
+    "e": "ARP (Address Resolution Protocol) und der Befehl arp zeigen die Zuordnung IP-Adresse ↔ MAC-Adresse im lokalen Netz. Diese Zuordnung braucht ein Gerät, um einen Frame im LAN adressieren zu können.",
+    "b": "netzwerk",
+    "q_": "NW",
+    "cs": [
+      3,
+      4,
+      8,
+      7
+    ],
+    "ws": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 1.67
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 429,
+    "q": "Welche vier Seiten hat eine Nachricht nach dem 4-Ohren-Modell (Schulz von Thun)?",
+    "a": [
+      "Sachinhalt, Selbstoffenbarung, Beziehung, Appell",
+      "Sender, Empfänger, Kanal, Störung",
+      "Wer, Wie, Wo, Wann",
+      "Sehen, Hören, Fühlen, Sprechen"
+    ],
+    "r": 0,
+    "e": "Jede Nachricht hat nach Schulz von Thun vier Seiten: Sachinhalt (worüber informiere ich), Selbstoffenbarung (was gebe ich von mir preis), Beziehung (wie stehe ich zu dir) und Appell (was sollst du tun). Missverständnisse entstehen, wenn Sender und Empfänger auf unterschiedlichen Ohren hören.",
+    "b": "kommunikation",
+    "q_": "PK-02 · Kommunikationsmodelle",
+    "cs": [
+      48,
+      33,
+      18,
+      30
+    ],
+    "ws": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": false,
+      "span": 1.67
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 619,
+    "q": "Was bedeutet „The client requested a refund for the unused licenses.“?",
+    "a": [
+      "Der Kunde verlangt eine Rückerstattung für die nicht genutzten Lizenzen.",
+      "Der Kunde bestellt mehr Lizenzen.",
+      "Der Kunde hat keine Lizenz.",
+      "Der Kunde verlangt eine neue Festplatte."
+    ],
+    "r": 0,
+    "e": "„refund“ = Rückerstattung, „unused licenses“ = nicht genutzte Lizenzen. Wichtig für kaufmännische Vorgänge – hier prüft man vertragliche Regelungen (Rückgabe, Lizenzbedingungen).",
+    "b": "englisch",
+    "q_": "PK-02 · Englische Texte",
+    "cs": [
+      72,
+      33,
+      27,
+      40
+    ],
+    "ws": [
+      10,
+      5,
+      5,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.67
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 237,
+    "q": "Warum verschlüsselt ein Hash-Verfahren im Gegensatz zur Verschlüsselung nicht umkehrbar?",
+    "a": [
+      "Ein Hash ist eine Einwegfunktion – aus dem Hashwert lassen sich die Originaldaten nicht zurückrechnen",
+      "Weil Hashes kürzer sind als Passwörter",
+      "Weil Hashes nur für Bilder funktionieren",
+      "Weil Hashes nicht gespeichert werden dürfen"
+    ],
+    "r": 0,
+    "e": "Ein Hashwert ist eine Einwegfunktion fester Länge. Er dient dem Integritätsnachweis, nicht der Wiederherstellung des Originals. Auch bei winziger Änderung der Eingabe entsteht ein völlig anderer Hashwert (Lawineneffekt).",
+    "b": "sicherheit",
+    "q_": "PK6",
+    "cs": [
+      101,
+      38,
+      40,
+      43
+    ],
+    "ws": [
+      15,
+      6,
+      6,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.66
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 11,
+    "q": "Wann ist die Eigenfertigung (Make) gegenüber dem Fremdbezug (Buy) wirtschaftlich sinnvoll?",
+    "a": [
+      "Immer, Eigenfertigung ist immer günstiger",
+      "Wenn die Selbstkosten dauerhaft unter dem Fremdbezugspreis liegen und Know-how im Haus bleibt",
+      "Nur wenn keine eigenen Mitarbeiter verfügbar sind",
+      "Wenn die Fremdkosten unbekannt sind"
+    ],
+    "r": 1,
+    "e": "Make or Buy vergleicht die eigenen Selbstkosten mit dem Fremdbezugspreis. Eigenfertigung lohnt sich bei dauerhaft niedrigeren Kosten, verfügbarer Kapazität und strategisch wichtiger Kernkompetenz.",
+    "b": "kundenauftrag",
+    "q_": "AP2 · Beschaffung",
+    "cs": [
+      41,
+      93,
+      49,
+      35
+    ],
+    "ws": [
+      5,
+      13,
+      7,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.66
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 267,
+    "q": "Welche drei Fachbegriffe verlangt der Prüfungskatalog im Qualitätsmanagement?",
+    "a": [
+      "Betriebliche QM-Systeme, QS-Normen und Zertifizierung",
+      "Kauf, Leasing, Miete",
+      "Plan, Preis, Produkt",
+      "Hardware, Software, Netzwerk"
+    ],
+    "r": 0,
+    "e": "Gefordert sind das Grundverständnis betrieblicher QM-Systeme, der QS-Normen (z. B. ISO 9001) und der Zertifizierung – dem externen Nachweis, dass die Norm erfüllt ist.",
+    "b": "qs",
+    "q_": "PK5",
+    "cs": [
+      53,
+      20,
+      20,
+      28
+    ],
+    "ws": [
+      5,
+      3,
+      3,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.65
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 443,
+    "q": "Was unterscheidet den Kaufvertrag vom Lizenzvertrag bei Software?",
+    "a": [
+      "Beim Kauf geht ein Gegenstand über, beim Lizenzvertrag werden Nutzungsrechte eingeräumt",
+      "Beide übertragen Eigentum an der Software",
+      "Bei Software gibt es nie Lizenzen",
+      "Ein Lizenzvertrag verbietet jede Nutzung"
+    ],
+    "r": 0,
+    "e": "Software wird meist nicht verkauft, sondern lizenziert: Der Kunde erhält Nutzungsrechte unter Bedingungen (Anzahl, Umfang, Dauer), der Urheber behält die wirtschaftlichen Rechte. Beim Kaufvertrag geht dagegen eine Sache ins Eigentum des Käufers über.",
+    "b": "vertrag",
+    "q_": "PK-07 · Vertragsarten",
+    "cs": [
+      87,
+      41,
+      33,
+      40
+    ],
+    "ws": [
+      11,
+      6,
+      6,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.64
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 187,
+    "q": "Welche Rolle hilft, einfache Aufgaben im Support durch KI zu automatisieren?",
+    "a": [
+      "Ein Expertensystem oder ein KI-basierter Assistent für Standardfälle",
+      "Der Austausch aller Server",
+      "Das Löschen der Wissensdatenbank",
+      "Die Stilllegung des Ticketsystems"
+    ],
+    "r": 0,
+    "e": "Standardfälle (Passwort zurücksetzen, FAQ, Statusabfrage) lassen sich durch einen KI-Assistenten oder regelbasiertes Expertensystem automatisch beantworten. Das entlastet den First-Level-Support für schwierige Fälle.",
+    "b": "ki",
+    "q_": "KI",
+    "cs": [
+      68,
+      26,
+      32,
+      33
+    ],
+    "ws": [
+      8,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.62
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 434,
+    "q": "Wie führt man eine Bedarfsanalyse beim Kunden durch?",
+    "a": [
+      "Bedarfe systematisch erheben (z. B. Befragung, Ist-Analyse) und auswerten",
+      "Einfach das Teuerste verkaufen",
+      "Ohne Fragen ein Angebot schreiben",
+      "Nur auf die Homepage schauen"
+    ],
+    "r": 0,
+    "e": "Die Bedarfsanalyse ermittelt Ziele, Anforderungen, Rahmenbedingungen und Budget des Kunden – durch Befragung, Beobachtung, Auswertung vorhandener Daten. Erst danach lässt sich ein passendes Angebot erstellen. Der Katalog nennt eigene Datenerhebung und Zielgruppendefinition.",
+    "b": "kommunikation",
+    "q_": "PK-02 · Beratung",
+    "cs": [
+      73,
+      30,
+      33,
+      28
+    ],
+    "ws": [
+      9,
+      4,
+      5,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.61
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 18,
+    "q": "Welche Aufgabe hat DNS?",
+    "a": [
+      "Er vergibt IP-Adressen automatisch",
+      "Er übersetzt Namen in IP-Adressen und umgekehrt",
+      "Er verschlüsselt Webseiten",
+      "Er filtert E-Mails"
+    ],
+    "r": 1,
+    "e": "Das Domain Name System löst Namen wie example.de in IP-Adressen auf (und umgekehrt über Reverse-Lookups). Die automatische Adressvergabe ist Aufgabe von DHCP.",
+    "b": "systemloesung",
+    "q_": "AP2 · Netzwerk",
+    "cs": [
+      34,
+      47,
+      26,
+      18
+    ],
+    "ws": [
+      4,
+      7,
+      3,
+      3
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.61
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 36,
+    "q": "Wie funktioniert die Zuschlagskalkulation?",
+    "a": [
+      "Auf die Einzelkosten werden Gemeinkosten über Zuschlagsätze aufgeschlagen",
+      "Alle Kosten werden geschätzt",
+      "Nur Materialkosten werden berücksichtigt",
+      "Die Kosten werden vom Kunden festgelegt"
+    ],
+    "r": 0,
+    "e": "Die Zuschlagskalkulation trennt Einzelkosten (direkt zurechenbar) und Gemeinkosten (nicht direkt zurechenbar). Gemeinkosten werden über prozentuale Zuschlagsätze auf die Einzelkosten aufgeschlagen.",
+    "b": "kaufmaennisch",
+    "q_": "AP2 · Kostenrechnung",
+    "cs": [
+      73,
+      28,
+      40,
+      39
+    ],
+    "ws": [
+      8,
+      4,
+      4,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.61
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 160,
+    "q": "Was ist die Voraussetzung für überwachtes Lernen?",
+    "a": [
+      "Unbeschriftete Daten",
+      "Beschriftete Daten mit bekannten Zielwerten (Labels)",
+      "Ein Belohnungssystem für den Agenten",
+      "Eine Datenbank ohne Schema"
+    ],
+    "r": 1,
+    "e": "Überwachtes Lernen braucht Daten mit zugehörigen Labels (Ground Truth): Input plus gewünschte Ausgabe. Unüberwachtes Lernen arbeitet ohne Labels, bestärkendes Lernen über Belohnung und Strafe.",
+    "b": "ki",
+    "q_": "ML",
+    "cs": [
+      20,
+      52,
+      36,
+      26
+    ],
+    "ws": [
+      2,
+      6,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.6
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 462,
+    "q": "Ein Kunde soll in einem System mehrere Rechnungen haben können, jede Rechnung genau einem Kunden zugeordnet. Welches Beziehungsmuster liegt vor?",
+    "a": [
+      "1:n – ein Kunde zu vielen Rechnungen",
+      "m:n – viele Kunden zu vielen Rechnungen",
+      "1:1 – ein Kunde zu einer Rechnung",
+      "Keine Beziehung"
+    ],
+    "r": 0,
+    "e": "Ein Kunde kann mehrere Rechnungen haben, aber jede Rechnung gehört zu genau einem Kunden → 1:n. Umsetzung: Der Primärschlüssel von Kunde wandert als Fremdschlüssel in die Rechnungstabelle. Nur wenn eine Rechnung auch mehrere Kunden hätte, wäre es m:n.",
+    "b": "datenbank",
+    "q_": "PK-04 · Kardinalitäten",
+    "cs": [
+      36,
+      39,
+      33,
+      15
+    ],
+    "ws": [
+      7,
+      7,
+      7,
+      2
+    ],
+    "flags": {
+      "longestChar": false,
+      "longestWord": false,
+      "span": 1.6
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 470,
+    "q": "Was ist ein Trainingsdatensatz beim maschinellen Lernen?",
+    "a": [
+      "Die Beispieldaten, mit denen das Modell Muster lernt",
+      "Das fertige Programm",
+      "Die Verkabelung im Rechenzentrum",
+      "Die Rechnung des Anbieters"
+    ],
+    "r": 0,
+    "e": "Ein Modell lernt aus einem Trainingsdatensatz. Ein separater Testdatensatz prüft, wie gut das Modell auf unbekannte Daten verallgemeinert. Lernt es die Trainingsdaten nur auswendig, spricht man von Overfitting.",
+    "b": "ki",
+    "q_": "PK-04 · KI",
+    "cs": [
+      52,
+      20,
+      32,
+      26
+    ],
+    "ws": [
+      8,
+      3,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.6
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 168,
+    "q": "Warum wird ein Datensatz vor dem Training in Trainings-, Validierungs- und Testdaten aufgeteilt?",
+    "a": [
+      "Damit die Daten normalisiert werden",
+      "Damit das Modell auf ungesehenen Daten ehrlich bewertet werden kann",
+      "Damit weniger Speicher benötigt wird",
+      "Damit die Labels entfallen"
+    ],
+    "r": 1,
+    "e": "Nur mit zurückgehaltenen Daten lässt sich prüfen, ob ein Modell generalisiert. Üblich sind etwa 70–80 % Training, 10–15 % Validierung (zum Optimieren der Parameter) und 20–30 % Test (zur abschließenden Bewertung).",
+    "b": "ki",
+    "q_": "ML",
+    "cs": [
+      35,
+      67,
+      36,
+      26
+    ],
+    "ws": [
+      5,
+      10,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.58
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 280,
+    "q": "Was kennzeichnet einen Werkvertrag gegenüber einem Dienstvertrag?",
+    "a": [
+      "Beim Werkvertrag wird ein Erfolg geschuldet, beim Dienstvertrag die Tätigkeit",
+      "Beim Dienstvertrag wird ein Erfolg geschuldet",
+      "Beide schulden nur eine Tätigkeit",
+      "Beide sind nur mündlich gültig"
+    ],
+    "r": 0,
+    "e": "Werkvertrag (BGB §§ 631 ff.): geschuldet ist der Erfolg, z. B. „eine funktionsfähige Website\". Dienstvertrag (BGB §§ 611 ff.): geschuldet ist die Tätigkeit, z. B. „Support nach Stunden\". Mängel kann man nur beim Werkvertrag nachbessern lassen.",
+    "b": "vertrag",
+    "q_": "PK7",
+    "cs": [
+      77,
+      45,
+      33,
+      30
+    ],
+    "ws": [
+      10,
+      6,
+      5,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.57
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 309,
+    "q": "„The client requested a quote.“ – Was bedeutet das?",
+    "a": [
+      "Der Kunde hat ein Angebot (einen Kostenvoranschlag) angefragt",
+      "Der Kunde hat den Vertrag unterschrieben",
+      "Der Kunde hat eine Rechnung erhalten",
+      "Der Kunde hat reklamiert"
+    ],
+    "r": 0,
+    "e": "„quote\" (auch „quotation\") = Angebot/Kostenvoranschlag. „invoice\" = Rechnung, „order\" = Auftrag, „complaint\" = Reklamation.",
+    "b": "englisch",
+    "q_": "EN",
+    "cs": [
+      61,
+      40,
+      36,
+      24
+    ],
+    "ws": [
+      8,
+      6,
+      6,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.54
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 480,
+    "q": "Was ist die Hauptaufgabe eines Treibers?",
+    "a": [
+      "Er vermittelt zwischen Betriebssystem und einer Hardwarekomponente",
+      "Er verwaltet die Benutzerkonten",
+      "Er ersetzt das Dateisystem",
+      "Er verschlüsselt das Netzwerk"
+    ],
+    "r": 0,
+    "e": "Ein Treiber ist die Software-Schnittstelle zwischen Betriebssystem und Gerät. Er sorgt dafür, dass das System die Hardware ansprechen kann. Veraltete oder falsche Treiber sind eine häufige Fehlerquelle – daher aktuell halten.",
+    "b": "software",
+    "q_": "PK-04 · Betriebssysteme",
+    "cs": [
+      66,
+      31,
+      26,
+      29
+    ],
+    "ws": [
+      7,
+      4,
+      4,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.54
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 254,
+    "q": "Welche Aussage über die Nutzwertanalyse ist richtig?",
+    "a": [
+      "Sie macht qualitative Faktoren vergleichbar, die Gewichtung bleibt aber subjektiv",
+      "Sie ist völlig objektiv und immer eindeutig",
+      "Sie berücksichtigt nur den Preis",
+      "Sie ist nur für Software geeignet"
+    ],
+    "r": 0,
+    "e": "Die Nutzwertanalyse macht weiche Kriterien rechenbar. Ihr Nachteil ist offen benannt: Wer die Gewichtung festlegt, beeinflusst das Ergebnis. Deshalb muss die Gewichtung begründet werden.",
+    "b": "angebot",
+    "q_": "PK3",
+    "cs": [
+      81,
+      43,
+      32,
+      33
+    ],
+    "ws": [
+      10,
+      7,
+      5,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.53
+    }
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 0,
+    "q": "Was kennzeichnet ein Projekt gegenüber einer Routineaufgabe?",
+    "a": [
+      "Es ist einmalig, hat ein definiertes Ziel sowie einen Zeit- und Kostenrahmen",
+      "Es wiederholt sich regelmäßig nach festem Ablauf",
+      "Es wird ohne Beteiligung von Kunden durchgeführt",
+      "Es hat keinen festen Endtermin"
+    ],
+    "r": 0,
+    "e": "Ein Projekt ist durch Einmaligkeit, ein klares Ziel, einen begrenzten Zeit- und Ressourcenrahmen und eine eigene Organisation gekennzeichnet. Routineaufgaben wiederholen sich.",
+    "b": "kundenauftrag",
+    "q_": "AP2 · Projektmanagement",
+    "cs": [
+      76,
+      48,
+      48,
+      30
+    ],
+    "ws": [
+      12,
+      7,
+      7,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.53
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 212,
+    "q": "Wofür steht die Abkürzung LWL, und welcher Vorteil ist typisch?",
+    "a": [
+      "Lichtwellenleiter – unempfindlich gegen elektromagnetische Störungen und für große Distanzen geeignet",
+      "Lokales Wähl-Leitungssystem – günstig, aber langsam",
+      "Langsame WAN-Leitung – nur für Telefonie",
+      "Leistungsstarker WLAN-Layer – nur für Funk"
+    ],
+    "r": 0,
+    "e": "Lichtwellenleiter (Glasfaser) übertragen Daten als Licht. Vorteile: sehr hohe Bandbreite, große Reichweite und Unempfindlichkeit gegen elektromagnetische Störungen (EMV). Kupferkabel sind günstiger und einfacher zu verlegen.",
+    "b": "netzwerk",
+    "q_": "NW",
+    "cs": [
+      101,
+      51,
+      40,
+      42
+    ],
+    "ws": [
+      11,
+      6,
+      6,
+      6
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.52
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 345,
+    "q": "Was bedeutet TCO (Total Cost of Ownership)?",
+    "a": [
+      "Die Gesamtkosten eines Systems über seine gesamte Nutzungsdauer",
+      "Nur der Anschaffungspreis",
+      "Die Umsatzsteuer auf den Kaufpreis",
+      "Der Wiederverkaufswert am Ende"
+    ],
+    "r": 0,
+    "e": "TCO betrachtet alle Kosten über die Nutzungsdauer: Anschaffung, Installation, Lizenz-/Wartungskosten, Betrieb (Strom), Schulung, Entsorgung. Nur so lassen sich Alternativen wirtschaftlich fair vergleichen.",
+    "b": "wirtschaft",
+    "q_": "PK-03 · Wirtschaftlichkeit",
+    "cs": [
+      63,
+      25,
+      34,
+      30
+    ],
+    "ws": [
+      8,
+      3,
+      5,
+      4
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.52
+    }
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 346,
+    "q": "Was sind fixe Kosten?",
+    "a": [
+      "Kosten, die unabhängig von der produzierten oder genutzten Menge anfallen",
+      "Kosten, die pro Stück steigen",
+      "Kosten, die nur einmalig auftreten müssen aber nicht",
+      "Kosten, die immer verhandelbar sind"
+    ],
+    "r": 0,
+    "e": "Fixe Kosten bleiben innerhalb eines Zeitraums konstant, z. B. Miete, Gehälter, Versicherungen, Abschreibungen. Variable Kosten ändern sich mit der Menge, z. B. Material, Lizenzkosten je Nutzer oder Stromverbrauch je Betriebsstunde.",
+    "b": "wirtschaft",
+    "q_": "PK-03 · Kostenarten",
+    "cs": [
+      73,
+      29,
+      52,
+      35
+    ],
+    "ws": [
+      10,
+      5,
+      8,
+      5
+    ],
+    "flags": {
+      "longestChar": true,
+      "longestWord": true,
+      "span": 1.52
+    }
+  }
+]

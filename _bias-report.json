@@ -1,0 +1,24 @@
+{
+  "quiz": {
+    "count": 632,
+    "longestWord": 125,
+    "longestChar": 245
+  },
+  "quiz2": {
+    "count": 63,
+    "longestWord": 10,
+    "longestChar": 19
+  },
+  "faelle": {
+    "steps": 61,
+    "longestWord": 28,
+    "flagged": 54
+  },
+  "faelle2": {
+    "steps": 20,
+    "longestWord": 9,
+    "flagged": 18
+  },
+  "quizFlagged": 322,
+  "fallFlagged": 72
+}

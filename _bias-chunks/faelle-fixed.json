@@ -1,0 +1,1085 @@
+[
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-usv",
+    "si": 0,
+    "optionen": [
+      {
+        "t": "USV schützt bei Netzausfall und Spannungsspitzen – ersetzt weder Datensicherung noch Brandschutz.",
+        "p": 3
+      },
+      {
+        "t": "USV verhindert sämtliche Serverausfälle und macht regelmäßige Datensicherungen grundsätzlich überflüssig.",
+        "p": 0
+      },
+      {
+        "t": "USV wirkt nur bei Blitzeinschlag ins Gebäude; Netzausfall und kurze Spannungseinbrüche bleiben unberücksichtigt.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-usv",
+    "si": 1,
+    "optionen": [
+      {
+        "t": "Wirkleistung ca. 1.020 W, mit 20 % Reserve ca. 1.224 W; Scheinleistung ca. 1.897 VA – aus der Last.",
+        "p": 3
+      },
+      {
+        "t": "Wirkleistung und Scheinleistung sind gleich groß, jeweils ca. 1.020 W bzw. 1.020 VA bei dieser Last.",
+        "p": 0
+      },
+      {
+        "t": "Wirkleistung ca. 1.897 W, Scheinleistung ca. 1.224 VA – die beiden Kennwerte sind hier vertauscht.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-usv",
+    "si": 2,
+    "optionen": [
+      {
+        "t": "Autonomie nach Zweck: kritische Systeme weiter, Shutdown inkl. Datensicherung muss möglich sein.",
+        "p": 3
+      },
+      {
+        "t": "Mindestens vier Stunden Autonomie, damit der gesamte Betrieb ohne jede Einschränkung weiterläuft.",
+        "p": 0
+      },
+      {
+        "t": "Autonomie hängt nicht von der Last ab – fest im USV hinterlegt, unabhängig vom angeschlossenen Verbrauch.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-db",
+    "si": 0,
+    "optionen": [
+      {
+        "t": "Redundante Daten, Mehrfachwerte pro Zelle und Probleme bei Ändern, Einfügen und Löschen.",
+        "p": 3
+      },
+      {
+        "t": "Die Tabelle ist formal zu klein; strukturelle Normalisierungsfehler treten in solchen Tabellen nicht auf.",
+        "p": 0
+      },
+      {
+        "t": "Es liegt vor allem an unsauberer Schreibweise der Adressen; die Tabellenstruktur ist ansonsten in Ordnung.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-db",
+    "si": 1,
+    "optionen": [
+      {
+        "t": "Artikelliste auflösen: pro Artikel eine Zeile, jede Zelle genau ein atomarer Wert (1. NF).",
+        "p": 3
+      },
+      {
+        "t": "Die Artikelspalte verbreitern und die mehrfachen Werte als Freitext in derselben Zelle belassen.",
+        "p": 0
+      },
+      {
+        "t": "Artikel in einer Hilfstabelle als unstrukturierten Freitext ablegen, Haupttabelle unverändert lassen.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-db",
+    "si": 2,
+    "optionen": [
+      {
+        "t": "Kundenname hängt von der Auftragsnummer ab, nicht vom gesamten Schlüssel – partielle Abhängigkeit.",
+        "p": 3
+      },
+      {
+        "t": "Kundennamen sind zu lang für VARCHAR-Felder und gehören deshalb in eine separate Textdatei außerhalb der DB.",
+        "p": 0
+      },
+      {
+        "t": "Ohne eigenen Primärschlüssel darf ein Attribut in keiner Tabelle stehen – der Name muss entfernt werden.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-db",
+    "si": 4,
+    "optionen": [
+      {
+        "t": "1:n – Primärschlüssel des Kunden als Fremdschlüssel in der Auftragstabelle (n-Seite).",
+        "p": 3
+      },
+      {
+        "t": "m:n – Zwischentabelle mit zwei Fremdschlüsseln, weil ein Kunde genau einen Auftrag haben darf.",
+        "p": 0
+      },
+      {
+        "t": "1:1 – Kunde und Auftrag teilen sich denselben Primärschlüssel in beiden Tabellen.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-db",
+    "si": 5,
+    "optionen": [
+      {
+        "t": "Schreibtischtest: Beispieldatensätze durchspielen, ob Beziehungen und Fälle abgedeckt sind.",
+        "p": 3
+      },
+      {
+        "t": "Modell durch direktes Anlegen und Befüllen der Produktivdatenbank im Livebetrieb validieren.",
+        "p": 1
+      },
+      {
+        "t": "Ein relationales Modell wird nach dem ER-Diagramm nicht mehr geprüft – Implementierung genügt.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-angebot",
+    "si": 0,
+    "optionen": [
+      {
+        "t": "Listeneinkauf B günstig – mit Skonto, Lieferzeit und Service ist die Gesamtentscheidung abzuwägen.",
+        "p": 3
+      },
+      {
+        "t": "Anbieter B, weil der niedrigste Listenpreis allein die wirtschaftlich beste Wahl darstellt.",
+        "p": 0
+      },
+      {
+        "t": "Anbieter C, weil der beste Service laut Angebotstext die Preisunterschiede vollständig kompensiert.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-angebot",
+    "si": 1,
+    "optionen": [
+      {
+        "t": "Bei 41.000 € netto sind 3 % Skonto 1.230 € – verbindlicher Nachlass bei fristgerechter Zahlung.",
+        "p": 3
+      },
+      {
+        "t": "Skonto verlängert die Zahlungsfrist, bringt dem Käufer aber keinen finanziellen Vorteil gegenüber Netto.",
+        "p": 0
+      },
+      {
+        "t": "Skonto ist ein Handelsrabatt, der bereits im ausgewiesenen Listenpreis des Angebots enthalten ist.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-arbeitsplatz",
+    "si": 2,
+    "optionen": [
+      {
+        "t": "15 × (850 + 40 + 110) = 15.000 € netto, 17.850 € brutto; Skonto 2 % = 300 € in 14 Tagen.",
+        "p": 3
+      },
+      {
+        "t": "15 × 850 = 12.750 € netto, 15.172,50 € brutto; Skonto ist im Hardwarepreis bereits berücksichtigt.",
+        "p": 0
+      },
+      {
+        "t": "15 × (850 + 110) = 14.400 € netto, 17.136 € brutto; Aufbau und Skonto bei Barzahlung vor Lieferung.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-arbeitsplatz",
+    "si": 3,
+    "optionen": [
+      {
+        "t": "Nein – Vertrag durch zwei Willenserklärungen: Bestellung (Angebot) und Auftragsbestätigung (Annahme).",
+        "p": 3
+      },
+      {
+        "t": "Ja – ein schriftliches Angebot bindet den Anbieter sofort und begründet bereits einen Kaufvertrag.",
+        "p": 0
+      },
+      {
+        "t": "Ja – mit Rechnungsstellung ist der Kaufvertrag automatisch zustande, eine Bestätigung ist entbehrlich.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-arbeitsplatz",
+    "si": 4,
+    "optionen": [
+      {
+        "t": "Vertraulichkeit: vertraulich (Einzelpersonen). Integrität: normal. Verfügbarkeit: normal bis hoch.",
+        "p": 3
+      },
+      {
+        "t": "Vertraulichkeit, Integrität und Verfügbarkeit sind durchgehend „streng vertraulich“ bzw. „extrem hoch“.",
+        "p": 0
+      },
+      {
+        "t": "Schutzbedarf ist durchgehend „normal“, weil Arbeitszeiten keine personenbezogenen Informationen darstellen.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-arbeitsplatz",
+    "si": 6,
+    "optionen": [
+      {
+        "t": "Fehlende EMV-Abschirmung (U/UTP) oder Verlegung neben Stromleitungen; Klima stört – S/FTP oder Abstand.",
+        "p": 3
+      },
+      {
+        "t": "Die Klimaanlage zieht so viel Leistung, dass Netzspannung für Switch und Access Point im Büro zusammenbricht.",
+        "p": 0
+      },
+      {
+        "t": "Ein Router-Neustart beseitigt elektromagnetische Störungen auf der Datenleitung im LAN zuverlässig und dauerhaft.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-beratung",
+    "si": 0,
+    "optionen": [
+      {
+        "t": "Zuerst Bedarf klären (Aufgaben, Plätze, Software, Verfügbarkeit, Budget) – ohne Analyse kein seriöser Preis.",
+        "p": 3
+      },
+      {
+        "t": "Sofort den niedrigsten Listenpreis nennen, um im Gespräch Aufmerksamkeit zu erzeugen und Vertrauen zu gewinnen.",
+        "p": 0
+      },
+      {
+        "t": "Preisangabe erst nach externer Lastenheft-Prüfung durch den Kunden; das Erstgespräch ohne Unterlagen vertagen.",
+        "p": 1
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-beratung",
+    "si": 1,
+    "optionen": [
+      {
+        "t": "Cloud prüfen: SaaS für Standard, lokal bei Verfügbarkeit/Schutz – Betriebskosten, DSGVO und Anbindung.",
+        "p": 3
+      },
+      {
+        "t": "Cloud senkt die Betriebskosten in jedem Szenario – vollständige Verlagerung der Fertigungs-IT empfehlen.",
+        "p": 0
+      },
+      {
+        "t": "Cloud scheidet für Produktionsunternehmen grundsätzlich aus – sensible Daten dürfen nicht extern liegen.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-beratung",
+    "si": 2,
+    "optionen": [
+      {
+        "t": "Nein – Leistung, Preis, Liefer-/Zahlungsbedingungen, Termin, Gewährleistung und Bindefrist ins Angebot.",
+        "p": 3
+      },
+      {
+        "t": "Ja – für die Kaufentscheidung zählt der ausgewiesene Nettopreis; übrige Angaben sind formal optional.",
+        "p": 0
+      },
+      {
+        "t": "Es fehlt die Umsatzsteuerzeile; Leistungsbeschreibung und Bindefrist können bei Bedarf nachgereicht werden.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-beratung",
+    "si": 3,
+    "optionen": [
+      {
+        "t": "Nutzen verständlich, Fachbegriff kurz einordnen, betrieblichen Effekt benennen – danach Details.",
+        "p": 3
+      },
+      {
+        "t": "Den Fachbegriff mehrfach wiederholen, damit sich die Geschäftsführung an die Terminologie gewöhnt.",
+        "p": 0
+      },
+      {
+        "t": "Auf die spätere technische Dokumentation verweisen und die mündliche Erklärung stark verkürzen.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-beratung",
+    "si": 4,
+    "optionen": [
+      {
+        "t": "GF informieren: Auswirkung, Optionen mit Kosten/Terminen (Kompatibilität, VM, Upgrade) – gemeinsam entscheiden.",
+        "p": 3
+      },
+      {
+        "t": "Kompatibilitätsproblem vorerst nicht ansprechen und die Migration der restlichen Welle unverändert weiter fortsetzen.",
+        "p": 0
+      },
+      {
+        "t": "Migration sofort stoppen und auf unbestimmte Zeit aussetzen, bis sämtliche Altanwendungen ersetzt sind.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-beratung",
+    "si": 5,
+    "optionen": [
+      {
+        "t": "Abnahme unter Vorbehalt mit Protokoll: Mängel (Monitore, zwei PCs), Fristen, Unterschriften – Rechte bleiben.",
+        "p": 3
+      },
+      {
+        "t": "Abnahme ohne Mängelliste durchführen und offene Punkte informell per E-Mail mit dem Dienstleister klären.",
+        "p": 0
+      },
+      {
+        "t": "Abnahme vollständig verweigern, bis sämtliche Hardware geliefert ist und jeder Arbeitsplatz fehlerfrei läuft.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-beratung",
+    "si": 6,
+    "optionen": [
+      {
+        "t": "Soll-Ist dokumentieren, Ursache (Kompatibilität) analysieren, Lessons Learned für Folgeaufträge.",
+        "p": 3
+      },
+      {
+        "t": "Kostenabweichung im Abschlussbericht weglassen, um den Projekterfolg gegenüber dem Kunden nicht zu schmälern.",
+        "p": 0
+      },
+      {
+        "t": "Mehrkosten ohne Ursachenanalyse dem Kunden in Rechnung stellen und intern keine Prozessanpassung vornehmen.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-ki-support",
+    "si": 0,
+    "optionen": [
+      {
+        "t": "KI ist Oberbegriff, ML Teilgebiet der KI, DL Subfeld des ML – für Textklassifikation ML/DL.",
+        "p": 3
+      },
+      {
+        "t": "KI, maschinelles Lernen und Deep Learning bezeichnen dasselbe Verfahren und sind synonym verwendbar.",
+        "p": 0
+      },
+      {
+        "t": "Deep Learning ist der Oberbegriff; klassische KI und maschinelles Lernen sind Unterformen davon.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-ki-support",
+    "si": 2,
+    "optionen": [
+      {
+        "t": "Gelabelte Tickets reichen als Start, Labels fehlerhaft – Bias droht; Daten bereinigen, Verteilung prüfen.",
+        "p": 3
+      },
+      {
+        "t": "Falsch gelabelte Tickets schadet dem Modell nicht – ausreichend Datenmenge kompensiert Labelfehler automatisch.",
+        "p": 0
+      },
+      {
+        "t": "Für das Training ausschließlich die 3.000 ungelabelten Tickets verwenden, gelabelte Daten ausblenden.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-ki-support",
+    "si": 3,
+    "optionen": [
+      {
+        "t": "Overfitting: Modell passt Training zu genau – Testgenauigkeit 82 % ist maßgeblich, Regularisierung nötig.",
+        "p": 3
+      },
+      {
+        "t": "Trainingsgenauigkeit 99 % ist maßgeblich; niedrigere Testwerte entstehen durch unrepräsentative Testdaten.",
+        "p": 0
+      },
+      {
+        "t": "Mittelwert aus Trainings- und Testgenauigkeit als faire Gesamtbewertung des Modells heranziehen.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-ki-ethik",
+    "si": 0,
+    "optionen": [
+      {
+        "t": "Bias in Daten, fehlende Transparenz (Black Box) und DSGVO-relevante Verarbeitung personenbezogener Daten.",
+        "p": 3
+      },
+      {
+        "t": "Hauptrisiko sind Anschaffungs- und Betriebskosten; ethische und rechtliche Aspekte sind dagegen nachrangig.",
+        "p": 0
+      },
+      {
+        "t": "KI-Modelle entscheiden objektiv nach Statistik und übernehmen menschliche Vorurteile aus den Daten nicht.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-ki-ethik",
+    "si": 2,
+    "optionen": [
+      {
+        "t": "Nein – Modelle übernehmen Verzerrungen; Fairness braucht Datenauswahl, Prüfung und laufende Kontrolle.",
+        "p": 3
+      },
+      {
+        "t": "Ja – mit mehr Trainingsdaten korrigiert sich das Modell selbst und wird im Betrieb automatisch fairer.",
+        "p": 0
+      },
+      {
+        "t": "Ja – ausreichend lange Laufzeit im Produktivbetrieb beseitigt systematische Verzerrungen von selbst.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-ki-ethik",
+    "si": 3,
+    "optionen": [
+      {
+        "t": "DSGVO für personenbezogene Daten und EU AI Act – Bewerberauswahl als Hochrisiko-Anwendung einstufen.",
+        "p": 3
+      },
+      {
+        "t": "Es genügen interne IT-Richtlinien und die Hausordnung des Unternehmens für die Datenverarbeitung insgesamt.",
+        "p": 0
+      },
+      {
+        "t": "Für KI im HR-Bereich gibt es derzeit keine einschlägigen gesetzlichen Vorgaben in der EU.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-ki-generativ",
+    "si": 0,
+    "optionen": [
+      {
+        "t": "Generative Modelle können halluzinieren – plausibel klingende, falsche Inhalte; menschliche Freigabe nötig.",
+        "p": 3
+      },
+      {
+        "t": "Generative KI liefert bei Kundenkommunikation durchgängig verlässliche Fakten – Freigabe ist entbehrlich.",
+        "p": 0
+      },
+      {
+        "t": "Einmalige Zustimmung der Rechtsabteilung genügt; danach können Antworten ohne weitere Prüfung versendet werden.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-ki-generativ",
+    "si": 1,
+    "optionen": [
+      {
+        "t": "Prompt mit Rolle, Zielgruppe, Ton, Länge und Format definieren – ggf. kurzes Beispiel.",
+        "p": 3
+      },
+      {
+        "t": "Mehrfach zufällig generieren und die kürzeste Antwort übernehmen, ohne den Prompt anzupassen.",
+        "p": 0
+      },
+      {
+        "t": "Kundenanfragen mit sehr kurzen Standardantworten beantworten, unabhängig vom jeweiligen Anliegen.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-ki-generativ",
+    "si": 2,
+    "optionen": [
+      {
+        "t": "Verarbeitung nur mit Rechtsgrundlage: Minimierung, Zweckbindung, ggf. Anonymisierung vor externem Dienst.",
+        "p": 3
+      },
+      {
+        "t": "Technische Übermittlung an einen Cloud-Dienst erlaubt die Verarbeitung personenbezogener Kundendaten.",
+        "p": 0
+      },
+      {
+        "t": "Bei rein textbasierten Anfragen entfallen datenschutzrechtliche Anforderungen an Speicherung und Weitergabe.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-ki-projekt",
+    "si": 1,
+    "optionen": [
+      {
+        "t": "Klassenungleichheit – Accuracy täuscht; Precision, Recall, F1 prüfen, Datenlage ggf. ergänzen.",
+        "p": 3
+      },
+      {
+        "t": "50.000 Fälle reichen unabhängig von der Klassenverteilung für ein belastbares Modell.",
+        "p": 0
+      },
+      {
+        "t": "Bei ungleichen Klassen genügt Accuracy als alleinige Qualitätskennzahl für die Modellbewertung.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-ki-projekt",
+    "si": 2,
+    "optionen": [
+      {
+        "t": "Modell B: hoher Recall – Verzögerungen möglichst wenige übersehen.",
+        "p": 3
+      },
+      {
+        "t": "Modell A: hohe Precision ist wichtiger als Recall, wenn Verzögerungen selten sind.",
+        "p": 0
+      },
+      {
+        "t": "Beide Modelle sind für diese Anforderung gleichwertig – die Wahl ist beliebig.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-ki-projekt",
+    "si": 3,
+    "optionen": [
+      {
+        "t": "Modell liefert Einschätzung, Mensch entscheidet – unterstützt, ersetzt keine Verantwortung.",
+        "p": 3
+      },
+      {
+        "t": "Modell trifft nach Training die endgültige Dispositionsentscheidung ohne menschliche Mitprüfung.",
+        "p": 0
+      },
+      {
+        "t": "Nach Fertigstellung des Modells entfällt der operative Einsatz – die Entwicklung war der Nutzen.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-ki-prozess",
+    "si": 1,
+    "optionen": [
+      {
+        "t": "Nein – ohne dokumentierte Ausfälle fehlen Lernbeispiele; Datenqualität und Labeling verbessern.",
+        "p": 3
+      },
+      {
+        "t": "Ja – aus Sensordaten allein erkennt das Modell Ausfallmuster auch ohne historische Störfälle.",
+        "p": 0
+      },
+      {
+        "t": "Fast-Ausfälle in Sensordaten werden automatisch als Ausfälle gezählt und ersetzen fehlende Labels.",
+        "p": 1
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-ki-prozess",
+    "si": 3,
+    "optionen": [
+      {
+        "t": "Precision zu niedrig – viele Fehlalarme; Schwellenwert anpassen, sonst Vertrauensverlust.",
+        "p": 3
+      },
+      {
+        "t": "Häufige Fehlalarme sind betrieblich unkritisch – das Werkstattpersonal filtert Warnungen selbst.",
+        "p": 0
+      },
+      {
+        "t": "Warnungen abschalten, wenn die Rate der Fehlmeldungen die Akzeptanz im Betrieb beeinträchtigt.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-netz",
+    "si": 2,
+    "optionen": [
+      {
+        "t": "DHCP aus privatem Bereich (192.168.x.x); Server und Drucker mit festen Reservierungen.",
+        "p": 3
+      },
+      {
+        "t": "Jedes Endgerät erhält eine öffentliche IPv4-Adresse direkt vom Internetprovider zugewiesen.",
+        "p": 0
+      },
+      {
+        "t": "In IPv4-Netzen kommunizieren Endgeräte auch ohne IP-Konfiguration zuverlässig miteinander.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-netz",
+    "si": 3,
+    "optionen": [
+      {
+        "t": "Firewall, VLAN, WPA2/WPA3, Patch-Management, minimale Rechte, Backups nach 3-2-1-Regel.",
+        "p": 3
+      },
+      {
+        "t": "Ein komplexes WLAN-Passwort schützt Mandantendaten ausreichend gegen unbefugten Zugriff.",
+        "p": 0
+      },
+      {
+        "t": "Virenschutz auf einem zentralen Admin-PC sichert das gesamte Kanzlei-Netzwerk ab.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-sicherheit",
+    "si": 0,
+    "optionen": [
+      {
+        "t": "Systeme isolieren, Ausbreitung stoppen, dokumentieren, Verantwortliche informieren – kein Lösegeld zahlen.",
+        "p": 3
+      },
+      {
+        "t": "Lösegeld zahlen, um schnell wieder produktiv zu sein – danach den regulären Betrieb unverändert fortsetzen.",
+        "p": 0
+      },
+      {
+        "t": "Zunächst abwarten, ob sich die Verschlüsselung von selbst aufhebt, bevor technische Maßnahmen starten.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-sicherheit",
+    "si": 1,
+    "optionen": [
+      {
+        "t": "Prüfen, ob Backup verschlüsselt wurde; offline/unveränderbare Kopie nach 3-2-1 für Restore nutzen.",
+        "p": 3
+      },
+      {
+        "t": "Backup am Netz hängend ist vor Ransomware geschützt, weil es formal als Sicherungskopie gilt.",
+        "p": 0
+      },
+      {
+        "t": "Regelmäßige Datensicherung ist optional, solange eine aktuelle Vollbackup-Datei auf dem Server liegt.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-sicherheit",
+    "si": 2,
+    "optionen": [
+      {
+        "t": "Phishing, ungepatchte Lücken, unsichere Fernzugänge (VPN/RDP) und zu weitreichende Rechte.",
+        "p": 3
+      },
+      {
+        "t": "Defektes Netzwerkkabel als häufigste Ursache für Ransomware-Einführung in Unternehmensnetzen.",
+        "p": 0
+      },
+      {
+        "t": "Fehlerhafte Hardware-Komponenten sind der wesentliche Einfallskanal für Schadsoftware im LAN.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-sicherheit",
+    "si": 3,
+    "optionen": [
+      {
+        "t": "ISMS (BSI-Grundschutz), Security by Design/Default, Patch-/Backup-Prozesse, Notfallplan, Schulungen.",
+        "p": 3
+      },
+      {
+        "t": "Neue Firewall beschaffen, ansonsten bestehende Sicherheitsprozesse im Betrieb unverändert weiterführen.",
+        "p": 0
+      },
+      {
+        "t": "IT-Nutzung stark reduzieren, um Angriffsflächen ohne organisatorische Maßnahmen zu minimieren.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-angebot2",
+    "si": 0,
+    "optionen": [
+      {
+        "t": "Quantitative (Preis, Strom, Lieferzeit) und qualitative Kriterien (Service, Ergonomie) plus Gesamtkosten.",
+        "p": 3
+      },
+      {
+        "t": "Anschaffungspreis je Gerät als alleiniges Entscheidungskriterium für den Vergleich der drei Anbieter.",
+        "p": 0
+      },
+      {
+        "t": "Herstellermarke und Gehäusedesign als Hauptkriterien; technische Daten spielen eine untergeordnete Rolle.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-angebot2",
+    "si": 1,
+    "optionen": [
+      {
+        "t": "Nutzwertanalyse: Kriterien gewichten, Alternativen bewerten, gewichtete Summe – Nutzwert gewinnt.",
+        "p": 3
+      },
+      {
+        "t": "Den Anbieter mit dem niedrigsten Angebotspreis wählen, ohne formale Gewichtung der Kriterien.",
+        "p": 0
+      },
+      {
+        "t": "Zufallsauswahl unter den drei Angeboten, um subjektive Verzerrungen bei der Entscheidung zu vermeiden.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-angebot2",
+    "si": 3,
+    "optionen": [
+      {
+        "t": "Lastenheft (AG): WAS/WOFÜR. Pflichtenheft (AN): WIE/WOMIT zur Zielerreichung.",
+        "p": 3
+      },
+      {
+        "t": "Lasten- und Pflichtenheft sind dasselbe Dokument mit unterschiedlichen Deckblattnamen.",
+        "p": 0
+      },
+      {
+        "t": "Im Lastenheft genügt die Preiszeile; technische Anforderungen gehören ins Pflichtenheft allein.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-kundenauftrag",
+    "si": 0,
+    "optionen": [
+      {
+        "t": "Zuerst Lastenheft vom Kunden, darauf basierend das eigene Pflichtenheft erstellen.",
+        "p": 3
+      },
+      {
+        "t": "Sofort Pflichtenheft finalisieren und Hardware bestellen, Lastenheft parallel nachreichen.",
+        "p": 0
+      },
+      {
+        "t": "Mit Installation beginnen und Anforderungen im Projektverlauf aus dem Betrieb ableiten.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-kundenauftrag",
+    "si": 1,
+    "optionen": [
+      {
+        "t": "Server-Wartung pauschal, Vor-Ort-Support per Stundensatz – getrennt im Angebot ausweisen.",
+        "p": 3
+      },
+      {
+        "t": "Pauschalpreis für das erste Jahr nennen, ohne Aufschlüsselung nach Wartung und Vor-Ort-Einsätzen.",
+        "p": 0
+      },
+      {
+        "t": "Wartung im ersten Jahr kostenlos anbieten, um den Auftrag gegenüber Mitbewerbern zu sichern.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-kundenauftrag",
+    "si": 3,
+    "optionen": [
+      {
+        "t": "Ursachen offenlegen, Stufenlösung vorschlagen (z. B. zwei Filialen zuerst), Aufwandsfolgen statt Absage.",
+        "p": 3
+      },
+      {
+        "t": "Angebotspreis auf Kundenbudget kürzen und fehlende Leistung unkommentiert intern durch Einsparungen ausgleichen.",
+        "p": 0
+      },
+      {
+        "t": "Auftrag ohne weitere Abstimmung mit dem Kunden ablehnen und das eingereichte Angebot vollständig zurückziehen.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-kundenauftrag",
+    "si": 4,
+    "optionen": [
+      {
+        "t": "SMART-Kriterien im Projektauftrag und Soll-Ist-Vergleich bei Abnahme dokumentieren.",
+        "p": 3
+      },
+      {
+        "t": "Anzahl installierter Geräte und verlegter Kabel als alleiniger Nachweis der Zielerreichung.",
+        "p": 1
+      },
+      {
+        "t": "Subjektive Zufriedenheit der Beteiligten ohne dokumentierte Kriterien als Abnahmekriterium.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-verfuegbarkeit",
+    "si": 0,
+    "optionen": [
+      {
+        "t": "Ein Vorfall reicht nicht – Häufigkeit, Wiederherstellungszeit und MTTF/MTTR über das Jahr betrachten.",
+        "p": 3
+      },
+      {
+        "t": "Drei Stunden Ausfall pro Jahr bedeuten praktisch volle Verfügbarkeit und sind für SLAs vernachlässigbar.",
+        "p": 0
+      },
+      {
+        "t": "Verfügbarkeit ist eine qualitative Größe und lässt sich aus Betriebs- und Ausfallzeiten nicht berechnen.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-verfuegbarkeit",
+    "si": 3,
+    "optionen": [
+      {
+        "t": "SLA mit Reaktionszeit, Wiederherstellungszeit, Verfügbarkeit %, Servicezeiten und Eskalationsstufen.",
+        "p": 3
+      },
+      {
+        "t": "Formulierung „Wir bemühen uns um schnelle Hilfe“ als verbindliche Servicezusage gegenüber dem Kunden.",
+        "p": 0
+      },
+      {
+        "t": "Ausschließlich den jährlichen Wartungspauschalbetrag schriftlich fixieren, ohne Leistungskennzahlen.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-verfuegbarkeit",
+    "si": 4,
+    "optionen": [
+      {
+        "t": "Monitoring für Auslastung, Speicher, Dienste, Erreichbarkeit – Alarm bei Schwellwert.",
+        "p": 3
+      },
+      {
+        "t": "Ausfälle erst bearbeiten, wenn Anwender erneut Störungen melden – reaktives Vorgehen genügt.",
+        "p": 0
+      },
+      {
+        "t": "Frühzeitige Erkennung von Ausfällen ist technisch nicht möglich und deshalb nicht zu planen.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-invest",
+    "si": 0,
+    "optionen": [
+      {
+        "t": "Bezugspreis nach Rabatt je Gerät, Stromkosten aus Leistungsaufnahme, über Nutzungsdauer vergleichen.",
+        "p": 3
+      },
+      {
+        "t": "Listenpreise der Angebote gegenüberstellen, Rabatte und laufende Betriebskosten dabei nicht einbeziehen.",
+        "p": 0
+      },
+      {
+        "t": "Jährlichen Stromverbrauch vergleichen, Anschaffungspreis spielt bei der Entscheidung keine Rolle.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-invest",
+    "si": 2,
+    "optionen": [
+      {
+        "t": "Ca. ein Jahr: Mehrkosten 30 € werden durch 30 € Stromersparnis jährlich ausgeglichen.",
+        "p": 3
+      },
+      {
+        "t": "Ca. fünf Jahre, weil der Mehrpreis typischerweise erst langfristig durch Effizienz zurückfließt.",
+        "p": 0
+      },
+      {
+        "t": "Nie – der höhere Anschaffungspreis von B überwiegt jede Stromersparnis über die Nutzungsdauer.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-invest",
+    "si": 3,
+    "optionen": [
+      {
+        "t": "A: 40×600 € + 40×5×72 € = 38.400 €; B: 40×630 € + 40×5×42 € = 33.600 € (5 Jahre).",
+        "p": 3
+      },
+      {
+        "t": "A: 40×600 € = 24.000 €; B: 40×700 € = 28.000 € – Betriebsstrom nicht berücksichtigt.",
+        "p": 0
+      },
+      {
+        "t": "Beide Varianten verursachen über fünf Jahre dieselben Gesamtkosten bei 40 Geräten.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-invest",
+    "si": 4,
+    "optionen": [
+      {
+        "t": "Variante B: höherer Einkauf, nach einem Jahr amortisiert, über Laufzeit 4.800 € günstiger.",
+        "p": 3
+      },
+      {
+        "t": "Variante A wegen niedrigerem Einkaufspreis – laufende Stromkosten bei der Entscheidung ignorieren.",
+        "p": 0
+      },
+      {
+        "t": "Variante A, weil Green-IT-Anforderungen marketingbedingt sind und keine TCO-Auswirkung haben.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-arbeitsrecht",
+    "si": 2,
+    "optionen": [
+      {
+        "t": "In der Probezeit kann das Ausbildungsverhältnis jederzeit ohne Kündigungsfrist beendet werden.",
+        "p": 3
+      },
+      {
+        "t": "Kündigung in der Probezeit erst nach sechs Monaten Ausbildungsdauer mit zwei Wochen Frist möglich.",
+        "p": 0
+      },
+      {
+        "t": "Beendigung der Ausbildung in der Probezeit setzt die Zustimmung der zuständigen Berufsschule voraus.",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-arbeitsrecht",
+    "si": 4,
+    "optionen": [
+      {
+        "t": "JAV bzw. Betriebsrat – Informations-, Mitwirkungs- und Mitbestimmungsrechte bei Pausenfragen.",
+        "p": 3
+      },
+      {
+        "t": "Ausschließlich die Geschäftsführung – Beschwerden über Pausenregelungen sind dort zuerst anzusprechen.",
+        "p": 0
+      },
+      {
+        "t": "Niemand – der Auszubildende muss Pausenregelungen allein direkt mit dem Vorgesetzten aushandeln.",
+        "p": 0
+      }
+    ]
+  }
+]

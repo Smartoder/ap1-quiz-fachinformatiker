@@ -1,0 +1,629 @@
+[
+  {
+    "sammlung": "QUIZ",
+    "i": 95,
+    "a": [
+      "Weil reine symmetrische Verfahren den Schlüsselaustausch unsicher machen",
+      "Weil die DSGVO für TLS ausdrücklich Hybridverschlüsselung vorschreibt",
+      "Weil hybride Verfahren ohne jegliche Schlüsselübertragung auskommen",
+      "Weil sich sicherer Schlüsselaustausch und schnelle Datenübertragung verbinden"
+    ],
+    "r": 3
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 156,
+    "a": [
+      "Er verschiebt die Aktivierungsschwelle des künstlichen Neurons",
+      "Er multipliziert die Eingangswerte mit den trainierten Gewichten",
+      "Er skaliert die Ausgabe stets auf Werte zwischen null und eins",
+      "Er ersetzt die Aktivierungsfunktion im Neuron vollständig"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 28,
+    "a": [
+      "Änderungs-, Einfüge- und Löschanomalie in den Tabellen",
+      "Lese-, Schreib- und Sperranomalie bei parallelen Zugriffen",
+      "Syntax-, Logik- und Laufzeitfehler im Anwendungscode",
+      "Redundanz-, Konsistenz- und Integritätsanomalie der Indizes"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 44,
+    "a": [
+      "Atomicity – eine Transaktion läuft ganz oder gar nicht durch",
+      "Availability – die Datenbank bleibt dauerhaft für Clients erreichbar",
+      "Authentication – jeder Datenbanknutzer wird vor Zugriff geprüft",
+      "Authorization – Zugriffsrechte werden rollenbasiert vergeben"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 204,
+    "a": [
+      "Vier OSI-Schichten; der Router arbeitet auf Schicht zwei",
+      "Sieben OSI-Schichten; der Router arbeitet auf Schicht drei",
+      "Sieben OSI-Schichten; der Router arbeitet auf Schicht eins",
+      "Fünf OSI-Schichten; der Router arbeitet auf Schicht vier"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 139,
+    "a": [
+      "PDCA ist ein einmal im Projekt abzuarbeitendes Verfahren",
+      "PDCA ersetzt sämtliches Kundenfeedback in der Produktion",
+      "PDCA gilt ausschließlich für Fertigungsprozesse im Werk",
+      "PDCA ist ein Kreislauf der kontinuierlichen Prozessverbesserung"
+    ],
+    "r": 3
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 9,
+    "a": [
+      "Er wandelt Gleichstrom in Wechselstrom für die USV um",
+      "Er wandelt Wechselstrom in Gleichstrom für die Last um",
+      "Er hält die Netzfrequenz für angeschlossene Verbraucher konstant",
+      "Er leitet überschüssige Spannungsspitzen sicher zur Erde ab"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 210,
+    "a": [
+      "Switch – leitet im LAN anhand von MAC-Adressen weiter",
+      "Router – verbindet Netze anhand von IP-Adressen miteinander",
+      "Gateway – übersetzt Protokolle zwischen unterschiedlichen Netzen",
+      "Modem – moduliert Signale für die Übertragung über Leitungen"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 46,
+    "a": [
+      "Gewinn multipliziert mit 100, geteilt durch den Umsatz",
+      "Umsatz multipliziert mit 100, geteilt durch den Gewinn",
+      "Gewinn und Umsatz werden zur Kennzahl addiert",
+      "Umsatz abzüglich der Gesamtkosten des Geschäftsjahres"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 145,
+    "a": [
+      "Scrum arbeitet sequenziell, Wasserfall iterativ in Sprints",
+      "Wasserfall sequenziell, Scrum iterativ in kurzen Sprints",
+      "Beide Modelle durchlaufen exakt dieselben Projektphasen",
+      "Scrum kennt keine festen Rollen wie Product Owner oder Team"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 146,
+    "a": [
+      "Nachträgliche Auswertung bereits eingetretener Projektfehler",
+      "Prüfung der fachlichen Qualifikation aller Projektmitarbeiter",
+      "Bewertung von Risiken nach Eintrittswahrscheinlichkeit und Schaden",
+      "Berechnung des erwarteten Projektgewinns vor Projektstart"
+    ],
+    "r": 2
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 23,
+    "a": [
+      "Wenn beide Tabellen dieselbe Anzahl Spalten aufweisen",
+      "Wenn beide Tabellen dieselbe Zeilenzahl im Bestand haben",
+      "Wenn kein Primärschlüssel in einer der Tabellen definiert ist",
+      "Aus Datenschutz-, Performance- oder Strukturierungsgründen"
+    ],
+    "r": 3
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 66,
+    "a": [
+      "Das Fachwort wiederholen, bis der Kunde es auswendig kennt",
+      "Den Kunden deutlich auf seine fachliche Wissenslücke hinweisen",
+      "Verständlich formulieren und den Nutzen für den Kunden erklären",
+      "Die Beratung unverzüglich an eine interne Fachabteilung abgeben"
+    ],
+    "r": 2
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 161,
+    "a": [
+      "Hauspreis aus Wohnfläche per überwachtem Regressionsmodell",
+      "Spam-Erkennung anhand gelabelter Trainingsbeispiele im Postfach",
+      "Kundensegmentierung ohne vorgegebene Klassen im Datensatz",
+      "Klassifikation handgeschriebener Ziffern mit beschrifteten Bildern"
+    ],
+    "r": 2
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 67,
+    "a": [
+      "Der Unterschied betrifft vor allem die Höhe der Vergütung",
+      "Der Dienstvertrag schuldet einen Erfolg, der Werkvertrag die Tätigkeit",
+      "Beide Vertragsarten schulden stets einen konkreten werkvertraglichen Erfolg",
+      "Der Werkvertrag schuldet einen Erfolg, der Dienstvertrag die Tätigkeit"
+    ],
+    "r": 3
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 109,
+    "a": [
+      "Das Klassendiagramm mit Attributen und Methoden der Klassen",
+      "Das Anwendungsfalldiagramm mit Akteuren und Systemfunktionen",
+      "Das Aktivitätsdiagramm mit Abläufen und Entscheidungsknoten",
+      "Das Sequenzdiagramm mit zeitlicher Nachrichtenfolge zwischen Objekten"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 110,
+    "a": [
+      "Das Klassendiagramm mit statischer Struktur der Softwareklassen",
+      "Das Anwendungsfalldiagramm mit externen Akteuren und Use Cases",
+      "Das Sequenzdiagramm mit Nachrichten in zeitlicher Abfolge",
+      "Das Zustandsdiagramm mit Zuständen und Übergängen eines Objekts"
+    ],
+    "r": 2
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 111,
+    "a": [
+      "Der Quellcode wird physisch auf dem Schreibtisch des Testers abgelegt",
+      "Der Bildschirm wird für die Ausgabe farblich neu kalibriert",
+      "Der Code wird automatisch durch eine Unit-Test-Suite auf dem Server ausgeführt",
+      "Der Algorithmus wird gedanklich mit Beispieldaten Schritt für Schritt geprüft"
+    ],
+    "r": 3
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 115,
+    "a": [
+      "Die Lizenz ist frei übertragbar auf beliebig viele andere Geräte",
+      "Die Lizenz gilt ausschließlich für Behörden und Schulen im Land",
+      "Eine Lizenz berechtigt zur gleichzeitigen Nutzung auf vielen Geräten",
+      "Die Lizenz ist an ein Gerät gebunden und wird mit diesem verkauft"
+    ],
+    "r": 3
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 48,
+    "a": [
+      "Der Vorgang liegt auf dem kritischen Pfad des Netzplans",
+      "Der Vorgang ist fachlich nicht durchführbar und wird gestrichen",
+      "Der Vorgang kann zeitlich beliebig verschoben werden",
+      "Der Vorgang wurde im Projektplan noch nicht terminiert"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 60,
+    "a": [
+      "Oligopol – wenige große Anbieter beherrschen den Markt",
+      "Monopol – ein einzelner Anbieter dominiert das Angebot",
+      "Polypol – viele Anbieter stehen im Wettbewerb zueinander",
+      "Käufermarkt – die Nachfrage übersteigt das verfügbare Angebot"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 137,
+    "a": [
+      "Es ersetzt die Rechnung gegenüber dem Kunden nach der Abnahme",
+      "Es dokumentiert nachvollziehbar die durchgeführten Prüfschritte",
+      "Es beschreibt die ursprünglichen Wünsche des Auftraggebers",
+      "Es listet die Gehälter aller am Einrichtungstermin beteiligten Techniker"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 140,
+    "a": [
+      "Spezifisch, messbar, attraktiv, realistisch und terminiert formuliert",
+      "Das Ziel soll möglichst intelligent und modern formuliert sein",
+      "Schnell, modern, agil, robust und für Tests im Projekt geeignet",
+      "Strategisch, motivierend, aktiv umgesetzt und transparent kommuniziert"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 55,
+    "a": [
+      "Zwei Seiten: Sender und Empfänger der übermittelten Nachricht",
+      "Eine Seite: ausschließlich der reine Sachinhalt der Nachricht",
+      "Drei Seiten: Inhalt, Tonfall und unmittelbare Wirkung der Nachricht",
+      "Vier Seiten: Sachebene, Appell, Selbstoffenbarung und Beziehung"
+    ],
+    "r": 3
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 104,
+    "a": [
+      "Reduzierung auf ein sicheres Mindestmaß an Diensten und Rechten",
+      "Installation einer zusätzlichen Antivirensoftware auf dem Server",
+      "Vollständige Neuinstallation des Betriebssystems ohne Datenmigration",
+      "Verschlüsselung der gesamten Festplatte unabhängig vom Betrieb"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 158,
+    "a": [
+      "Vorwärtsleiten der Eingaben durch die Schichten des Netzes",
+      "Zufälliges Initialisieren der Startgewichte vor dem Training",
+      "Rückführen des Fehlers zur Anpassung der Netzwerk-Gewichte",
+      "Aufteilen des Datensatzes in Trainings- und Testdaten vor dem Lernen"
+    ],
+    "r": 2
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 2,
+    "a": [
+      "Weil die Scheinleistung den effektiven Stromverbrauch bestimmt",
+      "Weil VA den zulässigen Maximalstrom je Leitung begrenzt",
+      "Weil Blindleistung über Kabel und USV übertragen werden muss",
+      "Weil die USV sonst die Netzfrequenz nicht stabil halten kann"
+    ],
+    "r": 2
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 128,
+    "a": [
+      "Monitorhöhe, Sitzhöhe, Blickabstand und Beleuchtung anpassen",
+      "Einen möglichst kleinen Monitor zur Platzersparnis am Platz anschaffen",
+      "Den Monitor zusätzlich als Hauptlichtquelle am Arbeitsplatz nutzen",
+      "Möglichst stark nach unten auf Tastatur und Schreibtisch schauen"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 74,
+    "a": [
+      "Treiber, Helfer, Beobachter und aktive Gegner der Veränderung",
+      "Sponsor, Kunde, Endnutzer und technischer Betreiber des Systems",
+      "Promoter, Bremser, Skeptiker und Widerständler im Veränderungsprojekt",
+      "Forming, Storming, Norming und Performing als Teamentwicklungsphasen"
+    ],
+    "r": 2
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 143,
+    "a": [
+      "Ausschließlich die technische Umsetzbarkeit der geplanten Lösung",
+      "Ausschließlich die Verfügbarkeit qualifizierter Projektmitarbeiter",
+      "Ausschließlich die Höhe der für das Projekt kalkulierten Kosten",
+      "Technik, Wirtschaftlichkeit, Recht und Termine des Vorhabens"
+    ],
+    "r": 3
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 284,
+    "a": [
+      "Promoter, Bremser, Skeptiker und Widerständler im Change-Prozess",
+      "Kunde, Lieferant, strategischer Partner und externer Wettbewerber",
+      "Planer, Tester, Entwickler und späterer Betreiber der Lösung",
+      "Geschäftsführung, Mitarbeiter, Auszubildende und Praktikanten"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 59,
+    "a": [
+      "Die Störung, die während der Übertragung im Kanal auftritt",
+      "Die emotionale Grundstimmung des Senders beim Formulieren",
+      "Die Rückmeldung des Empfängers als Bestätigung der Nachricht",
+      "Das Übertragungsmedium wie Gespräch, Telefon, Chat oder E-Mail"
+    ],
+    "r": 3
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 150,
+    "a": [
+      "Die Gehälter aller am Projekt beteiligten Mitarbeitenden",
+      "Ausschließlich der verbindlich vereinbarte Endtermin des Projekts",
+      "Die hierarchische Zerlegung in Teilaufgaben und Arbeitspakete",
+      "Die Liste aller möglichen Lieferanten für Hard- und Software"
+    ],
+    "r": 2
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 207,
+    "a": [
+      "SYN vom Client, SYN-ACK vom Server, ACK vom Client",
+      "ACK vom Client, SYN vom Server, FIN zur Beendigung",
+      "PING vom Client, PONG vom Server, erneutes PING",
+      "GET vom Client, POST vom Server, OK als Abschluss"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 219,
+    "a": [
+      "IPsec und L2TP als typische VPN-Tunnelprotokolle",
+      "HTTP und FTP als Anwendungsprotokolle im Unternehmensnetz",
+      "SMTP und POP3 als Protokolle für E-Mail-Übertragung",
+      "SMB und NFS als Protokolle für Dateifreigaben im LAN"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 294,
+    "a": [
+      "Die Rechnung ist dieser E-Mail-Nachricht als Anhang beigefügt",
+      "Die Rechnung wurde bereits vollständig vom Empfänger bezahlt",
+      "Die Rechnung ist verloren gegangen und muss neu erstellt werden",
+      "Die Rechnung wird separat per Post an die Rechnungsadresse geschickt"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 116,
+    "a": [
+      "Nutzung, Änderung und Weitergabe der Software sind ausdrücklich erlaubt",
+      "Private Nutzung auf genau einem registrierten Endgerät des jeweiligen Nutzers",
+      "Die Software darf nur gegen laufende Lizenzgebühr verwendet werden",
+      "Die Software darf ausschließlich im Quellcode gelesen, nicht ausgeführt werden"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 297,
+    "a": [
+      "Das Gerät befindet sich außerhalb der Herstellergarantiezeit",
+      "Das Gerät wurde soeben neu an den Kunden ausgeliefert",
+      "Das Gerät steht noch unter voller Herstellergarantie des Lieferanten",
+      "Das Gerät wurde mangelhaft geliefert und muss reklamiert werden"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 81,
+    "a": [
+      "Bei der Lizenz geht volles Eigentum an der Software über",
+      "Bei der Lizenz geht kein Eigentum über, sondern ein Nutzungsrecht",
+      "Beide Vertragsarten sind rechtlich in allen Punkten identisch",
+      "Ein Lizenzvertrag ist ohne Unterschrift grundsätzlich unwirksam"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 107,
+    "a": [
+      "Er schreibt Quellcode nach Vorgabe des Entwicklers im Editor",
+      "Er sucht inhaltliche Logikfehler im noch nicht kompilierten Code",
+      "Er führt das fertig kompilierte Programm auf dem Zielsystem aus",
+      "Er verbindet Objektdateien und Bibliotheken zur ausführbaren Datei"
+    ],
+    "r": 3
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 132,
+    "a": [
+      "Betriebssystem auf einem Server, auf das Clients remote zugreifen",
+      "Besonders großer Einzelmonitor am lokalen Arbeitsplatz des Nutzers",
+      "Zweiter Monitor am selben Arbeitsplatz für erweiterten Arbeitsbereich",
+      "Vollständige lokale Kopie aller Firmendaten auf dem Client-Rechner"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 120,
+    "a": [
+      "Integrierte Entwicklungsumgebung mit Editor, Build und Debugger",
+      "Spezielles Betriebssystem, das ausschließlich für Entwickler gedacht ist",
+      "Datenbankmanagementsystem für betriebliche Anwendungen und Berichte",
+      "Netzwerkprotokoll zur verteilten Auslieferung von Quellcodedateien"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 134,
+    "a": [
+      "Etwa 9,2 Watt durchschnittliche Aufnahmeleistung des Notebooks",
+      "Etwa 276 Watt durchschnittliche Aufnahmeleistung des Notebooks",
+      "Etwa 30,7 Watt durchschnittliche Aufnahmeleistung des Notebooks",
+      "Etwa 92 Watt durchschnittliche Aufnahmeleistung des Notebooks"
+    ],
+    "r": 2
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 136,
+    "a": [
+      "Planung legt Ist- und Zielzustand fest, Lenkung setzt Maßnahmen um",
+      "Lenkung legt den Zielzustand fest, Planung steuert die Umsetzung",
+      "Beide Begriffe bezeichnen im Qualitätsmanagement denselben Vorgang",
+      "Planung betrifft ausschließlich die entstehenden Kosten im Projekt"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 42,
+    "a": [
+      "Virtual Public Network – öffentlich erreichbares Virtuelles Netz",
+      "Very Protected Node – besonders geschützter Netzwerkknoten im Rechenzentrum",
+      "Virtual Private Network – virtuelles privates Netz über unsichere Leitungen",
+      "Verified Private Node – verifizierter privater Knoten im Firmennetz"
+    ],
+    "r": 2
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 88,
+    "a": [
+      "Gesamte Informationssicherheit des Betriebs einschließlich IT-Systeme",
+      "Einhaltung von DSGVO und BDSG bei personenbezogenen Datenverarbeitungen",
+      "Betreuung betroffener Personen bei Datenschutzvorfällen im Unternehmen",
+      "Zertifizierung und Audit des betrieblichen Qualitätsmanagementsystems"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 57,
+    "a": [
+      "Sender, Empfänger und ein Störfilter als Bestandteil des Kanals",
+      "Sender, Empfänger, Nachricht, Kodierung und mögliche Störquelle",
+      "Sender und Empfänger ohne Nachricht, Kodierung oder Störquelle",
+      "Sachebene, Appell, Selbstoffenbarung und Beziehung nach Schulz von Thun"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 101,
+    "a": [
+      "Möglichst kurze Passwörter für schnelle Eingabe am Arbeitsplatz",
+      "Länge, Komplexität, regelmäßiger Wechsel und keine Mehrfachnutzung",
+      "Passwörter aufschreiben und sichtbar am Monitor für das Team befestigen",
+      "Den Firmennamen als einheitliches Kennwort für alle Benutzer verwenden"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 355,
+    "a": [
+      "Schicht 3 – Vermittlungsschicht (Network Layer) des OSI-Modells",
+      "Schicht 2 – Sicherungsschicht (Data Link Layer) des OSI-Modells",
+      "Schicht 4 – Transportschicht (Transport Layer) des OSI-Modells",
+      "Schicht 1 – Bitübertragungsschicht (Physical Layer) des OSI-Modells"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 73,
+    "a": [
+      "Jede Abteilung arbeitet völlig unabhängig von laufenden Projekten",
+      "Es gilt gleichzeitig fachliche und projektbezogene Weisungsbefugnis",
+      "Es gibt genau eine einzige Führungsebene ohne Projektleitung",
+      "Es gibt keine festen Verantwortlichkeiten in den Projektteams"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 108,
+    "a": [
+      "Sprachunabhängige, nicht ausführbare Beschreibung eines Algorithmus",
+      "Kompilierbarer Programmcode für mehrere Zielplattformen gleichzeitig",
+      "Verschlüsselte Darstellung von Programmabläufen zur Geheimhaltung",
+      "Fehlerprotokoll des Compilers nach fehlgeschlagener Übersetzung"
+    ],
+    "r": 0
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 91,
+    "a": [
+      "Zweckbindung der Verarbeitung und Minimierung der Datenmenge",
+      "Richtigkeit der Daten und Begrenzung der Speicherdauer",
+      "Integrität der Systeme und Vertraulichkeit der Informationen",
+      "Unbegrenzte Speicherung sämtlicher erhobener personenbezogener Daten"
+    ],
+    "r": 3
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 103,
+    "a": [
+      "Musik- und Filmwerke, die mit Copyright-Zeichen gekennzeichnet sind",
+      "Werke, die beim Patentamt als geistiges Eigentum eingetragen sind",
+      "Gedruckte Bücher und Fachzeitschriften in Papierform im Handel",
+      "Jedes Werk aus den Bereichen Literatur, Wissenschaft und Kunst"
+    ],
+    "r": 3
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 58,
+    "a": [
+      "Geschlossene Frage mit genau zwei vorgegebenen Antwortmöglichkeiten",
+      "Suggestivfrage, die die gewünschte Antwort bereits nahelegt",
+      "Offene Frage, etwa: \"Was ist Ihnen bei der Lösung wichtig?\"",
+      "Rhetorische Frage ohne echte Antwortmöglichkeit für den Kunden"
+    ],
+    "r": 2
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 106,
+    "a": [
+      "Beide übersetzen den Quellcode vorab in eine ausführbare Programmdatei",
+      "Der Interpreter übersetzt vorab, der Compiler führt zur Laufzeit aus",
+      "Der Compiler übersetzt vorab, der Interpreter arbeitet Zeile für Zeile",
+      "Der Compiler erstellt Fehlerlisten, der Interpreter erzeugt Maschinencode"
+    ],
+    "r": 2
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 153,
+    "a": [
+      "Wir wollen künftig insgesamt deutlich besser in der Qualität werden",
+      "Die Fehlerquote sinkt bis 31.03. von 8 Prozent auf 3 Prozent",
+      "Mehr Qualität für alle Beteiligten im gesamten Unternehmen insgesamt",
+      "Der Kunde soll mit unserer Leistung spürbar zufriedener sein als bisher"
+    ],
+    "r": 1
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 61,
+    "a": [
+      "Der Verkäufer, weil er die Ware besitzt und jederzeit liefern kann",
+      "Der Käufer, weil er zwischen vielen Anbietern frei wählen kann",
+      "Beide Seiten gleich stark, weil der Staat alle Preise festlegt",
+      "Der Hersteller, weil er allein die Produktionskosten bestimmen kann"
+    ],
+    "r": 1
+  }
+]
