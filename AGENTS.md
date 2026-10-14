@@ -8,8 +8,9 @@ nur hier. Das Backend hat seine eigene: `HofZeitV12/ap1-trainer-api` bzw. lokal
 
 ## Projekt in Kürze
 
-**Oberfläche** des AP1-Trainers — Lern-App zur Vorbereitung auf die
-IHK-Abschlussprüfung Teil 1 und Teil 2 für Kaufleute für IT-System-Management.
+**Oberfläche** — IHK-Lern-App: **AP1 für IT-Berufe** (gemeinsame Kerninhalte),
+AP2 berufsbezogen (aktuell Kaufmann/-frau für IT-System-Management; weitere
+Berufe geplant). Siehe Parent `docs/VISION.md` / `.agents/product-marketing.md`.
 Eine einzige Datei `index.html` (Stil- und Skriptblock inline) plus die Prüfwerkzeuge
 in `tools/`.
 

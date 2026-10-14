@@ -4,8 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#142033">
-<meta name="ap1-ui-build" content="ui-radical-v3-header-scroll-2026-10-14">
-<title>AP1-Trainer · Kaufmann für IT-System-Management</title>
+<meta name="ap1-ui-build" content="ui-radical-v3-marketing-it-berufe-2026-10-14">
+<title>AP1 · IHK-Prüfungsvorbereitung für IT-Berufe</title>
+<meta name="description" content="Gemeinsames AP1 für alle IT-Ausbildungsberufe. AP2 nach Beruf — aktuell Kaufmann/-frau für IT-System-Management. Übungsfragen im IHK-Stil: Aufbau, Inhalte, Themen die oft vorkommen.">
 <!-- Anmeldung: Projekt-Adresse und öffentlicher Schlüssel des Anmeldedienstes.
      Beides ist öffentlich. Der geheime Schlüssel gehört hier NICHT hinein.
      Solange die Werte leer sind, läuft die Anmeldung ohne Konto (nur Name).
@@ -90,7 +91,7 @@ h1,h2,h3,h4{margin:0}
 }
 .skip:focus,.skip:focus-visible{left:14px;top:14px}
 
-/* ========== KOPF: helles Instrumentenbrett (nicht Nachtfläche) ========== */
+/* ========== KOPF: fest oben (fixed) — sticky+overflow war kaputt ========== */
 .kopf{
   display:grid;
   grid-template-columns:minmax(0,1.4fr) minmax(220px,auto);
@@ -103,9 +104,9 @@ h1,h2,h3,h4{margin:0}
   color:var(--tinte);
   border-bottom:var(--kante) solid var(--tinte);
   box-shadow:0 12px 40px rgba(20,32,51,.08);
-  position:sticky;top:0;z-index:var(--z-kopf);
-  /* Eine undurchsichtige Schicht — sonst scheinen Inhalte beim Sticky durch */
-  isolation:isolate;overflow:hidden;
+  position:fixed;top:0;left:0;right:0;width:100%;
+  z-index:var(--z-kopf);
+  isolation:isolate;
 }
 .kopf::after{
   content:"";display:block;grid-column:1/-1;
@@ -269,7 +270,9 @@ button.teil-marke:focus-visible{outline:2px solid var(--blatt);outline-offset:2p
   display:grid;
   grid-template-columns:var(--rail-breite) minmax(0,1fr);
   gap:0;
-  min-height:calc(100vh - var(--schale-kopf));
+  /* Platz für fixed-Kopf — sonst liegt Inhalt unter dem Header */
+  padding-top:var(--schale-kopf);
+  min-height:100vh;
   align-items:start;
 }
 .rail{
@@ -919,11 +922,11 @@ button.akt:focus-visible{outline:2px solid var(--gruen);outline-offset:3px}
         <path class="logo-mark" d="M14 36h20" stroke="#14B8A6" stroke-width="2.5" stroke-linecap="square"/>
       </svg>
       <span class="kopf-titelblock">
-        <span class="wortmarke"><span class="wortmarke-ap1">AP1</span>-Trainer</span>
+        <span class="wortmarke"><span class="wortmarke-ap1">AP1</span> · IT-Berufe</span>
         <button class="teil-marke" id="btn-teil" type="button" aria-haspopup="true">AP1</button>
       </span>
     </h1>
-    <span class="unter" id="kopf-unter">Kaufmann für IT-System-Management · Prüfungsteil 1</span>
+    <span class="unter" id="kopf-unter">Gemeinsames AP1 · Prüfungsteil 1</span>
   </div>
 
   <div class="kopf-wahl">
@@ -8522,8 +8525,8 @@ function kopfJahrZeichnen() {
   }
   if (el) {
     el.textContent = istAp2()
-      ? 'Kaufmann für IT-System-Management · Prüfungsteil 2' + (profil ? ' · ' + profil.name : '')
-      : 'Kaufmann für IT-System-Management · Prüfungsteil 1' + (profil && jahr !== null ? ' · ' + jahrKurz() : (profil ? ' · ' + profil.name : ''));
+      ? 'AP2 · IT-System-Management · Prüfungsteil 2' + (profil ? ' · ' + profil.name : '')
+      : 'Gemeinsames AP1 · IT-Berufe · Prüfungsteil 1' + (profil && jahr !== null ? ' · ' + jahrKurz() : (profil ? ' · ' + profil.name : ''));
   }
 
   /* Der Zustand der Ablage ist eine Auskunft, kein Knopf. Er steht als
@@ -8664,8 +8667,9 @@ async function profilAuswahlZeigen() {
     <div class="anmeldung">
       <div class="deckblatt">
         <div>
-          <h2>Kaufmann für IT-System-Management</h2>
-          <p class="zeile">Prüfungsvorbereitung · AP1 und AP2</p>
+          <h2>IHK-Vorbereitung für IT-Berufe</h2>
+          <p class="zeile">AP1 gemeinsam für alle IT-Ausbildungen · AP2 nach Beruf</p>
+          <p class="zeile" style="margin-top:8px;font-size:12.5px;color:var(--schwach)">Aktuell: AP2 für Kaufmann/-frau IT-System-Management. Weitere IT-Berufe folgen. Fokus: Fragenaufbau, Katalog und Themen, die oft drankommen.</p>
         </div>
         <div>
           <p class="zeile" style="margin-bottom:6px">Womit du gerade arbeitest</p>
@@ -9102,8 +9106,8 @@ function startseiteZeigen() {
     <div class="kopfstreifen">
       <h2>Heute lernen</h2>
       <div class="meta">${istAp2()
-        ? 'Prüfungsteil 2 · vier Prüfungsbereiche<br>' + hole('TASKS').length + ' Rechenaufgaben · ' + hole('QUIZ').length + ' Quizfragen · ' + hole('KARTEN').length + ' Karten'
-        : 'Kaufmann für IT-System-Management · ' + jahrText() + '<br>' + hole('TASKS').length + ' Rechenaufgaben · ' + hole('QUIZ').length + ' Quizfragen · ' + hole('KARTEN').length + ' Karten in diesem Ausschnitt'}</div>
+        ? 'Prüfungsteil 2 · IT-System-Management · vier Prüfungsbereiche<br>' + hole('TASKS').length + ' Rechenaufgaben · ' + hole('QUIZ').length + ' Quizfragen · ' + hole('KARTEN').length + ' Karten'
+        : 'Gemeinsames AP1 · IT-Berufe · ' + jahrText() + '<br>' + hole('TASKS').length + ' Rechenaufgaben · ' + hole('QUIZ').length + ' Quizfragen · ' + hole('KARTEN').length + ' Karten in diesem Ausschnitt'}</div>
     </div>
 
     <div class="start start-formate">
@@ -10023,26 +10027,33 @@ function starteBereich(id) {
   if (id === 'fall') { adresseSetzen(null); starteFall(); return; }
 }
 
-/* Sticky-Kopf: Höhe messen (Rail/Scrim) + beim Scrollen kompakt zusammenschrumpfen. */
+/* Fixed-Kopf: Höhe → --schale-kopf; hoch/runter Scroll → kompakt/expand. */
 function kopfSchaleMessen() {
   const kopf = document.querySelector('.kopf');
   if (!kopf) return;
+  const scrollY = () => window.scrollY || document.documentElement.scrollTop || 0;
   const setzen = () => {
     const h = Math.ceil(kopf.getBoundingClientRect().height);
     if (h > 0) document.documentElement.style.setProperty('--schale-kopf', h + 'px');
   };
+  /* Hysterese: runter ab 56px kompakt, hoch erst unter 16px wieder voll */
   const kompaktSchalten = () => {
-    const soll = window.scrollY > 48;
-    if (kopf.classList.contains('kompakt') === soll) return;
+    const y = scrollY();
+    const ist = kopf.classList.contains('kompakt');
+    const soll = ist ? y > 16 : y > 56;
+    if (ist === soll) return;
     kopf.classList.toggle('kompakt', soll);
-    /* Nach Layout-Wechsel Höhe neu setzen (ResizeObserver folgt oft einen Frame später). */
-    requestAnimationFrame(setzen);
+    requestAnimationFrame(() => {
+      setzen();
+      requestAnimationFrame(setzen);
+    });
   };
   setzen();
   kompaktSchalten();
   if (typeof ResizeObserver !== 'undefined') new ResizeObserver(setzen).observe(kopf);
   else window.addEventListener('resize', setzen);
-  window.addEventListener('scroll', kompaktSchalten, { passive: true });
+  window.addEventListener('scroll', kompaktSchalten, { passive: true, capture: true });
+  document.addEventListener('scroll', kompaktSchalten, { passive: true, capture: true });
 }
 kopfSchaleMessen();
 

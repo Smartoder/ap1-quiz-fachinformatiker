@@ -4,6 +4,26 @@ Das Format folgt *Keep a Changelog*. Bruchstellen sind ausdrücklich gekennzeich
 
 ## [Nicht veröffentlicht]
 
+### Geändert — Marketing-Copy: IT-Berufe statt Ein-Beruf (2026-10-14)
+
+**Warum.** Positioning widersprach dem Produktziel und der eigenen Quellen-Seite
+(„AP1 für alle IT-Berufe“): Titel, Kopf und Anmeldung sagten nur Kaufmann
+IT-System-Management.
+
+**Was.** Title/Description, Wortmarke „AP1 · IT-Berufe“, Kopfzeile und
+Anmelde-Deckblatt auf gemeinsames AP1 + AP2 nach Beruf (aktuell IT-SM, ehrlich).
+Start-Meta angepasst. Marker `ui-radical-v3-marketing-it-berufe-2026-10-14`.
+Kein API-/Inhalts-ID-Bruch.
+
+### Behoben — Kopf fest + kompakt beim Scrollen (2026-10-14)
+
+**Warum.** `position:sticky` + `overflow:hidden` am Kopf ließ den Header
+beim Scrollen mitwandern; „Kompakt“ war kaum spürbar.
+
+**Was.** Kopf `position:fixed`; Inhalt mit `padding-top:var(--schale-kopf)`;
+Hysterese (runter ab 56 px kompakt, hoch unter 16 px wieder voll). Marker
+`ui-radical-v3-header-fixed-2026-10-14`.
+
 ### Geändert — UI Radical v3 „Korrekturbogen“ (2026-10-14)
 
 **Warum.** v2 blieb zu nah am alten Layout (Nachtkopf + Grün-Kacheln); Erwartung
