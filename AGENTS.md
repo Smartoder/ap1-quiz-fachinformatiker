@@ -113,8 +113,10 @@ diesem öffentlichen Repository arbeitet, findet hier den Weg zur Langform, aber
   setzt öffentlich `url=/sb` + `key=ap1-web`; Pages-Function `/sb/auth/v1/*`
   proxyt an das **eigene** AP1-Projekt (nicht HofZeit `jxq…` / Üben `mqe…`).
   `AP1_SUPABASE_URL` + `AP1_SUPABASE_SECRET` nur als Cloudflare Pages Secrets —
-  kein `service_role` in Git/HTML. Alternativ später anon-Key direkt in meta.
-  Ohne AUTH (lokal): Tabs Anmelden/Registrieren deaktiviert, „Ohne Konto“ aktiv.
+  kein `service_role` in Git/HTML. Signup/Recover-Mails über Resend
+  (`AP1_RESEND_API_KEY` + `AP1_RESEND_FROM`), nicht Supabase Built-in-Mail.
+  Alternativ später anon-Key direkt in meta. Ohne AUTH (lokal): Tabs
+  Anmelden/Registrieren deaktiviert, „Ohne Konto“ aktiv.
   Name-Weg (Gast) bleibt vollwertig.
 - **Kein Hosting-Wechsel ohne Absprache.** Die Oberfläche wird über das
   Rewrite in `vercel.json` an das Backend angebunden; ein Wechsel der
