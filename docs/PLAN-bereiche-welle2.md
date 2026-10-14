@@ -27,4 +27,4 @@ Bestehende Varianten-Leiste / Tokens unverändert; ggf. Fokus/Chips nur wenn Reg
 - [x] Kein TASK `raid`
 - [x] `ablauf` + `barriere` haben ≥1 FEHLER und ≥1 TASK
 - [x] `npm run check` grün (55/55, vor Deploy)
-- [ ] Live HTTP 200 auf Pages + health ok (nach Push)
+- [x] Live HTTP 200 auf Pages + health ok (wrangler direct upload; Git-Push allein triggert kein Pages-Deploy)

@@ -4,6 +4,16 @@ Das Format folgt *Keep a Changelog*. Bruchstellen sind ausdrücklich gekennzeich
 
 ## [Nicht veröffentlicht]
 
+### Behoben — Auth-Mails über Resend (Rate-Limit) (2026-10-14)
+
+**Warum.** Registrieren auf Live zeigte „email rate limit exceeded“ — Supabase
+Free Built-in-Mail erlaubt nur sehr wenige Mails/Stunde; Confirm war an.
+
+**Was.** `/sb`-Proxy: Signup/Recover erzeugen den Link per Admin
+`generate_link` und senden über Resend (`AP1_RESEND_API_KEY`, optional
+`AP1_RESEND_FROM`). UI: freundliche DE-Meldung bei Rate-Limits. Marker
+`auth-resend-mail-2026-10-14`. Site URL / Redirect im Dashboard weiter prüfen.
+
 ### Geändert — Bereiche Welle 2: Katalog 2025 + Formate (2026-10-14)
 
 **Warum.** AP1-Katalog ab 2025 ohne SQL/RAID/NoSQL/PAP/Vererbung-Fokus; neue Bereiche

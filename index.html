@@ -8986,7 +8986,7 @@ async function profilAuswahlZeigen() {
         setStatus('');
       }
     } catch (e) {
-      setStatus(e.message + ' — alternativ: Tab „Ohne Konto“.', 'fehler');
+      setStatus(authFehlerText(e.message, { mitGast: true }), 'fehler');
     }
     anlegen.disabled = false;
   };
@@ -9000,7 +9000,7 @@ async function profilAuswahlZeigen() {
     if (!mail || !pw) { setStatus('Bitte E-Mail und Passwort eingeben.', 'fehler'); return; }
     login.disabled = true;
     try { await authAnmelden(mail, pw); }
-    catch (e) { setStatus(e.message, 'fehler'); login.disabled = false; }
+    catch (e) { setStatus(authFehlerText(e.message), 'fehler'); login.disabled = false; }
   };
   document.getElementById('pf-pw-login').addEventListener('keydown', e => {
     if (e.key === 'Enter') login.click();
@@ -9017,7 +9017,7 @@ async function profilAuswahlZeigen() {
       await authZuruecksetzen(mail);
       setStatus('Wenn es zu dieser Adresse ein Konto gibt, ist die Mail unterwegs.', 'ok');
     } catch (e) {
-      setStatus(e.message, 'fehler');
+      setStatus(authFehlerText(e.message), 'fehler');
     }
     vergessen.disabled = false;
   };
@@ -9043,6 +9043,20 @@ function authBasis() {
 }
 function authRedirectZiel() {
   try { return (window.location.origin || '') + '/'; } catch (e) { return '/'; }
+}
+/* Freundliche DE-Texte für Auth-Fehler (Rate-Limit wirkt sonst wie App-Bruch). */
+function authFehlerText(roh, opts) {
+  const s = String(roh || '').trim();
+  const low = s.toLowerCase();
+  const gast = opts && opts.mitGast ? ' Alternativ: Tab „Ohne Konto“.' : '';
+  if (/rate.?limit|email rate limit|over_email_send_rate_limit|too many requests|429/.test(low)) {
+    return 'Zu viele Mails in kurzer Zeit — warte etwa 5–60 Minuten und versuche es erneut.' + gast;
+  }
+  if (/bestätigungsmail konnte|reset-mail konnte|resend/i.test(low)) {
+    return s + gast;
+  }
+  if (!s) return 'Etwas ist schiefgelaufen.' + gast;
+  return s + (opts && opts.mitGast && !/ohne konto/i.test(s) ? gast : '');
 }
 async function authRegistrieren(mail, pw, name) {
   const r = await fetch(authBasis() + '/signup', {
