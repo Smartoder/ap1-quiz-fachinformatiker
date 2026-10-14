@@ -4,14 +4,15 @@ Das Format folgt *Keep a Changelog*. Bruchstellen sind ausdrücklich gekennzeich
 
 ## [Nicht veröffentlicht]
 
-### Geändert — Layout: PC-Breite + Mobile-Drawer (2026-10-14)
+### Geändert — Layout PC-Breite + Mobile-Drawer (2026-10-14)
 
-**Warum.** Quiz/Lernblatt war auf ~920px gekappt — großer Leerraum rechts am PC.
-Auf dem Handy klappte die Rail den Inhalt nach unten statt darüber zu liegen.
+**Warum.** Auf dem Desktop blieb die Lernfläche bei `max-width:920px` und ließ
+große Leerränder; mobil klappte die Rail den Inhalt nach unten statt als Overlay.
 
-**Was.** `.blatt` füllt die Rasterspalte; Quiz volle Breite, Optionen ab 1100px
-zweispaltig. Mobile: Rail als Overlay-Drawer + Scrim, sticky Aktionsleiste,
-größere Touch-Ziele. Kein API-/Store-Vertrag geändert.
+**Was.** `.blatt` füllt die Raster-Hauptspalte (`--blatt-max:none`); Quiz/Optionen
+nutzen die Breite, Fließtext bleibt über `--lern-mass`. Karten/Fälle/Lücken
+etwas breiter. Mobil: Rail als Drawer mit Scrim, Escape/Scrim schließt;
+Aktions- und Quiz-Touch-Ziele ≥48px. Alle sechs Formate betroffen, kein API-Bruch.
 
 ### Geändert — UI Radical Welle 4: a11y-Pass + Abnahme (2026-10-14)
 
