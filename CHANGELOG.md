@@ -4,6 +4,17 @@ Das Format folgt *Keep a Changelog*. Bruchstellen sind ausdrücklich gekennzeich
 
 ## [Nicht veröffentlicht]
 
+### Geändert — UI Polish Welle: Lernflächen + Tokens (2026-10-14)
+
+**Warum.** Rechen-Schema, Schwächen und Nebenformate wirkten schmaler/älter als
+Startseite/Shell; Radien/Buttons/Kopf-Offset waren uneinheitlich.
+
+**Was.** Token-Radien 6/8 px; einheitliche Button-Höhe (`--btn-min`); Schema-Grid
+breiter, Ergebniszeilen mit Tinte-Kante statt „Kasten-Insel“; Quiz/Karten/Fall/
+Lücken/Fehlersuche/Schwächen volle Blattbreite; Lücken- und Fehler-Schema wie
+Arbeitsblätter; Kopf-Schale per `ResizeObserver` (`--schale-kopf` dynamisch);
+Build-Marker `ap1-ui-build`. Kein API-/Store-Vertrag geändert.
+
 ### Geändert — Layout PC-Breite + Mobile-Drawer (2026-10-14)
 
 **Warum.** Auf dem Desktop blieb die Lernfläche bei `max-width:920px` und ließ

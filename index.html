@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#FFFFFF">
+<meta name="ap1-ui-build" content="ui-polish-2026-10-14">
 <title>AP1-Trainer · Kaufmann für IT-System-Management</title>
 <!-- Anmeldung: Projekt-Adresse und öffentlicher Schlüssel des Anmeldedienstes.
      Beides ist öffentlich. Der geheime Schlüssel gehört hier NICHT hinein.
@@ -62,12 +63,13 @@
   --mono:"IBM Plex Mono",ui-monospace,"Consolas",monospace;
 
   /* Zwei Radien mit Bedeutung, nicht einer überall:
-       2 px = ein Feld (Knopf, Eingabe, Marke)
-       3 px = eine Fläche (Blatt, Gruppe, Dialog)
+       6 px = ein Feld (Knopf, Eingabe, Marke) — greifbar, nicht Card-Kit
+       8 px = eine Fläche (Blatt, Gruppe, Dialog)
      Ein Radius für alles ist die Signatur einer Vorlage; hier trennt er
      Bedienelement von Fläche. */
-  --r:2px;
-  --r-flaeche:3px;
+  --r:6px;
+  --r-flaeche:8px;
+  --btn-min:44px;
 
   /* Ein Maß für „eine Fläche": Rahmen oben + unten, Innenseite, Abstand
      zwischen zwei Flächen. Überall dieselben Werte — sonst wandert die
@@ -174,7 +176,7 @@ h1,h2,h3,h4{margin:0}
               Fläche oben und steht vor jeder Überschrift; die Marke
               zitiert damit wörtlich das Raster. */
 .logo{
-  width:27px;height:27px;flex:0 0 27px;
+  width:29px;height:29px;flex:0 0 29px;
   color:var(--tinte);
 }
 .logo-blatt{fill:var(--blatt);stroke:currentColor;stroke-width:1.5;stroke-linejoin:round}
@@ -530,18 +532,18 @@ button.rail-kopf.titel .chev{
 .schema{
   border:1px solid var(--linie);border-top:var(--kante) solid var(--tinte);
   background:var(--blatt);border-radius:var(--r-flaeche);
-  position:relative;
+  position:relative;width:100%;max-width:none;
 }
 .schema-kopf{
-  display:grid;grid-template-columns:30px minmax(0,1fr) 150px 62px;
+  display:grid;grid-template-columns:36px minmax(0,1fr) minmax(168px,220px) 72px;
   font-size:11px;font-weight:600;color:var(--schwach);
-  padding:7px 14px 7px 8px;border-bottom:1px solid var(--linie);
+  padding:8px 16px 8px 10px;border-bottom:1px solid var(--linie);
   background:var(--papier);
 }
 .schema-kopf .r{text-align:right}
 .zeile{
-  display:grid;grid-template-columns:30px minmax(0,1fr) 150px 62px;
-  align-items:center;padding:3px 14px 3px 8px;
+  display:grid;grid-template-columns:36px minmax(0,1fr) minmax(168px,220px) 72px;
+  align-items:center;padding:5px 16px 5px 10px;
   border-bottom:1px solid var(--linie-hell);
 }
 .zeile:last-child{border-bottom:0}
@@ -553,15 +555,22 @@ button.rail-kopf.titel .chev{
 .zeile.falsch .marke{color:var(--rot)}
 .zeile .name{font-size:13.5px;padding-right:10px}
 .zeile .name .op{font-family:var(--mono);color:var(--schwach);margin-right:7px}
+.zeile.ergebnis{
+  border-top:2px solid var(--tinte);
+  background:var(--papier);
+  padding-top:8px;padding-bottom:8px;
+}
 .zeile.ergebnis .name{font-weight:600}
-.zeile .feld{display:flex;justify-content:flex-end}
+.zeile.ergebnis .wert{font-weight:600;color:var(--tinte)}
+.zeile .feld{display:flex;justify-content:flex-end;min-width:0}
 .zeile input{
   font:inherit;font-family:var(--mono);font-size:14px;
   font-variant-numeric:tabular-nums;text-align:right;
-  width:100%;padding:5px 8px;
+  width:100%;max-width:220px;padding:8px 10px;min-height:40px;
   border:1px solid var(--schwach);border-radius:var(--r);
   background:var(--blatt);color:var(--tinte);
 }
+.zeile.ergebnis input{font-weight:600;background:var(--blatt)}
 .zeile input:focus{outline:2px solid var(--tinte);outline-offset:-1px;border-color:var(--tinte)}
 .zeile input::placeholder{color:var(--schwach)}
 .zeile.gegeben{background:var(--papier)}
@@ -581,8 +590,10 @@ button.rail-kopf.titel .chev{
 .aktionen{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px;align-items:center}
 button.akt{
   font:inherit;font-size:14px;font-weight:500;
-  padding:9px 18px;border-radius:var(--r);cursor:pointer;
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:var(--btn-min);padding:10px 18px;border-radius:var(--r);cursor:pointer;
   border:1px solid var(--tinte);background:var(--tinte);color:var(--blatt);
+  touch-action:manipulation;
 }
 button.akt:hover{background:var(--tinte-hoch);border-color:var(--tinte-hoch)}
 button.akt.zweit{background:transparent;color:var(--tinte)}
@@ -632,7 +643,7 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
 .ergebnis{
   border:1px solid var(--linie);border-top:var(--kante) solid var(--tinte);
   background:var(--blatt);border-radius:var(--r-flaeche);
-  padding:22px 24px;max-width:74ch;
+  padding:22px 24px;width:100%;max-width:min(96ch,100%);
 }
 .ergebnis h3{margin:0 0 4px;font-size:20px;font-weight:700}
 .ergebnis .quote{
@@ -735,9 +746,9 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
 .quiz{
   border:1px solid var(--linie);border-top:var(--kante) solid var(--tinte);
   background:var(--blatt);border-radius:var(--r-flaeche);
-  padding:0 0 4px;position:relative;
+  padding:0 0 4px;position:relative;width:100%;max-width:none;
 }
-.quiz-frage{padding:17px 20px 6px;font-size:var(--t-gross);font-weight:600;max-width:var(--lern-mass);text-wrap:pretty}
+.quiz-frage{padding:17px 20px 6px;font-size:var(--t-gross);font-weight:600;max-width:min(var(--lern-mass),100%);text-wrap:pretty}
 .quiz-optionen{display:flex;flex-direction:column;gap:2px;padding:8px 12px 12px}
 .quiz-opt{
   display:flex;gap:11px;align-items:flex-start;
@@ -777,7 +788,7 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
 .fortschrittsbalken > i{display:block;height:100%;background:var(--tinte);transition:width .25s ease}
 
 /* ---------- Karteikarten ---------- */
-.karten-stapel{max-width:min(760px,100%);width:100%}
+.karten-stapel{max-width:none;width:100%}
 /* Die Karte ist ein echter Karton: sie darf schwerer sein als alles andere,
    weil sie das einzige Element ist, das man in die Hand nimmt. */
 .karte{
@@ -808,7 +819,12 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
 .karten-zaehler{font-family:var(--mono);font-size:12.5px;color:var(--schwach);margin-left:auto;align-self:center;font-variant-numeric:tabular-nums}
 
 /* ---------- Lückentext / Fehlersuche ---------- */
-.luecke{font-size:var(--t-gross);line-height:1.9;max-width:min(80ch,100%)}
+.luecke{
+  font-size:var(--t-gross);line-height:1.9;
+  border:1px solid var(--linie);border-top:var(--kante) solid var(--tinte);
+  background:var(--blatt);border-radius:var(--r-flaeche);
+  padding:18px 20px;width:100%;max-width:none;
+}
 .luecke input{
   font:inherit;font-family:var(--mono);font-size:14px;
   border:0;border-bottom:2px solid var(--schwach);background:var(--blatt);
@@ -827,12 +843,14 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
 .fehlerzeile .nr{font-family:var(--mono);font-size:12.5px;color:var(--schwach);flex:0 0 22px;padding-top:2px;font-variant-numeric:tabular-nums}
 .fehlerzeile .txt{flex:1;min-width:0;font-family:var(--mono);font-size:var(--t-klein);line-height:1.6}
 .fehlerzeile.fehlerhaft .txt{background:var(--rot-hell);border-left:var(--kante) solid var(--rot);padding:6px 10px;margin-left:-13px}
-.fehlerzeile .urteil{display:flex;gap:6px;flex:0 0 auto}
+.fehlerzeile .urteil{display:flex;gap:8px;flex:0 0 auto;flex-wrap:wrap}
 .fehlerzeile button{
-  font:inherit;font-size:12.5px;padding:4px 11px;cursor:pointer;
+  font:inherit;font-size:12.5px;padding:8px 12px;cursor:pointer;
   border:1px solid var(--linie);background:var(--blatt);border-radius:var(--r);color:var(--tinte);
-  min-height:36px;
+  min-height:var(--btn-min);touch-action:manipulation;
 }
+.schema .fehlerzeile{padding:11px 16px}
+.schema .fehlerzeile:first-child{border-top:0}
 .fehlerzeile button:hover{border-color:var(--tinte)}
 .fehlerzeile button.an{background:var(--tinte);color:var(--blatt);border-color:var(--tinte)}
 .fehlerzeile button:disabled{cursor:default;opacity:.75}
@@ -842,7 +860,7 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
 .fehlerzeile.falsch .marke{color:var(--rot)}
 
 /* ---------- Fallstudie ---------- */
-.fall{max-width:min(90ch,100%);width:100%}
+.fall{max-width:none;width:100%}
 .fall-schritt{
   border:1px solid var(--linie);border-top:var(--kante) solid var(--tinte);
   background:var(--blatt);border-radius:var(--r-flaeche);
@@ -893,17 +911,18 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
 .rail-scrim:focus-visible{outline:2px solid var(--blatt);outline-offset:-2px}
 .rail-toggle{
   display:none;font:inherit;font-size:13px;font-weight:500;
-  background:transparent;color:var(--tinte);border:1px solid var(--tinte);
-  padding:6px 13px;border-radius:var(--r);cursor:pointer;
-  align-items:center;min-height:44px;
+  background:var(--blatt);color:var(--tinte);border:1px solid var(--schwach);
+  padding:8px 14px;border-radius:var(--r);cursor:pointer;
+  align-items:center;min-height:var(--btn-min);touch-action:manipulation;
 }
 .rail-toggle:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
 /* Rückweg zur Übersicht – im Lernfluss sichtbar, ohne den Fortschritt zu löschen */
 .heim{
   font:inherit;font-size:13px;font-weight:500;
-  background:transparent;color:var(--tinte);border:1px solid var(--schwach);
-  padding:6px 13px;border-radius:var(--r);cursor:pointer;
-  display:inline-flex;align-items:center;min-height:44px;
+  background:var(--blatt);color:var(--tinte);border:1px solid var(--schwach);
+  padding:8px 14px;border-radius:var(--r);cursor:pointer;
+  display:inline-flex;align-items:center;min-height:var(--btn-min);
+  touch-action:manipulation;
 }
 .heim[hidden]{display:none}
 .heim:hover{background:var(--papier);border-color:var(--tinte)}
@@ -1132,7 +1151,7 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
    überall dort, wo gezählt wird. Vier Zustände, aber weiterhin nur drei
    Farbfamilien des Blattes: Grün = Freigabe, Tinte = im Gang, Rot = Korrektur,
    Linie = noch nicht begonnen. */
-.schwach-liste{border:1px solid var(--linie);border-top:3px solid var(--tinte);background:var(--blatt);max-width:820px}
+.schwach-liste{border:1px solid var(--linie);border-top:3px solid var(--tinte);background:var(--blatt);width:100%;max-width:none}
 .schwach-zeile{
   display:grid;grid-template-columns:minmax(0,1fr) 120px 92px;
   align-items:center;gap:14px;padding:11px 16px;
@@ -1156,7 +1175,7 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
 .lernbild{
   display:flex;align-items:stretch;gap:0;flex-wrap:wrap;
   border:1px solid var(--linie);border-top:3px solid var(--tinte);
-  background:var(--blatt);max-width:820px;margin-bottom:16px;
+  background:var(--blatt);width:100%;max-width:none;margin-bottom:16px;
 }
 .lernbild-zahl{
   padding:16px 20px;border-right:1px solid var(--linie);
@@ -10316,6 +10335,20 @@ function starteBereich(id) {
   if (id === 'fehler') { adresseSetzen(null); starteFehler(); return; }
   if (id === 'fall') { adresseSetzen(null); starteFall(); return; }
 }
+
+/* Sticky-Kopf + Rail-Offset: feste 108px lagen oft daneben, sobald KPIs umbrechen. */
+function kopfSchaleMessen() {
+  const kopf = document.querySelector('.kopf');
+  if (!kopf) return;
+  const setzen = () => {
+    const h = Math.ceil(kopf.getBoundingClientRect().height);
+    if (h > 0) document.documentElement.style.setProperty('--schale-kopf', h + 'px');
+  };
+  setzen();
+  if (typeof ResizeObserver !== 'undefined') new ResizeObserver(setzen).observe(kopf);
+  else window.addEventListener('resize', setzen);
+}
+kopfSchaleMessen();
 
 statistikZeichnen();
 startseiteZeigen();
