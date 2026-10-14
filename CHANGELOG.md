@@ -4,6 +4,14 @@ Das Format folgt *Keep a Changelog*. Bruchstellen sind ausdrücklich gekennzeich
 
 ## [Nicht veröffentlicht]
 
+### Geändert — Mobile Header sauber (2026-10-14)
+
+**Warum.** App-Bar zeigte AP1 doppelt; Lernstand-Zeile wirkte wie zwei dunkle Bänder.
+
+**Was.** Eine Tinten-Fläche: Menü · Wortmarke · Teil-Chip rechts; Kennzahlen
+in einer Zeile (Wert vor Label) + schmaler Balken. Marker
+`ui-mobile-header-clean-2026-10-14`.
+
 ### Geändert — Mobile App-Schale (2026-10-14)
 
 **Warum.** Auf dem Handy wirkte die Oberfläche wie ein geschrumpfter Desktop:

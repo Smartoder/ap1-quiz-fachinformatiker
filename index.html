@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#142033">
-<meta name="ap1-ui-build" content="ui-mobile-shell-2026-10-14">
+<meta name="ap1-ui-build" content="ui-mobile-header-clean-2026-10-14">
 <title>AP1 · IHK-Prüfungsvorbereitung für IT-Berufe</title>
 <meta name="description" content="Gemeinsames AP1 für alle IT-Ausbildungsberufe. AP2 nach Beruf — aktuell Kaufmann/-frau für IT-System-Management. Übungsfragen im IHK-Stil: Aufbau, Inhalte, Themen die oft vorkommen.">
 <!-- Anmeldung: öffentlich. Live-Deploy setzt url="/sb") + key("ap1-web") —
@@ -827,27 +827,52 @@ button.akt:focus-visible{outline:2px solid var(--gruen);outline-offset:3px}
   .kopf.kompakt .kopf-oben{padding:8px max(12px,env(safe-area-inset-right)) 8px max(12px,env(safe-area-inset-left))}
   .kopf.kompakt .logo{width:32px;height:32px;flex-basis:32px}
   .kopf.kompakt .wortmarke{font-size:1.15rem}
+  /* Eine ruhige App-Bar: Menü | Wortmarke | Teil-Chip rechts */
   .kopf-oben{
     grid-area:brand;
-    display:flex;align-items:center;gap:10px;
-    padding:10px max(12px,env(safe-area-inset-right)) 10px max(12px,env(safe-area-inset-left));
-    padding-top:calc(10px + env(safe-area-inset-top,0px));
+    display:flex;align-items:center;gap:12px;
+    padding:8px max(14px,env(safe-area-inset-right)) 8px max(14px,env(safe-area-inset-left));
+    padding-top:calc(8px + env(safe-area-inset-top,0px));
+    background:var(--tinte);
   }
   .kopf .unter{display:none}
-  .kopf h1{gap:10px;min-width:0;flex:1 1 auto}
-  .logo{display:none} /* SVG sagt schon AP1 — sonst dreifach mit Marke + Teil-Chip */
-  .wortmarke{font-size:1.2rem}
-  .wortmarke-rest{display:inline;font-weight:600;opacity:.9;font-size:.92em}
-  .kopf-titelblock{gap:8px;flex-direction:row;align-items:center;flex-wrap:nowrap;min-width:0}
-  .kopf-titelblock .wortmarke{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:46vw}
+  .kopf h1{
+    gap:0;min-width:0;flex:1 1 auto;margin:0;
+    display:flex;align-items:center;
+  }
+  .logo{display:none}
+  .kopf-titelblock{
+    flex:1 1 auto;min-width:0;width:100%;
+    display:flex;flex-direction:row;align-items:center;justify-content:space-between;
+    gap:12px;flex-wrap:nowrap;
+  }
+  .wortmarke{
+    font-size:1.15rem;letter-spacing:-.03em;line-height:1.15;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;
+  }
+  /* Kein zweites AP1-Badge — Teil-Chip rechts übernimmt die Marke */
+  .wortmarke-ap1{
+    background:transparent;color:var(--blatt);padding:0;border-radius:0;
+    font-weight:700;
+  }
+  .wortmarke-rest{display:inline;font-weight:500;opacity:.78;font-size:.88em}
+  button.teil-marke{
+    flex:0 0 auto;min-height:36px;padding:6px 12px;
+    font-size:12px;letter-spacing:.04em;
+    border:1px solid rgba(255,255,255,.28);
+    background:rgba(20,184,166,.22);color:var(--blatt);
+  }
+  button.teil-marke:hover{background:rgba(20,184,166,.35);border-color:rgba(255,255,255,.4)}
+  button.teil-marke:focus-visible{outline:2px solid var(--gruen-leucht);outline-offset:2px}
   .rail-toggle{
     display:inline-flex;flex:0 0 auto;
-    width:48px;height:48px;min-height:48px;padding:0;
-    border-color:rgba(255,255,255,.35);background:rgba(255,255,255,.08);color:var(--blatt);
+    width:44px;height:44px;min-height:44px;padding:0;
+    border:1px solid rgba(255,255,255,.22);border-radius:var(--r);
+    background:transparent;color:var(--blatt);
   }
   .rail-toggle .dock-txt{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
   .rail-toggle .ico-burger{display:block}
-  .rail-toggle:hover{background:rgba(255,255,255,.14)}
+  .rail-toggle:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.35)}
   .rail-toggle:focus-visible{outline:2px solid var(--gruen-leucht);outline-offset:2px}
   .kopf-wahl{
     position:fixed;left:0;right:0;bottom:0;
@@ -885,35 +910,36 @@ button.akt:focus-visible{outline:2px solid var(--gruen);outline-offset:3px}
   }
   .kopf-schalter .heim:hover{background:var(--papier)}
   .kopf-schalter .heim:focus-visible{outline:2px solid var(--gruen);outline-offset:-2px;z-index:1}
+  /* Lernstand: Kennzahlen in einer Zeile + schmaler Balken, gleiche Tinte */
   .stand{
     grid-area:stand;
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
-    grid-template-rows:auto auto;
-    gap:6px 10px;align-items:end;
-    padding:10px max(14px,env(safe-area-inset-right)) 12px max(14px,env(safe-area-inset-left));
+    display:flex;flex-wrap:wrap;align-items:center;gap:6px 0;
+    padding:6px max(14px,env(safe-area-inset-right)) 10px max(14px,env(safe-area-inset-left));
     border-top:1px solid rgba(255,255,255,.1);
-    background:var(--tinte-hoch);
+    background:var(--tinte);
   }
   .kopf-kpi{
-    flex:unset;min-width:0;max-width:none;width:auto;
-    flex-direction:column;align-items:flex-start;gap:3px;
-    padding:0;border:0;background:transparent;border-radius:0;
+    flex:1 1 0;min-width:0;max-width:none;width:auto;
+    flex-direction:row;align-items:baseline;justify-content:center;gap:6px;
+    padding:2px 4px;border:0;background:transparent;border-radius:0;
+    border-right:1px solid rgba(255,255,255,.12);
   }
+  .kopf-kpi:last-of-type{border-right:0}
   .kopf-kpi-label{
-    font-size:11px;color:rgba(255,255,255,.62);text-transform:none;letter-spacing:0;font-weight:500;
+    font-size:12px;color:rgba(255,255,255,.55);text-transform:none;letter-spacing:0;font-weight:500;
+    order:2;
   }
   .kopf-kpi-wert{
-    font-size:17px;color:var(--blatt);font-weight:600;letter-spacing:-.02em;
+    font-size:15px;color:var(--blatt);font-weight:600;letter-spacing:-.02em;order:1;
   }
   .stand-mass{
-    grid-column:1 / -1;flex:unset;min-width:0;margin-left:0;gap:10px;width:100%;
+    flex:1 1 100%;min-width:0;margin:4px 0 0;gap:10px;width:100%;
   }
   .stand-balken{
-    height:10px;background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.22);
+    height:6px;background:rgba(255,255,255,.12);border:0;border-radius:999px;
   }
   .stand-mass .etikett{
-    color:rgba(255,255,255,.78);font-size:12px;
+    color:rgba(255,255,255,.7);font-size:11px;font-weight:600;
   }
   .rail-mobil-kopf{
     display:flex;align-items:center;justify-content:space-between;gap:10px;
