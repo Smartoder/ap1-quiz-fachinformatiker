@@ -4,6 +4,17 @@ Das Format folgt *Keep a Changelog*. Bruchstellen sind ausdrücklich gekennzeich
 
 ## [Nicht veröffentlicht]
 
+### Geändert — UI Radical v2: Prüfungsmappe neu (2026-10-14)
+
+**Warum.** UI Polish wirkte inkrementell; beim Öffnen soll ein neues Release
+sichtbar sein (Marke, Farbe, CTAs, alle Lernflächen).
+
+**Was.** Tiefe Tinte + Formularpapier-Raster; Hero-Kopf mit Wortmarke, größerer
+SVG-Marke und Instrument-KPIs; Freigabe-Grün als Primär-CTA; Rail als Heft-Inhaltsverzeichnis
+(grüner Rücken, Format-Block); dominante Start-Kacheln; einheitliche grüne Kante an
+Quiz/Rechnen/Karten/Lücken/Fehler/Fälle/Schwächen/Anmeldung; Source Serif/Sans +
+Build-Marker `ui-radical-v2-2026-10-14`. Kein API-/Store-Vertrag geändert.
+
 ### Geändert — UI Polish Welle: Lernflächen + Tokens (2026-10-14)
 
 **Warum.** Rechen-Schema, Schwächen und Nebenformate wirkten schmaler/älter als

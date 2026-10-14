@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#FFFFFF">
-<meta name="ap1-ui-build" content="ui-polish-2026-10-14">
+<meta name="theme-color" content="#061018">
+<meta name="ap1-ui-build" content="ui-radical-v2-2026-10-14">
 <title>AP1-Trainer · Kaufmann für IT-System-Management</title>
 <!-- Anmeldung: Projekt-Adresse und öffentlicher Schlüssel des Anmeldedienstes.
      Beides ist öffentlich. Der geheime Schlüssel gehört hier NICHT hinein.
@@ -14,113 +14,74 @@
 <meta name="ap1-auth-key" content="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
 <style>
 :root{
   color-scheme: light;
 
-  /* =====================================================================
-     FARBSYSTEM — genau DREI Kombinationen, exakte Farbwerte
-     =====================================================================
-
-     1) TINTE & PAPIER — neutrales Trägerdokument (eine Farbfamilie,
-        alle Werte sind Abstufungen desselben Blau-Grau)
-          #111C2E  Tinte        Text, Kopfleiste, Primärfläche, Fokus
-          #26374F  Tinte-hoch   Hover/Active derselben Fläche
-          #4E5F78  Tinte-mild   Sekundärtext, Beschriftungen, Feldränder
-                               (6,5:1 auf Weiß — trägt auch Eingabegrenzen
-                                mit den nötigen 3:1)
-          #C7D1DE  Linie        rein dekorative Trenner
-          #E4E9F0  Linie-fein   feine Trennungen
-          #EEF1F5  Papier       Seitenhintergrund
-          #FFFFFF  Blatt        Blatt / Karte
-
-     2) KORREKTUR — Fehler, Warnung, Stempel
-          #B32D25  Rot          Signal
-          #FBE9E7  Rot-hell     Fläche
-
-     3) FREIGABE — richtig, Fortschritt, Serie
-          #0E6B45  Grün         Signal
-          #E3F1EA  Grün-hell    Fläche
-
-     Kein weiterer Farbwert im Blatt: Hinweisflächen und Fokusringe nutzen
-     Tinte, Rot ist ausschließlich Korrektur, Grün ausschließlich Freigabe.
-     Eingabegrenzen nehmen Tinte-mild statt Linie, damit sie den Kontrast
-     von 3:1 für Bedienelemente erfüllen; Linie bleibt rein dekorativ.
-     ===================================================================== */
-  --tinte:#111C2E;
-  --tinte-hoch:#26374F;
-  --schwach:#4E5F78;
-  --linie:#C7D1DE;
-  --linie-hell:#E4E9F0;
-  --papier:#EEF1F5;
-  --blatt:#FFFFFF;
+  /* ui-radical-v2 — Prüfungsmappe: tiefe Tinte, Formularpapier, Freigabe-Grün
+     Drei Familien: Tinte/Papier · Korrektur · Freigabe (CTA + richtig) */
+  --tinte:#061018;
+  --tinte-hoch:#0F2137;
+  --schwach:#3D5166;
+  --linie:#A8B8CC;
+  --linie-hell:#D4DDE8;
+  --linie-raster:rgba(6,16,24,.07);
+  --papier:#E4EBF3;
+  --blatt:#FFFEFB;
   --rot:#B32D25;
   --rot-hell:#FBE9E7;
-  --gruen:#0E6B45;
-  --gruen-hell:#E3F1EA;
-  --sans:"IBM Plex Sans",system-ui,"Segoe UI",sans-serif;
+  --gruen:#0A7A4B;
+  --gruen-hell:#DDF3E8;
+  --gruen-leucht:#18B06A;
+  --sans:"Source Sans 3",system-ui,"Segoe UI",sans-serif;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
   --mono:"IBM Plex Mono",ui-monospace,"Consolas",monospace;
 
-  /* Zwei Radien mit Bedeutung, nicht einer überall:
-       6 px = ein Feld (Knopf, Eingabe, Marke) — greifbar, nicht Card-Kit
-       8 px = eine Fläche (Blatt, Gruppe, Dialog)
-     Ein Radius für alles ist die Signatur einer Vorlage; hier trennt er
-     Bedienelement von Fläche. */
-  --r:6px;
-  --r-flaeche:8px;
-  --btn-min:44px;
+  --r:5px;
+  --r-flaeche:6px;
+  --btn-min:46px;
 
-  /* Ein Maß für „eine Fläche": Rahmen oben + unten, Innenseite, Abstand
-     zwischen zwei Flächen. Überall dieselben Werte — sonst wandert die
-     Kante und die Seite wirkt zusammengesetzt statt gesetzt. */
-  --kante:3px;
-  --schatten-blatt:0 1px 0 rgba(17,28,46,.05);
+  --kante:4px;
+  --schatten-blatt:0 2px 0 rgba(6,16,24,.06), 0 1px 3px rgba(6,16,24,.04);
 
-  /* Prüfungsmappe — Aktion, Heben, Schale (Welle 2)
-     --aktion / --aktion-hover: Primär-CTA (Startkarten, Welle 3)
-     --heben / --heben-hover: nur interaktive Startflächen, kein Card-Kit
-     --rail-breite: Seitenleiste im Raster
-     --z-kopf: Kopfzeile über Rail/Blatt
-     --motion-schnell: Hover/Übergänge (0ms bei reduced motion) */
-  --aktion:var(--tinte);
-  --aktion-hover:var(--tinte-hoch);
-  --heben:0 2px 0 rgba(17,28,46,.06), 0 8px 24px rgba(17,28,46,.08);
-  --heben-hover:0 4px 0 rgba(17,28,46,.05), 0 12px 28px rgba(17,28,46,.10);
-  --rail-breite:232px;
-  --schale-kopf:108px;
+  --aktion:var(--gruen);
+  --aktion-hover:#086B40;
+  --heben:0 3px 0 rgba(6,16,24,.07), 0 14px 36px rgba(6,16,24,.11);
+  --heben-hover:0 5px 0 rgba(6,16,24,.06), 0 20px 44px rgba(6,16,24,.14);
+  --rail-breite:268px;
+  --schale-kopf:120px;
   --z-kopf:10;
   --z-scrim:20;
   --z-rail-mobil:25;
-  /* blatt-breit: Hauptspalte füllen (kein 920px-Deckel); Prosa bleibt über ch-Maße */
   --blatt-max:none;
   --lern-mass:72ch;
-  --motion-schnell:160ms ease-out;
+  --motion-schnell:180ms ease-out;
   --touch-min:48px;
 
-  /* Schriftskala — ruhig, aber abgestuft. Zwei Familien tun hier die Arbeit:
-     Plex Sans für Sprache, Plex Mono für Zahlen. */
-  --t-heft:24px;
-  --t-titel:19px;
-  --t-gross:15.5px;
-  --t-text:14.5px;
-  --t-klein:13px;
+  --t-heft:28px;
+  --t-titel:22px;
+  --t-gross:16px;
+  --t-text:15px;
+  --t-klein:13.5px;
   --t-mikro:11px;
 }
 *{box-sizing:border-box}
 html,body{margin:0;height:100%}
 html{scroll-padding-top:calc(var(--schale-kopf) + 10px)}
 body{
-  background:var(--papier);
+  background-color:var(--papier);
+  background-image:
+    linear-gradient(var(--linie-raster) 1px,transparent 1px),
+    linear-gradient(90deg,var(--linie-raster) 1px,transparent 1px);
+  background-size:22px 22px;
   color:var(--tinte);
   font-family:var(--sans);
   font-size:15px;
-  line-height:1.5;
+  line-height:1.52;
   -webkit-font-smoothing:antialiased;
   touch-action:manipulation;
-  -webkit-tap-highlight-color:rgba(17,28,46,.08);
-  /* Kein Gummiband über die Kopfzeile hinaus — die Kopfzeile ist der
-     Briefkopf, sie gehört nicht ins Wanken. */
+  -webkit-tap-highlight-color:rgba(6,16,24,.1);
   overscroll-behavior-y:none;
 }
 h1,h2,h3{text-wrap:balance;scroll-margin-top:14px}
@@ -143,23 +104,30 @@ h1,h2,h3,h4{margin:0}
    Titel und Zahlen; das Auge musste über die Knöpfe steigen, um zum Stand
    zu kommen. */
 .kopf{
-  display:flex;flex-wrap:wrap;align-items:center;gap:0 20px;
-  padding:12px 24px 0;
-  background:var(--blatt);
-  color:var(--tinte);
-  border-top:var(--kante) solid var(--tinte);
-  border-bottom:1px solid var(--linie);
+  display:flex;flex-wrap:wrap;align-items:center;gap:0 24px;
+  padding:18px 28px 0;
+  background:linear-gradient(165deg,var(--tinte) 0%,var(--tinte-hoch) 58%,#152A42 100%);
+  color:var(--blatt);
+  border-top:0;
+  border-bottom:var(--kante) solid var(--gruen-leucht);
+  box-shadow:0 10px 36px rgba(6,16,24,.22);
   position:sticky;top:0;z-index:var(--z-kopf);
 }
 .kopf-oben{
-  display:flex;align-items:baseline;gap:20px;
-  flex:1 1 320px;min-width:0;padding-bottom:11px;
+  display:flex;align-items:center;gap:18px;
+  flex:1 1 360px;min-width:0;padding-bottom:14px;
 }
 .kopf h1{
-  display:flex;align-items:center;gap:11px;
+  display:flex;align-items:center;gap:14px;
   font-size:var(--t-titel);font-weight:700;letter-spacing:-.02em;
-  white-space:nowrap;
+  white-space:nowrap;margin:0;
 }
+.kopf-titelblock{display:flex;flex-direction:column;align-items:flex-start;gap:6px;min-width:0}
+.wortmarke{
+  font-family:var(--serif);font-size:clamp(1.35rem,2.8vw,1.65rem);font-weight:700;
+  letter-spacing:-.035em;line-height:1.05;color:var(--blatt);
+}
+.wortmarke-ap1{color:var(--gruen-leucht)}
 /* ---------- Bildmarke ----------
    Eigenes Zeichen, kein Fremdmaterial — deshalb ohne Namensnennung, ohne
    zweite Anfrage und offline lauffähig.
@@ -176,15 +144,22 @@ h1,h2,h3,h4{margin:0}
               Fläche oben und steht vor jeder Überschrift; die Marke
               zitiert damit wörtlich das Raster. */
 .logo{
-  width:29px;height:29px;flex:0 0 29px;
-  color:var(--tinte);
+  width:44px;height:44px;flex:0 0 44px;
+  color:var(--blatt);
+  filter:drop-shadow(0 2px 6px rgba(0,0,0,.25));
 }
-.logo-blatt{fill:var(--blatt);stroke:currentColor;stroke-width:1.5;stroke-linejoin:round}
-.logo-falte{fill:var(--papier);stroke:currentColor;stroke-width:1.5;stroke-linejoin:round}
-.logo-ruecken{fill:var(--tinte)}
+.logo-blatt{fill:var(--blatt);stroke:currentColor;stroke-width:1.35;stroke-linejoin:round}
+.logo-falte{fill:#E8EDF4;stroke:currentColor;stroke-width:1.35;stroke-linejoin:round}
+.logo-ruecken{fill:var(--gruen-leucht)}
+.logo-raster{
+  fill:none;stroke:rgba(6,16,24,.12);stroke-width:.45;
+}
 .logo-haken{
-  fill:none;stroke:var(--rot);stroke-width:2.6;
-  stroke-linecap:square;stroke-linejoin:miter;
+  fill:none;stroke:var(--gruen);stroke-width:2.8;
+  stroke-linecap:round;stroke-linejoin:round;
+}
+.logo-stempel{
+  fill:var(--gruen-hell);stroke:var(--gruen);stroke-width:1.2;
 }
 /* Im erzwungenen Farbmodus (Windows hoher Kontrast) werden Füllungen
    verworfen. Dann trägt nur die Kontur — der Haken muss also sichtbar
@@ -193,12 +168,14 @@ h1,h2,h3,h4{margin:0}
   .logo-blatt{fill:Canvas;stroke:CanvasText}
   .logo-falte{fill:Canvas;stroke:CanvasText}
   .logo-ruecken{fill:CanvasText}
+  .logo-stempel{fill:Canvas;stroke:CanvasText}
   .logo-haken{stroke:CanvasText}
 }
 .kopf .unter{
-  font-size:var(--t-klein);color:var(--schwach);font-weight:400;
-  padding-left:20px;border-left:1px solid var(--linie);
+  font-size:var(--t-klein);color:rgba(255,255,255,.78);font-weight:400;
+  padding-left:18px;border-left:1px solid rgba(255,255,255,.22);
   white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  align-self:center;
 }
 
 /* ---------- Prüfungsteil-Marke ----------
@@ -207,13 +184,13 @@ h1,h2,h3,h4{margin:0}
    zu jeder Zeit sichtbar, welcher Teil offen ist, und der Wechsel ist immer
    an derselben Stelle. Kein zusätzlicher Knopf in der Wahlreihe. */
 button.teil-marke{
-  font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.02em;
-  background:var(--tinte);color:var(--blatt);border:1px solid var(--tinte);
-  padding:2px 8px;border-radius:var(--r);cursor:pointer;
-  line-height:1.5;
+  font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.04em;
+  background:rgba(255,255,255,.12);color:var(--blatt);border:1px solid rgba(255,255,255,.35);
+  padding:4px 10px;border-radius:var(--r);cursor:pointer;
+  line-height:1.4;
 }
-button.teil-marke:hover{background:var(--tinte-hoch);border-color:var(--tinte-hoch)}
-button.teil-marke:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
+button.teil-marke:hover{background:rgba(255,255,255,.2);border-color:rgba(255,255,255,.55)}
+button.teil-marke:focus-visible{outline:2px solid var(--gruen-leucht);outline-offset:2px}
 
 /* Die Wahl: Jahr und Profil sitzen als geschlossene Gruppe beieinander.
    Der Zustand der Ablage („gespeichert") steht als kleine Zeile darüber —
@@ -224,36 +201,38 @@ button.teil-marke:focus-visible{outline:2px solid var(--tinte);outline-offset:2p
 }
 .kopf-stand{
   font-family:var(--mono);font-size:10.5px;letter-spacing:.01em;
-  color:var(--schwach);font-variant-numeric:tabular-nums;
+  color:rgba(255,255,255,.65);font-variant-numeric:tabular-nums;
   min-height:14px;
 }
-.kopf-stand.gut{color:var(--gruen)}
-.kopf-stand.fehler{color:var(--rot)}
+.kopf-stand.gut{color:var(--gruen-leucht)}
+.kopf-stand.fehler{color:#FF9A8F}
 .kopf-schalter{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
 
 /* ---------- Stand: KPI-Kacheln + Fortschrittsmaß ----------
    Drei gleichwertige Mono-Blöcke zum Ablesen; darunter/rechts das Maß in Grün. */
 .stand{
   flex:1 0 100%;
-  display:flex;align-items:stretch;gap:10px;flex-wrap:wrap;
-  border-top:1px solid var(--linie-hell);
-  padding:10px 0 11px;
+  display:flex;align-items:stretch;gap:12px;flex-wrap:wrap;
+  border-top:1px solid rgba(255,255,255,.14);
+  padding:12px 0 14px;
 }
 .kopf-kpi{
-  flex:1 1 88px;min-width:72px;max-width:132px;
-  display:flex;flex-direction:column;gap:3px;
-  padding:8px 10px;
-  border:1px solid var(--linie);
-  background:var(--blatt);
+  flex:1 1 92px;min-width:76px;max-width:140px;
+  display:flex;flex-direction:column;gap:4px;
+  padding:10px 12px;
+  border:1px solid rgba(255,255,255,.2);
+  background:rgba(255,255,255,.08);
   border-radius:var(--r-flaeche);
+  backdrop-filter:blur(6px);
 }
 .kopf-kpi-label{
-  font-size:var(--t-mikro);color:var(--schwach);line-height:1.25;
+  font-size:var(--t-mikro);color:rgba(255,255,255,.62);line-height:1.25;
+  font-weight:600;letter-spacing:.02em;
 }
 .kopf-kpi-wert{
-  font-family:var(--mono);font-size:18px;font-weight:600;
-  font-variant-numeric:tabular-nums;letter-spacing:-.01em;
-  color:var(--tinte);line-height:1.15;
+  font-family:var(--mono);font-size:20px;font-weight:600;
+  font-variant-numeric:tabular-nums;letter-spacing:-.02em;
+  color:var(--blatt);line-height:1.1;
 }
 
 .stand-mass{
@@ -263,23 +242,25 @@ button.teil-marke:focus-visible{outline:2px solid var(--tinte);outline-offset:2p
 /* Viertelmarken: 0, ¼, ½, ¾, voll — man liest die Strecke ab, statt sie
    zu schätzen. */
 .stand-balken{
-  position:relative;flex:1 1 auto;height:7px;
-  background:var(--linie-hell);
-  border:1px solid var(--linie);
+  position:relative;flex:1 1 auto;height:9px;
+  background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.25);
+  border-radius:2px;
 }
 .stand-balken i{
   display:block;height:100%;width:0%;
-  background:var(--linie);
+  background:rgba(255,255,255,.35);
+  border-radius:1px;
   transition:width var(--motion-schnell);
 }
-.stand-balken i.hat-fortschritt,.stand-balken i.voll{background:var(--gruen)}
+.stand-balken i.hat-fortschritt,.stand-balken i.voll{background:var(--gruen-leucht)}
 .stand-balken::after{
   content:"";position:absolute;inset:0;pointer-events:none;
-  background-image:linear-gradient(to right,var(--linie) 0 1px,transparent 1px);
+  background-image:linear-gradient(to right,rgba(255,255,255,.28) 0 1px,transparent 1px);
   background-size:25% 100%;
 }
 .stand-mass .etikett{
-  font-family:var(--mono);font-size:var(--t-mikro);color:var(--schwach);
+  font-family:var(--mono);font-size:var(--t-mikro);color:rgba(255,255,255,.72);
   font-variant-numeric:tabular-nums;white-space:nowrap;
 }
 
@@ -324,9 +305,16 @@ button.teil-marke:focus-visible{outline:2px solid var(--tinte);outline-offset:2p
    38 px Höhe und unterschieden sich nur durch das Zeichen „↳" — eine
    Hierarchie, die im Code stand, aber nicht auf dem Schirm. */
 .rail{
-  border-right:1px solid var(--linie);
-  padding:14px 0 36px;
+  border-right:2px solid var(--linie);
+  padding:18px 0 40px;
+  background:var(--blatt);
+  box-shadow:6px 0 28px rgba(6,16,24,.06);
   position:sticky;top:var(--schale-kopf);max-height:calc(100vh - var(--schale-kopf));overflow:auto;
+}
+.rail::before{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:7px;
+  background:linear-gradient(180deg,var(--gruen-leucht),var(--gruen));
+  pointer-events:none;
 }
 .rail-gruppe{margin-bottom:6px}
 .rail-gruppe.themen{margin-bottom:2px}
@@ -365,24 +353,25 @@ button.teil-marke:focus-visible{outline:2px solid var(--tinte);outline-offset:2p
 .rail-item:focus-visible{
   outline:2px solid var(--tinte);outline-offset:-2px;
 }
-.rail-item.aktiv{border-left-color:var(--tinte);background:var(--blatt)}
+.rail-item.aktiv{border-left-color:var(--gruen);background:var(--gruen-hell);font-weight:600}
 .rail-item .z{font-family:var(--mono);font-size:11px;color:var(--schwach);font-variant-numeric:tabular-nums}
 
 /* Ebene 1 — die sechs Formate: größer, schwerer, nummeriert. Sie sind die
    Hauptwege; Nummern sind hier berechtigt, weil die Lernwege einer
    empfohlenen Reihenfolge folgen (rechnen → prüfen → abfragen …). */
 .rail-formate{
-  border:1px solid var(--linie);border-radius:var(--r-flaeche);
-  margin:0 12px 10px;overflow:hidden;
+  border:2px solid var(--tinte);border-radius:var(--r-flaeche);
+  margin:0 14px 12px;overflow:hidden;
+  box-shadow:var(--schatten-blatt);
 }
 .rail-formate .rail-item{
-  min-height:40px;padding:6px 12px;
+  min-height:44px;padding:8px 14px;
   border-left:0;border-top:1px solid var(--linie-hell);
-  font-size:var(--t-klein);
+  font-size:var(--t-klein);font-weight:500;
 }
 .rail-formate .rail-item:first-child{border-top:0}
 .rail-formate .rail-item.aktiv{
-  background:var(--tinte);color:var(--blatt);
+  background:var(--gruen);color:var(--blatt);
 }
 .rail-formate .rail-item.aktiv .z{color:rgba(255,255,255,.72)}
 .rail-formate .rail-item.aktiv .nr{color:rgba(255,255,255,.72)}
@@ -445,23 +434,28 @@ button.rail-kopf.titel .chev{
 /* Volle Breite der Raster-Hauptspalte — Lernflächen (Quiz, Fälle, …) nutzen
    den Monitor; Fließtext bleibt über --lern-mass / ch-Grenzen lesbar. */
 .blatt{
-  padding:26px 32px 80px;max-width:var(--blatt-max);width:100%;min-width:0;
+  padding:28px 36px calc(88px + env(safe-area-inset-bottom));
+  max-width:var(--blatt-max);width:100%;min-width:0;
   scroll-margin-top:14px;
+  background:var(--blatt);
+  border-left:1px solid var(--linie-hell);
+  box-shadow:inset 8px 0 24px rgba(6,16,24,.03);
+  min-height:calc(100vh - var(--schale-kopf));
 }
 /* Der Kopfstreifen ist die Bogenkennung: eine Zeile, die sagt, welcher Teil
    der Prüfung hier liegt. Der kurze Querstrich vor dem Titel ist dasselbe
    Zeichen wie in der Seitenleiste — es bindet Kopf und Liste aneinander. */
 .kopfstreifen{
   display:flex;gap:14px;align-items:baseline;flex-wrap:wrap;
-  border-bottom:2px solid var(--tinte);padding-bottom:10px;margin-bottom:22px;
+  border-bottom:3px solid var(--tinte);padding-bottom:12px;margin-bottom:24px;
 }
 .kopfstreifen h2{
-  font-size:var(--t-heft);font-weight:700;letter-spacing:-.028em;
-  position:relative;padding-left:15px;
+  font-family:var(--serif);font-size:var(--t-heft);font-weight:700;letter-spacing:-.032em;
+  position:relative;padding-left:16px;
 }
 .kopfstreifen h2::before{
-  content:"";position:absolute;left:0;top:.42em;
-  width:9px;height:var(--kante);background:var(--tinte);
+  content:"";position:absolute;left:0;top:.38em;
+  width:10px;height:var(--kante);background:var(--gruen);
 }
 .kopfstreifen .meta{
   font-size:var(--t-klein);color:var(--schwach);margin-left:auto;text-align:right;
@@ -512,27 +506,28 @@ button.rail-kopf.titel .chev{
    (Kalkulation, Quiz, Karte, Fallstudie, Dialog). Siehe `.schema`,
    `.quiz`, `.karte`, `.fall-schritt`, `.bestaetig`. */
 .start{
-  border:1px solid var(--linie);border-radius:var(--r-flaeche);
-  background:var(--blatt);box-shadow:var(--schatten-blatt);
-  padding:20px 22px;max-width:74ch;margin-bottom:16px;
+  border:2px solid var(--tinte);border-radius:var(--r-flaeche);
+  background:var(--blatt);box-shadow:var(--heben);
+  padding:28px 32px;max-width:74ch;margin-bottom:20px;
 }
-.start.start-formate{max-width:none}
+.start.start-formate{max-width:none;padding:32px 36px 36px}
 .start h3{
-  font-size:var(--t-gross);font-weight:600;
-  position:relative;padding-left:13px;
+  font-family:var(--serif);font-size:var(--t-heft);font-weight:700;
+  position:relative;padding-left:16px;letter-spacing:-.03em;
 }
 .start h3::before{
-  content:"";position:absolute;left:0;top:.42em;
-  width:7px;height:var(--kante);background:var(--tinte);
+  content:"";position:absolute;left:0;top:.35em;
+  width:10px;height:var(--kante);background:var(--gruen);
 }
 .start p{margin:8px 0 14px;font-size:var(--t-klein);color:var(--schwach);max-width:68ch}
 .start .formate{margin-top:14px}
 
 /* ---------- Kalkulationsblatt: das Blatt, an dem gearbeitet wird ---------- */
 .schema{
-  border:1px solid var(--linie);border-top:var(--kante) solid var(--tinte);
+  border:2px solid var(--linie);border-top:var(--kante) solid var(--gruen);
   background:var(--blatt);border-radius:var(--r-flaeche);
   position:relative;width:100%;max-width:none;
+  box-shadow:var(--schatten-blatt);
 }
 .schema-kopf{
   display:grid;grid-template-columns:36px minmax(0,1fr) minmax(168px,220px) 72px;
@@ -589,17 +584,19 @@ button.rail-kopf.titel .chev{
 /* ---------- Aktionen ---------- */
 .aktionen{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px;align-items:center}
 button.akt{
-  font:inherit;font-size:14px;font-weight:500;
+  font:inherit;font-size:var(--t-text);font-weight:700;
   display:inline-flex;align-items:center;justify-content:center;
-  min-height:var(--btn-min);padding:10px 18px;border-radius:var(--r);cursor:pointer;
-  border:1px solid var(--tinte);background:var(--tinte);color:var(--blatt);
+  min-height:var(--btn-min);padding:11px 22px;border-radius:var(--r);cursor:pointer;
+  border:2px solid var(--gruen);background:var(--gruen);color:var(--blatt);
   touch-action:manipulation;
+  box-shadow:0 2px 0 rgba(6,16,24,.12);
+  transition:background var(--motion-schnell),border-color var(--motion-schnell),box-shadow var(--motion-schnell);
 }
-button.akt:hover{background:var(--tinte-hoch);border-color:var(--tinte-hoch)}
-button.akt.zweit{background:transparent;color:var(--tinte)}
-button.akt.zweit:hover{background:var(--blatt)}
+button.akt:hover{background:var(--aktion-hover);border-color:var(--aktion-hover)}
+button.akt.zweit{background:var(--blatt);color:var(--tinte);border-color:var(--tinte);box-shadow:none}
+button.akt.zweit:hover{background:var(--papier)}
 button.akt:disabled{opacity:.4;cursor:default}
-button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
+button.akt:focus-visible{outline:3px solid var(--gruen-leucht);outline-offset:2px}
 
 /* ---------- Stempel: Bewertung mit Doppellinie ---------- */
 .stempel{
@@ -641,11 +638,12 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
 
 /* ---------- Ergebnis ---------- */
 .ergebnis{
-  border:1px solid var(--linie);border-top:var(--kante) solid var(--tinte);
+  border:2px solid var(--linie);border-top:var(--kante) solid var(--gruen);
   background:var(--blatt);border-radius:var(--r-flaeche);
-  padding:22px 24px;width:100%;max-width:min(96ch,100%);
+  padding:24px 28px;width:100%;max-width:min(96ch,100%);
+  box-shadow:var(--schatten-blatt);
 }
-.ergebnis h3{margin:0 0 4px;font-size:20px;font-weight:700}
+.ergebnis h3{margin:0 0 4px;font-family:var(--serif);font-size:22px;font-weight:700}
 .ergebnis .quote{
   font-family:var(--mono);font-size:46px;font-weight:600;line-height:1.05;
   font-variant-numeric:tabular-nums;
@@ -705,36 +703,36 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
 /* ---------- Formate als Wahl, nicht als Kartenreihe ----------
    Links die Nummer (die Lernwege folgen einer Reihenfolge), daneben
    Umfang, Name und ein Satz. Die ganze Fläche ist ein Zielpunkt. */
-.formate{display:grid;grid-template-columns:repeat(auto-fit,minmax(228px,1fr));gap:12px;
+.formate{display:grid;grid-template-columns:repeat(auto-fit,minmax(272px,1fr));gap:16px;
   border:0;border-radius:0;overflow:visible}
 .format{
   display:flex;flex-direction:column;align-items:stretch;text-align:left;font:inherit;cursor:pointer;
-  border:1px solid var(--linie);border-radius:var(--r-flaeche);
+  border:2px solid var(--linie);border-radius:var(--r-flaeche);
   background:var(--blatt);padding:0;overflow:hidden;
-  min-height:44px;
+  min-height:168px;
   box-shadow:var(--heben);
-  transition:box-shadow var(--motion-schnell),border-color var(--motion-schnell);
+  transition:box-shadow var(--motion-schnell),border-color var(--motion-schnell),transform var(--motion-schnell);
 }
-.format:hover{border-color:var(--schwach);box-shadow:var(--heben-hover)}
-.format:active{box-shadow:var(--heben)}
-.format:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
+.format:hover{border-color:var(--tinte);box-shadow:var(--heben-hover);transform:translateY(-2px)}
+.format:active{box-shadow:var(--heben);transform:none}
+.format:focus-visible{outline:3px solid var(--gruen);outline-offset:2px}
 .format-inhalt{
-  display:grid;grid-template-columns:22px minmax(0,1fr);gap:11px;
-  align-items:start;padding:13px 14px;flex:1;
+  display:grid;grid-template-columns:28px minmax(0,1fr);gap:14px;
+  align-items:start;padding:18px 18px 14px;flex:1;
 }
 .format .nr{margin-top:2px}
 .format-inhalt > span:last-child{font-size:var(--t-klein);color:var(--schwach);line-height:1.45}
-.format b{display:block;font-size:var(--t-text);font-weight:600;margin-bottom:3px;color:var(--tinte)}
+.format b{display:block;font-family:var(--serif);font-size:1.12rem;font-weight:700;margin-bottom:5px;color:var(--tinte);letter-spacing:-.02em}
 .format .umfang{
   font-family:var(--mono);font-size:10.5px;color:var(--schwach);
   font-variant-numeric:tabular-nums;display:block;margin-bottom:4px;
 }
 .format-streifen{
   display:flex;align-items:center;justify-content:center;
-  padding:10px 14px;margin-top:auto;
+  padding:14px 16px;margin-top:auto;
   background:var(--aktion);color:var(--blatt);
-  font-size:var(--t-klein);font-weight:600;line-height:1.2;
-  border-top:1px solid var(--tinte);
+  font-size:var(--t-text);font-weight:700;line-height:1.2;letter-spacing:.01em;
+  border-top:0;
 }
 .format:hover .format-streifen{background:var(--aktion-hover)}
 .start-steuer{
@@ -744,11 +742,12 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
 
 /* ---------- Quiz ---------- */
 .quiz{
-  border:1px solid var(--linie);border-top:var(--kante) solid var(--tinte);
+  border:2px solid var(--linie);border-top:var(--kante) solid var(--gruen);
   background:var(--blatt);border-radius:var(--r-flaeche);
   padding:0 0 4px;position:relative;width:100%;max-width:none;
+  box-shadow:var(--schatten-blatt);
 }
-.quiz-frage{padding:17px 20px 6px;font-size:var(--t-gross);font-weight:600;max-width:min(var(--lern-mass),100%);text-wrap:pretty}
+.quiz-frage{padding:20px 22px 8px;font-family:var(--serif);font-size:1.15rem;font-weight:700;max-width:min(var(--lern-mass),100%);text-wrap:pretty}
 .quiz-optionen{display:flex;flex-direction:column;gap:2px;padding:8px 12px 12px}
 .quiz-opt{
   display:flex;gap:11px;align-items:flex-start;
@@ -784,18 +783,18 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
 #quiz-erklaerung.schlecht .quiz-erklaerung{border-left-color:var(--rot);background:var(--rot-hell)}
 .quiz-fortschritt{font-family:var(--mono);font-size:12.5px;color:var(--schwach);font-variant-numeric:tabular-nums}
 /* Schmaler Fortschrittsbalken unter dem Quizkopf – zeigt Position in der Runde */
-.fortschrittsbalken{height:var(--kante);background:var(--linie-hell);margin:-22px 0 20px;overflow:hidden}
-.fortschrittsbalken > i{display:block;height:100%;background:var(--tinte);transition:width .25s ease}
+.fortschrittsbalken{height:var(--kante);background:var(--linie-hell);margin:-22px 0 20px;overflow:hidden;border-radius:1px}
+.fortschrittsbalken > i{display:block;height:100%;background:var(--gruen);transition:width .25s ease}
 
 /* ---------- Karteikarten ---------- */
 .karten-stapel{max-width:none;width:100%}
 /* Die Karte ist ein echter Karton: sie darf schwerer sein als alles andere,
    weil sie das einzige Element ist, das man in die Hand nimmt. */
 .karte{
-  border:1px solid var(--linie);border-top:var(--kante) solid var(--tinte);
+  border:2px solid var(--linie);border-top:var(--kante) solid var(--gruen);
   background:var(--blatt);border-radius:var(--r-flaeche);
-  box-shadow:var(--schatten-blatt);
-  min-height:210px;padding:26px 28px;display:flex;flex-direction:column;
+  box-shadow:var(--heben);
+  min-height:240px;padding:30px 32px;display:flex;flex-direction:column;
   justify-content:center;cursor:pointer;position:relative;
 }
 .karte .fach{
@@ -821,9 +820,10 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
 /* ---------- Lückentext / Fehlersuche ---------- */
 .luecke{
   font-size:var(--t-gross);line-height:1.9;
-  border:1px solid var(--linie);border-top:var(--kante) solid var(--tinte);
+  border:2px solid var(--linie);border-top:var(--kante) solid var(--gruen);
   background:var(--blatt);border-radius:var(--r-flaeche);
-  padding:18px 20px;width:100%;max-width:none;
+  padding:22px 24px;width:100%;max-width:none;
+  box-shadow:var(--schatten-blatt);
 }
 .luecke input{
   font:inherit;font-family:var(--mono);font-size:14px;
@@ -852,7 +852,7 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
 .schema .fehlerzeile{padding:11px 16px}
 .schema .fehlerzeile:first-child{border-top:0}
 .fehlerzeile button:hover{border-color:var(--tinte)}
-.fehlerzeile button.an{background:var(--tinte);color:var(--blatt);border-color:var(--tinte)}
+.fehlerzeile button.an{background:var(--gruen);color:var(--blatt);border-color:var(--gruen)}
 .fehlerzeile button:disabled{cursor:default;opacity:.75}
 .fehlerzeile button:focus-visible{outline:2px solid var(--tinte);outline-offset:-1px}
 .fehlerzeile .marke{font-family:var(--mono);font-size:14px;font-weight:600;flex:0 0 18px;padding-top:3px}
@@ -862,9 +862,10 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
 /* ---------- Fallstudie ---------- */
 .fall{max-width:none;width:100%}
 .fall-schritt{
-  border:1px solid var(--linie);border-top:var(--kante) solid var(--tinte);
+  border:2px solid var(--linie);border-top:var(--kante) solid var(--gruen);
   background:var(--blatt);border-radius:var(--r-flaeche);
-  padding:18px 22px;margin-bottom:14px;
+  padding:20px 24px;margin-bottom:16px;
+  box-shadow:var(--schatten-blatt);
 }
 .fall-schritt .nr{font-family:var(--mono);font-size:var(--t-mikro);font-weight:600;color:var(--schwach);letter-spacing:.04em}
 .fall-schritt h4{margin:5px 0 9px;font-size:var(--t-gross);font-weight:600}
@@ -881,7 +882,7 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
   min-height:44px;
 }
 .fall-opt:hover{border-color:var(--tinte)}
-.fall-opt.gewaehlt{border-color:var(--tinte);background:var(--tinte);color:var(--blatt)}
+.fall-opt.gewaehlt{border-color:var(--gruen);background:var(--gruen);color:var(--blatt)}
 .fall-opt.richtig{border-color:var(--gruen);background:var(--gruen-hell)}
 .fall-opt.falsch{border-color:var(--rot);background:var(--rot-hell)}
 .fall-opt:focus-visible{outline:2px solid var(--tinte);outline-offset:-1px}
@@ -906,7 +907,7 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
 /* ---------- Mobil ---------- */
 .rail-scrim{
   display:none;position:fixed;inset:var(--schale-kopf) 0 0 0;
-  background:rgba(17,28,46,.38);z-index:var(--z-scrim);border:0;padding:0;cursor:pointer;
+  background:rgba(6,16,24,.52);z-index:var(--z-scrim);border:0;padding:0;cursor:pointer;
 }
 .rail-scrim:focus-visible{outline:2px solid var(--blatt);outline-offset:-2px}
 .rail-toggle{
@@ -928,6 +929,17 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
 .heim:hover{background:var(--papier);border-color:var(--tinte)}
 .heim:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
 
+.kopf .heim,.kopf .rail-toggle{
+  background:rgba(255,255,255,.1);color:var(--blatt);
+  border:1px solid rgba(255,255,255,.38);font-weight:600;
+}
+.kopf .heim:hover,.kopf .rail-toggle:hover{
+  background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.55);
+}
+.kopf .heim:focus-visible,.kopf .rail-toggle:focus-visible{
+  outline-color:var(--gruen-leucht);
+}
+
 @media (max-width:900px){
   /* minmax(0,1fr) statt 1fr: sonst erzwingt der min-content der Zelle
      einen waagerechten Ueberlauf der ganzen Seite. */
@@ -946,6 +958,7 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
   }
   body.rail-offen .rail{
     transform:translateX(0);visibility:visible;pointer-events:auto;
+    box-shadow:12px 0 48px rgba(6,16,24,.28);
   }
   body.rail-offen .rail-scrim{display:block}
   body.rail-offen{overflow:hidden}
@@ -1032,7 +1045,8 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
   .fehlerzeile .marke{order:4;margin-left:auto}
   .fall-schritt{padding:15px 16px}
   .start{padding:18px 16px}
-  .logo{width:24px;height:24px;flex:0 0 24px}
+  .logo{width:36px;height:36px;flex:0 0 36px}
+  .wortmarke{font-size:1.25rem}
   /* Der Stand bricht um: KPI-Kacheln, darunter das Maß — ohne waagerechten Scroll. */
   .kopf-kpi{flex:1 1 calc(33.333% - 8px);min-width:68px;max-width:none}
   .stand-mass{flex:1 1 100%;margin-left:0;padding-top:4px}
@@ -1059,8 +1073,8 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
    in einem Kasten – das trägt denselben Stempel wie jede andere Fläche. */
 .anmeldung{
   display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);
-  gap:0;border:1px solid var(--linie);border-top:3px solid var(--tinte);
-  background:var(--blatt);max-width:980px;
+  gap:0;border:2px solid var(--linie);border-top:var(--kante) solid var(--gruen);
+  background:var(--blatt);max-width:980px;box-shadow:var(--heben);
 }
 .anmeldung > .deckblatt{
   padding:26px 26px 24px;border-right:1px solid var(--linie);
@@ -1151,7 +1165,7 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
    überall dort, wo gezählt wird. Vier Zustände, aber weiterhin nur drei
    Farbfamilien des Blattes: Grün = Freigabe, Tinte = im Gang, Rot = Korrektur,
    Linie = noch nicht begonnen. */
-.schwach-liste{border:1px solid var(--linie);border-top:3px solid var(--tinte);background:var(--blatt);width:100%;max-width:none}
+.schwach-liste{border:2px solid var(--linie);border-top:var(--kante) solid var(--gruen);background:var(--blatt);width:100%;max-width:none;box-shadow:var(--schatten-blatt)}
 .schwach-zeile{
   display:grid;grid-template-columns:minmax(0,1fr) 120px 92px;
   align-items:center;gap:14px;padding:11px 16px;
@@ -1226,15 +1240,18 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
 <header class="kopf">
   <div class="kopf-oben">
     <h1>
-      <svg class="logo" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-        <!-- Rücken: 3 px, das Trägermaß des Blattes -->
-        <rect class="logo-ruecken" x="2.7" y="3.2" width="3" height="17.6" rx="0.5"/>
-        <!-- Blatt 3,2 … 21,2 · Eselsohr 7,2 · Korrekturhaken -->
-        <path class="logo-blatt" d="M7.2 3.2h8.2l5.8 5.8v11.8H7.2z"/>
-        <path class="logo-falte" d="M15.4 3.2v5.8h5.8"/>
-        <path class="logo-haken" d="M9.9 15.1l2.4 2.5 4.6-5"/>
+      <svg class="logo" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+        <rect class="logo-ruecken" x="3" y="4" width="4" height="24" rx="1"/>
+        <path class="logo-blatt" d="M8.5 4h10l7 7v17H8.5z"/>
+        <path class="logo-falte" d="M18.5 4v7h7"/>
+        <path class="logo-raster" d="M11 13.5h11M11 16.5h11M11 19.5h8"/>
+        <circle class="logo-stempel" cx="22.5" cy="22" r="5.2"/>
+        <path class="logo-haken" d="M20 22l1.7 1.7 3.4-3.8"/>
       </svg>
-      <button class="teil-marke" id="btn-teil" type="button" aria-haspopup="true">AP1</button>
+      <span class="kopf-titelblock">
+        <span class="wortmarke"><span class="wortmarke-ap1">AP1</span>-Trainer</span>
+        <button class="teil-marke" id="btn-teil" type="button" aria-haspopup="true">AP1</button>
+      </span>
     </h1>
     <span class="unter" id="kopf-unter">Kaufmann für IT-System-Management · Prüfungsteil 1</span>
   </div>
