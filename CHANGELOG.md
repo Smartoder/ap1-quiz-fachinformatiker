@@ -4,6 +4,42 @@ Das Format folgt *Keep a Changelog*. Bruchstellen sind ausdrücklich gekennzeich
 
 ## [Nicht veröffentlicht]
 
+### Geändert — UI Radical Welle 4: a11y-Pass + Abnahme (2026-10-14)
+
+**Warum.** Shell-/Start-/Rail-Änderungen brauchten einen gezielten Accessibility-Pass
+und grünes CI-Tor vor Deploy.
+
+**Was.** Skip-Link auch bei `:focus-visible`; Rail-Themen-Accordion mit
+`aria-controls`/Panel-`id`; Start-Format-Buttons mit knappen `aria-label`.
+Reduced-motion (`--motion-schnell: 0ms`) und Fokus-Ringe unverändert bestätigt.
+Kontrast-Stichprobe dokumentiert in `docs/ui-radical/a11y.md`.
+
+**Tastatur-Rauchtest (manuell):** Tab durch Skip → Kopf → Rail → sechs Formate;
+Enter startet Modus; Accordion Space/Enter klappt Bereiche; Fokus unter sticky Kopf
+via `scroll-padding-top` sichtbar. `npm run check`: **55/55** bestanden.
+Kein API-/Store-Vertrag geändert.
+
+### Geändert — UI Radical Welle 3: Startseite + Sidebar (2026-10-14)
+
+**Warum.** Format-Kacheln wirkten flach; die Rail konkurrierte mit dem Startblatt;
+Schwächen-Toggle war optisch zu schwach.
+
+**Was.** Startseite: `.format` mit `--heben`, Streifen „Starten“, breiteres Grid;
+Schwächen als sichtbares Label/Checkbox-Feld. Sidebar: Themen-Accordion
+(`.rail-gruppe.zu`, `aria-expanded`), schmalere Rail (232px), sticky Kopf +
+Rail-Offset; Quiz/Karten-Sprossen auf der Startseite ausgeblendet.
+Kein API-/Store-Vertrag geändert.
+
+### Geändert — UI Radical Welle 2: Shell-Tokens + KPI-Kacheln (2026-10-14)
+
+**Warum.** KPI-Zeile wirkte wie Fließtext; Fortschritt nutzte Tinte statt Freigabe-Grün;
+Schale brauchte Heben/Motion-Tokens für Welle 3 (Startkarten).
+
+**Was.** `:root` um `--heben*`, `--motion-schnell`, `--rail-breite`, `--z-kopf`, `--aktion*`
+ergänzt; Rail-Raster auf `--rail-breite` (248px). Stand-Zeile: drei `.kopf-kpi`-Kacheln
+(Label + Mono-Wert); Fortschrittsfüllung `--gruen` ab >0 % (`hat-fortschritt`).
+Kein API-/Store-Vertrag geändert.
+
 ### Hinzugefügt — Themenwechsel bei Rechen-Aufgaben (2026-10-14)
 
 **Warum.** Nach dem Öffnen von Rechen-Aufgaben blieb man auf dem ersten Typ

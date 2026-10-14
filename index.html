@@ -75,6 +75,21 @@
   --kante:3px;
   --schatten-blatt:0 1px 0 rgba(17,28,46,.05);
 
+  /* Prüfungsmappe — Aktion, Heben, Schale (Welle 2)
+     --aktion / --aktion-hover: Primär-CTA (Startkarten, Welle 3)
+     --heben / --heben-hover: nur interaktive Startflächen, kein Card-Kit
+     --rail-breite: Seitenleiste im Raster
+     --z-kopf: Kopfzeile über Rail/Blatt
+     --motion-schnell: Hover/Übergänge (0ms bei reduced motion) */
+  --aktion:var(--tinte);
+  --aktion-hover:var(--tinte-hoch);
+  --heben:0 2px 0 rgba(17,28,46,.06), 0 8px 24px rgba(17,28,46,.08);
+  --heben-hover:0 4px 0 rgba(17,28,46,.05), 0 12px 28px rgba(17,28,46,.10);
+  --rail-breite:232px;
+  --schale-kopf:108px;
+  --z-kopf:10;
+  --motion-schnell:160ms ease-out;
+
   /* Schriftskala — ruhig, aber abgestuft. Zwei Familien tun hier die Arbeit:
      Plex Sans für Sprache, Plex Mono für Zahlen. */
   --t-heft:24px;
@@ -86,6 +101,7 @@
 }
 *{box-sizing:border-box}
 html,body{margin:0;height:100%}
+html{scroll-padding-top:calc(var(--schale-kopf) + 10px)}
 body{
   background:var(--papier);
   color:var(--tinte);
@@ -108,7 +124,7 @@ h1,h2,h3,h4{margin:0}
   background:var(--tinte);color:var(--blatt);padding:9px 16px;
   font-size:13.5px;text-decoration:none;border-radius:var(--r);
 }
-.skip:focus{left:12px;top:12px}
+.skip:focus,.skip:focus-visible{left:12px;top:12px}
 
 /* ---------- Kopfzeile: Briefkopf des Dokuments ----------
    Drei Zonen mit drei Aufgaben:
@@ -125,6 +141,7 @@ h1,h2,h3,h4{margin:0}
   color:var(--tinte);
   border-top:var(--kante) solid var(--tinte);
   border-bottom:1px solid var(--linie);
+  position:sticky;top:0;z-index:var(--z-kopf);
 }
 .kopf-oben{
   display:flex;align-items:baseline;gap:20px;
@@ -206,27 +223,30 @@ button.teil-marke:focus-visible{outline:2px solid var(--tinte);outline-offset:2p
 .kopf-stand.fehler{color:var(--rot)}
 .kopf-schalter{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
 
-/* ---------- Stand: die Messwerte einer Prüfung, mit Maß ----------
-   Eine Trennlinie zwischen den Werten (wie die Spalten eines Bogens), keine
-   Karten, keine Kästchen. Darunter das Maß: Punkte sind eine Zahl, aber der
-   Weg dorthin ist eine Strecke — deshalb ein Balken mit Viertelmarken. */
+/* ---------- Stand: KPI-Kacheln + Fortschrittsmaß ----------
+   Drei gleichwertige Mono-Blöcke zum Ablesen; darunter/rechts das Maß in Grün. */
 .stand{
   flex:1 0 100%;
-  display:flex;align-items:center;gap:0;flex-wrap:wrap;
+  display:flex;align-items:stretch;gap:10px;flex-wrap:wrap;
   border-top:1px solid var(--linie-hell);
-  padding:9px 0 10px;
+  padding:10px 0 11px;
 }
-.stat{
-  display:flex;align-items:baseline;gap:7px;
-  padding-right:18px;margin-right:18px;
-  border-right:1px solid var(--linie-hell);
+.kopf-kpi{
+  flex:1 1 88px;min-width:72px;max-width:132px;
+  display:flex;flex-direction:column;gap:3px;
+  padding:8px 10px;
+  border:1px solid var(--linie);
+  background:var(--blatt);
+  border-radius:var(--r-flaeche);
 }
-.stat:last-of-type{border-right:0}
-.stat b{
-  font-family:var(--mono);font-size:16px;font-weight:600;
+.kopf-kpi-label{
+  font-size:var(--t-mikro);color:var(--schwach);line-height:1.25;
+}
+.kopf-kpi-wert{
+  font-family:var(--mono);font-size:18px;font-weight:600;
   font-variant-numeric:tabular-nums;letter-spacing:-.01em;
+  color:var(--tinte);line-height:1.15;
 }
-.stat span{font-size:var(--t-mikro);color:var(--schwach)}
 
 .stand-mass{
   display:flex;align-items:center;gap:10px;flex:1 1 190px;min-width:150px;
@@ -241,10 +261,10 @@ button.teil-marke:focus-visible{outline:2px solid var(--tinte);outline-offset:2p
 }
 .stand-balken i{
   display:block;height:100%;width:0%;
-  background:var(--tinte);
-  transition:width .4s ease;
+  background:var(--linie);
+  transition:width var(--motion-schnell);
 }
-.stand-balken i.voll{background:var(--gruen)}
+.stand-balken i.hat-fortschritt,.stand-balken i.voll{background:var(--gruen)}
 .stand-balken::after{
   content:"";position:absolute;inset:0;pointer-events:none;
   background-image:linear-gradient(to right,var(--linie) 0 1px,transparent 1px);
@@ -286,7 +306,7 @@ button.teil-marke:focus-visible{outline:2px solid var(--tinte);outline-offset:2p
 /* ---------- Raster ---------- */
 .raster{
   display:grid;
-  grid-template-columns:262px minmax(0,1fr);
+  grid-template-columns:var(--rail-breite) minmax(0,1fr);
   gap:0;
   min-height:calc(100vh - 66px);
   align-items:start;
@@ -297,10 +317,12 @@ button.teil-marke:focus-visible{outline:2px solid var(--tinte);outline-offset:2p
    Hierarchie, die im Code stand, aber nicht auf dem Schirm. */
 .rail{
   border-right:1px solid var(--linie);
-  padding:18px 0 40px;
-  position:sticky;top:0;max-height:100vh;overflow:auto;
+  padding:14px 0 36px;
+  position:sticky;top:var(--schale-kopf);max-height:calc(100vh - var(--schale-kopf));overflow:auto;
 }
 .rail-gruppe{margin-bottom:6px}
+.rail-gruppe.themen{margin-bottom:2px}
+.rail-gruppe.themen.zu .rail-inhalt{display:none}
 .rail-gruppe + .rail-gruppe{border-top:1px solid var(--linie-hell);padding-top:8px}
 /* Gruppenkopf der Seitenleiste ist Navigation, keine Inhaltsüberschrift —
    deshalb ein div mit derselben Darstellung, kein h2. Sonst liest ein
@@ -371,6 +393,21 @@ button.teil-marke:focus-visible{outline:2px solid var(--tinte);outline-offset:2p
   color:var(--tinte);font-size:var(--t-klein);font-weight:600;
   letter-spacing:0;margin-top:9px;
 }
+button.rail-kopf.titel{
+  display:flex;justify-content:space-between;align-items:baseline;gap:8px;
+  width:calc(100% - 24px);margin:6px 12px 0;text-align:left;font:inherit;
+  border:0;background:transparent;cursor:pointer;border-radius:var(--r);
+  padding:6px 6px 6px 6px;min-height:36px;
+}
+button.rail-kopf.titel:hover{background:var(--papier)}
+button.rail-kopf.titel:focus-visible{outline:2px solid var(--tinte);outline-offset:-2px}
+button.rail-kopf.titel .chev{
+  flex:0 0 10px;width:10px;height:10px;margin-left:6px;
+  border-right:2px solid var(--schwach);border-bottom:2px solid var(--schwach);
+  transform:rotate(45deg);transition:transform var(--motion-schnell);
+}
+.rail-gruppe.themen.zu button.rail-kopf.titel .chev{transform:rotate(-45deg)}
+@media (pointer:coarse){ button.rail-kopf.titel{min-height:44px} }
 
 /* Ebene 3 — eine Aufgabe (Rechenaufgabe): eingerückt.
    Ebene 4 — Quiz/Karten zu diesem Bereich: noch einmal eingerückt, klein,
@@ -466,6 +503,7 @@ button.teil-marke:focus-visible{outline:2px solid var(--tinte);outline-offset:2p
   background:var(--blatt);box-shadow:var(--schatten-blatt);
   padding:20px 22px;max-width:74ch;margin-bottom:16px;
 }
+.start.start-formate{max-width:none}
 .start h3{
   font-size:var(--t-gross);font-weight:600;
   position:relative;padding-left:13px;
@@ -645,24 +683,41 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
 /* ---------- Formate als Wahl, nicht als Kartenreihe ----------
    Links die Nummer (die Lernwege folgen einer Reihenfolge), daneben
    Umfang, Name und ein Satz. Die ganze Fläche ist ein Zielpunkt. */
-.formate{display:grid;grid-template-columns:repeat(auto-fit,minmax(216px,1fr));gap:0;
-  border:1px solid var(--linie);border-radius:var(--r-flaeche);overflow:hidden}
+.formate{display:grid;grid-template-columns:repeat(auto-fit,minmax(228px,1fr));gap:12px;
+  border:0;border-radius:0;overflow:visible}
 .format{
-  display:grid;grid-template-columns:22px minmax(0,1fr);gap:11px;
-  align-items:start;text-align:left;font:inherit;cursor:pointer;
-  border:0;border-top:1px solid var(--linie-hell);border-left:1px solid var(--linie-hell);
-  background:var(--blatt);padding:13px 14px;
+  display:flex;flex-direction:column;align-items:stretch;text-align:left;font:inherit;cursor:pointer;
+  border:1px solid var(--linie);border-radius:var(--r-flaeche);
+  background:var(--blatt);padding:0;overflow:hidden;
   min-height:44px;
+  box-shadow:var(--heben);
+  transition:box-shadow var(--motion-schnell),border-color var(--motion-schnell);
 }
-.format:nth-child(-n+1){border-top:0}
-.format:hover{background:var(--papier)}
-.format:focus-visible{outline:2px solid var(--tinte);outline-offset:-2px}
+.format:hover{border-color:var(--schwach);box-shadow:var(--heben-hover)}
+.format:active{box-shadow:var(--heben)}
+.format:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
+.format-inhalt{
+  display:grid;grid-template-columns:22px minmax(0,1fr);gap:11px;
+  align-items:start;padding:13px 14px;flex:1;
+}
 .format .nr{margin-top:2px}
-.format b{display:block;font-size:var(--t-text);font-weight:600;margin-bottom:3px}
-.format span{font-size:var(--t-klein);color:var(--schwach);line-height:1.45}
+.format-inhalt > span:last-child{font-size:var(--t-klein);color:var(--schwach);line-height:1.45}
+.format b{display:block;font-size:var(--t-text);font-weight:600;margin-bottom:3px;color:var(--tinte)}
 .format .umfang{
   font-family:var(--mono);font-size:10.5px;color:var(--schwach);
   font-variant-numeric:tabular-nums;display:block;margin-bottom:4px;
+}
+.format-streifen{
+  display:flex;align-items:center;justify-content:center;
+  padding:10px 14px;margin-top:auto;
+  background:var(--aktion);color:var(--blatt);
+  font-size:var(--t-klein);font-weight:600;line-height:1.2;
+  border-top:1px solid var(--tinte);
+}
+.format:hover .format-streifen{background:var(--aktion-hover)}
+.start-steuer{
+  display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;
+  margin-top:16px;padding-top:16px;border-top:1px solid var(--linie-hell);
 }
 
 /* ---------- Quiz ---------- */
@@ -814,7 +869,10 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
 .fall-schritt .kundenmail p{margin:0 0 8px;font-size:var(--t-klein)}
 .fall-schritt .kundenmail p:last-child{margin-bottom:0}
 
-@media (prefers-reduced-motion:reduce){ *{transition:none!important;animation:none!important} }
+@media (prefers-reduced-motion:reduce){
+  :root{--motion-schnell:0ms}
+  *{transition:none!important;animation:none!important}
+}
 
 /* ---------- Mobil ---------- */
 .rail-toggle{
@@ -911,9 +969,9 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
   .fall-schritt{padding:15px 16px}
   .start{padding:18px 16px}
   .logo{width:24px;height:24px;flex:0 0 24px}
-  /* Der Stand bricht auf zwei Zeilen um: Punkte/Quote/Serie, darunter das Maß. */
-  .stat{padding-right:13px;margin-right:13px}
-  .stand-mass{flex:1 1 100%;margin-left:0;padding-top:8px}
+  /* Der Stand bricht um: KPI-Kacheln, darunter das Maß — ohne waagerechten Scroll. */
+  .kopf-kpi{flex:1 1 calc(33.333% - 8px);min-width:68px;max-width:none}
+  .stand-mass{flex:1 1 100%;margin-left:0;padding-top:4px}
   .kopfstreifen h2{font-size:20px;padding-left:13px}
   .kopfstreifen h2::before{width:7px}
   /* Sechs Formate als Wahl: zwei Spalten bleiben lesbar, eine wäre sechs
@@ -1074,10 +1132,15 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
 .lernbild-punkt.schlecht b{color:var(--rot)}
 @media (max-width:520px){.lernbild-zahl{border-right:0;border-bottom:1px solid var(--linie)}}
 .fokus-schalter{
-  display:inline-flex;align-items:center;gap:9px;font-size:13.5px;color:var(--tinte);
-  border:1px solid var(--linie);border-radius:var(--r);padding:7px 12px;background:var(--blatt);cursor:pointer;
+  display:inline-flex;align-items:center;gap:10px;font-size:13.5px;color:var(--tinte);
+  border:1px solid var(--schwach);border-radius:var(--r);padding:9px 14px;background:var(--blatt);cursor:pointer;
+  min-height:44px;
 }
-.fokus-schalter input{width:16px;height:16px;accent-color:var(--tinte)}
+.fokus-schalter:has(input:checked){
+  border-color:var(--tinte);background:var(--papier);
+  box-shadow:inset 0 0 0 1px var(--tinte);
+}
+.fokus-schalter input{width:18px;height:18px;accent-color:var(--tinte);flex:0 0 18px}
 .fokus-schalter:focus-within{outline:2px solid var(--tinte);outline-offset:2px}
 @media (max-width:700px){
   /* Der Korrekturbogen bekommt auf dem Handy zwei Zeilen je Bereich:
@@ -1122,10 +1185,19 @@ button.akt:focus-visible{outline:2px solid var(--tinte);outline-offset:2px}
     </div>
   </div>
 
-  <div class="stand">
-    <div class="stat"><b id="st-punkte">0</b><span>Punkte</span></div>
-    <div class="stat"><b id="st-quote">–</b><span>Trefferquote</span></div>
-    <div class="stat"><b id="st-serie">0</b><span>Serie</span></div>
+  <div class="stand" aria-label="Lernstand">
+    <div class="kopf-kpi">
+      <span class="kopf-kpi-label">Punkte</span>
+      <span class="kopf-kpi-wert" id="st-punkte">0</span>
+    </div>
+    <div class="kopf-kpi">
+      <span class="kopf-kpi-label">Trefferquote</span>
+      <span class="kopf-kpi-wert" id="st-quote">–</span>
+    </div>
+    <div class="kopf-kpi">
+      <span class="kopf-kpi-label">Serie</span>
+      <span class="kopf-kpi-wert" id="st-serie">0</span>
+    </div>
     <div class="stand-mass">
       <span class="stand-balken" aria-hidden="true"><i id="st-balken"></i></span>
       <span class="etikett" id="st-mass">0 % bearbeitet</span>
@@ -1432,6 +1504,7 @@ function statistikZeichnen() {
   const balken = document.getElementById('st-balken');
   if (balken) {
     balken.style.width = b + '%';
+    balken.classList.toggle('hat-fortschritt', b > 0);
     balken.classList.toggle('voll', b >= 80);
   }
   const mass = document.getElementById('st-mass');
@@ -7949,6 +8022,13 @@ let fallLauf = null;    // { fall, idx, punkte, max, beantwortet, gewaehlt }
 const blatt = document.getElementById('blatt');
 const rail = document.getElementById('rail');
 
+function bereichRailOffen(bId) {
+  if (modus === 'rechnen' && aktuell && aktuell.task && aktuell.task.b === bId) return true;
+  if (modus === 'quiz' && quizLauf && quizLauf.bereich === bId) return true;
+  if (modus === 'karten' && kartenLauf && kartenLauf.bereich === bId) return true;
+  return false;
+}
+
 function railZeichnen() {
   rail.innerHTML = '';
 
@@ -8016,14 +8096,37 @@ function railZeichnen() {
     if (!aufgaben.length && !quizN && !kartenN) continue;
 
     const gruppe = document.createElement('div');
-    gruppe.className = 'rail-gruppe';
+    gruppe.className = 'rail-gruppe themen';
+    const offen = bereichRailOffen(b.id);
+    if (!offen) gruppe.classList.add('zu');
 
-    /* Ebene 2: Der Bereich ist eine Titelzeile, kein Knopf. Er gliedert die
-       Liste; anklickbar ist erst die Aufgabe darunter. */
-    const h = document.createElement('div');
+    /* Ebene 2: Bereich als klappbarer Kopf — Formate bleiben oben, Themen
+       standardmäßig zu, damit die Rail nicht mit der Startseite konkurriert. */
+    const h = document.createElement('button');
+    h.type = 'button';
     h.className = 'rail-kopf titel';
-    h.innerHTML = `<span>${b.name}</span><span class="haeufig" title="${istAp2() ? 'Gewicht bzw. Dauer dieses Prüfungsbereichs' : 'Wie häufig dieses Thema in AP1 vorkam (Auswertung 2021–2026)'}">${achseNeben(b)}</span>`;
+    h.setAttribute('aria-expanded', offen ? 'true' : 'false');
+    const panelId = 'rail-thema-' + b.id;
+    h.setAttribute('aria-controls', panelId);
+    const titelSpan = document.createElement('span');
+    titelSpan.textContent = b.name;
+    const haeufig = document.createElement('span');
+    haeufig.className = 'haeufig';
+    haeufig.title = istAp2() ? 'Gewicht bzw. Dauer dieses Prüfungsbereichs' : 'Wie häufig dieses Thema in AP1 vorkam (Auswertung 2021–2026)';
+    haeufig.textContent = achseNeben(b);
+    const chev = document.createElement('span');
+    chev.className = 'chev';
+    chev.setAttribute('aria-hidden', 'true');
+    h.append(titelSpan, haeufig, chev);
+    h.onclick = () => {
+      const zu = gruppe.classList.toggle('zu');
+      h.setAttribute('aria-expanded', zu ? 'false' : 'true');
+    };
     gruppe.appendChild(h);
+
+    const inhalt = document.createElement('div');
+    inhalt.className = 'rail-inhalt';
+    inhalt.id = panelId;
 
     /* Ebene 3: eine Rechenaufgabe. Der Fortschritt steht als kleine Marke,
        nicht als nackte Prozentzahl — er ist ein Zustand, kein Wert. */
@@ -8047,30 +8150,32 @@ function railZeichnen() {
         sim = null; clearInterval(zeitGeber); modus = 'rechnen'; starteAufgabe(t.id);
         mobilEinklappen();
       };
-      gruppe.appendChild(btn);
+      inhalt.appendChild(btn);
     }
 
-    /* Ebene 4: Direkteinstieg in Quiz/Karten. Bewusst kleiner, weiter
-       eingerückt und ohne Fortschrittsmarke — die Zahl hier ist die Menge
-       der Fragen, und das ist keine Leistung. */
-    if (quizN) {
-      const btn = document.createElement('button');
-      btn.className = 'rail-item spross' + (modus === 'quiz' && quizLauf && quizLauf.bereich === b.id ? ' aktiv' : '');
-      btn.type = 'button';
-      btn.innerHTML = `<span>Quiz zu diesem Bereich</span><span class="z">${quizN}</span>`;
-      btn.setAttribute('aria-label', `Quiz zu ${b.name}: ${quizN} Fragen`);
-      btn.onclick = () => { sim = null; clearInterval(zeitGeber); adresseSetzen(b.id); starteQuiz(b.id); mobilEinklappen(); };
-      gruppe.appendChild(btn);
+    /* Ebene 4: Direkteinstieg in Quiz/Karten — auf der Startseite weglassen,
+       dort sind die sechs Formate die Primärwahl. */
+    if (modus !== 'start') {
+      if (quizN) {
+        const btn = document.createElement('button');
+        btn.className = 'rail-item spross' + (modus === 'quiz' && quizLauf && quizLauf.bereich === b.id ? ' aktiv' : '');
+        btn.type = 'button';
+        btn.innerHTML = `<span>Quiz zu diesem Bereich</span><span class="z">${quizN}</span>`;
+        btn.setAttribute('aria-label', `Quiz zu ${b.name}: ${quizN} Fragen`);
+        btn.onclick = () => { sim = null; clearInterval(zeitGeber); adresseSetzen(b.id); starteQuiz(b.id); mobilEinklappen(); };
+        inhalt.appendChild(btn);
+      }
+      if (kartenN) {
+        const btn = document.createElement('button');
+        btn.className = 'rail-item spross' + (modus === 'karten' && kartenLauf && kartenLauf.bereich === b.id ? ' aktiv' : '');
+        btn.type = 'button';
+        btn.innerHTML = `<span>Karteikarten zu diesem Bereich</span><span class="z">${kartenN}</span>`;
+        btn.setAttribute('aria-label', `Karteikarten zu ${b.name}: ${kartenN} Karten`);
+        btn.onclick = () => { sim = null; clearInterval(zeitGeber); adresseSetzen(b.id); starteKarten(b.id); mobilEinklappen(); };
+        inhalt.appendChild(btn);
+      }
     }
-    if (kartenN) {
-      const btn = document.createElement('button');
-      btn.className = 'rail-item spross' + (modus === 'karten' && kartenLauf && kartenLauf.bereich === b.id ? ' aktiv' : '');
-      btn.type = 'button';
-      btn.innerHTML = `<span>Karteikarten zu diesem Bereich</span><span class="z">${kartenN}</span>`;
-      btn.setAttribute('aria-label', `Karteikarten zu ${b.name}: ${kartenN} Karten`);
-      btn.onclick = () => { sim = null; clearInterval(zeitGeber); adresseSetzen(b.id); starteKarten(b.id); mobilEinklappen(); };
-      gruppe.appendChild(btn);
-    }
+    gruppe.appendChild(inhalt);
     rail.appendChild(gruppe);
   }
 
@@ -9247,24 +9352,27 @@ function startseiteZeigen() {
         : 'Kaufmann für IT-System-Management · ' + jahrText() + '<br>' + hole('TASKS').length + ' Rechenaufgaben · ' + hole('QUIZ').length + ' Quizfragen · ' + hole('KARTEN').length + ' Karten in diesem Ausschnitt'}</div>
     </div>
 
-    <div class="start">
+    <div class="start start-formate">
       <h3>Sechs Formate – such dir aus, wie du heute lernst</h3>
       <p>${istAp2()
         ? 'Alle Aufgaben werden bei jedem Aufruf neu erzeugt. In Teil 2 lernst du über die vier Prüfungsbereiche – der Kundenauftrag zählt die Hälfte der Note.'
         : 'Alle Aufgaben werden bei jedem Aufruf neu erzeugt – dieselbe Aufgabe kommt nie zweimal mit denselben Zahlen. Gezeigt wird der Stoff, den man ' + jahrWo() + ' schon gehabt hat.'}</p>
       <div class="formate">
-        <button class="format" type="button" id="f-rechnen"><span class="nr" aria-hidden="true">1</span><span><span class="umfang">${hole('TASKS').length} Aufgaben</span><b>Rechen-Aufgaben</b><span>${istAp2() ? 'Vergleiche, Kalkulationen und Verfügbarkeit – jeder Schritt mit Lösungsweg' : 'Kalkulation, USV, RAID, Netzplan, Subnetting … jeder Schritt mit Lösungsweg'}</span></span></button>
-        <button class="format" type="button" id="f-quiz"><span class="nr" aria-hidden="true">2</span><span><span class="umfang">${hole('QUIZ').length} Fragen</span><b>Multiple-Choice-Quiz</b><span>${istAp2() ? 'Alle vier Prüfungsbereiche, jede Antwort mit Begründung' : 'Alle AP1-Bereiche, jede Antwort mit Begründung'}</span></span></button>
-        <button class="format" type="button" id="f-karten"><span class="nr" aria-hidden="true">3</span><span><span class="umfang">${hole('KARTEN').length} Karten</span><b>Karteikarten</b><span>Spaced Repetition in vier Fächern – was sitzt, kommt seltener wieder</span></span></button>
-        <button class="format" type="button" id="f-luecken"><span class="nr" aria-hidden="true">4</span><span><span class="umfang">${hole('LUECKEN').length} Texte</span><b>Lückentexte</b><span>Fachbegriffe aktiv erinnern statt wiedererkennen</span></span></button>
-        <button class="format" type="button" id="f-fehler"><span class="nr" aria-hidden="true">5</span><span><span class="umfang">${hole('FEHLER').length} Blöcke</span><b>Fehlersuche</b><span>${istAp2() ? 'SQL, Netzwerk, Kalkulation und Projektaussagen – Fehler finden und begründen' : 'Fehlerhafte SQL-Anweisungen finden und begründen'}</span></span></button>
-        <button class="format" type="button" id="f-fall"><span class="nr" aria-hidden="true">6</span><span><span class="umfang">${hole('FAELLE').length} Fälle</span><b>Fallstudien</b><span>Kundensituationen mit mehreren Entscheidungen</span></span></button>
+        <button class="format" type="button" id="f-rechnen" aria-label="Rechen-Aufgaben starten"><span class="format-inhalt"><span class="nr" aria-hidden="true">1</span><span><span class="umfang">${hole('TASKS').length} Aufgaben</span><b>Rechen-Aufgaben</b><span>${istAp2() ? 'Vergleiche, Kalkulationen und Verfügbarkeit – jeder Schritt mit Lösungsweg' : 'Kalkulation, USV, RAID, Netzplan, Subnetting … jeder Schritt mit Lösungsweg'}</span></span></span><span class="format-streifen">Starten</span></button>
+        <button class="format" type="button" id="f-quiz" aria-label="Multiple-Choice-Quiz starten"><span class="format-inhalt"><span class="nr" aria-hidden="true">2</span><span><span class="umfang">${hole('QUIZ').length} Fragen</span><b>Multiple-Choice-Quiz</b><span>${istAp2() ? 'Alle vier Prüfungsbereiche, jede Antwort mit Begründung' : 'Alle AP1-Bereiche, jede Antwort mit Begründung'}</span></span></span><span class="format-streifen">Starten</span></button>
+        <button class="format" type="button" id="f-karten" aria-label="Karteikarten starten"><span class="format-inhalt"><span class="nr" aria-hidden="true">3</span><span><span class="umfang">${hole('KARTEN').length} Karten</span><b>Karteikarten</b><span>Spaced Repetition in vier Fächern – was sitzt, kommt seltener wieder</span></span></span><span class="format-streifen">Starten</span></button>
+        <button class="format" type="button" id="f-luecken" aria-label="Lückentexte starten"><span class="format-inhalt"><span class="nr" aria-hidden="true">4</span><span><span class="umfang">${hole('LUECKEN').length} Texte</span><b>Lückentexte</b><span>Fachbegriffe aktiv erinnern statt wiedererkennen</span></span></span><span class="format-streifen">Starten</span></button>
+        <button class="format" type="button" id="f-fehler" aria-label="Fehlersuche starten"><span class="format-inhalt"><span class="nr" aria-hidden="true">5</span><span><span class="umfang">${hole('FEHLER').length} Blöcke</span><b>Fehlersuche</b><span>${istAp2() ? 'SQL, Netzwerk, Kalkulation und Projektaussagen – Fehler finden und begründen' : 'Fehlerhafte SQL-Anweisungen finden und begründen'}</span></span></span><span class="format-streifen">Starten</span></button>
+        <button class="format" type="button" id="f-fall" aria-label="Fallstudien starten"><span class="format-inhalt"><span class="nr" aria-hidden="true">6</span><span><span class="umfang">${hole('FAELLE').length} Fälle</span><b>Fallstudien</b><span>Kundensituationen mit mehreren Entscheidungen</span></span></span><span class="format-streifen">Starten</span></button>
       </div>
       ${bProzent > 0 ? `<p style="margin:14px 0 0">In diesem Ausschnitt hast du <b>${bProzent} %</b> der Rechenaufgaben sicher – grün ab 80 %.</p>` : ''}
-      <p style="margin:14px 0 0"><button class="fokus-schalter" type="button" id="f-fokus">
-        <input type="checkbox" id="f-fokus-box" ${fokusAn ? 'checked' : ''} tabindex="-1" aria-hidden="true">
-        <span>Schwächen zuerst · ${fokusAn ? 'an' : 'aus'}</span></button>
-        <button class="akt zweit" type="button" id="f-schwaechen" style="margin-left:10px">Meine Schwächen ansehen</button></p>
+      <div class="start-steuer">
+        <label class="fokus-schalter" for="f-fokus-box">
+          <input type="checkbox" id="f-fokus-box" ${fokusAn ? 'checked' : ''}>
+          <span>Schwächen zuerst · ${fokusAn ? 'an' : 'aus'}</span>
+        </label>
+        <button class="akt zweit" type="button" id="f-schwaechen">Meine Schwächen ansehen</button>
+      </div>
     </div>
 
     ${!istAp2() ? `    <div class="start">
@@ -9274,8 +9382,8 @@ function startseiteZeigen() {
       Kunden-E-Mails und IT-Begriffen – <em>quote, invoice, downtime, rollback plan, data breach</em> … –
       dazu Vokabelkarten zum Üben.</p>
       <div class="formate">
-        <button class="format" type="button" id="f-englisch-quiz"><span class="nr" aria-hidden="true">EN</span><span><span class="umfang">${hole('QUIZ', 'englisch').length} Fragen</span><b>Englisch-Quiz</b><span>E-Mails und Fachbegriffe verstehen und übersetzen</span></span></button>
-        <button class="format" type="button" id="f-englisch-karten"><span class="nr" aria-hidden="true">EN</span><span><span class="umfang">${hole('KARTEN', 'englisch').length} Karten</span><b>Englisch-Vokabelkarten</b><span>Fachvokabeln in vier Fächern wiederholen</span></span></button>
+        <button class="format" type="button" id="f-englisch-quiz" aria-label="Englisch-Quiz starten"><span class="format-inhalt"><span class="nr" aria-hidden="true">EN</span><span><span class="umfang">${hole('QUIZ', 'englisch').length} Fragen</span><b>Englisch-Quiz</b><span>E-Mails und Fachbegriffe verstehen und übersetzen</span></span></span><span class="format-streifen">Starten</span></button>
+        <button class="format" type="button" id="f-englisch-karten" aria-label="Englisch-Vokabelkarten starten"><span class="format-inhalt"><span class="nr" aria-hidden="true">EN</span><span><span class="umfang">${hole('KARTEN', 'englisch').length} Karten</span><b>Englisch-Vokabelkarten</b><span>Fachvokabeln in vier Fächern wiederholen</span></span></span><span class="format-streifen">Starten</span></button>
       </div>
     </div>
 
@@ -9400,8 +9508,8 @@ function startseiteZeigen() {
     'f-englisch-karten': () => starteKarten('englisch')
   };
   for (const id in zu) { const el = document.getElementById(id); if (el) el.onclick = zu[id]; }
-  const fokus = document.getElementById('f-fokus');
-  if (fokus) fokus.onclick = () => { fokusAn = !fokusAn; fokusSpeichern(); startseiteZeigen(); };
+  const fokusBox = document.getElementById('f-fokus-box');
+  if (fokusBox) fokusBox.onchange = () => { fokusAn = fokusBox.checked; fokusSpeichern(); startseiteZeigen(); };
   const schwach = document.getElementById('f-schwaechen');
   if (schwach) schwach.onclick = () => schwachenZeigen();
   railZeichnen();
