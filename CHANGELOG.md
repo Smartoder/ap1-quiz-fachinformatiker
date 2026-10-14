@@ -4,6 +4,17 @@ Das Format folgt *Keep a Changelog*. Bruchstellen sind ausdrücklich gekennzeich
 
 ## [Nicht veröffentlicht]
 
+### Geändert — UI Radical v3 „Korrekturbogen“ (2026-10-14)
+
+**Warum.** v2 blieb zu nah am alten Layout (Nachtkopf + Grün-Kacheln); Erwartung
+war ein sichtbar neues Produkt, nicht 10 % Feintuning.
+
+**Was.** Design-System neu: Fraunces + DM Sans + JetBrains Mono; heller Kopf mit
+Tinten-Brand-Panel (Clip-Pfad); dunkle Rail als Heft-Rücken; Teal statt Leuchtgrün;
+Formatwahl als nummerierte **Listen-Tabelle** (kein Kachel-Grid); Quiz-Zeilen mit
+Tinten-Buchstaben; neues AP1-Monogramm; Marker `ui-radical-v3-2026-10-14`.
+Kein API-/Store-/ID-Bruch.
+
 ### Geändert — UI Radical v2: Prüfungsmappe neu (2026-10-14)
 
 **Warum.** UI Polish wirkte inkrementell; beim Öffnen soll ein neues Release
