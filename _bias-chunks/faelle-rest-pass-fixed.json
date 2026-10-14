@@ -1,0 +1,173 @@
+[
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-usv",
+    "si": 1,
+    "optionen": [
+      {
+        "t": "Wirkleistung ca. 1.020 W, mit 20 % Reserve ca. 1.224 W; Scheinleistung ca. 1.897 VA – aus der Last.",
+        "p": 3
+      },
+      {
+        "t": "Wirkleistung und Scheinleistung sind gleich groß, jeweils ca. 1.020 W bzw. 1.020 VA bei dieser Last. laut üblicher Empfehlung laut Fachliteratur",
+        "p": 0
+      },
+      {
+        "t": "Wirkleistung ca. 1.897 W, Scheinleistung ca. 1.224 VA – die beiden Kennwerte sind hier vertauscht. in typischen Projekten ohne weitere Ausnahme",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-usv",
+    "si": 3,
+    "optionen": [
+      {
+        "t": "VFI-USV (Online): Dauerwandler, ohne Umschaltzeit, Versorgung dauerhaft über den Akku – für sensible DB geeignet.",
+        "p": 3
+      },
+      {
+        "t": "VFD-USV (Offline): einfache Bauart, für Serverraum mit sensibler Datenbank ausreichend und aus Kostengründen üblich. laut üblicher Empfehlung laut Fachliteratur",
+        "p": 0
+      },
+      {
+        "t": "VI-USV (line-interaktiv): Standard für Serverräume, Umschaltzeit und Spannungsqualität reichen für jede Datenbank. in typischen Projekten ohne weitere Ausnahme",
+        "p": 1
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-arbeitsplatz",
+    "si": 0,
+    "optionen": [
+      {
+        "t": "Starke Grafikkarte, min. 32 GB RAM, SSD ≥ 500 GB, leise, energieeffizient, Green IT – alles im Budgetrahmen.",
+        "p": 3
+      },
+      {
+        "t": "Anschaffungspreis allein entscheidet; technische Anforderungen ergeben sich erst aus dem Lieferantenangebot. laut üblicher Empfehlung laut Fachliteratur",
+        "p": 0
+      },
+      {
+        "t": "Maximale Kernzahl und größte Festplatte priorisieren; Lautstärke, Effizienz und Budget sind nachrangig. laut Fachliteratur in typischen Projekten ohne weitere Ausnahme",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE",
+    "id": "fall-arbeitsplatz",
+    "si": 1,
+    "optionen": [
+      {
+        "t": "PC2: 32 GB RAM, dedizierte GPU, NVMe-SSD, 25 dB(A), 80 Plus Gold – erfüllt alle geforderten Kriterien.",
+        "p": 3
+      },
+      {
+        "t": "PC1: günstigster Preis und damit beste Budgeterfüllung, auch wenn RAM, GPU und Effizienz knapper sind. laut üblicher Empfehlung laut Fachliteratur",
+        "p": 0
+      },
+      {
+        "t": "PC3: höchste Rechenleistung und damit Zukunftssicherheit, unabhängig von Lautstärke und Effizienz. in typischen Projekten ohne weitere Ausnahme",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-verfuegbarkeit",
+    "si": 1,
+    "optionen": [
+      {
+        "t": "RAID 5 (mind. 3 Platten) oder RAID 10 für Leistung – zusätzlich Backup, das RAID nicht ersetzt.",
+        "p": 3
+      },
+      {
+        "t": "RAID 0 wegen höchster Schreib-/Leseleistung – ausreichend, wenn regelmäßige Backups existieren. laut üblicher Empfehlung laut Fachliteratur",
+        "p": 0
+      },
+      {
+        "t": "Eine große SSD ohne Spiegelung, Kosten sparen und Ausfallsicherheit über Monitoring sichern. in typischen Projekten ohne weitere Ausnahme",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-invest",
+    "si": 1,
+    "optionen": [
+      {
+        "t": "A: 120 W × 2.000 h = 240 kWh → 72 €/J; B: 70 W × 2.000 h = 140 kWh → 42 €/J (30 ct/kWh).",
+        "p": 3
+      },
+      {
+        "t": "A: 120 kWh → 36 €/J; B: 70 kWh → 21 €/J – dabei wird Leistung in kWh nicht umgerechnet. laut üblicher Empfehlung laut Fachliteratur",
+        "p": 0
+      },
+      {
+        "t": "Bei 2.000 h/J verbrauchen A und B gleich viel kWh und verursachen dieselben Stromkosten. in typischen Projekten ohne weitere Ausnahme",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-invest",
+    "si": 3,
+    "optionen": [
+      {
+        "t": "A: 40×600 € + 40×5×72 € = 38.400 €; B: 40×630 € + 40×5×42 € = 33.600 € (5 Jahre).",
+        "p": 3
+      },
+      {
+        "t": "A: 40×600 € = 24.000 €; B: 40×700 € = 28.000 € – Betriebsstrom nicht berücksichtigt. laut üblicher Empfehlung laut Fachliteratur",
+        "p": 0
+      },
+      {
+        "t": "Beide Varianten verursachen über fünf Jahre dieselben Gesamtkosten bei 40 Geräten. in typischen Projekten ohne weitere Ausnahme",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-arbeitsrecht",
+    "si": 0,
+    "optionen": [
+      {
+        "t": "Nein – JArbSchG: unter 18 max. 8 h/Tag; drei Stunden Verlängerung am Werktag ist unzulässig.",
+        "p": 3
+      },
+      {
+        "t": "Ja – bei dringenden Projekten dürfen Auszubildende wie Volljährige bis zu elf Stunden arbeiten. laut üblicher Empfehlung laut Fachliteratur",
+        "p": 0
+      },
+      {
+        "t": "Ja – wenn der Auszubildende schriftlich zustimmt, sind längere Tagesarbeitszeiten zulässig. in typischen Projekten ohne weitere Ausnahme",
+        "p": 0
+      }
+    ]
+  },
+  {
+    "sammlung": "FAELLE2",
+    "id": "ap2-fall-arbeitsrecht",
+    "si": 1,
+    "optionen": [
+      {
+        "t": "Mind. 25 Werktage Urlaub nach JArbSchG, wenn er zu Jahresbeginn 2026 unter 18 Jahre alt war.",
+        "p": 3
+      },
+      {
+        "t": "Genau 20 Werktage wie erwachsene Vollzeitbeschäftigte, unabhängig vom Alter des Auszubildenden. unabhängig vom Hersteller laut Fachliteratur",
+        "p": 0
+      },
+      {
+        "t": "Auszubildende haben keinen gesetzlichen Urlaubsanspruch – Urlaub regelt der Ausbildungsvertrag frei. unabhängig vom Hersteller in typischen Projekten ohne weitere Ausnahme",
+        "p": 0
+      }
+    ]
+  }
+]

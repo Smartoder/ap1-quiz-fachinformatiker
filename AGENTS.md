@@ -33,6 +33,7 @@ Repo unter `Desktop\ordner\AP1-Trainer` liegen — Coding-Grenzen bleiben: Web �
 | **Vor jeder Änderung an `index.html`: `npm run check`** | Die Syntaxprüfung parst den gesamten Anwendungscode und findet Tippfehler schneller als jedes Auge |
 | **Der Vertrag darf nicht brechen** | `API`, `STORE`, `JAHR_STORE`, `PROFIL_STORE`, `KARTEN_STORE`, `TEIL_STORE`, `LERNSTAND_STORE`, `GESEHEN_STORE` — eine Änderung bricht das Backend oder verwirft den Fortschritt aller Nutzer, ohne Fehlermeldung. Das Tor prüft sie |
 | **Kennungen im Inhalt (`id` eines Eintrags) nie ohne Grund ändern** | Sie stehen in Zitaten und in gespeicherten Fortschritten |
+| **MCQ/Fallstudien: kein Längen-Leak** | Richtige Option nicht eindeutig die längste; Anzeige mischen. Stichprobe reicht nicht — Rest mit `_bias-analyse.cjs` / `_bias-rest.cjs` messen. Skill `quiz-content` |
 | **Der Code gewinnt** | Widerspricht eine Aussage dem Code, wird die Aussage korrigiert — nicht relativiert |
 | **Nicht HofZeit, nicht Leckerbissen** | Keine Restaurant-DB, keine Kasse, kein Stripe aus anderen Produkten |
 
@@ -40,7 +41,7 @@ Repo unter `Desktop\ordner\AP1-Trainer` liegen — Coding-Grenzen bleiben: Web �
 
 | Aufgabe | Must-use (Stub) | When-matches | Do-not-use |
 |---|---|---|---|
-| Quiz-Inhalte / Formate / Jahrgang | `quiz-content` | Einträge, Bereiche, AP1/AP2 | HofZeit-Menü-Skills |
+| Quiz-Inhalte / Formate / Jahrgang / Längen-Bias | `quiz-content` | Einträge, Bereiche, AP1/AP2, Optionslängen | HofZeit-Menü-Skills |
 | Deploy / Live | `deploy` | Pages `ap1-trainer.pages.dev`, `/ap1` | Leckerbissen-Deploy als Vorlage ohne Anpassung |
 | API-Vertrag Client | `api-contract` | Stores, Profile, Fortschritt | Secrets/Compose hierher kopieren |
 | UI / a11y | Plugin frontend-design / web-design-guidelines | Layout, Kontrast | Domain-Logik dort lösen |
@@ -78,6 +79,10 @@ API-Repo.
 - [ ] `npm run check` grün
 - [ ] Bei Änderung an `index.html`: **alle sechs Formate** und alle drei Jahre im
       Browser durchklicken — die Prüfung kennt die Fachlichkeit nicht
+- [ ] Bei neuen/geänderten **Quiz- oder Fallstudien-Optionen**: Bias prüfen
+      (`node _bias-analyse.cjs`, Rest → `node _bias-rest.cjs`). Rest ≠ 0 → Bulk
+      nachziehen (`_laengen-rest-fix.cjs` / `_laengen-einspielen.cjs`), nicht nur
+      Shuffle. Details: Skill `quiz-content`
 - [ ] `CHANGELOG.md` ergänzt
 - [ ] Bei Änderung des Vertrags: Entscheidungseintrag im **Backend**-Repository
       (`docs/entscheidungen/`), **vor** der Umsetzung

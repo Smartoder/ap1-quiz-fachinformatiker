@@ -47,3 +47,5 @@ Im Zweifel: Full Pipeline.
 4. Eintrags-`id` nicht ohne Grund ändern.
 5. Zustand = Befehl/MCP/HTTP.
 6. Shared Hosting: Backend nur im API-Repo anfassen.
+7. MCQ/Fallstudien: kein Längen-Leak — Skill `quiz-content`; nach Optionstexten
+   `_bias-analyse.cjs` / `_bias-rest.cjs`, Rest bulk nachziehen (nicht nur Shuffle).

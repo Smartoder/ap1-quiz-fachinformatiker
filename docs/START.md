@@ -19,6 +19,7 @@ Die führende Langform (Betrieb, Entscheidungen) liegt im **Backend-Repo**
 - Oberfläche: https://ap1-trainer.pages.dev/
 - Hosting: Cloudflare Pages (altes Vercel-Projekt `ap1-trainer` pausiert)
 - Prüfung: `npm run check`
+- Quiz-/Fallstudien-Optionen: Skill `quiz-content` (Längen-Bias messen/Bulk)
 
 ## Nicht verwechseln
 

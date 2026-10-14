@@ -110,33 +110,6 @@
     },
     {
       "sammlung": "QUIZ",
-      "i": 392,
-      "r": 0,
-      "q": "Warum ist ein gesichertes Backup die „letzte Verteidigungslinie“?",
-      "a": [
-        "Ermöglicht Wiederherstellung bei Verschlüsselungstrojanern oder Datenverlust trotz anderer Schutzmaßnahmen",
-        "Löscht Viren automatisch aus infizierten Systemen, sobald das Backup-Medium angeschlossen wird",
-        "Ersetzt Firewall-Regeln vollständig, weil Backups eingehenden Traffic filternd analysieren",
-        "Funktioniert ohne Stromversorgung, weil Sicherungen rein mechanisch auf Band erfolgen"
-      ],
-      "ws": [
-        9,
-        11,
-        9,
-        10
-      ],
-      "cs": [
-        106,
-        94,
-        90,
-        85
-      ],
-      "spanW": 0.222,
-      "spanC": 0.247,
-      "gapC": 12
-    },
-    {
-      "sammlung": "QUIZ",
       "i": 393,
       "r": 0,
       "q": "Was sind personenbezogene Daten nach DSGVO?",
@@ -488,33 +461,6 @@
     },
     {
       "sammlung": "QUIZ",
-      "i": 165,
-      "r": 1,
-      "q": "Was ist ein Random Forest?",
-      "a": [
-        "Ein einzelner, besonders tiefer Entscheidungsbaum ohne Ensemble-Mechanismus",
-        "Ensemble aus vielen Entscheidungsbäumen, deren Ergebnisse per Abstimmung kombiniert werden",
-        "Neuronales Netz mit genau zwei Schichten für einfache lineare Regression",
-        "Unüberwachtes Clustering-Verfahren zur Gruppierung ohne vorgegebene Klassenlabels"
-      ],
-      "ws": [
-        7,
-        10,
-        10,
-        7
-      ],
-      "cs": [
-        75,
-        90,
-        72,
-        81
-      ],
-      "spanW": 0.429,
-      "spanC": 0.25,
-      "gapC": 9
-    },
-    {
-      "sammlung": "QUIZ",
       "i": 187,
       "r": 0,
       "q": "Welche Rolle hilft, einfache Aufgaben im Support durch KI zu automatisieren?",
@@ -542,33 +488,6 @@
     },
     {
       "sammlung": "QUIZ",
-      "i": 201,
-      "r": 0,
-      "q": "Warum ist der Energie- und Ressourcenverbrauch von KI ein Thema?",
-      "a": [
-        "Training und Betrieb großer Modelle verbrauchen viel Strom und Kühlung — Kosten und Nachhaltigkeit",
-        "KI verbraucht grundsätzlich keinen Strom, weil Berechnungen in der Cloud „kostenlos“ sind",
-        "Nur kleine Modelle benötigen Energie; große Modelle laufen rein regelbasiert ohne GPU",
-        "Energieverbrauch hängt nicht von Modellgröße ab, sondern ausschließlich von der UI-Farbe"
-      ],
-      "ws": [
-        14,
-        12,
-        12,
-        11
-      ],
-      "cs": [
-        98,
-        89,
-        85,
-        88
-      ],
-      "spanW": 0.273,
-      "spanC": 0.153,
-      "gapC": 9
-    },
-    {
-      "sammlung": "QUIZ",
       "i": 222,
       "r": 0,
       "q": "Welche Firewall-Art prüft den Verbindungszustand und lässt nur Antworten auf zuvor erlaubte Verbindungen durch?",
@@ -592,87 +511,6 @@
       ],
       "spanW": 0.333,
       "spanC": 0.217,
-      "gapC": 9
-    },
-    {
-      "sammlung": "QUIZ",
-      "i": 341,
-      "r": 0,
-      "q": "Wozu dient eine integrierte Entwicklungsumgebung (IDE)?",
-      "a": [
-        "Bündelt Editor, Compiler/Interpreter, Debugger und oft Versionsverwaltung in einer Oberfläche",
-        "Ersetzt das Betriebssystem vollständig und bootet direkt in die Entwicklungsumgebung",
-        "Ist ein Texteditor ohne Syntaxprüfung, Build-Integration oder Debugging-Funktionen",
-        "Verschlüsselt Quellcode automatisch, sodass er ohne IDE nicht mehr lesbar ist"
-      ],
-      "ws": [
-        10,
-        10,
-        8,
-        11
-      ],
-      "cs": [
-        93,
-        84,
-        82,
-        77
-      ],
-      "spanW": 0.375,
-      "spanC": 0.208,
-      "gapC": 9
-    },
-    {
-      "sammlung": "QUIZ",
-      "i": 342,
-      "r": 0,
-      "q": "Welche Beurteilungskriterien gelten für Softwareauswahl (PK-04)?",
-      "a": [
-        "Anpassbarkeit, Wartbarkeit, Schnittstellen, Lizenzmodell und Kosten bei der Softwareauswahl",
-        "Ausschließlich der einmalige Anschaffungspreis ohne Betrieb, Support oder Lizenzen",
-        "Ausschließlich die Farbgebung der Benutzeroberfläche und das Logo des Herstellers",
-        "Ausschließlich der Name des Herstellers als alleiniger Qualitätsindikator im Markt"
-      ],
-      "ws": [
-        9,
-        9,
-        10,
-        10
-      ],
-      "cs": [
-        91,
-        82,
-        81,
-        82
-      ],
-      "spanW": 0.111,
-      "spanC": 0.123,
-      "gapC": 9
-    },
-    {
-      "sammlung": "QUIZ",
-      "i": 358,
-      "r": 0,
-      "q": "Welche Aufgabe hat ein Gateway?",
-      "a": [
-        "Verbindet Netze mit unterschiedlichen Protokollen und übersetzt zwischen den Protokollwelten",
-        "Verstärkt ausschließlich das elektrische Signal auf langen Kupferstrecken im LAN",
-        "Ist ein passiver Verteiler ohne Logik, der eingehende Frames an alle Ports kopiert",
-        "Druckt Dokumente im Netzwerk und stellt gleichzeitig Scan-Ergebnisse per SMB bereit"
-      ],
-      "ws": [
-        10,
-        10,
-        13,
-        11
-      ],
-      "cs": [
-        92,
-        80,
-        82,
-        83
-      ],
-      "spanW": 0.3,
-      "spanC": 0.15,
       "gapC": 9
     },
     {
@@ -727,33 +565,6 @@
       ],
       "spanW": 0.333,
       "spanC": 0.183,
-      "gapC": 9
-    },
-    {
-      "sammlung": "QUIZ",
-      "i": 441,
-      "r": 0,
-      "q": "Wozu dient eine Leistungsbeschreibung im Vertrag?",
-      "a": [
-        "Legt eindeutig fest, welche Leistung geschuldet ist — Grundlage für spätere Abnahme und Mängelprüfung",
-        "Ersetzt die Rechnung und dokumentiert alle Zahlungsmodalitäten zwischen den Vertragsparteien",
-        "Beschreibt ausschließlich den Preis, ohne Umfang, Qualität oder Schnittstellen der Leistung",
-        "Ist freiwillige Marketing-Broschüre ohne rechtliche Wirkung für Umfang oder Termine"
-      ],
-      "ws": [
-        14,
-        10,
-        11,
-        10
-      ],
-      "cs": [
-        101,
-        92,
-        91,
-        83
-      ],
-      "spanW": 0.4,
-      "spanC": 0.217,
       "gapC": 9
     },
     {
@@ -919,33 +730,6 @@
       "gapC": 9
     },
     {
-      "sammlung": "QUIZ2",
-      "i": 50,
-      "r": 0,
-      "q": "Welche Aufgabe hat der Betriebsrat?",
-      "a": [
-        "Vertritt Interessen der Arbeitnehmer im Betrieb gegenüber dem Arbeitgeber mit Mitbestimmungsrechten",
-        "Leitet das Unternehmen operativ und entscheidet über Strategie, Investitionen und Personal",
-        "Bestimmt verbindlich die Verkaufspreise aller Produkte im Wettbewerb mit anderen Anbietern",
-        "Vertritt ausschließlich die Interessen der Aktionäre auf Hauptversammlungen des Konzerns"
-      ],
-      "ws": [
-        11,
-        11,
-        11,
-        10
-      ],
-      "cs": [
-        99,
-        90,
-        90,
-        88
-      ],
-      "spanW": 0.1,
-      "spanC": 0.125,
-      "gapC": 9
-    },
-    {
       "sammlung": "QUIZ",
       "i": 91,
       "r": 3,
@@ -1105,33 +889,6 @@
       ],
       "spanW": 0.429,
       "spanC": 0.234,
-      "gapC": 8
-    },
-    {
-      "sammlung": "QUIZ",
-      "i": 376,
-      "r": 0,
-      "q": "Was versteht man unter „Integrität“ von Daten?",
-      "a": [
-        "Daten sind unverändert; Richtigkeit und Vollständigkeit der gespeicherten Informationen sind gewährleistet",
-        "Daten sind jederzeit erreichbar, unabhängig davon, ob sie manipuliert oder gelöscht wurden",
-        "Daten sind verschlüsselt gespeichert, was automatisch Integrität im Sinne der Schutzziele bedeutet",
-        "Daten liegen redundant vor; Widersprüche zwischen Kopien gelten als Integritätsnachweis"
-      ],
-      "ws": [
-        11,
-        12,
-        12,
-        10
-      ],
-      "cs": [
-        106,
-        90,
-        98,
-        87
-      ],
-      "spanW": 0.2,
-      "spanC": 0.218,
       "gapC": 8
     },
     {
@@ -1324,6 +1081,33 @@
       "gapC": 8
     },
     {
+      "sammlung": "QUIZ2",
+      "i": 62,
+      "r": 0,
+      "q": "Was ist ein Tarifvertrag und wie lange gilt er normalerweise?",
+      "a": [
+        "Vertrag zwischen Gewerkschaft und Arbeitgeber(verband) – meist befristete Laufzeit.",
+        "Vertrag zwischen zwei Arbeitnehmern über Arbeitszeit und Urlaubsvertretung.",
+        "Gesetz des Bundestags – ersetzt individuelle Arbeitsverträge vollständig.",
+        "Vertrag zwischen zwei Konkurrenzbetrieben über gemeinsame Preisabsprachen."
+      ],
+      "ws": [
+        9,
+        8,
+        8,
+        7
+      ],
+      "cs": [
+        83,
+        75,
+        73,
+        74
+      ],
+      "spanW": 0.286,
+      "spanC": 0.137,
+      "gapC": 8
+    },
+    {
       "sammlung": "QUIZ",
       "i": 139,
       "r": 3,
@@ -1460,33 +1244,6 @@
     },
     {
       "sammlung": "QUIZ",
-      "i": 331,
-      "r": 0,
-      "q": "Was bedeutet „proprietäre Software“?",
-      "a": [
-        "Software mit geschlossenem, herstellergebundenem Quellcode und lizenzrechtlich geregelter Nutzung",
-        "Software ohne jede Lizenzvereinbarung, die deshalb uneingeschränkt kopiert werden darf",
-        "Software, die jeder Nutzer beliebig verändern und unter eigener Marke weiterverkaufen darf",
-        "Software, die ausschließlich lokal ohne Netzwerkverbindung betrieben werden darf"
-      ],
-      "ws": [
-        9,
-        10,
-        12,
-        9
-      ],
-      "cs": [
-        97,
-        86,
-        90,
-        80
-      ],
-      "spanW": 0.333,
-      "spanC": 0.212,
-      "gapC": 7
-    },
-    {
-      "sammlung": "QUIZ",
       "i": 371,
       "r": 0,
       "q": "Warum erhält ein Switch im Netz oft selbst eine IP-Adresse?",
@@ -1510,6 +1267,33 @@
       ],
       "spanW": 0.111,
       "spanC": 0.164,
+      "gapC": 7
+    },
+    {
+      "sammlung": "QUIZ",
+      "i": 384,
+      "r": 0,
+      "q": "Welche Anforderungen sollte eine Passwort-Policy enthalten?",
+      "a": [
+        "Mindestlänge, Komplexität, Weitergabeverbot, Sperre nach Fehlversuchen, sichere Speicherung.",
+        "Passwörter dürfen im Team geteilt werden, solange nur interne Mitarbeiter sie kennen.",
+        "Zwei Zeichen reichen aus, wenn das Passwort regelmäßig in Excel dokumentiert wird.",
+        "Passwörter im Klartext in der Datenbank speichern – erleichtert Support und Reset."
+      ],
+      "ws": [
+        8,
+        12,
+        12,
+        12
+      ],
+      "cs": [
+        92,
+        85,
+        82,
+        82
+      ],
+      "spanW": 0.5,
+      "spanC": 0.122,
       "gapC": 7
     },
     {
@@ -1541,29 +1325,29 @@
     },
     {
       "sammlung": "QUIZ",
-      "i": 430,
+      "i": 487,
       "r": 0,
-      "q": "Wofür sind Marktformen wie Monopol, Oligopol und Polypol ein Kriterium?",
+      "q": "Ein Kollege möchte den angebotenen PC sofort beim Lieferanten bestellen, da er meint, ein Kaufvertrag sei schon zustande gekommen. Was trifft zu?",
       "a": [
-        "Beschreibt Anzahl der Anbieter und Nachfrager auf einem Markt (Monopol, Oligopol, Polypol)",
-        "Legt die Corporate-Design-Farben der Unternehmenswebseite im Marketinghandbuch fest",
-        "Bestimmt die maximale Netzwerkgeschwindigkeit zwischen zwei Standorten im WAN",
-        "Regelt die physische Ablage von Papierakten in Registratur und Archiv im Betrieb"
+        "Noch kein Kaufvertrag: Angebot und Annahme müssen übereinstimmen; Bestellung ist Annahme.",
+        "Vertrag entsteht bereits durch das Angebot allein – Kunde ist nur passive Partei.",
+        "Vertrag entsteht erst durch Rechnung – Angebot und Bestellung sind unverbindlich.",
+        "Angebot und Annahme sind dasselbe – rechtlich keine zwei Willenserklärungen nötig."
       ],
       "ws": [
-        12,
-        8,
-        9,
-        12
+        11,
+        13,
+        11,
+        11
       ],
       "cs": [
-        90,
-        83,
-        77,
-        80
+        89,
+        81,
+        81,
+        82
       ],
-      "spanW": 0.5,
-      "spanC": 0.169,
+      "spanW": 0.182,
+      "spanC": 0.099,
       "gapC": 7
     },
     {
@@ -1622,33 +1406,6 @@
     },
     {
       "sammlung": "QUIZ",
-      "i": 514,
-      "r": 0,
-      "q": "Wozu dient ein Ticket-System im Störungsmanagement?",
-      "a": [
-        "Vorgänge erfassen, priorisieren, bearbeiten und bis zum Abschluss im System nachverfolgen",
-        "Druck von Rechnungen und Mahnungen an Kunden mit offenen Posten im Finanzsystem",
-        "Vergabe statischer IP-Adressen an Server und Drucker im lokalen Netzwerksegment",
-        "Verschlüsselung sensibler Daten auf Fileservern mit einem zentralen Key-Management"
-      ],
-      "ws": [
-        11,
-        12,
-        10,
-        9
-      ],
-      "cs": [
-        89,
-        79,
-        79,
-        82
-      ],
-      "spanW": 0.333,
-      "spanC": 0.127,
-      "gapC": 7
-    },
-    {
-      "sammlung": "QUIZ",
       "i": 544,
       "r": 0,
       "q": "Was bedeutet PoE bei Netzwerkgeräten?",
@@ -1672,33 +1429,6 @@
       ],
       "spanW": 0.5,
       "spanC": 0.19,
-      "gapC": 7
-    },
-    {
-      "sammlung": "QUIZ",
-      "i": 562,
-      "r": 0,
-      "q": "Warum sollte ein Angebot eine Bindefrist enthalten?",
-      "a": [
-        "Bindefrist legt fest, bis wann der Anbieter an seine im Angebot genannten Konditionen gebunden ist",
-        "Bindefrist soll das Angebot teurer wirken, damit Kunden schneller verhandeln und nachlassen",
-        "Bindefrist ist gesetzlich verboten, weil sie den Kunden an unflexible Preise ketten würde",
-        "Bindefrist entbindet den Kunden von jeder Rückmeldung, bis die Frist ohne Wirkung abläuft"
-      ],
-      "ws": [
-        15,
-        12,
-        13,
-        13
-      ],
-      "cs": [
-        98,
-        91,
-        89,
-        89
-      ],
-      "spanW": 0.25,
-      "spanC": 0.101,
       "gapC": 7
     },
     {
@@ -1753,33 +1483,6 @@
       ],
       "spanW": 0.286,
       "spanC": 0.157,
-      "gapC": 7
-    },
-    {
-      "sammlung": "QUIZ",
-      "i": 606,
-      "r": 0,
-      "q": "Was ist eine Alternativfrage und wozu dient sie?",
-      "a": [
-        "Dem Kunden wird zwischen zwei Optionen die Wahl gelassen — typisch für den Gesprächsabschluss",
-        "Man fragt, ob der Kunde überhaupt Interesse hat, ohne konkrete Alternativen anzubieten",
-        "Man stellt eine Fangfrage, die den Kunden in eine unvorteilhafte Antwort drängen soll",
-        "Man fragt nach dem Wetter, um Smalltalk zu betreiben und das Gespräch zu verlängern"
-      ],
-      "ws": [
-        14,
-        12,
-        13,
-        14
-      ],
-      "cs": [
-        93,
-        86,
-        85,
-        83
-      ],
-      "spanW": 0.167,
-      "spanC": 0.12,
       "gapC": 7
     },
     {
@@ -1919,6 +1622,33 @@
     },
     {
       "sammlung": "QUIZ",
+      "i": 299,
+      "r": 0,
+      "q": "„Please raise a ticket.“ – Was soll man tun?",
+      "a": [
+        "Ein Ticket (Störungsmeldung) im Ticketsystem anlegen und zur Bearbeitung geben.",
+        "Ein Zugticket für die Fahrt zum Kunden online oder am Automaten kaufen.",
+        "Eine Rechnung ausstellen und an die Buchhaltung zur Zahlung weiterleiten.",
+        "Ein bestehendes Ticket im System löschen, um die Warteschlange zu kürzen."
+      ],
+      "ws": [
+        10,
+        12,
+        10,
+        11
+      ],
+      "cs": [
+        79,
+        71,
+        73,
+        73
+      ],
+      "spanW": 0.2,
+      "spanC": 0.113,
+      "gapC": 6
+    },
+    {
+      "sammlung": "QUIZ",
       "i": 350,
       "r": 0,
       "q": "Wodurch entsteht Wertschöpfung im Unternehmen?",
@@ -1973,33 +1703,6 @@
     },
     {
       "sammlung": "QUIZ",
-      "i": 361,
-      "r": 0,
-      "q": "Was macht das Protokoll ARP?",
-      "a": [
-        "Ordnet im lokalen Netz einer IP-Adresse die zugehörige MAC-Adresse zu (Address Resolution)",
-        "Vergibt dynamisch IP-Adressen an Clients und verwaltet Lease-Zeiten im DHCP-Server",
-        "Verschlüsselt ausgehende E-Mails mit S/MIME oder PGP auf dem Mail-Submission-Agent",
-        "Synchronisiert Uhren aller Rechner mit einem NTP-Server für einheitliche Zeitstempel"
-      ],
-      "ws": [
-        12,
-        10,
-        10,
-        10
-      ],
-      "cs": [
-        90,
-        82,
-        82,
-        84
-      ],
-      "spanW": 0.2,
-      "spanC": 0.098,
-      "gapC": 6
-    },
-    {
-      "sammlung": "QUIZ",
       "i": 382,
       "r": 0,
       "q": "Wozu dient eine digitale Signatur?",
@@ -2023,60 +1726,6 @@
       ],
       "spanW": 0.125,
       "spanC": 0.157,
-      "gapC": 6
-    },
-    {
-      "sammlung": "QUIZ",
-      "i": 391,
-      "r": 0,
-      "q": "Ein Server soll ausfallsicher betrieben werden. Welche Maßnahme sichert vor allem die Verfügbarkeit?",
-      "a": [
-        "Redundante Festplatten im RAID, USV und Backup sichern vor allem die Verfügbarkeit des Servers",
-        "Leistungsfähigere CPU steigert primär die Verfügbarkeit, unabhängig von Ausfallszenarien",
-        "Neuer Monitor am Server verbessert die Verfügbarkeit der Dienste bei Hardwaredefekten",
-        "Längerer Virenscan während der Wartung erhöht die Verfügbarkeit im Normalbetrieb"
-      ],
-      "ws": [
-        14,
-        9,
-        11,
-        10
-      ],
-      "cs": [
-        94,
-        88,
-        85,
-        80
-      ],
-      "spanW": 0.556,
-      "spanC": 0.175,
-      "gapC": 6
-    },
-    {
-      "sammlung": "QUIZ",
-      "i": 401,
-      "r": 0,
-      "q": "Was regelt eine EULA?",
-      "a": [
-        "Endnutzer-Lizenzvereinbarung (EULA), die Nutzungsrechte und -beschränkungen für Software regelt",
-        "Festlegung des Kaufpreises und der Zahlungsbedingungen für verkaufte Hardwarekomponenten",
-        "Garantiezeit und Reparaturbedingungen für ein physisches Gerät nach dem Kauf",
-        "Allgemeine Definition des Urheberrechts im Bürgerlichen Gesetzbuch ohne Bezug zu Software"
-      ],
-      "ws": [
-        9,
-        9,
-        10,
-        11
-      ],
-      "cs": [
-        95,
-        88,
-        76,
-        89
-      ],
-      "spanW": 0.222,
-      "spanC": 0.25,
       "gapC": 6
     },
     {
@@ -2108,29 +1757,29 @@
     },
     {
       "sammlung": "QUIZ",
-      "i": 403,
+      "i": 419,
       "r": 0,
-      "q": "Ein Mitarbeiter lädt eine kommerzielle Bilddatei auf den Firmenserver für Werbematerial. Worauf ist zu achten (PK-04)?",
+      "q": "Wozu dient ein Testprotokoll?",
       "a": [
-        "Lizenz und Nutzungsrechte des Bildes prüfen — ohne Erlaubnis drohen Abmahnung und Schadensersatz",
-        "Bilder aus dem Internet sind immer frei nutzbar, wenn sie in Suchmaschinen auffindbar sind",
-        "Entscheidend ist ausschließlich die Dateigröße, nicht Urheberrecht oder Lizenzbedingungen",
-        "Interne Nutzung ist immer erlaubt, auch wenn das Bild kommerziell geschützt ist"
+        "Dokumentiert, was wie getestet wurde und welches Ergebnis (bestanden/nicht) vorliegt.",
+        "Sammelt Eingangsrechnungen für das Projektcontrolling und die Buchhaltung.",
+        "Beschreibt Installation und Konfiguration des Betriebssystems auf Testclients.",
+        "Speichert Benutzerpasswörter für Wiederherstellung – Bestandteil des Testplans."
       ],
       "ws": [
-        13,
-        14,
-        9,
-        12
+        10,
+        8,
+        8,
+        8
       ],
       "cs": [
-        96,
-        90,
-        89,
+        85,
+        74,
+        78,
         79
       ],
-      "spanW": 0.556,
-      "spanC": 0.215,
+      "spanW": 0.25,
+      "spanC": 0.149,
       "gapC": 6
     },
     {
@@ -2158,33 +1807,6 @@
       ],
       "spanW": 0.444,
       "spanC": 0.118,
-      "gapC": 6
-    },
-    {
-      "sammlung": "QUIZ",
-      "i": 424,
-      "r": 0,
-      "q": "Welche drei Mängelarten unterscheidet der Prüfungskatalog bei der Abnahme?",
-      "a": [
-        "Schlechtleistung, Falschlieferung und Minderlieferung als drei Mängelarten bei der Abnahme",
-        "Rot, Gelb und Grün als Ampelstatus für Tickets im internen Qualitätsmanagementsystem",
-        "Viren, Würmer und Trojaner als Klassifikation von Schadsoftware in der IT-Sicherheit",
-        "Intern, Extern und Hybrid als Betriebsmodelle für Cloud-Dienste im Unternehmen"
-      ],
-      "ws": [
-        10,
-        11,
-        11,
-        10
-      ],
-      "cs": [
-        90,
-        84,
-        84,
-        78
-      ],
-      "spanW": 0.1,
-      "spanC": 0.154,
       "gapC": 6
     },
     {
@@ -2239,6 +1861,33 @@
       ],
       "spanW": 0.571,
       "spanC": 0.177,
+      "gapC": 6
+    },
+    {
+      "sammlung": "QUIZ",
+      "i": 496,
+      "r": 0,
+      "q": "Wozu dient ein Patchpanel im Netzwerkverteiler?",
+      "a": [
+        "Fest verlegte Kabel geordnet anschließen und per Patchkabel flexibel zum Switch führen.",
+        "Stromversorgung im Verteilerschrank auf mehrere Steckdosen gleichmäßig aufteilen.",
+        "Dateien zentral speichern, die über das Patchpanel mit dem Switch verbunden sind.",
+        "Schadsoftware im LAN filtern, bevor Ethernet-Frames den Switch erreichen sollen."
+      ],
+      "ws": [
+        12,
+        8,
+        12,
+        10
+      ],
+      "cs": [
+        87,
+        81,
+        81,
+        80
+      ],
+      "spanW": 0.5,
+      "spanC": 0.087,
       "gapC": 6
     },
     {
@@ -2486,6 +2135,33 @@
     },
     {
       "sammlung": "QUIZ",
+      "i": 43,
+      "r": 3,
+      "q": "Was ist der Unterschied zwischen Datensicherheit und Datenschutz?",
+      "a": [
+        "Datensicherheit schützt Personen; Datenschutz schützt nur technische IT-Systeme.",
+        "Datenschutz betrifft ausschließlich Behörden und öffentliche Verwaltungen.",
+        "Beide Begriffe meinen dasselbe – Unterschiede sind nur akademische Spielerei.",
+        "Datensicherheit schützt Daten vor Verlust/Manipulation; Datenschutz schützt Personen."
+      ],
+      "ws": [
+        8,
+        7,
+        10,
+        8
+      ],
+      "cs": [
+        80,
+        74,
+        77,
+        85
+      ],
+      "spanW": 0.429,
+      "spanC": 0.149,
+      "gapC": 5
+    },
+    {
+      "sammlung": "QUIZ",
       "i": 86,
       "r": 2,
       "q": "Für welche Objekt-Kategorien wird eine Schutzbedarfsanalyse durchgeführt?",
@@ -2648,6 +2324,33 @@
     },
     {
       "sammlung": "QUIZ",
+      "i": 200,
+      "r": 0,
+      "q": "Wie kann KI für Angriffe missbraucht werden?",
+      "a": [
+        "Täuschend echte Phishing-Mails, Deepfakes und automatisiertes Passwort-Ausprobieren.",
+        "KI dient Angriffen höchstens zum Anzeigen von Werbung in Browsern und Apps.",
+        "KI kann technisch nicht für Angriffe genutzt werden – nur für legale Assistenz.",
+        "KI wird bei Angriffen nur zum Kopieren von Dateien zwischen Ordnern verwendet."
+      ],
+      "ws": [
+        7,
+        12,
+        13,
+        12
+      ],
+      "cs": [
+        84,
+        75,
+        79,
+        78
+      ],
+      "spanW": 0.857,
+      "spanC": 0.12,
+      "gapC": 5
+    },
+    {
+      "sammlung": "QUIZ",
       "i": 241,
       "r": 0,
       "q": "Warum sind Backups eine Maßnahme der Verfügbarkeit?",
@@ -2756,33 +2459,6 @@
     },
     {
       "sammlung": "QUIZ",
-      "i": 360,
-      "r": 0,
-      "q": "Was bedeutet ein „DNS-Server“ und warum ist er für das Surfen nötig?",
-      "a": [
-        "Dienst, der DNS-Namen in IP-Adressen auflöst — ohne ihn findet der Browser die Seite nicht",
-        "Server, der Webseiten-Inhalte cached und bei jedem Aufruf statisch ausliefert",
-        "Komponente, die TLS-Verbindungen terminierend verschlüsselt und Zertifikate verwaltet",
-        "Dienst, der dem Client automatisch eine öffentliche IP-Adresse im Heimnetz zuweist"
-      ],
-      "ws": [
-        15,
-        10,
-        8,
-        11
-      ],
-      "cs": [
-        90,
-        77,
-        85,
-        82
-      ],
-      "spanW": 0.875,
-      "spanC": 0.169,
-      "gapC": 5
-    },
-    {
-      "sammlung": "QUIZ",
       "i": 373,
       "r": 0,
       "q": "Ein Nutzer kann im Browser keine Internetseite öffnen, aber der Ping auf 8.8.8.8 funktioniert. Was ist die wahrscheinlichste Ursache?",
@@ -2864,6 +2540,33 @@
     },
     {
       "sammlung": "QUIZ",
+      "i": 392,
+      "r": 0,
+      "q": "Warum ist ein gesichertes Backup die „letzte Verteidigungslinie“?",
+      "a": [
+        "Ermöglicht Wiederherstellung bei Ransomware oder Datenverlust – letzte Verteidigung.",
+        "Löscht Viren automatisch beim Einspielen der Sicherung auf das Produktivsystem.",
+        "Ersetzt Firewall und Intrusion Detection vollständig im Perimeter-Schutz.",
+        "Funktioniert ohne Strom dauerhaft – unabhängig von Ausfällen der Infrastruktur."
+      ],
+      "ws": [
+        9,
+        10,
+        8,
+        10
+      ],
+      "cs": [
+        84,
+        79,
+        73,
+        79
+      ],
+      "spanW": 0.25,
+      "spanC": 0.151,
+      "gapC": 5
+    },
+    {
+      "sammlung": "QUIZ",
       "i": 407,
       "r": 0,
       "q": "Was zeigt ein Netzplan im Projektmanagement?",
@@ -2891,29 +2594,29 @@
     },
     {
       "sammlung": "QUIZ",
-      "i": 433,
+      "i": 430,
       "r": 0,
-      "q": "Wozu dient eine Nutzwertanalyse im Kundenkontext?",
+      "q": "Wofür sind Marktformen wie Monopol, Oligopol und Polypol ein Kriterium?",
       "a": [
-        "Vergleichbare Bewertung mehrerer Angebote anhand gewichteter Kriterien im Kundengespräch",
-        "Berechnung der Umsatzsteuer auf Nettopreise nach den aktuellen gesetzlichen Sätzen",
-        "Auswahl eines Druckers anhand der Papierkapazität ohne Bezug zu Kundenanforderungen",
-        "Erstellung der Schlussrechnung nach Projektende ohne vorherige Bedarfsermittlung"
+        "Anzahl der Anbieter und Nachfrager auf einem Markt – Monopol, Oligopol, Polypol.",
+        "Farbe und Layout einer Webseite – Kriterium im Marketing, nicht Marktform.",
+        "Netzwerkgeschwindigkeit in Mbit/s – technische Kennzahl, keine Marktform.",
+        "Aktenablage im Projektordner – organisatorische Regel, keine Marktstruktur."
       ],
       "ws": [
-        9,
-        10,
-        10,
+        12,
+        11,
+        8,
         8
       ],
       "cs": [
-        88,
-        82,
-        83,
-        80
+        80,
+        74,
+        73,
+        75
       ],
-      "spanW": 0.25,
-      "spanC": 0.1,
+      "spanW": 0.5,
+      "spanC": 0.096,
       "gapC": 5
     },
     {
@@ -2941,33 +2644,6 @@
       ],
       "spanW": 0.111,
       "spanC": 0.191,
-      "gapC": 5
-    },
-    {
-      "sammlung": "QUIZ",
-      "i": 463,
-      "r": 0,
-      "q": "Wozu dient ein Schreibtischtest bei einem Datenmodell?",
-      "a": [
-        "Beispieldatensätze gedanklich durchgehen und Beziehungen sowie Fremdschlüssel auf Plausibilität prüfen",
-        "Datenmodell ausdrucken und manuell mit dem Kunden unterzeichnen, ohne inhaltliche Prüfung",
-        "Ausführungsgeschwindigkeit von SQL-Abfragen auf produktiver Hardware vor dem Entwurf messen",
-        "Datenbank installieren und erst danach das Modell anhand der live angelegten Tabellen korrigieren"
-      ],
-      "ws": [
-        10,
-        11,
-        10,
-        13
-      ],
-      "cs": [
-        102,
-        89,
-        91,
-        97
-      ],
-      "spanW": 0.3,
-      "spanC": 0.146,
       "gapC": 5
     },
     {
@@ -3130,6 +2806,33 @@
       ],
       "spanW": 0.333,
       "spanC": 0.169,
+      "gapC": 5
+    },
+    {
+      "sammlung": "QUIZ",
+      "i": 588,
+      "r": 0,
+      "q": "Warum ist die Reihenfolge „Reservierung vor DHCP-Pool“ wichtig?",
+      "a": [
+        "Feste Adressen (Server, Drucker) werden reserviert, bevor der DHCP-Pool vergeben wird.",
+        "Reihenfolge beschleunigt den Router; DHCP und Reservierung sind dafür irrelevant.",
+        "Ohne diese Reihenfolge funktioniert WLAN grundsätzlich nicht in Firmennetzen.",
+        "Reservierung vor Pool verlängert die Lebensdauer der installierten Netzwerkkabel."
+      ],
+      "ws": [
+        11,
+        10,
+        9,
+        9
+      ],
+      "cs": [
+        86,
+        81,
+        77,
+        81
+      ],
+      "spanW": 0.222,
+      "spanC": 0.117,
       "gapC": 5
     },
     {
@@ -3404,33 +3107,6 @@
     },
     {
       "sammlung": "QUIZ",
-      "i": 26,
-      "r": 2,
-      "q": "Was fordert die 2. Normalform?",
-      "a": [
-        "Atomisierung aller Zellenwerte ist gefordert, damit jede Zelle genau einen Wert enthält",
-        "Keine transitiven Abhängigkeiten zwischen Nicht-Schlüssel-Attributen sind in 2. NF erlaubt",
-        "Keine partiellen Abhängigkeiten vom Teil eines zusammengesetzten Primärschlüssels sind erlaubt",
-        "Verzicht auf Fremdschlüssel ist Voraussetzung, um eine Tabelle in 2. Normalform zu bringen"
-      ],
-      "ws": [
-        12,
-        10,
-        10,
-        13
-      ],
-      "cs": [
-        87,
-        90,
-        94,
-        90
-      ],
-      "spanW": 0.3,
-      "spanC": 0.08,
-      "gapC": 4
-    },
-    {
-      "sammlung": "QUIZ",
       "i": 41,
       "r": 1,
       "q": "Welche Adresse darf NICHT an einen Host vergeben werden?",
@@ -3674,6 +3350,33 @@
     },
     {
       "sammlung": "QUIZ",
+      "i": 361,
+      "r": 0,
+      "q": "Was macht das Protokoll ARP?",
+      "a": [
+        "Ordnet einer IP-Adresse die zugehörige MAC-Adresse im lokalen Ethernet-Segment zu.",
+        "Vergibt automatisch IP-Adressen an Clients – Aufgabe des DHCP-Dienstes im LAN.",
+        "Verschlüsselt E-Mail-Inhalte Ende-zu-Ende zwischen Absender und Empfänger.",
+        "Synchronisiert Systemuhren im Netzwerk – typische Aufgabe von NTP-Servern."
+      ],
+      "ws": [
+        10,
+        11,
+        7,
+        9
+      ],
+      "cs": [
+        82,
+        78,
+        74,
+        74
+      ],
+      "spanW": 0.571,
+      "spanC": 0.108,
+      "gapC": 4
+    },
+    {
+      "sammlung": "QUIZ",
       "i": 418,
       "r": 0,
       "q": "Was besagt der PDCA-Zyklus?",
@@ -3697,6 +3400,33 @@
       ],
       "spanW": 0.5,
       "spanC": 0.229,
+      "gapC": 4
+    },
+    {
+      "sammlung": "QUIZ",
+      "i": 431,
+      "r": 0,
+      "q": "Was bedeutet Käufermarkt?",
+      "a": [
+        "Angebot übersteigt Nachfrage – Käufer haben die stärkere Verhandlungsposition.",
+        "Nachfrage übersteigt Angebot – Verkäufermarkt mit Preisdruck nach oben.",
+        "Es gibt nur einen Anbieter – Monopol, nicht typisches Käufermarkt-Merkmal.",
+        "Es gibt nur einen Käufer – Monopson, nicht die Definition Käufermarkt."
+      ],
+      "ws": [
+        9,
+        9,
+        10,
+        11
+      ],
+      "cs": [
+        78,
+        71,
+        74,
+        70
+      ],
+      "spanW": 0.222,
+      "spanC": 0.114,
       "gapC": 4
     },
     {
@@ -4024,60 +3754,6 @@
       "gapC": 4
     },
     {
-      "sammlung": "QUIZ2",
-      "i": 31,
-      "r": 0,
-      "q": "Was liefert ein LEFT JOIN, was ein INNER JOIN?",
-      "a": [
-        "LEFT JOIN behält sämtliche Zeilen der linken Tabelle; INNER JOIN filtert auf passende Zeilenpaare",
-        "Beide Join-Typen liefern immer alle Zeilen aus beiden Tabellen ohne NULL-Ergänzungen",
-        "INNER JOIN liefert alle Zeilen links; LEFT JOIN nur Zeilen mit Partner in der rechten Tabelle",
-        "LEFT JOIN sortiert das Ergebnis automatisch nach dem Primärschlüssel der linken Tabelle"
-      ],
-      "ws": [
-        14,
-        11,
-        16,
-        12
-      ],
-      "cs": [
-        97,
-        84,
-        93,
-        87
-      ],
-      "spanW": 0.455,
-      "spanC": 0.155,
-      "gapC": 4
-    },
-    {
-      "sammlung": "QUIZ2",
-      "i": 62,
-      "r": 0,
-      "q": "Was ist ein Tarifvertrag und wie lange gilt er normalerweise?",
-      "a": [
-        "Vertrag zwischen Gewerkschaft und Arbeitgeber(verband) mit typischerweise befristeter Laufzeit",
-        "Privater Vertrag zwischen zwei Arbeitnehmern über gegenseitige Vertretung bei Krankheit",
-        "Gesetz des Bundestags, das Mindestlöhne für einzelne Betriebe unmittelbar festsetzt",
-        "Kooperationsvertrag zwischen zwei konkurrierenden Betrieben zur gemeinsamen Preisabsprache"
-      ],
-      "ws": [
-        9,
-        10,
-        10,
-        8
-      ],
-      "cs": [
-        94,
-        87,
-        83,
-        90
-      ],
-      "spanW": 0.25,
-      "spanC": 0.133,
-      "gapC": 4
-    },
-    {
       "sammlung": "QUIZ",
       "i": 32,
       "r": 0,
@@ -4349,6 +4025,33 @@
     },
     {
       "sammlung": "QUIZ",
+      "i": 360,
+      "r": 0,
+      "q": "Was bedeutet ein „DNS-Server“ und warum ist er für das Surfen nötig?",
+      "a": [
+        "DNS löst Namen in IPs auf – ohne DNS findet der Browser die Webseite nicht.",
+        "DNS speichert Webseiten lokal zwischen – ähnlich einem HTTP-Proxy-Cache.",
+        "DNS verschlüsselt die Verbindung zwischen Browser und Webserver (TLS).",
+        "DNS vergibt die eigene IP-Adresse des Clients im lokalen Netzwerk."
+      ],
+      "ws": [
+        15,
+        9,
+        9,
+        10
+      ],
+      "cs": [
+        75,
+        72,
+        70,
+        66
+      ],
+      "spanW": 0.667,
+      "spanC": 0.136,
+      "gapC": 3
+    },
+    {
+      "sammlung": "QUIZ",
       "i": 374,
       "r": 0,
       "q": "Welche drei Schutzziele bilden das „CIA-Trio“ der Informationssicherheit?",
@@ -4372,60 +4075,6 @@
       ],
       "spanW": 0.167,
       "spanC": 0.145,
-      "gapC": 3
-    },
-    {
-      "sammlung": "QUIZ",
-      "i": 396,
-      "r": 0,
-      "q": "Wann sind Daten wirklich anonym im Sinne der DSGVO?",
-      "a": [
-        "Personenbezug ist auch mit allen verfügbaren Mitteln nicht mehr herstellbar — echte Anonymität",
-        "Anonymität liegt vor, wenn lediglich der Name aus der Datensatzzeile entfernt wurde",
-        "Verschlüsselte Speicherung genügt, damit personenbezogene Daten als anonym gelten",
-        "Speicherung in einer Cloud außerhalb der EU macht personenbezogene Daten automatisch anonym"
-      ],
-      "ws": [
-        13,
-        12,
-        9,
-        12
-      ],
-      "cs": [
-        94,
-        83,
-        81,
-        91
-      ],
-      "spanW": 0.444,
-      "spanC": 0.16,
-      "gapC": 3
-    },
-    {
-      "sammlung": "QUIZ",
-      "i": 409,
-      "r": 0,
-      "q": "Was ist eine Pufferzeit im Netzplan?",
-      "a": [
-        "Zeitreservoir eines Vorgangs, das genutzt werden kann, ohne den Projektendtermin zu gefährden",
-        "Zusätzlicher Arbeitstag ohne Vergütung, den das Projektteam freiwillig einbringt",
-        "Geplante Pause der Projektleitung während der Urlaubszeit ohne Vertretungsregelung",
-        "Anzahl der verfügbaren Mitarbeitenden multipliziert mit deren individueller Tageskapazität"
-      ],
-      "ws": [
-        12,
-        9,
-        9,
-        9
-      ],
-      "cs": [
-        93,
-        80,
-        82,
-        90
-      ],
-      "spanW": 0.333,
-      "spanC": 0.163,
       "gapC": 3
     },
     {
@@ -4480,6 +4129,33 @@
       ],
       "spanW": 0.375,
       "spanC": 0.158,
+      "gapC": 3
+    },
+    {
+      "sammlung": "QUIZ",
+      "i": 424,
+      "r": 0,
+      "q": "Welche drei Mängelarten unterscheidet der Prüfungskatalog bei der Abnahme?",
+      "a": [
+        "Schlechtleistung, Falschlieferung und Minderlieferung – drei Mängelarten.",
+        "Rot, Gelb und Grün als Ampelstatus in der Projekt-Reporting-Software.",
+        "Viren, Würmer und Trojaner als Schadsoftware-Kategorien im IT-Betrieb.",
+        "Intern, extern und hybrid als Organisationsformen des Projektteams."
+      ],
+      "ws": [
+        7,
+        9,
+        8,
+        8
+      ],
+      "cs": [
+        73,
+        69,
+        70,
+        67
+      ],
+      "spanW": 0.286,
+      "spanC": 0.09,
       "gapC": 3
     },
     {
@@ -4646,33 +4322,6 @@
     },
     {
       "sammlung": "QUIZ",
-      "i": 539,
-      "r": 0,
-      "q": "Was bedeutet „proprietär“ im Gegensatz zu „quelloffen“?",
-      "a": [
-        "Quellcode ist nicht offengelegt; Nutzung ist lizenzrechtlich an Herstellerbedingungen gebunden",
-        "Proprietäre Software ist immer kostenlos, weil der Quellcode nicht veröffentlicht wird",
-        "Jeder darf proprietäre Software verändern, solange er die Copyright-Zeile im Code belässt",
-        "Proprietäre Software läuft ausschließlich im Browser und nicht als installierte Desktop-App"
-      ],
-      "ws": [
-        10,
-        11,
-        12,
-        11
-      ],
-      "cs": [
-        94,
-        86,
-        89,
-        91
-      ],
-      "spanW": 0.2,
-      "spanC": 0.093,
-      "gapC": 3
-    },
-    {
-      "sammlung": "QUIZ",
       "i": 548,
       "r": 0,
       "q": "Was ist der Unterschied zwischen Backup und Archivierung?",
@@ -4805,33 +4454,6 @@
       "spanW": 0.286,
       "spanC": 0.245,
       "gapC": 3
-    },
-    {
-      "sammlung": "QUIZ",
-      "i": 43,
-      "r": 3,
-      "q": "Was ist der Unterschied zwischen Datensicherheit und Datenschutz?",
-      "a": [
-        "Datensicherheit schützt Personen direkt; Datenschutz betrifft nur technische IT-Systeme",
-        "Datenschutz gilt nur für Behörden und nicht für Unternehmen in der freien Wirtschaft",
-        "Beide Begriffe meinen dasselbe und können in Verträgen synonym verwendet werden",
-        "Datensicherheit schützt Daten vor Verlust/Manipulation; Datenschutz schützt Personendaten"
-      ],
-      "ws": [
-        9,
-        13,
-        11,
-        8
-      ],
-      "cs": [
-        87,
-        84,
-        79,
-        89
-      ],
-      "spanW": 0.625,
-      "spanC": 0.127,
-      "gapC": 2
     },
     {
       "sammlung": "QUIZ",
@@ -5105,33 +4727,6 @@
     },
     {
       "sammlung": "QUIZ",
-      "i": 220,
-      "r": 0,
-      "q": "Warum ist WEP für WLAN heute nicht mehr zu verwenden?",
-      "a": [
-        "WEP gilt als gebrochen und schnell knackbar — stattdessen WPA2/WPA3 für WLAN einsetzen",
-        "WEP ist zu langsam für moderne Clients und deshalb in Hochleistungs-WLAN unbrauchbar",
-        "WEP funktioniert nur mit Kupferkabel und nicht mit Funk nach IEEE 802.11",
-        "WEP unterstützt keine IP-Adressen, deshalb kann kein DHCP im WLAN genutzt werden"
-      ],
-      "ws": [
-        13,
-        12,
-        12,
-        12
-      ],
-      "cs": [
-        86,
-        84,
-        72,
-        80
-      ],
-      "spanW": 0.083,
-      "spanC": 0.194,
-      "gapC": 2
-    },
-    {
-      "sammlung": "QUIZ",
       "i": 221,
       "r": 0,
       "q": "Was ist eine DMZ?",
@@ -5209,33 +4804,6 @@
       ],
       "spanW": 0.5,
       "spanC": 0.162,
-      "gapC": 2
-    },
-    {
-      "sammlung": "QUIZ",
-      "i": 252,
-      "r": 0,
-      "q": "Welche vier Beschaffungsformen nennt der Prüfungskatalog für den Kostenvergleich?",
-      "a": [
-        "Kauf, Leasing, Finanzierung und Pay-per-Use als vier Beschaffungsformen im Kostenvergleich",
-        "Nur Kauf und kurzfristige Miete werden im Prüfungskatalog als Beschaffungswege genannt",
-        "Tausch, Spende und Erbschaft gelten als standardisierte Beschaffungsformen im IT-Einkauf",
-        "Ausschließlich Ratenkauf ohne Leasing, Finanzierung oder nutzungsbasierte Modelle"
-      ],
-      "ws": [
-        10,
-        11,
-        10,
-        8
-      ],
-      "cs": [
-        90,
-        86,
-        88,
-        81
-      ],
-      "spanW": 0.375,
-      "spanC": 0.111,
       "gapC": 2
     },
     {
@@ -5375,33 +4943,6 @@
     },
     {
       "sammlung": "QUIZ",
-      "i": 302,
-      "r": 0,
-      "q": "Was bedeutet „bandwidth?",
-      "a": [
-        "Bandbreite — übertragbare Datenmenge pro Zeiteinheit, z. B. in Mbit/s im Netzwerk",
-        "Physische Länge eines Netzwerkkabels zwischen Patchpanel und Arbeitsplatz-Dose",
-        "Anzahl gleichzeitig angemeldeter Benutzer an einem WLAN-Access-Point im Büro",
-        "Speicherkapazität einer Festplatte oder SSD, gemessen in Gigabyte oder Terabyte"
-      ],
-      "ws": [
-        12,
-        8,
-        9,
-        10
-      ],
-      "cs": [
-        81,
-        78,
-        76,
-        79
-      ],
-      "spanW": 0.5,
-      "spanC": 0.066,
-      "gapC": 2
-    },
-    {
-      "sammlung": "QUIZ",
       "i": 312,
       "r": 0,
       "q": "„The equipment has reached its end of life.“ – Was bedeutet das?",
@@ -5452,6 +4993,87 @@
       ],
       "spanW": 0.333,
       "spanC": 0.17,
+      "gapC": 2
+    },
+    {
+      "sammlung": "QUIZ",
+      "i": 341,
+      "r": 0,
+      "q": "Wozu dient eine integrierte Entwicklungsumgebung (IDE)?",
+      "a": [
+        "Editor, Compiler, Debugger und oft Git in einer Oberfläche – das ist eine IDE.",
+        "Ersetzt das Betriebssystem – Anwendungen laufen nur innerhalb der IDE.",
+        "Nur Texteditor ohne Build-, Debug- oder Projektfunktionen – keine echte IDE.",
+        "Verschlüsselt Quellcode automatisch – Lesen ohne IDE-Lizenz unmöglich."
+      ],
+      "ws": [
+        14,
+        10,
+        11,
+        8
+      ],
+      "cs": [
+        78,
+        70,
+        76,
+        70
+      ],
+      "spanW": 0.75,
+      "spanC": 0.114,
+      "gapC": 2
+    },
+    {
+      "sammlung": "QUIZ",
+      "i": 433,
+      "r": 0,
+      "q": "Wozu dient eine Nutzwertanalyse im Kundenkontext?",
+      "a": [
+        "Vergleichbare Bewertung mehrerer Angebote anhand gewichteter Kriterien und Punkte.",
+        "Berechnung der Umsatzsteuer auf Nettopreise – Aufgabe der Finanzbuchhaltung.",
+        "Auswahl des günstigsten Druckers allein nach Seitenpreis ohne weitere Kriterien.",
+        "Erstellung der Rechnung nach Auftragserteilung – kein Entscheidungswerkzeug."
+      ],
+      "ws": [
+        9,
+        9,
+        10,
+        8
+      ],
+      "cs": [
+        82,
+        76,
+        80,
+        76
+      ],
+      "spanW": 0.25,
+      "spanC": 0.079,
+      "gapC": 2
+    },
+    {
+      "sammlung": "QUIZ",
+      "i": 444,
+      "r": 0,
+      "q": "Der Kunde will die Leistung erst abnehmen, wenn alle Mängel behoben sind. Was ist korrekt?",
+      "a": [
+        "Bei unwesentlichen Mängeln Abnahme zulässig; wesentliche berechtigen zur Verweigerung.",
+        "Jeder Kratzer oder Makel berechtigt den Kunden, die Abnahme dauerhaft zu verweigern.",
+        "Ein Abnahmeprotokoll ist reine Kulanz und für Rechte und Pflichten ohne Bedeutung.",
+        "Abnahme ist Formsache: Sie ändert weder Gewährleistung noch Fälligkeit der Zahlung."
+      ],
+      "ws": [
+        9,
+        12,
+        12,
+        11
+      ],
+      "cs": [
+        86,
+        84,
+        82,
+        83
+      ],
+      "spanW": 0.333,
+      "spanC": 0.049,
       "gapC": 2
     },
     {
@@ -5533,6 +5155,33 @@
       ],
       "spanW": 0.111,
       "spanC": 0.246,
+      "gapC": 2
+    },
+    {
+      "sammlung": "QUIZ",
+      "i": 469,
+      "r": 0,
+      "q": "Was ist das Besondere an Deep Learning?",
+      "a": [
+        "Nutzt tiefe neuronale Netze mit vielen Schichten für komplexe Muster in Daten.",
+        "Arbeitet ohne Trainingsdaten – Muster entstehen rein aus Zufallsgenerierung.",
+        "Ist eine relationale Datenbank mit SQL-Abfragen für strukturierte Tabellen.",
+        "Benötigt keinen Prozessor – Berechnung erfolgt ausschließlich mechanisch."
+      ],
+      "ws": [
+        12,
+        9,
+        9,
+        8
+      ],
+      "cs": [
+        78,
+        76,
+        75,
+        73
+      ],
+      "spanW": 0.5,
+      "spanC": 0.068,
       "gapC": 2
     },
     {
@@ -5672,6 +5321,33 @@
     },
     {
       "sammlung": "QUIZ",
+      "i": 539,
+      "r": 0,
+      "q": "Was bedeutet „proprietär“ im Gegensatz zu „quelloffen“?",
+      "a": [
+        "Quellcode nicht offengelegt; Nutzung lizenzrechtlich an den Hersteller gebunden.",
+        "Proprietär bedeutet immer kostenlos – der Hersteller verdient nur an Support.",
+        "Jeder darf proprietäre Software verändern und unter GPL weiterverbreiten.",
+        "Proprietäre Software läuft ausschließlich im Browser ohne lokale Installation."
+      ],
+      "ws": [
+        9,
+        11,
+        9,
+        9
+      ],
+      "cs": [
+        80,
+        77,
+        73,
+        78
+      ],
+      "spanW": 0.222,
+      "spanC": 0.096,
+      "gapC": 2
+    },
+    {
+      "sammlung": "QUIZ",
       "i": 540,
       "r": 0,
       "q": "Was ist ein Betriebssystem-Image (Installations-Image)?",
@@ -5722,6 +5398,33 @@
       ],
       "spanW": 0.25,
       "spanC": 0.21,
+      "gapC": 2
+    },
+    {
+      "sammlung": "QUIZ",
+      "i": 591,
+      "r": 0,
+      "q": "Was ist „Least Functionality“ (minimale Funktionalität)?",
+      "a": [
+        "System bietet nur benötigte Funktionen und Dienste – nichts Überflüssiges aktiv.",
+        "Alle installierten Funktionen bleiben dauerhaft aktiv – maximale Flexibilität.",
+        "Es dürfen überhaupt keine Dienste laufen – auch keine für den Betrieb nötigen.",
+        "Nur der Administrator darf alles nutzen; andere Benutzer haben keinen Zugriff."
+      ],
+      "ws": [
+        11,
+        9,
+        13,
+        11
+      ],
+      "cs": [
+        80,
+        78,
+        78,
+        78
+      ],
+      "spanW": 0.444,
+      "spanC": 0.026,
       "gapC": 2
     },
     {
@@ -5860,6 +5563,33 @@
       "gapC": 2
     },
     {
+      "sammlung": "QUIZ2",
+      "i": 55,
+      "r": 0,
+      "q": "Was kennzeichnet ein Polypol?",
+      "a": [
+        "Viele Anbieter, viele Nachfrager – keiner bestimmt den Marktpreis allein.",
+        "Genau ein Anbieter am Markt – typisches Merkmal eines Monopols.",
+        "Wenige große Anbieter – typisches Kennzeichen eines Oligopols am Markt.",
+        "Genau ein Nachfrager – der alleinige Abnehmer bestimmt die Marktpreise."
+      ],
+      "ws": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "cs": [
+        73,
+        63,
+        71,
+        71
+      ],
+      "spanW": 0,
+      "spanC": 0.159,
+      "gapC": 2
+    },
+    {
       "sammlung": "QUIZ",
       "i": 24,
       "r": 0,
@@ -5884,6 +5614,33 @@
       ],
       "spanW": 0.286,
       "spanC": 0.083,
+      "gapC": 1
+    },
+    {
+      "sammlung": "QUIZ",
+      "i": 26,
+      "r": 2,
+      "q": "Was fordert die 2. Normalform?",
+      "a": [
+        "Atomisierung aller Zellen – jede Zelle enthält genau einen unteilbaren Wert.",
+        "Keine transitiven Abhängigkeiten – das ist Anforderung der 3. Normalform.",
+        "Keine partiellen Abhängigkeiten vom Teil eines zusammengesetzten Primärschlüssels.",
+        "Verzicht auf Fremdschlüssel – Beziehungen werden nur in der Anwendung abgebildet."
+      ],
+      "ws": [
+        11,
+        10,
+        8,
+        11
+      ],
+      "cs": [
+        76,
+        73,
+        82,
+        81
+      ],
+      "spanW": 0.375,
+      "spanC": 0.123,
       "gapC": 1
     },
     {
@@ -6239,29 +5996,29 @@
     },
     {
       "sammlung": "QUIZ",
-      "i": 378,
+      "i": 396,
       "r": 0,
-      "q": "Was kennzeichnet eine asymmetrische Verschlüsselung?",
+      "q": "Wann sind Daten wirklich anonym im Sinne der DSGVO?",
       "a": [
-        "Sender nutzt öffentlichen Schlüssel des Empfängers; Empfänger entschlüsselt mit privatem Schlüssel",
-        "Beide Seiten nutzen denselben geheimen Schlüssel, der vorab per Post ausgetauscht wurde",
-        "Der Schlüssel ist immer öffentlich, weil asymmetrische Verfahren ohne Geheimnis auskommen",
-        "Asymmetrische Verfahren sind stets schneller als symmetrische AES-Verschlüsselung im Dauerbetrieb"
+        "Personenbezug ist mit allen Mitteln nicht mehr herstellbar – echte Anonymität.",
+        "Nur der Name wurde entfernt – reicht für Anonymität im Sinne der DSGVO.",
+        "Daten sind verschlüsselt gespeichert – gelten damit automatisch als anonym.",
+        "Daten liegen in einer Cloud – Speicherort allein macht sie DSGVO-frei anonym."
       ],
       "ws": [
         11,
-        12,
-        11,
-        10
+        13,
+        10,
+        12
       ],
       "cs": [
-        98,
-        87,
-        89,
-        97
+        78,
+        71,
+        75,
+        77
       ],
-      "spanW": 0.2,
-      "spanC": 0.126,
+      "spanW": 0.3,
+      "spanC": 0.099,
       "gapC": 1
     },
     {
@@ -6401,6 +6158,33 @@
     },
     {
       "sammlung": "QUIZ",
+      "i": 474,
+      "r": 0,
+      "q": "Was bedeutet „formatieren“ bei der Einrichtung eines Datenträgers?",
+      "a": [
+        "Dateisystem auf Datenträger oder Partition anlegen – Struktur für Dateien und Ordner.",
+        "Datenträger löschen ohne Dateisystem – Rohspeicher ohne lesbare Verzeichnisstruktur.",
+        "Etikett auf das Gehäuse kleben – physische Kennzeichnung, kein Formatieren.",
+        "Dateien von Medium A nach Medium B kopieren – Migration, nicht Formatierung."
+      ],
+      "ws": [
+        12,
+        9,
+        10,
+        12
+      ],
+      "cs": [
+        85,
+        84,
+        75,
+        76
+      ],
+      "spanW": 0.333,
+      "spanC": 0.133,
+      "gapC": 1
+    },
+    {
+      "sammlung": "QUIZ",
       "i": 480,
       "r": 0,
       "q": "Was ist die Hauptaufgabe eines Treibers?",
@@ -6486,25 +6270,25 @@
       "r": 0,
       "q": "Ein Kunde hat ein Budget von 15.000 € netto für 15 Arbeitsplätze. Ein Angebot kostet 900 € pro Platz. Passt es ins Budget?",
       "a": [
-        "Ja — 15 × 900 € = 13.500 € netto und liegt damit unter dem Budget von 15.000 € netto",
-        "Nein — 15 × 900 € ergäbe 18.000 € netto und würde das Budget deutlich überschreiten",
-        "Nein — es fehlen 3.000 € netto, weil die Multiplikation falsch gerechnet wurde",
-        "Ja, aber nur brutto — netto wäre das Angebot nicht mehr im Rahmen des Kundenbudgets"
+        "Ja: 15 × 900 € = 13.500 € netto – liegt unter dem Budget von 15.000 € netto.",
+        "Nein: 15 × 900 € = 18.000 € netto – übersteigt das Kundenbudget deutlich.",
+        "Nein: es fehlen 3.000 € netto zum Budget – Rechnung mit anderem Stückpreis.",
+        "Ja, aber nur brutto – netto wäre über Budget; USt macht den Unterschied."
       ],
       "ws": [
-        20,
-        16,
+        18,
+        14,
         13,
-        15
+        13
       ],
       "cs": [
-        84,
-        83,
-        78,
-        83
+        76,
+        73,
+        75,
+        72
       ],
-      "spanW": 0.538,
-      "spanC": 0.077,
+      "spanW": 0.385,
+      "spanC": 0.056,
       "gapC": 1
     },
     {
@@ -6586,6 +6370,60 @@
       ],
       "spanW": 0.222,
       "spanC": 0.138,
+      "gapC": 1
+    },
+    {
+      "sammlung": "QUIZ",
+      "i": 557,
+      "r": 0,
+      "q": "Was ist eine Abweichungsanalyse bei einem Projekt?",
+      "a": [
+        "Untersucht, warum Soll und Ist bei Terminen, Kosten und Qualität auseinanderliegen.",
+        "Listet alle Teammitglieder mit Rollen – ohne Bezug zu Planabweichungen im Projekt.",
+        "Vergleicht zwei Lieferantenangebote hinsichtlich Preis, Lieferzeit und Service.",
+        "Installiert Software auf Testsystemen vor dem produktiven Rollout im Betrieb."
+      ],
+      "ws": [
+        11,
+        12,
+        8,
+        10
+      ],
+      "cs": [
+        83,
+        82,
+        79,
+        77
+      ],
+      "spanW": 0.5,
+      "spanC": 0.078,
+      "gapC": 1
+    },
+    {
+      "sammlung": "QUIZ",
+      "i": 566,
+      "r": 0,
+      "q": "Ein KI-Assistent schlägt eine falsche Antwort vor. Wie gehen Sie korrekt vor?",
+      "a": [
+        "Antwort fachlich prüfen; bei Zweifeln an der Quelle verifizieren – nicht blind nutzen.",
+        "KI-Vorschlag ungeprüft übernehmen, wenn er plausibel klingt und Zeit sparen soll.",
+        "Dieselbe Frage mehrfach stellen, bis das Tool eine passende Antwort ausgibt.",
+        "Antwort sofort veröffentlichen oder weiterleiten, ganz ohne jede fachliche Kontrolle."
+      ],
+      "ws": [
+        13,
+        11,
+        11,
+        10
+      ],
+      "cs": [
+        86,
+        81,
+        76,
+        85
+      ],
+      "spanW": 0.3,
+      "spanC": 0.132,
       "gapC": 1
     },
     {
@@ -6806,33 +6644,6 @@
     },
     {
       "sammlung": "QUIZ2",
-      "i": 40,
-      "r": 0,
-      "q": "Was drückt die Liquidität ersten Grades aus?",
-      "a": [
-        "Verhältnis von Zahlungsmitteln zu kurzfristigen Schulden (Liquidität ersten Grades)",
-        "Verhältnis von Gewinn zu Umsatz als Kennzahl der Ertragskraft des Unternehmens",
-        "Lagerumschlag als Maß dafür, wie schnell Vorräte in Umsatz umgesetzt werden",
-        "Anteil des Eigenkapitals am Gesamtkapital der Bilanz zum jeweiligen Bilanzstichtag"
-      ],
-      "ws": [
-        9,
-        11,
-        11,
-        10
-      ],
-      "cs": [
-        83,
-        78,
-        75,
-        82
-      ],
-      "spanW": 0.222,
-      "spanC": 0.107,
-      "gapC": 1
-    },
-    {
-      "sammlung": "QUIZ2",
       "i": 44,
       "r": 1,
       "q": "Wann gerät ein Kunde in Zahlungsverzug, wenn kein Zahlungsziel vereinbart wurde?",
@@ -6995,33 +6806,6 @@
     },
     {
       "sammlung": "QUIZ",
-      "i": 180,
-      "r": 0,
-      "q": "Was ist ein Chatbot mit „Natural Language Processing\" (NLP)?",
-      "a": [
-        "Programm, das natürliche Sprache versteht und verarbeitet — typisch für Chatbots mit NLP",
-        "Reines Taschenrechner-Programm für numerische Berechnungen ohne Textverarbeitung",
-        "Netzwerkprotokoll zur sicheren Übertragung von Sprachdaten zwischen zwei VoIP-Endgeräten",
-        "Speichermedium zur Archivierung von Konversationslogs in Callcenter-Anwendungen"
-      ],
-      "ws": [
-        13,
-        7,
-        9,
-        7
-      ],
-      "cs": [
-        88,
-        80,
-        88,
-        79
-      ],
-      "spanW": 0.857,
-      "spanC": 0.114,
-      "gapC": 0
-    },
-    {
-      "sammlung": "QUIZ",
       "i": 239,
       "r": 0,
       "q": "Was leistet Security by Design im Gegensatz zu Security by Default?",
@@ -7103,33 +6887,6 @@
     },
     {
       "sammlung": "QUIZ",
-      "i": 414,
-      "r": 0,
-      "q": "Was ist mit „Lessons Learned“ gemeint?",
-      "a": [
-        "Nach Projektende Erfahrungen systematisch festhalten, um künftige Vorhaben zu verbessern",
-        "Nachkalkulation der tatsächlich angefallenen Kosten ohne inhaltliche Projektauswertung",
-        "Kündigung von Projektbeteiligten, wenn Meilensteine nicht termingerecht erreicht wurden",
-        "Formaler Projektabschluss ohne Auswertung von Erfolgen, Misserfolgen oder Verbesserungen"
-      ],
-      "ws": [
-        10,
-        8,
-        9,
-        9
-      ],
-      "cs": [
-        88,
-        86,
-        87,
-        88
-      ],
-      "spanW": 0.25,
-      "spanC": 0.023,
-      "gapC": 0
-    },
-    {
-      "sammlung": "QUIZ",
       "i": 470,
       "r": 0,
       "q": "Was ist ein Trainingsdatensatz beim maschinellen Lernen?",
@@ -7207,6 +6964,33 @@
       ],
       "spanW": 0.25,
       "spanC": 0.138,
+      "gapC": 0
+    },
+    {
+      "sammlung": "QUIZ",
+      "i": 562,
+      "r": 0,
+      "q": "Warum sollte ein Angebot eine Bindefrist enthalten?",
+      "a": [
+        "Bindefrist: bis wann der Anbieter an seine Konditionen im Angebot gebunden bleibt.",
+        "Bindefrist dient vor allem dazu, das Angebot teurer wirken zu lassen.",
+        "Bindefrist ist gesetzlich verboten – Angebote müssen unbegrenzt gültig sein.",
+        "Bindefrist entbindet den Kunden von jeder Rückmeldung; Antworten sind nicht nötig."
+      ],
+      "ws": [
+        12,
+        11,
+        10,
+        11
+      ],
+      "cs": [
+        82,
+        69,
+        76,
+        82
+      ],
+      "spanW": 0.2,
+      "spanC": 0.188,
       "gapC": 0
     },
     {
@@ -7345,6 +7129,33 @@
       "gapC": -1
     },
     {
+      "sammlung": "QUIZ",
+      "i": 383,
+      "r": 0,
+      "q": "Was ist eine Zwei-Faktor-Authentifizierung (2FA)?",
+      "a": [
+        "Zugang erfordert zwei verschiedene Faktoren, z. B. Wissen (PIN) und Besitz (Token).",
+        "Passwort zweimal hintereinander eingeben – gilt als zwei Faktoren derselben Art.",
+        "Zwei verschiedene Passwörter nacheinander – erfüllt die 2FA-Anforderung vollständig.",
+        "Zwei Personen müssen gleichzeitig zustimmen – physische Vier-Augen-Kontrolle."
+      ],
+      "ws": [
+        12,
+        11,
+        9,
+        8
+      ],
+      "cs": [
+        83,
+        80,
+        84,
+        77
+      ],
+      "spanW": 0.5,
+      "spanC": 0.091,
+      "gapC": -1
+    },
+    {
       "sammlung": "QUIZ2",
       "i": 28,
       "r": 0,
@@ -7454,6 +7265,33 @@
     },
     {
       "sammlung": "QUIZ",
+      "i": 180,
+      "r": 0,
+      "q": "Was ist ein Chatbot mit „Natural Language Processing\" (NLP)?",
+      "a": [
+        "Programm, das natürliche Sprache versteht und für Dialoge oder Texte verarbeitet.",
+        "Reines Taschenrechner-Programm für numerische Berechnungen ohne Sprachverarbeitung.",
+        "Netzwerkprotokoll der Schicht 4 für zuverlässige Übertragung zwischen Hosts.",
+        "Speichermedium mit hoher Kapazität für Archivierung großer Dateimengen."
+      ],
+      "ws": [
+        11,
+        7,
+        9,
+        8
+      ],
+      "cs": [
+        81,
+        83,
+        76,
+        71
+      ],
+      "spanW": 0.571,
+      "spanC": 0.169,
+      "gapC": -2
+    },
+    {
+      "sammlung": "QUIZ",
       "i": 263,
       "r": 0,
       "q": "Wofür stehen die vier Buchstaben des PDCA-Zyklus?",
@@ -7558,33 +7396,6 @@
       ],
       "spanW": 0.273,
       "spanC": 0.059,
-      "gapC": -2
-    },
-    {
-      "sammlung": "QUIZ",
-      "i": 566,
-      "r": 0,
-      "q": "Ein KI-Assistent schlägt eine falsche Antwort vor. Wie gehen Sie korrekt vor?",
-      "a": [
-        "Antwort fachlich prüfen und bei Zweifeln an Quellen verifizieren — nicht blind übernehmen",
-        "Vorschlag ungeprüft übernehmen, um schneller zu antworten und den Kunden zufriedenzustellen",
-        "Werkzeug wiederholt befragen, bis eine passende Antwort erscheint, ohne externe Kontrolle",
-        "Antwort ungeprüft veröffentlichen, wenn sie sprachlich überzeugend formuliert ist"
-      ],
-      "ws": [
-        13,
-        11,
-        11,
-        9
-      ],
-      "cs": [
-        89,
-        91,
-        89,
-        81
-      ],
-      "spanW": 0.444,
-      "spanC": 0.123,
       "gapC": -2
     },
     {
@@ -7940,33 +7751,6 @@
     },
     {
       "sammlung": "QUIZ",
-      "i": 629,
-      "r": 0,
-      "q": "Warum sollte man nicht mit dauerhaften Administratorenrechten arbeiten?",
-      "a": [
-        "Höhere Rechte vergrößern Schaden bei Fehlern oder Angriffen — deshalb im Alltag einschränken",
-        "Dauerhafte Admin-Rechte verlangsamen absichtlich die Anwendungen, um Fehlbedienung zu verhindern",
-        "Admin-Arbeit ist verboten und darf in Unternehmen aus Compliance-Gründen nicht vorkommen",
-        "Admin-Konten verbrauchen deutlich mehr RAM, deshalb sollten normale Nutzer sie meiden"
-      ],
-      "ws": [
-        13,
-        10,
-        11,
-        11
-      ],
-      "cs": [
-        92,
-        96,
-        88,
-        85
-      ],
-      "spanW": 0.3,
-      "spanC": 0.129,
-      "gapC": -4
-    },
-    {
-      "sammlung": "QUIZ",
       "i": 104,
       "r": 0,
       "q": "Was bedeutet die Härtung eines Betriebssystems?",
@@ -8129,33 +7913,6 @@
     },
     {
       "sammlung": "QUIZ",
-      "i": 469,
-      "r": 0,
-      "q": "Was ist das Besondere an Deep Learning?",
-      "a": [
-        "Nutzt tiefe neuronale Netze mit vielen Schichten zur Erkennung komplexer Muster in Daten",
-        "Arbeitet ohne jegliche Trainingsdaten und leitet Regeln ausschließlich aus Logik ab",
-        "Ist eine spezielle relationale Datenbank für unstrukturierte Big-Data-Analysen",
-        "Benötigt keinen Prozessor, weil Berechnungen vollständig in Netzwerk-Hardware ausgelagert sind"
-      ],
-      "ws": [
-        13,
-        11,
-        8,
-        10
-      ],
-      "cs": [
-        88,
-        83,
-        78,
-        94
-      ],
-      "spanW": 0.625,
-      "spanC": 0.205,
-      "gapC": -6
-    },
-    {
-      "sammlung": "QUIZ",
       "i": 607,
       "r": 0,
       "q": "Was ist eine Vertragsstörung?",
@@ -8233,33 +7990,6 @@
       ],
       "spanW": 0.286,
       "spanC": 0.115,
-      "gapC": -7
-    },
-    {
-      "sammlung": "QUIZ",
-      "i": 310,
-      "r": 0,
-      "q": "„We are facing a bottleneck in the network.“ – Was bedeutet „bottleneck?",
-      "a": [
-        "Engpass — eine Stelle im System, die den Gesamtdurchsatz der Datenübertragung begrenzt",
-        "Physischer Flaschenhals im Kabelkanal, der die Verlegung neuer Leitungen erschwert",
-        "Sicherheitsvorfall, bei dem ein Angreifer die Bandbreite des WAN-Links absichtlich blockiert",
-        "Neuer Server, der zusätzliche Kapazität bereitstellt, ohne bestehende Engpässe zu analysieren"
-      ],
-      "ws": [
-        12,
-        10,
-        11,
-        11
-      ],
-      "cs": [
-        86,
-        82,
-        92,
-        93
-      ],
-      "spanW": 0.2,
-      "spanC": 0.134,
       "gapC": -7
     },
     {
@@ -8372,1733 +8102,33 @@
     },
     {
       "sammlung": "QUIZ",
-      "i": 377,
+      "i": 310,
       "r": 0,
-      "q": "Was versteht man unter „Verfügbarkeit“?",
+      "q": "„We are facing a bottleneck in the network.“ – Was bedeutet „bottleneck?",
       "a": [
-        "Systeme und Daten stehen Berechtigten dann zur Verfügung, wenn sie gebraucht werden",
-        "Daten sind unwiderruflich gesperrt, sodass selbst Admins keinen Zugriff mehr erhalten",
-        "Daten sind ausschließlich nachts verfügbar, weil Wartungsfenster tagsüber genutzt werden",
-        "Daten sind stets vertraulich — Verfügbarkeit und Vertraulichkeit sind identische Schutzziele"
+        "Engpass – eine Stelle im System, die den Gesamtdurchsatz begrenzt.",
+        "Physischer Flaschenhals im Kupferkabel – Ursache jeder langsamen Verbindung.",
+        "Sicherheitsvorfall, bei dem ein Angreifer die Bandbreite absichtlich blockiert.",
+        "Neuer Server, der automatisch alle Engpässe im Netzwerk beseitigt."
       ],
       "ws": [
-        12,
-        11,
         10,
-        11
+        9,
+        9,
+        9
       ],
       "cs": [
-        83,
-        85,
-        88,
-        92
+        66,
+        76,
+        79,
+        66
       ],
-      "spanW": 0.2,
-      "spanC": 0.108,
-      "gapC": -9
+      "spanW": 0.111,
+      "spanC": 0.197,
+      "gapC": -13
     }
   ],
   "faelle": [
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-usv",
-      "si": 0,
-      "kunde": "„Wir hatten doch einen Überspannungsschutz in der Mehrfachsteckdose. Warum hat das nicht gereicht?\"",
-      "optionen": [
-        {
-          "t": "USV schützt bei Netzausfall und Spannungsspitzen und liefert saubere Spannung – ersetzt aber weder Datensicherung noch Brandschutz.",
-          "p": 3
-        },
-        {
-          "t": "USV verhindert sämtliche Serverausfälle und macht regelmäßige Datensicherungen grundsätzlich überflüssig.",
-          "p": 0
-        },
-        {
-          "t": "USV wirkt bei Blitzeinschlag ins Gebäude; Netzausfall und kurze Spannungseinbrüche bleiben unberücksichtigt.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        17,
-        10,
-        12
-      ],
-      "cs": [
-        131,
-        105,
-        108
-      ],
-      "spanW": 0.7,
-      "spanC": 0.248,
-      "gapC": 23
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-usv",
-      "si": 2,
-      "kunde": "„Reichen 10 Minuten, oder brauchen wir eine Stunde?\"",
-      "optionen": [
-        {
-          "t": "Autonomiezeit nach Zweck: kritische Systeme laufen weiter, koordinierter Shutdown inkl. Datensicherung muss möglich sein.",
-          "p": 3
-        },
-        {
-          "t": "Mindestens vier Stunden Autonomie, damit der gesamte Betrieb ohne Einschränkung weiterlaufen kann.",
-          "p": 0
-        },
-        {
-          "t": "Autonomiezeit hängt nicht von der angeschlossenen Last ab – sie ist fest im USV-Gerät hinterlegt.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        14,
-        12,
-        15
-      ],
-      "cs": [
-        121,
-        98,
-        97
-      ],
-      "spanW": 0.25,
-      "spanC": 0.247,
-      "gapC": 23
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-angebot2",
-      "si": 0,
-      "kunde": "„Welche Kriterien sollten wir für den Vergleich heranziehen?\"",
-      "optionen": [
-        {
-          "t": "Quantitative (Preis, Strom, Lieferzeit) und qualitative Kriterien (Service, Ergonomie) plus Gesamtkosten über Nutzungsdauer.",
-          "p": 3
-        },
-        {
-          "t": "Anschaffungspreis je Gerät als alleiniges Entscheidungskriterium für den Vergleich der drei Anbieter.",
-          "p": 0
-        },
-        {
-          "t": "Herstellermarke und Gehäusedesign als Hauptkriterien; technische Daten spielen eine untergeordnete Rolle.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        13,
-        12,
-        11
-      ],
-      "cs": [
-        124,
-        101,
-        105
-      ],
-      "spanW": 0.182,
-      "spanC": 0.228,
-      "gapC": 19
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-beratung",
-      "si": 6,
-      "kunde": "„Was machen Sie mit dieser Erkenntnis?\"",
-      "optionen": [
-        {
-          "t": "Soll-Ist dokumentieren, Ursache analysieren (Kompatibilität), Lessons Learned und Nachkalkulation – Qualität für Folgeaufträge.",
-          "p": 3
-        },
-        {
-          "t": "Kostenabweichung im Abschlussbericht weglassen, um den Projekterfolg gegenüber dem Kunden nicht zu schmälern.",
-          "p": 0
-        },
-        {
-          "t": "Mehrkosten ohne Ursachenanalyse dem Kunden in Rechnung stellen und intern keine Prozessanpassung vornehmen.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        13,
-        13,
-        13
-      ],
-      "cs": [
-        127,
-        109,
-        107
-      ],
-      "spanW": 0,
-      "spanC": 0.187,
-      "gapC": 18
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-arbeitsplatz",
-      "si": 3,
-      "kunde": "„Ist mit dem abgegebenen Angebot schon ein Kaufvertrag zustande gekommen?\"",
-      "optionen": [
-        {
-          "t": "Nein – Vertrag durch zwei übereinstimmende Willenserklärungen: Bestellung (Angebot) und Auftragsbestätigung (Annahme).",
-          "p": 3
-        },
-        {
-          "t": "Ja – ein schriftliches Angebot bindet den Anbieter sofort und begründet bereits einen Kaufvertrag.",
-          "p": 0
-        },
-        {
-          "t": "Ja – mit Rechnungsstellung ist der Kaufvertrag automatisch zustande, eine Bestätigung ist entbehrlich.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        12,
-        14,
-        13
-      ],
-      "cs": [
-        118,
-        98,
-        102
-      ],
-      "spanW": 0.167,
-      "spanC": 0.204,
-      "gapC": 16
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-arbeitsplatz",
-      "si": 6,
-      "kunde": "„Wie erklären Sie sich diesen Zusammenhang?\"",
-      "optionen": [
-        {
-          "t": "Fehlende EMV-Abschirmung (z. B. U/UTP) oder Verlegung neben Stromleitungen; Klima erzeugt Störungen – S/FTP oder Abstand.",
-          "p": 3
-        },
-        {
-          "t": "Die Klimaanlage zieht so viel Leistung, dass die Netzspannung für Switch und Access Point zusammenbricht.",
-          "p": 0
-        },
-        {
-          "t": "Ein Router-Neustart beseitigt derartige elektromagnetische Störungen auf der Datenleitung zuverlässig.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        16,
-        15,
-        10
-      ],
-      "cs": [
-        121,
-        105,
-        102
-      ],
-      "spanW": 0.6,
-      "spanC": 0.186,
-      "gapC": 16
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-beratung",
-      "si": 1,
-      "kunde": "„Wir haben gehört, dass Cloud-Lösungen günstiger sind. Können wir nicht einfach alles in die Cloud geben?\"",
-      "optionen": [
-        {
-          "t": "Cloud prüfen: SaaS für Standard, lokal bei hoher Verfügbarkeit/Schutz – Betriebskosten, DSGVO und Anbindung vergleichen.",
-          "p": 3
-        },
-        {
-          "t": "Cloud senkt die Betriebskosten in jedem Szenario – vollständige Verlagerung der Fertigungs-IT empfehlen.",
-          "p": 0
-        },
-        {
-          "t": "Cloud scheidet für Produktionsunternehmen grundsätzlich aus – sensible Daten dürfen nicht extern liegen.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        15,
-        13,
-        13
-      ],
-      "cs": [
-        120,
-        104,
-        104
-      ],
-      "spanW": 0.154,
-      "spanC": 0.154,
-      "gapC": 16
-    },
-    {
-      "sammlung": "FAELLE2",
-      "id": "ap2-fall-invest",
-      "si": 4,
-      "kunde": "„Für welche Variante entscheiden Sie sich?\"",
-      "optionen": [
-        {
-          "t": "Variante B: höherer Anschaffungspreis, nach einem Jahr amortisiert, über Laufzeit 4.800 € günstiger, effizienter.",
-          "p": 3
-        },
-        {
-          "t": "Variante A wegen niedrigerem Einkaufspreis – laufende Stromkosten bei der Entscheidung ignorieren.",
-          "p": 0
-        },
-        {
-          "t": "Variante A, weil Green-IT-Anforderungen marketingbedingt sind und keine TCO-Auswirkung haben.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        14,
-        12,
-        10
-      ],
-      "cs": [
-        113,
-        98,
-        93
-      ],
-      "spanW": 0.4,
-      "spanC": 0.215,
-      "gapC": 15
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-sicherheit",
-      "si": 2,
-      "kunde": "„Welche typischen Einfallstore gibt es?\"",
-      "optionen": [
-        {
-          "t": "Phishing, ungepatchte Schwachstellen, unsichere Fernzugänge (VPN/RDP) und zu weitreichende Benutzerrechte.",
-          "p": 3
-        },
-        {
-          "t": "Defektes Netzwerkkabel als häufigste Ursache für Ransomware-Einführung in Unternehmensnetze.",
-          "p": 0
-        },
-        {
-          "t": "Fehlerhafte Hardware-Komponenten sind der wesentliche Einfallskanal für Schadsoftware.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        10,
-        9,
-        8
-      ],
-      "cs": [
-        106,
-        92,
-        86
-      ],
-      "spanW": 0.25,
-      "spanC": 0.233,
-      "gapC": 14
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-db",
-      "si": 5,
-      "kunde": "„Wie prüfen Sie, ob das Modell alle Fälle abdeckt?\"",
-      "optionen": [
-        {
-          "t": "Schreibtischtest: Beispieldatensätze durchspielen und prüfen, ob alle Beziehungen und Fälle abgedeckt sind.",
-          "p": 3
-        },
-        {
-          "t": "Modell durch direktes Anlegen und Befüllen der Produktivdatenbank im Livebetrieb validieren.",
-          "p": 1
-        },
-        {
-          "t": "Ein relationales Modell wird nach dem ER-Diagramm nicht mehr geprüft – Implementierung genügt.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        12,
-        11,
-        13
-      ],
-      "cs": [
-        107,
-        92,
-        94
-      ],
-      "spanW": 0.182,
-      "spanC": 0.163,
-      "gapC": 13
-    },
-    {
-      "sammlung": "FAELLE2",
-      "id": "ap2-fall-invest",
-      "si": 0,
-      "kunde": "„Wie vergleiche ich die beiden Angebote richtig?\"",
-      "optionen": [
-        {
-          "t": "Bezugspreis nach Rabatt je Gerät, jährliche Stromkosten aus Leistungsaufnahme, über Nutzungsdauer vergleichen.",
-          "p": 3
-        },
-        {
-          "t": "Listenpreise der Angebote gegenüberstellen, Rabatte und Betriebskosten nicht einbeziehen.",
-          "p": 0
-        },
-        {
-          "t": "Jährlichen Stromverbrauch vergleichen, Anschaffungspreis spielt bei der Entscheidung keine Rolle.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        12,
-        9,
-        10
-      ],
-      "cs": [
-        110,
-        89,
-        97
-      ],
-      "spanW": 0.333,
-      "spanC": 0.236,
-      "gapC": 13
-    },
-    {
-      "sammlung": "FAELLE2",
-      "id": "ap2-fall-arbeitsrecht",
-      "si": 4,
-      "kunde": "„An wen kann er sich wenden?\"",
-      "optionen": [
-        {
-          "t": "Jugend- und Auszubildendenvertretung (JAV) bzw. Betriebsrat – Informations-, Mitwirkungs- und Mitbestimmungsrechte.",
-          "p": 3
-        },
-        {
-          "t": "Ausschließlich die Geschäftsführung – Beschwerden über Pausenregelungen sind dort zuerst anzusprechen.",
-          "p": 0
-        },
-        {
-          "t": "Niemand – der Auszubildende muss Pausenregelungen allein direkt mit dem Vorgesetzten aushandeln.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        11,
-        11,
-        12
-      ],
-      "cs": [
-        115,
-        102,
-        96
-      ],
-      "spanW": 0.091,
-      "spanC": 0.198,
-      "gapC": 13
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-beratung",
-      "si": 3,
-      "kunde": "„Erklären Sie mir das nochmal – was genau heißt das für unseren Betrieb?\"",
-      "optionen": [
-        {
-          "t": "Verständliche Nutzenargumentation, Fachbegriff kurz einordnen, betrieblichen Effekt benennen – danach Details.",
-          "p": 3
-        },
-        {
-          "t": "Den Fachbegriff mehrfach wiederholen, damit sich die Geschäftsführung an die Terminologie gewöhnt.",
-          "p": 0
-        },
-        {
-          "t": "Auf die spätere technische Dokumentation verweisen und die mündliche Erklärung stark verkürzen.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        11,
-        12,
-        12
-      ],
-      "cs": [
-        110,
-        98,
-        95
-      ],
-      "spanW": 0.091,
-      "spanC": 0.158,
-      "gapC": 12
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-sicherheit",
-      "si": 3,
-      "kunde": "„Wie verbessern wir unsere Sicherheit nachhaltig?\"",
-      "optionen": [
-        {
-          "t": "ISMS (z. B. BSI-Grundschutz), Security by Design/Default, Patch-/Backup-Prozesse, Notfallplan, Schulungen.",
-          "p": 3
-        },
-        {
-          "t": "Neue Firewall beschaffen, ansonsten bestehende Sicherheitsprozesse unverändert weiterführen.",
-          "p": 0
-        },
-        {
-          "t": "IT-Nutzung stark reduzieren, um Angriffsflächen ohne organisatorische Maßnahmen zu minimieren.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        10,
-        8,
-        10
-      ],
-      "cs": [
-        106,
-        92,
-        94
-      ],
-      "spanW": 0.25,
-      "spanC": 0.152,
-      "gapC": 12
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-beratung",
-      "si": 4,
-      "kunde": "„Wie gehen Sie vor, und was sagen Sie der Geschäftsführung?\"",
-      "optionen": [
-        {
-          "t": "GF informieren: Auswirkung, Optionen mit Kosten/Terminen (Kompatibilität, VM, Upgrade, Ausnahme) – gemeinsam entscheiden.",
-          "p": 3
-        },
-        {
-          "t": "Kompatibilitätsproblem vorerst nicht ansprechen und die Migration der restlichen Welle unverändert fortsetzen.",
-          "p": 0
-        },
-        {
-          "t": "Gesamte Migration sofort stoppen und auf unbestimmte Zeit aussetzen, bis alle Altanwendungen ersetzt sind.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        13,
-        12,
-        14
-      ],
-      "cs": [
-        121,
-        110,
-        106
-      ],
-      "spanW": 0.167,
-      "spanC": 0.142,
-      "gapC": 11
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-netz",
-      "si": 2,
-      "kunde": "„Wie vergeben wir die IP-Adressen?\"",
-      "optionen": [
-        {
-          "t": "DHCP aus privatem Adressbereich (z. B. 192.168.x.x); Server und Drucker erhalten feste Reservierungen.",
-          "p": 3
-        },
-        {
-          "t": "Jedes Endgerät erhält eine öffentliche IPv4-Adresse direkt vom Internetprovider zugewiesen.",
-          "p": 0
-        },
-        {
-          "t": "In IPv4-Netzen kommunizieren Endgeräte auch ohne IP-Konfiguration zuverlässig miteinander.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        13,
-        10,
-        9
-      ],
-      "cs": [
-        102,
-        91,
-        90
-      ],
-      "spanW": 0.444,
-      "spanC": 0.133,
-      "gapC": 11
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-angebot2",
-      "si": 1,
-      "kunde": "„Wie machen wir das rechnerisch vergleichbar?\"",
-      "optionen": [
-        {
-          "t": "Nutzwertanalyse: Kriterien gewichten, Alternativen bewerten, gewichtete Summe bilden – höchster Nutzwert gewinnt.",
-          "p": 3
-        },
-        {
-          "t": "Den Anbieter mit dem niedrigsten Angebotspreis wählen, ohne formale Gewichtung der Kriterien.",
-          "p": 0
-        },
-        {
-          "t": "Zufallsauswahl unter den drei Angeboten, um subjektive Verzerrungen bei der Entscheidung zu vermeiden.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        12,
-        12,
-        13
-      ],
-      "cs": [
-        113,
-        93,
-        102
-      ],
-      "spanW": 0.083,
-      "spanC": 0.215,
-      "gapC": 11
-    },
-    {
-      "sammlung": "FAELLE2",
-      "id": "ap2-fall-arbeitsrecht",
-      "si": 2,
-      "kunde": "„Kann er einfach gehen?\"",
-      "optionen": [
-        {
-          "t": "In der Probezeit kann das Ausbildungsverhältnis jederzeit ohne Einhaltung einer Kündigungsfrist beendet werden.",
-          "p": 3
-        },
-        {
-          "t": "Kündigung in der Probezeit erst nach sechs Monaten Ausbildungsdauer mit zwei Wochen Frist möglich.",
-          "p": 0
-        },
-        {
-          "t": "Beendigung der Ausbildung in der Probezeit setzt die Zustimmung der zuständigen Berufsschule voraus.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        13,
-        14,
-        13
-      ],
-      "cs": [
-        111,
-        98,
-        100
-      ],
-      "spanW": 0.077,
-      "spanC": 0.133,
-      "gapC": 11
-    },
-    {
-      "sammlung": "FAELLE2",
-      "id": "ap2-fall-kundenauftrag",
-      "si": 1,
-      "kunde": "„Was kostet uns die Betreuung im ersten Jahr?\"",
-      "optionen": [
-        {
-          "t": "Server-Wartung pauschal, Vor-Ort-Support über Stundensatz – beide Positionen getrennt im Angebot ausweisen.",
-          "p": 3
-        },
-        {
-          "t": "Pauschalpreis für das erste Jahr nennen, ohne Aufschlüsselung nach Wartung und Vor-Ort-Einsätzen.",
-          "p": 0
-        },
-        {
-          "t": "Wartung im ersten Jahr kostenlos anbieten, um den Auftrag gegenüber Mitbewerbern zu sichern.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        12,
-        12,
-        13
-      ],
-      "cs": [
-        107,
-        97,
-        92
-      ],
-      "spanW": 0.083,
-      "spanC": 0.163,
-      "gapC": 10
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-usv",
-      "si": 1,
-      "kunde": "„Welche Leistung muss die USV mindestens liefern – in Watt und in VA?\"",
-      "optionen": [
-        {
-          "t": "Wirkleistung ca. 1.020 W, mit 20 % Reserve ca. 1.224 W; Scheinleistung ca. 1.897 VA – aus der Last berechnet.",
-          "p": 3
-        },
-        {
-          "t": "Wirkleistung und Scheinleistung sind gleich groß, jeweils ca. 1.020 W bzw. 1.020 VA bei dieser Last.",
-          "p": 0
-        },
-        {
-          "t": "Wirkleistung ca. 1.897 W, Scheinleistung ca. 1.224 VA – die beiden Kennwerte sind hier vertauscht.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        20,
-        16,
-        15
-      ],
-      "cs": [
-        109,
-        100,
-        98
-      ],
-      "spanW": 0.333,
-      "spanC": 0.112,
-      "gapC": 9
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-beratung",
-      "si": 0,
-      "kunde": "„Was kostet denn so ein Arbeitsplatz bei Ihnen?\"",
-      "optionen": [
-        {
-          "t": "Zuerst Bedarf klären (Aufgaben, Plätze, Software, Verfügbarkeit, Budget) – ohne Analyse ist kein seriöser Preis möglich.",
-          "p": 3
-        },
-        {
-          "t": "Sofort den niedrigsten Listenpreis nennen, um im Gespräch Aufmerksamkeit zu erzeugen und Vertrauen zu gewinnen.",
-          "p": 0
-        },
-        {
-          "t": "Preisangabe erst nach externer Lastenheft-Prüfung durch den Kunden; das Erstgespräch ohne Unterlagen vertagen.",
-          "p": 1
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        16,
-        15,
-        13
-      ],
-      "cs": [
-        120,
-        111,
-        110
-      ],
-      "spanW": 0.231,
-      "spanC": 0.091,
-      "gapC": 9
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-ki-support",
-      "si": 0,
-      "kunde": "„Was ist der Unterschied zwischen KI, maschinellem Lernen und Deep Learning – und was davon brauchen wir?\"",
-      "optionen": [
-        {
-          "t": "KI ist Oberbegriff, ML Teilgebiet der KI, DL Subfeld des ML mit tiefen Netzen – für Textklassifikation ML/DL.",
-          "p": 3
-        },
-        {
-          "t": "KI, maschinelles Lernen und Deep Learning bezeichnen dasselbe Verfahren und sind synonym verwendbar.",
-          "p": 0
-        },
-        {
-          "t": "Deep Learning ist der Oberbegriff; klassische KI und maschinelles Lernen sind Unterformen davon.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        18,
-        13,
-        13
-      ],
-      "cs": [
-        109,
-        100,
-        96
-      ],
-      "spanW": 0.385,
-      "spanC": 0.135,
-      "gapC": 9
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-ki-ethik",
-      "si": 3,
-      "kunde": "„Welche Vorschriften sind einzuhalten?\"",
-      "optionen": [
-        {
-          "t": "DSGVO für personenbezogene Daten und EU AI Act (Risikoklassen) – Bewerberauswahl als Hochrisiko-Anwendung.",
-          "p": 3
-        },
-        {
-          "t": "Es genügen interne IT-Richtlinien und die Hausordnung des Unternehmens für die Datenverarbeitung.",
-          "p": 0
-        },
-        {
-          "t": "Für KI im HR-Bereich gibt es derzeit keine einschlägigen gesetzlichen Vorgaben in der EU.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        13,
-        12,
-        14
-      ],
-      "cs": [
-        106,
-        97,
-        89
-      ],
-      "spanW": 0.167,
-      "spanC": 0.191,
-      "gapC": 9
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-ki-projekt",
-      "si": 1,
-      "kunde": "„Reicht das – und was ist das Problem?\"",
-      "optionen": [
-        {
-          "t": "Starke Klassenungleichheit – Accuracy täuscht; Precision, Recall, F1 prüfen und Datenlage ggf. ergänzen.",
-          "p": 3
-        },
-        {
-          "t": "50.000 Fälle reichen unabhängig von der Klassenverteilung für ein belastbares Modell.",
-          "p": 0
-        },
-        {
-          "t": "Bei ungleichen Klassen genügt Accuracy als alleinige Qualitätskennzahl für die Modellbewertung.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        13,
-        11,
-        11
-      ],
-      "cs": [
-        104,
-        85,
-        95
-      ],
-      "spanW": 0.182,
-      "spanC": 0.224,
-      "gapC": 9
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-angebot",
-      "si": 1,
-      "kunde": "„Was bringt das Skonto konkret?\"",
-      "optionen": [
-        {
-          "t": "Bei 41.000 € netto sind 3 % Skonto 1.230 € – das ist ein verbindlicher Preisnachlass bei fristgerechter Zahlung.",
-          "p": 3
-        },
-        {
-          "t": "Skonto verlängert die Zahlungsfrist, bringt dem Käufer aber keinen finanziellen Vorteil gegenüber Netto.",
-          "p": 0
-        },
-        {
-          "t": "Skonto ist ein Handelsrabatt, der bereits im ausgewiesenen Listenpreis des Angebots enthalten ist.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        19,
-        13,
-        13
-      ],
-      "cs": [
-        112,
-        104,
-        98
-      ],
-      "spanW": 0.462,
-      "spanC": 0.143,
-      "gapC": 8
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-beratung",
-      "si": 5,
-      "kunde": "„Können wir die Abnahme trotzdem durchführen?\"",
-      "optionen": [
-        {
-          "t": "Abnahme unter Vorbehalt mit Protokoll: Mängel (Monitore, zwei PCs), Fristen, Unterschriften – Rechte bleiben gewahrt.",
-          "p": 3
-        },
-        {
-          "t": "Abnahme ohne Mängelliste durchführen und offene Punkte informell per E-Mail mit dem Dienstleister klären.",
-          "p": 0
-        },
-        {
-          "t": "Abnahme vollständig verweigern, bis sämtliche Hardware geliefert ist und jeder Arbeitsplatz fehlerfrei läuft.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        15,
-        14,
-        13
-      ],
-      "cs": [
-        117,
-        105,
-        109
-      ],
-      "spanW": 0.154,
-      "spanC": 0.114,
-      "gapC": 8
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-ki-generativ",
-      "si": 2,
-      "kunde": "„Dürfen wir die echten Kundenanfragen einfach in das Modell geben?\"",
-      "optionen": [
-        {
-          "t": "Verarbeitung nur mit Rechtsgrundlage nach DSGVO: Minimierung, Zweckbindung, ggf. Anonymisierung vor externem Dienst.",
-          "p": 3
-        },
-        {
-          "t": "Technische Übermittlung an einen Cloud-Dienst erlaubt die Verarbeitung personenbezogener Kundendaten.",
-          "p": 0
-        },
-        {
-          "t": "Bei rein textbasierten Anfragen entfallen datenschutzrechtliche Anforderungen an Speicherung und Weitergabe.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        13,
-        10,
-        11
-      ],
-      "cs": [
-        116,
-        101,
-        108
-      ],
-      "spanW": 0.3,
-      "spanC": 0.149,
-      "gapC": 8
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-netz",
-      "si": 3,
-      "kunde": "„Welche Sicherheitsmaßnahmen schlagen Sie vor?\"",
-      "optionen": [
-        {
-          "t": "Firewall, VLAN-Trennung, WPA2/WPA3, Patch-Management, minimale Rechte, Backups nach 3-2-1-Regel.",
-          "p": 3
-        },
-        {
-          "t": "Ein komplexes WLAN-Passwort schützt Mandantendaten ausreichend gegen unbefugten Zugriff.",
-          "p": 0
-        },
-        {
-          "t": "Virenschutz auf einem zentralen Admin-PC sichert das gesamte Kanzlei-Netzwerk ab.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        9,
-        9,
-        10
-      ],
-      "cs": [
-        96,
-        88,
-        81
-      ],
-      "spanW": 0.111,
-      "spanC": 0.185,
-      "gapC": 8
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-sicherheit",
-      "si": 0,
-      "kunde": "„Was ist jetzt zuerst zu tun?\"",
-      "optionen": [
-        {
-          "t": "Systeme isolieren, Ausbreitung stoppen, dokumentieren, Verantwortliche/Behörden informieren – kein Lösegeld zahlen.",
-          "p": 3
-        },
-        {
-          "t": "Lösegeld zahlen, um schnell wieder produktiv zu sein – danach den regulären Betrieb unverändert fortsetzen.",
-          "p": 0
-        },
-        {
-          "t": "Zunächst abwarten, ob sich die Verschlüsselung von selbst aufhebt, bevor technische Maßnahmen starten.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        11,
-        15,
-        13
-      ],
-      "cs": [
-        115,
-        107,
-        102
-      ],
-      "spanW": 0.364,
-      "spanC": 0.127,
-      "gapC": 8
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-angebot",
-      "si": 0,
-      "kunde": "„Welcher Anbieter ist der günstigste?\"",
-      "optionen": [
-        {
-          "t": "Listeneinkauf B günstig – mit Skonto, Lieferzeit und Service ist die Gesamtentscheidung dennoch abzuwägen.",
-          "p": 3
-        },
-        {
-          "t": "Anbieter B, weil der niedrigste Listenpreis allein die wirtschaftlich beste Wahl darstellt.",
-          "p": 0
-        },
-        {
-          "t": "Anbieter C, weil der beste Service laut Angebotstext die Preisunterschiede vollständig kompensiert.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        14,
-        12,
-        12
-      ],
-      "cs": [
-        106,
-        91,
-        99
-      ],
-      "spanW": 0.167,
-      "spanC": 0.165,
-      "gapC": 7
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-ki-ethik",
-      "si": 2,
-      "kunde": "„Stimmt diese Aussage so?\"",
-      "optionen": [
-        {
-          "t": "Nein – Modelle übernehmen Datenverzerrungen; Fairness erfordert Datenauswahl, Prüfung und laufende Kontrolle.",
-          "p": 3
-        },
-        {
-          "t": "Ja – mit mehr Trainingsdaten korrigiert sich das Modell selbst und wird im Betrieb automatisch fairer.",
-          "p": 0
-        },
-        {
-          "t": "Ja – ausreichend lange Laufzeit im Produktivbetrieb beseitigt systematische Verzerrungen von selbst.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        12,
-        16,
-        12
-      ],
-      "cs": [
-        109,
-        102,
-        100
-      ],
-      "spanW": 0.333,
-      "spanC": 0.09,
-      "gapC": 7
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-ki-generativ",
-      "si": 0,
-      "kunde": "„Die KI schreibt doch perfekt – warum sollte ein Mensch die Antworten noch prüfen?\"",
-      "optionen": [
-        {
-          "t": "Generative Modelle können halluzinieren – plausibel klingende, falsche Inhalte; menschliche Freigabe ist erforderlich.",
-          "p": 3
-        },
-        {
-          "t": "Generative KI liefert bei Kundenkommunikation durchgängig verlässliche Fakten – Freigabe ist entbehrlich.",
-          "p": 0
-        },
-        {
-          "t": "Einmalige Zustimmung der Rechtsabteilung genügt; danach können Antworten ohne weitere Prüfung versendet werden.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        13,
-        12,
-        13
-      ],
-      "cs": [
-        118,
-        105,
-        111
-      ],
-      "spanW": 0.083,
-      "spanC": 0.124,
-      "gapC": 7
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-sicherheit",
-      "si": 1,
-      "kunde": "„Können wir daraus wiederherstellen?\"",
-      "optionen": [
-        {
-          "t": "Prüfen, ob Backup verschlüsselt wurde; offline/unveränderbare Kopie nach 3-2-1 für Wiederherstellung nutzen.",
-          "p": 3
-        },
-        {
-          "t": "Backup am Netz hängend ist vor Ransomware geschützt, weil es formal als Sicherungskopie gilt.",
-          "p": 0
-        },
-        {
-          "t": "Regelmäßige Datensicherung ist optional, solange eine aktuelle Vollbackup-Datei auf dem Server liegt.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        12,
-        14,
-        12
-      ],
-      "cs": [
-        108,
-        93,
-        101
-      ],
-      "spanW": 0.167,
-      "spanC": 0.161,
-      "gapC": 7
-    },
-    {
-      "sammlung": "FAELLE2",
-      "id": "ap2-fall-verfuegbarkeit",
-      "si": 4,
-      "kunde": "„Wie hätten wir das vorher merken können?\"",
-      "optionen": [
-        {
-          "t": "Monitoring für Auslastung, Speicher, Dienste, Erreichbarkeit – Alarm bei Schwellwertüberschreitung.",
-          "p": 3
-        },
-        {
-          "t": "Ausfälle erst bearbeiten, wenn Anwender erneut Störungen melden – reaktives Vorgehen genügt.",
-          "p": 0
-        },
-        {
-          "t": "Frühzeitige Erkennung von Ausfällen ist technisch nicht möglich und deshalb nicht zu planen.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        10,
-        12,
-        13
-      ],
-      "cs": [
-        99,
-        92,
-        92
-      ],
-      "spanW": 0.3,
-      "spanC": 0.076,
-      "gapC": 7
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-db",
-      "si": 1,
-      "kunde": "„Wie bringen Sie die Tabelle in die 1. Normalform?\"",
-      "optionen": [
-        {
-          "t": "Artikelliste auflösen: pro Artikel eine Zeile, sodass jede Zelle genau einen atomaren Wert enthält (1. NF).",
-          "p": 3
-        },
-        {
-          "t": "Die Artikelspalte verbreitern und die mehrfachen Werte als Freitext in derselben Zelle belassen.",
-          "p": 0
-        },
-        {
-          "t": "Artikel in einer Hilfstabelle als unstrukturierten Freitext ablegen, Haupttabelle unverändert lassen.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        16,
-        13,
-        11
-      ],
-      "cs": [
-        107,
-        96,
-        101
-      ],
-      "spanW": 0.455,
-      "spanC": 0.115,
-      "gapC": 6
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-ki-generativ",
-      "si": 1,
-      "kunde": "„Wie bekommen wir kürzere, passgenauere Antworten?\"",
-      "optionen": [
-        {
-          "t": "Prompt mit Rolle, Zielgruppe, Ton, Länge und Format definieren – ggf. ein kurzes Beispiel ergänzen.",
-          "p": 3
-        },
-        {
-          "t": "Mehrfach zufällig generieren und die kürzeste Antwort übernehmen, ohne den Prompt anzupassen.",
-          "p": 0
-        },
-        {
-          "t": "Kundenanfragen mit sehr kurzen Standardantworten beantworten, unabhängig vom Anliegen.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        15,
-        12,
-        9
-      ],
-      "cs": [
-        99,
-        93,
-        86
-      ],
-      "spanW": 0.667,
-      "spanC": 0.151,
-      "gapC": 6
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-ki-projekt",
-      "si": 3,
-      "kunde": "„Wer entscheidet künftig über die Sendungen?\"",
-      "optionen": [
-        {
-          "t": "Modell liefert Einschätzung, Mensch entscheidet – Vorhersage unterstützt, ersetzt keine Verantwortung.",
-          "p": 3
-        },
-        {
-          "t": "Modell trifft nach Training die endgültige Dispositionsentscheidung ohne menschliche Mitprüfung.",
-          "p": 0
-        },
-        {
-          "t": "Nach Fertigstellung des Modells entfällt der operative Einsatz – die Entwicklung war der Nutzen.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        11,
-        10,
-        14
-      ],
-      "cs": [
-        102,
-        96,
-        96
-      ],
-      "spanW": 0.4,
-      "spanC": 0.063,
-      "gapC": 6
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-ki-support",
-      "si": 3,
-      "kunde": "„Welche Zahl gilt – und was ist hier passiert?\"",
-      "optionen": [
-        {
-          "t": "Overfitting: Modell passt Trainingsdaten zu genau – Testgenauigkeit 82 % ist maßgeblich, Regularisierung nötig.",
-          "p": 3
-        },
-        {
-          "t": "Trainingsgenauigkeit 99 % ist maßgeblich; niedrigere Testwerte entstehen durch unrepräsentative Testdaten.",
-          "p": 0
-        },
-        {
-          "t": "Mittelwert aus Trainings- und Testgenauigkeit als faire Gesamtbewertung des Modells heranziehen.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        14,
-        11,
-        11
-      ],
-      "cs": [
-        111,
-        106,
-        96
-      ],
-      "spanW": 0.273,
-      "spanC": 0.156,
-      "gapC": 5
-    },
-    {
-      "sammlung": "FAELLE2",
-      "id": "ap2-fall-kundenauftrag",
-      "si": 4,
-      "kunde": "„Wie zeigen Sie, dass das Projekt das Ziel erreicht hat?\"",
-      "optionen": [
-        {
-          "t": "Messbare SMART-Kriterien im Projektauftrag und Soll-Ist-Vergleich bei der Abnahme dokumentieren.",
-          "p": 3
-        },
-        {
-          "t": "Anzahl installierter Geräte und verlegter Kabel als alleiniger Nachweis der Zielerreichung.",
-          "p": 1
-        },
-        {
-          "t": "Subjektive Zufriedenheit der Beteiligten ohne dokumentierte Kriterien als Abnahmekriterium.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        10,
-        11,
-        9
-      ],
-      "cs": [
-        96,
-        91,
-        91
-      ],
-      "spanW": 0.222,
-      "spanC": 0.055,
-      "gapC": 5
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-db",
-      "si": 4,
-      "kunde": "„Wie setzen Sie die Beziehung zwischen Kunde und Auftrag um?\"",
-      "optionen": [
-        {
-          "t": "1:n – Primärschlüssel des Kunden wird als Fremdschlüssel in der Auftragstabelle geführt (n-Seite).",
-          "p": 3
-        },
-        {
-          "t": "m:n – Zwischentabelle mit zwei Fremdschlüsseln, weil ein Kunde genau einen Auftrag haben darf.",
-          "p": 0
-        },
-        {
-          "t": "1:1 – Kunde und Auftrag teilen sich denselben Primärschlüssel in beiden Tabellen.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        13,
-        14,
-        12
-      ],
-      "cs": [
-        98,
-        94,
-        81
-      ],
-      "spanW": 0.167,
-      "spanC": 0.21,
-      "gapC": 4
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-beratung",
-      "si": 2,
-      "kunde": "„Reicht das so aus?\"",
-      "optionen": [
-        {
-          "t": "Nein – Leistung, Preis, Liefer-/Zahlungsbedingungen, Termin, Gewährleistung und Bindefrist gehören ins Angebot.",
-          "p": 3
-        },
-        {
-          "t": "Ja – für die Kaufentscheidung zählt der ausgewiesene Nettopreis; übrige Angaben sind formal optional.",
-          "p": 0
-        },
-        {
-          "t": "Es fehlt die Umsatzsteuerzeile; Leistungsbeschreibung und Bindefrist können bei Bedarf nachgereicht werden.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        12,
-        14,
-        12
-      ],
-      "cs": [
-        111,
-        101,
-        107
-      ],
-      "spanW": 0.167,
-      "spanC": 0.099,
-      "gapC": 4
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-db",
-      "si": 2,
-      "kunde": "„Warum darf der Kundenname nicht in dieser Tabelle bleiben?\"",
-      "optionen": [
-        {
-          "t": "Der Kundenname hängt von der Auftragsnummer ab, nicht vom gesamten Schlüssel – partielle Funktionsabhängigkeit.",
-          "p": 3
-        },
-        {
-          "t": "Kundennamen sind zu lang für VARCHAR-Felder und gehören deshalb in eine separate Textdatei außerhalb der DB.",
-          "p": 0
-        },
-        {
-          "t": "Ohne eigenen Primärschlüssel darf ein Attribut in keiner Tabelle stehen – der Name muss entfernt werden.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        14,
-        16,
-        16
-      ],
-      "cs": [
-        111,
-        108,
-        104
-      ],
-      "spanW": 0.143,
-      "spanC": 0.067,
-      "gapC": 3
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-angebot2",
-      "si": 3,
-      "kunde": "„Was kommt ins Lastenheft, was ins Pflichtenheft?\"",
-      "optionen": [
-        {
-          "t": "Lastenheft (Auftraggeber): WAS/WOFÜR. Pflichtenheft (Auftragnehmer): WIE/WOMIT zur Zielerreichung.",
-          "p": 3
-        },
-        {
-          "t": "Lasten- und Pflichtenheft sind dasselbe Dokument mit unterschiedlichen Deckblattnamen.",
-          "p": 0
-        },
-        {
-          "t": "Im Lastenheft genügt die Preiszeile; technische Anforderungen gehören ins Pflichtenheft allein.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        8,
-        9,
-        11
-      ],
-      "cs": [
-        98,
-        86,
-        95
-      ],
-      "spanW": 0.375,
-      "spanC": 0.14,
-      "gapC": 3
-    },
-    {
-      "sammlung": "FAELLE2",
-      "id": "ap2-fall-kundenauftrag",
-      "si": 3,
-      "kunde": "„Das sprengt unser Budget und den Termin. Was schlagen Sie vor?\"",
-      "optionen": [
-        {
-          "t": "Ursachen offenlegen, Stufenlösung vorschlagen (z. B. zwei Filialen zuerst), Aufwandsfolgen statt pauschaler Absage.",
-          "p": 3
-        },
-        {
-          "t": "Angebotspreis auf Kundenbudget kürzen und fehlende Leistung unkommentiert intern durch Einsparungen ausgleichen.",
-          "p": 0
-        },
-        {
-          "t": "Auftrag ohne weitere Abstimmung mit dem Kunden ablehnen und das eingereichte Angebot vollständig zurückziehen.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        13,
-        12,
-        14
-      ],
-      "cs": [
-        115,
-        112,
-        110
-      ],
-      "spanW": 0.167,
-      "spanC": 0.045,
-      "gapC": 3
-    },
-    {
-      "sammlung": "FAELLE2",
-      "id": "ap2-fall-invest",
-      "si": 3,
-      "kunde": "„Was kostet uns jede Variante über die fünf Jahre?\"",
-      "optionen": [
-        {
-          "t": "A: 40×600 € + 40×5×72 € = 38.400 €; B: 40×630 € + 40×5×42 € = 33.600 € über fünf Jahre.",
-          "p": 3
-        },
-        {
-          "t": "A: 40×600 € = 24.000 €; B: 40×700 € = 28.000 € – Betriebsstrom nicht berücksichtigt.",
-          "p": 0
-        },
-        {
-          "t": "Beide Varianten verursachen über fünf Jahre dieselben Gesamtkosten bei 40 Geräten.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        21,
-        16,
-        11
-      ],
-      "cs": [
-        87,
-        84,
-        82
-      ],
-      "spanW": 0.909,
-      "spanC": 0.061,
-      "gapC": 3
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-arbeitsplatz",
-      "si": 2,
-      "kunde": "„Wie hoch ist der Gesamtbetrag brutto – und was bringt das Skonto?\"",
-      "optionen": [
-        {
-          "t": "15 × (850 + 40 + 110) = 15.000 € netto, 17.850 € brutto; Skonto 2 % = 300 € bei Zahlung in 14 Tagen.",
-          "p": 3
-        },
-        {
-          "t": "15 × 850 = 12.750 € netto, 15.172,50 € brutto; Skonto ist im Hardwarepreis bereits berücksichtigt.",
-          "p": 0
-        },
-        {
-          "t": "15 × (850 + 110) = 14.400 € netto, 17.136 € brutto; Skonto gilt bei Barzahlung vor Lieferung.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        25,
-        16,
-        18
-      ],
-      "cs": [
-        100,
-        98,
-        93
-      ],
-      "spanW": 0.563,
-      "spanC": 0.075,
-      "gapC": 2
-    },
-    {
-      "sammlung": "FAELLE",
-      "id": "fall-ki-support",
-      "si": 2,
-      "kunde": "„Reicht dieser Datensatz – und welche Risiken sehen Sie?\"",
-      "optionen": [
-        {
-          "t": "Gelabelte Tickets reichen als Start, Labels sind fehlerhaft – Bias droht; Daten bereinigen und Verteilung prüfen.",
-          "p": 3
-        },
-        {
-          "t": "Falsch gelabelte Tickets schadet dem Modell nicht – ausreichend Datenmenge kompensiert Labelfehler automatisch.",
-          "p": 0
-        },
-        {
-          "t": "Für das Training ausschließlich die 3.000 ungelabelten Tickets verwenden, gelabelte Daten ausblenden.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        16,
-        13,
-        12
-      ],
-      "cs": [
-        113,
-        111,
-        101
-      ],
-      "spanW": 0.333,
-      "spanC": 0.119,
-      "gapC": 2
-    },
-    {
-      "sammlung": "FAELLE2",
-      "id": "ap2-fall-verfuegbarkeit",
-      "si": 3,
-      "kunde": "„Was garantieren Sie uns schriftlich?\"",
-      "optionen": [
-        {
-          "t": "SLA mit Reaktionszeit, Wiederherstellungszeit, Verfügbarkeit in %, Servicezeiten und Eskalationsstufen.",
-          "p": 3
-        },
-        {
-          "t": "Formulierung „Wir bemühen uns um schnelle Hilfe“ als verbindliche Servicezusage gegenüber dem Kunden.",
-          "p": 0
-        },
-        {
-          "t": "Ausschließlich den jährlichen Wartungspauschalbetrag schriftlich fixieren, ohne Leistungskennzahlen.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        10,
-        13,
-        8
-      ],
-      "cs": [
-        103,
-        101,
-        100
-      ],
-      "spanW": 0.625,
-      "spanC": 0.03,
-      "gapC": 2
-    },
-    {
-      "sammlung": "FAELLE2",
-      "id": "ap2-fall-invest",
-      "si": 2,
-      "kunde": "„Nach wie vielen Jahren lohnt sich der Aufpreis?\"",
-      "optionen": [
-        {
-          "t": "Ca. ein Jahr: Mehrkosten 30 € werden durch 30 € jährliche Stromersparnis vollständig ausgeglichen.",
-          "p": 3
-        },
-        {
-          "t": "Ca. fünf Jahre, weil der Mehrpreis typischerweise erst langfristig durch Effizienz zurückfließt.",
-          "p": 0
-        },
-        {
-          "t": "Nie – der höhere Anschaffungspreis von B überwiegt jede Stromersparnis über die Nutzungsdauer.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        14,
-        12,
-        13
-      ],
-      "cs": [
-        98,
-        96,
-        94
-      ],
-      "spanW": 0.167,
-      "spanC": 0.043,
-      "gapC": 2
-    },
-    {
-      "sammlung": "FAELLE2",
-      "id": "ap2-fall-kundenauftrag",
-      "si": 0,
-      "kunde": "„Wir sagen Ihnen, was wir wollen – und Sie sagen uns dann, wie.\"",
-      "optionen": [
-        {
-          "t": "Zuerst Lastenheft vom Kunden einholen, darauf basierend das eigene Pflichtenheft erstellen.",
-          "p": 3
-        },
-        {
-          "t": "Sofort Pflichtenheft finalisieren und Hardware bestellen, Lastenheft parallel nachreichen.",
-          "p": 0
-        },
-        {
-          "t": "Mit Installation beginnen und Anforderungen im Projektverlauf aus dem Betrieb ableiten.",
-          "p": 0
-        }
-      ],
-      "richtig": 0,
-      "ws": [
-        11,
-        9,
-        11
-      ],
-      "cs": [
-        91,
-        90,
-        87
-      ],
-      "spanW": 0.222,
-      "spanC": 0.046,
-      "gapC": 1
-    },
     {
       "sammlung": "FAELLE",
       "id": "fall-arbeitsplatz",
@@ -10270,6 +8300,74 @@
       "gapC": 0
     },
     {
+      "sammlung": "FAELLE",
+      "id": "fall-usv",
+      "si": 1,
+      "kunde": "„Welche Leistung muss die USV mindestens liefern – in Watt und in VA?\"",
+      "optionen": [
+        {
+          "t": "Wirkleistung ca. 1.020 W, mit 20 % Reserve ca. 1.224 W; Scheinleistung ca. 1.897 VA – aus der Last.",
+          "p": 3
+        },
+        {
+          "t": "Wirkleistung und Scheinleistung sind gleich groß, jeweils ca. 1.020 W bzw. 1.020 VA bei dieser Last.",
+          "p": 0
+        },
+        {
+          "t": "Wirkleistung ca. 1.897 W, Scheinleistung ca. 1.224 VA – die beiden Kennwerte sind hier vertauscht.",
+          "p": 0
+        }
+      ],
+      "richtig": 0,
+      "ws": [
+        19,
+        16,
+        15
+      ],
+      "cs": [
+        99,
+        100,
+        98
+      ],
+      "spanW": 0.267,
+      "spanC": 0.02,
+      "gapC": -1
+    },
+    {
+      "sammlung": "FAELLE",
+      "id": "fall-ki-support",
+      "si": 3,
+      "kunde": "„Welche Zahl gilt – und was ist hier passiert?\"",
+      "optionen": [
+        {
+          "t": "Overfitting: Modell passt Training zu genau – Testgenauigkeit 82 % ist maßgeblich, Regularisierung nötig.",
+          "p": 3
+        },
+        {
+          "t": "Trainingsgenauigkeit 99 % ist maßgeblich; niedrigere Testwerte entstehen durch unrepräsentative Testdaten.",
+          "p": 0
+        },
+        {
+          "t": "Mittelwert aus Trainings- und Testgenauigkeit als faire Gesamtbewertung des Modells heranziehen.",
+          "p": 0
+        }
+      ],
+      "richtig": 0,
+      "ws": [
+        14,
+        11,
+        11
+      ],
+      "cs": [
+        105,
+        106,
+        96
+      ],
+      "spanW": 0.273,
+      "spanC": 0.104,
+      "gapC": -1
+    },
+    {
       "sammlung": "FAELLE2",
       "id": "ap2-fall-arbeitsrecht",
       "si": 3,
@@ -10373,6 +8471,40 @@
     },
     {
       "sammlung": "FAELLE2",
+      "id": "ap2-fall-invest",
+      "si": 3,
+      "kunde": "„Was kostet uns jede Variante über die fünf Jahre?\"",
+      "optionen": [
+        {
+          "t": "A: 40×600 € + 40×5×72 € = 38.400 €; B: 40×630 € + 40×5×42 € = 33.600 € (5 Jahre).",
+          "p": 3
+        },
+        {
+          "t": "A: 40×600 € = 24.000 €; B: 40×700 € = 28.000 € – Betriebsstrom nicht berücksichtigt.",
+          "p": 0
+        },
+        {
+          "t": "Beide Varianten verursachen über fünf Jahre dieselben Gesamtkosten bei 40 Geräten.",
+          "p": 0
+        }
+      ],
+      "richtig": 0,
+      "ws": [
+        20,
+        16,
+        11
+      ],
+      "cs": [
+        81,
+        84,
+        82
+      ],
+      "spanW": 0.818,
+      "spanC": 0.037,
+      "gapC": -3
+    },
+    {
+      "sammlung": "FAELLE2",
       "id": "ap2-fall-arbeitsrecht",
       "si": 0,
       "kunde": "„Darf er heute drei Stunden länger bleiben?\"",
@@ -10440,6 +8572,108 @@
       "gapC": -5
     },
     {
+      "sammlung": "FAELLE",
+      "id": "fall-netz",
+      "si": 2,
+      "kunde": "„Wie vergeben wir die IP-Adressen?\"",
+      "optionen": [
+        {
+          "t": "DHCP aus privatem Bereich (192.168.x.x); Server und Drucker mit festen Reservierungen.",
+          "p": 3
+        },
+        {
+          "t": "Jedes Endgerät erhält eine öffentliche IPv4-Adresse direkt vom Internetprovider zugewiesen.",
+          "p": 0
+        },
+        {
+          "t": "In IPv4-Netzen kommunizieren Endgeräte auch ohne IP-Konfiguration zuverlässig miteinander.",
+          "p": 0
+        }
+      ],
+      "richtig": 0,
+      "ws": [
+        11,
+        10,
+        9
+      ],
+      "cs": [
+        86,
+        91,
+        90
+      ],
+      "spanW": 0.222,
+      "spanC": 0.058,
+      "gapC": -5
+    },
+    {
+      "sammlung": "FAELLE",
+      "id": "fall-ki-support",
+      "si": 2,
+      "kunde": "„Reicht dieser Datensatz – und welche Risiken sehen Sie?\"",
+      "optionen": [
+        {
+          "t": "Gelabelte Tickets reichen als Start, Labels fehlerhaft – Bias droht; Daten bereinigen, Verteilung prüfen.",
+          "p": 3
+        },
+        {
+          "t": "Falsch gelabelte Tickets schadet dem Modell nicht – ausreichend Datenmenge kompensiert Labelfehler automatisch.",
+          "p": 0
+        },
+        {
+          "t": "Für das Training ausschließlich die 3.000 ungelabelten Tickets verwenden, gelabelte Daten ausblenden.",
+          "p": 0
+        }
+      ],
+      "richtig": 0,
+      "ws": [
+        14,
+        13,
+        12
+      ],
+      "cs": [
+        105,
+        111,
+        101
+      ],
+      "spanW": 0.167,
+      "spanC": 0.099,
+      "gapC": -6
+    },
+    {
+      "sammlung": "FAELLE2",
+      "id": "ap2-fall-invest",
+      "si": 4,
+      "kunde": "„Für welche Variante entscheiden Sie sich?\"",
+      "optionen": [
+        {
+          "t": "Variante B: höherer Einkauf, nach einem Jahr amortisiert, über Laufzeit 4.800 € günstiger.",
+          "p": 3
+        },
+        {
+          "t": "Variante A wegen niedrigerem Einkaufspreis – laufende Stromkosten bei der Entscheidung ignorieren.",
+          "p": 0
+        },
+        {
+          "t": "Variante A, weil Green-IT-Anforderungen marketingbedingt sind und keine TCO-Auswirkung haben.",
+          "p": 0
+        }
+      ],
+      "richtig": 0,
+      "ws": [
+        13,
+        12,
+        10
+      ],
+      "cs": [
+        90,
+        98,
+        93
+      ],
+      "spanW": 0.3,
+      "spanC": 0.089,
+      "gapC": -8
+    },
+    {
       "sammlung": "FAELLE2",
       "id": "ap2-fall-arbeitsrecht",
       "si": 1,
@@ -10476,6 +8710,108 @@
     {
       "sammlung": "FAELLE",
       "id": "fall-angebot",
+      "si": 1,
+      "kunde": "„Was bringt das Skonto konkret?\"",
+      "optionen": [
+        {
+          "t": "Bei 41.000 € netto sind 3 % Skonto 1.230 € – verbindlicher Nachlass bei fristgerechter Zahlung.",
+          "p": 3
+        },
+        {
+          "t": "Skonto verlängert die Zahlungsfrist, bringt dem Käufer aber keinen finanziellen Vorteil gegenüber Netto.",
+          "p": 0
+        },
+        {
+          "t": "Skonto ist ein Handelsrabatt, der bereits im ausgewiesenen Listenpreis des Angebots enthalten ist.",
+          "p": 0
+        }
+      ],
+      "richtig": 0,
+      "ws": [
+        16,
+        13,
+        13
+      ],
+      "cs": [
+        95,
+        104,
+        98
+      ],
+      "spanW": 0.231,
+      "spanC": 0.095,
+      "gapC": -9
+    },
+    {
+      "sammlung": "FAELLE",
+      "id": "fall-ki-support",
+      "si": 0,
+      "kunde": "„Was ist der Unterschied zwischen KI, maschinellem Lernen und Deep Learning – und was davon brauchen wir?\"",
+      "optionen": [
+        {
+          "t": "KI ist Oberbegriff, ML Teilgebiet der KI, DL Subfeld des ML – für Textklassifikation ML/DL.",
+          "p": 3
+        },
+        {
+          "t": "KI, maschinelles Lernen und Deep Learning bezeichnen dasselbe Verfahren und sind synonym verwendbar.",
+          "p": 0
+        },
+        {
+          "t": "Deep Learning ist der Oberbegriff; klassische KI und maschinelles Lernen sind Unterformen davon.",
+          "p": 0
+        }
+      ],
+      "richtig": 0,
+      "ws": [
+        15,
+        13,
+        13
+      ],
+      "cs": [
+        91,
+        100,
+        96
+      ],
+      "spanW": 0.154,
+      "spanC": 0.099,
+      "gapC": -9
+    },
+    {
+      "sammlung": "FAELLE",
+      "id": "fall-db",
+      "si": 1,
+      "kunde": "„Wie bringen Sie die Tabelle in die 1. Normalform?\"",
+      "optionen": [
+        {
+          "t": "Artikelliste auflösen: pro Artikel eine Zeile, jede Zelle genau ein atomarer Wert (1. NF).",
+          "p": 3
+        },
+        {
+          "t": "Die Artikelspalte verbreitern und die mehrfachen Werte als Freitext in derselben Zelle belassen.",
+          "p": 0
+        },
+        {
+          "t": "Artikel in einer Hilfstabelle als unstrukturierten Freitext ablegen, Haupttabelle unverändert lassen.",
+          "p": 0
+        }
+      ],
+      "richtig": 0,
+      "ws": [
+        14,
+        13,
+        11
+      ],
+      "cs": [
+        90,
+        96,
+        101
+      ],
+      "spanW": 0.273,
+      "spanC": 0.122,
+      "gapC": -11
+    },
+    {
+      "sammlung": "FAELLE",
+      "id": "fall-angebot",
       "si": 4,
       "kunde": "„Nach wie vielen Jahren hat sich die Investition bezahlt?\"",
       "optionen": [
@@ -10506,10 +8842,78 @@
       "spanW": 0.273,
       "spanC": 0.12,
       "gapC": -11
+    },
+    {
+      "sammlung": "FAELLE",
+      "id": "fall-arbeitsplatz",
+      "si": 2,
+      "kunde": "„Wie hoch ist der Gesamtbetrag brutto – und was bringt das Skonto?\"",
+      "optionen": [
+        {
+          "t": "15 × (850 + 40 + 110) = 15.000 € netto, 17.850 € brutto; Skonto 2 % = 300 € in 14 Tagen.",
+          "p": 3
+        },
+        {
+          "t": "15 × 850 = 12.750 € netto, 15.172,50 € brutto; Skonto ist im Hardwarepreis bereits berücksichtigt.",
+          "p": 0
+        },
+        {
+          "t": "15 × (850 + 110) = 14.400 € netto, 17.136 € brutto; Aufbau und Skonto bei Barzahlung vor Lieferung.",
+          "p": 0
+        }
+      ],
+      "richtig": 0,
+      "ws": [
+        23,
+        16,
+        19
+      ],
+      "cs": [
+        88,
+        98,
+        99
+      ],
+      "spanW": 0.438,
+      "spanC": 0.125,
+      "gapC": -11
+    },
+    {
+      "sammlung": "FAELLE",
+      "id": "fall-ki-generativ",
+      "si": 1,
+      "kunde": "„Wie bekommen wir kürzere, passgenauere Antworten?\"",
+      "optionen": [
+        {
+          "t": "Prompt mit Rolle, Zielgruppe, Ton, Länge und Format definieren – ggf. kurzes Beispiel.",
+          "p": 3
+        },
+        {
+          "t": "Mehrfach zufällig generieren und die kürzeste Antwort übernehmen, ohne den Prompt anzupassen.",
+          "p": 0
+        },
+        {
+          "t": "Kundenanfragen mit sehr kurzen Standardantworten beantworten, unabhängig vom jeweiligen Anliegen.",
+          "p": 0
+        }
+      ],
+      "richtig": 0,
+      "ws": [
+        13,
+        12,
+        10
+      ],
+      "cs": [
+        86,
+        93,
+        97
+      ],
+      "spanW": 0.3,
+      "spanC": 0.128,
+      "gapC": -11
     }
   ],
   "meta": {
-    "quiz": 311,
-    "faelle": 62
+    "quiz": 301,
+    "faelle": 23
   }
 }

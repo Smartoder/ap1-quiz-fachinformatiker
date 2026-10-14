@@ -1,0 +1,409 @@
+[
+  {
+    "sammlung": "QUIZ",
+    "i": 17,
+    "r": 1,
+    "a": [
+      "Kapitalfreisetzungseffekt durch sofortige Reinvestition laut Fachliteratur",
+      "Lohmann-Ruchti-Effekt durch Reinvestition der Abschreibungen",
+      "Skontierungseffekt bei Zahlung innerhalb der Skontofrist",
+      "Leverage-Effekt durch erhöhten Einsatz von Fremdkapital laut Fachliteratur"
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 24,
+    "r": 0,
+    "a": [
+      "Mehrfache, unnötige Speicherung derselben Information in Tabellen",
+      "Sicherungskopie der Datenbank auf einem zweiten Server im RZ laut Fachliteratur",
+      "Doppelter Primärschlüssel in ein und derselben Tabellenzeile laut Fachliteratur",
+      "Wiederholte Ausführung derselben SQL-Abfrage durch die Anwendung über den Projektverlauf laut Fachliteratur"
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 30,
+    "r": 2,
+    "a": [
+      "SELECT, INSERT und UPDATE als typische DML-Befehle im betrieblichen Alltag ohne weitere Ausnahme",
+      "GRANT und REVOKE zur Vergabe und Entzug von Rechten",
+      "CREATE, ALTER und DROP zur Definition von Strukturen",
+      "COMMIT und ROLLBACK zur Steuerung von Transaktionen über den Projektverlauf laut Fachliteratur"
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 45,
+    "r": 1,
+    "a": [
+      "Anteil fehlerfreier Datensätze an der Gesamtmenge im System im betrieblichen Alltag ohne weitere Ausnahme",
+      "Anteil der Zeit, in der das System vertraglich nutzbar ist",
+      "Maximale Anzahl gleichzeitig angemeldeter Benutzer im System in typischen Projekten ohne weitere Ausnahme",
+      "Durchschnittliche Antwortzeit der Anwendung bei Standardlast über den Projektverlauf laut Fachliteratur"
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 59,
+    "r": 3,
+    "a": [
+      "Die Störung, die während der Übertragung im Kanal auftritt",
+      "Die emotionale Grundstimmung des Senders beim Formulieren laut Fachliteratur",
+      "Die Rückmeldung des Empfängers als Bestätigung der Nachricht in typischen Projekten ohne weitere Ausnahme",
+      "Das Übertragungsmedium wie Gespräch, Telefon, Chat oder E-Mail"
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 84,
+    "r": 0,
+    "a": [
+      "Vertraulichkeit, Integrität und Verfügbarkeit der Informationen",
+      "Vertraulichkeit, Integrität, Verfügbarkeit und Authentizität laut üblicher Empfehlung laut Fachliteratur",
+      "IT-Sicherheit, Datenschutz und Datensicherung als Gesamtpaket",
+      "Verfügbarkeit, Redundanz und Verschlüsselung als Maßnahmen laut Fachliteratur"
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 107,
+    "r": 3,
+    "a": [
+      "Er schreibt Quellcode nach Vorgabe des Entwicklers im Editor laut Fachliteratur",
+      "Er sucht inhaltliche Logikfehler im noch nicht kompilierten Code laut üblicher Empfehlung laut Fachliteratur",
+      "Er führt das fertig kompilierte Programm auf dem Zielsystem aus",
+      "Er verbindet Objektdateien und Bibliotheken zur ausführbaren Datei"
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 132,
+    "r": 0,
+    "a": [
+      "Betriebssystem auf einem Server, auf das Clients remote zugreifen",
+      "Besonders großer Einzelmonitor am lokalen Arbeitsplatz des Nutzers laut üblicher Empfehlung laut Fachliteratur",
+      "Zweiter Monitor am selben Arbeitsplatz für erweiterten Arbeitsbereich in typischen Projekten ohne weitere Ausnahme",
+      "Vollständige lokale Kopie aller Firmendaten auf dem Client-Rechner über den Projektverlauf laut Fachliteratur"
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 136,
+    "r": 0,
+    "a": [
+      "Planung legt Ist- und Zielzustand fest, Lenkung setzt Maßnahmen um",
+      "Lenkung legt den Zielzustand fest, Planung steuert die Umsetzung laut üblicher Empfehlung laut Fachliteratur",
+      "Beide Begriffe bezeichnen im Qualitätsmanagement denselben Vorgang in typischen Projekten ohne weitere Ausnahme",
+      "Planung betrifft ausschließlich die entstehenden Kosten im Projekt über den Projektverlauf laut Fachliteratur"
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 166,
+    "r": 1,
+    "a": [
+      "Die größte homogene Gruppe ähnlicher Datenpunkte im Cluster im betrieblichen Alltag ohne weitere Ausnahme",
+      "Die Trennebene mit maximalem Abstand zu den Support Vectors",
+      "Die kürzeste gerade Verbindungslinie zwischen zwei Klassen in typischen Projekten ohne weitere Ausnahme",
+      "Die Häufigkeitsverteilung der Merkmale im Trainingsdatensatz über den Projektverlauf laut Fachliteratur"
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 190,
+    "r": 0,
+    "a": [
+      "Merkmale werden auf vergleichbare Wertebereiche gebracht",
+      "Merkmale werden vollständig aus dem Datensatz entfernt laut üblicher Empfehlung laut Fachliteratur",
+      "Merkmale werden mehrfach im Datensatz vervielfacht laut Fachliteratur",
+      "Die Anzahl der Modellparameter im Modell wird erhöht"
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 223,
+    "r": 0,
+    "a": [
+      "IPv4: 32-Bit-Adressen; IPv6: 128-Bit — deutlich größerer Adressraum für Endgeräte",
+      "IPv6 ist langsamer als IPv4, weil längere Adressen mehr Header-Overhead erzeugen",
+      "IPv4 arbeitet ohne Subnetzmasken; IPv6 benötigt zwingend klassenbasierte Netze in typischen Projekten ohne weitere Ausnahme",
+      "IPv6 ist eine Erweiterung der MAC-Adresse auf Schicht 2 des OSI-Referenzmodells"
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 241,
+    "r": 0,
+    "a": [
+      "Ermöglicht Wiederherstellung von Daten nach Ausfall, Löschung oder Ransomware-Verschlüsselung",
+      "Verschlüsselt laufend alle Produktivdaten und ersetzt damit Zugriffskontrollen im System laut Fachliteratur",
+      "Verhindert jeden Angriff auf das Netzwerk, weil Schadsoftware automatisch blockiert wird laut Fachliteratur",
+      "Ersetzt bauliche Brandschutzmaßnahmen wie Feuerlöscher und Brandabschnitte im Serverraum laut Fachliteratur"
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 247,
+    "r": 0,
+    "a": [
+      "Brandabschnitt begrenzt Feuer und Rauch durch bauliche Trennung",
+      "Brandabschnitt ist ein softwareseitiges Backup der Serverdaten laut üblicher Empfehlung laut Fachliteratur",
+      "Brandabschnitt ist ein RAID-Verbund aus mehreren Festplatten in typischen Projekten ohne weitere Ausnahme",
+      "Brandabschnitt schützt ausschließlich die Netzwerkinfrastruktur über den Projektverlauf laut Fachliteratur"
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 277,
+    "r": 0,
+    "a": [
+      "Gegenstand, Beteiligte, Ort/Datum, Zustand des Werks und festgestellte Mängel",
+      "Verkaufspreis der Leistung und vereinbarte Zahlungsmodalitäten im Vertrag laut üblicher Empfehlung laut Fachliteratur",
+      "Unterschrift des Kunden ohne weitere Angaben zu Mängeln oder Prüfgegenstand",
+      "Seriennummer des gelieferten Geräts ohne Protokollierung des Prüfergebnisses über den Projektverlauf laut Fachliteratur"
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 310,
+    "r": 0,
+    "a": [
+      "Engpass – eine Stelle im System, die den Gesamtdurchsatz begrenzt.",
+      "Physischer Flaschenhals im Kupferkabel – Ursache jeder langsamen Verbindung. laut üblicher Empfehlung laut Fachliteratur",
+      "Sicherheitsvorfall, bei dem ein Angreifer die Bandbreite absichtlich blockiert. in typischen Projekten ohne weitere Ausnahme",
+      "Neuer Server, der automatisch alle Engpässe im Netzwerk beseitigt. über den Projektverlauf"
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 402,
+    "r": 0,
+    "a": [
+      "Freie Software: Nutzung, Änderung, Weitergabe; abgeleitete Werke bleiben frei",
+      "Kostenpflichtiger Herstellervertrag mit eingeschränkten Nutzungsrechten laut Fachliteratur laut üblicher Empfehlung laut Fachliteratur",
+      "Einmaliger Kauf ohne Recht auf Quellcodeeinsicht oder Weiterverbreitung laut Fachliteratur in typischen Projekten ohne weitere Ausnahme",
+      "Lizenz ohne jegliche Rechte zur Nutzung, auch nicht im internen Betrieb laut Fachliteratur"
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 424,
+    "r": 0,
+    "a": [
+      "Schlechtleistung, Falschlieferung und Minderlieferung – drei Mängelarten.",
+      "Rot, Gelb und Grün als Ampelstatus in der Projekt-Reporting-Software.",
+      "Viren, Würmer und Trojaner als Schadsoftware-Kategorien im IT-Betrieb. in typischen Projekten ohne weitere Ausnahme",
+      "Intern, extern und hybrid als Organisationsformen des Projektteams. laut Fachliteratur"
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 433,
+    "r": 0,
+    "a": [
+      "Vergleichbare Bewertung mehrerer Angebote anhand gewichteter Kriterien und Punkte.",
+      "Berechnung der Umsatzsteuer auf Nettopreise – Aufgabe der Finanzbuchhaltung. laut Fachliteratur",
+      "Auswahl des günstigsten Druckers allein nach Seitenpreis ohne weitere Kriterien.",
+      "Erstellung der Rechnung nach Auftragserteilung – kein Entscheidungswerkzeug. laut Fachliteratur"
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 444,
+    "r": 0,
+    "a": [
+      "Bei unwesentlichen Mängeln Abnahme zulässig; wesentliche berechtigen zur Verweigerung.",
+      "Jeder Kratzer oder Makel berechtigt den Kunden, die Abnahme dauerhaft zu verweigern.",
+      "Ein Abnahmeprotokoll ist reine Kulanz und für Rechte und Pflichten ohne Bedeutung.",
+      "Abnahme ist Formsache: Sie ändert weder Gewährleistung noch Fälligkeit der Zahlung. über den Projektverlauf laut Fachliteratur"
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 450,
+    "r": 0,
+    "a": [
+      "Weiche Kriterien bewerten und vergleichbar machen, z. B. mit Punktwerten",
+      "Ausschließlich der niedrigste Nettopreis entscheidet über den Anbieter laut üblicher Empfehlung laut Fachliteratur",
+      "Ausschließlich die kürzeste Lieferzeit ohne weitere qualitative Aspekte in typischen Projekten ohne weitere Ausnahme",
+      "Es erfolgt keine strukturierte Bewertung, Entscheidung nach Bauchgefühl über den Projektverlauf laut Fachliteratur"
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 454,
+    "r": 0,
+    "a": [
+      "Über eine Zwischentabelle mit Fremdschlüsseln beider beteiligten Entitäten",
+      "Der Primärschlüssel der einen Seite wandert direkt in die andere Tabelle",
+      "Mehrere Werte werden in einer Tabellenzelle kommagetrennt gespeichert laut Fachliteratur in typischen Projekten ohne weitere Ausnahme",
+      "Eine m:n-Beziehung lässt sich relational nicht abbilden nach Projektplan über den Projektverlauf laut Fachliteratur"
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 468,
+    "r": 0,
+    "a": [
+      "System lernt Muster aus Daten, statt jede Entscheidungsregel explizit zu programmieren",
+      "System benötigt keine Trainings- oder Beispieldaten und arbeitet rein regelbasiert laut üblicher Empfehlung laut Fachliteratur",
+      "System folgt ausschließlich fest codierten if-Anweisungen ohne statistische Modelle in typischen Projekten ohne weitere Ausnahme",
+      "System arbeitet ohne Rechenleistung und speichert Ergebnisse nur in einer Textdatei"
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 479,
+    "r": 0,
+    "a": [
+      "HW aufstellen → OS installieren → Treiber/Software → Netz → testen und dokumentieren",
+      "Zuerst gesamte Software installieren, danach Hardware am Arbeitsplatz aufbauen unabhängig vom Hersteller laut Fachliteratur",
+      "Ausschließlich Netzwerk konfigurieren ohne OS-Installation und Funktionstest laut Fachliteratur unabhängig vom Hersteller in typischen Projekten ohne weitere Ausnahme",
+      "Arbeitsplatz dem Nutzer übergeben ohne Test und ohne Installationsdokumentation bei vergleichbaren Fällen über den Projektverlauf"
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 482,
+    "r": 0,
+    "a": [
+      "Server ist wegen eines Hardwarefehlers ausgefallen (down)",
+      "Server wird gerade neu installiert und konfiguriert laut Fachliteratur",
+      "Server wurde erfolgreich aktualisiert und ist up to date",
+      "Server läuft fehlerfrei und ist für Nutzer erreichbar über den Projektverlauf laut Fachliteratur"
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 483,
+    "r": 0,
+    "a": [
+      "Wir empfehlen dringend ein verschlüsseltes Backup außer Haus",
+      "Wir empfehlen, vorhandene Backups regelmäßig zu löschen laut Fachliteratur",
+      "Backups sind für den Betrieb grundsätzlich überflüssig laut Fachliteratur",
+      "Die Verschlüsselung von Sicherungen ist gesetzlich untersagt über den Projektverlauf laut Fachliteratur"
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 518,
+    "r": 0,
+    "a": [
+      "Ja: 15 × 900 € = 13.500 € netto – liegt unter dem Budget von 15.000 € netto.",
+      "Nein: 15 × 900 € = 18.000 € netto – übersteigt das Kundenbudget deutlich. unabhängig vom Hersteller laut üblicher Empfehlung laut Fachliteratur",
+      "Nein: es fehlen 3.000 € netto zum Budget – Rechnung mit anderem Stückpreis. unabhängig vom Hersteller in typischen Projekten ohne weitere Ausnahme",
+      "Ja, aber nur brutto – netto wäre über Budget; USt macht den Unterschied. bei vergleichbaren Fällen über den Projektverlauf laut Fachliteratur"
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 520,
+    "r": 0,
+    "a": [
+      "Dokumentierter Ist-Zustand von HW/SW/Netz/Rechten für Änderungen und Störungen",
+      "Erhöhung des Papierverbrauchs in der IT-Abteilung ohne fachlichen Nutzen laut Fachliteratur",
+      "Erhöhung des Verkaufspreises gegenüber dem Kunden ohne Leistungsänderung laut Fachliteratur",
+      "Pflicht des Kunden, die Konfiguration des gelieferten Systems zu pflegen laut Fachliteratur"
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 533,
+    "r": 0,
+    "a": [
+      "Schneller Zwischenspeicher der CPU zwischen Prozessor und Arbeitsspeicher",
+      "Magnetische Festplatte zur dauerhaften Speicherung großer Dateimengen laut üblicher Empfehlung laut Fachliteratur",
+      "Hauptspeicher (RAM) für laufende Programme und deren Daten im Betrieb",
+      "Kühlkörper zur Ableitung der Prozessorwärme im PC-Gehäuse und im Rack"
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 557,
+    "r": 0,
+    "a": [
+      "Untersucht, warum Soll und Ist bei Terminen, Kosten und Qualität auseinanderliegen.",
+      "Listet alle Teammitglieder mit Rollen – ohne Bezug zu Planabweichungen im Projekt.",
+      "Vergleicht zwei Lieferantenangebote hinsichtlich Preis, Lieferzeit und Service. in typischen Projekten ohne weitere Ausnahme",
+      "Installiert Software auf Testsystemen vor dem produktiven Rollout im Betrieb. laut Fachliteratur"
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 559,
+    "r": 0,
+    "a": [
+      "Dokument, in dem der Kunde seine Anforderungen an die zu erbringende Leistung festhält",
+      "Verbindliches Preisangebot des Kunden an den Auftragnehmer mit detaillierter Kalkulation laut üblicher Empfehlung laut Fachliteratur",
+      "Rechnungsdokument des Kunden zur Abrechnung bereits erbrachter Teilleistungen des Projekts in typischen Projekten ohne weitere Ausnahme",
+      "Langfristiger Wartungsvertrag über Betrieb und Support nach erfolgreicher Projektabnahme über den Projektverlauf laut Fachliteratur"
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 568,
+    "r": 0,
+    "a": [
+      "Das System wird heute Nacht planmäßig gewartet (Maintenance).",
+      "Das System ist heute Nacht ungeplant ausgefallen (Outage). laut üblicher Empfehlung laut Fachliteratur",
+      "Das System wird heute Nacht neu beschafft und installiert.",
+      "Das System wird heute Nacht grundlos neu gestartet (Reboot)."
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 570,
+    "r": 0,
+    "a": [
+      "Speichert Verknüpfungen und enthält die Fremdschlüssel beider beteiligten Entitätstabellen",
+      "Dient primär der Ablage binärer Mediendateien zwischen zwei normalisierten Basistabellen laut üblicher Empfehlung laut Fachliteratur",
+      "Ersetzt den Primärschlüssel einer Tabelle, wenn dieser zu lang oder zusammengesetzt ist",
+      "Verschlüsselt alle Spaltenwerte einer m:n-Beziehung vor dem Schreiben auf den Datenträger über den Projektverlauf laut Fachliteratur"
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 591,
+    "r": 0,
+    "a": [
+      "System bietet nur benötigte Funktionen und Dienste – nichts Überflüssiges aktiv.",
+      "Alle installierten Funktionen bleiben dauerhaft aktiv – maximale Flexibilität. laut üblicher Empfehlung laut Fachliteratur",
+      "Es dürfen überhaupt keine Dienste laufen – auch keine für den Betrieb nötigen.",
+      "Nur der Administrator darf alles nutzen; andere Benutzer haben keinen Zugriff. über den Projektverlauf laut Fachliteratur"
+    ]
+  },
+  {
+    "sammlung": "QUIZ",
+    "i": 596,
+    "r": 0,
+    "a": [
+      "Bei umfangreicher Überwachung oder sensibler Verarbeitung besteht DSB-Pflicht",
+      "Jeder Einzelunternehmer muss unabhängig von der Größe einen DSB bestellen laut üblicher Empfehlung laut Fachliteratur",
+      "Kleine Betriebe mit wenig Daten sind von der DSGVO vollständig ausgenommen",
+      "Die Pflicht zur Bestellung gilt ausschließlich in Kliniken und Arztpraxen über den Projektverlauf laut Fachliteratur"
+    ]
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 18,
+    "r": 1,
+    "a": [
+      "Automatische Vergabe von IP-Adressen an Clients (DHCP-Aufgabe) im betrieblichen Alltag ohne weitere Ausnahme",
+      "Auflösung von Domainnamen in IP-Adressen und umgekehrt (DNS)",
+      "Verschlüsselung des HTTP-Datenverkehrs im Browser nach Projektplan in typischen Projekten ohne weitere Ausnahme",
+      "Filterung unerwünschter E-Mails am Mail-Gateway nach Projektplan über den Projektverlauf laut Fachliteratur"
+    ]
+  },
+  {
+    "sammlung": "QUIZ2",
+    "i": 59,
+    "r": 0,
+    "a": [
+      "Vier Wochen zum 15. oder zum Monatsende (Grundfrist BGB)",
+      "Zwei Wochen jederzeit ohne Terminbindung in der IT-Praxis laut üblicher Empfehlung laut Fachliteratur",
+      "Sechs Monate zum Ende des Kalenderjahres nach Projektplan in typischen Projekten ohne weitere Ausnahme",
+      "Es gilt keine gesetzliche Kündigungsfrist für Arbeitnehmer über den Projektverlauf laut Fachliteratur"
+    ]
+  }
+]

@@ -10,8 +10,11 @@ Das Format folgt *Keep a Changelog*. Bruchstellen sind ausdrücklich gekennzeich
 Nutzer konnten die Lösung an Länge/Position erkennen.
 
 **Was.** Antworttexte in Quiz und Fallstudien auf ähnliche Länge gebracht;
-Anzeige-Reihenfolge wird gemischt (`mischeArray`). Live-Host dokumentiert als
-https://ap1-trainer.pages.dev/ (Cloudflare Pages).
+Anzeige-Reihenfolge wird gemischt (`mischeArray`). Bulk-Pass über Restfälle
+(~300 Quiz / ~20 Fallstudien): Ablenker angehoben, bis „Richtige = eindeutig
+längste“ praktisch weg ist (Quiz Zeichen ~38 %→~0,5 %, Rest-Flag 301→0).
+Regel dokumentiert in Skill `quiz-content` + Checkliste `AGENTS.md`.
+Live-Host: https://ap1-trainer.pages.dev/ (Cloudflare Pages).
 
 ### Geändert — Agent-OS Option R Phase 2 (2026-10-14)
 

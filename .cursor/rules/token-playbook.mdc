@@ -12,7 +12,7 @@ Ziel: wenig Context Pollution, kein Blindread der riesigen `index.html`.
 | 1–3 gezielte Stellen | Cursor fast; gezieltes Grep / `npm run check` |
 | „Welche Stellen gehören zum Feature?“ | Jev `jev_ask` nur mit engen Globs (Budget beachten) |
 | Bulk-Überblick 50+ Muster | Gemini wenn nicht 429 — sonst gezielte Scripts |
-| Deploy-Status | Vercel MCP / CLI — Projekt **`ap1-trainer`** |
+| Deploy-Status | HTTP https://ap1-trainer.pages.dev/ (+ `/ap1/health`) |
 | API-Zustand | HTTP `/ap1/health`; Details im API-Repo |
 
 ## Verbote
