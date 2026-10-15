@@ -10639,7 +10639,14 @@ document.getElementById('btn-uebersicht').addEventListener('click', () => {
    die auf dem Handy eingeklappt ist. */
 document.getElementById('btn-profil').addEventListener('click', () => {
   sim = null; clearInterval(zeitGeber);
-  if (profil) abmelden(); else profilAuswahlZeigen();
+  /* Abmelden nur nach Rückfrage — ein versehentlicher Klick darf niemanden
+     abmelden, egal ob Konto oder „Ohne Profil“. */
+  if (profil) {
+    const frage = istLokalProfil()
+      ? 'Wirklich abmelden? Du übst gerade ohne Profil.'
+      : 'Wirklich abmelden, ' + profil.name + '?';
+    if (window.confirm(frage)) abmelden();
+  } else profilAuswahlZeigen();
   mobilEinklappen();
 });
 /* Der Weg-Knopf öffnet die Wahl der vier Lernwege (AP1, AP2 und je die
