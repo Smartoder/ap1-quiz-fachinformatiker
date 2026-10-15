@@ -8368,7 +8368,7 @@ function railZeichnen() {
   const b5 = document.createElement('button');
   b5.className = 'rail-item'; b5.type = 'button';
   b5.innerHTML = '<span>Profil wechseln</span><span class="z">' + (profil ? profil.name : '–') + '</span>';
-  b5.onclick = () => { abmelden(); mobilEinklappen(); };
+  b5.onclick = () => { if (abmeldenNachFrage()) mobilEinklappen(); };
   /* Das Ausbildungsjahr steht seit dem Umbau in der Kopfzeile und wird hier
      nicht wiederholt — ein Weg, nicht zwei. */
   fuss.append(bSchwach, b2, b3, b5);
@@ -9575,6 +9575,17 @@ async function anmelden(p) {
   startseiteZeigen();
 }
 
+/* Einziger Weg zum Abmelden aus der Oberfläche: immer mit Rückfrage, damit ein
+   versehentlicher Klick niemanden abmeldet (Konto wie „Ohne Profil“). */
+function abmeldenNachFrage() {
+  if (!profil) return false;
+  const frage = istLokalProfil()
+    ? 'Wirklich abmelden? Du übst gerade ohne Profil.'
+    : 'Wirklich abmelden, ' + profil.name + '?';
+  if (!window.confirm(frage)) return false;
+  abmelden();
+  return true;
+}
 function abmelden() {
   profil = null;
   profilMerken();
@@ -10641,12 +10652,7 @@ document.getElementById('btn-profil').addEventListener('click', () => {
   sim = null; clearInterval(zeitGeber);
   /* Abmelden nur nach Rückfrage — ein versehentlicher Klick darf niemanden
      abmelden, egal ob Konto oder „Ohne Profil“. */
-  if (profil) {
-    const frage = istLokalProfil()
-      ? 'Wirklich abmelden? Du übst gerade ohne Profil.'
-      : 'Wirklich abmelden, ' + profil.name + '?';
-    if (window.confirm(frage)) abmelden();
-  } else profilAuswahlZeigen();
+  if (profil) abmeldenNachFrage(); else profilAuswahlZeigen();
   mobilEinklappen();
 });
 /* Der Weg-Knopf öffnet die Wahl der vier Lernwege (AP1, AP2 und je die
