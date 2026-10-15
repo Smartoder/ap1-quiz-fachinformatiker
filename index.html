@@ -3589,7 +3589,50 @@ const QUIZ = [
     r: 0, e: 'Protokoll und Anwendung müssen wissen, ob Text oder Binär vorliegt (Kodierung, MIME, Endianness). Falsche Behandlung führt zu Korruption oder unlesbaren Zeichen.', q_: 'PK-03 · Datenübertragung' },
 { t: 'ap1', b: 'netzwerk', j: 2, q: 'Welche Rolle spielen Dateiformate beim Austausch über das Netzwerk?',
     a: ['Empfänger braucht passende Software; MIME und Endung helfen bei der Zuordnung', 'Dateiformate werden vom Router in IP-Adressen umgerechnet und danach verworfen', 'Netzwerkprotokolle ignorieren Formate und speichern alles als Klartext-ASCII ab', 'Ein Formatwechsel im Netz macht Firewalls und Virenscanner grundsätzlich überflüssig'],
-    r: 0, e: 'Übertragung liefert Bytes; Interpretation hängt vom Format ab. MIME-Typen und Dateiendungen helfen Clients, die richtige Anwendung zu wählen.', q_: 'PK-03 · Dateiformate' }
+    r: 0, e: 'Übertragung liefert Bytes; Interpretation hängt vom Format ab. MIME-Typen und Dateiendungen helfen Clients, die richtige Anwendung zu wählen.', q_: 'PK-03 · Dateiformate' },
+/* ---------- Neu 2026-10-16: AP1-Stoff aus der Lernplattform (eigene Aufbereitung, freigegeben) ---------- */
+{ t: 'ap1', b: 'pm', j: 1, q: 'Welche Größen bilden das magische Dreieck des Projektmanagements?',
+    a: ['Planung, Durchführung und Abschluss', 'Zeit, Kosten und Qualität', 'Vertraulichkeit, Integrität, Verfügbarkeit', 'Preis, Leistung und Kundenservice'],
+    r: 1, e: 'Das magische Dreieck verbindet Zeit, Kosten und Qualität (Leistung). Ändert sich eine Größe, wirkt das auf die beiden anderen – mehr Leistung in kürzerer Zeit kostet mehr.', q_: 'Projektmanagement' },
+{ t: 'ap1', b: 'wirtschaft', j: 2, q: 'Wovon wird in der Bezugskalkulation das Liefererskonto berechnet?',
+    a: ['Vom Listeneinkaufspreis vor Rabatt', 'Vom Zieleinkaufspreis', 'Vom Bezugspreis inklusive Fracht', 'Von den Bezugskosten der Lieferung'],
+    r: 1, e: 'Reihenfolge: Listeneinkaufspreis − Liefererrabatt = Zieleinkaufspreis. Davon wird das Skonto abgezogen → Bareinkaufspreis. Erst danach kommen die Bezugskosten hinzu.', q_: 'Kalkulation' },
+{ t: 'ap1', b: 'wirtschaft', j: 1, q: 'Wie berechnet man aus einem Bruttopreis den Nettopreis (19 % USt)?',
+    a: ['Bruttopreis × 0,81', 'Bruttopreis − 19 €', 'Bruttopreis ÷ 1,19', 'Bruttopreis × 1,19'],
+    r: 2, e: 'Brutto = Netto × 1,19, also Netto = Brutto ÷ 1,19. „× 0,81“ ist falsch, weil die 19 % auf den Nettopreis gerechnet werden, nicht auf den Bruttopreis.', q_: 'Umsatzsteuer' },
+{ t: 'ap1', b: 'vertrag', j: 2, q: 'Gelieferte Ware ist mangelhaft. Welches Recht hat der Käufer zuerst?',
+    a: ['Sofortiger Rücktritt vom Vertrag', 'Minderung des Kaufpreises', 'Nacherfüllung', 'Schadensersatz statt Leistung'],
+    r: 2, e: 'Vorrang hat die Nacherfüllung (Nachbesserung oder Neulieferung). Erst wenn sie scheitert oder verweigert wird, kommen Rücktritt, Minderung oder Schadensersatz in Frage.', q_: 'Mängelrechte' },
+{ t: 'ap1', b: 'hardware', j: 1, q: 'Wie viele Byte hat 1 KiB (Kibibyte)?',
+    a: ['1.000 Byte', '1.024 Byte', '1.048 Byte', '8.192 Byte'],
+    r: 1, e: 'Binärpräfixe arbeiten mit Zweierpotenzen: 1 KiB = 2¹⁰ = 1.024 Byte. 1 kB (Kilobyte, dezimal) sind dagegen 1.000 Byte.', q_: 'Einheiten' },
+{ t: 'ap1', b: 'hardware', j: 1, q: 'Wie sollte ein Bildschirmarbeitsplatz zum Fenster stehen?',
+    a: ['Bildschirm direkt vor dem Fenster', 'Fenster direkt im Rücken der Person', 'Blickrichtung parallel zum Fenster', 'Egal, wenn der Bildschirm hell genug ist'],
+    r: 2, e: 'Blick parallel zum Fenster vermeidet Blendung (Fenster vorn) und Spiegelungen auf dem Bildschirm (Fenster im Rücken).', q_: 'Ergonomie' },
+{ t: 'ap1', b: 'hardware', j: 1, q: 'Warum zeigt Windows bei einer neuen 1-TB-Festplatte nur etwa 931 GB an?',
+    a: ['Die Festplatte ist ab Werk teilweise defekt', 'Hersteller rechnen dezimal, Windows binär', 'Das Betriebssystem belegt dauerhaft 69 GB', 'Die Formatierung löscht einen Teil des Speichers'],
+    r: 1, e: '1 TB = 10¹² Byte. Windows teilt durch 1.024³ und zeigt GiB an (beschriftet als „GB“): 10¹² ÷ 1.024³ ≈ 931.', q_: 'Einheiten' },
+{ t: 'ap1', b: 'netzwerk', j: 1, q: 'Welche dieser Adressen ist eine private IPv4-Adresse?',
+    a: ['8.8.8.8', '172.32.100.254', '192.168.1.10', '11.0.5.1'],
+    r: 2, e: 'Private Bereiche: 10.0.0.0/8, 172.16.0.0/12 (172.16 bis 172.31) und 192.168.0.0/16. 172.32.100.254 liegt knapp außerhalb, 8.8.8.8 und 11.0.5.1 sind öffentlich.', q_: 'IPv4' },
+{ t: 'ap1', b: 'netzwerk', j: 2, q: 'Welche Kurzschreibweise von 2001:0db8:0000:0000:0000:0000:0000:0001 ist korrekt?',
+    a: ['2001:db8:::1', '2001::db8::1', '2001:db8::1', '21:db8::1'],
+    r: 2, e: 'Führende Nullen je Block fallen weg, und genau eine Folge von Null-Blöcken wird durch „::“ ersetzt. Zweimal „::“ ist verboten, ebenso Nullen am Blockende wegzulassen.', q_: 'IPv6' },
+{ t: 'ap1', b: 'sicherheit', j: 2, q: 'Vollsicherung am Sonntag, inkrementelle Sicherungen Montag bis Donnerstag. Was brauchst du für den Restore am Freitagmorgen?',
+    a: ['Nur die Vollsicherung vom Sonntag', 'Die Vollsicherung und ausschließlich das letzte Inkrement vom Donnerstag', 'Die Vollsicherung und alle Inkremente von Montag bis Donnerstag', 'Nur die inkrementelle Sicherung vom Donnerstag'],
+    r: 2, e: 'Jedes Inkrement enthält nur die Änderungen seit der letzten Sicherung. Deshalb braucht man die Vollsicherung und alle Inkremente in der richtigen Reihenfolge. Bei differenzieller Sicherung reicht Voll + letzte Differenzielle.', q_: 'Backup' },
+{ t: 'ap1', b: 'sicherheit', j: 1, q: 'Welches RAID-Level bietet keine Redundanz?',
+    a: ['RAID 1', 'RAID 0', 'RAID 5', 'RAID 10'],
+    r: 1, e: 'RAID 0 (Striping) verteilt Daten nur zur Beschleunigung auf mehrere Platten. Fällt eine Platte aus, sind alle Daten verloren.', q_: 'RAID' },
+{ t: 'ap1', b: 'recht', j: 2, q: 'Binnen welcher Frist ist eine Datenpanne in der Regel der Aufsichtsbehörde zu melden?',
+    a: ['24 Stunden', '72 Stunden', '14 Tagen', '30 Tagen'],
+    r: 1, e: 'Art. 33 DSGVO: Meldung möglichst binnen 72 Stunden, nachdem die Panne bekannt wurde – außer sie führt voraussichtlich zu keinem Risiko für die Betroffenen.', q_: 'DSGVO' },
+{ t: 'ap1', b: 'datenbank', j: 2, q: 'Welchen Standardport verwendet ein MariaDB- bzw. MySQL-Server?',
+    a: ['80', '443', '3306', '5432'],
+    r: 2, e: 'MariaDB/MySQL lauschen standardmäßig auf Port 3306. 80/443 sind HTTP/HTTPS, 5432 ist PostgreSQL.', q_: 'Datenbank' },
+{ t: 'ap1', b: 'datenbank', j: 1, q: 'Zu welcher SQL-Befehlsklasse gehört CREATE TABLE?',
+    a: ['DML (Data Manipulation Language)', 'DDL (Data Definition Language)', 'DCL (Data Control Language)', 'TCL (Transaction Control Language)'],
+    r: 1, e: 'DDL definiert Strukturen: CREATE, ALTER, DROP. DML ändert Daten (INSERT, UPDATE, DELETE), DCL regelt Rechte (GRANT, REVOKE), TCL steuert Transaktionen (COMMIT, ROLLBACK).', q_: 'SQL' }
 ];
 
 /* ---------- Karteikarten (Spaced Repetition) ---------- */
@@ -4123,7 +4166,24 @@ const KARTEN = [
 { t: 'ap1', b: 'ablauf', j: 2, f: 'Leistung dokumentieren – warum?', a: '<p>Dokumentation macht Leistung prüfbar: was geliefert, getestet und übergeben wurde.</p><p>Nutzen: Abnahme, Nachkalkulation, Support, Streitvermeidung. Ohne Belege fehlen Nachweise.</p>', q_: 'PK-05 · Doku' },
 { t: 'ap1', b: 'barriere', j: 1, f: 'Social Media als Kommunikationskanal', a: '<p>Schnell, reichweitenstark – aber mit Regeln:</p><ul><li>Freigabeprozesse und Corporate Voice</li><li>Datenschutz / personenbezogene Daten</li><li>Trennung privat vs. betrieblich</li></ul><p>Ergänzt, ersetzt aber nicht Ticket/E-Mail.</p>', q_: 'PK-02 · Medien' },
 { t: 'ap1', b: 'barriere', j: 1, f: 'Web-Barrierefreiheit – vier Kernpunkte', a: '<ul><li><b>alt-Text</b> für bedeutsame Bilder</li><li><b>Kontrast</b> Text/Hintergrund</li><li><b>Tastatur</b> inkl. sichtbarem Fokus</li><li><b>Untertitel/Transkript</b> für Audio/Video</li></ul>', q_: 'PK-04 · a11y' },
-{ t: 'ap1', b: 'barriere', j: 2, f: 'Alt-Text richtig einsetzen', a: '<p>Beschreibt den Inhalt bzw. die Funktion des Bildes knapp und konkret.</p><p>Dekorative Bilder: leeres <code>alt=""</code>. Keine Keyword-Spam-Listen.</p>', q_: 'PK-04 · alt' }
+{ t: 'ap1', b: 'barriere', j: 2, f: 'Alt-Text richtig einsetzen', a: '<p>Beschreibt den Inhalt bzw. die Funktion des Bildes knapp und konkret.</p><p>Dekorative Bilder: leeres <code>alt=""</code>. Keine Keyword-Spam-Listen.</p>', q_: 'PK-04 · alt' },
+/* ---------- Neu 2026-10-16: AP1-Stoff aus der Lernplattform (eigene Aufbereitung, freigegeben) ---------- */
+{ t: 'ap1', b: 'pm', j: 2, f: 'Formel Gesamtpuffer im Netzplan?', a: '<p><b>Gesamtpuffer = SAZ − FAZ</b> (oder SEZ − FEZ).</p><p>Puffer 0 → Vorgang liegt auf dem <b>kritischen Pfad</b>.</p>' },
+{ t: 'ap1', b: 'wirtschaft', j: 1, f: 'Nettopreis aus Bruttopreis (19 % USt)?', a: '<p><b>Netto = Brutto ÷ 1,19</b></p><p>Umgekehrt: Brutto = Netto × 1,19.</p>' },
+{ t: 'ap1', b: 'wirtschaft', j: 2, f: 'Formel lineare Abschreibung?', a: '<p><b>Jährliche Abschreibung = Anschaffungskosten ÷ Nutzungsdauer in Jahren</b></p>' },
+{ t: 'ap1', b: 'vertrag', j: 2, f: 'Rechte bei mangelhafter Lieferung – Reihenfolge?', a: '<ol><li><b>Nacherfüllung</b> (Nachbesserung oder Neulieferung)</li><li>danach Rücktritt, Minderung oder Schadensersatz</li></ol>' },
+{ t: 'ap1', b: 'hardware', j: 1, f: 'kB vs. KiB?', a: '<ul><li>1 <b>kB</b> = 1.000 Byte (dezimal)</li><li>1 <b>KiB</b> = 1.024 Byte (binär)</li></ul>' },
+{ t: 'ap1', b: 'hardware', j: 1, f: 'Formel Bilddatenmenge?', a: '<p><b>Breite × Höhe × Farbtiefe (Bit) ÷ 8 = Byte</b></p>' },
+{ t: 'ap1', b: 'hardware', j: 1, f: 'Formel Energie in kWh?', a: '<p><b>kWh = Leistung (W) × Stunden ÷ 1.000</b></p>' },
+{ t: 'ap1', b: 'hardware', j: 1, f: 'Ergonomie: Bildschirm und Fenster?', a: '<ul><li>Blickrichtung <b>parallel</b> zum Fenster</li><li>Oberkante auf oder unter Augenhöhe</li><li>Abstand etwa 50–70 cm</li></ul>' },
+{ t: 'ap1', b: 'netzwerk', j: 1, f: 'Private IPv4-Bereiche?', a: '<ul><li>10.0.0.0/8</li><li>172.16.0.0/12</li><li>192.168.0.0/16</li></ul>' },
+{ t: 'ap1', b: 'sicherheit', j: 1, f: '3-2-1-Regel der Datensicherung?', a: '<p><b>3</b> Kopien, auf <b>2</b> verschiedenen Medien, <b>1</b> Kopie außer Haus.</p>' },
+{ t: 'ap1', b: 'sicherheit', j: 2, f: 'Nutzkapazität RAID 1 und RAID 5?', a: '<ul><li><b>RAID 1</b>: Kapazität einer Platte</li><li><b>RAID 5</b>: (n − 1) × Plattengröße</li></ul>' },
+{ t: 'ap1', b: 'sicherheit', j: 2, f: 'Maximumprinzip (Schutzbedarf)?', a: '<p>Ein System erbt den <b>höchsten</b> Schutzbedarf der Anwendungen, die darauf laufen.</p>' },
+{ t: 'ap1', b: 'software', j: 2, f: 'Copyleft (GPL) vs. freizügige Lizenz (MIT)?', a: '<ul><li><b>GPL</b>: veränderte Weitergabe nur mit Quelltext unter GPL</li><li><b>MIT</b>: auch in geschlossener Software erlaubt, Lizenzhinweis bleibt</li></ul>' },
+{ t: 'ap1', b: 'software', j: 1, f: 'Freeware vs. Shareware?', a: '<ul><li><b>Freeware</b>: dauerhaft kostenlos</li><li><b>Shareware</b>: kostenlos testen, danach bezahlen</li></ul>' },
+{ t: 'ap1', b: 'datenbank', j: 2, f: 'ACID oder BASE – was gilt für relationale Datenbanken?', a: '<p><b>ACID</b> (Atomicity, Consistency, Isolation, Durability).</p><p>BASE ist das Gegenstück bei vielen NoSQL-Systemen.</p>' },
+{ t: 'ap1', b: 'datenbank', j: 2, f: 'Welche ON-DELETE-Regeln gibt es für Fremdschlüssel?', a: '<ul><li><b>RESTRICT</b>: Löschen verhindern</li><li><b>CASCADE</b>: abhängige Zeilen mitlöschen</li><li><b>SET NULL</b>: Fremdschlüssel auf NULL setzen</li></ul>' }
 ];
 
 /* ---------- Lückentexte (aktives Erinnern) ---------- */
@@ -6583,6 +6643,141 @@ const TASKS = [
         `Vergleich mit ${ziel}: ${ok ? 'erfüllt' : 'nicht erfüllt'}`
       ],
       hinweis: 'In der Prüfung reicht oft: Kontrast, alt-Text, Tastatur, Untertitel nennen – hier übst du die Zahlenlogik dahinter.'
+    };
+  }
+},
+/* ---------- Neu 2026-10-16: AP1-Stoff aus der Lernplattform (eigene Aufbereitung, freigegeben) ---------- */
+{
+  t: 'ap1', id: 'ust-brutto-netto', j: 1, bereich: 'wirtschaft', titel: 'Umsatzsteuer: Brutto und Netto', punkte: 4,
+  quelle: 'Eigene Aufbereitung · Angebotsvergleich und Kalkulation',
+  gen() {
+    const netto = R(200, 2500) - 0.01;
+    const brutto2 = R(5, 60) * 119;
+    const b1 = r2(netto * 1.19);
+    const n2 = r2(brutto2 / 1.19);
+    return {
+      szenario: `<p>Ein Kunde fragt nach Preisen mit und ohne Umsatzsteuer (19 %).</p>`,
+      daten: `<table>
+        <tr><th>Angabe</th><th class="z">Wert</th></tr>
+        <tr><td>Monitor, Nettopreis</td><td class="z">${eur(netto)} €</td></tr>
+        <tr><td>Rechnung, Bruttobetrag</td><td class="z">${eur(brutto2)} €</td></tr>
+      </table>`,
+      rows: [
+        { name: 'Bruttopreis des Monitors', op: '', unit: '€', answer: b1, ergebnis: true },
+        { name: 'Nettobetrag der Rechnung', op: '', unit: '€', answer: n2, ergebnis: true }
+      ],
+      weg: [
+        `Brutto = ${eur(netto)} × 1,19 = ${eur(b1)} €`,
+        `Netto = ${eur(brutto2)} ÷ 1,19 = ${eur(n2)} €`
+      ],
+      hinweis: 'Netto → Brutto: × 1,19. Brutto → Netto: ÷ 1,19 – nicht × 0,81.'
+    };
+  }
+},
+{
+  t: 'ap1', id: 'datenmenge-bild-tib', j: 1, bereich: 'hardware', titel: 'Datenmengen: Bild und Speicher', punkte: 4,
+  quelle: 'Eigene Aufbereitung · Hardware und Arbeitsplatz',
+  gen() {
+    const [bw, bh] = pick([[1920, 1080], [2560, 1440], [3840, 2160]]);
+    const bit = pick([24, 32]);
+    const tb = pick([1, 2, 4, 8, 12]);
+    const mib = r2(bw * bh * bit / 8 / 1024 / 1024);
+    const tib = r2(tb * 1e12 / Math.pow(1024, 4));
+    return {
+      szenario: `<p>Für die Speicherplanung sollen zwei Werte berechnet werden. Rechnen Sie mit
+        Binärpräfixen (1 MiB = 1.024² Byte, 1 TiB = 1.024⁴ Byte).</p>`,
+      daten: `<table>
+        <tr><th>Angabe</th><th class="z">Wert</th></tr>
+        <tr><td>Bildauflösung (unkomprimiert)</td><td class="z">${bw} × ${bh} Pixel</td></tr>
+        <tr><td>Farbtiefe</td><td class="z">${bit} Bit</td></tr>
+        <tr><td>Festplatte laut Hersteller</td><td class="z">${tb} TB</td></tr>
+      </table>`,
+      rows: [
+        { name: 'Größe des Bildes', op: '', unit: 'MiB', answer: mib, tol: { abs: 0.01 }, dec: 2, ergebnis: true },
+        { name: 'Anzeige im Betriebssystem', op: '', unit: 'TiB', answer: tib, tol: { abs: 0.01 }, dec: 2, ergebnis: true }
+      ],
+      weg: [
+        `${bw} × ${bh} × ${bit} Bit ÷ 8 = ${num(bw * bh * bit / 8, 0)} Byte`,
+        `÷ 1.024² = ${num(mib, 2)} MiB`,
+        `${tb} × 10¹² Byte ÷ 1.024⁴ = ${num(tib, 2)} TiB`
+      ],
+      hinweis: 'Hersteller rechnen dezimal (TB), Betriebssysteme binär (TiB) – daher die „fehlende“ Kapazität.'
+    };
+  }
+},
+{
+  t: 'ap1', id: 'lizenzkosten', j: 2, bereich: 'software', titel: 'Lizenzkosten: Abo, Kauf, Volumen', punkte: 8,
+  quelle: 'Eigene Aufbereitung · Software, Lizenzen und Qualität',
+  gen() {
+    const plaetze = pick([15, 20, 25, 30, 40]);
+    const abo = pick([8, 9, 10, 12, 15]);
+    const einzel = pick([129, 149, 179, 199]);
+    const volumen = einzel - pick([20, 25, 30, 40]);
+    const kauf = pick([240, 260, 280, 300]);
+    const pcs = R(10, 30), nbs = R(4, 12), oem = R(1, 3);
+    const abo36 = r2(plaetze * abo * 36);
+    const ersparnis = r2(plaetze * (einzel - volumen));
+    const mehr = r2(abo * 36 - kauf);
+    const lizenzen = pcs + nbs - oem;
+    return {
+      szenario: `<p>Ein Betrieb mit ${plaetze} Arbeitsplätzen vergleicht Lizenzmodelle für ein
+        Office-Paket über eine Nutzungsdauer von 36 Monaten.</p>`,
+      daten: `<table>
+        <tr><th>Angabe</th><th class="z">Wert</th></tr>
+        <tr><td>Abo je Platz und Monat</td><td class="z">${eur(abo)} €</td></tr>
+        <tr><td>Einzelplatzlizenz</td><td class="z">${eur(einzel)} €</td></tr>
+        <tr><td>Volumenlizenz je Platz</td><td class="z">${eur(volumen)} €</td></tr>
+        <tr><td>Kauflizenz je Platz (einmalig)</td><td class="z">${eur(kauf)} €</td></tr>
+        <tr><td>Geräte</td><td class="z">${pcs} PCs, ${nbs} Notebooks, davon ${oem} mit OEM-Lizenz</td></tr>
+      </table>`,
+      rows: [
+        { name: `Abokosten für ${plaetze} Plätze über 36 Monate`, op: '', unit: '€', answer: abo36, ergebnis: true },
+        { name: `Ersparnis Volumen- statt Einzellizenz (${plaetze} Plätze)`, op: '', unit: '€', answer: ersparnis, ergebnis: true },
+        { name: 'Mehrkosten (+) bzw. Ersparnis (−) des Abos je Platz über 36 Monate', op: '', unit: '€', answer: mehr, ergebnis: true },
+        { name: 'Zusätzlich zu beschaffende Lizenzen', op: '', unit: 'Stück', answer: lizenzen, tol: { abs: 0 }, dec: 0, ergebnis: true }
+      ],
+      weg: [
+        `Abo: ${plaetze} × ${eur(abo)} × 36 = ${eur(abo36)} €`,
+        `Ersparnis: ${plaetze} × (${eur(einzel)} − ${eur(volumen)}) = ${eur(ersparnis)} €`,
+        `Abo je Platz: ${eur(abo)} × 36 = ${eur(abo * 36)} €; − ${eur(kauf)} = ${eur(mehr)} €`,
+        `Lizenzen: ${pcs} + ${nbs} − ${oem} (OEM) = ${lizenzen}`
+      ],
+      hinweis: 'OEM-Lizenzen sind an das Gerät gebunden und zählen nur für das Gerät, mit dem sie gekauft wurden.'
+    };
+  }
+},
+{
+  t: 'ap1', id: 'restore-einrichtung', j: 2, bereich: 'sicherheit', titel: 'Restore-Volumen und Einrichtungsdauer', punkte: 4,
+  quelle: 'Eigene Aufbereitung · IT-Sicherheit / Kundenauftrag',
+  gen() {
+    const voll = R(3, 10) * 100;
+    const diffs = [R(5, 15), R(16, 25), R(26, 35), R(36, 50)];
+    const restore = voll + diffs[3];
+    const plaetze = pick([12, 16, 20, 24, 30]);
+    const std = pick([1, 1.5, 2]);
+    const leute = pick([2, 3, 4]);
+    const dauer = r2(plaetze * std / leute);
+    return {
+      szenario: `<p>Am Freitagmorgen muss ein Server aus der Sicherung wiederhergestellt werden.
+        Gesichert wird sonntags voll, Montag bis Donnerstag <strong>differenziell</strong>.
+        Parallel werden neue Arbeitsplätze eingerichtet.</p>`,
+      daten: `<table>
+        <tr><th>Angabe</th><th class="z">Wert</th></tr>
+        <tr><td>Vollsicherung Sonntag</td><td class="z">${voll} GB</td></tr>
+        <tr><td>Differenziell Mo / Di / Mi / Do</td><td class="z">${diffs.join(' / ')} GB</td></tr>
+        <tr><td>Arbeitsplätze</td><td class="z">${plaetze}</td></tr>
+        <tr><td>Zeit je Platz</td><td class="z">${num(std, 1)} h</td></tr>
+        <tr><td>Fachkräfte (arbeiten gleichzeitig)</td><td class="z">${leute}</td></tr>
+      </table>`,
+      rows: [
+        { name: 'Einzuspielende Datenmenge', op: '', unit: 'GB', answer: restore, tol: { abs: 0 }, dec: 0, ergebnis: true },
+        { name: 'Dauer der Einrichtung', op: '', unit: 'h', answer: dauer, tol: { abs: 0.01 }, dec: 2, ergebnis: true }
+      ],
+      weg: [
+        `Differenziell: Voll + letzte Differenzielle = ${voll} + ${diffs[3]} = ${restore} GB`,
+        `${plaetze} × ${num(std, 1)} h = ${num(plaetze * std, 1)} h Arbeit ÷ ${leute} = ${num(dauer, 2)} h`
+      ],
+      hinweis: 'Inkrementell bräuchte man alle Inkremente, differenziell nur die letzte Differenzielle.'
     };
   }
 }
