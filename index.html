@@ -1285,6 +1285,9 @@ button.akt:focus-visible{outline:2px solid var(--gruen);outline-offset:3px}
   .schwach-zeile .balken{grid-area:balken}
 }
 
+.fuss-recht{padding:14px 16px;font-size:.85rem;text-align:center;color:inherit;opacity:.85}
+.fuss-recht a{color:inherit}
+
 </style>
 </head>
 <body>
@@ -1354,6 +1357,12 @@ button.akt:focus-visible{outline:2px solid var(--gruen);outline-offset:3px}
   <button class="rail-scrim" id="rail-scrim" type="button" tabindex="-1" aria-label="Navigation schließen"></button>
   <main class="blatt" id="blatt" tabindex="-1" aria-live="polite" aria-atomic="false"></main>
 </div>
+
+<footer class="fuss-recht">
+  <a href="datenschutz.html">Datenschutz</a>
+  <span aria-hidden="true">·</span>
+  <a href="impressum.html">Impressum</a>
+</footer>
 
 <dialog class="bestaetig" id="bestaetig" aria-labelledby="bestaetig-titel">
   <h2 id="bestaetig-titel">Fortschritt zurücksetzen?</h2>
@@ -9169,6 +9178,7 @@ async function profilAuswahlZeigen() {
           <div class="wahlreihe">
             <button class="akt" type="button" id="pf-anlegen">Registrieren</button>
           </div>
+          <p class="hinweis">Mit dem Konto speichern wir E-Mail-Adresse und Lernfortschritt auf unserem Server. Details: <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
         </div>
 
         <div id="pf-panel-gast" class="auth-panel" role="tabpanel" aria-labelledby="tab-gast" ${startTab === 'gast' ? '' : 'hidden'}>
