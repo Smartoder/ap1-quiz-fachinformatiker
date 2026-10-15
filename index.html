@@ -1287,6 +1287,8 @@ button.akt:focus-visible{outline:2px solid var(--gruen);outline-offset:3px}
 
 .fuss-recht{padding:14px 16px;font-size:.85rem;text-align:center;color:inherit;opacity:.85}
 .fuss-recht a{color:inherit}
+.oauth-zeile{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.oauth-zeile .akt{flex:1 1 180px}
 
 </style>
 </head>
@@ -9148,6 +9150,10 @@ async function profilAuswahlZeigen() {
           <div class="wahlreihe">
             <button class="akt" type="button" id="pf-login">Anmelden</button>
           </div>
+          <div class="oauth-zeile" aria-label="Mit Anbieterkonto anmelden">
+            <button class="akt zweit" type="button" data-oauth="google">Mit Google anmelden</button>
+            <button class="akt zweit" type="button" data-oauth="apple">Mit Apple anmelden</button>
+          </div>
           <div class="wahlreihe" style="margin-top:4px">
             <button class="wechsel" type="button" id="pf-vergessen">Passwort vergessen?</button>
           </div>
@@ -9177,6 +9183,10 @@ async function profilAuswahlZeigen() {
           </div>
           <div class="wahlreihe">
             <button class="akt" type="button" id="pf-anlegen">Registrieren</button>
+          </div>
+          <div class="oauth-zeile" aria-label="Mit Anbieterkonto registrieren">
+            <button class="akt zweit" type="button" data-oauth="google">Mit Google registrieren</button>
+            <button class="akt zweit" type="button" data-oauth="apple">Mit Apple registrieren</button>
           </div>
           <p class="hinweis">Mit dem Konto speichern wir E-Mail-Adresse und Lernfortschritt auf unserem Server. Details: <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
         </div>
@@ -9338,9 +9348,15 @@ async function profilAuswahlZeigen() {
     try {
       const ergebnis = await authRegistrieren(mail, pw, name);
       if (ergebnis && ergebnis.needsConfirm) {
-        document.getElementById('pf-erfolg-mail').textContent = mail;
-        erfolgEl.hidden = false;
-        setStatus('');
+        /* Das Konto ist serverseitig bestätigt: direkt anmelden. Schlägt das
+           fehl, bleibt der Hinweis mit der Bestätigungs-Mail stehen. */
+        try {
+          await authAnmelden(mail, pw);
+        } catch (e) {
+          document.getElementById('pf-erfolg-mail').textContent = mail;
+          erfolgEl.hidden = false;
+          setStatus('');
+        }
       }
     } catch (e) {
       setStatus(authFehlerText(e.message, { mitGast: true }), 'fehler');
@@ -10754,6 +10770,44 @@ function kopfSchaleMessen() {
   document.addEventListener('scroll', kompaktSchalten, { passive: true, capture: true });
 }
 kopfSchaleMessen();
+
+/* ---------- Anmeldung über Google / Apple ----------
+   Der Anbieter schickt den Browser über den Auth-Proxy zurück. Die Sitzung
+   kommt im Adressfragment (#access_token=…); danach wird das Profil wie bei
+   der E-Mail-Anmeldung angelegt oder geladen. */
+function oauthStarten(anbieter) {
+  if (!AUTH) return;
+  window.location.href = authBasis() + '/authorize?provider=' + encodeURIComponent(anbieter) +
+    '&redirect_to=' + encodeURIComponent(authRedirectZiel());
+}
+document.addEventListener('click', e => {
+  const knopf = e.target.closest && e.target.closest('[data-oauth]');
+  if (knopf) oauthStarten(knopf.dataset.oauth);
+});
+async function oauthRueckkehr() {
+  const sitzung = new URLSearchParams(window.location.hash.slice(1));
+  const token = sitzung.get('access_token');
+  if (!token || !AUTH) return;
+  history.replaceState(null, '', window.location.pathname + window.location.search);
+  const r = await fetch(authBasis() + '/user', {
+    headers: { apikey: AUTH.key, Authorization: 'Bearer ' + token }
+  });
+  const u = await r.json().catch(() => ({}));
+  if (!r.ok || !u.id) throw new Error('Anmeldung über den Anbieter fehlgeschlagen.');
+  const namen = await profileLaden();
+  let eigenes = namen.find(p => p.authId && p.authId === u.id) || namen.find(p => p.email === u.email);
+  if (!eigenes) {
+    const meta = u.user_metadata || {};
+    const name = String(meta.full_name || meta.name || (u.email || '').split('@')[0] || 'Profil').trim().slice(0, 40);
+    const p = await api('/profile', 'POST', { name, jahr: 1, authId: u.id });
+    eigenes = p.profil;
+  }
+  await anmelden(eigenes);
+}
+oauthRueckkehr().catch(e => {
+  const hinweis = document.getElementById('kopf-stand');
+  if (hinweis) hinweis.textContent = e.message || 'Anmeldung fehlgeschlagen.';
+});
 
 statistikZeichnen();
 startseiteZeigen();

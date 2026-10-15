@@ -16,6 +16,7 @@ const ERLAUBT = new Set([
   "user",
   "verify",
   "reauthenticate",
+  "authorize",
 ]);
 
 const JSON_HDR = { "content-type": "application/json", "cache-control": "no-store" };
