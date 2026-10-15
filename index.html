@@ -9353,9 +9353,11 @@ async function profilAuswahlZeigen() {
         try {
           await authAnmelden(mail, pw);
         } catch (e) {
+          /* Der echte Grund wird gezeigt, nicht verschluckt. */
           document.getElementById('pf-erfolg-mail').textContent = mail;
           erfolgEl.hidden = false;
-          setStatus('');
+          setStatus('Konto angelegt, aber Anmeldung klappt noch nicht: ' +
+            authFehlerText(e.message, { mitGast: true }), 'fehler');
         }
       }
     } catch (e) {
